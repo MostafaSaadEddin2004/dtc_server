@@ -14,42 +14,22 @@ paths:
       description: ''
       parameters: []
       responses:
-        422:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: 'البريد الألكتروني غير موجود. (and 1 more error)'
-                  errors:
-                    email:
-                      - 'البريد الألكتروني غير موجود.'
-                    password:
-                      - 'يجب أن يكون طول نص حقل كلمة السر على الأقل 8 حروفٍ/حرفًا.'
+                  token: 2|9HBnhjIgOOX8k16BWwmwHGSHxqQkPz9uzIMkFSoi
                 properties:
-                  message:
+                  token:
                     type: string
-                    example: 'البريد الألكتروني غير موجود. (and 1 more error)'
-                  errors:
-                    type: object
-                    properties:
-                      email:
-                        type: array
-                        example:
-                          - 'البريد الألكتروني غير موجود.'
-                        items:
-                          type: string
-                      password:
-                        type: array
-                        example:
-                          - 'يجب أن يكون طول نص حقل كلمة السر على الأقل 8 حروفٍ/حرفًا.'
-                        items:
-                          type: string
+                    example: 2|9HBnhjIgOOX8k16BWwmwHGSHxqQkPz9uzIMkFSoi
       tags:
         - Endpoints
       requestBody:
-        required: true
+        required: false
         content:
           application/json:
             schema:
@@ -57,20 +37,16 @@ paths:
               properties:
                 email:
                   type: string
-                  description: 'يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية.'
-                  example: kwyman@example.org
+                  description: 'The email of the user.'
+                  example: my@example.com
                 password:
                   type: string
-                  description: 'يجب أن يكون طول نص حقل value على الأقل 8 حروفٍ/حرفًا.'
-                  example: '!gJye5'
+                  description: 'The password of the user.'
+                  example: password
                 role:
                   type: string
-                  description: 'Must be one of <code>student</code>, <code>teacher</code>, <code>student_browser</code>, or <code>teacher_browser</code>.'
+                  description: 'The role of the user.'
                   example: student_browser
-              required:
-                - email
-                - password
-                - role
       security: []
   /api/auth/register:
     post:
@@ -86,11 +62,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 2|PPFUpnColYnzDBs21CwrsmxGiz63UDqqq0bu3ZLE
+                  token: 2|GDd5876wKKBDpzE20FKuNVcEmbsTcXpYKDHwtYVy
                 properties:
                   token:
                     type: string
-                    example: 2|PPFUpnColYnzDBs21CwrsmxGiz63UDqqq0bu3ZLE
+                    example: 2|GDd5876wKKBDpzE20FKuNVcEmbsTcXpYKDHwtYVy
       tags:
         - Endpoints
       requestBody:
@@ -103,23 +79,23 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: laborum
+                  example: blanditiis
                 phone:
                   type: string
                   description: ''
-                  example: omnis
+                  example: ipsa
                 email:
                   type: string
                   description: 'يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية.'
-                  example: luisa13@example.com
+                  example: oswaniawski@example.org
                 password:
                   type: string
                   description: ''
-                  example: '!sB,~"1mdi'
+                  example: rxnvaceclkAKB
                 role:
                   type: string
                   description: 'Must be one of <code>student</code>, <code>teacher</code>, <code>student_browser</code>, or <code>teacher_browser</code>.'
-                  example: student
+                  example: teacher
               required:
                 - name
                 - phone
@@ -150,34 +126,34 @@ paths:
                 example:
                   data:
                     -
-                      id: 4
-                      title: 'Cumque est repudiandae quo qui.'
-                      description: 'Sit qui ipsa eaque. Ut laboriosam laboriosam voluptatum sint nisi suscipit. Et eos omnis laborum tempora ut cupiditate minima ex.'
-                      category: 'Mrs. Elena Veum'
+                      id: 3
+                      title: 'Placeat sit asperiores.'
+                      description: 'Iure labore dicta rerum consectetur autem veniam qui. Omnis et quia corporis corrupti. Voluptas modi ut dicta autem a vero ut nisi.'
+                      category: 'Dr. Paul Schroeder'
                 properties:
                   data:
                     type: array
                     example:
                       -
-                        id: 4
-                        title: 'Cumque est repudiandae quo qui.'
-                        description: 'Sit qui ipsa eaque. Ut laboriosam laboriosam voluptatum sint nisi suscipit. Et eos omnis laborum tempora ut cupiditate minima ex.'
-                        category: 'Mrs. Elena Veum'
+                        id: 3
+                        title: 'Placeat sit asperiores.'
+                        description: 'Iure labore dicta rerum consectetur autem veniam qui. Omnis et quia corporis corrupti. Voluptas modi ut dicta autem a vero ut nisi.'
+                        category: 'Dr. Paul Schroeder'
                     items:
                       type: object
                       properties:
                         id:
                           type: integer
-                          example: 4
+                          example: 3
                         title:
                           type: string
-                          example: 'Cumque est repudiandae quo qui.'
+                          example: 'Placeat sit asperiores.'
                         description:
                           type: string
-                          example: 'Sit qui ipsa eaque. Ut laboriosam laboriosam voluptatum sint nisi suscipit. Et eos omnis laborum tempora ut cupiditate minima ex.'
+                          example: 'Iure labore dicta rerum consectetur autem veniam qui. Omnis et quia corporis corrupti. Voluptas modi ut dicta autem a vero ut nisi.'
                         category:
                           type: string
-                          example: 'Mrs. Elena Veum'
+                          example: 'Dr. Paul Schroeder'
       tags:
         - Note
     post:
@@ -193,996 +169,34 @@ paths:
           schema:
             type: string
       responses:
-        500:
+        201:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: 'SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: notes.note_category_id (Connection: sqlite, SQL: insert into "notes" ("title", "description", "updated_at", "created_at") values (fuga, Dignissimos voluptas nulla autem modi repellendus tenetur., 2023-08-08 10:07:53, 2023-08-08 10:07:53))'
-                  exception: Illuminate\Database\QueryException
-                  file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
-                  line: 795
-                  trace:
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
-                      line: 755
-                      function: runQueryCallback
-                      class: Illuminate\Database\Connection
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
-                      line: 581
-                      function: run
-                      class: Illuminate\Database\Connection
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
-                      line: 533
-                      function: statement
-                      class: Illuminate\Database\Connection
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php
-                      line: 32
-                      function: insert
-                      class: Illuminate\Database\Connection
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php
-                      line: 3383
-                      function: processInsertGetId
-                      class: Illuminate\Database\Query\Processors\Processor
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php
-                      line: 1925
-                      function: insertGetId
-                      class: Illuminate\Database\Query\Builder
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                      line: 1333
-                      function: __call
-                      class: Illuminate\Database\Eloquent\Builder
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                      line: 1298
-                      function: insertAndSetId
-                      class: Illuminate\Database\Eloquent\Model
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                      line: 1137
-                      function: performInsert
-                      class: Illuminate\Database\Eloquent\Model
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php
-                      line: 1006
-                      function: save
-                      class: Illuminate\Database\Eloquent\Model
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Support/helpers.php
-                      line: 307
-                      function: 'Illuminate\Database\Eloquent\{closure}'
-                      class: Illuminate\Database\Eloquent\Builder
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php
-                      line: 1007
-                      function: tap
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
-                      line: 23
-                      function: create
-                      class: Illuminate\Database\Eloquent\Builder
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                      line: 2333
-                      function: forwardCallTo
-                      class: Illuminate\Database\Eloquent\Model
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                      line: 2345
-                      function: __call
-                      class: Illuminate\Database\Eloquent\Model
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/app/Http/Controllers/Api/NoteController.php
-                      line: 52
-                      function: __callStatic
-                      class: Illuminate\Database\Eloquent\Model
-                      type: '::'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
-                      line: 54
-                      function: store
-                      class: App\Http\Controllers\Api\NoteController
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
-                      line: 43
-                      function: callAction
-                      class: Illuminate\Routing\Controller
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php
-                      line: 260
-                      function: dispatch
-                      class: Illuminate\Routing\ControllerDispatcher
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php
-                      line: 205
-                      function: runController
-                      class: Illuminate\Routing\Route
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                      line: 799
-                      function: run
-                      class: Illuminate\Routing\Route
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 141
-                      function: 'Illuminate\Routing\{closure}'
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
-                      line: 50
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 180
-                      function: handle
-                      class: Illuminate\Routing\Middleware\SubstituteBindings
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
-                      line: 159
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
-                      line: 135
-                      function: handleRequest
-                      class: Illuminate\Routing\Middleware\ThrottleRequests
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
-                      line: 87
-                      function: handleRequestUsingNamedLimiter
-                      class: Illuminate\Routing\Middleware\ThrottleRequests
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 180
-                      function: handle
-                      class: Illuminate\Routing\Middleware\ThrottleRequests
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php
-                      line: 57
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 180
-                      function: handle
-                      class: Illuminate\Auth\Middleware\Authenticate
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 116
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                      line: 800
-                      function: then
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                      line: 777
-                      function: runRouteWithinStack
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                      line: 741
-                      function: runRoute
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                      line: 730
-                      function: dispatchToRoute
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
-                      line: 200
-                      function: dispatch
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 141
-                      function: 'Illuminate\Foundation\Http\{closure}'
-                      class: Illuminate\Foundation\Http\Kernel
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
-                      line: 21
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php
-                      line: 31
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 180
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
-                      line: 21
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php
-                      line: 40
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 180
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\TrimStrings
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php
-                      line: 27
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 180
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php
-                      line: 86
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 180
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php
-                      line: 62
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 180
-                      function: handle
-                      class: Illuminate\Http\Middleware\HandleCors
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php
-                      line: 39
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 180
-                      function: handle
-                      class: Illuminate\Http\Middleware\TrustProxies
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                      line: 116
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
-                      line: 175
-                      function: then
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
-                      line: 144
-                      function: sendRequestThroughRouter
-                      class: Illuminate\Foundation\Http\Kernel
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                      line: 299
-                      function: handle
-                      class: Illuminate\Foundation\Http\Kernel
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                      line: 287
-                      function: callLaravelOrLumenRoute
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                      line: 92
-                      function: makeApiCall
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                      line: 45
-                      function: makeResponseCall
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                      line: 35
-                      function: makeResponseCallIfConditionsPass
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
-                      line: 209
-                      function: __invoke
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
-                      line: 166
-                      function: iterateThroughStrategies
-                      class: Knuckles\Scribe\Extracting\Extractor
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
-                      line: 95
-                      function: fetchResponses
-                      class: Knuckles\Scribe\Extracting\Extractor
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
-                      line: 124
-                      function: processRoute
-                      class: Knuckles\Scribe\Extracting\Extractor
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
-                      line: 71
-                      function: extractEndpointsInfoFromLaravelApp
-                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
-                      line: 49
-                      function: extractEndpointsInfoAndWriteToDisk
-                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php
-                      line: 51
-                      function: get
-                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
-                      line: 36
-                      function: handle
-                      class: Knuckles\Scribe\Commands\GenerateDocumentation
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Util.php
-                      line: 41
-                      function: 'Illuminate\Container\{closure}'
-                      class: Illuminate\Container\BoundMethod
-                      type: '::'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
-                      line: 93
-                      function: unwrapIfClosure
-                      class: Illuminate\Container\Util
-                      type: '::'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
-                      line: 37
-                      function: callBoundMethod
-                      class: Illuminate\Container\BoundMethod
-                      type: '::'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Container.php
-                      line: 662
-                      function: call
-                      class: Illuminate\Container\BoundMethod
-                      type: '::'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php
-                      line: 208
-                      function: call
-                      class: Illuminate\Container\Container
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Command/Command.php
-                      line: 326
-                      function: execute
-                      class: Illuminate\Console\Command
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php
-                      line: 178
-                      function: run
-                      class: Symfony\Component\Console\Command\Command
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
-                      line: 1081
-                      function: run
-                      class: Illuminate\Console\Command
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
-                      line: 320
-                      function: doRunCommand
-                      class: Symfony\Component\Console\Application
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
-                      line: 174
-                      function: doRun
-                      class: Symfony\Component\Console\Application
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php
-                      line: 201
-                      function: run
-                      class: Symfony\Component\Console\Application
-                      type: '->'
-                    -
-                      file: /home/loaidev/Projects/Laravel/dtc_server/artisan
-                      line: 37
-                      function: handle
-                      class: Illuminate\Foundation\Console\Kernel
-                      type: '->'
+                  data:
+                    id: 6
+                    title: voluptate
+                    description: 'Reprehenderit corporis dolores distinctio voluptas sit ipsum odit.'
+                    category: 'Max Zemlak III'
                 properties:
-                  message:
-                    type: string
-                    example: 'SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: notes.note_category_id (Connection: sqlite, SQL: insert into "notes" ("title", "description", "updated_at", "created_at") values (fuga, Dignissimos voluptas nulla autem modi repellendus tenetur., 2023-08-08 10:07:53, 2023-08-08 10:07:53))'
-                  exception:
-                    type: string
-                    example: Illuminate\Database\QueryException
-                  file:
-                    type: string
-                    example: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
-                  line:
-                    type: integer
-                    example: 795
-                  trace:
-                    type: array
-                    example:
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
-                        line: 755
-                        function: runQueryCallback
-                        class: Illuminate\Database\Connection
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
-                        line: 581
-                        function: run
-                        class: Illuminate\Database\Connection
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
-                        line: 533
-                        function: statement
-                        class: Illuminate\Database\Connection
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php
-                        line: 32
-                        function: insert
-                        class: Illuminate\Database\Connection
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php
-                        line: 3383
-                        function: processInsertGetId
-                        class: Illuminate\Database\Query\Processors\Processor
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php
-                        line: 1925
-                        function: insertGetId
-                        class: Illuminate\Database\Query\Builder
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                        line: 1333
-                        function: __call
-                        class: Illuminate\Database\Eloquent\Builder
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                        line: 1298
-                        function: insertAndSetId
-                        class: Illuminate\Database\Eloquent\Model
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                        line: 1137
-                        function: performInsert
-                        class: Illuminate\Database\Eloquent\Model
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php
-                        line: 1006
-                        function: save
-                        class: Illuminate\Database\Eloquent\Model
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Support/helpers.php
-                        line: 307
-                        function: 'Illuminate\Database\Eloquent\{closure}'
-                        class: Illuminate\Database\Eloquent\Builder
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php
-                        line: 1007
-                        function: tap
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php
-                        line: 23
-                        function: create
-                        class: Illuminate\Database\Eloquent\Builder
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                        line: 2333
-                        function: forwardCallTo
-                        class: Illuminate\Database\Eloquent\Model
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php
-                        line: 2345
-                        function: __call
-                        class: Illuminate\Database\Eloquent\Model
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/app/Http/Controllers/Api/NoteController.php
-                        line: 52
-                        function: __callStatic
-                        class: Illuminate\Database\Eloquent\Model
-                        type: '::'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Controller.php
-                        line: 54
-                        function: store
-                        class: App\Http\Controllers\Api\NoteController
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php
-                        line: 43
-                        function: callAction
-                        class: Illuminate\Routing\Controller
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php
-                        line: 260
-                        function: dispatch
-                        class: Illuminate\Routing\ControllerDispatcher
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php
-                        line: 205
-                        function: runController
-                        class: Illuminate\Routing\Route
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                        line: 799
-                        function: run
-                        class: Illuminate\Routing\Route
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 141
-                        function: 'Illuminate\Routing\{closure}'
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php
-                        line: 50
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 180
-                        function: handle
-                        class: Illuminate\Routing\Middleware\SubstituteBindings
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
-                        line: 159
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
-                        line: 135
-                        function: handleRequest
-                        class: Illuminate\Routing\Middleware\ThrottleRequests
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
-                        line: 87
-                        function: handleRequestUsingNamedLimiter
-                        class: Illuminate\Routing\Middleware\ThrottleRequests
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 180
-                        function: handle
-                        class: Illuminate\Routing\Middleware\ThrottleRequests
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php
-                        line: 57
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 180
-                        function: handle
-                        class: Illuminate\Auth\Middleware\Authenticate
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 116
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                        line: 800
-                        function: then
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                        line: 777
-                        function: runRouteWithinStack
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                        line: 741
-                        function: runRoute
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
-                        line: 730
-                        function: dispatchToRoute
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
-                        line: 200
-                        function: dispatch
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 141
-                        function: 'Illuminate\Foundation\Http\{closure}'
-                        class: Illuminate\Foundation\Http\Kernel
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
-                        line: 21
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php
-                        line: 31
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 180
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
-                        line: 21
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php
-                        line: 40
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 180
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\TrimStrings
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php
-                        line: 27
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 180
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php
-                        line: 86
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 180
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php
-                        line: 62
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 180
-                        function: handle
-                        class: Illuminate\Http\Middleware\HandleCors
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php
-                        line: 39
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 180
-                        function: handle
-                        class: Illuminate\Http\Middleware\TrustProxies
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
-                        line: 116
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
-                        line: 175
-                        function: then
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
-                        line: 144
-                        function: sendRequestThroughRouter
-                        class: Illuminate\Foundation\Http\Kernel
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                        line: 299
-                        function: handle
-                        class: Illuminate\Foundation\Http\Kernel
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                        line: 287
-                        function: callLaravelOrLumenRoute
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                        line: 92
-                        function: makeApiCall
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                        line: 45
-                        function: makeResponseCall
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
-                        line: 35
-                        function: makeResponseCallIfConditionsPass
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
-                        line: 209
-                        function: __invoke
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
-                        line: 166
-                        function: iterateThroughStrategies
-                        class: Knuckles\Scribe\Extracting\Extractor
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
-                        line: 95
-                        function: fetchResponses
-                        class: Knuckles\Scribe\Extracting\Extractor
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
-                        line: 124
-                        function: processRoute
-                        class: Knuckles\Scribe\Extracting\Extractor
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
-                        line: 71
-                        function: extractEndpointsInfoFromLaravelApp
-                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
-                        line: 49
-                        function: extractEndpointsInfoAndWriteToDisk
-                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php
-                        line: 51
-                        function: get
-                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
-                        line: 36
-                        function: handle
-                        class: Knuckles\Scribe\Commands\GenerateDocumentation
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Util.php
-                        line: 41
-                        function: 'Illuminate\Container\{closure}'
-                        class: Illuminate\Container\BoundMethod
-                        type: '::'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
-                        line: 93
-                        function: unwrapIfClosure
-                        class: Illuminate\Container\Util
-                        type: '::'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
-                        line: 37
-                        function: callBoundMethod
-                        class: Illuminate\Container\BoundMethod
-                        type: '::'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Container.php
-                        line: 662
-                        function: call
-                        class: Illuminate\Container\BoundMethod
-                        type: '::'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php
-                        line: 208
-                        function: call
-                        class: Illuminate\Container\Container
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Command/Command.php
-                        line: 326
-                        function: execute
-                        class: Illuminate\Console\Command
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php
-                        line: 178
-                        function: run
-                        class: Symfony\Component\Console\Command\Command
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
-                        line: 1081
-                        function: run
-                        class: Illuminate\Console\Command
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
-                        line: 320
-                        function: doRunCommand
-                        class: Symfony\Component\Console\Application
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
-                        line: 174
-                        function: doRun
-                        class: Symfony\Component\Console\Application
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php
-                        line: 201
-                        function: run
-                        class: Symfony\Component\Console\Application
-                        type: '->'
-                      -
-                        file: /home/loaidev/Projects/Laravel/dtc_server/artisan
-                        line: 37
-                        function: handle
-                        class: Illuminate\Foundation\Console\Kernel
-                        type: '->'
-                    items:
-                      type: object
-                      properties:
-                        file:
-                          type: string
-                          example: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
-                        line:
-                          type: integer
-                          example: 755
-                        function:
-                          type: string
-                          example: runQueryCallback
-                        class:
-                          type: string
-                          example: Illuminate\Database\Connection
-                        type:
-                          type: string
-                          example: '->'
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 6
+                      title:
+                        type: string
+                        example: voluptate
+                      description:
+                        type: string
+                        example: 'Reprehenderit corporis dolores distinctio voluptas sit ipsum odit.'
+                      category:
+                        type: string
+                        example: 'Max Zemlak III'
       tags:
         - Note
       requestBody:
@@ -1195,19 +209,19 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: fuga
+                  example: voluptate
                 description:
                   type: string
                   description: ''
-                  example: 'Dignissimos voluptas nulla autem modi repellendus tenetur.'
+                  example: 'Reprehenderit corporis dolores distinctio voluptas sit ipsum odit.'
                 category_name:
                   type: string
                   description: ''
                   example: null
                 note_category_id:
-                  type: string
+                  type: integer
                   description: ''
-                  example: null
+                  example: 3
               required:
                 - title
                 - description
@@ -1234,9 +248,9 @@ paths:
                 example:
                   data:
                     id: 1
-                    title: 'Tempore quidem tempora iusto dolorum ad.'
-                    description: 'Autem excepturi non fugit quia autem commodi repellat. Est ut amet suscipit natus accusamus cumque.'
-                    category: 'Cole Rolfson'
+                    title: 'Maxime quia illo accusamus sit fugit.'
+                    description: 'Qui aut at nobis velit quas quos eos ipsam. Ullam fugit amet velit ratione nemo. Magnam distinctio explicabo eius veritatis. Est maxime et perspiciatis cumque fuga. Est ipsa corporis eum voluptatem.'
+                    category: 'Miss Elvie Wolf V'
                 properties:
                   data:
                     type: object
@@ -1246,13 +260,13 @@ paths:
                         example: 1
                       title:
                         type: string
-                        example: 'Tempore quidem tempora iusto dolorum ad.'
+                        example: 'Maxime quia illo accusamus sit fugit.'
                       description:
                         type: string
-                        example: 'Autem excepturi non fugit quia autem commodi repellat. Est ut amet suscipit natus accusamus cumque.'
+                        example: 'Qui aut at nobis velit quas quos eos ipsam. Ullam fugit amet velit ratione nemo. Magnam distinctio explicabo eius veritatis. Est maxime et perspiciatis cumque fuga. Est ipsa corporis eum voluptatem.'
                       category:
                         type: string
-                        example: 'Cole Rolfson'
+                        example: 'Miss Elvie Wolf V'
       tags:
         - Note
     put:
@@ -1277,9 +291,9 @@ paths:
                 example:
                   data:
                     id: 1
-                    title: voluptas
-                    description: 'A fugit sed reprehenderit iste deserunt qui exercitationem.'
-                    category: 'Cole Rolfson'
+                    title: aliquam
+                    description: 'Accusantium ut molestiae minus veniam molestias.'
+                    category: 'Miss Elvie Wolf V'
                 properties:
                   data:
                     type: object
@@ -1289,13 +303,13 @@ paths:
                         example: 1
                       title:
                         type: string
-                        example: voluptas
+                        example: aliquam
                       description:
                         type: string
-                        example: 'A fugit sed reprehenderit iste deserunt qui exercitationem.'
+                        example: 'Accusantium ut molestiae minus veniam molestias.'
                       category:
                         type: string
-                        example: 'Cole Rolfson'
+                        example: 'Miss Elvie Wolf V'
       tags:
         - Note
       requestBody:
@@ -1308,11 +322,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: voluptas
+                  example: aliquam
                 description:
                   type: string
                   description: ''
-                  example: 'A fugit sed reprehenderit iste deserunt qui exercitationem.'
+                  example: 'Accusantium ut molestiae minus veniam molestias.'
                 category_name:
                   type: string
                   description: ''
@@ -1373,24 +387,24 @@ paths:
                 example:
                   data:
                     -
-                      id: 9
-                      name: 'Mrs. Elena Veum'
+                      id: 8
+                      name: 'Dr. Paul Schroeder'
                 properties:
                   data:
                     type: array
                     example:
                       -
-                        id: 9
-                        name: 'Mrs. Elena Veum'
+                        id: 8
+                        name: 'Dr. Paul Schroeder'
                     items:
                       type: object
                       properties:
                         id:
                           type: integer
-                          example: 9
+                          example: 8
                         name:
                           type: string
-                          example: 'Mrs. Elena Veum'
+                          example: 'Dr. Paul Schroeder'
       tags:
         - Note
   /api/post:
@@ -1399,6 +413,16 @@ paths:
       operationId: displayAListingOfTheResource
       description: ''
       parameters:
+        -
+          in: query
+          name: type
+          description: 'the type of the post (public, department ,course).'
+          example: qui
+          required: false
+          schema:
+            type: string
+            description: 'the type of the post (public, department ,course).'
+            example: qui
         -
           in: header
           name: Authorization
@@ -1417,8 +441,8 @@ paths:
                   data:
                     -
                       id: 1
-                      content: "Ipsum dolores laudantium tempora aliquid consectetur minus voluptatibus. Voluptatem suscipit sit impedit eos accusamus consectetur sit maiores. Omnis sit quidem quia aperiam voluptatem. Placeat velit molestiae dolor quo eius.\n\nConsequatur quia quis qui iusto. Labore quas voluptate esse. Ducimus maxime ad in voluptates natus.\n\nPlaceat iusto omnis ut eos nisi est. Et praesentium ipsa sunt similique facilis totam minus. Pariatur vel animi et aperiam. Et velit quo nisi."
-                      attachment: est
+                      content: "Aliquid ratione magnam fugit. Cumque voluptas facilis quis accusantium nemo. Dolorem consequatur itaque fugiat temporibus.\n\nExercitationem ut repellat nihil rerum. Perferendis necessitatibus et dolore ab perferendis magnam laborum. Non necessitatibus voluptatem tempora fugiat temporibus dolor nesciunt.\n\nNihil quo libero at harum nam. Aut ab id occaecati est assumenda. Ducimus ad sed sit fuga nemo explicabo asperiores et. Consequatur consequuntur cum rerum id aut aut dicta. Nulla unde exercitationem eveniet."
+                      attachment: commodi
                       attachment_type: file
                       likes: 0
                       liked_by_me: false
@@ -1426,99 +450,54 @@ paths:
                       saved_by_me: false
                     -
                       id: 2
-                      content: "Porro eius quia ex consequatur architecto voluptas porro. Non et consequatur at dicta necessitatibus eligendi. Ipsum assumenda tempore fugiat ipsam.\n\nVel sed quis sint nesciunt velit. Repellendus laborum quas autem debitis occaecati saepe eos. Doloremque aut eum dolorem consequatur. Sint quod modi rerum laborum ipsam autem.\n\nAccusamus sequi quis hic sequi qui dolores laboriosam. Quis quasi qui excepturi aperiam voluptas earum occaecati. Non totam ut enim officia quidem nisi."
-                      attachment: sed
+                      content: "Et rerum est iure amet dicta. Sed earum esse est hic quibusdam quo. Voluptatem sit qui dolores quisquam assumenda. Quam sit dicta omnis.\n\nIllo aperiam accusamus at fugiat voluptatibus. Qui laborum quo quasi nostrum distinctio id. Quo impedit quidem consequatur praesentium. Non explicabo veniam veritatis quas omnis.\n\nEx in similique est doloremque non ea nulla voluptas. Incidunt enim et iusto accusantium maiores ipsum. Dolor cupiditate est provident quos."
+                      attachment: vero
                       attachment_type: image
                       likes: 0
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
                     -
-                      id: 3
-                      content: "Laborum quia in minima veritatis nulla. Officia voluptas molestiae sint voluptas. Dicta qui quasi nobis. Nesciunt suscipit assumenda illum.\n\nAspernatur ab non qui magnam alias voluptatem unde sint. Magnam neque dicta ut. Velit fugit assumenda beatae. Quo voluptatem tenetur vitae placeat.\n\nNumquam et reiciendis placeat aspernatur vero aut. Quia dolorum odio voluptatibus. At suscipit reprehenderit laboriosam. Est asperiores mollitia quis atque id beatae qui rerum."
-                      attachment: distinctio
-                      attachment_type: image
+                      id: 5
+                      content: "Fuga nostrum molestiae labore. Sint ut aut autem rerum et quis consectetur. Sunt eos officiis amet atque ut. In repellendus ex ullam ipsam et.\n\nLaudantium officiis eos recusandae illo quia provident. Cupiditate deserunt atque sed. Et consequatur quasi vitae quibusdam ut quis. Ullam inventore id non asperiores dignissimos nisi dolores.\n\nConsectetur consequatur voluptatem quia aut voluptate ut sint. Sint voluptatum autem culpa natus iste corrupti explicabo. Et porro temporibus voluptatem sint."
+                      attachment: aut
+                      attachment_type: file
                       likes: 0
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
                     -
                       id: 6
-                      content: "Qui ut aut voluptates voluptatum suscipit et sed. Facere a libero quia voluptas qui omnis quia. Labore rem rerum ea velit. Inventore consequatur voluptas nesciunt.\n\nUllam eum et corporis et adipisci similique voluptas qui. Incidunt aliquid libero perspiciatis voluptatem est porro dolores. Maiores praesentium voluptatem quia fuga et alias sed. Reiciendis excepturi minima nostrum.\n\nFacere dolorem quia consequuntur sequi. Ab et aut consequatur vel aspernatur. Necessitatibus voluptatem ipsum et ut at enim."
-                      attachment: amet
-                      attachment_type: image
-                      likes: 1
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                    -
-                      id: 7
-                      content: "Aliquam quibusdam voluptatem ut deserunt iure quod ut. Dolorem rerum rerum reprehenderit fugit voluptate et. Et dignissimos fugiat mollitia.\n\nItaque optio quam eveniet. Ea illum commodi officiis et et sint et explicabo.\n\nQuibusdam sit maxime corporis adipisci. Nihil quae quo labore consequatur veniam. Enim sunt quasi veniam voluptates culpa eligendi est."
-                      attachment: vel
-                      attachment_type: image
-                      likes: 1
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                    -
-                      id: 8
-                      content: "Mollitia ut eos natus cupiditate eum ad quam. Vel laudantium doloremque qui vel vel impedit aspernatur ullam. Officiis possimus voluptatem accusantium voluptatem repellat culpa libero. Officia suscipit cupiditate sit autem ullam. Vel sed adipisci non eum ea non.\n\nExcepturi facere sunt minus eum animi temporibus impedit impedit. Earum aut autem impedit consequatur dolorem aut cupiditate. Qui sint nam ut quia qui sed. Sint est natus aut voluptas esse repellat molestiae.\n\nVelit rerum cumque quisquam sed. Ea reprehenderit amet est suscipit omnis."
-                      attachment: consequatur
-                      attachment_type: image
-                      likes: 1
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                    -
-                      id: 9
-                      content: "Labore eius ea soluta aut aliquam et et molestias. Est esse dolor molestiae cumque adipisci possimus repudiandae. Ea dolorem laborum delectus optio. Voluptates in et a in fugit sint.\n\nNatus delectus quis eum quia aut voluptatem quis. Illum consequatur totam nisi pariatur doloribus consectetur quia. Et dolorem labore quas rerum. Et officia qui quos quasi eaque.\n\nRecusandae et autem quo facere. Incidunt et tenetur ratione quia soluta molestiae. Ea rerum magni consectetur ullam."
-                      attachment: quia
-                      attachment_type: image
+                      content: "Sint quae ducimus facere impedit quo. Repellat itaque quos mollitia iure perspiciatis qui mollitia. Quam aspernatur quasi cumque libero deserunt ipsam qui.\n\nVel qui vel totam nemo. Eos quas aut soluta hic veritatis. Est ullam magni dolor modi repellat voluptatem repellat. Dolores nesciunt ipsum tenetur. A ut ad sint ut dignissimos dolores.\n\nQuibusdam ab reiciendis nemo perspiciatis perferendis ad. Ex aut dolor maxime reiciendis quis. Natus qui facere repellendus non sequi ipsam sit voluptatem. Aliquam neque commodi accusamus voluptate provident quo."
+                      attachment: ab
+                      attachment_type: file
                       likes: 1
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
                     -
                       id: 10
-                      content: "Ut officiis nihil pariatur aut repudiandae aut. Reiciendis non accusantium fugiat enim et quis ipsa. Similique commodi quia fuga eum. Qui veritatis quo quae deleniti.\n\nSaepe et vel doloribus consequatur atque illo. Error non quia dolorum. Quo consequatur nisi qui mollitia.\n\nNihil est velit corrupti similique id accusantium veritatis quasi. Voluptatum autem quo ipsum occaecati. Sed sint voluptatum ea modi quasi."
-                      attachment: iste
-                      attachment_type: image
+                      content: "Est illo omnis ab velit. Qui eius quia tenetur nobis natus quis deserunt. Alias accusantium sit quia quaerat rem consequatur. Assumenda voluptatem sint asperiores sit qui ea. Excepturi assumenda consequatur et quod ea temporibus voluptatem.\n\nEos aut molestiae quidem rerum voluptatem corrupti dolor eveniet. Enim alias quis voluptas quae quos molestias consectetur voluptas. Sunt rerum enim voluptatem doloribus velit quae. Est maiores provident enim est praesentium accusantium.\n\nAccusamus est ipsum ea rem quia. Et eveniet alias possimus quis eum earum dolores sint. Soluta nesciunt unde maiores magnam cum officia. Suscipit nemo saepe voluptas et."
+                      attachment: qui
+                      attachment_type: file
                       likes: 1
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
                     -
-                      id: 11
-                      content: "Itaque voluptate tempora voluptas doloremque nihil. Repellat expedita sunt voluptas iste. Quia repellat sit earum vel incidunt et.\n\nAut at qui at aperiam eum ipsum doloribus. Minus officiis rerum omnis minus quis non. Omnis doloremque neque quo non. Deserunt iure occaecati totam omnis molestiae. Et fugiat pariatur nobis adipisci voluptatem.\n\nHarum iste labore quae expedita. Aut aliquid enim praesentium voluptas. Rem sint quo consequuntur repellendus debitis id. Architecto eum adipisci ut reiciendis ad praesentium."
-                      attachment: voluptatibus
-                      attachment_type: image
-                      likes: 0
-                      liked_by_me: false
-                      saves: 1
-                      saved_by_me: false
-                    -
-                      id: 12
-                      content: "Eligendi impedit ut placeat qui magni qui libero. Dignissimos quia facilis fuga est veritatis ipsa quia. Quo ut tempore neque eos.\n\nAt aut tempora dicta voluptates. Sit quis praesentium vero aut eveniet. Soluta a sint quo aut possimus.\n\nAut ipsam accusantium nobis quam animi voluptas. Necessitatibus consequuntur enim laudantium. Quos eveniet doloribus quidem dolorum sed. Aliquid est sed maxime saepe repellat harum quam odio."
-                      attachment: et
-                      attachment_type: image
-                      likes: 0
-                      liked_by_me: false
-                      saves: 1
-                      saved_by_me: false
-                    -
                       id: 14
-                      content: "Autem non corrupti asperiores esse autem corporis. Illum quisquam nihil laboriosam quia mollitia molestias aliquid fuga. Vel laborum enim modi optio minima et sunt.\n\nUnde dolores qui in laborum dolores omnis. Minus dolor consequatur accusantium qui ea. Et maiores ut aut quisquam alias. Hic eaque ut eius veniam sed.\n\nEnim consequuntur illo beatae quis explicabo quos aut. Alias et fugiat veritatis vitae."
-                      attachment: id
-                      attachment_type: file
+                      content: "Sint quibusdam sed ratione et. Nulla voluptas qui adipisci magni. Blanditiis quae asperiores est.\n\nDolorum labore ipsum quibusdam ex similique. Reprehenderit provident modi et sed dicta eveniet. Quos neque saepe ipsum et voluptas et. Quam dolorem quam consequuntur veritatis.\n\nRepudiandae aut illum iure accusamus debitis omnis velit. Omnis dolores ipsum aliquid labore. Ipsum quo aliquid provident inventore. Eius impedit voluptatem dolores accusamus repudiandae illo sed."
+                      attachment: sequi
+                      attachment_type: image
                       likes: 0
                       liked_by_me: false
                       saves: 1
                       saved_by_me: false
                     -
                       id: 15
-                      content: "A voluptatem facere laborum dolor incidunt eligendi dolorem. Voluptatem repudiandae et est saepe dolore aut. Nostrum voluptatem sed earum.\n\nDeleniti dolorem sed nesciunt cupiditate molestiae. Repudiandae soluta autem maiores aut sed voluptas et voluptatum. Ut in eligendi ducimus est quod. Eum ex vitae quam.\n\nId vel nesciunt odit qui. Amet eum earum quod optio natus sint. Numquam possimus aut similique corporis ea ea. Alias ea dolorum nihil molestiae dolorem."
-                      attachment: assumenda
-                      attachment_type: file
+                      content: "Repellendus non dolore pariatur. Qui qui ut nulla. Earum dolor aut a dolorum. Rem sit dolor enim et incidunt ut.\n\nIpsum est doloribus architecto odit id dolores. Iusto deleniti perferendis est nihil necessitatibus. Et nihil nobis veritatis optio voluptatibus beatae cum. Ut in id aut.\n\nEt sed totam illo velit tempore occaecati illum. Veniam voluptate et sint eaque. Eaque repellendus et quaerat autem ea rerum veritatis. Modi officiis eaque in magnam."
+                      attachment: pariatur
+                      attachment_type: image
                       likes: 0
                       liked_by_me: false
                       saves: 1
@@ -1529,8 +508,8 @@ paths:
                     example:
                       -
                         id: 1
-                        content: "Ipsum dolores laudantium tempora aliquid consectetur minus voluptatibus. Voluptatem suscipit sit impedit eos accusamus consectetur sit maiores. Omnis sit quidem quia aperiam voluptatem. Placeat velit molestiae dolor quo eius.\n\nConsequatur quia quis qui iusto. Labore quas voluptate esse. Ducimus maxime ad in voluptates natus.\n\nPlaceat iusto omnis ut eos nisi est. Et praesentium ipsa sunt similique facilis totam minus. Pariatur vel animi et aperiam. Et velit quo nisi."
-                        attachment: est
+                        content: "Aliquid ratione magnam fugit. Cumque voluptas facilis quis accusantium nemo. Dolorem consequatur itaque fugiat temporibus.\n\nExercitationem ut repellat nihil rerum. Perferendis necessitatibus et dolore ab perferendis magnam laborum. Non necessitatibus voluptatem tempora fugiat temporibus dolor nesciunt.\n\nNihil quo libero at harum nam. Aut ab id occaecati est assumenda. Ducimus ad sed sit fuga nemo explicabo asperiores et. Consequatur consequuntur cum rerum id aut aut dicta. Nulla unde exercitationem eveniet."
+                        attachment: commodi
                         attachment_type: file
                         likes: 0
                         liked_by_me: false
@@ -1538,99 +517,54 @@ paths:
                         saved_by_me: false
                       -
                         id: 2
-                        content: "Porro eius quia ex consequatur architecto voluptas porro. Non et consequatur at dicta necessitatibus eligendi. Ipsum assumenda tempore fugiat ipsam.\n\nVel sed quis sint nesciunt velit. Repellendus laborum quas autem debitis occaecati saepe eos. Doloremque aut eum dolorem consequatur. Sint quod modi rerum laborum ipsam autem.\n\nAccusamus sequi quis hic sequi qui dolores laboriosam. Quis quasi qui excepturi aperiam voluptas earum occaecati. Non totam ut enim officia quidem nisi."
-                        attachment: sed
+                        content: "Et rerum est iure amet dicta. Sed earum esse est hic quibusdam quo. Voluptatem sit qui dolores quisquam assumenda. Quam sit dicta omnis.\n\nIllo aperiam accusamus at fugiat voluptatibus. Qui laborum quo quasi nostrum distinctio id. Quo impedit quidem consequatur praesentium. Non explicabo veniam veritatis quas omnis.\n\nEx in similique est doloremque non ea nulla voluptas. Incidunt enim et iusto accusantium maiores ipsum. Dolor cupiditate est provident quos."
+                        attachment: vero
                         attachment_type: image
                         likes: 0
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
                       -
-                        id: 3
-                        content: "Laborum quia in minima veritatis nulla. Officia voluptas molestiae sint voluptas. Dicta qui quasi nobis. Nesciunt suscipit assumenda illum.\n\nAspernatur ab non qui magnam alias voluptatem unde sint. Magnam neque dicta ut. Velit fugit assumenda beatae. Quo voluptatem tenetur vitae placeat.\n\nNumquam et reiciendis placeat aspernatur vero aut. Quia dolorum odio voluptatibus. At suscipit reprehenderit laboriosam. Est asperiores mollitia quis atque id beatae qui rerum."
-                        attachment: distinctio
-                        attachment_type: image
+                        id: 5
+                        content: "Fuga nostrum molestiae labore. Sint ut aut autem rerum et quis consectetur. Sunt eos officiis amet atque ut. In repellendus ex ullam ipsam et.\n\nLaudantium officiis eos recusandae illo quia provident. Cupiditate deserunt atque sed. Et consequatur quasi vitae quibusdam ut quis. Ullam inventore id non asperiores dignissimos nisi dolores.\n\nConsectetur consequatur voluptatem quia aut voluptate ut sint. Sint voluptatum autem culpa natus iste corrupti explicabo. Et porro temporibus voluptatem sint."
+                        attachment: aut
+                        attachment_type: file
                         likes: 0
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
                       -
                         id: 6
-                        content: "Qui ut aut voluptates voluptatum suscipit et sed. Facere a libero quia voluptas qui omnis quia. Labore rem rerum ea velit. Inventore consequatur voluptas nesciunt.\n\nUllam eum et corporis et adipisci similique voluptas qui. Incidunt aliquid libero perspiciatis voluptatem est porro dolores. Maiores praesentium voluptatem quia fuga et alias sed. Reiciendis excepturi minima nostrum.\n\nFacere dolorem quia consequuntur sequi. Ab et aut consequatur vel aspernatur. Necessitatibus voluptatem ipsum et ut at enim."
-                        attachment: amet
-                        attachment_type: image
-                        likes: 1
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                      -
-                        id: 7
-                        content: "Aliquam quibusdam voluptatem ut deserunt iure quod ut. Dolorem rerum rerum reprehenderit fugit voluptate et. Et dignissimos fugiat mollitia.\n\nItaque optio quam eveniet. Ea illum commodi officiis et et sint et explicabo.\n\nQuibusdam sit maxime corporis adipisci. Nihil quae quo labore consequatur veniam. Enim sunt quasi veniam voluptates culpa eligendi est."
-                        attachment: vel
-                        attachment_type: image
-                        likes: 1
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                      -
-                        id: 8
-                        content: "Mollitia ut eos natus cupiditate eum ad quam. Vel laudantium doloremque qui vel vel impedit aspernatur ullam. Officiis possimus voluptatem accusantium voluptatem repellat culpa libero. Officia suscipit cupiditate sit autem ullam. Vel sed adipisci non eum ea non.\n\nExcepturi facere sunt minus eum animi temporibus impedit impedit. Earum aut autem impedit consequatur dolorem aut cupiditate. Qui sint nam ut quia qui sed. Sint est natus aut voluptas esse repellat molestiae.\n\nVelit rerum cumque quisquam sed. Ea reprehenderit amet est suscipit omnis."
-                        attachment: consequatur
-                        attachment_type: image
-                        likes: 1
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                      -
-                        id: 9
-                        content: "Labore eius ea soluta aut aliquam et et molestias. Est esse dolor molestiae cumque adipisci possimus repudiandae. Ea dolorem laborum delectus optio. Voluptates in et a in fugit sint.\n\nNatus delectus quis eum quia aut voluptatem quis. Illum consequatur totam nisi pariatur doloribus consectetur quia. Et dolorem labore quas rerum. Et officia qui quos quasi eaque.\n\nRecusandae et autem quo facere. Incidunt et tenetur ratione quia soluta molestiae. Ea rerum magni consectetur ullam."
-                        attachment: quia
-                        attachment_type: image
+                        content: "Sint quae ducimus facere impedit quo. Repellat itaque quos mollitia iure perspiciatis qui mollitia. Quam aspernatur quasi cumque libero deserunt ipsam qui.\n\nVel qui vel totam nemo. Eos quas aut soluta hic veritatis. Est ullam magni dolor modi repellat voluptatem repellat. Dolores nesciunt ipsum tenetur. A ut ad sint ut dignissimos dolores.\n\nQuibusdam ab reiciendis nemo perspiciatis perferendis ad. Ex aut dolor maxime reiciendis quis. Natus qui facere repellendus non sequi ipsam sit voluptatem. Aliquam neque commodi accusamus voluptate provident quo."
+                        attachment: ab
+                        attachment_type: file
                         likes: 1
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
                       -
                         id: 10
-                        content: "Ut officiis nihil pariatur aut repudiandae aut. Reiciendis non accusantium fugiat enim et quis ipsa. Similique commodi quia fuga eum. Qui veritatis quo quae deleniti.\n\nSaepe et vel doloribus consequatur atque illo. Error non quia dolorum. Quo consequatur nisi qui mollitia.\n\nNihil est velit corrupti similique id accusantium veritatis quasi. Voluptatum autem quo ipsum occaecati. Sed sint voluptatum ea modi quasi."
-                        attachment: iste
-                        attachment_type: image
+                        content: "Est illo omnis ab velit. Qui eius quia tenetur nobis natus quis deserunt. Alias accusantium sit quia quaerat rem consequatur. Assumenda voluptatem sint asperiores sit qui ea. Excepturi assumenda consequatur et quod ea temporibus voluptatem.\n\nEos aut molestiae quidem rerum voluptatem corrupti dolor eveniet. Enim alias quis voluptas quae quos molestias consectetur voluptas. Sunt rerum enim voluptatem doloribus velit quae. Est maiores provident enim est praesentium accusantium.\n\nAccusamus est ipsum ea rem quia. Et eveniet alias possimus quis eum earum dolores sint. Soluta nesciunt unde maiores magnam cum officia. Suscipit nemo saepe voluptas et."
+                        attachment: qui
+                        attachment_type: file
                         likes: 1
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
                       -
-                        id: 11
-                        content: "Itaque voluptate tempora voluptas doloremque nihil. Repellat expedita sunt voluptas iste. Quia repellat sit earum vel incidunt et.\n\nAut at qui at aperiam eum ipsum doloribus. Minus officiis rerum omnis minus quis non. Omnis doloremque neque quo non. Deserunt iure occaecati totam omnis molestiae. Et fugiat pariatur nobis adipisci voluptatem.\n\nHarum iste labore quae expedita. Aut aliquid enim praesentium voluptas. Rem sint quo consequuntur repellendus debitis id. Architecto eum adipisci ut reiciendis ad praesentium."
-                        attachment: voluptatibus
-                        attachment_type: image
-                        likes: 0
-                        liked_by_me: false
-                        saves: 1
-                        saved_by_me: false
-                      -
-                        id: 12
-                        content: "Eligendi impedit ut placeat qui magni qui libero. Dignissimos quia facilis fuga est veritatis ipsa quia. Quo ut tempore neque eos.\n\nAt aut tempora dicta voluptates. Sit quis praesentium vero aut eveniet. Soluta a sint quo aut possimus.\n\nAut ipsam accusantium nobis quam animi voluptas. Necessitatibus consequuntur enim laudantium. Quos eveniet doloribus quidem dolorum sed. Aliquid est sed maxime saepe repellat harum quam odio."
-                        attachment: et
-                        attachment_type: image
-                        likes: 0
-                        liked_by_me: false
-                        saves: 1
-                        saved_by_me: false
-                      -
                         id: 14
-                        content: "Autem non corrupti asperiores esse autem corporis. Illum quisquam nihil laboriosam quia mollitia molestias aliquid fuga. Vel laborum enim modi optio minima et sunt.\n\nUnde dolores qui in laborum dolores omnis. Minus dolor consequatur accusantium qui ea. Et maiores ut aut quisquam alias. Hic eaque ut eius veniam sed.\n\nEnim consequuntur illo beatae quis explicabo quos aut. Alias et fugiat veritatis vitae."
-                        attachment: id
-                        attachment_type: file
+                        content: "Sint quibusdam sed ratione et. Nulla voluptas qui adipisci magni. Blanditiis quae asperiores est.\n\nDolorum labore ipsum quibusdam ex similique. Reprehenderit provident modi et sed dicta eveniet. Quos neque saepe ipsum et voluptas et. Quam dolorem quam consequuntur veritatis.\n\nRepudiandae aut illum iure accusamus debitis omnis velit. Omnis dolores ipsum aliquid labore. Ipsum quo aliquid provident inventore. Eius impedit voluptatem dolores accusamus repudiandae illo sed."
+                        attachment: sequi
+                        attachment_type: image
                         likes: 0
                         liked_by_me: false
                         saves: 1
                         saved_by_me: false
                       -
                         id: 15
-                        content: "A voluptatem facere laborum dolor incidunt eligendi dolorem. Voluptatem repudiandae et est saepe dolore aut. Nostrum voluptatem sed earum.\n\nDeleniti dolorem sed nesciunt cupiditate molestiae. Repudiandae soluta autem maiores aut sed voluptas et voluptatum. Ut in eligendi ducimus est quod. Eum ex vitae quam.\n\nId vel nesciunt odit qui. Amet eum earum quod optio natus sint. Numquam possimus aut similique corporis ea ea. Alias ea dolorum nihil molestiae dolorem."
-                        attachment: assumenda
-                        attachment_type: file
+                        content: "Repellendus non dolore pariatur. Qui qui ut nulla. Earum dolor aut a dolorum. Rem sit dolor enim et incidunt ut.\n\nIpsum est doloribus architecto odit id dolores. Iusto deleniti perferendis est nihil necessitatibus. Et nihil nobis veritatis optio voluptatibus beatae cum. Ut in id aut.\n\nEt sed totam illo velit tempore occaecati illum. Veniam voluptate et sint eaque. Eaque repellendus et quaerat autem ea rerum veritatis. Modi officiis eaque in magnam."
+                        attachment: pariatur
+                        attachment_type: image
                         likes: 0
                         liked_by_me: false
                         saves: 1
@@ -1643,10 +577,10 @@ paths:
                           example: 1
                         content:
                           type: string
-                          example: "Ipsum dolores laudantium tempora aliquid consectetur minus voluptatibus. Voluptatem suscipit sit impedit eos accusamus consectetur sit maiores. Omnis sit quidem quia aperiam voluptatem. Placeat velit molestiae dolor quo eius.\n\nConsequatur quia quis qui iusto. Labore quas voluptate esse. Ducimus maxime ad in voluptates natus.\n\nPlaceat iusto omnis ut eos nisi est. Et praesentium ipsa sunt similique facilis totam minus. Pariatur vel animi et aperiam. Et velit quo nisi."
+                          example: "Aliquid ratione magnam fugit. Cumque voluptas facilis quis accusantium nemo. Dolorem consequatur itaque fugiat temporibus.\n\nExercitationem ut repellat nihil rerum. Perferendis necessitatibus et dolore ab perferendis magnam laborum. Non necessitatibus voluptatem tempora fugiat temporibus dolor nesciunt.\n\nNihil quo libero at harum nam. Aut ab id occaecati est assumenda. Ducimus ad sed sit fuga nemo explicabo asperiores et. Consequatur consequuntur cum rerum id aut aut dicta. Nulla unde exercitationem eveniet."
                         attachment:
                           type: string
-                          example: est
+                          example: commodi
                         attachment_type:
                           type: string
                           example: file
@@ -1674,7 +608,7 @@ paths:
                 type:
                   type: string
                   description: 'Must be one of <code>public</code>, <code>department</code>, or <code>course</code>.'
-                  example: department
+                  example: public
               required:
                 - type
     post:

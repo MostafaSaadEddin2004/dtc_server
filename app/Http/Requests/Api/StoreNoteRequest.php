@@ -25,7 +25,7 @@ class StoreNoteRequest extends FormRequest
             'title' => ['required', 'string'],
             'description' => ['required', 'string'],
             'category_name' => ['nullable', 'unique:note_categories,name'],
-            'note_category_id' => ['nullable', 'exists:note_categories,id'],
+            'note_category_id' => ['nullable', 'integer', 'exists:note_categories,id'],
         ];
     }
 }

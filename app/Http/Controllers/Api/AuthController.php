@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
 {
     // login in some role 
+    /**
+     * @bodyParam email string The email of the user. Example: my@example.com
+     * @bodyParam password string The password of the user. Example: password
+     * @bodyParam role string The role of the user. Example: student_browser
+     */
     public function login(LoginRequest $request)
     {
         $role = $request->role;

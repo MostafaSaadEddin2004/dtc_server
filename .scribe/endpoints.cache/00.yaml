@@ -26,34 +26,34 @@ endpoints:
     bodyParameters:
       email:
         name: email
-        description: 'يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية.'
-        required: true
-        example: kwyman@example.org
+        description: 'The email of the user.'
+        required: false
+        example: my@example.com
         type: string
         custom: []
       password:
         name: password
-        description: 'يجب أن يكون طول نص حقل value على الأقل 8 حروفٍ/حرفًا.'
-        required: true
-        example: '!gJye5'
+        description: 'The password of the user.'
+        required: false
+        example: password
         type: string
         custom: []
       role:
         name: role
-        description: 'Must be one of <code>student</code>, <code>teacher</code>, <code>student_browser</code>, or <code>teacher_browser</code>.'
-        required: true
+        description: 'The role of the user.'
+        required: false
         example: student_browser
         type: string
         custom: []
     cleanBodyParameters:
-      email: kwyman@example.org
-      password: '!gJye5'
+      email: my@example.com
+      password: password
       role: student_browser
     fileParameters: []
     responses:
       -
-        status: 422
-        content: '{"message":"\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0623\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f. (and 1 more error)","errors":{"email":["\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0623\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"password":["\u064a\u062c\u0628 \u0623\u0646 \u064a\u0643\u0648\u0646 \u0637\u0648\u0644 \u0646\u0635 \u062d\u0642\u0644 \u0643\u0644\u0645\u0629 \u0627\u0644\u0633\u0631 \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644 8 \u062d\u0631\u0648\u0641\u064d\/\u062d\u0631\u0641\u064b\u0627."]}}'
+        status: 200
+        content: '{"token":"2|9HBnhjIgOOX8k16BWwmwHGSHxqQkPz9uzIMkFSoi"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -93,48 +93,48 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: laborum
+        example: blanditiis
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: omnis
+        example: ipsa
         type: string
         custom: []
       email:
         name: email
         description: 'يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية.'
         required: true
-        example: luisa13@example.com
+        example: oswaniawski@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: '!sB,~"1mdi'
+        example: rxnvaceclkAKB
         type: string
         custom: []
       role:
         name: role
         description: 'Must be one of <code>student</code>, <code>teacher</code>, <code>student_browser</code>, or <code>teacher_browser</code>.'
         required: true
-        example: student
+        example: teacher
         type: string
         custom: []
     cleanBodyParameters:
-      name: laborum
-      phone: omnis
-      email: luisa13@example.com
-      password: '!sB,~"1mdi'
-      role: student
+      name: blanditiis
+      phone: ipsa
+      email: oswaniawski@example.org
+      password: rxnvaceclkAKB
+      role: teacher
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"2|PPFUpnColYnzDBs21CwrsmxGiz63UDqqq0bu3ZLE"}'
+        content: '{"token":"2|GDd5876wKKBDpzE20FKuNVcEmbsTcXpYKDHwtYVy"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

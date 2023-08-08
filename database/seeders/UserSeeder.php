@@ -23,5 +23,10 @@ class UserSeeder extends Seeder
 
         // Teachers
         User::factory(5)->create(['role_id' => 5]);
+
+        User::factory()->create([
+            'role_id' => 2,
+            'email' => 'my@example.com',
+        ]);
     }
 }

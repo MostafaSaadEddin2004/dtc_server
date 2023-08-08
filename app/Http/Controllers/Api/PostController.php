@@ -18,6 +18,8 @@ class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
+     * 
+     * @queryParam type string the type of the post (public, department ,course).
      */
     public function index(GetPostRequest $request)
     {

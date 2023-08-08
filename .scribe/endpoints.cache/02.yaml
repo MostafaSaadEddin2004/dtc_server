@@ -22,28 +22,36 @@ endpoints:
       Accept: application/json
     urlParameters: []
     cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
+    queryParameters:
+      type:
+        name: type
+        description: 'the type of the post (public, department ,course).'
+        required: false
+        example: qui
+        type: string
+        custom: []
+    cleanQueryParameters:
+      type: qui
     bodyParameters:
       type:
         name: type
         description: 'Must be one of <code>public</code>, <code>department</code>, or <code>course</code>.'
         required: true
-        example: department
+        example: public
         type: string
         custom: []
     cleanBodyParameters:
-      type: department
+      type: public
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":[{"id":1,"content":"Ipsum dolores laudantium tempora aliquid consectetur minus voluptatibus. Voluptatem suscipit sit impedit eos accusamus consectetur sit maiores. Omnis sit quidem quia aperiam voluptatem. Placeat velit molestiae dolor quo eius.\n\nConsequatur quia quis qui iusto. Labore quas voluptate esse. Ducimus maxime ad in voluptates natus.\n\nPlaceat iusto omnis ut eos nisi est. Et praesentium ipsa sunt similique facilis totam minus. Pariatur vel animi et aperiam. Et velit quo nisi.","attachment":"est","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":2,"content":"Porro eius quia ex consequatur architecto voluptas porro. Non et consequatur at dicta necessitatibus eligendi. Ipsum assumenda tempore fugiat ipsam.\n\nVel sed quis sint nesciunt velit. Repellendus laborum quas autem debitis occaecati saepe eos. Doloremque aut eum dolorem consequatur. Sint quod modi rerum laborum ipsam autem.\n\nAccusamus sequi quis hic sequi qui dolores laboriosam. Quis quasi qui excepturi aperiam voluptas earum occaecati. Non totam ut enim officia quidem nisi.","attachment":"sed","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":3,"content":"Laborum quia in minima veritatis nulla. Officia voluptas molestiae sint voluptas. Dicta qui quasi nobis. Nesciunt suscipit assumenda illum.\n\nAspernatur ab non qui magnam alias voluptatem unde sint. Magnam neque dicta ut. Velit fugit assumenda beatae. Quo voluptatem tenetur vitae placeat.\n\nNumquam et reiciendis placeat aspernatur vero aut. Quia dolorum odio voluptatibus. At suscipit reprehenderit laboriosam. Est asperiores mollitia quis atque id beatae qui rerum.","attachment":"distinctio","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":6,"content":"Qui ut aut voluptates voluptatum suscipit et sed. Facere a libero quia voluptas qui omnis quia. Labore rem rerum ea velit. Inventore consequatur voluptas nesciunt.\n\nUllam eum et corporis et adipisci similique voluptas qui. Incidunt aliquid libero perspiciatis voluptatem est porro dolores. Maiores praesentium voluptatem quia fuga et alias sed. Reiciendis excepturi minima nostrum.\n\nFacere dolorem quia consequuntur sequi. Ab et aut consequatur vel aspernatur. Necessitatibus voluptatem ipsum et ut at enim.","attachment":"amet","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":7,"content":"Aliquam quibusdam voluptatem ut deserunt iure quod ut. Dolorem rerum rerum reprehenderit fugit voluptate et. Et dignissimos fugiat mollitia.\n\nItaque optio quam eveniet. Ea illum commodi officiis et et sint et explicabo.\n\nQuibusdam sit maxime corporis adipisci. Nihil quae quo labore consequatur veniam. Enim sunt quasi veniam voluptates culpa eligendi est.","attachment":"vel","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":8,"content":"Mollitia ut eos natus cupiditate eum ad quam. Vel laudantium doloremque qui vel vel impedit aspernatur ullam. Officiis possimus voluptatem accusantium voluptatem repellat culpa libero. Officia suscipit cupiditate sit autem ullam. Vel sed adipisci non eum ea non.\n\nExcepturi facere sunt minus eum animi temporibus impedit impedit. Earum aut autem impedit consequatur dolorem aut cupiditate. Qui sint nam ut quia qui sed. Sint est natus aut voluptas esse repellat molestiae.\n\nVelit rerum cumque quisquam sed. Ea reprehenderit amet est suscipit omnis.","attachment":"consequatur","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":9,"content":"Labore eius ea soluta aut aliquam et et molestias. Est esse dolor molestiae cumque adipisci possimus repudiandae. Ea dolorem laborum delectus optio. Voluptates in et a in fugit sint.\n\nNatus delectus quis eum quia aut voluptatem quis. Illum consequatur totam nisi pariatur doloribus consectetur quia. Et dolorem labore quas rerum. Et officia qui quos quasi eaque.\n\nRecusandae et autem quo facere. Incidunt et tenetur ratione quia soluta molestiae. Ea rerum magni consectetur ullam.","attachment":"quia","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":10,"content":"Ut officiis nihil pariatur aut repudiandae aut. Reiciendis non accusantium fugiat enim et quis ipsa. Similique commodi quia fuga eum. Qui veritatis quo quae deleniti.\n\nSaepe et vel doloribus consequatur atque illo. Error non quia dolorum. Quo consequatur nisi qui mollitia.\n\nNihil est velit corrupti similique id accusantium veritatis quasi. Voluptatum autem quo ipsum occaecati. Sed sint voluptatum ea modi quasi.","attachment":"iste","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":11,"content":"Itaque voluptate tempora voluptas doloremque nihil. Repellat expedita sunt voluptas iste. Quia repellat sit earum vel incidunt et.\n\nAut at qui at aperiam eum ipsum doloribus. Minus officiis rerum omnis minus quis non. Omnis doloremque neque quo non. Deserunt iure occaecati totam omnis molestiae. Et fugiat pariatur nobis adipisci voluptatem.\n\nHarum iste labore quae expedita. Aut aliquid enim praesentium voluptas. Rem sint quo consequuntur repellendus debitis id. Architecto eum adipisci ut reiciendis ad praesentium.","attachment":"voluptatibus","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false},{"id":12,"content":"Eligendi impedit ut placeat qui magni qui libero. Dignissimos quia facilis fuga est veritatis ipsa quia. Quo ut tempore neque eos.\n\nAt aut tempora dicta voluptates. Sit quis praesentium vero aut eveniet. Soluta a sint quo aut possimus.\n\nAut ipsam accusantium nobis quam animi voluptas. Necessitatibus consequuntur enim laudantium. Quos eveniet doloribus quidem dolorum sed. Aliquid est sed maxime saepe repellat harum quam odio.","attachment":"et","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false},{"id":14,"content":"Autem non corrupti asperiores esse autem corporis. Illum quisquam nihil laboriosam quia mollitia molestias aliquid fuga. Vel laborum enim modi optio minima et sunt.\n\nUnde dolores qui in laborum dolores omnis. Minus dolor consequatur accusantium qui ea. Et maiores ut aut quisquam alias. Hic eaque ut eius veniam sed.\n\nEnim consequuntur illo beatae quis explicabo quos aut. Alias et fugiat veritatis vitae.","attachment":"id","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false},{"id":15,"content":"A voluptatem facere laborum dolor incidunt eligendi dolorem. Voluptatem repudiandae et est saepe dolore aut. Nostrum voluptatem sed earum.\n\nDeleniti dolorem sed nesciunt cupiditate molestiae. Repudiandae soluta autem maiores aut sed voluptas et voluptatum. Ut in eligendi ducimus est quod. Eum ex vitae quam.\n\nId vel nesciunt odit qui. Amet eum earum quod optio natus sint. Numquam possimus aut similique corporis ea ea. Alias ea dolorum nihil molestiae dolorem.","attachment":"assumenda","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false}]}'
+        content: '{"data":[{"id":1,"content":"Aliquid ratione magnam fugit. Cumque voluptas facilis quis accusantium nemo. Dolorem consequatur itaque fugiat temporibus.\n\nExercitationem ut repellat nihil rerum. Perferendis necessitatibus et dolore ab perferendis magnam laborum. Non necessitatibus voluptatem tempora fugiat temporibus dolor nesciunt.\n\nNihil quo libero at harum nam. Aut ab id occaecati est assumenda. Ducimus ad sed sit fuga nemo explicabo asperiores et. Consequatur consequuntur cum rerum id aut aut dicta. Nulla unde exercitationem eveniet.","attachment":"commodi","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":2,"content":"Et rerum est iure amet dicta. Sed earum esse est hic quibusdam quo. Voluptatem sit qui dolores quisquam assumenda. Quam sit dicta omnis.\n\nIllo aperiam accusamus at fugiat voluptatibus. Qui laborum quo quasi nostrum distinctio id. Quo impedit quidem consequatur praesentium. Non explicabo veniam veritatis quas omnis.\n\nEx in similique est doloremque non ea nulla voluptas. Incidunt enim et iusto accusantium maiores ipsum. Dolor cupiditate est provident quos.","attachment":"vero","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":5,"content":"Fuga nostrum molestiae labore. Sint ut aut autem rerum et quis consectetur. Sunt eos officiis amet atque ut. In repellendus ex ullam ipsam et.\n\nLaudantium officiis eos recusandae illo quia provident. Cupiditate deserunt atque sed. Et consequatur quasi vitae quibusdam ut quis. Ullam inventore id non asperiores dignissimos nisi dolores.\n\nConsectetur consequatur voluptatem quia aut voluptate ut sint. Sint voluptatum autem culpa natus iste corrupti explicabo. Et porro temporibus voluptatem sint.","attachment":"aut","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":6,"content":"Sint quae ducimus facere impedit quo. Repellat itaque quos mollitia iure perspiciatis qui mollitia. Quam aspernatur quasi cumque libero deserunt ipsam qui.\n\nVel qui vel totam nemo. Eos quas aut soluta hic veritatis. Est ullam magni dolor modi repellat voluptatem repellat. Dolores nesciunt ipsum tenetur. A ut ad sint ut dignissimos dolores.\n\nQuibusdam ab reiciendis nemo perspiciatis perferendis ad. Ex aut dolor maxime reiciendis quis. Natus qui facere repellendus non sequi ipsam sit voluptatem. Aliquam neque commodi accusamus voluptate provident quo.","attachment":"ab","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":10,"content":"Est illo omnis ab velit. Qui eius quia tenetur nobis natus quis deserunt. Alias accusantium sit quia quaerat rem consequatur. Assumenda voluptatem sint asperiores sit qui ea. Excepturi assumenda consequatur et quod ea temporibus voluptatem.\n\nEos aut molestiae quidem rerum voluptatem corrupti dolor eveniet. Enim alias quis voluptas quae quos molestias consectetur voluptas. Sunt rerum enim voluptatem doloribus velit quae. Est maiores provident enim est praesentium accusantium.\n\nAccusamus est ipsum ea rem quia. Et eveniet alias possimus quis eum earum dolores sint. Soluta nesciunt unde maiores magnam cum officia. Suscipit nemo saepe voluptas et.","attachment":"qui","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false},{"id":14,"content":"Sint quibusdam sed ratione et. Nulla voluptas qui adipisci magni. Blanditiis quae asperiores est.\n\nDolorum labore ipsum quibusdam ex similique. Reprehenderit provident modi et sed dicta eveniet. Quos neque saepe ipsum et voluptas et. Quam dolorem quam consequuntur veritatis.\n\nRepudiandae aut illum iure accusamus debitis omnis velit. Omnis dolores ipsum aliquid labore. Ipsum quo aliquid provident inventore. Eius impedit voluptatem dolores accusamus repudiandae illo sed.","attachment":"sequi","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false},{"id":15,"content":"Repellendus non dolore pariatur. Qui qui ut nulla. Earum dolor aut a dolorum. Rem sit dolor enim et incidunt ut.\n\nIpsum est doloribus architecto odit id dolores. Iusto deleniti perferendis est nihil necessitatibus. Et nihil nobis veritatis optio voluptatibus beatae cum. Ut in id aut.\n\nEt sed totam illo velit tempore occaecati illum. Veniam voluptate et sint eaque. Eaque repellendus et quaerat autem ea rerum veritatis. Modi officiis eaque in magnam.","attachment":"pariatur","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '41'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -51,7 +59,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|R430BzpBwJ84t05QxSMdbYuTVJkHlkJ7Lg5cH16T'
+      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
     controller: null
     method: null
     route: null
@@ -88,7 +96,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '40'
+          x-ratelimit-remaining: '52'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -96,7 +104,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|R430BzpBwJ84t05QxSMdbYuTVJkHlkJ7Lg5cH16T'
+      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
     controller: null
     method: null
     route: null
@@ -142,7 +150,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '39'
+          x-ratelimit-remaining: '51'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -150,7 +158,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|R430BzpBwJ84t05QxSMdbYuTVJkHlkJ7Lg5cH16T'
+      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
     controller: null
     method: null
     route: null
@@ -195,7 +203,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '38'
+          x-ratelimit-remaining: '50'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -203,7 +211,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|R430BzpBwJ84t05QxSMdbYuTVJkHlkJ7Lg5cH16T'
+      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
     controller: null
     method: null
     route: null
@@ -247,7 +255,7 @@ endpoints:
         headers:
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '37'
+          x-ratelimit-remaining: '49'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -255,7 +263,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|R430BzpBwJ84t05QxSMdbYuTVJkHlkJ7Lg5cH16T'
+      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
     controller: null
     method: null
     route: null
@@ -299,7 +307,7 @@ endpoints:
         headers:
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '36'
+          x-ratelimit-remaining: '48'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -307,7 +315,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|R430BzpBwJ84t05QxSMdbYuTVJkHlkJ7Lg5cH16T'
+      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
     controller: null
     method: null
     route: null
