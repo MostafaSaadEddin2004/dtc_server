@@ -9,9 +9,12 @@ trait HasRole
 {
 
     // check if user has role
-    public function hasRole($role)
+    public function hasRole(string|array $roles)
     {
-        return $this->role->name == $role;
+        if (is_array($roles)) {
+            return in_array($this->role->name, $roles);
+        }
+        return $this->role->name == $roles;
     }
 
     /**

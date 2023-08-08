@@ -15,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::controller(AuthController::class)->group(function () {
-    Route::post('auth/{role}', 'login')
-        ->whereIn('role', ['student', 'teacher', 'student_browser', 'teacher_browser']);
-    Route::post('auth/{role}/register', 'register')
-        ->whereIn('role', ['student', 'teacher', 'student_browser', 'teacher_browser']);
+    Route::post('auth', 'login');
+    Route::post('auth/register', 'register');
 });

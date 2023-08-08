@@ -4,7 +4,7 @@ namespace App\Http\Requests\Api;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class LoginRequest extends FormRequest
+class GetPostRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,9 +22,7 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => ['required', 'string', 'exists:users,email', 'email'],
-            'password' => ['required', 'string', 'min:8'],
-            'role' => ['required', 'string', 'in:student,teacher,student_browser,teacher_browser'],
+            'type' => ['required', 'in:public,department,course'],
         ];
     }
 }

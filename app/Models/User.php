@@ -6,6 +6,8 @@ namespace App\Models;
 
 use App\Traits\HasRole;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -48,4 +50,24 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    /**
+     * Get all of the noteCategories for the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function noteCategories(): HasMany
+    {
+        return $this->hasMany(NoteCategory::class);
+    }
+
+    /**
+     * Get all of the notes for the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function notes(): HasManyThrough
+    {
+        return $this->hasManyThrough(Note::class, NoteCategory::class);
+    }
 }

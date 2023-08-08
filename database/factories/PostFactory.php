@@ -24,14 +24,15 @@ class PostFactory extends Factory
      */
     public function definition(): array
     {
+        $attachment_types = ['image', 'file'];
         return [
             'content' => $this->faker->paragraphs(3, true),
             'attachment' => $this->faker->word,
-            'attachment_type' => $this->faker->word,
+            'attachment_type' => $attachment_types[rand(0, 1)],
             'user_id' => User::factory(),
             'department_id' => Department::factory(),
             'course_id' => Course::factory(),
-            'post_type_id' => PostType::factory(),
+            'post_type_id' => rand(1, PostType::count()),
         ];
     }
 }

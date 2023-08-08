@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
 {
     // login in some role 
-    public function login(string $role, LoginRequest $request)
+    public function login(LoginRequest $request)
     {
+        $role = $request->role;
         $user = User::where('email', $request->email)->whereHas('role', fn ($query) => $query->where('name', $role))->first();
         if (!$user || !Hash::check($request->password, $user->password)) {
             return response()->json([
@@ -28,8 +29,9 @@ class AuthController extends Controller
     }
 
     // register a user in some role
-    public function register(string $role, RegisterRequest $request)
+    public function register(RegisterRequest $request)
     {
+        $role = $request->role;
         $role_id = Role::where('name', $role)->first()->id;
         $user = User::create(array_merge($request->validated(), compact('role_id')));
 

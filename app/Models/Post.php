@@ -44,6 +44,11 @@ class Post extends Model
         return $this->hasMany(Like::class);
     }
 
+    public function saves(): HasMany
+    {
+        return $this->hasMany(Save::class);
+    }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
