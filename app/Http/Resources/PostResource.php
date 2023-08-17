@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -23,6 +24,7 @@ class PostResource extends JsonResource
             'liked_by_me' => $this->likes()->where('user_id', auth()->id())->exists(),
             'saves' => $this->saves->count(),
             'saved_by_me' => $this->saves()->where('user_id', auth()->id())->exists(),
+            'created_at' => $this->created_at->since(),
         ];
     }
 }
