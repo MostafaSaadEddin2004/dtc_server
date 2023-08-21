@@ -1,4 +1,4 @@
-name: Endpoints
+name: Authentication
 description: ''
 endpoints:
   -
@@ -6,15 +6,16 @@ endpoints:
       - POST
     uri: api/auth
     metadata:
-      groupName: Endpoints
+      groupName: Authentication
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       custom: []
     headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -51,7 +52,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"2|9HBnhjIgOOX8k16BWwmwHGSHxqQkPz9uzIMkFSoi"}'
+        content: '{"token":"2|umpvMmamd3KcKoUPpPIfzkPJa9aSjkK9VXLoJUVX"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -61,7 +62,10 @@ endpoints:
         description: null
         custom: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
     controller: null
     method: null
     route: null
@@ -71,15 +75,16 @@ endpoints:
       - POST
     uri: api/auth/register
     metadata:
-      groupName: Endpoints
+      groupName: Authentication
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: false
+      authenticated: true
       custom: []
     headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -91,48 +96,48 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: blanditiis
+        example: quis
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: ipsa
+        example: sint
         type: string
         custom: []
       email:
         name: email
         description: 'يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية.'
         required: true
-        example: oswaniawski@example.org
+        example: marques.larson@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: rxnvaceclkAKB
+        example: "['xQdg<v0v+"
         type: string
         custom: []
       role:
         name: role
         description: 'Must be one of <code>student</code>, <code>teacher</code>, <code>student_browser</code>, or <code>teacher_browser</code>.'
         required: true
-        example: teacher
+        example: teacher_browser
         type: string
         custom: []
     cleanBodyParameters:
-      name: blanditiis
-      phone: ipsa
-      email: oswaniawski@example.org
-      password: rxnvaceclkAKB
-      role: teacher
+      name: quis
+      phone: sint
+      email: marques.larson@example.com
+      password: "['xQdg<v0v+"
+      role: teacher_browser
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"2|GDd5876wKKBDpzE20FKuNVcEmbsTcXpYKDHwtYVy"}'
+        content: '{"token":"2|rwTcIXno7YVdJWC4sH7BPmSuxsEq7wUR2rWHSflc"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -142,7 +147,10 @@ endpoints:
         description: null
         custom: []
     responseFields: []
-    auth: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
     controller: null
     method: null
     route: null

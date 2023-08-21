@@ -74,10 +74,10 @@ class User extends Authenticatable
     /**
      * Get all of the courses for the User
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function courses(): HasManyThrough
+    public function courses(): HasMany
     {
-        return $this->hasManyThrough(CourseRegistration::class, Course::class);
+        return $this->hasMany(CourseRegistration::class);
     }
 }

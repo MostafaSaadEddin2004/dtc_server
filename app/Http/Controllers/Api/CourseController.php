@@ -8,6 +8,12 @@ use App\Http\Resources\CourseResource;
 use App\Models\Course;
 use Illuminate\Http\Request;
 
+/**
+ * @group Course
+ * 
+ * @authenticated
+ */
+
 class CourseController extends Controller
 {
     /**
@@ -15,7 +21,7 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $courses = auth()->user()->courses;
+        $courses = auth()->user()->courses()->with('course')->get();
 
         return CourseResource::collection($courses);
     }

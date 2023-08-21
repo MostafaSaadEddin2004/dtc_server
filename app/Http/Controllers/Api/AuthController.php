@@ -9,6 +9,12 @@ use App\Models\Role;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
+/**
+ * @group Authentication
+ * 
+ * @authenticated
+ */
+
 class AuthController extends Controller
 {
     // login in some role 
