@@ -11,13 +11,13 @@ use Illuminate\Support\Facades\Hash;
 
 /**
  * @group Authentication
- * 
+ *
  * @authenticated
  */
 
 class AuthController extends Controller
 {
-    // login in some role 
+    // login in some role
     /**
      * @bodyParam email string The email of the user. Example: my@example.com
      * @bodyParam password string The password of the user. Example: password
@@ -45,7 +45,7 @@ class AuthController extends Controller
         $role = $request->role;
         $role_id = Role::where('name', $role)->first()->id;
         $user = User::create(array_merge($request->validated(), compact('role_id')));
-
+        
         $token = $user->createToken('authToken')->plainTextToken;
         return response()->json([
             'token' => $token,

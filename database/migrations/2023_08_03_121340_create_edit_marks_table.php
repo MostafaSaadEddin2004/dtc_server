@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('mark');
             $table->string('reason');
             $table->string('teacher');
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('user_id')->reference('id')->on('users');
             $table->timestamps();
         });
 

@@ -23,6 +23,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'name',
         'first_name_en',
         'last_name_en',
         'first_name_ar',
@@ -62,6 +63,10 @@ class User extends Authenticatable
     public function noteCategories(): HasMany
     {
         return $this->hasMany(NoteCategory::class);
+    }
+    public function editMarks(): HasMany
+    {
+        return $this->hasMany(EditMark::class,'user_id','id');
     }
 
     /**

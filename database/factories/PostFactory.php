@@ -26,7 +26,7 @@ class PostFactory extends Factory
     {
         $attachment_types = ['image', 'file'];
         return [
-            'content' => $this->faker->paragraphs(3, true),
+            'content' => $this->faker->text,
             'attachment' => $this->faker->word,
             'attachment_type' => $attachment_types[rand(0, 1)],
             'user_id' => User::factory(),

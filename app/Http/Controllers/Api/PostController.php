@@ -4,21 +4,23 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\GetPostRequest;
+use App\Http\Requests\Api\StorePostRequest;
+use App\Http\Requests\Api\UpdatePostRequest;
 use App\Http\Resources\PostResource;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
 /**
  * @group Post
- * 
+ *
  * @authenticated
- * 
+ *
  */
 class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * 
+     *
      * @queryParam type string the type of the post (public, department ,course).
      */
     public function index(GetPostRequest $request)
@@ -37,9 +39,10 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StorePostRequest $request)
     {
-        //
+        $move = Post::create($request->validated());
+        return new PostResource($move);
     }
 
     /**
@@ -73,9 +76,11 @@ class PostController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Post $post)
+    public function update(UpdatePostRequest $request, Post $post)
     {
-        //
+        $post->update($request->validated());
+        $post->refresh();
+        return new postResource($post);
     }
 
     /**
@@ -83,6 +88,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return response()->noContent();
     }
 }
