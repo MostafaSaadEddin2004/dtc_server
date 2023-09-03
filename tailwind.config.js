@@ -1,13 +1,10 @@
-import colors from 'tailwindcss/colors'
-import forms from '@tailwindcss/forms'
-import typography from '@tailwindcss/typography'
+import colors from "tailwindcss/colors";
+import forms from "@tailwindcss/forms";
+import typography from "@tailwindcss/typography";
 
 export default {
-    content: [
-        './resources/**/*.blade.php',
-        './vendor/filament/**/*.blade.php',
-    ],
-    darkMode: 'class',
+    content: ["./resources/**/*.blade.php", "./vendor/filament/**/*.blade.php"],
+    darkMode: "class",
     theme: {
         extend: {
             colors: {
@@ -18,8 +15,5 @@ export default {
             },
         },
     },
-    plugins: [
-        forms,
-        typography,
-    ],
-}
+    plugins: [forms, typography],
+};

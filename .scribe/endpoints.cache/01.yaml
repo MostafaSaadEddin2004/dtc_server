@@ -29,13 +29,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":[{"id":3,"title":"Placeat sit asperiores.","description":"Iure labore dicta rerum consectetur autem veniam qui. Omnis et quia corporis corrupti. Voluptas modi ut dicta autem a vero ut nisi.","category":"Dr. Paul Schroeder"}]}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -43,7 +41,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer kdEcgVh13656bvDZa48efPa'
     controller: null
     method: null
     route: null
@@ -74,15 +72,17 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: eum
+        example: sed
         type: string
+        enumValues: []
         custom: []
       description:
         name: description
         description: ''
         required: true
-        example: 'Hic cumque architecto aut maxime est quod.'
+        example: 'Inventore non ullam reiciendis tenetur qui quo facere.'
         type: string
+        enumValues: []
         custom: []
       category_name:
         name: category_name
@@ -90,28 +90,28 @@ endpoints:
         required: false
         example: null
         type: string
+        enumValues: []
         custom: []
       note_category_id:
         name: note_category_id
         description: ''
         required: false
-        example: 18
+        example: 13
         type: integer
+        enumValues: []
         custom: []
     cleanBodyParameters:
-      title: eum
-      description: 'Hic cumque architecto aut maxime est quod.'
-      note_category_id: 18
+      title: sed
+      description: 'Inventore non ullam reiciendis tenetur qui quo facere.'
+      note_category_id: 13
     fileParameters: []
     responses:
       -
-        status: 422
-        content: '{"message":"note category id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f.","errors":{"note_category_id":["note category id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."]}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -119,7 +119,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer 6E3a4Zca1kfDbPe56d8gVhv'
     controller: null
     method: null
     route: null
@@ -148,6 +148,7 @@ endpoints:
         required: true
         example: 1
         type: integer
+        enumValues: []
         custom: []
     cleanUrlParameters:
       id: 1
@@ -158,13 +159,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":{"id":1,"title":"Maxime quia illo accusamus sit fugit.","description":"Qui aut at nobis velit quas quos eos ipsam. Ullam fugit amet velit ratione nemo. Magnam distinctio explicabo eius veritatis. Est maxime et perspiciatis cumque fuga. Est ipsa corporis eum voluptatem.","category":"Miss Elvie Wolf V"}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -172,7 +171,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer ge5bkVZ4Pfc1vDa8hEa36d6'
     controller: null
     method: null
     route: null
@@ -202,6 +201,7 @@ endpoints:
         required: true
         example: 1
         type: integer
+        enumValues: []
         custom: []
     cleanUrlParameters:
       id: 1
@@ -212,15 +212,17 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: quia
+        example: amet
         type: string
+        enumValues: []
         custom: []
       description:
         name: description
         description: ''
         required: true
-        example: 'Voluptate officia pariatur qui est magnam.'
+        example: 'Quas quia expedita in eaque cumque.'
         type: string
+        enumValues: []
         custom: []
       category_name:
         name: category_name
@@ -228,6 +230,7 @@ endpoints:
         required: false
         example: null
         type: string
+        enumValues: []
         custom: []
       note_category_id:
         name: note_category_id
@@ -235,20 +238,19 @@ endpoints:
         required: false
         example: null
         type: string
+        enumValues: []
         custom: []
     cleanBodyParameters:
-      title: quia
-      description: 'Voluptate officia pariatur qui est magnam.'
+      title: amet
+      description: 'Quas quia expedita in eaque cumque.'
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":{"id":1,"title":"quia","description":"Voluptate officia pariatur qui est magnam.","category":"Miss Elvie Wolf V"}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -256,7 +258,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer aPDVad6Z8hE5evb4kf1g3c6'
     controller: null
     method: null
     route: null
@@ -285,6 +287,7 @@ endpoints:
         required: true
         example: 1
         type: integer
+        enumValues: []
         custom: []
     cleanUrlParameters:
       id: 1
@@ -295,12 +298,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 204
-        content: ''
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '55'
+          content-type: application/json
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -308,7 +310,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer cVhaDE84geZb5a1P3fdk6v6'
     controller: null
     method: null
     route: null
@@ -339,13 +341,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":[{"id":8,"name":"Dr. Paul Schroeder"}]}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -353,7 +353,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer E3165aVZgh46vkbadPe8cDf'
     controller: null
     method: null
     route: null

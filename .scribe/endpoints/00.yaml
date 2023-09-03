@@ -29,6 +29,7 @@ endpoints:
         required: false
         example: my@example.com
         type: string
+        enumValues: []
         custom: []
       password:
         name: password
@@ -36,6 +37,7 @@ endpoints:
         required: false
         example: password
         type: string
+        enumValues: []
         custom: []
       role:
         name: role
@@ -43,6 +45,7 @@ endpoints:
         required: false
         example: student_browser
         type: string
+        enumValues: []
         custom: []
     cleanBodyParameters:
       email: my@example.com
@@ -52,7 +55,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"2|umpvMmamd3KcKoUPpPIfzkPJa9aSjkK9VXLoJUVX"}'
+        content: '{"token":"1|laravel_sanctum_qWfqq6xgHCgYhbAcawjvZObDuGxEpLBtGB2yC7St4b33381d"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -65,7 +68,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer 4DVPk6fbh51gEa386adceZv'
     controller: null
     method: null
     route: null
@@ -92,52 +95,88 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      name:
-        name: name
+      first_name_en:
+        name: first_name_en
         description: ''
         required: true
-        example: quis
+        example: distinctio
         type: string
+        enumValues: []
+        custom: []
+      last_name_en:
+        name: last_name_en
+        description: ''
+        required: true
+        example: sit
+        type: string
+        enumValues: []
+        custom: []
+      first_name_ar:
+        name: first_name_ar
+        description: ''
+        required: true
+        example: aut
+        type: string
+        enumValues: []
+        custom: []
+      last_name_ar:
+        name: last_name_ar
+        description: ''
+        required: true
+        example: vel
+        type: string
+        enumValues: []
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: sint
+        example: voluptates
         type: string
+        enumValues: []
         custom: []
       email:
         name: email
-        description: 'يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية.'
+        description: 'Must be a valid email address.'
         required: true
-        example: marques.larson@example.com
+        example: celia12@example.net
         type: string
+        enumValues: []
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: "['xQdg<v0v+"
+        example: 'ddtNdWBa>Ay5$}bCz@Kh'
         type: string
+        enumValues: []
         custom: []
       role:
         name: role
-        description: 'Must be one of <code>student</code>, <code>teacher</code>, <code>student_browser</code>, or <code>teacher_browser</code>.'
+        description: ''
         required: true
-        example: teacher_browser
+        example: student_browser
         type: string
+        enumValues:
+          - student
+          - teacher
+          - student_browser
+          - teacher_browser
         custom: []
     cleanBodyParameters:
-      name: quis
-      phone: sint
-      email: marques.larson@example.com
-      password: "['xQdg<v0v+"
-      role: teacher_browser
+      first_name_en: distinctio
+      last_name_en: sit
+      first_name_ar: aut
+      last_name_ar: vel
+      phone: voluptates
+      email: celia12@example.net
+      password: 'ddtNdWBa>Ay5$}bCz@Kh'
+      role: student_browser
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"2|rwTcIXno7YVdJWC4sH7BPmSuxsEq7wUR2rWHSflc"}'
+        content: '{"token":"2|laravel_sanctum_zL1mepCFZyARIaD3OQwQrCOYQ1rXG67fdQAZnqAZ200f5069"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -150,7 +189,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer 51kZV43fD66gP8Edcbaheva'
     controller: null
     method: null
     route: null

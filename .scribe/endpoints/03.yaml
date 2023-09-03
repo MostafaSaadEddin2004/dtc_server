@@ -27,13 +27,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":[{"id":1,"name":"Seamus Ward"}]}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '47'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -41,7 +39,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer Ef6g3VdekDZ61Ph4a8c5bav'
     controller: null
     method: null
     route: null
@@ -72,13 +70,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: ''
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
-          content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '46'
+          content-type: application/json
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -86,7 +82,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer 6ak8PbgVaEe3D4vfZh6dc15'
     controller: null
     method: null
     route: null
@@ -115,6 +111,7 @@ endpoints:
         required: true
         example: 1
         type: integer
+        enumValues: []
         custom: []
     cleanUrlParameters:
       id: 1
@@ -125,13 +122,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: ''
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
-          content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '45'
+          content-type: application/json
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -139,7 +134,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer 1ecav8Z3bfdgEDVk5h6Pa46'
     controller: null
     method: null
     route: null
@@ -169,6 +164,7 @@ endpoints:
         required: true
         example: 1
         type: integer
+        enumValues: []
         custom: []
     cleanUrlParameters:
       id: 1
@@ -179,13 +175,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: ''
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
-          content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '44'
+          content-type: application/json
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -193,7 +187,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer P5eVa4dE8gh6vabk3fcZ6D1'
     controller: null
     method: null
     route: null
@@ -222,6 +216,7 @@ endpoints:
         required: true
         example: 1
         type: integer
+        enumValues: []
         custom: []
     cleanUrlParameters:
       id: 1
@@ -232,13 +227,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: ''
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
-          content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '43'
+          content-type: application/json
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -246,7 +239,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer Vafc1Pavb5D63ekZ4Ehg6d8'
     controller: null
     method: null
     route: null
@@ -275,6 +268,7 @@ endpoints:
         required: true
         example: 1
         type: integer
+        enumValues: []
         custom: []
     cleanUrlParameters:
       course_id: 1
@@ -287,75 +281,81 @@ endpoints:
         required: true
         example: true
         type: boolean
+        enumValues: []
         custom: []
       social_status:
         name: social_status
         description: ''
         required: true
-        example: saepe
+        example: voluptate
         type: string
+        enumValues: []
         custom: []
       nationality:
         name: nationality
         description: ''
         required: true
-        example: dolor
+        example: sed
         type: string
+        enumValues: []
         custom: []
       address:
         name: address
         description: ''
         required: true
-        example: exercitationem
+        example: vitae
         type: string
+        enumValues: []
         custom: []
       date_of_birth:
         name: date_of_birth
-        description: 'حقل value ليس تاريخًا صحيحًا.'
+        description: 'Must be a valid date.'
         required: true
-        example: '2023-08-21T12:30:35'
+        example: '2023-09-03T21:19:08'
         type: string
+        enumValues: []
         custom: []
       student_type:
         name: student_type
         description: ''
         required: true
-        example: est
+        example: quo
         type: string
+        enumValues: []
         custom: []
       work_type:
         name: work_type
         description: ''
         required: true
-        example: quis
+        example: iste
         type: string
+        enumValues: []
         custom: []
       is_morning:
         name: is_morning
         description: ''
         required: true
-        example: expedita
+        example: facere
         type: string
+        enumValues: []
         custom: []
     cleanBodyParameters:
       is_male: true
-      social_status: saepe
-      nationality: dolor
-      address: exercitationem
-      date_of_birth: '2023-08-21T12:30:35'
-      student_type: est
-      work_type: quis
-      is_morning: expedita
+      social_status: voluptate
+      nationality: sed
+      address: vitae
+      date_of_birth: '2023-09-03T21:19:08'
+      student_type: quo
+      work_type: iste
+      is_morning: facere
     fileParameters: []
     responses:
       -
-        status: 201
-        content: '{"is_male":true,"social_status":"saepe","nationality":"dolor","address":"exercitationem","date_of_birth":"2023-08-20T21:00:00.000000Z","student_type":"est","work_type":"quis","is_morning":true,"user_id":60,"course_id":1,"updated_at":"2023-08-21T09:30:35.000000Z","created_at":"2023-08-21T09:30:35.000000Z","id":2}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '42'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -363,7 +363,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BrearzER0oMK7z2zHY4wO26BswdZWrMbCtJs1Phk'
+      - 'Bearer EVg1b5v3a6fe6ka8DP4hZcd'
     controller: null
     method: null
     route: null
