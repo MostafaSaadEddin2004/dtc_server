@@ -379,11 +379,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 1|laravel_sanctum_qWfqq6xgHCgYhbAcawjvZObDuGxEpLBtGB2yC7St4b33381d
+                  token: 19|laravel_sanctum_cPe92a6SkBgIjgFE5ErsaKzbiQYCaAihKWnWRu7A887873c8
                 properties:
                   token:
                     type: string
-                    example: 1|laravel_sanctum_qWfqq6xgHCgYhbAcawjvZObDuGxEpLBtGB2yC7St4b33381d
+                    example: 19|laravel_sanctum_cPe92a6SkBgIjgFE5ErsaKzbiQYCaAihKWnWRu7A887873c8
       tags:
         - Authentication
       requestBody:
@@ -419,11 +419,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 2|laravel_sanctum_zL1mepCFZyARIaD3OQwQrCOYQ1rXG67fdQAZnqAZ200f5069
+                  token: 20|laravel_sanctum_tU5nuiLat4HlZwRsE6kGJVohaBxB8wNvG6Mh0Ptr65524072
                 properties:
                   token:
                     type: string
-                    example: 2|laravel_sanctum_zL1mepCFZyARIaD3OQwQrCOYQ1rXG67fdQAZnqAZ200f5069
+                    example: 20|laravel_sanctum_tU5nuiLat4HlZwRsE6kGJVohaBxB8wNvG6Mh0Ptr65524072
       tags:
         - Authentication
       requestBody:
@@ -436,35 +436,35 @@ paths:
                 first_name_en:
                   type: string
                   description: ''
-                  example: distinctio
+                  example: dolorum
                 last_name_en:
                   type: string
                   description: ''
-                  example: sit
+                  example: laudantium
                 first_name_ar:
                   type: string
                   description: ''
-                  example: aut
+                  example: quod
                 last_name_ar:
                   type: string
                   description: ''
-                  example: vel
+                  example: quisquam
                 phone:
                   type: string
                   description: ''
-                  example: voluptates
+                  example: culpa
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: celia12@example.net
+                  example: uhartmann@example.net
                 password:
                   type: string
                   description: ''
-                  example: 'ddtNdWBa>Ay5$}bCz@Kh'
+                  example: '5:SqS99!jhO<T'
                 role:
                   type: string
                   description: ''
-                  example: student_browser
+                  example: teacher_browser
                   enum:
                     - student
                     - teacher
@@ -486,18 +486,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data: []
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: array
+                    example: []
       tags:
         - Course
     post:
@@ -506,18 +506,13 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
-            application/json:
+            text/plain:
               schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                type: string
+                example: ''
       tags:
         - Course
   '/api/course/{id}':
@@ -527,18 +522,13 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
-            application/json:
+            text/plain:
               schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                type: string
+                example: ''
       tags:
         - Course
     put:
@@ -547,18 +537,13 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
-            application/json:
+            text/plain:
               schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                type: string
+                example: ''
       tags:
         - Course
     delete:
@@ -567,18 +552,13 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
-            application/json:
+            text/plain:
               schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                type: string
+                example: ''
       tags:
         - Course
     parameters:
@@ -597,18 +577,960 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        500:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  message: "SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'dolor' for column `dtc_server`.`course_registrations`.`is_morning` at row 1 (Connection: mysql, SQL: insert into `course_registrations` (`is_male`, `social_status`, `nationality`, `address`, `date_of_birth`, `student_type`, `work_type`, `is_morning`, `user_id`, `course_id`, `updated_at`, `created_at`) values (1, consectetur, ut, quasi, 2023-09-09 13:00:45, quia, ipsam, dolor, 72, 1, 2023-09-09 13:00:45, 2023-09-09 13:00:45))"
+                  exception: Illuminate\Database\QueryException
+                  file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                  line: 801
+                  trace:
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                      line: 755
+                      function: runQueryCallback
+                      class: Illuminate\Database\Connection
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                      line: 569
+                      function: run
+                      class: Illuminate\Database\Connection
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                      line: 533
+                      function: statement
+                      class: Illuminate\Database\Connection
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php'
+                      line: 32
+                      function: insert
+                      class: Illuminate\Database\Connection
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php'
+                      line: 3387
+                      function: processInsertGetId
+                      class: Illuminate\Database\Query\Processors\Processor
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php'
+                      line: 1968
+                      function: insertGetId
+                      class: Illuminate\Database\Query\Builder
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                      line: 1333
+                      function: __call
+                      class: Illuminate\Database\Eloquent\Builder
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                      line: 1298
+                      function: insertAndSetId
+                      class: Illuminate\Database\Eloquent\Model
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                      line: 1137
+                      function: performInsert
+                      class: Illuminate\Database\Eloquent\Model
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php'
+                      line: 342
+                      function: save
+                      class: Illuminate\Database\Eloquent\Model
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Support\helpers.php'
+                      line: 307
+                      function: 'Illuminate\Database\Eloquent\Relations\{closure}'
+                      class: Illuminate\Database\Eloquent\Relations\HasOneOrMany
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php'
+                      line: 339
+                      function: tap
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\app\Http\Controllers\Api\CourseController.php'
+                      line: 66
+                      function: create
+                      class: Illuminate\Database\Eloquent\Relations\HasOneOrMany
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Controller.php'
+                      line: 54
+                      function: register
+                      class: App\Http\Controllers\Api\CourseController
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php'
+                      line: 43
+                      function: callAction
+                      class: Illuminate\Routing\Controller
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
+                      line: 259
+                      function: dispatch
+                      class: Illuminate\Routing\ControllerDispatcher
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
+                      line: 205
+                      function: runController
+                      class: Illuminate\Routing\Route
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 799
+                      function: run
+                      class: Illuminate\Routing\Route
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 141
+                      function: 'Illuminate\Routing\{closure}'
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php'
+                      line: 50
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 180
+                      function: handle
+                      class: Illuminate\Routing\Middleware\SubstituteBindings
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                      line: 159
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                      line: 125
+                      function: handleRequest
+                      class: Illuminate\Routing\Middleware\ThrottleRequests
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                      line: 87
+                      function: handleRequestUsingNamedLimiter
+                      class: Illuminate\Routing\Middleware\ThrottleRequests
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 180
+                      function: handle
+                      class: Illuminate\Routing\Middleware\ThrottleRequests
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 116
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 798
+                      function: then
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 777
+                      function: runRouteWithinStack
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 741
+                      function: runRoute
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 730
+                      function: dispatchToRoute
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                      line: 200
+                      function: dispatch
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 141
+                      function: 'Illuminate\Foundation\Http\{closure}'
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\livewire\livewire\src\DisableBrowserCache.php'
+                      line: 19
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 180
+                      function: handle
+                      class: Livewire\DisableBrowserCache
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                      line: 21
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
+                      line: 31
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 180
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                      line: 21
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
+                      line: 40
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 180
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TrimStrings
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
+                      line: 27
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 180
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
+                      line: 89
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 180
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php'
+                      line: 62
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 180
+                      function: handle
+                      class: Illuminate\Http\Middleware\HandleCors
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
+                      line: 39
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 180
+                      function: handle
+                      class: Illuminate\Http\Middleware\TrustProxies
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 116
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                      line: 175
+                      function: then
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                      line: 144
+                      function: sendRequestThroughRouter
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 299
+                      function: handle
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 287
+                      function: callLaravelOrLumenRoute
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 92
+                      function: makeApiCall
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 45
+                      function: makeResponseCall
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 35
+                      function: makeResponseCallIfConditionsPass
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                      line: 209
+                      function: __invoke
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                      line: 163
+                      function: iterateThroughStrategies
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                      line: 95
+                      function: fetchResponses
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                      line: 124
+                      function: processRoute
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                      line: 71
+                      function: extractEndpointsInfoFromLaravelApp
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                      line: 49
+                      function: extractEndpointsInfoAndWriteToDisk
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
+                      line: 51
+                      function: get
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                      line: 36
+                      function: handle
+                      class: Knuckles\Scribe\Commands\GenerateDocumentation
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Util.php'
+                      line: 41
+                      function: 'Illuminate\Container\{closure}'
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                      line: 93
+                      function: unwrapIfClosure
+                      class: Illuminate\Container\Util
+                      type: '::'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                      line: 35
+                      function: callBoundMethod
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Container.php'
+                      line: 662
+                      function: call
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                      line: 211
+                      function: call
+                      class: Illuminate\Container\Container
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\symfony\console\Command\Command.php'
+                      line: 326
+                      function: execute
+                      class: Illuminate\Console\Command
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                      line: 180
+                      function: run
+                      class: Symfony\Component\Console\Command\Command
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\symfony\console\Application.php'
+                      line: 1081
+                      function: run
+                      class: Illuminate\Console\Command
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\symfony\console\Application.php'
+                      line: 320
+                      function: doRunCommand
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\symfony\console\Application.php'
+                      line: 174
+                      function: doRun
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
+                      line: 201
+                      function: run
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\artisan'
+                      line: 35
+                      function: handle
+                      class: Illuminate\Foundation\Console\Kernel
+                      type: '->'
                 properties:
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: "SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'dolor' for column `dtc_server`.`course_registrations`.`is_morning` at row 1 (Connection: mysql, SQL: insert into `course_registrations` (`is_male`, `social_status`, `nationality`, `address`, `date_of_birth`, `student_type`, `work_type`, `is_morning`, `user_id`, `course_id`, `updated_at`, `created_at`) values (1, consectetur, ut, quasi, 2023-09-09 13:00:45, quia, ipsam, dolor, 72, 1, 2023-09-09 13:00:45, 2023-09-09 13:00:45))"
+                  exception:
+                    type: string
+                    example: Illuminate\Database\QueryException
+                  file:
+                    type: string
+                    example: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                  line:
+                    type: integer
+                    example: 801
+                  trace:
+                    type: array
+                    example:
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                        line: 755
+                        function: runQueryCallback
+                        class: Illuminate\Database\Connection
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                        line: 569
+                        function: run
+                        class: Illuminate\Database\Connection
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                        line: 533
+                        function: statement
+                        class: Illuminate\Database\Connection
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php'
+                        line: 32
+                        function: insert
+                        class: Illuminate\Database\Connection
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php'
+                        line: 3387
+                        function: processInsertGetId
+                        class: Illuminate\Database\Query\Processors\Processor
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php'
+                        line: 1968
+                        function: insertGetId
+                        class: Illuminate\Database\Query\Builder
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                        line: 1333
+                        function: __call
+                        class: Illuminate\Database\Eloquent\Builder
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                        line: 1298
+                        function: insertAndSetId
+                        class: Illuminate\Database\Eloquent\Model
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                        line: 1137
+                        function: performInsert
+                        class: Illuminate\Database\Eloquent\Model
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php'
+                        line: 342
+                        function: save
+                        class: Illuminate\Database\Eloquent\Model
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Support\helpers.php'
+                        line: 307
+                        function: 'Illuminate\Database\Eloquent\Relations\{closure}'
+                        class: Illuminate\Database\Eloquent\Relations\HasOneOrMany
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOneOrMany.php'
+                        line: 339
+                        function: tap
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\app\Http\Controllers\Api\CourseController.php'
+                        line: 66
+                        function: create
+                        class: Illuminate\Database\Eloquent\Relations\HasOneOrMany
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Controller.php'
+                        line: 54
+                        function: register
+                        class: App\Http\Controllers\Api\CourseController
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php'
+                        line: 43
+                        function: callAction
+                        class: Illuminate\Routing\Controller
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
+                        line: 259
+                        function: dispatch
+                        class: Illuminate\Routing\ControllerDispatcher
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
+                        line: 205
+                        function: runController
+                        class: Illuminate\Routing\Route
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 799
+                        function: run
+                        class: Illuminate\Routing\Route
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 141
+                        function: 'Illuminate\Routing\{closure}'
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php'
+                        line: 50
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 180
+                        function: handle
+                        class: Illuminate\Routing\Middleware\SubstituteBindings
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                        line: 159
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                        line: 125
+                        function: handleRequest
+                        class: Illuminate\Routing\Middleware\ThrottleRequests
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                        line: 87
+                        function: handleRequestUsingNamedLimiter
+                        class: Illuminate\Routing\Middleware\ThrottleRequests
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 180
+                        function: handle
+                        class: Illuminate\Routing\Middleware\ThrottleRequests
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 116
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 798
+                        function: then
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 777
+                        function: runRouteWithinStack
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 741
+                        function: runRoute
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 730
+                        function: dispatchToRoute
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                        line: 200
+                        function: dispatch
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 141
+                        function: 'Illuminate\Foundation\Http\{closure}'
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\livewire\livewire\src\DisableBrowserCache.php'
+                        line: 19
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 180
+                        function: handle
+                        class: Livewire\DisableBrowserCache
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                        line: 21
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
+                        line: 31
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 180
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                        line: 21
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
+                        line: 40
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 180
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TrimStrings
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
+                        line: 27
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 180
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
+                        line: 89
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 180
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php'
+                        line: 62
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 180
+                        function: handle
+                        class: Illuminate\Http\Middleware\HandleCors
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
+                        line: 39
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 180
+                        function: handle
+                        class: Illuminate\Http\Middleware\TrustProxies
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 116
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                        line: 175
+                        function: then
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                        line: 144
+                        function: sendRequestThroughRouter
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 299
+                        function: handle
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 287
+                        function: callLaravelOrLumenRoute
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 92
+                        function: makeApiCall
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 45
+                        function: makeResponseCall
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 35
+                        function: makeResponseCallIfConditionsPass
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                        line: 209
+                        function: __invoke
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                        line: 163
+                        function: iterateThroughStrategies
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                        line: 95
+                        function: fetchResponses
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                        line: 124
+                        function: processRoute
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                        line: 71
+                        function: extractEndpointsInfoFromLaravelApp
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                        line: 49
+                        function: extractEndpointsInfoAndWriteToDisk
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
+                        line: 51
+                        function: get
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                        line: 36
+                        function: handle
+                        class: Knuckles\Scribe\Commands\GenerateDocumentation
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Util.php'
+                        line: 41
+                        function: 'Illuminate\Container\{closure}'
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                        line: 93
+                        function: unwrapIfClosure
+                        class: Illuminate\Container\Util
+                        type: '::'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                        line: 35
+                        function: callBoundMethod
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Container.php'
+                        line: 662
+                        function: call
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                        line: 211
+                        function: call
+                        class: Illuminate\Container\Container
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\symfony\console\Command\Command.php'
+                        line: 326
+                        function: execute
+                        class: Illuminate\Console\Command
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                        line: 180
+                        function: run
+                        class: Symfony\Component\Console\Command\Command
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\symfony\console\Application.php'
+                        line: 1081
+                        function: run
+                        class: Illuminate\Console\Command
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\symfony\console\Application.php'
+                        line: 320
+                        function: doRunCommand
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\symfony\console\Application.php'
+                        line: 174
+                        function: doRun
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
+                        line: 201
+                        function: run
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\artisan'
+                        line: 35
+                        function: handle
+                        class: Illuminate\Foundation\Console\Kernel
+                        type: '->'
+                    items:
+                      type: object
+                      properties:
+                        file:
+                          type: string
+                          example: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\dtc_server\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                        line:
+                          type: integer
+                          example: 755
+                        function:
+                          type: string
+                          example: runQueryCallback
+                        class:
+                          type: string
+                          example: Illuminate\Database\Connection
+                        type:
+                          type: string
+                          example: '->'
       tags:
         - Course
       requestBody:
@@ -625,31 +1547,31 @@ paths:
                 social_status:
                   type: string
                   description: ''
-                  example: voluptate
+                  example: consectetur
                 nationality:
                   type: string
                   description: ''
-                  example: sed
+                  example: ut
                 address:
                   type: string
                   description: ''
-                  example: vitae
+                  example: quasi
                 date_of_birth:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-03T21:19:08'
+                  example: '2023-09-09T13:00:45'
                 student_type:
                   type: string
                   description: ''
-                  example: quo
+                  example: quia
                 work_type:
                   type: string
                   description: ''
-                  example: iste
+                  example: ipsam
                 is_morning:
                   type: string
                   description: ''
-                  example: facere
+                  example: dolor
               required:
                 - is_male
                 - social_status
@@ -682,11 +1604,11 @@ paths:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  message: unauthorized
                 properties:
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: unauthorized
       tags:
         - Endpoints
       requestBody:
@@ -699,23 +1621,23 @@ paths:
                 subject:
                   type: string
                   description: ''
-                  example: ut
+                  example: odio
                 mark:
                   type: number
                   description: 'Must be at least 0. Must not be greater than 100.'
-                  example: 25
+                  example: 21
                 reason:
                   type: string
                   description: ''
-                  example: rem
+                  example: consequatur
                 teacher:
                   type: string
                   description: ''
-                  example: voluptates
+                  example: dolorum
                 user_id:
                   type: number
                   description: ''
-                  example: 283760.19019
+                  example: 5564.700584
               required:
                 - subject
                 - mark
@@ -725,13 +1647,85 @@ paths:
       security: []
   /api/move:
     post:
-      summary: ''
-      operationId: postApiMove
+      summary: 'Create Move'
+      operationId: createMove
       description: ''
       parameters: []
       responses:
+        200:
+          description: 'Success Process'
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    id: 6
+                    text: text
+                    user_id:
+                      id: 1
+                      first_name_en: Admin
+                      last_name_en: Admin
+                      first_name_ar: Admin
+                      last_name_ar: Admin
+                      email: super.admin@admin.com
+                      phone: 279-206-5241
+                      password: $2y$10$cGVmTLp/ZiKauYKZkkJpke03d.dchqpu6r62EWod/JgLpQh5J3m2.
+                    department_id:
+                      id: 1
+                      name: 'Jarvis Bogisich'
+                      mark: null
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 6
+                      text:
+                        type: string
+                        example: text
+                      user_id:
+                        type: object
+                        properties:
+                          id:
+                            type: integer
+                            example: 1
+                          first_name_en:
+                            type: string
+                            example: Admin
+                          last_name_en:
+                            type: string
+                            example: Admin
+                          first_name_ar:
+                            type: string
+                            example: Admin
+                          last_name_ar:
+                            type: string
+                            example: Admin
+                          email:
+                            type: string
+                            example: super.admin@admin.com
+                          phone:
+                            type: string
+                            example: 279-206-5241
+                          password:
+                            type: string
+                            example: $2y$10$cGVmTLp/ZiKauYKZkkJpke03d.dchqpu6r62EWod/JgLpQh5J3m2.
+                      department_id:
+                        type: object
+                        properties:
+                          id:
+                            type: integer
+                            example: 1
+                          name:
+                            type: string
+                            example: 'Jarvis Bogisich'
+                          mark:
+                            type: string
+                            example: null
         401:
-          description: ''
+          description: 'Account Not teacher'
           content:
             application/json:
               schema:
@@ -742,8 +1736,15 @@ paths:
                   message:
                     type: string
                     example: Unauthenticated.
+        422:
+          description: 'Validation errors'
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "{\n\"message\": \"The text field is required. (and 2 more errors)\",\n\"errors\": {\n\"text\": [\n\"The text field is required.\"\n],\n\"user_id\": [\n\"The user id field is required.\"\n\"The selected user id is invalid.\"\n],\n\"department_id\": [\n\"The department id field is required.\"\n\"The selected department id is invalid.\"\n]\n}\n}"
       tags:
-        - Endpoints
+        - Move
       requestBody:
         required: true
         content:
@@ -754,15 +1755,15 @@ paths:
                 text:
                   type: string
                   description: ''
-                  example: ipsa
+                  example: necessitatibus
                 user_id:
                   type: number
                   description: ''
-                  example: 8712.49743
+                  example: 5.120976
                 department_id:
                   type: number
                   description: ''
-                  example: 27125061.09
+                  example: 409.56
               required:
                 - text
                 - user_id
@@ -775,18 +1776,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data: []
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: array
+                    example: []
       tags:
         - Note
     post:
@@ -795,18 +1796,30 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        422:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  message: 'The selected note category id is invalid.'
+                  errors:
+                    note_category_id:
+                      - 'The selected note category id is invalid.'
                 properties:
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: 'The selected note category id is invalid.'
+                  errors:
+                    type: object
+                    properties:
+                      note_category_id:
+                        type: array
+                        example:
+                          - 'The selected note category id is invalid.'
+                        items:
+                          type: string
       tags:
         - Note
       requestBody:
@@ -819,11 +1832,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: sed
+                  example: sunt
                 description:
                   type: string
                   description: ''
-                  example: 'Inventore non ullam reiciendis tenetur qui quo facere.'
+                  example: 'Quos suscipit quibusdam beatae quo.'
                 category_name:
                   type: string
                   description: ''
@@ -831,7 +1844,7 @@ paths:
                 note_category_id:
                   type: integer
                   description: ''
-                  example: 13
+                  example: 20
               required:
                 - title
                 - description
@@ -842,18 +1855,34 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    id: 1
+                    title: 'Mollitia aut vel.'
+                    description: 'Ut et recusandae nihil. Consequatur recusandae non aut occaecati quos doloribus. Voluptas blanditiis quia tempora deserunt. Omnis rem voluptatum quis iure.'
+                    category: 'Francis Rippin'
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      title:
+                        type: string
+                        example: 'Mollitia aut vel.'
+                      description:
+                        type: string
+                        example: 'Ut et recusandae nihil. Consequatur recusandae non aut occaecati quos doloribus. Voluptas blanditiis quia tempora deserunt. Omnis rem voluptatum quis iure.'
+                      category:
+                        type: string
+                        example: 'Francis Rippin'
       tags:
         - Note
     put:
@@ -862,18 +1891,34 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    id: 1
+                    title: quis
+                    description: 'Deserunt maxime illum ut ut rerum maxime qui et.'
+                    category: 'Francis Rippin'
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      title:
+                        type: string
+                        example: quis
+                      description:
+                        type: string
+                        example: 'Deserunt maxime illum ut ut rerum maxime qui et.'
+                      category:
+                        type: string
+                        example: 'Francis Rippin'
       tags:
         - Note
       requestBody:
@@ -886,11 +1931,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: amet
+                  example: quis
                 description:
                   type: string
                   description: ''
-                  example: 'Quas quia expedita in eaque cumque.'
+                  example: 'Deserunt maxime illum ut ut rerum maxime qui et.'
                 category_name:
                   type: string
                   description: ''
@@ -908,18 +1953,8 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        204:
           description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
       tags:
         - Note
     parameters:
@@ -938,18 +1973,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data: []
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: array
+                    example: []
       tags:
         - Note
   /api/post:
@@ -962,25 +1997,235 @@ paths:
           in: query
           name: type
           description: 'the type of the post (public, department ,course).'
-          example: eos
+          example: reprehenderit
           required: false
           schema:
             type: string
             description: 'the type of the post (public, department ,course).'
-            example: eos
+            example: reprehenderit
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    -
+                      id: 2
+                      content: 'Ab quis blanditiis fugiat quis dolor commodi. Eum excepturi voluptas illum beatae nemo quia eaque. Eos et eius voluptatibus quibusdam.'
+                      attachment: voluptatum
+                      attachment_type: file
+                      likes: 0
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '6 days ago'
+                    -
+                      id: 3
+                      content: 'Totam eos aperiam sed quo sint minima in. Dolorem fuga harum tempora in temporibus. Natus reiciendis voluptas impedit maiores.'
+                      attachment: exercitationem
+                      attachment_type: image
+                      likes: 0
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '6 days ago'
+                    -
+                      id: 4
+                      content: 'Dignissimos excepturi molestiae omnis. Pariatur recusandae sed qui libero earum. Voluptatem magni quia architecto beatae suscipit et.'
+                      attachment: ad
+                      attachment_type: file
+                      likes: 0
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '6 days ago'
+                    -
+                      id: 7
+                      content: 'Rerum neque non aut deleniti eos. Ut qui inventore quisquam suscipit optio sequi beatae. Molestiae ab autem saepe nam eos. Dolorum rerum qui delectus atque veritatis voluptatem.'
+                      attachment: minus
+                      attachment_type: file
+                      likes: 1
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '6 days ago'
+                    -
+                      id: 10
+                      content: 'Eos quaerat qui repudiandae id sapiente repellat quos. Officia itaque dignissimos quis at ut rerum. Incidunt quia a et debitis quae qui.'
+                      attachment: ducimus
+                      attachment_type: file
+                      likes: 1
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '6 days ago'
+                    -
+                      id: 11
+                      content: 'Ab iusto vitae ut omnis pariatur et sint. Quia quas qui iste optio et. Minima ut perferendis quis beatae vel itaque.'
+                      attachment: laboriosam
+                      attachment_type: image
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '6 days ago'
+                    -
+                      id: 12
+                      content: 'Voluptate minus amet explicabo nam vitae aut cupiditate. Numquam ut soluta rerum aut. Occaecati pariatur rerum ut facilis dolores aut aut non.'
+                      attachment: illo
+                      attachment_type: file
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '6 days ago'
+                    -
+                      id: 13
+                      content: 'Similique id ut nobis aut commodi facere. Accusantium dignissimos non fugiat aperiam. Vero fuga facere est quo est molestias rerum. Dolores impedit ut vel ullam tempore.'
+                      attachment: magni
+                      attachment_type: image
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '6 days ago'
+                    -
+                      id: 14
+                      content: 'Earum doloribus dolore officiis suscipit. Expedita sed aut omnis ab. Quo at eos ad quod facilis. Sit saepe qui perspiciatis quidem minus et. Dolores debitis ut aut quis laboriosam temporibus illo.'
+                      attachment: perferendis
+                      attachment_type: image
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '6 days ago'
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 2
+                        content: 'Ab quis blanditiis fugiat quis dolor commodi. Eum excepturi voluptas illum beatae nemo quia eaque. Eos et eius voluptatibus quibusdam.'
+                        attachment: voluptatum
+                        attachment_type: file
+                        likes: 0
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '6 days ago'
+                      -
+                        id: 3
+                        content: 'Totam eos aperiam sed quo sint minima in. Dolorem fuga harum tempora in temporibus. Natus reiciendis voluptas impedit maiores.'
+                        attachment: exercitationem
+                        attachment_type: image
+                        likes: 0
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '6 days ago'
+                      -
+                        id: 4
+                        content: 'Dignissimos excepturi molestiae omnis. Pariatur recusandae sed qui libero earum. Voluptatem magni quia architecto beatae suscipit et.'
+                        attachment: ad
+                        attachment_type: file
+                        likes: 0
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '6 days ago'
+                      -
+                        id: 7
+                        content: 'Rerum neque non aut deleniti eos. Ut qui inventore quisquam suscipit optio sequi beatae. Molestiae ab autem saepe nam eos. Dolorum rerum qui delectus atque veritatis voluptatem.'
+                        attachment: minus
+                        attachment_type: file
+                        likes: 1
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '6 days ago'
+                      -
+                        id: 10
+                        content: 'Eos quaerat qui repudiandae id sapiente repellat quos. Officia itaque dignissimos quis at ut rerum. Incidunt quia a et debitis quae qui.'
+                        attachment: ducimus
+                        attachment_type: file
+                        likes: 1
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '6 days ago'
+                      -
+                        id: 11
+                        content: 'Ab iusto vitae ut omnis pariatur et sint. Quia quas qui iste optio et. Minima ut perferendis quis beatae vel itaque.'
+                        attachment: laboriosam
+                        attachment_type: image
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '6 days ago'
+                      -
+                        id: 12
+                        content: 'Voluptate minus amet explicabo nam vitae aut cupiditate. Numquam ut soluta rerum aut. Occaecati pariatur rerum ut facilis dolores aut aut non.'
+                        attachment: illo
+                        attachment_type: file
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '6 days ago'
+                      -
+                        id: 13
+                        content: 'Similique id ut nobis aut commodi facere. Accusantium dignissimos non fugiat aperiam. Vero fuga facere est quo est molestias rerum. Dolores impedit ut vel ullam tempore.'
+                        attachment: magni
+                        attachment_type: image
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '6 days ago'
+                      -
+                        id: 14
+                        content: 'Earum doloribus dolore officiis suscipit. Expedita sed aut omnis ab. Quo at eos ad quod facilis. Sit saepe qui perspiciatis quidem minus et. Dolores debitis ut aut quis laboriosam temporibus illo.'
+                        attachment: perferendis
+                        attachment_type: image
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '6 days ago'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 2
+                        content:
+                          type: string
+                          example: 'Ab quis blanditiis fugiat quis dolor commodi. Eum excepturi voluptas illum beatae nemo quia eaque. Eos et eius voluptatibus quibusdam.'
+                        attachment:
+                          type: string
+                          example: voluptatum
+                        attachment_type:
+                          type: string
+                          example: file
+                        likes:
+                          type: integer
+                          example: 0
+                        liked_by_me:
+                          type: boolean
+                          example: false
+                        saves:
+                          type: integer
+                          example: 0
+                        saved_by_me:
+                          type: boolean
+                          example: false
+                        created_at:
+                          type: string
+                          example: '6 days ago'
       tags:
         - Post
       requestBody:
@@ -1013,11 +2258,11 @@ paths:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  message: unauthorized
                 properties:
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: unauthorized
       tags:
         - Post
       requestBody:
@@ -1030,31 +2275,31 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: qui
+                  example: rerum
                 attachment:
                   type: string
                   description: ''
-                  example: alias
+                  example: facilis
                 attachment_type:
                   type: string
                   description: ''
-                  example: ad
+                  example: qui
                 user_id:
                   type: number
                   description: ''
-                  example: 62673915.85
+                  example: 5.788
                 department_id:
                   type: number
                   description: ''
-                  example: 2.91872
+                  example: 1684032.3020077
                 course_id:
                   type: number
                   description: ''
-                  example: 132.63361
+                  example: 356949472.90298
                 post_type_id:
                   type: number
                   description: ''
-                  example: 1589867.04468
+                  example: 2312.93196438
               required:
                 - content
                 - attachment
@@ -1063,6 +2308,46 @@ paths:
                 - department_id
                 - course_id
                 - post_type_id
+  '/api/post/{post_id}/like':
+    post:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        204:
+          description: ''
+      tags:
+        - Post
+    parameters:
+      -
+        in: path
+        name: post_id
+        description: 'The ID of the post.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  '/api/post/{post_id}/save':
+    post:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        204:
+          description: ''
+      tags:
+        - Post
+    parameters:
+      -
+        in: path
+        name: post_id
+        description: 'The ID of the post.'
+        example: 1
+        required: true
+        schema:
+          type: integer
   '/api/post/{id}':
     put:
       summary: 'Update the specified resource in storage.'
@@ -1077,11 +2362,11 @@ paths:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  message: unauthorized
                 properties:
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: unauthorized
       tags:
         - Post
       requestBody:
@@ -1094,31 +2379,31 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: molestiae
+                  example: nisi
                 attachment:
                   type: string
                   description: ''
-                  example: dicta
+                  example: perspiciatis
                 attachment_type:
                   type: string
                   description: ''
-                  example: qui
+                  example: libero
                 user_id:
                   type: number
                   description: ''
-                  example: 20819312.2887
+                  example: 0.98293829
                 department_id:
                   type: number
                   description: ''
-                  example: 3039334.484625
+                  example: 210.58591
                 course_id:
                   type: number
                   description: ''
-                  example: 1.3546
+                  example: 13054359.14
                 post_type_id:
                   type: number
                   description: ''
-                  example: 7773174.3787451
+                  example: 395978.066
               required:
                 - content
                 - attachment
@@ -1140,77 +2425,17 @@ paths:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  message: unauthorized
                 properties:
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: unauthorized
       tags:
         - Post
     parameters:
       -
         in: path
         name: id
-        description: 'The ID of the post.'
-        example: 1
-        required: true
-        schema:
-          type: integer
-  '/api/post/{post_id}/like':
-    post:
-      summary: 'Display the specified resource.'
-      operationId: displayTheSpecifiedResource
-      description: ''
-      parameters: []
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
-      tags:
-        - Post
-    parameters:
-      -
-        in: path
-        name: post_id
-        description: 'The ID of the post.'
-        example: 1
-        required: true
-        schema:
-          type: integer
-  '/api/post/{post_id}/save':
-    post:
-      summary: 'Display the specified resource.'
-      operationId: displayTheSpecifiedResource
-      description: ''
-      parameters: []
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
-      tags:
-        - Post
-    parameters:
-      -
-        in: path
-        name: post_id
         description: 'The ID of the post.'
         example: 1
         required: true
@@ -1229,6 +2454,9 @@ tags:
   -
     name: Endpoints
     description: ''
+  -
+    name: Move
+    description: "\nThis Api For teacher to Move"
   -
     name: Note
     description: ''

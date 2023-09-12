@@ -25,12 +25,12 @@ endpoints:
         name: type
         description: 'the type of the post (public, department ,course).'
         required: false
-        example: eos
+        example: reprehenderit
         type: string
         enumValues: []
         custom: []
     cleanQueryParameters:
-      type: eos
+      type: reprehenderit
     bodyParameters:
       type:
         name: type
@@ -48,11 +48,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":[{"id":2,"content":"Ab quis blanditiis fugiat quis dolor commodi. Eum excepturi voluptas illum beatae nemo quia eaque. Eos et eius voluptatibus quibusdam.","attachment":"voluptatum","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"6 days ago"},{"id":3,"content":"Totam eos aperiam sed quo sint minima in. Dolorem fuga harum tempora in temporibus. Natus reiciendis voluptas impedit maiores.","attachment":"exercitationem","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"6 days ago"},{"id":4,"content":"Dignissimos excepturi molestiae omnis. Pariatur recusandae sed qui libero earum. Voluptatem magni quia architecto beatae suscipit et.","attachment":"ad","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"6 days ago"},{"id":7,"content":"Rerum neque non aut deleniti eos. Ut qui inventore quisquam suscipit optio sequi beatae. Molestiae ab autem saepe nam eos. Dolorum rerum qui delectus atque veritatis voluptatem.","attachment":"minus","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"6 days ago"},{"id":10,"content":"Eos quaerat qui repudiandae id sapiente repellat quos. Officia itaque dignissimos quis at ut rerum. Incidunt quia a et debitis quae qui.","attachment":"ducimus","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"6 days ago"},{"id":11,"content":"Ab iusto vitae ut omnis pariatur et sint. Quia quas qui iste optio et. Minima ut perferendis quis beatae vel itaque.","attachment":"laboriosam","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"6 days ago"},{"id":12,"content":"Voluptate minus amet explicabo nam vitae aut cupiditate. Numquam ut soluta rerum aut. Occaecati pariatur rerum ut facilis dolores aut aut non.","attachment":"illo","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"6 days ago"},{"id":13,"content":"Similique id ut nobis aut commodi facere. Accusantium dignissimos non fugiat aperiam. Vero fuga facere est quo est molestias rerum. Dolores impedit ut vel ullam tempore.","attachment":"magni","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"6 days ago"},{"id":14,"content":"Earum doloribus dolore officiis suscipit. Expedita sed aut omnis ab. Quo at eos ad quod facilis. Sit saepe qui perspiciatis quidem minus et. Dolores debitis ut aut quis laboriosam temporibus illo.","attachment":"perferendis","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"6 days ago"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -60,7 +62,113 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer VDP5gd3k8ha14cabZ66Evfe'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/post/{post_id}/like'
+    metadata:
+      groupName: Post
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      post_id:
+        name: post_id
+        description: 'The ID of the post.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      post_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '52'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/post/{post_id}/save'
+    metadata:
+      groupName: Post
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      post_id:
+        name: post_id
+        description: 'The ID of the post.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      post_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '51'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -91,7 +199,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: qui
+        example: rerum
         type: string
         enumValues: []
         custom: []
@@ -99,7 +207,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: alias
+        example: facilis
         type: string
         enumValues: []
         custom: []
@@ -107,7 +215,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: ad
+        example: qui
         type: string
         enumValues: []
         custom: []
@@ -115,7 +223,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 62673915.85
+        example: 5.788
         type: number
         enumValues: []
         custom: []
@@ -123,7 +231,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 2.91872
+        example: 1684032.3020077
         type: number
         enumValues: []
         custom: []
@@ -131,7 +239,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 132.63361
+        example: 356949472.90298
         type: number
         enumValues: []
         custom: []
@@ -139,26 +247,28 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 1589867.04468
+        example: 2312.93196438
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: qui
-      attachment: alias
-      attachment_type: ad
-      user_id: 62673915.85
-      department_id: 2.91872
-      course_id: 132.63361
-      post_type_id: 1589867.04468
+      content: rerum
+      attachment: facilis
+      attachment_type: qui
+      user_id: 5.788
+      department_id: 1684032.3020077
+      course_id: 356949472.90298
+      post_type_id: 2312.93196438
     fileParameters: []
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '50'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -166,7 +276,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer ZDkv6Ebah5f3gc6eP8d4V1a'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -207,7 +317,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: molestiae
+        example: nisi
         type: string
         enumValues: []
         custom: []
@@ -215,7 +325,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: dicta
+        example: perspiciatis
         type: string
         enumValues: []
         custom: []
@@ -223,7 +333,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: qui
+        example: libero
         type: string
         enumValues: []
         custom: []
@@ -231,7 +341,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 20819312.2887
+        example: 0.98293829
         type: number
         enumValues: []
         custom: []
@@ -239,7 +349,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 3039334.484625
+        example: 210.58591
         type: number
         enumValues: []
         custom: []
@@ -247,7 +357,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 1.3546
+        example: 13054359.14
         type: number
         enumValues: []
         custom: []
@@ -255,26 +365,28 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 7773174.3787451
+        example: 395978.066
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: molestiae
-      attachment: dicta
-      attachment_type: qui
-      user_id: 20819312.2887
-      department_id: 3039334.484625
-      course_id: 1.3546
-      post_type_id: 7773174.3787451
+      content: nisi
+      attachment: perspiciatis
+      attachment_type: libero
+      user_id: 0.98293829
+      department_id: 210.58591
+      course_id: 13054359.14
+      post_type_id: 395978.066
     fileParameters: []
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '49'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -282,7 +394,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer gh54V1d8fD63ckZbaEevaP6'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -323,10 +435,12 @@ endpoints:
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '48'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -334,111 +448,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 8dcE4k3fgV5vahPe6Da6bZ1'
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - POST
-    uri: 'api/post/{post_id}/like'
-    metadata:
-      groupName: Post
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Display the specified resource.'
-      description: ''
-      authenticated: true
-      custom: []
-    headers:
-      Authorization: 'Bearer {YOUR_AUTH_KEY}'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      post_id:
-        name: post_id
-        description: 'The ID of the post.'
-        required: true
-        example: 1
-        type: integer
-        enumValues: []
-        custom: []
-    cleanUrlParameters:
-      post_id: 1
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-        custom: []
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer b6eEfVga3cd6aZk415Dvh8P'
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - POST
-    uri: 'api/post/{post_id}/save'
-    metadata:
-      groupName: Post
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Display the specified resource.'
-      description: ''
-      authenticated: true
-      custom: []
-    headers:
-      Authorization: 'Bearer {YOUR_AUTH_KEY}'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      post_id:
-        name: post_id
-        description: 'The ID of the post.'
-        required: true
-        example: 1
-        type: integer
-        enumValues: []
-        custom: []
-    cleanUrlParameters:
-      post_id: 1
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-        custom: []
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer vZ648aPEVecdhD36fagb15k'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null

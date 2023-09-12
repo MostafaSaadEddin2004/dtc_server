@@ -55,7 +55,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"1|laravel_sanctum_qWfqq6xgHCgYhbAcawjvZObDuGxEpLBtGB2yC7St4b33381d"}'
+        content: '{"token":"19|laravel_sanctum_cPe92a6SkBgIjgFE5ErsaKzbiQYCaAihKWnWRu7A887873c8"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -68,7 +68,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 4DVPk6fbh51gEa386adceZv'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -99,7 +99,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: distinctio
+        example: dolorum
         type: string
         enumValues: []
         custom: []
@@ -107,7 +107,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: sit
+        example: laudantium
         type: string
         enumValues: []
         custom: []
@@ -115,7 +115,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: aut
+        example: quod
         type: string
         enumValues: []
         custom: []
@@ -123,7 +123,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: vel
+        example: quisquam
         type: string
         enumValues: []
         custom: []
@@ -131,7 +131,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: voluptates
+        example: culpa
         type: string
         enumValues: []
         custom: []
@@ -139,7 +139,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: celia12@example.net
+        example: uhartmann@example.net
         type: string
         enumValues: []
         custom: []
@@ -147,7 +147,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'ddtNdWBa>Ay5$}bCz@Kh'
+        example: '5:SqS99!jhO<T'
         type: string
         enumValues: []
         custom: []
@@ -155,7 +155,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: student_browser
+        example: teacher_browser
         type: string
         enumValues:
           - student
@@ -164,19 +164,19 @@ endpoints:
           - teacher_browser
         custom: []
     cleanBodyParameters:
-      first_name_en: distinctio
-      last_name_en: sit
-      first_name_ar: aut
-      last_name_ar: vel
-      phone: voluptates
-      email: celia12@example.net
-      password: 'ddtNdWBa>Ay5$}bCz@Kh'
-      role: student_browser
+      first_name_en: dolorum
+      last_name_en: laudantium
+      first_name_ar: quod
+      last_name_ar: quisquam
+      phone: culpa
+      email: uhartmann@example.net
+      password: '5:SqS99!jhO<T'
+      role: teacher_browser
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"2|laravel_sanctum_zL1mepCFZyARIaD3OQwQrCOYQ1rXG67fdQAZnqAZ200f5069"}'
+        content: '{"token":"20|laravel_sanctum_tU5nuiLat4HlZwRsE6kGJVohaBxB8wNvG6Mh0Ptr65524072"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -189,7 +189,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 51kZV43fD66gP8Edcbaheva'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null

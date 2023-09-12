@@ -28,7 +28,7 @@ endpoints:
         name: subject
         description: ''
         required: true
-        example: ut
+        example: odio
         type: string
         enumValues: []
         custom: []
@@ -36,7 +36,7 @@ endpoints:
         name: mark
         description: 'Must be at least 0. Must not be greater than 100.'
         required: true
-        example: 25
+        example: 21
         type: number
         enumValues: []
         custom: []
@@ -44,7 +44,7 @@ endpoints:
         name: reason
         description: ''
         required: true
-        example: rem
+        example: consequatur
         type: string
         enumValues: []
         custom: []
@@ -52,7 +52,7 @@ endpoints:
         name: teacher
         description: ''
         required: true
-        example: voluptates
+        example: dolorum
         type: string
         enumValues: []
         custom: []
@@ -60,90 +60,26 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 283760.19019
+        example: 5564.700584
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      subject: ut
-      mark: 25
-      reason: rem
-      teacher: voluptates
-      user_id: 283760.19019
+      subject: odio
+      mark: 21
+      reason: consequatur
+      teacher: dolorum
+      user_id: 5564.700584
     fileParameters: []
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - POST
-    uri: api/move
-    metadata:
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      text:
-        name: text
-        description: ''
-        required: true
-        example: ipsa
-        type: string
-        enumValues: []
-        custom: []
-      user_id:
-        name: user_id
-        description: ''
-        required: true
-        example: 8712.49743
-        type: number
-        enumValues: []
-        custom: []
-      department_id:
-        name: department_id
-        description: ''
-        required: true
-        example: 27125061.09
-        type: number
-        enumValues: []
-        custom: []
-    cleanBodyParameters:
-      text: ipsa
-      user_id: 8712.49743
-      department_id: 27125061.09
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '39'
           access-control-allow-origin: '*'
         description: null
         custom: []

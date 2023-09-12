@@ -27,11 +27,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -39,7 +41,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer kdEcgVh13656bvDZa48efPa'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -70,7 +72,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: sed
+        example: sunt
         type: string
         enumValues: []
         custom: []
@@ -78,7 +80,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Inventore non ullam reiciendis tenetur qui quo facere.'
+        example: 'Quos suscipit quibusdam beatae quo.'
         type: string
         enumValues: []
         custom: []
@@ -94,22 +96,24 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 13
+        example: 20
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: sed
-      description: 'Inventore non ullam reiciendis tenetur qui quo facere.'
-      note_category_id: 13
+      title: sunt
+      description: 'Quos suscipit quibusdam beatae quo.'
+      note_category_id: 20
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 422
+        content: '{"message":"The selected note category id is invalid.","errors":{"note_category_id":["The selected note category id is invalid."]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -117,7 +121,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 6E3a4Zca1kfDbPe56d8gVhv'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -157,11 +161,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":{"id":1,"title":"Mollitia aut vel.","description":"Ut et recusandae nihil. Consequatur recusandae non aut occaecati quos doloribus. Voluptas blanditiis quia tempora deserunt. Omnis rem voluptatum quis iure.","category":"Francis Rippin"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -169,7 +175,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer ge5bkVZ4Pfc1vDa8hEa36d6'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -210,7 +216,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: amet
+        example: quis
         type: string
         enumValues: []
         custom: []
@@ -218,7 +224,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Quas quia expedita in eaque cumque.'
+        example: 'Deserunt maxime illum ut ut rerum maxime qui et.'
         type: string
         enumValues: []
         custom: []
@@ -239,16 +245,18 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: amet
-      description: 'Quas quia expedita in eaque cumque.'
+      title: quis
+      description: 'Deserunt maxime illum ut ut rerum maxime qui et.'
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":{"id":1,"title":"quis","description":"Deserunt maxime illum ut ut rerum maxime qui et.","category":"Francis Rippin"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -256,7 +264,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer aPDVad6Z8hE5evb4kf1g3c6'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -296,11 +304,12 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 204
+        content: ''
         headers:
           cache-control: 'no-cache, private'
-          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -308,7 +317,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer cVhaDE84geZb5a1P3fdk6v6'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -339,11 +348,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -351,7 +362,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer E3165aVZgh46vkbadPe8cDf'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null

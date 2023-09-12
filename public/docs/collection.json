@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "94a2ffc0-a3dc-408e-b425-ff6d46ad3bbb",
+        "_postman_id": "7a43c215-1da8-4089-b6b9-6ef1eb492029",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -62,7 +62,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "57"
+                                    "value": "41"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -126,7 +126,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "56"
+                                    "value": "40"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -196,7 +196,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"1|laravel_sanctum_qWfqq6xgHCgYhbAcawjvZObDuGxEpLBtGB2yC7St4b33381d\"}",
+                            "body": "{\"token\":\"19|laravel_sanctum_cPe92a6SkBgIjgFE5ErsaKzbiQYCaAihKWnWRu7A887873c8\"}",
                             "name": ""
                         }
                     ]
@@ -223,7 +223,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"first_name_en\":\"distinctio\",\"last_name_en\":\"sit\",\"first_name_ar\":\"aut\",\"last_name_ar\":\"vel\",\"phone\":\"voluptates\",\"email\":\"celia12@example.net\",\"password\":\"ddtNdWBa>Ay5$}bCz@Kh\",\"role\":\"student_browser\"}"
+                            "raw": "{\"first_name_en\":\"dolorum\",\"last_name_en\":\"laudantium\",\"first_name_ar\":\"quod\",\"last_name_ar\":\"quisquam\",\"phone\":\"culpa\",\"email\":\"uhartmann@example.net\",\"password\":\"5:SqS99!jhO<T\",\"role\":\"teacher_browser\"}"
                         },
                         "description": ""
                     },
@@ -252,7 +252,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"2|laravel_sanctum_zL1mepCFZyARIaD3OQwQrCOYQ1rXG67fdQAZnqAZ200f5069\"}",
+                            "body": "{\"token\":\"20|laravel_sanctum_tU5nuiLat4HlZwRsE6kGJVohaBxB8wNvG6Mh0Ptr65524072\"}",
                             "name": ""
                         }
                     ]
@@ -298,12 +298,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "47"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "{\"data\":[]}",
                             "name": ""
                         }
                     ]
@@ -335,20 +343,28 @@
                         {
                             "header": [
                                 {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=UTF-8"
+                                },
+                                {
                                     "key": "cache-control",
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "content-type",
-                                    "value": "application\/json"
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "46"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "",
                             "name": ""
                         }
                     ]
@@ -388,20 +404,28 @@
                         {
                             "header": [
                                 {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=UTF-8"
+                                },
+                                {
                                     "key": "cache-control",
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "content-type",
-                                    "value": "application\/json"
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "45"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "",
                             "name": ""
                         }
                     ]
@@ -441,20 +465,28 @@
                         {
                             "header": [
                                 {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=UTF-8"
+                                },
+                                {
                                     "key": "cache-control",
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "content-type",
-                                    "value": "application\/json"
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "44"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "",
                             "name": ""
                         }
                     ]
@@ -494,20 +526,28 @@
                         {
                             "header": [
                                 {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=UTF-8"
+                                },
+                                {
                                     "key": "cache-control",
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "content-type",
-                                    "value": "application\/json"
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "43"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "",
                             "name": ""
                         }
                     ]
@@ -542,7 +582,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"is_male\":true,\"social_status\":\"voluptate\",\"nationality\":\"sed\",\"address\":\"vitae\",\"date_of_birth\":\"2023-09-03T21:19:08\",\"student_type\":\"quo\",\"work_type\":\"iste\",\"is_morning\":\"facere\"}"
+                            "raw": "{\"is_male\":true,\"social_status\":\"consectetur\",\"nationality\":\"ut\",\"address\":\"quasi\",\"date_of_birth\":\"2023-09-09T13:00:45\",\"student_type\":\"quia\",\"work_type\":\"ipsam\",\"is_morning\":\"dolor\"}"
                         },
                         "description": ""
                     },
@@ -558,12 +598,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "42"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 500,
+                            "body": "{\n    \"message\": \"SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'dolor' for column `dtc_server`.`course_registrations`.`is_morning` at row 1 (Connection: mysql, SQL: insert into `course_registrations` (`is_male`, `social_status`, `nationality`, `address`, `date_of_birth`, `student_type`, `work_type`, `is_morning`, `user_id`, `course_id`, `updated_at`, `created_at`) values (1, consectetur, ut, quasi, 2023-09-09 13:00:45, quia, ipsam, dolor, 72, 1, 2023-09-09 13:00:45, 2023-09-09 13:00:45))\",\n    \"exception\": \"Illuminate\\\\Database\\\\QueryException\",\n    \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php\",\n    \"line\": 801,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php\",\n            \"line\": 755,\n            \"function\": \"runQueryCallback\",\n            \"class\": \"Illuminate\\\\Database\\\\Connection\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php\",\n            \"line\": 569,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Database\\\\Connection\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php\",\n            \"line\": 533,\n            \"function\": \"statement\",\n            \"class\": \"Illuminate\\\\Database\\\\Connection\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Query\\\\Processors\\\\Processor.php\",\n            \"line\": 32,\n            \"function\": \"insert\",\n            \"class\": \"Illuminate\\\\Database\\\\Connection\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Query\\\\Builder.php\",\n            \"line\": 3387,\n            \"function\": \"processInsertGetId\",\n            \"class\": \"Illuminate\\\\Database\\\\Query\\\\Processors\\\\Processor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Builder.php\",\n            \"line\": 1968,\n            \"function\": \"insertGetId\",\n            \"class\": \"Illuminate\\\\Database\\\\Query\\\\Builder\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Model.php\",\n            \"line\": 1333,\n            \"function\": \"__call\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Builder\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Model.php\",\n            \"line\": 1298,\n            \"function\": \"insertAndSetId\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Model\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Model.php\",\n            \"line\": 1137,\n            \"function\": \"performInsert\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Model\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasOneOrMany.php\",\n            \"line\": 342,\n            \"function\": \"save\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Model\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Support\\\\helpers.php\",\n            \"line\": 307,\n            \"function\": \"Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasOneOrMany\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasOneOrMany.php\",\n            \"line\": 339,\n            \"function\": \"tap\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\app\\\\Http\\\\Controllers\\\\Api\\\\CourseController.php\",\n            \"line\": 66,\n            \"function\": \"create\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasOneOrMany\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Controller.php\",\n            \"line\": 54,\n            \"function\": \"register\",\n            \"class\": \"App\\\\Http\\\\Controllers\\\\Api\\\\CourseController\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\ControllerDispatcher.php\",\n            \"line\": 43,\n            \"function\": \"callAction\",\n            \"class\": \"Illuminate\\\\Routing\\\\Controller\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Route.php\",\n            \"line\": 259,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\ControllerDispatcher\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Route.php\",\n            \"line\": 205,\n            \"function\": \"runController\",\n            \"class\": \"Illuminate\\\\Routing\\\\Route\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 799,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Routing\\\\Route\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 141,\n            \"function\": \"Illuminate\\\\Routing\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings.php\",\n            \"line\": 50,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 159,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 125,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 87,\n            \"function\": \"handleRequestUsingNamedLimiter\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 116,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 798,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 777,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 741,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 730,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 200,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 141,\n            \"function\": \"Illuminate\\\\Foundation\\\\Http\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\livewire\\\\livewire\\\\src\\\\DisableBrowserCache.php\",\n            \"line\": 19,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Livewire\\\\DisableBrowserCache\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 40,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 89,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\HandleCors.php\",\n            \"line\": 62,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 39,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 116,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 175,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 144,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 299,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 287,\n            \"function\": \"callLaravelOrLumenRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 92,\n            \"function\": \"makeApiCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 45,\n            \"function\": \"makeResponseCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 35,\n            \"function\": \"makeResponseCallIfConditionsPass\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 209,\n            \"function\": \"__invoke\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 163,\n            \"function\": \"iterateThroughStrategies\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 95,\n            \"function\": \"fetchResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 124,\n            \"function\": \"processRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 71,\n            \"function\": \"extractEndpointsInfoFromLaravelApp\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 49,\n            \"function\": \"extractEndpointsInfoAndWriteToDisk\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 51,\n            \"function\": \"get\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 36,\n            \"function\": \"handle\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Util.php\",\n            \"line\": 41,\n            \"function\": \"Illuminate\\\\Container\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 93,\n            \"function\": \"unwrapIfClosure\",\n            \"class\": \"Illuminate\\\\Container\\\\Util\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 35,\n            \"function\": \"callBoundMethod\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Container.php\",\n            \"line\": 662,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 211,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\Container\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Command\\\\Command.php\",\n            \"line\": 326,\n            \"function\": \"execute\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 180,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Command\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 1081,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 320,\n            \"function\": \"doRunCommand\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 174,\n            \"function\": \"doRun\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Console\\\\Kernel.php\",\n            \"line\": 201,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\artisan\",\n            \"line\": 35,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Console\\\\Kernel\",\n            \"type\": \"->\"\n        }\n    ]\n}",
                             "name": ""
                         }
                     ]
@@ -596,7 +644,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"subject\":\"ut\",\"mark\":25,\"reason\":\"rem\",\"teacher\":\"voluptates\",\"user_id\":283760.19019}"
+                            "raw": "{\"subject\":\"odio\",\"mark\":21,\"reason\":\"consequatur\",\"teacher\":\"dolorum\",\"user_id\":5564.700584}"
                         },
                         "description": "",
                         "auth": {
@@ -615,18 +663,32 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "39"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
                             "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "body": "{\"message\":\"unauthorized\"}",
                             "name": ""
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "name": "Move",
+            "description": "\nThis Api For teacher to Move",
+            "item": [
                 {
-                    "name": "POST api\/move",
+                    "name": "Create Move",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -647,7 +709,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"text\":\"ipsa\",\"user_id\":8712.49743,\"department_id\":27125061.09}"
+                            "raw": "{\"text\":\"necessitatibus\",\"user_id\":5.120976,\"department_id\":409.56}"
                         },
                         "description": "",
                         "auth": {
@@ -656,23 +718,22 @@
                     },
                     "response": [
                         {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n\"data\": {\n\"id\": 6,\n\"text\": \"text\",\n\"user_id\": {\n\"id\": 1,\n\"first_name_en\": \"Admin\",\n\"last_name_en\": \"Admin\",\n\"first_name_ar\": \"Admin\",\n\"last_name_ar\": \"Admin\",\n\"email\": \"super.admin@admin.com\",\n\"phone\": \"279-206-5241\",\n\"password\": \"$2y$10$cGVmTLp\/ZiKauYKZkkJpke03d.dchqpu6r62EWod\/JgLpQh5J3m2.\"\n},\n\"department_id\": {\n\"id\": 1,\n\"name\": \"Jarvis Bogisich\",\n\"mark\": null\n}\n}\n}",
+                            "name": "Success Process"
+                        },
+                        {
+                            "header": [],
                             "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
-                            "name": ""
+                            "body": "{\n\"message\": \"Unauthenticated.\"\n}",
+                            "name": "Account Not teacher"
+                        },
+                        {
+                            "header": [],
+                            "code": 422,
+                            "body": "{\n\"message\": \"The text field is required. (and 2 more errors)\",\n\"errors\": {\n\"text\": [\n\"The text field is required.\"\n],\n\"user_id\": [\n\"The user id field is required.\"\n\"The selected user id is invalid.\"\n],\n\"department_id\": [\n\"The department id field is required.\"\n\"The selected department id is invalid.\"\n]\n}\n}",
+                            "name": "Validation errors"
                         }
                     ]
                 }
@@ -717,12 +778,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "{\"data\":[]}",
                             "name": ""
                         }
                     ]
@@ -749,7 +818,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"sed\",\"description\":\"Inventore non ullam reiciendis tenetur qui quo facere.\",\"note_category_id\":13}"
+                            "raw": "{\"title\":\"sunt\",\"description\":\"Quos suscipit quibusdam beatae quo.\",\"note_category_id\":20}"
                         },
                         "description": ""
                     },
@@ -765,12 +834,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 422,
+                            "body": "{\"message\":\"The selected note category id is invalid.\",\"errors\":{\"note_category_id\":[\"The selected note category id is invalid.\"]}}",
                             "name": ""
                         }
                     ]
@@ -818,12 +895,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":1,\"title\":\"Mollitia aut vel.\",\"description\":\"Ut et recusandae nihil. Consequatur recusandae non aut occaecati quos doloribus. Voluptas blanditiis quia tempora deserunt. Omnis rem voluptatum quis iure.\",\"category\":\"Francis Rippin\"}}",
                             "name": ""
                         }
                     ]
@@ -858,7 +943,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"amet\",\"description\":\"Quas quia expedita in eaque cumque.\"}"
+                            "raw": "{\"title\":\"quis\",\"description\":\"Deserunt maxime illum ut ut rerum maxime qui et.\"}"
                         },
                         "description": ""
                     },
@@ -874,12 +959,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":1,\"title\":\"quis\",\"description\":\"Deserunt maxime illum ut ut rerum maxime qui et.\",\"category\":\"Francis Rippin\"}}",
                             "name": ""
                         }
                     ]
@@ -923,16 +1016,20 @@
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "content-type",
-                                    "value": "application\/json"
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "55"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 204,
+                            "body": "",
                             "name": ""
                         }
                     ]
@@ -972,12 +1069,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "54"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "{\"data\":[]}",
                             "name": ""
                         }
                     ]
@@ -997,12 +1102,12 @@
                             "query": [
                                 {
                                     "key": "type",
-                                    "value": "eos",
+                                    "value": "reprehenderit",
                                     "description": "the type of the post (public, department ,course).",
                                     "disabled": false
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/post?type=eos"
+                            "raw": "{{baseUrl}}\/api\/post?type=reprehenderit"
                         },
                         "method": "GET",
                         "header": [
@@ -1033,169 +1138,20 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Store a newly created resource in storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/post",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/post"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"content\":\"qui\",\"attachment\":\"alias\",\"attachment_type\":\"ad\",\"user_id\":62673915.85,\"department_id\":2.91872,\"course_id\":132.63361,\"post_type_id\":1589867.04468}"
-                        },
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
                                 },
                                 {
-                                    "key": "content-type",
-                                    "value": "application\/json"
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "53"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Update the specified resource in storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/post\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/post\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "1",
-                                    "description": "The ID of the post."
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"content\":\"molestiae\",\"attachment\":\"dicta\",\"attachment_type\":\"qui\",\"user_id\":20819312.2887,\"department_id\":3039334.484625,\"course_id\":1.3546,\"post_type_id\":7773174.378745071}"
-                        },
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Remove the specified resource from storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/post\/:id",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/post\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "1",
-                                    "description": "The ID of the post."
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":2,\"content\":\"Ab quis blanditiis fugiat quis dolor commodi. Eum excepturi voluptas illum beatae nemo quia eaque. Eos et eius voluptatibus quibusdam.\",\"attachment\":\"voluptatum\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"6 days ago\"},{\"id\":3,\"content\":\"Totam eos aperiam sed quo sint minima in. Dolorem fuga harum tempora in temporibus. Natus reiciendis voluptas impedit maiores.\",\"attachment\":\"exercitationem\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"6 days ago\"},{\"id\":4,\"content\":\"Dignissimos excepturi molestiae omnis. Pariatur recusandae sed qui libero earum. Voluptatem magni quia architecto beatae suscipit et.\",\"attachment\":\"ad\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"6 days ago\"},{\"id\":7,\"content\":\"Rerum neque non aut deleniti eos. Ut qui inventore quisquam suscipit optio sequi beatae. Molestiae ab autem saepe nam eos. Dolorum rerum qui delectus atque veritatis voluptatem.\",\"attachment\":\"minus\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"6 days ago\"},{\"id\":10,\"content\":\"Eos quaerat qui repudiandae id sapiente repellat quos. Officia itaque dignissimos quis at ut rerum. Incidunt quia a et debitis quae qui.\",\"attachment\":\"ducimus\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"6 days ago\"},{\"id\":11,\"content\":\"Ab iusto vitae ut omnis pariatur et sint. Quia quas qui iste optio et. Minima ut perferendis quis beatae vel itaque.\",\"attachment\":\"laboriosam\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"6 days ago\"},{\"id\":12,\"content\":\"Voluptate minus amet explicabo nam vitae aut cupiditate. Numquam ut soluta rerum aut. Occaecati pariatur rerum ut facilis dolores aut aut non.\",\"attachment\":\"illo\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"6 days ago\"},{\"id\":13,\"content\":\"Similique id ut nobis aut commodi facere. Accusantium dignissimos non fugiat aperiam. Vero fuga facere est quo est molestias rerum. Dolores impedit ut vel ullam tempore.\",\"attachment\":\"magni\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"6 days ago\"},{\"id\":14,\"content\":\"Earum doloribus dolore officiis suscipit. Expedita sed aut omnis ab. Quo at eos ad quod facilis. Sit saepe qui perspiciatis quidem minus et. Dolores debitis ut aut quis laboriosam temporibus illo.\",\"attachment\":\"perferendis\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"6 days ago\"}]}",
                             "name": ""
                         }
                     ]
@@ -1239,16 +1195,20 @@
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "content-type",
-                                    "value": "application\/json"
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "52"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 204,
+                            "body": "",
                             "name": ""
                         }
                     ]
@@ -1292,8 +1252,68 @@
                                     "value": "no-cache, private"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "51"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 204,
+                            "body": "",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/post",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/post"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"content\":\"rerum\",\"attachment\":\"facilis\",\"attachment_type\":\"qui\",\"user_id\":5.788,\"department_id\":1684032.3020077,\"course_id\":356949472.90297943,\"post_type_id\":2312.93196438}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
                                     "key": "content-type",
                                     "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "50"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -1301,7 +1321,132 @@
                                 }
                             ],
                             "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "body": "{\"message\":\"unauthorized\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/post\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/post\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the post."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"content\":\"nisi\",\"attachment\":\"perspiciatis\",\"attachment_type\":\"libero\",\"user_id\":0.98293829,\"department_id\":210.58591,\"course_id\":13054359.14,\"post_type_id\":395978.066}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "49"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"unauthorized\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/post\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/post\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the post."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "48"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"unauthorized\"}",
                             "name": ""
                         }
                     ]

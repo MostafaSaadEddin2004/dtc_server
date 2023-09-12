@@ -1,19 +1,25 @@
-import colors from "tailwindcss/colors";
-import forms from "@tailwindcss/forms";
-import typography from "@tailwindcss/typography";
+import colors from 'tailwindcss/colors'
+import forms from '@tailwindcss/forms'
+import typography from '@tailwindcss/typography'
 
 export default {
-    content: ["./resources/**/*.blade.php", "./vendor/filament/**/*.blade.php"],
-    darkMode: "class",
+    content: [
+        './resources/**/*.blade.php',
+        './vendor/filament/**/*.blade.php',
+    ],
+    darkMode: 'class',
     theme: {
         extend: {
             colors: {
                 danger: colors.rose,
-                primary: colors.blue,
+                primary: colors.sky,
                 success: colors.green,
                 warning: colors.yellow,
             },
         },
     },
-    plugins: [forms, typography],
-};
+    plugins: [
+        forms,
+        typography,
+    ],
+}
