@@ -1,0 +1,210 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
+use App\Http\Resources\Api\Section\SectionResource;
+use App\Models\Section;
+use Illuminate\Http\Request;
+/**
+ * @group Section
+ *
+ * This Api Section
+ */
+class SectionController extends Controller
+{
+    /**
+     * See all section
+     * @response 200 scenario="Success Process"{
+    "data": [
+        {
+            "id": 1,
+            "name": "Kara Jenkins"
+        },
+        {
+            "id": 2,
+            "name": "Prof. Brett O'Keefe"
+        },
+        {
+            "id": 3,
+            "name": "Fleta Waters"
+        },
+        {
+            "id": 4,
+            "name": "Prof. Charles Lubowitz Jr."
+        },
+        {
+            "id": 5,
+            "name": "Dr. Lempi Kshlerin"
+        },
+        {
+            "id": 6,
+            "name": "Trudie Dicki DVM"
+        },
+        {
+            "id": 7,
+            "name": "Ethan Jones"
+        },
+        {
+            "id": 8,
+            "name": "Mrs. Corrine Huels Sr."
+        },
+        {
+            "id": 9,
+            "name": "Landen Mueller"
+        },
+        {
+            "id": 10,
+            "name": "Hailey Schaefer"
+        },
+        {
+            "id": 11,
+            "name": "Oleta Huel"
+        },
+        {
+            "id": 12,
+            "name": "Brad Cummerata IV"
+        },
+        {
+            "id": 13,
+            "name": "Aleen Veum DVM"
+        },
+        {
+            "id": 14,
+            "name": "Blaise Upton"
+        },
+        {
+            "id": 15,
+            "name": "Mathilde Monahan Jr."
+        },
+        {
+            "id": 16,
+            "name": "Eleonore Barton"
+        },
+        {
+            "id": 17,
+            "name": "Jonathan Kiehn"
+        },
+        {
+            "id": 18,
+            "name": "Mr. Deion Morar Sr."
+        },
+        {
+            "id": 19,
+            "name": "Miss Estefania Altenwerth"
+        },
+        {
+            "id": 20,
+            "name": "Ethan Reichel"
+        },
+        {
+            "id": 21,
+            "name": "Lessie Denesik IV"
+        },
+        {
+            "id": 22,
+            "name": "Prof. Glennie Turcotte I"
+        },
+        {
+            "id": 23,
+            "name": "Maida Lesch"
+        },
+        {
+            "id": 24,
+            "name": "Margret Howell"
+        },
+        {
+            "id": 25,
+            "name": "Donavon Pollich"
+        },
+        {
+            "id": 26,
+            "name": "Dr. Jaunita McDermott"
+        },
+        {
+            "id": 27,
+            "name": "Dallas Miller PhD"
+        },
+        {
+            "id": 28,
+            "name": "Cindy Tillman"
+        },
+        {
+            "id": 29,
+            "name": "Penelope Rau"
+        },
+        {
+            "id": 30,
+            "name": "Cornell Kling"
+        },
+        {
+            "id": 31,
+            "name": "Elouise Adams"
+        },
+        {
+            "id": 32,
+            "name": "Amely Keeling I"
+        },
+        {
+            "id": 33,
+            "name": "Loren Hahn"
+        },
+        {
+            "id": 34,
+            "name": "Hassie Bogan"
+        },
+        {
+            "id": 35,
+            "name": "Matilda Ortiz"
+        },
+        {
+            "id": 36,
+            "name": "Gabe Quigley MD"
+        },
+        {
+            "id": 37,
+            "name": "Junior Reynolds"
+        },
+        {
+            "id": 38,
+            "name": "Ashton Pfannerstill"
+        },
+        {
+            "id": 39,
+            "name": "Branson Jacobi"
+        },
+        {
+            "id": 40,
+            "name": "Trinity Lind"
+        },
+        {
+            "id": 41,
+            "name": "Dr. Brady Hill"
+        },
+        {
+            "id": 42,
+            "name": "Tommie Russel"
+        },
+        {
+            "id": 43,
+            "name": "Blair Feest IV"
+        },
+        {
+            "id": 44,
+            "name": "Dr. Adah Wiegand"
+        },
+        {
+            "id": 45,
+            "name": "Prof. Billie Kuvalis Jr."
+        }
+    ]
+}
+     *
+     *
+     */
+    public function seeAllSection()
+    {
+        $department = Section::get();
+        return SectionResource::collection($department);
+    }
+}

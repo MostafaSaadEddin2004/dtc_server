@@ -8,6 +8,7 @@ use App\Traits\HasRole;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -32,6 +33,7 @@ class User extends Authenticatable
         'phone',
         'password',
         'role_id',
+        'image',
     ];
 
     /**
@@ -66,7 +68,7 @@ class User extends Authenticatable
     }
     public function editMarks(): HasMany
     {
-        return $this->hasMany(EditMark::class,'user_id','id');
+        return $this->hasMany(EditMark::class, 'user_id', 'id');
     }
 
     /**
@@ -87,5 +89,9 @@ class User extends Authenticatable
     public function courses(): HasMany
     {
         return $this->hasMany(CourseRegistration::class);
+    }
+    public function teacher(): HasOne
+    {
+        return $this->hasOne(Teacher::class);
     }
 }

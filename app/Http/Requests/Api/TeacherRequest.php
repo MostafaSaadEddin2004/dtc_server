@@ -2,9 +2,10 @@
 
 namespace App\Http\Requests\Api;
 
+use Carbon\Carbon;
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreMoveRequest extends FormRequest
+class TeacherRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,7 +23,12 @@ class StoreMoveRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'text' => ['required', 'string'],
+            'certificate' => ['required', 'string'],
+            'specialty' => ['required', 'string'],
+            'birth_date' => ['required','date','before:' . Carbon::today()->format('m/d/Y')],
+            'current_location' => ['required', 'string'],
+            'permanent_location' => ['required', 'string'],
+            'nationality' => ['required', 'string'],
             'department_id' => ['required', 'numeric','exists:departments,id'],
         ];
     }

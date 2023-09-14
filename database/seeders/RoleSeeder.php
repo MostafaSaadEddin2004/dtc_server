@@ -29,7 +29,7 @@ class RoleSeeder extends Seeder
         ]);
 
         Role::create([
-            'name' => '4',
+            'name' => 'teacher',
         ]);
     }
 }

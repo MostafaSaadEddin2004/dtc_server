@@ -30,6 +30,7 @@ class RegisterRequest extends FormRequest
             'email' => ['required', 'string', 'unique:users,email', 'email'],
             'password' => ['required', 'string'],
             'role' => ['required', 'string', 'in:student,teacher,student_browser,teacher_browser'],
+            'image'=>['nullable','image'],
         ];
     }
 }

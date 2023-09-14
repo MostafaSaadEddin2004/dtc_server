@@ -7,3 +7,6 @@ require_once 'api/course.php';
 require_once 'api/academic_registration.php';
 require_once 'api/edit_mark.php';
 require_once 'api/move.php';
+require_once 'api/department.php';
+require_once 'api/section.php';
+require_once 'api/teacher.php';

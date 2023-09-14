@@ -46,10 +46,6 @@ class MoveController extends Controller
         "text": [
             "The text field is required."
         ],
-        "user_id": [
-            "The user id field is required."
-            "The selected user id is invalid."
-        ],
         "department_id": [
             "The department id field is required."
             "The selected department id is invalid."
@@ -64,7 +60,13 @@ class MoveController extends Controller
      */
     public function store(StoreMoveRequest $request)
     {
-        $move = Move::create($request->validated());
+        $user = auth()->user();
+        $userId = $user->id;
+
+        $data = $request->validated();
+        $data['user_id'] = $userId;
+        $move = Move::create($data);
+
         return new MoveResource($move);
     }
 }

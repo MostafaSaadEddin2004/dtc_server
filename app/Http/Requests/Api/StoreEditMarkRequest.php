@@ -26,7 +26,6 @@ class StoreEditMarkRequest extends FormRequest
             'mark' => ['required', 'numeric','min:0','max:100'],
             'reason' => ['required', 'string'],
             'teacher' => ['required', 'string'],
-            'user_id' => ['required', 'numeric', 'exists:users,id'],
         ];
     }
 }
