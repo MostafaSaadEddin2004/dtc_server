@@ -1,0 +1,61 @@
+name: Department
+description: |-
+
+  This Api Department
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: 'api/section/{sectionId}/departments'
+    metadata:
+      groupName: Department
+      groupDescription: |-
+
+        This Api Department
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'See departments of section'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      sectionId:
+        name: sectionId
+        description: ''
+        required: true
+        example: ad
+        type: string
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      sectionId: ad
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+          "data": [
+          {
+          "id": 40,
+          "name": "Stanley Hartmann MD",
+          "mark": null
+          }
+          ]
+          }
+        headers: []
+        description: 'Success Process'
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

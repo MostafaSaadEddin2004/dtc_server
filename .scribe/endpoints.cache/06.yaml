@@ -32,30 +32,21 @@ endpoints:
         name: text
         description: ''
         required: true
-        example: necessitatibus
+        example: maxime
         type: string
-        enumValues: []
-        custom: []
-      user_id:
-        name: user_id
-        description: ''
-        required: true
-        example: 5.120976
-        type: number
         enumValues: []
         custom: []
       department_id:
         name: department_id
         description: ''
         required: true
-        example: 409.56
+        example: 94087.082
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      text: necessitatibus
-      user_id: 5.120976
-      department_id: 409.56
+      text: maxime
+      department_id: 94087.082
     fileParameters: []
     responses:
       -
@@ -102,10 +93,6 @@ endpoints:
           "errors": {
           "text": [
           "The text field is required."
-          ],
-          "user_id": [
-          "The user id field is required."
-          "The selected user id is invalid."
           ],
           "department_id": [
           "The department id field is required."

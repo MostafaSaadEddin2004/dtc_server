@@ -29,13 +29,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":[]}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -74,7 +72,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: sunt
+        example: veniam
         type: string
         enumValues: []
         custom: []
@@ -82,7 +80,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Quos suscipit quibusdam beatae quo.'
+        example: 'Officiis in velit tempore nam est aliquid vero doloribus.'
         type: string
         enumValues: []
         custom: []
@@ -98,24 +96,22 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 20
+        example: 9
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: sunt
-      description: 'Quos suscipit quibusdam beatae quo.'
-      note_category_id: 20
+      title: veniam
+      description: 'Officiis in velit tempore nam est aliquid vero doloribus.'
+      note_category_id: 9
     fileParameters: []
     responses:
       -
-        status: 422
-        content: '{"message":"The selected note category id is invalid.","errors":{"note_category_id":["The selected note category id is invalid."]}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -163,13 +159,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":{"id":1,"title":"Mollitia aut vel.","description":"Ut et recusandae nihil. Consequatur recusandae non aut occaecati quos doloribus. Voluptas blanditiis quia tempora deserunt. Omnis rem voluptatum quis iure.","category":"Francis Rippin"}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -218,7 +212,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: quis
+        example: nihil
         type: string
         enumValues: []
         custom: []
@@ -226,7 +220,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Deserunt maxime illum ut ut rerum maxime qui et.'
+        example: 'Officia quisquam quo et quibusdam.'
         type: string
         enumValues: []
         custom: []
@@ -247,18 +241,16 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: quis
-      description: 'Deserunt maxime illum ut ut rerum maxime qui et.'
+      title: nihil
+      description: 'Officia quisquam quo et quibusdam.'
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":{"id":1,"title":"quis","description":"Deserunt maxime illum ut ut rerum maxime qui et.","category":"Francis Rippin"}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -306,12 +298,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 204
-        content: ''
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '55'
+          content-type: application/json
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -350,13 +341,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":[]}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []

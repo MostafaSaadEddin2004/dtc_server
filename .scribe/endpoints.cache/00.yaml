@@ -57,7 +57,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"19|laravel_sanctum_cPe92a6SkBgIjgFE5ErsaKzbiQYCaAihKWnWRu7A887873c8"}'
+        content: '{"token":"4|laravel_sanctum_EvpWoIB9WOK8vPN2lkGOx5Xd9YSgJoc4h4w4yCehf65a0e2b"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -90,7 +90,7 @@ endpoints:
       custom: []
     headers:
       Authorization: 'Bearer {YOUR_AUTH_KEY}'
-      Content-Type: application/json
+      Content-Type: multipart/form-data
       Accept: application/json
     urlParameters: []
     cleanUrlParameters: []
@@ -101,7 +101,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: dolorum
+        example: facilis
         type: string
         enumValues: []
         custom: []
@@ -109,7 +109,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: laudantium
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -117,7 +117,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: quod
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -125,7 +125,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: quisquam
+        example: rerum
         type: string
         enumValues: []
         custom: []
@@ -133,7 +133,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: culpa
+        example: excepturi
         type: string
         enumValues: []
         custom: []
@@ -141,7 +141,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: uhartmann@example.net
+        example: ziemann.deontae@example.com
         type: string
         enumValues: []
         custom: []
@@ -149,7 +149,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: '5:SqS99!jhO<T'
+        example: '\:hE!:CZ'
         type: string
         enumValues: []
         custom: []
@@ -157,7 +157,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: teacher_browser
+        example: student
         type: string
         enumValues:
           - student
@@ -165,20 +165,29 @@ endpoints:
           - student_browser
           - teacher_browser
         custom: []
+      image:
+        name: image
+        description: 'Must be an image.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        custom: []
     cleanBodyParameters:
-      first_name_en: dolorum
-      last_name_en: laudantium
-      first_name_ar: quod
-      last_name_ar: quisquam
-      phone: culpa
-      email: uhartmann@example.net
-      password: '5:SqS99!jhO<T'
-      role: teacher_browser
-    fileParameters: []
+      first_name_en: facilis
+      last_name_en: ut
+      first_name_ar: ut
+      last_name_ar: rerum
+      phone: excepturi
+      email: ziemann.deontae@example.com
+      password: '\:hE!:CZ'
+      role: student
+    fileParameters:
+      image: null
     responses:
       -
         status: 200
-        content: '{"token":"20|laravel_sanctum_tU5nuiLat4HlZwRsE6kGJVohaBxB8wNvG6Mh0Ptr65524072"}'
+        content: '{"token":"5|laravel_sanctum_uDlRmHDIx626cczEqe7jWKRBCKJEROyfAHBdq7nk8cb11236"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -186,6 +195,206 @@ endpoints:
           x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/auth/logout
+    metadata:
+      groupName: Authentication
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: Logout
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 204
+        content: '{}'
+        headers: []
+        description: 'Logout Success'
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+              "message": "Unauthenticated."
+          }
+        headers: []
+        description: 'User Not Login Yet'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/auth/teacher
+    metadata:
+      groupName: Authentication
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'add information for teacher'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      certificate:
+        name: certificate
+        description: ''
+        required: true
+        example: dolorum
+        type: string
+        enumValues: []
+        custom: []
+      specialty:
+        name: specialty
+        description: ''
+        required: true
+        example: ut
+        type: string
+        enumValues: []
+        custom: []
+      birth_date:
+        name: birth_date
+        description: 'Must be a valid date. Must be a date before <code>09/14/2023</code>.'
+        required: true
+        example: '2006-08-22'
+        type: string
+        enumValues: []
+        custom: []
+      current_location:
+        name: current_location
+        description: ''
+        required: true
+        example: magnam
+        type: string
+        enumValues: []
+        custom: []
+      permanent_location:
+        name: permanent_location
+        description: ''
+        required: true
+        example: ducimus
+        type: string
+        enumValues: []
+        custom: []
+      nationality:
+        name: nationality
+        description: ''
+        required: true
+        example: recusandae
+        type: string
+        enumValues: []
+        custom: []
+      department_id:
+        name: department_id
+        description: ''
+        required: true
+        example: 11116376.8
+        type: number
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      certificate: dolorum
+      specialty: ut
+      birth_date: '2006-08-22'
+      current_location: magnam
+      permanent_location: ducimus
+      nationality: recusandae
+      department_id: 11116376.8
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+          "message": "your have old request please wait to accept"
+          "message": "your request in wait"
+          }
+        headers: []
+        description: 'Success Process'
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+          "message": "Unauthenticated."
+          }
+        headers: []
+        description: 'Account Not teacher'
+        custom: []
+      -
+        status: 422
+        content: |-
+          {
+          "message": "The certificate field is required. (and 6 more errors)",
+          "errors": {
+          "certificate": [
+          "The certificate field is required."
+          ],
+          "specialty": [
+          "The specialty field is required."
+          ],
+          "birth_date": [
+          "The birth date field is required."
+          "The birth date field must be a date before today."
+          ],
+          "current_location": [
+          "The current location field is required."
+          ],
+          "permanent_location": [
+          "The permanent location field is required."
+          ],
+          "nationality": [
+          "The nationality field is required."
+          ],
+          "department_id": [
+          "The department id field is required."
+          "The selected department id is invalid."
+          ]
+          }
+          }
+          }
+        headers: []
+        description: 'Validation errors'
         custom: []
     responseFields: []
     auth:
