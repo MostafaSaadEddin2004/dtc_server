@@ -29,7 +29,7 @@ class RegisterCourseRequest extends FormRequest
             'date_of_birth' => ['required', 'date'],
             'student_type' => ['required', 'string'],
             'work_type' => ['required', 'string'],
-            'is_morning' => ['required', 'string'],
+            'is_morning' => ['required', 'boolean'],
         ];
     }
 }
