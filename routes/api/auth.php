@@ -18,5 +18,9 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('auth', 'login');
     Route::post('auth/register', 'register');
 
-    Route::middleware('auth:sanctum')->post('auth/logout', 'logout');
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::post('auth/logout', 'logout');
+        Route::get('auth/profile', 'profile');
+        Route::get('auth/role', 'getRole');
+    });
 });

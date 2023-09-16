@@ -28,12 +28,12 @@ endpoints:
         name: sectionId
         description: ''
         required: true
-        example: ad
+        example: velit
         type: string
         enumValues: []
         custom: []
     cleanUrlParameters:
-      sectionId: ad
+      sectionId: velit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

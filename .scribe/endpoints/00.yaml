@@ -55,7 +55,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"4|laravel_sanctum_EvpWoIB9WOK8vPN2lkGOx5Xd9YSgJoc4h4w4yCehf65a0e2b"}'
+        content: '{"token":"2|B3cNCg7I0C4d8nWlf0llh4K8nCUIiAqDzKpDYT2J36f64fd6"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -68,7 +68,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -99,7 +99,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: facilis
+        example: consequatur
         type: string
         enumValues: []
         custom: []
@@ -107,7 +107,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: ut
+        example: neque
         type: string
         enumValues: []
         custom: []
@@ -115,7 +115,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: ut
+        example: quia
         type: string
         enumValues: []
         custom: []
@@ -123,7 +123,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: rerum
+        example: vero
         type: string
         enumValues: []
         custom: []
@@ -131,7 +131,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: excepturi
+        example: amet
         type: string
         enumValues: []
         custom: []
@@ -139,7 +139,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: ziemann.deontae@example.com
+        example: lcarter@example.net
         type: string
         enumValues: []
         custom: []
@@ -147,7 +147,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: '\:hE!:CZ'
+        example: '@:e/(<oeo7'
         type: string
         enumValues: []
         custom: []
@@ -155,7 +155,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: student
+        example: teacher
         type: string
         enumValues:
           - student
@@ -172,20 +172,20 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      first_name_en: facilis
-      last_name_en: ut
-      first_name_ar: ut
-      last_name_ar: rerum
-      phone: excepturi
-      email: ziemann.deontae@example.com
-      password: '\:hE!:CZ'
-      role: student
+      first_name_en: consequatur
+      last_name_en: neque
+      first_name_ar: quia
+      last_name_ar: vero
+      phone: amet
+      email: lcarter@example.net
+      password: '@:e/(<oeo7'
+      role: teacher
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"5|laravel_sanctum_uDlRmHDIx626cczEqe7jWKRBCKJEROyfAHBdq7nk8cb11236"}'
+        content: '{"token":"2|P8B12xD28iwcQ1A7Kbm7fJk0GhT9iVJwuBZsoMTxa9e9dd0b"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -198,7 +198,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -247,7 +247,97 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/auth/profile
+    metadata:
+      groupName: Authentication
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"user":{"id":10,"first_name_en":"Prof. Kevon Braun","last_name_en":"Winnifred Kutch","first_name_ar":"Merl Kuphal","last_name_ar":"Violette Mayert","email":"rdenesik@example.net","email_verified_at":"2023-09-16T08:23:57.000000Z","image":null,"created_at":"2023-09-16T08:23:57.000000Z","updated_at":"2023-09-16T08:23:57.000000Z","role_id":3}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/auth/role
+    metadata:
+      groupName: Authentication
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"role":"teacher_browser"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -278,7 +368,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-        example: dolorum
+        example: blanditiis
         type: string
         enumValues: []
         custom: []
@@ -286,15 +376,15 @@ endpoints:
         name: specialty
         description: ''
         required: true
-        example: ut
+        example: occaecati
         type: string
         enumValues: []
         custom: []
       birth_date:
         name: birth_date
-        description: 'Must be a valid date. Must be a date before <code>09/14/2023</code>.'
+        description: 'Must be a valid date. Must be a date before <code>09/16/2023</code>.'
         required: true
-        example: '2006-08-22'
+        example: '2021-05-11'
         type: string
         enumValues: []
         custom: []
@@ -302,7 +392,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-        example: magnam
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -310,7 +400,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-        example: ducimus
+        example: iure
         type: string
         enumValues: []
         custom: []
@@ -318,7 +408,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: recusandae
+        example: beatae
         type: string
         enumValues: []
         custom: []
@@ -326,18 +416,18 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 11116376.8
+        example: 1519.0
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: dolorum
-      specialty: ut
-      birth_date: '2006-08-22'
-      current_location: magnam
-      permanent_location: ducimus
-      nationality: recusandae
-      department_id: 11116376.8
+      certificate: blanditiis
+      specialty: occaecati
+      birth_date: '2021-05-11'
+      current_location: ut
+      permanent_location: iure
+      nationality: beatae
+      department_id: 1519.0
     fileParameters: []
     responses:
       -
@@ -398,7 +488,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
