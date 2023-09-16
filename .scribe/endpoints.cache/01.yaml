@@ -72,7 +72,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: veniam
+        example: exercitationem
         type: string
         enumValues: []
         custom: []
@@ -80,7 +80,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Officiis in velit tempore nam est aliquid vero doloribus.'
+        example: 'Dolorem cumque sit eveniet voluptates.'
         type: string
         enumValues: []
         custom: []
@@ -96,14 +96,14 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 9
+        example: 18
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: veniam
-      description: 'Officiis in velit tempore nam est aliquid vero doloribus.'
-      note_category_id: 9
+      title: exercitationem
+      description: 'Dolorem cumque sit eveniet voluptates.'
+      note_category_id: 18
     fileParameters: []
     responses:
       -
@@ -212,7 +212,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: nihil
+        example: repellat
         type: string
         enumValues: []
         custom: []
@@ -220,7 +220,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Officia quisquam quo et quibusdam.'
+        example: 'Vel inventore nobis temporibus.'
         type: string
         enumValues: []
         custom: []
@@ -241,8 +241,8 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: nihil
-      description: 'Officia quisquam quo et quibusdam.'
+      title: repellat
+      description: 'Vel inventore nobis temporibus.'
     fileParameters: []
     responses:
       -

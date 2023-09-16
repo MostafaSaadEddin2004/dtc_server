@@ -482,7 +482,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '54'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -527,7 +527,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '53'
+          x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -581,7 +581,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '52'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -636,7 +636,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '51'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -690,7 +690,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '50'
+          x-ratelimit-remaining: '52'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -738,7 +738,7 @@ endpoints:
         name: is_male
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         enumValues: []
         custom: []
@@ -746,7 +746,7 @@ endpoints:
         name: social_status
         description: ''
         required: true
-        example: atque
+        example: ipsum
         type: string
         enumValues: []
         custom: []
@@ -754,7 +754,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: impedit
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -762,7 +762,7 @@ endpoints:
         name: address
         description: ''
         required: true
-        example: quia
+        example: beatae
         type: string
         enumValues: []
         custom: []
@@ -770,7 +770,7 @@ endpoints:
         name: date_of_birth
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-14T04:10:32'
+        example: '2023-09-16T13:52:36'
         type: string
         enumValues: []
         custom: []
@@ -778,7 +778,7 @@ endpoints:
         name: student_type
         description: ''
         required: true
-        example: ut
+        example: non
         type: string
         enumValues: []
         custom: []
@@ -786,7 +786,7 @@ endpoints:
         name: work_type
         description: ''
         required: true
-        example: labore
+        example: hic
         type: string
         enumValues: []
         custom: []
@@ -799,13 +799,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      is_male: true
-      social_status: atque
-      nationality: impedit
-      address: quia
-      date_of_birth: '2023-09-14T04:10:32'
-      student_type: ut
-      work_type: labore
+      is_male: false
+      social_status: ipsum
+      nationality: et
+      address: beatae
+      date_of_birth: '2023-09-16T13:52:36'
+      student_type: non
+      work_type: hic
       is_morning: true
     fileParameters: []
     responses:
@@ -813,7 +813,7 @@ endpoints:
         status: 500
         content: |-
           {
-              "message": "SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null (Connection: mysql, SQL: insert into `course_registrations` (`is_male`, `social_status`, `nationality`, `address`, `date_of_birth`, `student_type`, `work_type`, `is_morning`, `user_id`, `course_id`, `updated_at`, `created_at`) values (1, atque, impedit, quia, 2023-09-14 04:10:32, ut, labore, 1, ?, 1, 2023-09-14 04:10:32, 2023-09-14 04:10:32))",
+              "message": "SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null (Connection: mysql, SQL: insert into `course_registrations` (`is_male`, `social_status`, `nationality`, `address`, `date_of_birth`, `student_type`, `work_type`, `is_morning`, `user_id`, `course_id`, `updated_at`, `created_at`) values (0, ipsum, et, beatae, 2023-09-16 13:52:36, non, hic, 1, ?, 1, 2023-09-16 13:52:36, 2023-09-16 13:52:36))",
               "exception": "Illuminate\\Database\\QueryException",
               "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php",
               "line": 801,
@@ -1354,7 +1354,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '49'
+          x-ratelimit-remaining: '51'
           access-control-allow-origin: '*'
         description: null
         custom: []

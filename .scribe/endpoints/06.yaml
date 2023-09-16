@@ -30,7 +30,7 @@ endpoints:
         name: text
         description: ''
         required: true
-        example: maxime
+        example: voluptatem
         type: string
         enumValues: []
         custom: []
@@ -38,13 +38,13 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 94087.082
+        example: 520.40215
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      text: maxime
-      department_id: 94087.082
+      text: voluptatem
+      department_id: 520.40215
     fileParameters: []
     responses:
       -

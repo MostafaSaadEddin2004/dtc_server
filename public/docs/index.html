@@ -186,12 +186,6 @@
                                                     <li class="tocify-item level-2" data-unique="post-GETapi-post">
                                 <a href="#post-GETapi-post">Display a listing of the resource.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="post-POSTapi-post--post_id--like">
-                                <a href="#post-POSTapi-post--post_id--like">Display the specified resource.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="post-POSTapi-post--post_id--save">
-                                <a href="#post-POSTapi-post--post_id--save">Display the specified resource.</a>
-                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="post-POSTapi-post">
                                 <a href="#post-POSTapi-post">Store a newly created resource in storage.</a>
                             </li>
@@ -200,6 +194,12 @@
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="post-DELETEapi-post--id-">
                                 <a href="#post-DELETEapi-post--id-">Remove the specified resource from storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="post-POSTapi-post--post_id--like">
+                                <a href="#post-POSTapi-post--post_id--like">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="post-POSTapi-post--post_id--save">
+                                <a href="#post-POSTapi-post--post_id--save">Display the specified resource.</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -222,7 +222,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: September 14, 2023</li>
+        <li>Last updated: September 16, 2023</li>
     </ul>
 </div>
 
@@ -292,7 +292,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 48
+x-ratelimit-remaining: 50
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -300,183 +300,23 @@ access-control-allow-origin: *
     &quot;data&quot;: [
         {
             &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;Maya Auer IV&quot;
+            &quot;name&quot;: &quot;Dr. Orie Medhurst&quot;
         },
         {
             &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;Cesar Kris II&quot;
+            &quot;name&quot;: &quot;Aditya Larson&quot;
         },
         {
             &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;Andy Lubowitz&quot;
+            &quot;name&quot;: &quot;Dr. Brittany Reichel&quot;
         },
         {
             &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;Juwan Hayes III&quot;
+            &quot;name&quot;: &quot;Jayme Ziemann I&quot;
         },
         {
             &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;Santiago Huel&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;Loyal Weissnat III&quot;
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;name&quot;: &quot;Dr. April Wiegand IV&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;name&quot;: &quot;Aaron Hintz&quot;
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;name&quot;: &quot;Prof. Royal Rogahn II&quot;
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;name&quot;: &quot;Dr. Grady Paucek III&quot;
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;name&quot;: &quot;Jovan Botsford Jr.&quot;
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;name&quot;: &quot;Kennedy Torp I&quot;
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;name&quot;: &quot;Chelsie Blanda&quot;
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;name&quot;: &quot;Estella Ebert I&quot;
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;name&quot;: &quot;Marc Rohan&quot;
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;name&quot;: &quot;Chad Blick&quot;
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;name&quot;: &quot;Kianna Bode&quot;
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;name&quot;: &quot;Prof. Lou Pagac V&quot;
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;name&quot;: &quot;Robin Hermann&quot;
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;name&quot;: &quot;Prof. Ned Brakus III&quot;
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;name&quot;: &quot;Franco Kassulke&quot;
-        },
-        {
-            &quot;id&quot;: 22,
-            &quot;name&quot;: &quot;Ms. Maribel Schowalter MD&quot;
-        },
-        {
-            &quot;id&quot;: 23,
-            &quot;name&quot;: &quot;Thalia Hudson III&quot;
-        },
-        {
-            &quot;id&quot;: 24,
-            &quot;name&quot;: &quot;Zoe Hill&quot;
-        },
-        {
-            &quot;id&quot;: 25,
-            &quot;name&quot;: &quot;Casimer Kiehn&quot;
-        },
-        {
-            &quot;id&quot;: 26,
-            &quot;name&quot;: &quot;Marty Hintz&quot;
-        },
-        {
-            &quot;id&quot;: 27,
-            &quot;name&quot;: &quot;Terrance Kuhlman&quot;
-        },
-        {
-            &quot;id&quot;: 28,
-            &quot;name&quot;: &quot;Haven Toy&quot;
-        },
-        {
-            &quot;id&quot;: 29,
-            &quot;name&quot;: &quot;Cheyenne Mueller&quot;
-        },
-        {
-            &quot;id&quot;: 30,
-            &quot;name&quot;: &quot;Prof. Stefan Hahn MD&quot;
-        },
-        {
-            &quot;id&quot;: 31,
-            &quot;name&quot;: &quot;Einar Kuhn II&quot;
-        },
-        {
-            &quot;id&quot;: 32,
-            &quot;name&quot;: &quot;Emmie Barton&quot;
-        },
-        {
-            &quot;id&quot;: 33,
-            &quot;name&quot;: &quot;Nona Homenick V&quot;
-        },
-        {
-            &quot;id&quot;: 34,
-            &quot;name&quot;: &quot;Jefferey Gaylord&quot;
-        },
-        {
-            &quot;id&quot;: 35,
-            &quot;name&quot;: &quot;Dr. Chesley Leuschke Jr.&quot;
-        },
-        {
-            &quot;id&quot;: 36,
-            &quot;name&quot;: &quot;Bridget Hand&quot;
-        },
-        {
-            &quot;id&quot;: 37,
-            &quot;name&quot;: &quot;Prof. Gerhard Farrell II&quot;
-        },
-        {
-            &quot;id&quot;: 38,
-            &quot;name&quot;: &quot;Eliza Kling&quot;
-        },
-        {
-            &quot;id&quot;: 39,
-            &quot;name&quot;: &quot;Tierra Kassulke&quot;
-        },
-        {
-            &quot;id&quot;: 40,
-            &quot;name&quot;: &quot;Alf Durgan III&quot;
-        },
-        {
-            &quot;id&quot;: 41,
-            &quot;name&quot;: &quot;Dr. Piper Fahey&quot;
-        },
-        {
-            &quot;id&quot;: 42,
-            &quot;name&quot;: &quot;Ms. Vivien Pollich DVM&quot;
-        },
-        {
-            &quot;id&quot;: 43,
-            &quot;name&quot;: &quot;Citlalli Torp&quot;
-        },
-        {
-            &quot;id&quot;: 44,
-            &quot;name&quot;: &quot;Mr. Harry Franecki III&quot;
-        },
-        {
-            &quot;id&quot;: 45,
-            &quot;name&quot;: &quot;Euna Kautzer&quot;
+            &quot;name&quot;: &quot;Dean Tillman MD&quot;
         }
     ]
 }</code>
@@ -590,7 +430,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-certificate-type--certificateType_id--department">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (404):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -599,16 +439,428 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 47
+x-ratelimit-remaining: 49
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
+    &quot;message&quot;: &quot;No query results for model [App\\Models\\CertificateType] 20&quot;,
+    &quot;exception&quot;: &quot;Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException&quot;,
+    &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php&quot;,
+    &quot;line&quot;: 423,
+    &quot;trace&quot;: [
         {
-            &quot;id&quot;: 15,
-            &quot;name&quot;: &quot;Hiram Ritchie&quot;,
-            &quot;mark&quot;: null
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php&quot;,
+            &quot;line&quot;: 399,
+            &quot;function&quot;: &quot;prepareException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\nunomaduro\\collision\\src\\Adapters\\Laravel\\ExceptionHandler.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 185,
+            &quot;function&quot;: &quot;handleException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
+            &quot;line&quot;: 159,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
+            &quot;line&quot;: 125,
+            &quot;function&quot;: &quot;handleRequest&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
+            &quot;line&quot;: 87,
+            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;line&quot;: 798,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;line&quot;: 777,
+            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;line&quot;: 741,
+            &quot;function&quot;: &quot;runRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;line&quot;: 730,
+            &quot;function&quot;: &quot;dispatchToRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
+            &quot;line&quot;: 200,
+            &quot;function&quot;: &quot;dispatch&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 141,
+            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php&quot;,
+            &quot;line&quot;: 19,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Livewire\\DisableBrowserCache&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php&quot;,
+            &quot;line&quot;: 31,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php&quot;,
+            &quot;line&quot;: 40,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php&quot;,
+            &quot;line&quot;: 27,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php&quot;,
+            &quot;line&quot;: 89,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php&quot;,
+            &quot;line&quot;: 62,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php&quot;,
+            &quot;line&quot;: 39,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
+            &quot;line&quot;: 175,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
+            &quot;line&quot;: 144,
+            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 287,
+            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 92,
+            &quot;function&quot;: &quot;makeApiCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 45,
+            &quot;function&quot;: &quot;makeResponseCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 35,
+            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
+            &quot;line&quot;: 209,
+            &quot;function&quot;: &quot;__invoke&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
+            &quot;line&quot;: 163,
+            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
+            &quot;line&quot;: 95,
+            &quot;function&quot;: &quot;fetchResponses&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 124,
+            &quot;function&quot;: &quot;processRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 71,
+            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 49,
+            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;get&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
+            &quot;line&quot;: 36,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php&quot;,
+            &quot;line&quot;: 41,
+            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
+            &quot;line&quot;: 93,
+            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
+            &quot;line&quot;: 35,
+            &quot;function&quot;: &quot;callBoundMethod&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php&quot;,
+            &quot;line&quot;: 662,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
+            &quot;line&quot;: 211,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Command\\Command.php&quot;,
+            &quot;line&quot;: 326,
+            &quot;function&quot;: &quot;execute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
+            &quot;line&quot;: 1081,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
+            &quot;line&quot;: 320,
+            &quot;function&quot;: &quot;doRunCommand&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
+            &quot;line&quot;: 174,
+            &quot;function&quot;: &quot;doRun&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php&quot;,
+            &quot;line&quot;: 201,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\artisan&quot;,
+            &quot;line&quot;: 35,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
         }
     ]
 }</code>
@@ -768,7 +1020,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;4|laravel_sanctum_EvpWoIB9WOK8vPN2lkGOx5Xd9YSgJoc4h4w4yCehf65a0e2b&quot;
+    &quot;token&quot;: &quot;2|laravel_sanctum_QnWH5exbv5zlGmYbSRaARAvEOjWqqahPybN9VJuzfbe40a2a&quot;
 }</code>
  </pre>
     </span>
@@ -906,15 +1158,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "first_name_en=facilis"\
-    --form "last_name_en=ut"\
-    --form "first_name_ar=ut"\
-    --form "last_name_ar=rerum"\
-    --form "phone=excepturi"\
-    --form "email=ziemann.deontae@example.com"\
-    --form "password=\:hE!:CZ"\
-    --form "role=student"\
-    --form "image=@C:\Users\LENOVO\AppData\Local\Temp\phpCBF2.tmp" </code></pre></div>
+    --form "first_name_en=consectetur"\
+    --form "last_name_en=laborum"\
+    --form "first_name_ar=at"\
+    --form "last_name_ar=ut"\
+    --form "phone=consequatur"\
+    --form "email=kdubuque@example.org"\
+    --form "password=wsd)H(i$5*&lt;1m&amp;*E"\
+    --form "role=teacher_browser"\
+    --form "image=@C:\Users\LENOVO\AppData\Local\Temp\php881A.tmp" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -929,14 +1181,14 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('first_name_en', 'facilis');
-body.append('last_name_en', 'ut');
-body.append('first_name_ar', 'ut');
-body.append('last_name_ar', 'rerum');
-body.append('phone', 'excepturi');
-body.append('email', 'ziemann.deontae@example.com');
-body.append('password', '\:hE!:CZ');
-body.append('role', 'student');
+body.append('first_name_en', 'consectetur');
+body.append('last_name_en', 'laborum');
+body.append('first_name_ar', 'at');
+body.append('last_name_ar', 'ut');
+body.append('phone', 'consequatur');
+body.append('email', 'kdubuque@example.org');
+body.append('password', 'wsd)H(i$5*&lt;1m&amp;*E');
+body.append('role', 'teacher_browser');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -963,7 +1215,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;5|laravel_sanctum_uDlRmHDIx626cczEqe7jWKRBCKJEROyfAHBdq7nk8cb11236&quot;
+    &quot;token&quot;: &quot;3|laravel_sanctum_xeGAZLxK6GsSATj4cFivI64EaLGeM87kJmn0nQcX72b1f5e2&quot;
 }</code>
  </pre>
     </span>
@@ -1054,10 +1306,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_en"                data-endpoint="POSTapi-auth-register"
-               value="facilis"
+               value="consectetur"
                data-component="body">
     <br>
-<p>Example: <code>facilis</code></p>
+<p>Example: <code>consectetur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_en</code></b>&nbsp;&nbsp;
@@ -1065,10 +1317,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_en"                data-endpoint="POSTapi-auth-register"
-               value="ut"
+               value="laborum"
                data-component="body">
     <br>
-<p>Example: <code>ut</code></p>
+<p>Example: <code>laborum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>first_name_ar</code></b>&nbsp;&nbsp;
@@ -1076,10 +1328,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="ut"
+               value="at"
                data-component="body">
     <br>
-<p>Example: <code>ut</code></p>
+<p>Example: <code>at</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_ar</code></b>&nbsp;&nbsp;
@@ -1087,10 +1339,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="rerum"
+               value="ut"
                data-component="body">
     <br>
-<p>Example: <code>rerum</code></p>
+<p>Example: <code>ut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1098,10 +1350,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone"                data-endpoint="POSTapi-auth-register"
-               value="excepturi"
+               value="consequatur"
                data-component="body">
     <br>
-<p>Example: <code>excepturi</code></p>
+<p>Example: <code>consequatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1109,10 +1361,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-register"
-               value="ziemann.deontae@example.com"
+               value="kdubuque@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>ziemann.deontae@example.com</code></p>
+<p>Must be a valid email address. Example: <code>kdubuque@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1120,10 +1372,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-register"
-               value="\:hE!:CZ"
+               value="wsd)H(i$5*<1m&*E"
                data-component="body">
     <br>
-<p>Example: <code>\:hE!:CZ</code></p>
+<p>Example: <code>wsd)H(i$5*&lt;1m&amp;*E</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -1131,10 +1383,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-register"
-               value="student"
+               value="teacher_browser"
                data-component="body">
     <br>
-<p>Example: <code>student</code></p>
+<p>Example: <code>teacher_browser</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>student</code></li> <li><code>teacher</code></li> <li><code>student_browser</code></li> <li><code>teacher_browser</code></li></ul>
         </div>
@@ -1147,7 +1399,7 @@ Must be one of:
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\LENOVO\AppData\Local\Temp\phpCBF2.tmp</code></p>
+<p>Must be an image. Example: <code>C:\Users\LENOVO\AppData\Local\Temp\php881A.tmp</code></p>
         </div>
         </form>
 
@@ -1307,13 +1559,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"certificate\": \"dolorum\",
-    \"specialty\": \"ut\",
-    \"birth_date\": \"2006-08-22\",
-    \"current_location\": \"magnam\",
-    \"permanent_location\": \"ducimus\",
-    \"nationality\": \"recusandae\",
-    \"department_id\": 11116376.8
+    \"certificate\": \"nisi\",
+    \"specialty\": \"in\",
+    \"birth_date\": \"2015-11-22\",
+    \"current_location\": \"temporibus\",
+    \"permanent_location\": \"architecto\",
+    \"nationality\": \"molestias\",
+    \"department_id\": 3
 }"
 </code></pre></div>
 
@@ -1330,13 +1582,13 @@ const headers = {
 };
 
 let body = {
-    "certificate": "dolorum",
-    "specialty": "ut",
-    "birth_date": "2006-08-22",
-    "current_location": "magnam",
-    "permanent_location": "ducimus",
-    "nationality": "recusandae",
-    "department_id": 11116376.8
+    "certificate": "nisi",
+    "specialty": "in",
+    "birth_date": "2015-11-22",
+    "current_location": "temporibus",
+    "permanent_location": "architecto",
+    "nationality": "molestias",
+    "department_id": 3
 };
 
 fetch(url, {
@@ -1490,10 +1742,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="certificate"                data-endpoint="POSTapi-auth-teacher"
-               value="dolorum"
+               value="nisi"
                data-component="body">
     <br>
-<p>Example: <code>dolorum</code></p>
+<p>Example: <code>nisi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>specialty</code></b>&nbsp;&nbsp;
@@ -1501,10 +1753,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="specialty"                data-endpoint="POSTapi-auth-teacher"
-               value="ut"
+               value="in"
                data-component="body">
     <br>
-<p>Example: <code>ut</code></p>
+<p>Example: <code>in</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birth_date</code></b>&nbsp;&nbsp;
@@ -1512,10 +1764,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birth_date"                data-endpoint="POSTapi-auth-teacher"
-               value="2006-08-22"
+               value="2015-11-22"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before <code>09/14/2023</code>. Example: <code>2006-08-22</code></p>
+<p>Must be a valid date. Must be a date before <code>09/16/2023</code>. Example: <code>2015-11-22</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>current_location</code></b>&nbsp;&nbsp;
@@ -1523,10 +1775,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="current_location"                data-endpoint="POSTapi-auth-teacher"
-               value="magnam"
+               value="temporibus"
                data-component="body">
     <br>
-<p>Example: <code>magnam</code></p>
+<p>Example: <code>temporibus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permanent_location</code></b>&nbsp;&nbsp;
@@ -1534,10 +1786,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="permanent_location"                data-endpoint="POSTapi-auth-teacher"
-               value="ducimus"
+               value="architecto"
                data-component="body">
     <br>
-<p>Example: <code>ducimus</code></p>
+<p>Example: <code>architecto</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nationality</code></b>&nbsp;&nbsp;
@@ -1545,21 +1797,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-auth-teacher"
-               value="recusandae"
+               value="molestias"
                data-component="body">
     <br>
-<p>Example: <code>recusandae</code></p>
+<p>Example: <code>molestias</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
-<small>number</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-auth-teacher"
-               value="11116376.8"
+               value="3"
                data-component="body">
     <br>
-<p>Example: <code>11116376.8</code></p>
+<p>Example: <code>3</code></p>
         </div>
         </form>
 
@@ -1616,7 +1868,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2202,7 +2454,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 53
+x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2340,7 +2592,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 52
+x-ratelimit-remaining: 54
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2490,7 +2742,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 51
+x-ratelimit-remaining: 53
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2644,7 +2896,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 50
+x-ratelimit-remaining: 52
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2764,13 +3016,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"is_male\": true,
-    \"social_status\": \"atque\",
-    \"nationality\": \"impedit\",
-    \"address\": \"quia\",
-    \"date_of_birth\": \"2023-09-14T04:10:32\",
-    \"student_type\": \"ut\",
-    \"work_type\": \"labore\",
+    \"is_male\": false,
+    \"social_status\": \"ipsum\",
+    \"nationality\": \"et\",
+    \"address\": \"beatae\",
+    \"date_of_birth\": \"2023-09-16T13:52:36\",
+    \"student_type\": \"non\",
+    \"work_type\": \"hic\",
     \"is_morning\": true
 }"
 </code></pre></div>
@@ -2788,13 +3040,13 @@ const headers = {
 };
 
 let body = {
-    "is_male": true,
-    "social_status": "atque",
-    "nationality": "impedit",
-    "address": "quia",
-    "date_of_birth": "2023-09-14T04:10:32",
-    "student_type": "ut",
-    "work_type": "labore",
+    "is_male": false,
+    "social_status": "ipsum",
+    "nationality": "et",
+    "address": "beatae",
+    "date_of_birth": "2023-09-16T13:52:36",
+    "student_type": "non",
+    "work_type": "hic",
     "is_morning": true
 };
 
@@ -2817,12 +3069,12 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 49
+x-ratelimit-remaining: 51
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;SQLSTATE[23000]: Integrity constraint violation: 1048 Column &#039;user_id&#039; cannot be null (Connection: mysql, SQL: insert into `course_registrations` (`is_male`, `social_status`, `nationality`, `address`, `date_of_birth`, `student_type`, `work_type`, `is_morning`, `user_id`, `course_id`, `updated_at`, `created_at`) values (1, atque, impedit, quia, 2023-09-14 04:10:32, ut, labore, 1, ?, 1, 2023-09-14 04:10:32, 2023-09-14 04:10:32))&quot;,
+    &quot;message&quot;: &quot;SQLSTATE[23000]: Integrity constraint violation: 1048 Column &#039;user_id&#039; cannot be null (Connection: mysql, SQL: insert into `course_registrations` (`is_male`, `social_status`, `nationality`, `address`, `date_of_birth`, `student_type`, `work_type`, `is_morning`, `user_id`, `course_id`, `updated_at`, `created_at`) values (0, ipsum, et, beatae, 2023-09-16 13:52:36, non, hic, 1, ?, 1, 2023-09-16 13:52:36, 2023-09-16 13:52:36))&quot;,
     &quot;exception&quot;: &quot;Illuminate\\Database\\QueryException&quot;,
     &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php&quot;,
     &quot;line&quot;: 801,
@@ -3473,7 +3725,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>social_status</code></b>&nbsp;&nbsp;
@@ -3481,10 +3733,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="social_status"                data-endpoint="POSTapi-course--course_id--register"
-               value="atque"
+               value="ipsum"
                data-component="body">
     <br>
-<p>Example: <code>atque</code></p>
+<p>Example: <code>ipsum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nationality</code></b>&nbsp;&nbsp;
@@ -3492,10 +3744,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-course--course_id--register"
-               value="impedit"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>impedit</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -3503,10 +3755,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-course--course_id--register"
-               value="quia"
+               value="beatae"
                data-component="body">
     <br>
-<p>Example: <code>quia</code></p>
+<p>Example: <code>beatae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>date_of_birth</code></b>&nbsp;&nbsp;
@@ -3514,10 +3766,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date_of_birth"                data-endpoint="POSTapi-course--course_id--register"
-               value="2023-09-14T04:10:32"
+               value="2023-09-16T13:52:36"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-14T04:10:32</code></p>
+<p>Must be a valid date. Example: <code>2023-09-16T13:52:36</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>student_type</code></b>&nbsp;&nbsp;
@@ -3525,10 +3777,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="student_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="ut"
+               value="non"
                data-component="body">
     <br>
-<p>Example: <code>ut</code></p>
+<p>Example: <code>non</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>work_type</code></b>&nbsp;&nbsp;
@@ -3536,10 +3788,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="work_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="labore"
+               value="hic"
                data-component="body">
     <br>
-<p>Example: <code>labore</code></p>
+<p>Example: <code>hic</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>is_morning</code></b>&nbsp;&nbsp;
@@ -3581,14 +3833,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/section/ad/departments" \
+    --get "http://localhost/api/section/ullam/departments" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/section/ad/departments"
+    "http://localhost/api/section/ullam/departments"
 );
 
 const headers = {
@@ -3696,10 +3948,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="sectionId"                data-endpoint="GETapi-section--sectionId--departments"
-               value="ad"
+               value="ullam"
                data-component="url">
     <br>
-<p>Example: <code>ad</code></p>
+<p>Example: <code>ullam</code></p>
             </div>
                     </form>
 
@@ -3724,10 +3976,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"subject\": \"libero\",
-    \"mark\": 21,
-    \"reason\": \"facilis\",
-    \"teacher\": \"ad\"
+    \"subject\": \"qui\",
+    \"mark\": 18,
+    \"reason\": \"vitae\",
+    \"teacher\": \"deserunt\"
 }"
 </code></pre></div>
 
@@ -3743,10 +3995,10 @@ const headers = {
 };
 
 let body = {
-    "subject": "libero",
-    "mark": 21,
-    "reason": "facilis",
-    "teacher": "ad"
+    "subject": "qui",
+    "mark": 18,
+    "reason": "vitae",
+    "teacher": "deserunt"
 };
 
 fetch(url, {
@@ -3892,10 +4144,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="subject"                data-endpoint="POSTapi-editMark"
-               value="libero"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>libero</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>mark</code></b>&nbsp;&nbsp;
@@ -3903,10 +4155,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="mark"                data-endpoint="POSTapi-editMark"
-               value="21"
+               value="18"
                data-component="body">
     <br>
-<p>Must be at least 0. Must not be greater than 100. Example: <code>21</code></p>
+<p>Must be at least 0. Must not be greater than 100. Example: <code>18</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>reason</code></b>&nbsp;&nbsp;
@@ -3914,10 +4166,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="reason"                data-endpoint="POSTapi-editMark"
-               value="facilis"
+               value="vitae"
                data-component="body">
     <br>
-<p>Example: <code>facilis</code></p>
+<p>Example: <code>vitae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>teacher</code></b>&nbsp;&nbsp;
@@ -3925,10 +4177,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="teacher"                data-endpoint="POSTapi-editMark"
-               value="ad"
+               value="deserunt"
                data-component="body">
     <br>
-<p>Example: <code>ad</code></p>
+<p>Example: <code>deserunt</code></p>
         </div>
         </form>
 
@@ -3953,8 +4205,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"text\": \"maxime\",
-    \"department_id\": 94087.082
+    \"text\": \"voluptatem\",
+    \"department_id\": 520.40215
 }"
 </code></pre></div>
 
@@ -3970,8 +4222,8 @@ const headers = {
 };
 
 let body = {
-    "text": "maxime",
-    "department_id": 94087.082
+    "text": "voluptatem",
+    "department_id": 520.40215
 };
 
 fetch(url, {
@@ -4114,10 +4366,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="text"                data-endpoint="POSTapi-move"
-               value="maxime"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>maxime</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -4125,10 +4377,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-move"
-               value="94087.082"
+               value="520.40215"
                data-component="body">
     <br>
-<p>Example: <code>94087.082</code></p>
+<p>Example: <code>520.40215</code></p>
         </div>
         </form>
 
@@ -4293,9 +4545,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"veniam\",
-    \"description\": \"Officiis in velit tempore nam est aliquid vero doloribus.\",
-    \"note_category_id\": 9
+    \"title\": \"exercitationem\",
+    \"description\": \"Dolorem cumque sit eveniet voluptates.\",
+    \"note_category_id\": 18
 }"
 </code></pre></div>
 
@@ -4312,9 +4564,9 @@ const headers = {
 };
 
 let body = {
-    "title": "veniam",
-    "description": "Officiis in velit tempore nam est aliquid vero doloribus.",
-    "note_category_id": 9
+    "title": "exercitationem",
+    "description": "Dolorem cumque sit eveniet voluptates.",
+    "note_category_id": 18
 };
 
 fetch(url, {
@@ -4430,10 +4682,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-note"
-               value="veniam"
+               value="exercitationem"
                data-component="body">
     <br>
-<p>Example: <code>veniam</code></p>
+<p>Example: <code>exercitationem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -4441,10 +4693,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-note"
-               value="Officiis in velit tempore nam est aliquid vero doloribus."
+               value="Dolorem cumque sit eveniet voluptates."
                data-component="body">
     <br>
-<p>Example: <code>Officiis in velit tempore nam est aliquid vero doloribus.</code></p>
+<p>Example: <code>Dolorem cumque sit eveniet voluptates.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -4463,10 +4715,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="note_category_id"                data-endpoint="POSTapi-note"
-               value="9"
+               value="18"
                data-component="body">
     <br>
-<p>Example: <code>9</code></p>
+<p>Example: <code>18</code></p>
         </div>
         </form>
 
@@ -4639,8 +4891,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"nihil\",
-    \"description\": \"Officia quisquam quo et quibusdam.\"
+    \"title\": \"repellat\",
+    \"description\": \"Vel inventore nobis temporibus.\"
 }"
 </code></pre></div>
 
@@ -4657,8 +4909,8 @@ const headers = {
 };
 
 let body = {
-    "title": "nihil",
-    "description": "Officia quisquam quo et quibusdam."
+    "title": "repellat",
+    "description": "Vel inventore nobis temporibus."
 };
 
 fetch(url, {
@@ -4790,10 +5042,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="PUTapi-note--id-"
-               value="nihil"
+               value="repellat"
                data-component="body">
     <br>
-<p>Example: <code>nihil</code></p>
+<p>Example: <code>repellat</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -4801,10 +5053,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="PUTapi-note--id-"
-               value="Officia quisquam quo et quibusdam."
+               value="Vel inventore nobis temporibus."
                data-component="body">
     <br>
-<p>Example: <code>Officia quisquam quo et quibusdam.</code></p>
+<p>Example: <code>Vel inventore nobis temporibus.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -5136,12 +5388,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post?type=maiores" \
+    --get "http://localhost/api/post?type=harum" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"course\"
+    \"type\": \"department\"
 }"
 </code></pre></div>
 
@@ -5152,7 +5404,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "type": "maiores",
+    "type": "harum",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -5164,7 +5416,7 @@ const headers = {
 };
 
 let body = {
-    "type": "course"
+    "type": "department"
 };
 
 fetch(url, {
@@ -5728,10 +5980,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-post"
-               value="maiores"
+               value="harum"
                data-component="query">
     <br>
-<p>the type of the post (public, department ,course). Example: <code>maiores</code></p>
+<p>the type of the post (public, department ,course). Example: <code>harum</code></p>
             </div>
                         <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -5740,1388 +5992,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-post"
-               value="course"
+               value="department"
                data-component="body">
     <br>
-<p>Example: <code>course</code></p>
+<p>Example: <code>department</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>public</code></li> <li><code>department</code></li> <li><code>course</code></li></ul>
         </div>
         </form>
-
-                    <h2 id="post-POSTapi-post--post_id--like">Display the specified resource.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-post--post_id--like">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/post/1/like" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/1/like"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-post--post_id--like">
-            <blockquote>
-            <p>Example response (500):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;SQLSTATE[23000]: Integrity constraint violation: 1048 Column &#039;user_id&#039; cannot be null (Connection: mysql, SQL: insert into `likes` (`user_id`, `post_id`, `updated_at`, `created_at`) values (?, 1, 2023-09-14 04:10:32, 2023-09-14 04:10:32))&quot;,
-    &quot;exception&quot;: &quot;Illuminate\\Database\\QueryException&quot;,
-    &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php&quot;,
-    &quot;line&quot;: 801,
-    &quot;trace&quot;: [
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php&quot;,
-            &quot;line&quot;: 755,
-            &quot;function&quot;: &quot;runQueryCallback&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php&quot;,
-            &quot;line&quot;: 569,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php&quot;,
-            &quot;line&quot;: 533,
-            &quot;function&quot;: &quot;statement&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php&quot;,
-            &quot;line&quot;: 32,
-            &quot;function&quot;: &quot;insert&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php&quot;,
-            &quot;line&quot;: 3387,
-            &quot;function&quot;: &quot;processInsertGetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Processors\\Processor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php&quot;,
-            &quot;line&quot;: 1968,
-            &quot;function&quot;: &quot;insertGetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php&quot;,
-            &quot;line&quot;: 1333,
-            &quot;function&quot;: &quot;__call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php&quot;,
-            &quot;line&quot;: 1298,
-            &quot;function&quot;: &quot;insertAndSetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php&quot;,
-            &quot;line&quot;: 1137,
-            &quot;function&quot;: &quot;performInsert&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany.php&quot;,
-            &quot;line&quot;: 342,
-            &quot;function&quot;: &quot;save&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php&quot;,
-            &quot;line&quot;: 307,
-            &quot;function&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany.php&quot;,
-            &quot;line&quot;: 339,
-            &quot;function&quot;: &quot;tap&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\app\\Http\\Controllers\\Api\\PostController.php&quot;,
-            &quot;line&quot;: 61,
-            &quot;function&quot;: &quot;create&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php&quot;,
-            &quot;line&quot;: 54,
-            &quot;function&quot;: &quot;like&quot;,
-            &quot;class&quot;: &quot;App\\Http\\Controllers\\Api\\PostController&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php&quot;,
-            &quot;line&quot;: 43,
-            &quot;function&quot;: &quot;callAction&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Controller&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php&quot;,
-            &quot;line&quot;: 259,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\ControllerDispatcher&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php&quot;,
-            &quot;line&quot;: 205,
-            &quot;function&quot;: &quot;runController&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 799,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Routing\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php&quot;,
-            &quot;line&quot;: 50,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 159,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 125,
-            &quot;function&quot;: &quot;handleRequest&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 87,
-            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 798,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 777,
-            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 741,
-            &quot;function&quot;: &quot;runRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 730,
-            &quot;function&quot;: &quot;dispatchToRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
-            &quot;line&quot;: 200,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php&quot;,
-            &quot;line&quot;: 19,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Livewire\\DisableBrowserCache&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php&quot;,
-            &quot;line&quot;: 31,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php&quot;,
-            &quot;line&quot;: 40,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php&quot;,
-            &quot;line&quot;: 27,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php&quot;,
-            &quot;line&quot;: 89,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php&quot;,
-            &quot;line&quot;: 62,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php&quot;,
-            &quot;line&quot;: 39,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
-            &quot;line&quot;: 175,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
-            &quot;line&quot;: 144,
-            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 299,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 287,
-            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 92,
-            &quot;function&quot;: &quot;makeApiCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 45,
-            &quot;function&quot;: &quot;makeResponseCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 209,
-            &quot;function&quot;: &quot;__invoke&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 163,
-            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 95,
-            &quot;function&quot;: &quot;fetchResponses&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 124,
-            &quot;function&quot;: &quot;processRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 71,
-            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 49,
-            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php&quot;,
-            &quot;line&quot;: 51,
-            &quot;function&quot;: &quot;get&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 36,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php&quot;,
-            &quot;line&quot;: 41,
-            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 93,
-            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;callBoundMethod&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php&quot;,
-            &quot;line&quot;: 662,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
-            &quot;line&quot;: 211,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Command\\Command.php&quot;,
-            &quot;line&quot;: 326,
-            &quot;function&quot;: &quot;execute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
-            &quot;line&quot;: 1081,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
-            &quot;line&quot;: 320,
-            &quot;function&quot;: &quot;doRunCommand&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
-            &quot;line&quot;: 174,
-            &quot;function&quot;: &quot;doRun&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php&quot;,
-            &quot;line&quot;: 201,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\artisan&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-POSTapi-post--post_id--like" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-post--post_id--like"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-post--post_id--like"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-post--post_id--like" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-post--post_id--like">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-post--post_id--like" data-method="POST"
-      data-path="api/post/{post_id}/like"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-post--post_id--like', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-post--post_id--like"
-                    onclick="tryItOut('POSTapi-post--post_id--like');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-post--post_id--like"
-                    onclick="cancelTryOut('POSTapi-post--post_id--like');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-post--post_id--like"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/post/{post_id}/like</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-post--post_id--like"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-post--post_id--like"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-post--post_id--like"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>post_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="post_id"                data-endpoint="POSTapi-post--post_id--like"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the post. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="post-POSTapi-post--post_id--save">Display the specified resource.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-post--post_id--save">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/post/1/save" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/1/save"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-post--post_id--save">
-            <blockquote>
-            <p>Example response (500):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;SQLSTATE[23000]: Integrity constraint violation: 1048 Column &#039;user_id&#039; cannot be null (Connection: mysql, SQL: insert into `saves` (`user_id`, `post_id`, `updated_at`, `created_at`) values (?, 1, 2023-09-14 04:10:32, 2023-09-14 04:10:32))&quot;,
-    &quot;exception&quot;: &quot;Illuminate\\Database\\QueryException&quot;,
-    &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php&quot;,
-    &quot;line&quot;: 801,
-    &quot;trace&quot;: [
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php&quot;,
-            &quot;line&quot;: 755,
-            &quot;function&quot;: &quot;runQueryCallback&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php&quot;,
-            &quot;line&quot;: 569,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php&quot;,
-            &quot;line&quot;: 533,
-            &quot;function&quot;: &quot;statement&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php&quot;,
-            &quot;line&quot;: 32,
-            &quot;function&quot;: &quot;insert&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php&quot;,
-            &quot;line&quot;: 3387,
-            &quot;function&quot;: &quot;processInsertGetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Processors\\Processor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php&quot;,
-            &quot;line&quot;: 1968,
-            &quot;function&quot;: &quot;insertGetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php&quot;,
-            &quot;line&quot;: 1333,
-            &quot;function&quot;: &quot;__call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php&quot;,
-            &quot;line&quot;: 1298,
-            &quot;function&quot;: &quot;insertAndSetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php&quot;,
-            &quot;line&quot;: 1137,
-            &quot;function&quot;: &quot;performInsert&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany.php&quot;,
-            &quot;line&quot;: 342,
-            &quot;function&quot;: &quot;save&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php&quot;,
-            &quot;line&quot;: 307,
-            &quot;function&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany.php&quot;,
-            &quot;line&quot;: 339,
-            &quot;function&quot;: &quot;tap&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\app\\Http\\Controllers\\Api\\PostController.php&quot;,
-            &quot;line&quot;: 71,
-            &quot;function&quot;: &quot;create&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php&quot;,
-            &quot;line&quot;: 54,
-            &quot;function&quot;: &quot;save&quot;,
-            &quot;class&quot;: &quot;App\\Http\\Controllers\\Api\\PostController&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php&quot;,
-            &quot;line&quot;: 43,
-            &quot;function&quot;: &quot;callAction&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Controller&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php&quot;,
-            &quot;line&quot;: 259,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\ControllerDispatcher&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php&quot;,
-            &quot;line&quot;: 205,
-            &quot;function&quot;: &quot;runController&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 799,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Routing\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php&quot;,
-            &quot;line&quot;: 50,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 159,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 125,
-            &quot;function&quot;: &quot;handleRequest&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 87,
-            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 798,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 777,
-            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 741,
-            &quot;function&quot;: &quot;runRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 730,
-            &quot;function&quot;: &quot;dispatchToRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
-            &quot;line&quot;: 200,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php&quot;,
-            &quot;line&quot;: 19,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Livewire\\DisableBrowserCache&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php&quot;,
-            &quot;line&quot;: 31,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php&quot;,
-            &quot;line&quot;: 40,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php&quot;,
-            &quot;line&quot;: 27,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php&quot;,
-            &quot;line&quot;: 89,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php&quot;,
-            &quot;line&quot;: 62,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php&quot;,
-            &quot;line&quot;: 39,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
-            &quot;line&quot;: 175,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
-            &quot;line&quot;: 144,
-            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 299,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 287,
-            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 92,
-            &quot;function&quot;: &quot;makeApiCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 45,
-            &quot;function&quot;: &quot;makeResponseCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 209,
-            &quot;function&quot;: &quot;__invoke&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 163,
-            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 95,
-            &quot;function&quot;: &quot;fetchResponses&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 124,
-            &quot;function&quot;: &quot;processRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 71,
-            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 49,
-            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php&quot;,
-            &quot;line&quot;: 51,
-            &quot;function&quot;: &quot;get&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 36,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php&quot;,
-            &quot;line&quot;: 41,
-            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 93,
-            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;callBoundMethod&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php&quot;,
-            &quot;line&quot;: 662,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
-            &quot;line&quot;: 211,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Command\\Command.php&quot;,
-            &quot;line&quot;: 326,
-            &quot;function&quot;: &quot;execute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
-            &quot;line&quot;: 1081,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
-            &quot;line&quot;: 320,
-            &quot;function&quot;: &quot;doRunCommand&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
-            &quot;line&quot;: 174,
-            &quot;function&quot;: &quot;doRun&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php&quot;,
-            &quot;line&quot;: 201,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\artisan&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-POSTapi-post--post_id--save" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-post--post_id--save"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-post--post_id--save"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-post--post_id--save" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-post--post_id--save">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-post--post_id--save" data-method="POST"
-      data-path="api/post/{post_id}/save"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-post--post_id--save', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-post--post_id--save"
-                    onclick="tryItOut('POSTapi-post--post_id--save');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-post--post_id--save"
-                    onclick="cancelTryOut('POSTapi-post--post_id--save');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-post--post_id--save"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/post/{post_id}/save</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-post--post_id--save"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-post--post_id--save"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-post--post_id--save"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>post_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="post_id"                data-endpoint="POSTapi-post--post_id--save"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the post. Example: <code>1</code></p>
-            </div>
-                    </form>
 
                     <h2 id="post-POSTapi-post">Store a newly created resource in storage.</h2>
 
@@ -7142,13 +6020,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"nihil\",
-    \"attachment\": \"nostrum\",
-    \"attachment_type\": \"consequatur\",
-    \"user_id\": 17760.94436196,
-    \"department_id\": 275907697.93254894,
-    \"course_id\": 36.134434079,
-    \"post_type_id\": 491203.212473871
+    \"content\": \"sequi\",
+    \"attachment\": \"totam\",
+    \"attachment_type\": \"esse\",
+    \"user_id\": 15252787.60255,
+    \"department_id\": 4321070.452556,
+    \"course_id\": 235580.268942468,
+    \"post_type_id\": 3941.0571
 }"
 </code></pre></div>
 
@@ -7165,13 +6043,13 @@ const headers = {
 };
 
 let body = {
-    "content": "nihil",
-    "attachment": "nostrum",
-    "attachment_type": "consequatur",
-    "user_id": 17760.94436196,
-    "department_id": 275907697.93254894,
-    "course_id": 36.134434079,
-    "post_type_id": 491203.212473871
+    "content": "sequi",
+    "attachment": "totam",
+    "attachment_type": "esse",
+    "user_id": 15252787.60255,
+    "department_id": 4321070.452556,
+    "course_id": 235580.268942468,
+    "post_type_id": 3941.0571
 };
 
 fetch(url, {
@@ -7287,10 +6165,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="POSTapi-post"
-               value="nihil"
+               value="sequi"
                data-component="body">
     <br>
-<p>Example: <code>nihil</code></p>
+<p>Example: <code>sequi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment</code></b>&nbsp;&nbsp;
@@ -7298,10 +6176,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="POSTapi-post"
-               value="nostrum"
+               value="totam"
                data-component="body">
     <br>
-<p>Example: <code>nostrum</code></p>
+<p>Example: <code>totam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment_type</code></b>&nbsp;&nbsp;
@@ -7309,10 +6187,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment_type"                data-endpoint="POSTapi-post"
-               value="consequatur"
+               value="esse"
                data-component="body">
     <br>
-<p>Example: <code>consequatur</code></p>
+<p>Example: <code>esse</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -7320,10 +6198,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="POSTapi-post"
-               value="17760.94436196"
+               value="15252787.60255"
                data-component="body">
     <br>
-<p>Example: <code>17760.94436196</code></p>
+<p>Example: <code>15252787.60255</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -7331,10 +6209,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-post"
-               value="275907697.93255"
+               value="4321070.452556"
                data-component="body">
     <br>
-<p>Example: <code>275907697.93255</code></p>
+<p>Example: <code>4321070.452556</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -7342,10 +6220,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="POSTapi-post"
-               value="36.134434079"
+               value="235580.26894247"
                data-component="body">
     <br>
-<p>Example: <code>36.134434079</code></p>
+<p>Example: <code>235580.26894247</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>post_type_id</code></b>&nbsp;&nbsp;
@@ -7353,10 +6231,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_type_id"                data-endpoint="POSTapi-post"
-               value="491203.21247387"
+               value="3941.0571"
                data-component="body">
     <br>
-<p>Example: <code>491203.21247387</code></p>
+<p>Example: <code>3941.0571</code></p>
         </div>
         </form>
 
@@ -7380,12 +6258,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"content\": \"qui\",
-    \"attachment\": \"voluptatem\",
-    \"attachment_type\": \"quisquam\",
-    \"user_id\": 2.233055,
-    \"department_id\": 32173920.2,
-    \"course_id\": 17,
-    \"post_type_id\": 6034
+    \"attachment\": \"fugiat\",
+    \"attachment_type\": \"hic\",
+    \"user_id\": 37523.02,
+    \"department_id\": 10382.21168325,
+    \"course_id\": 167881.1815827,
+    \"post_type_id\": 77.149
 }"
 </code></pre></div>
 
@@ -7403,12 +6281,12 @@ const headers = {
 
 let body = {
     "content": "qui",
-    "attachment": "voluptatem",
-    "attachment_type": "quisquam",
-    "user_id": 2.233055,
-    "department_id": 32173920.2,
-    "course_id": 17,
-    "post_type_id": 6034
+    "attachment": "fugiat",
+    "attachment_type": "hic",
+    "user_id": 37523.02,
+    "department_id": 10382.21168325,
+    "course_id": 167881.1815827,
+    "post_type_id": 77.149
 };
 
 fetch(url, {
@@ -7551,10 +6429,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="PUTapi-post--id-"
-               value="voluptatem"
+               value="fugiat"
                data-component="body">
     <br>
-<p>Example: <code>voluptatem</code></p>
+<p>Example: <code>fugiat</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment_type</code></b>&nbsp;&nbsp;
@@ -7562,10 +6440,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment_type"                data-endpoint="PUTapi-post--id-"
-               value="quisquam"
+               value="hic"
                data-component="body">
     <br>
-<p>Example: <code>quisquam</code></p>
+<p>Example: <code>hic</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -7573,10 +6451,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="PUTapi-post--id-"
-               value="2.233055"
+               value="37523.02"
                data-component="body">
     <br>
-<p>Example: <code>2.233055</code></p>
+<p>Example: <code>37523.02</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -7584,10 +6462,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="PUTapi-post--id-"
-               value="32173920.2"
+               value="10382.21168325"
                data-component="body">
     <br>
-<p>Example: <code>32173920.2</code></p>
+<p>Example: <code>10382.21168325</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -7595,10 +6473,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="PUTapi-post--id-"
-               value="17"
+               value="167881.1815827"
                data-component="body">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>167881.1815827</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>post_type_id</code></b>&nbsp;&nbsp;
@@ -7606,10 +6484,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_type_id"                data-endpoint="PUTapi-post--id-"
-               value="6034"
+               value="77.149"
                data-component="body">
     <br>
-<p>Example: <code>6034</code></p>
+<p>Example: <code>77.149</code></p>
         </div>
         </form>
 
@@ -7756,6 +6634,306 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="id"                data-endpoint="DELETEapi-post--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the post. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="post-POSTapi-post--post_id--like">Display the specified resource.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-post--post_id--like">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/post/1/like" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/post/1/like"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-post--post_id--like">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-post--post_id--like" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-post--post_id--like"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-post--post_id--like"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-post--post_id--like" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-post--post_id--like">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-post--post_id--like" data-method="POST"
+      data-path="api/post/{post_id}/like"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-post--post_id--like', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-post--post_id--like"
+                    onclick="tryItOut('POSTapi-post--post_id--like');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-post--post_id--like"
+                    onclick="cancelTryOut('POSTapi-post--post_id--like');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-post--post_id--like"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/post/{post_id}/like</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-post--post_id--like"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-post--post_id--like"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-post--post_id--like"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>post_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="post_id"                data-endpoint="POSTapi-post--post_id--like"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the post. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="post-POSTapi-post--post_id--save">Display the specified resource.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-post--post_id--save">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/post/1/save" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/post/1/save"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-post--post_id--save">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-post--post_id--save" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-post--post_id--save"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-post--post_id--save"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-post--post_id--save" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-post--post_id--save">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-post--post_id--save" data-method="POST"
+      data-path="api/post/{post_id}/save"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-post--post_id--save', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-post--post_id--save"
+                    onclick="tryItOut('POSTapi-post--post_id--save');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-post--post_id--save"
+                    onclick="cancelTryOut('POSTapi-post--post_id--save');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-post--post_id--save"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/post/{post_id}/save</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-post--post_id--save"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-post--post_id--save"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-post--post_id--save"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>post_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="post_id"                data-endpoint="POSTapi-post--post_id--save"
                value="1"
                data-component="url">
     <br>

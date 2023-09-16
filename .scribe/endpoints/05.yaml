@@ -30,7 +30,7 @@ endpoints:
         name: subject
         description: ''
         required: true
-        example: libero
+        example: qui
         type: string
         enumValues: []
         custom: []
@@ -38,7 +38,7 @@ endpoints:
         name: mark
         description: 'Must be at least 0. Must not be greater than 100.'
         required: true
-        example: 21
+        example: 18
         type: number
         enumValues: []
         custom: []
@@ -46,7 +46,7 @@ endpoints:
         name: reason
         description: ''
         required: true
-        example: facilis
+        example: vitae
         type: string
         enumValues: []
         custom: []
@@ -54,15 +54,15 @@ endpoints:
         name: teacher
         description: ''
         required: true
-        example: ad
+        example: deserunt
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      subject: libero
-      mark: 21
-      reason: facilis
-      teacher: ad
+      subject: qui
+      mark: 18
+      reason: vitae
+      teacher: deserunt
     fileParameters: []
     responses:
       -

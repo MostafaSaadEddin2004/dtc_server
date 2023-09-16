@@ -27,12 +27,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":1,"name":"Maya Auer IV"},{"id":2,"name":"Cesar Kris II"},{"id":3,"name":"Andy Lubowitz"},{"id":4,"name":"Juwan Hayes III"},{"id":5,"name":"Santiago Huel"},{"id":6,"name":"Loyal Weissnat III"},{"id":7,"name":"Dr. April Wiegand IV"},{"id":8,"name":"Aaron Hintz"},{"id":9,"name":"Prof. Royal Rogahn II"},{"id":10,"name":"Dr. Grady Paucek III"},{"id":11,"name":"Jovan Botsford Jr."},{"id":12,"name":"Kennedy Torp I"},{"id":13,"name":"Chelsie Blanda"},{"id":14,"name":"Estella Ebert I"},{"id":15,"name":"Marc Rohan"},{"id":16,"name":"Chad Blick"},{"id":17,"name":"Kianna Bode"},{"id":18,"name":"Prof. Lou Pagac V"},{"id":19,"name":"Robin Hermann"},{"id":20,"name":"Prof. Ned Brakus III"},{"id":21,"name":"Franco Kassulke"},{"id":22,"name":"Ms. Maribel Schowalter MD"},{"id":23,"name":"Thalia Hudson III"},{"id":24,"name":"Zoe Hill"},{"id":25,"name":"Casimer Kiehn"},{"id":26,"name":"Marty Hintz"},{"id":27,"name":"Terrance Kuhlman"},{"id":28,"name":"Haven Toy"},{"id":29,"name":"Cheyenne Mueller"},{"id":30,"name":"Prof. Stefan Hahn MD"},{"id":31,"name":"Einar Kuhn II"},{"id":32,"name":"Emmie Barton"},{"id":33,"name":"Nona Homenick V"},{"id":34,"name":"Jefferey Gaylord"},{"id":35,"name":"Dr. Chesley Leuschke Jr."},{"id":36,"name":"Bridget Hand"},{"id":37,"name":"Prof. Gerhard Farrell II"},{"id":38,"name":"Eliza Kling"},{"id":39,"name":"Tierra Kassulke"},{"id":40,"name":"Alf Durgan III"},{"id":41,"name":"Dr. Piper Fahey"},{"id":42,"name":"Ms. Vivien Pollich DVM"},{"id":43,"name":"Citlalli Torp"},{"id":44,"name":"Mr. Harry Franecki III"},{"id":45,"name":"Euna Kautzer"}]}'
+        content: '{"data":[{"id":1,"name":"Dr. Orie Medhurst"},{"id":2,"name":"Aditya Larson"},{"id":3,"name":"Dr. Brittany Reichel"},{"id":4,"name":"Jayme Ziemann I"},{"id":5,"name":"Dean Tillman MD"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '48'
+          x-ratelimit-remaining: '50'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -76,13 +76,434 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":[{"id":15,"name":"Hiram Ritchie","mark":null}]}'
+        status: 404
+        content: |-
+          {
+              "message": "No query results for model [App\\Models\\CertificateType] 20",
+              "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
+              "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php",
+              "line": 423,
+              "trace": [
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php",
+                      "line": 399,
+                      "function": "prepareException",
+                      "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\nunomaduro\\collision\\src\\Adapters\\Laravel\\ExceptionHandler.php",
+                      "line": 54,
+                      "function": "render",
+                      "class": "Illuminate\\Foundation\\Exceptions\\Handler",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php",
+                      "line": 51,
+                      "function": "render",
+                      "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 185,
+                      "function": "handleException",
+                      "class": "Illuminate\\Routing\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 159,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 125,
+                      "function": "handleRequest",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 87,
+                      "function": "handleRequestUsingNamedLimiter",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 798,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 777,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 741,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 730,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 200,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 141,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php",
+                      "line": 19,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Livewire\\DisableBrowserCache",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+                      "line": 89,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php",
+                      "line": 62,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 180,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 116,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 175,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 144,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 92,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 209,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 163,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 95,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 124,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 71,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 49,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php",
+                      "line": 51,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php",
+                      "line": 41,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 35,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php",
+                      "line": 662,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 211,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Command\\Command.php",
+                      "line": 326,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 180,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php",
+                      "line": 1081,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php",
+                      "line": 320,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\symfony\\console\\Application.php",
+                      "line": 174,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
+                      "line": 201,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\dtc_server\\artisan",
+                      "line": 35,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '47'
+          x-ratelimit-remaining: '49'
           access-control-allow-origin: '*'
         description: null
         custom: []

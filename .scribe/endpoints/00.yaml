@@ -55,7 +55,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"token":"4|laravel_sanctum_EvpWoIB9WOK8vPN2lkGOx5Xd9YSgJoc4h4w4yCehf65a0e2b"}'
+        content: '{"token":"2|laravel_sanctum_QnWH5exbv5zlGmYbSRaARAvEOjWqqahPybN9VJuzfbe40a2a"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -99,7 +99,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: facilis
+        example: consectetur
         type: string
         enumValues: []
         custom: []
@@ -107,7 +107,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: ut
+        example: laborum
         type: string
         enumValues: []
         custom: []
@@ -115,7 +115,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: ut
+        example: at
         type: string
         enumValues: []
         custom: []
@@ -123,7 +123,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: rerum
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -131,7 +131,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: excepturi
+        example: consequatur
         type: string
         enumValues: []
         custom: []
@@ -139,7 +139,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: ziemann.deontae@example.com
+        example: kdubuque@example.org
         type: string
         enumValues: []
         custom: []
@@ -147,7 +147,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: '\:hE!:CZ'
+        example: 'wsd)H(i$5*<1m&*E'
         type: string
         enumValues: []
         custom: []
@@ -155,7 +155,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: student
+        example: teacher_browser
         type: string
         enumValues:
           - student
@@ -172,20 +172,20 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      first_name_en: facilis
-      last_name_en: ut
-      first_name_ar: ut
-      last_name_ar: rerum
-      phone: excepturi
-      email: ziemann.deontae@example.com
-      password: '\:hE!:CZ'
-      role: student
+      first_name_en: consectetur
+      last_name_en: laborum
+      first_name_ar: at
+      last_name_ar: ut
+      phone: consequatur
+      email: kdubuque@example.org
+      password: 'wsd)H(i$5*<1m&*E'
+      role: teacher_browser
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"5|laravel_sanctum_uDlRmHDIx626cczEqe7jWKRBCKJEROyfAHBdq7nk8cb11236"}'
+        content: '{"token":"3|laravel_sanctum_xeGAZLxK6GsSATj4cFivI64EaLGeM87kJmn0nQcX72b1f5e2"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -278,7 +278,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-        example: dolorum
+        example: nisi
         type: string
         enumValues: []
         custom: []
@@ -286,15 +286,15 @@ endpoints:
         name: specialty
         description: ''
         required: true
-        example: ut
+        example: in
         type: string
         enumValues: []
         custom: []
       birth_date:
         name: birth_date
-        description: 'Must be a valid date. Must be a date before <code>09/14/2023</code>.'
+        description: 'Must be a valid date. Must be a date before <code>09/16/2023</code>.'
         required: true
-        example: '2006-08-22'
+        example: '2015-11-22'
         type: string
         enumValues: []
         custom: []
@@ -302,7 +302,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-        example: magnam
+        example: temporibus
         type: string
         enumValues: []
         custom: []
@@ -310,7 +310,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-        example: ducimus
+        example: architecto
         type: string
         enumValues: []
         custom: []
@@ -318,7 +318,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: recusandae
+        example: molestias
         type: string
         enumValues: []
         custom: []
@@ -326,18 +326,18 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 11116376.8
-        type: number
+        example: 3
+        type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: dolorum
-      specialty: ut
-      birth_date: '2006-08-22'
-      current_location: magnam
-      permanent_location: ducimus
-      nationality: recusandae
-      department_id: 11116376.8
+      certificate: nisi
+      specialty: in
+      birth_date: '2015-11-22'
+      current_location: temporibus
+      permanent_location: architecto
+      nationality: molestias
+      department_id: 3
     fileParameters: []
     responses:
       -
