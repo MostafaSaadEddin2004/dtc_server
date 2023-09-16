@@ -19,7 +19,7 @@ class Department extends Model
      */
     protected $fillable = [
         'name',
-        'certificate_type_id',
+        // 'certificate_type_id',
         'section_id',
     ];
 
@@ -44,9 +44,9 @@ class Department extends Model
         return $this->hasMany(AcademicRegistration::class);
     }
 
-    public function certificateType(): BelongsTo
+    public function certificateType()
     {
-        return $this->belongsTo(CertificateType::class);
+        return $this->belongsToMany(CertificateType::class);
     }
 
     public function section(): BelongsTo

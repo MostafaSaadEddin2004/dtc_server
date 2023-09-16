@@ -32,8 +32,10 @@ class DepartmentResource extends Resource
                         TextInput::make('name')
                             ->required(),
                         Select::make('certificateType')
+                            ->multiple()
+                            ->preload()
                             ->relationship('certificateType', 'name'),
-                        Select::make('section')
+                        Select::make('section_id')
                             ->relationship('section', 'name')
                     ]),
             ]);
@@ -68,7 +70,7 @@ class DepartmentResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            RelationManagers\DepartmentMarksRelationManager::class,
         ];
     }
 

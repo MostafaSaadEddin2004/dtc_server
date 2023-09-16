@@ -28,8 +28,8 @@ class CertificateType extends Model
         'id' => 'integer',
     ];
 
-    public function departments(): HasMany
+    public function departments()
     {
-        return $this->hasMany(Department::class);
+        return $this->belongsToMany(Department::class);
     }
 }

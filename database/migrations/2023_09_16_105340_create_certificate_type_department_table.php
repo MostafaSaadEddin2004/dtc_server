@@ -11,17 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::disableForeignKeyConstraints();
-
-        Schema::create('departments', function (Blueprint $table) {
+        Schema::create('certificate_type_department', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            // $table->foreignId('certificate_type_id')->constrained();
-            $table->foreignId('section_id')->constrained();
+            $table->foreignId('certificate_type_id')->constrained();
+            $table->foreignId('department_id')->constrained();
             $table->timestamps();
         });
-
-        Schema::enableForeignKeyConstraints();
     }
 
     /**
@@ -29,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('departments');
+        Schema::dropIfExists('certificate_type_department');
     }
 };
