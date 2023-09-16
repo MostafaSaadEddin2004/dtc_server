@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\User;
+use App\Notifications\FcmNotification;
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +17,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    Notification::send(User::find(72), new FcmNotification('test','test test',[]));
     return view('welcome');
 });

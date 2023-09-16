@@ -36,6 +36,7 @@ class AuthController extends Controller
         }
 
         $token = $user->createToken('authToken')->plainTextToken;
+        $user->firebaseTokens()->create(['token' => $request->fcm_token]);
         return response()->json([
             'token' => $token,
         ], 200);
@@ -47,6 +48,7 @@ class AuthController extends Controller
         $role = $request->role;
         $role_id = Role::where('name', $role)->first()->id;
         $user = User::create(array_merge($request->validated(), compact('role_id')));
+        $user->firebaseTokens()->create(['token' => $request->fcm_token]);
 
         if ($request->hasFile('image')) {
             $photoPath = $request->file('image')->store('public/ProfileImage');
@@ -109,7 +111,7 @@ class AuthController extends Controller
         if ($teacherHasRequest->isNotEmpty()) {
             return response()->json([
                 'message' => 'your have old request please wait to accept',
-            ], 200);
+            ], 400);
         }
         $data = $request->validated();
         $data['user_id'] = $userId;

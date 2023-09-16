@@ -119,4 +119,8 @@ class User extends Authenticatable
             get: fn () => $this->registeration?->department->section,
         );
     }
+    public function firebaseTokens()
+    {
+        return $this->hasMany(UserFirebaseToken::class);
+    }
 }

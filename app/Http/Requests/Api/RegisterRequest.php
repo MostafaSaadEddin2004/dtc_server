@@ -31,6 +31,7 @@ class RegisterRequest extends FormRequest
             'password' => ['required', 'string'],
             'role' => ['required', 'string', 'in:student,teacher,student_browser,teacher_browser'],
             'image'=>['nullable','image'],
+            'fcm_token' => ['required'],
         ];
     }
 }

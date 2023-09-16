@@ -25,6 +25,7 @@ class LoginRequest extends FormRequest
             'email' => ['required', 'string', 'exists:users,email', 'email'],
             'password' => ['required', 'string', 'min:8'],
             'role' => ['required', 'string', 'in:student,teacher,student_browser,teacher_browser'],
+            'fcm_token' => ['required'],
         ];
     }
 }

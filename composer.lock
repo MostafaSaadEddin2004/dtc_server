@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed6ae6c73109472ec6074bdec6595410",
+    "content-hash": "e44b10fb02e81ba8fb057e0dbb78b830",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -1568,6 +1568,58 @@
                 }
             ],
             "time": "2023-08-27T10:19:19+00:00"
+        },
+        {
+            "name": "kutia-software-company/larafirebase",
+            "version": "1.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kutia-software-company/larafirebase.git",
+                "reference": "c25c1e9f422e16b50d2c625b0a5d80ba50af03fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kutia-software-company/larafirebase/zipball/c25c1e9f422e16b50d2c625b0a5d80ba50af03fc",
+                "reference": "c25c1e9f422e16b50d2c625b0a5d80ba50af03fc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/notifications": "^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "^7.0|^8.0|^9.0|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Kutia\\Larafirebase\\Providers\\LarafirebaseServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Helpers/All.php"
+                ],
+                "psr-4": {
+                    "Kutia\\Larafirebase\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gentrit Abazi",
+                    "email": "gentritabazi01@gmail.com"
+                }
+            ],
+            "description": "Laravel Firebase Cloud Messaging.",
+            "homepage": "https://github.com/kutia-software-company/larafirebase",
+            "support": {
+                "issues": "https://github.com/kutia-software-company/larafirebase/issues",
+                "source": "https://github.com/kutia-software-company/larafirebase/tree/1.3.7"
+            },
+            "time": "2023-05-10T16:33:59+00:00"
         },
         {
             "name": "laravel/framework",
