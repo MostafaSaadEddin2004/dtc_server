@@ -49,19 +49,24 @@ endpoints:
         type: string
         enumValues: []
         custom: []
+      fcm_token:
+        name: fcm_token
+        description: ''
+        required: true
+        example: qui
+        type: string
+        enumValues: []
+        custom: []
     cleanBodyParameters:
       email: my@example.com
       password: password
       role: student_browser
+      fcm_token: qui
     fileParameters: []
     responses:
       -
         status: 200
-<<<<<<< HEAD
-        content: '{"token":"2|laravel_sanctum_QnWH5exbv5zlGmYbSRaARAvEOjWqqahPybN9VJuzfbe40a2a"}'
-=======
-        content: '{"token":"2|B3cNCg7I0C4d8nWlf0llh4K8nCUIiAqDzKpDYT2J36f64fd6"}'
->>>>>>> origin/dev
+        content: '{"token":"7|QSsnIBRWfXSp6vO1s3FwldV03WokiBEyi67k0xZb4e434727"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -74,7 +79,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -105,11 +110,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-<<<<<<< HEAD
-        example: consectetur
-=======
-        example: consequatur
->>>>>>> origin/dev
+        example: neque
         type: string
         enumValues: []
         custom: []
@@ -117,11 +118,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-<<<<<<< HEAD
-        example: laborum
-=======
-        example: neque
->>>>>>> origin/dev
+        example: quo
         type: string
         enumValues: []
         custom: []
@@ -129,11 +126,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-<<<<<<< HEAD
-        example: at
-=======
-        example: quia
->>>>>>> origin/dev
+        example: rerum
         type: string
         enumValues: []
         custom: []
@@ -141,11 +134,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-<<<<<<< HEAD
-        example: ut
-=======
-        example: vero
->>>>>>> origin/dev
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -153,11 +142,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-<<<<<<< HEAD
-        example: consequatur
-=======
-        example: amet
->>>>>>> origin/dev
+        example: numquam
         type: string
         enumValues: []
         custom: []
@@ -165,11 +150,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-<<<<<<< HEAD
-        example: kdubuque@example.org
-=======
-        example: lcarter@example.net
->>>>>>> origin/dev
+        example: pcormier@example.net
         type: string
         enumValues: []
         custom: []
@@ -177,11 +158,7 @@ endpoints:
         name: password
         description: ''
         required: true
-<<<<<<< HEAD
-        example: 'wsd)H(i$5*<1m&*E'
-=======
-        example: '@:e/(<oeo7'
->>>>>>> origin/dev
+        example: "57=V>#Y#E9#u~_JD'<"
         type: string
         enumValues: []
         custom: []
@@ -189,11 +166,7 @@ endpoints:
         name: role
         description: ''
         required: true
-<<<<<<< HEAD
-        example: teacher_browser
-=======
-        example: teacher
->>>>>>> origin/dev
+        example: student_browser
         type: string
         enumValues:
           - student
@@ -209,36 +182,30 @@ endpoints:
         type: file
         enumValues: []
         custom: []
+      fcm_token:
+        name: fcm_token
+        description: ''
+        required: true
+        example: deleniti
+        type: string
+        enumValues: []
+        custom: []
     cleanBodyParameters:
-<<<<<<< HEAD
-      first_name_en: consectetur
-      last_name_en: laborum
-      first_name_ar: at
-      last_name_ar: ut
-      phone: consequatur
-      email: kdubuque@example.org
-      password: 'wsd)H(i$5*<1m&*E'
-      role: teacher_browser
-=======
-      first_name_en: consequatur
-      last_name_en: neque
-      first_name_ar: quia
-      last_name_ar: vero
-      phone: amet
-      email: lcarter@example.net
-      password: '@:e/(<oeo7'
-      role: teacher
->>>>>>> origin/dev
+      first_name_en: neque
+      last_name_en: quo
+      first_name_ar: rerum
+      last_name_ar: et
+      phone: numquam
+      email: pcormier@example.net
+      password: "57=V>#Y#E9#u~_JD'<"
+      role: student_browser
+      fcm_token: deleniti
     fileParameters:
       image: null
     responses:
       -
         status: 200
-<<<<<<< HEAD
-        content: '{"token":"3|laravel_sanctum_xeGAZLxK6GsSATj4cFivI64EaLGeM87kJmn0nQcX72b1f5e2"}'
-=======
-        content: '{"token":"2|P8B12xD28iwcQ1A7Kbm7fJk0GhT9iVJwuBZsoMTxa9e9dd0b"}'
->>>>>>> origin/dev
+        content: '{"token":"8|hKffjuPivuDP5RO0hr43gXA0DF1MDqBaavqOT7ry950ecf7e"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -251,7 +218,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -300,7 +267,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -331,13 +298,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"user":{"id":10,"first_name_en":"Prof. Kevon Braun","last_name_en":"Winnifred Kutch","first_name_ar":"Merl Kuphal","last_name_ar":"Violette Mayert","email":"rdenesik@example.net","email_verified_at":"2023-09-16T08:23:57.000000Z","image":null,"created_at":"2023-09-16T08:23:57.000000Z","updated_at":"2023-09-16T08:23:57.000000Z","role_id":3}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -345,7 +310,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -376,13 +341,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"role":"teacher_browser"}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -390,7 +353,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -421,11 +384,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-<<<<<<< HEAD
-        example: nisi
-=======
-        example: blanditiis
->>>>>>> origin/dev
+        example: a
         type: string
         enumValues: []
         custom: []
@@ -433,11 +392,7 @@ endpoints:
         name: specialty
         description: ''
         required: true
-<<<<<<< HEAD
-        example: in
-=======
-        example: occaecati
->>>>>>> origin/dev
+        example: consequatur
         type: string
         enumValues: []
         custom: []
@@ -445,11 +400,7 @@ endpoints:
         name: birth_date
         description: 'Must be a valid date. Must be a date before <code>09/16/2023</code>.'
         required: true
-<<<<<<< HEAD
-        example: '2015-11-22'
-=======
-        example: '2021-05-11'
->>>>>>> origin/dev
+        example: '1995-09-14'
         type: string
         enumValues: []
         custom: []
@@ -457,11 +408,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-<<<<<<< HEAD
-        example: temporibus
-=======
-        example: ut
->>>>>>> origin/dev
+        example: natus
         type: string
         enumValues: []
         custom: []
@@ -469,11 +416,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-<<<<<<< HEAD
-        example: architecto
-=======
-        example: iure
->>>>>>> origin/dev
+        example: quia
         type: string
         enumValues: []
         custom: []
@@ -481,11 +424,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-<<<<<<< HEAD
-        example: molestias
-=======
-        example: beatae
->>>>>>> origin/dev
+        example: aut
         type: string
         enumValues: []
         custom: []
@@ -493,33 +432,18 @@ endpoints:
         name: department_id
         description: ''
         required: true
-<<<<<<< HEAD
-        example: 3
+        example: 5
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: nisi
-      specialty: in
-      birth_date: '2015-11-22'
-      current_location: temporibus
-      permanent_location: architecto
-      nationality: molestias
-      department_id: 3
-=======
-        example: 1519.0
-        type: number
-        enumValues: []
-        custom: []
-    cleanBodyParameters:
-      certificate: blanditiis
-      specialty: occaecati
-      birth_date: '2021-05-11'
-      current_location: ut
-      permanent_location: iure
-      nationality: beatae
-      department_id: 1519.0
->>>>>>> origin/dev
+      certificate: a
+      specialty: consequatur
+      birth_date: '1995-09-14'
+      current_location: natus
+      permanent_location: quia
+      nationality: aut
+      department_id: 5
     fileParameters: []
     responses:
       -
@@ -580,7 +504,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null

@@ -73,7 +73,7 @@ class User extends Authenticatable
     }
     public function editMarks(): HasMany
     {
-        return $this->hasMany(EditMark::class, 'user_id', 'id');
+        return $this->hasMany(EditMark::class);
     }
 
     /**

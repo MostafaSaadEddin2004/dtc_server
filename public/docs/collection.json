@@ -5,12 +5,12 @@
             "key": "baseUrl",
             "type": "string",
             "name": "string",
-            "value": "http:\/\/localhost:8000"
+            "value": "http:\/\/localhost"
         }
     ],
     "info": {
-        "name": "DTC App",
-        "_postman_id": "bbb81123-317e-44b0-a6b1-88040ca83f43",
+        "name": "Laravel",
+        "_postman_id": "1eaea106-12e4-4fb2-9e42-85fcb2dba294",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -133,8 +133,8 @@
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"data\":[{\"id\":15,\"name\":\"Waylon Spinka\",\"mark\":null}]}",
+                            "code": 404,
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\CertificateType] 20\",\n    \"exception\": \"Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\NotFoundHttpException\",\n    \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n    \"line\": 446,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n            \"line\": 422,\n            \"function\": \"prepareException\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\nunomaduro\\\\collision\\\\src\\\\Adapters\\\\Laravel\\\\ExceptionHandler.php\",\n            \"line\": 54,\n            \"function\": \"render\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Pipeline.php\",\n            \"line\": 51,\n            \"function\": \"render\",\n            \"class\": \"NunoMaduro\\\\Collision\\\\Adapters\\\\Laravel\\\\ExceptionHandler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 185,\n            \"function\": \"handleException\",\n            \"class\": \"Illuminate\\\\Routing\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 159,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 125,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 87,\n            \"function\": \"handleRequestUsingNamedLimiter\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 116,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 798,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 777,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 741,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 730,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 200,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 141,\n            \"function\": \"Illuminate\\\\Foundation\\\\Http\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\livewire\\\\livewire\\\\src\\\\DisableBrowserCache.php\",\n            \"line\": 19,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Livewire\\\\DisableBrowserCache\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 40,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 89,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\HandleCors.php\",\n            \"line\": 62,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 39,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 116,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 175,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 144,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 299,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 287,\n            \"function\": \"callLaravelOrLumenRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 92,\n            \"function\": \"makeApiCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 45,\n            \"function\": \"makeResponseCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 35,\n            \"function\": \"makeResponseCallIfConditionsPass\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 209,\n            \"function\": \"__invoke\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 163,\n            \"function\": \"iterateThroughStrategies\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 95,\n            \"function\": \"fetchResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 124,\n            \"function\": \"processRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 71,\n            \"function\": \"extractEndpointsInfoFromLaravelApp\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 49,\n            \"function\": \"extractEndpointsInfoAndWriteToDisk\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 51,\n            \"function\": \"get\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 36,\n            \"function\": \"handle\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Util.php\",\n            \"line\": 41,\n            \"function\": \"Illuminate\\\\Container\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 93,\n            \"function\": \"unwrapIfClosure\",\n            \"class\": \"Illuminate\\\\Container\\\\Util\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 35,\n            \"function\": \"callBoundMethod\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Container.php\",\n            \"line\": 662,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 211,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\Container\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Command\\\\Command.php\",\n            \"line\": 326,\n            \"function\": \"execute\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 180,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Command\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 1081,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 320,\n            \"function\": \"doRunCommand\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 174,\n            \"function\": \"doRun\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Console\\\\Kernel.php\",\n            \"line\": 201,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\artisan\",\n            \"line\": 35,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Console\\\\Kernel\",\n            \"type\": \"->\"\n        }\n    ]\n}",
                             "name": ""
                         }
                     ]
@@ -167,7 +167,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"my@example.com\",\"password\":\"password\",\"role\":\"student_browser\"}"
+                            "raw": "{\"email\":\"my@example.com\",\"password\":\"password\",\"role\":\"student_browser\",\"fcm_token\":\"qui\"}"
                         },
                         "description": ""
                     },
@@ -196,7 +196,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"2|B3cNCg7I0C4d8nWlf0llh4K8nCUIiAqDzKpDYT2J36f64fd6\"}",
+                            "body": "{\"token\":\"7|QSsnIBRWfXSp6vO1s3FwldV03WokiBEyi67k0xZb4e434727\"}",
                             "name": ""
                         }
                     ]
@@ -226,49 +226,55 @@
                             "formdata": [
                                 {
                                     "key": "first_name_en",
-                                    "value": "consequatur",
-                                    "type": "text",
-                                    "description": ""
-                                },
-                                {
-                                    "key": "last_name_en",
                                     "value": "neque",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
+                                    "key": "last_name_en",
+                                    "value": "quo",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
                                     "key": "first_name_ar",
-                                    "value": "quia",
+                                    "value": "rerum",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "last_name_ar",
-                                    "value": "vero",
+                                    "value": "et",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "phone",
-                                    "value": "amet",
+                                    "value": "numquam",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "email",
-                                    "value": "lcarter@example.net",
+                                    "value": "pcormier@example.net",
                                     "type": "text",
                                     "description": "Must be a valid email address."
                                 },
                                 {
                                     "key": "password",
-                                    "value": "@:e\/(<oeo7",
+                                    "value": "57=V>#Y#E9#u~_JD'<",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "role",
-                                    "value": "teacher",
+                                    "value": "student_browser",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "fcm_token",
+                                    "value": "deleniti",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -306,7 +312,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"2|P8B12xD28iwcQ1A7Kbm7fJk0GhT9iVJwuBZsoMTxa9e9dd0b\"}",
+                            "body": "{\"token\":\"8|hKffjuPivuDP5RO0hr43gXA0DF1MDqBaavqOT7ry950ecf7e\"}",
                             "name": ""
                         }
                     ]
@@ -384,20 +390,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "57"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"user\":{\"id\":10,\"first_name_en\":\"Prof. Kevon Braun\",\"last_name_en\":\"Winnifred Kutch\",\"first_name_ar\":\"Merl Kuphal\",\"last_name_ar\":\"Violette Mayert\",\"email\":\"rdenesik@example.net\",\"email_verified_at\":\"2023-09-16T08:23:57.000000Z\",\"image\":null,\"created_at\":\"2023-09-16T08:23:57.000000Z\",\"updated_at\":\"2023-09-16T08:23:57.000000Z\",\"role_id\":3}}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -437,20 +435,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "56"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"role\":\"teacher_browser\"}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -477,7 +467,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"certificate\":\"blanditiis\",\"specialty\":\"occaecati\",\"birth_date\":\"2021-05-11\",\"current_location\":\"ut\",\"permanent_location\":\"iure\",\"nationality\":\"beatae\",\"department_id\":1519}"
+                            "raw": "{\"certificate\":\"a\",\"specialty\":\"consequatur\",\"birth_date\":\"1995-09-14\",\"current_location\":\"natus\",\"permanent_location\":\"quia\",\"nationality\":\"aut\",\"department_id\":5}"
                         },
                         "description": ""
                     },
@@ -555,8 +545,8 @@
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"data\":[]}",
+                            "code": 500,
+                            "body": "{\n    \"message\": \"Call to a member function courses() on null\",\n    \"exception\": \"Error\",\n    \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\app\\\\Http\\\\Controllers\\\\Api\\\\CourseController.php\",\n    \"line\": 24,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Controller.php\",\n            \"line\": 54,\n            \"function\": \"index\",\n            \"class\": \"App\\\\Http\\\\Controllers\\\\Api\\\\CourseController\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\ControllerDispatcher.php\",\n            \"line\": 43,\n            \"function\": \"callAction\",\n            \"class\": \"Illuminate\\\\Routing\\\\Controller\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Route.php\",\n            \"line\": 259,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\ControllerDispatcher\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Route.php\",\n            \"line\": 205,\n            \"function\": \"runController\",\n            \"class\": \"Illuminate\\\\Routing\\\\Route\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 799,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Routing\\\\Route\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 141,\n            \"function\": \"Illuminate\\\\Routing\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings.php\",\n            \"line\": 50,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 159,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 125,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 87,\n            \"function\": \"handleRequestUsingNamedLimiter\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 116,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 798,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 777,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 741,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 730,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 200,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 141,\n            \"function\": \"Illuminate\\\\Foundation\\\\Http\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\livewire\\\\livewire\\\\src\\\\DisableBrowserCache.php\",\n            \"line\": 19,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Livewire\\\\DisableBrowserCache\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 40,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 89,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\HandleCors.php\",\n            \"line\": 62,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 39,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 116,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 175,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 144,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 299,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 287,\n            \"function\": \"callLaravelOrLumenRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 92,\n            \"function\": \"makeApiCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 45,\n            \"function\": \"makeResponseCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 35,\n            \"function\": \"makeResponseCallIfConditionsPass\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 209,\n            \"function\": \"__invoke\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 163,\n            \"function\": \"iterateThroughStrategies\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 95,\n            \"function\": \"fetchResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 124,\n            \"function\": \"processRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 71,\n            \"function\": \"extractEndpointsInfoFromLaravelApp\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 49,\n            \"function\": \"extractEndpointsInfoAndWriteToDisk\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 51,\n            \"function\": \"get\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 36,\n            \"function\": \"handle\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Util.php\",\n            \"line\": 41,\n            \"function\": \"Illuminate\\\\Container\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 93,\n            \"function\": \"unwrapIfClosure\",\n            \"class\": \"Illuminate\\\\Container\\\\Util\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 35,\n            \"function\": \"callBoundMethod\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Container.php\",\n            \"line\": 662,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 211,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\Container\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Command\\\\Command.php\",\n            \"line\": 326,\n            \"function\": \"execute\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 180,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Command\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 1081,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 320,\n            \"function\": \"doRunCommand\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 174,\n            \"function\": \"doRun\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Console\\\\Kernel.php\",\n            \"line\": 201,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\artisan\",\n            \"line\": 35,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Console\\\\Kernel\",\n            \"type\": \"->\"\n        }\n    ]\n}",
                             "name": ""
                         }
                     ]
@@ -662,7 +652,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "41"
+                                    "value": "54"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -723,7 +713,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "40"
+                                    "value": "53"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -784,7 +774,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "39"
+                                    "value": "52"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -827,7 +817,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"is_male\":false,\"social_status\":\"sit\",\"nationality\":\"et\",\"address\":\"dolorum\",\"date_of_birth\":\"2023-09-16T14:50:16\",\"student_type\":\"ut\",\"work_type\":\"autem\",\"is_morning\":false}"
+                            "raw": "{\"is_male\":false,\"social_status\":\"delectus\",\"nationality\":\"voluptates\",\"address\":\"doloremque\",\"date_of_birth\":\"2023-09-16T22:50:52\",\"student_type\":\"similique\",\"work_type\":\"voluptates\",\"is_morning\":true}"
                         },
                         "description": ""
                     },
@@ -848,15 +838,15 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "38"
+                                    "value": "51"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 201,
-                            "body": "{\"is_male\":false,\"social_status\":\"sit\",\"nationality\":\"et\",\"address\":\"dolorum\",\"date_of_birth\":\"2023-09-15T21:00:00.000000Z\",\"student_type\":\"ut\",\"work_type\":\"autem\",\"is_morning\":false,\"user_id\":10,\"course_id\":1,\"updated_at\":\"2023-09-16T11:50:16.000000Z\",\"created_at\":\"2023-09-16T11:50:16.000000Z\",\"id\":1}",
+                            "code": 500,
+                            "body": "{\n    \"message\": \"SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null (Connection: mysql, SQL: insert into `course_registrations` (`is_male`, `social_status`, `nationality`, `address`, `date_of_birth`, `student_type`, `work_type`, `is_morning`, `user_id`, `course_id`, `updated_at`, `created_at`) values (0, delectus, voluptates, doloremque, 2023-09-16 22:50:52, similique, voluptates, 1, ?, 1, 2023-09-16 22:50:52, 2023-09-16 22:50:52))\",\n    \"exception\": \"Illuminate\\\\Database\\\\QueryException\",\n    \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php\",\n    \"line\": 801,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php\",\n            \"line\": 755,\n            \"function\": \"runQueryCallback\",\n            \"class\": \"Illuminate\\\\Database\\\\Connection\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php\",\n            \"line\": 569,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Database\\\\Connection\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php\",\n            \"line\": 533,\n            \"function\": \"statement\",\n            \"class\": \"Illuminate\\\\Database\\\\Connection\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Query\\\\Processors\\\\Processor.php\",\n            \"line\": 32,\n            \"function\": \"insert\",\n            \"class\": \"Illuminate\\\\Database\\\\Connection\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Query\\\\Builder.php\",\n            \"line\": 3387,\n            \"function\": \"processInsertGetId\",\n            \"class\": \"Illuminate\\\\Database\\\\Query\\\\Processors\\\\Processor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Builder.php\",\n            \"line\": 1968,\n            \"function\": \"insertGetId\",\n            \"class\": \"Illuminate\\\\Database\\\\Query\\\\Builder\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Model.php\",\n            \"line\": 1333,\n            \"function\": \"__call\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Builder\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Model.php\",\n            \"line\": 1298,\n            \"function\": \"insertAndSetId\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Model\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Model.php\",\n            \"line\": 1137,\n            \"function\": \"performInsert\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Model\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasOneOrMany.php\",\n            \"line\": 342,\n            \"function\": \"save\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Model\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Support\\\\helpers.php\",\n            \"line\": 307,\n            \"function\": \"Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasOneOrMany\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasOneOrMany.php\",\n            \"line\": 339,\n            \"function\": \"tap\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\app\\\\Http\\\\Controllers\\\\Api\\\\CourseController.php\",\n            \"line\": 66,\n            \"function\": \"create\",\n            \"class\": \"Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasOneOrMany\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Controller.php\",\n            \"line\": 54,\n            \"function\": \"register\",\n            \"class\": \"App\\\\Http\\\\Controllers\\\\Api\\\\CourseController\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\ControllerDispatcher.php\",\n            \"line\": 43,\n            \"function\": \"callAction\",\n            \"class\": \"Illuminate\\\\Routing\\\\Controller\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Route.php\",\n            \"line\": 259,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\ControllerDispatcher\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Route.php\",\n            \"line\": 205,\n            \"function\": \"runController\",\n            \"class\": \"Illuminate\\\\Routing\\\\Route\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 799,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Routing\\\\Route\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 141,\n            \"function\": \"Illuminate\\\\Routing\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings.php\",\n            \"line\": 50,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 159,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 125,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 87,\n            \"function\": \"handleRequestUsingNamedLimiter\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 116,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 798,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 777,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 741,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 730,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 200,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 141,\n            \"function\": \"Illuminate\\\\Foundation\\\\Http\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\livewire\\\\livewire\\\\src\\\\DisableBrowserCache.php\",\n            \"line\": 19,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Livewire\\\\DisableBrowserCache\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 40,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 89,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\HandleCors.php\",\n            \"line\": 62,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 39,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 180,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 116,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 175,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 144,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 299,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 287,\n            \"function\": \"callLaravelOrLumenRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 92,\n            \"function\": \"makeApiCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 45,\n            \"function\": \"makeResponseCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 35,\n            \"function\": \"makeResponseCallIfConditionsPass\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 209,\n            \"function\": \"__invoke\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 163,\n            \"function\": \"iterateThroughStrategies\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Extractor.php\",\n            \"line\": 95,\n            \"function\": \"fetchResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 124,\n            \"function\": \"processRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Extractor\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 71,\n            \"function\": \"extractEndpointsInfoFromLaravelApp\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp.php\",\n            \"line\": 49,\n            \"function\": \"extractEndpointsInfoAndWriteToDisk\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 51,\n            \"function\": \"get\",\n            \"class\": \"Knuckles\\\\Scribe\\\\GroupedEndpoints\\\\GroupedEndpointsFromApp\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 36,\n            \"function\": \"handle\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Util.php\",\n            \"line\": 41,\n            \"function\": \"Illuminate\\\\Container\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 93,\n            \"function\": \"unwrapIfClosure\",\n            \"class\": \"Illuminate\\\\Container\\\\Util\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 35,\n            \"function\": \"callBoundMethod\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Container.php\",\n            \"line\": 662,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 211,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\Container\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Command\\\\Command.php\",\n            \"line\": 326,\n            \"function\": \"execute\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 180,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Command\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 1081,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 320,\n            \"function\": \"doRunCommand\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 174,\n            \"function\": \"doRun\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Console\\\\Kernel.php\",\n            \"line\": 201,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\EveryThings\\\\jawad\\\\Project\\\\VisualStudioCode\\\\Laravel\\\\Mustafa\\\\dtc_server\\\\artisan\",\n            \"line\": 35,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Console\\\\Kernel\",\n            \"type\": \"->\"\n        }\n    ]\n}",
                             "name": ""
                         }
                     ]
@@ -879,7 +869,7 @@
                                 {
                                     "id": "sectionId",
                                     "key": "sectionId",
-                                    "value": "velit",
+                                    "value": "at",
                                     "description": ""
                                 }
                             ]
@@ -938,7 +928,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"subject\":\"et\",\"mark\":19,\"reason\":\"accusantium\",\"teacher\":\"aspernatur\"}"
+                            "raw": "{\"subject\":\"expedita\",\"mark\":12,\"reason\":\"deleniti\",\"teacher\":\"voluptatem\"}"
                         },
                         "description": "",
                         "auth": {
@@ -994,7 +984,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"text\":\"maxime\",\"department_id\":3376785}"
+                            "raw": "{\"text\":\"voluptatem\",\"department_id\":3447.668}"
                         },
                         "description": "",
                         "auth": {
@@ -1063,20 +1053,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "55"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"data\":[]}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -1103,7 +1085,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"quam\",\"description\":\"Consequatur necessitatibus est nulla nobis cupiditate.\",\"note_category_id\":11}"
+                            "raw": "{\"title\":\"dolor\",\"description\":\"Recusandae commodi sit voluptates et dignissimos alias provident repudiandae.\",\"note_category_id\":18}"
                         },
                         "description": ""
                     },
@@ -1119,20 +1101,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "54"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 422,
-                            "body": "{\"message\":\"The selected note category id is invalid.\",\"errors\":{\"note_category_id\":[\"The selected note category id is invalid.\"]}}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -1180,20 +1154,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "53"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"data\":{\"id\":1,\"title\":\"Mollitia et ab excepturi et temporibus.\",\"description\":\"Cumque beatae voluptas quam repellendus in molestiae. Eius dolores sit natus voluptas facere.\",\"category\":\"Curt Mraz\"}}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -1228,7 +1194,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"voluptatem\",\"description\":\"Sed alias eligendi aut blanditiis.\"}"
+                            "raw": "{\"title\":\"nostrum\",\"description\":\"Dolores ex dolor reiciendis reprehenderit ea cum.\"}"
                         },
                         "description": ""
                     },
@@ -1244,20 +1210,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "52"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"data\":{\"id\":1,\"title\":\"voluptatem\",\"description\":\"Sed alias eligendi aut blanditiis.\",\"category\":\"Curt Mraz\"}}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -1301,20 +1259,16 @@
                                     "value": "no-cache, private"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "51"
+                                    "key": "content-type",
+                                    "value": "application\/json"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 204,
-                            "body": "",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -1354,20 +1308,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "50"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"data\":[]}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -1387,12 +1333,12 @@
                             "query": [
                                 {
                                     "key": "type",
-                                    "value": "labore",
+                                    "value": "autem",
                                     "description": "the type of the post (public, department ,course).",
                                     "disabled": false
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/post?type=labore"
+                            "raw": "{{baseUrl}}\/api\/post?type=autem"
                         },
                         "method": "GET",
                         "header": [
@@ -1428,7 +1374,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "49"
+                                    "value": "57"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -1436,7 +1382,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":[{\"id\":2,\"content\":\"Iure ut qui non voluptatem. Voluptas rerum alias repellendus explicabo hic cupiditate. Vero esse non itaque et. Aut sit id omnis. Eos nemo architecto voluptas numquam laudantium ex minus autem.\",\"attachment\":\"voluptates\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"3 hours ago\"},{\"id\":12,\"content\":\"Consequatur et similique autem ipsam quis quasi deserunt. Quaerat non sit libero eos. Sit doloremque officiis dolore sed.\",\"attachment\":\"odio\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"3 hours ago\"},{\"id\":14,\"content\":\"Voluptas consequatur vel sint sed repellat eum impedit excepturi. Et officiis rerum ut quas. Voluptatum quis repudiandae deserunt. Mollitia voluptatibus ullam eaque fuga sint.\",\"attachment\":\"aut\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"3 hours ago\"}]}",
+                            "body": "{\"data\":[{\"id\":3,\"content\":\"Rerum ea alias qui reiciendis. Ipsam cum saepe aut optio nihil iste. Exercitationem necessitatibus quam rem accusantium mollitia mollitia beatae.\",\"attachment\":\"cupiditate\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"11 hours ago\"},{\"id\":12,\"content\":\"Et dolorem quisquam non fugiat. Ut consequuntur et iste rerum. Consequatur quia id laudantium itaque ducimus alias.\",\"attachment\":\"et\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"11 hours ago\"},{\"id\":1,\"content\":\"Facere dignissimos eos exercitationem ullam iste quis provident. Autem adipisci qui qui. Eum odit dignissimos occaecati beatae.\",\"attachment\":\"qui\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"11 hours ago\"},{\"id\":4,\"content\":\"Sed ut et fuga maxime dignissimos autem sint quo. Facilis consequatur ab consequatur id expedita eaque ut. Velit dolores voluptas ut minus quidem minus earum.\",\"attachment\":\"quia\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"11 hours ago\"},{\"id\":6,\"content\":\"Fugiat ut aut atque. Eligendi assumenda neque consequatur. Velit veniam facere quia aut rerum consequatur sunt. Excepturi quis autem in totam sapiente iure velit maiores.\",\"attachment\":\"corrupti\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"11 hours ago\"},{\"id\":7,\"content\":\"Earum quia voluptas animi provident repellat. Ut voluptate iure doloribus veniam perspiciatis consequuntur. Reiciendis dicta magnam tenetur accusantium aspernatur.\",\"attachment\":\"non\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"11 hours ago\"},{\"id\":9,\"content\":\"Molestiae aliquid unde et. Impedit ipsa quis quas quidem est voluptate adipisci. Quas consequatur hic autem rerum. Repellat dolorum tenetur quia quia velit qui consequatur.\",\"attachment\":\"enim\",\"attachment_type\":\"image\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"11 hours ago\"},{\"id\":13,\"content\":\"Ab ipsam at ab. Et qui ipsa laudantium est distinctio suscipit. Non voluptate voluptatibus consequatur qui enim. Id ipsum possimus perferendis quis in repellendus.\",\"attachment\":\"ex\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"11 hours ago\"},{\"id\":15,\"content\":\"Et corrupti sunt est officia. A officiis sed est id. Iste voluptas voluptatem et laborum nisi.\",\"attachment\":\"molestiae\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"11 hours ago\"},{\"id\":16,\"content\":\"Fileesadsda\",\"attachment\":\"qHUwnz2lTwizQnjWJnOlZpqmyB7PcN-metacGhvdG9fMjAyMy0wMS0zMF8xNy0zMy00NS54bHN4-.xlsx\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"8 hours ago\"},{\"id\":17,\"content\":\"Image dfff\",\"attachment\":\"7am2Rx0UbpGyeV1vwRYRcxgQzJpuK2-metaaW1hZ2VzLXJlbW92ZWJnLXByZXZpZXcucG5n-.png\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"8 hours ago\"}]}",
                             "name": ""
                         }
                     ]
@@ -1463,7 +1409,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"content\":\"aut\",\"attachment\":\"praesentium\",\"attachment_type\":\"ipsum\",\"user_id\":432345098.7,\"department_id\":441045828.1,\"course_id\":104,\"post_type_id\":0.4856994}"
+                            "raw": "{\"content\":\"ipsa\",\"attachment\":\"quae\",\"attachment_type\":\"id\",\"user_id\":621.7319272,\"department_id\":460616037,\"course_id\":31604.75,\"post_type_id\":2.82036022}"
                         },
                         "description": ""
                     },
@@ -1479,20 +1425,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "48"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
                             "code": 401,
-                            "body": "{\"message\":\"unauthorized\"}",
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -1527,7 +1465,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"content\":\"dolorum\",\"attachment\":\"recusandae\",\"attachment_type\":\"consequatur\",\"user_id\":75858608.0670808,\"department_id\":2.74408777,\"course_id\":492588.53,\"post_type_id\":6}"
+                            "raw": "{\"content\":\"quod\",\"attachment\":\"aut\",\"attachment_type\":\"est\",\"user_id\":6318.53957968,\"department_id\":19840,\"course_id\":680993078.1652421,\"post_type_id\":273.9419}"
                         },
                         "description": ""
                     },
@@ -1543,20 +1481,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "47"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
                             "code": 401,
-                            "body": "{\"message\":\"unauthorized\"}",
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -1604,136 +1534,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "46"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
                             "code": 401,
-                            "body": "{\"message\":\"unauthorized\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-
-                    "name": "Display the specified resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/post\/:post_id\/like",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/post\/:post_id\/like",
-                            "variable": [
-                                {
-                                    "id": "post_id",
-                                    "key": "post_id",
-                                    "value": "1",
-                                    "description": "The ID of the post."
-                                }
-                            ]
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "45"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 204,
-                            "body": "",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Display the specified resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/post\/:post_id\/save",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/post\/:post_id\/save",
-                            "variable": [
-                                {
-                                    "id": "post_id",
-                                    "key": "post_id",
-                                    "value": "1",
-                                    "description": "The ID of the post."
-                                }
-                            ]
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "44"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 204,
-                            "body": "",
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
