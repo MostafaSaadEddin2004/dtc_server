@@ -29,11 +29,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -41,7 +43,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -72,7 +74,11 @@ endpoints:
         name: title
         description: ''
         required: true
+<<<<<<< HEAD
         example: exercitationem
+=======
+        example: quam
+>>>>>>> origin/dev
         type: string
         enumValues: []
         custom: []
@@ -80,7 +86,11 @@ endpoints:
         name: description
         description: ''
         required: true
+<<<<<<< HEAD
         example: 'Dolorem cumque sit eveniet voluptates.'
+=======
+        example: 'Consequatur necessitatibus est nulla nobis cupiditate.'
+>>>>>>> origin/dev
         type: string
         enumValues: []
         custom: []
@@ -96,22 +106,34 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
+<<<<<<< HEAD
         example: 18
+=======
+        example: 11
+>>>>>>> origin/dev
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
+<<<<<<< HEAD
       title: exercitationem
       description: 'Dolorem cumque sit eveniet voluptates.'
       note_category_id: 18
+=======
+      title: quam
+      description: 'Consequatur necessitatibus est nulla nobis cupiditate.'
+      note_category_id: 11
+>>>>>>> origin/dev
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 422
+        content: '{"message":"The selected note category id is invalid.","errors":{"note_category_id":["The selected note category id is invalid."]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -119,7 +141,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -159,11 +181,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":{"id":1,"title":"Mollitia et ab excepturi et temporibus.","description":"Cumque beatae voluptas quam repellendus in molestiae. Eius dolores sit natus voluptas facere.","category":"Curt Mraz"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -171,7 +195,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -212,7 +236,11 @@ endpoints:
         name: title
         description: ''
         required: true
+<<<<<<< HEAD
         example: repellat
+=======
+        example: voluptatem
+>>>>>>> origin/dev
         type: string
         enumValues: []
         custom: []
@@ -220,7 +248,11 @@ endpoints:
         name: description
         description: ''
         required: true
+<<<<<<< HEAD
         example: 'Vel inventore nobis temporibus.'
+=======
+        example: 'Sed alias eligendi aut blanditiis.'
+>>>>>>> origin/dev
         type: string
         enumValues: []
         custom: []
@@ -241,16 +273,23 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
+<<<<<<< HEAD
       title: repellat
       description: 'Vel inventore nobis temporibus.'
+=======
+      title: voluptatem
+      description: 'Sed alias eligendi aut blanditiis.'
+>>>>>>> origin/dev
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":{"id":1,"title":"voluptatem","description":"Sed alias eligendi aut blanditiis.","category":"Curt Mraz"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '52'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -258,7 +297,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -298,11 +337,12 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 204
+        content: ''
         headers:
           cache-control: 'no-cache, private'
-          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '51'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -310,7 +350,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -341,11 +381,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '50'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -353,7 +395,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null

@@ -27,12 +27,20 @@ endpoints:
     responses:
       -
         status: 200
+<<<<<<< HEAD
         content: '{"data":[{"id":1,"name":"Dr. Orie Medhurst"},{"id":2,"name":"Aditya Larson"},{"id":3,"name":"Dr. Brittany Reichel"},{"id":4,"name":"Jayme Ziemann I"},{"id":5,"name":"Dean Tillman MD"}]}'
+=======
+        content: '{"data":[{"id":1,"name":"Prof. Tanya Hintz Jr."},{"id":2,"name":"Nola Brakus"},{"id":3,"name":"Anya Cronin I"},{"id":4,"name":"Trevion Bechtelar Jr."},{"id":5,"name":"Ms. Mina Lind IV"},{"id":6,"name":"Terence Zemlak"},{"id":7,"name":"Missouri Kuhlman"},{"id":8,"name":"Mr. Johann Rempel"},{"id":9,"name":"Gabriella McGlynn"},{"id":10,"name":"Chelsea Ferry"},{"id":11,"name":"Keshaun Schimmel III"},{"id":12,"name":"Cyrus Braun"},{"id":13,"name":"Brennon Greenholt"},{"id":14,"name":"Ms. Joyce Hyatt"},{"id":15,"name":"Cyrus Flatley"},{"id":16,"name":"Noe Pfannerstill"},{"id":17,"name":"Elinor Schaden"},{"id":18,"name":"Victor Erdman"},{"id":19,"name":"Mr. Murl Ernser Sr."},{"id":20,"name":"Citlalli Breitenberg"},{"id":21,"name":"Verner Wolf III"},{"id":22,"name":"Buddy Schamberger"},{"id":23,"name":"Prof. Santos Pacocha"},{"id":24,"name":"Major Kemmer"},{"id":25,"name":"Michelle Goyette Jr."},{"id":26,"name":"Prof. Durward Stroman DDS"},{"id":27,"name":"Brady Turcotte"},{"id":28,"name":"Mrs. Layla Flatley"},{"id":29,"name":"Miss Yolanda Wilkinson II"},{"id":30,"name":"Dr. Dereck Legros Sr."},{"id":31,"name":"Kim Schulist V"},{"id":32,"name":"Chloe Bartoletti"},{"id":33,"name":"Hilma Rogahn"},{"id":34,"name":"Verda Krajcik II"},{"id":35,"name":"Lyda Wisozk"},{"id":36,"name":"Antonia Lind"},{"id":37,"name":"Gerda Blanda"},{"id":38,"name":"Prof. Savannah Kutch"},{"id":39,"name":"Giovanni Stracke"},{"id":40,"name":"Aiden Dare"},{"id":41,"name":"Thelma Howell"},{"id":42,"name":"Rozella Morar"},{"id":43,"name":"Prof. Darwin Gislason Sr."},{"id":44,"name":"Dr. Laverne Bernier"},{"id":45,"name":"Mr. Price McDermott"}]}'
+>>>>>>> origin/dev
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
+<<<<<<< HEAD
           x-ratelimit-remaining: '50'
+=======
+          x-ratelimit-remaining: '37'
+>>>>>>> origin/dev
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -76,6 +84,7 @@ endpoints:
     fileParameters: []
     responses:
       -
+<<<<<<< HEAD
         status: 404
         content: |-
           {
@@ -499,11 +508,19 @@ endpoints:
                   }
               ]
           }
+=======
+        status: 200
+        content: '{"data":[{"id":15,"name":"Waylon Spinka","mark":null}]}'
+>>>>>>> origin/dev
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
+<<<<<<< HEAD
           x-ratelimit-remaining: '49'
+=======
+          x-ratelimit-remaining: '36'
+>>>>>>> origin/dev
           access-control-allow-origin: '*'
         description: null
         custom: []

@@ -32,7 +32,11 @@ endpoints:
         name: subject
         description: ''
         required: true
+<<<<<<< HEAD
         example: qui
+=======
+        example: et
+>>>>>>> origin/dev
         type: string
         enumValues: []
         custom: []
@@ -40,7 +44,11 @@ endpoints:
         name: mark
         description: 'Must be at least 0. Must not be greater than 100.'
         required: true
+<<<<<<< HEAD
         example: 18
+=======
+        example: 19
+>>>>>>> origin/dev
         type: number
         enumValues: []
         custom: []
@@ -48,7 +56,11 @@ endpoints:
         name: reason
         description: ''
         required: true
+<<<<<<< HEAD
         example: vitae
+=======
+        example: accusantium
+>>>>>>> origin/dev
         type: string
         enumValues: []
         custom: []
@@ -56,15 +68,26 @@ endpoints:
         name: teacher
         description: ''
         required: true
+<<<<<<< HEAD
         example: deserunt
+=======
+        example: aspernatur
+>>>>>>> origin/dev
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
+<<<<<<< HEAD
       subject: qui
       mark: 18
       reason: vitae
       teacher: deserunt
+=======
+      subject: et
+      mark: 19
+      reason: accusantium
+      teacher: aspernatur
+>>>>>>> origin/dev
     fileParameters: []
     responses:
       -

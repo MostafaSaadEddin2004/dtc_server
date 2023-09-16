@@ -26,12 +26,20 @@ endpoints:
         name: sectionId
         description: ''
         required: true
+<<<<<<< HEAD
         example: ullam
+=======
+        example: velit
+>>>>>>> origin/dev
         type: string
         enumValues: []
         custom: []
     cleanUrlParameters:
+<<<<<<< HEAD
       sectionId: ullam
+=======
+      sectionId: velit
+>>>>>>> origin/dev
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

@@ -40,13 +40,22 @@ endpoints:
         name: department_id
         description: ''
         required: true
+<<<<<<< HEAD
         example: 520.40215
+=======
+        example: 3376785.0
+>>>>>>> origin/dev
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
+<<<<<<< HEAD
       text: voluptatem
       department_id: 520.40215
+=======
+      text: maxime
+      department_id: 3376785.0
+>>>>>>> origin/dev
     fileParameters: []
     responses:
       -

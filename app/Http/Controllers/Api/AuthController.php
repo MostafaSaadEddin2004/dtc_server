@@ -9,7 +9,6 @@ use App\Http\Requests\Api\TeacherRequest;
 use App\Models\Role;
 use App\Models\Teacher;
 use App\Models\User;
-use GuzzleHttp\Promise\Create;
 use Illuminate\Support\Facades\Hash;
 
 /**
@@ -119,6 +118,7 @@ class AuthController extends Controller
             'message' => 'your request in wait',
         ], 200);
     }
+
     /**
      * Logout
      *
@@ -134,5 +134,26 @@ class AuthController extends Controller
     {
         auth()->user()->currentAccessToken()->delete();
         return response()->noContent();
+    }
+
+    public function profile()
+    {
+        $user = auth()->user();
+        $data = ['user' => $user];
+
+        if ($user->department) {
+            $data['department'] = $user->department;
+            $data['section'] = $user->section;
+        }
+        return $data;
+    }
+
+    public function getRole()
+    {
+        $role = auth()->user()->role;
+
+        return response([
+            'role' => $role->name,
+        ]);
     }
 }
