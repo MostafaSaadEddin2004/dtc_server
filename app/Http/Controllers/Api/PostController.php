@@ -8,7 +8,6 @@ use App\Http\Requests\Api\StorePostRequest;
 use App\Http\Requests\Api\UpdatePostRequest;
 use App\Http\Resources\PostResource;
 use App\Models\Post;
-use Illuminate\Http\Request;
 
 /**
  * @group Post
@@ -25,12 +24,15 @@ class PostController extends Controller
      */
     public function index(GetPostRequest $request)
     {
-        if ($request->type != 'public' && auth()->user()->hasRole(['department', 'course'])) {
-            $posts = Post::with(['likes', 'saves'])->whereHas('postType', fn ($query)  => $query->where('name', 'public'))->get();
+        if ($request->type == 'public') {
+            $posts = Post::with(['likes', 'saves'])
+                ->whereHas('postType', fn ($query)  => $query->where('name', 'public'))->get();
         } else if ($request->type == 'department') {
-            $posts = Post::with(['likes', 'saves'])->whereHas('postType', fn ($query)  => $query->where('name', 'department')->orWhere('name', 'public'))->get();
+            $posts = Post::with(['likes', 'saves'])
+                ->whereHas('postType', fn ($query)  => $query->where('name', 'department')->orWhere('name', 'public'))->get();
         } else {
-            $posts = Post::with(['likes', 'saves'])->whereHas('postType', fn ($query)  => $query->where('name', 'course'))->get();
+            $posts = Post::with(['likes', 'saves'])
+                ->whereHas('postType', fn ($query)  => $query->where('name', 'course'))->get();
         }
 
         return PostResource::collection($posts);
