@@ -189,10 +189,7 @@
                     <a href="#post">Post</a>
                 </li>
                                     <ul id="tocify-subheader-post" class="tocify-subheader">
-                                                    <li class="tocify-item level-2" data-unique="post-GETapi-post">
-                                <a href="#post-GETapi-post">Display a listing of the resource.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="post-POSTapi-post">
+                                                    <li class="tocify-item level-2" data-unique="post-POSTapi-post">
                                 <a href="#post-POSTapi-post">Store a newly created resource in storage.</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="post-PUTapi-post--id-">
@@ -200,6 +197,12 @@
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="post-DELETEapi-post--id-">
                                 <a href="#post-DELETEapi-post--id-">Remove the specified resource from storage.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="post-GETapi-post">
+                                <a href="#post-GETapi-post">Display a listing of the resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="post-GETapi-saved-posts">
+                                <a href="#post-GETapi-saved-posts">Display the specified resource.</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="post-POSTapi-post--post_id--like">
                                 <a href="#post-POSTapi-post--post_id--like">Display the specified resource.</a>
@@ -298,7 +301,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 39
+x-ratelimit-remaining: 38
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -605,7 +608,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 38
+x-ratelimit-remaining: 37
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -1232,7 +1235,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"email\": \"my@example.com\",
     \"password\": \"password\",
     \"role\": \"student_browser\",
-    \"fcm_token\": \"assumenda\"
+    \"fcm_token\": \"autem\"
 }"
 </code></pre></div>
 
@@ -1252,7 +1255,7 @@ let body = {
     "email": "my@example.com",
     "password": "password",
     "role": "student_browser",
-    "fcm_token": "assumenda"
+    "fcm_token": "autem"
 };
 
 fetch(url, {
@@ -1279,7 +1282,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \&quot;user_firebase_tokens\&quot; (\&quot;token\&quot;, \&quot;user_id\&quot;, \&quot;updated_at\&quot;, \&quot;created_at\&quot;) values (assumenda, 22, 2023-09-17 14:29:50, 2023-09-17 14:29:50))&quot;,
+    &quot;message&quot;: &quot;SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \&quot;user_firebase_tokens\&quot; (\&quot;token\&quot;, \&quot;user_id\&quot;, \&quot;updated_at\&quot;, \&quot;created_at\&quot;) values (autem, 22, 2023-09-17 14:52:42, 2023-09-17 14:52:42))&quot;,
     &quot;exception&quot;: &quot;Illuminate\\Database\\QueryException&quot;,
     &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
     &quot;line&quot;: 801,
@@ -1938,10 +1941,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="fcm_token"                data-endpoint="POSTapi-auth"
-               value="assumenda"
+               value="autem"
                data-component="body">
     <br>
-<p>Example: <code>assumenda</code></p>
+<p>Example: <code>autem</code></p>
         </div>
         </form>
 
@@ -1963,16 +1966,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "first_name_en=neque"\
-    --form "last_name_en=non"\
-    --form "first_name_ar=omnis"\
-    --form "last_name_ar=inventore"\
-    --form "phone=aut"\
-    --form "email=hills.shyanne@example.net"\
-    --form "password=vnsf1:Y$&gt;Rvh1:zjj0N"\
-    --form "role=student"\
-    --form "fcm_token=officiis"\
-    --form "image=@/tmp/phpMUPpAh" </code></pre></div>
+    --form "first_name_en=similique"\
+    --form "last_name_en=et"\
+    --form "first_name_ar=doloribus"\
+    --form "last_name_ar=atque"\
+    --form "phone=debitis"\
+    --form "email=witting.prince@example.com"\
+    --form "password=()~U8hLKvDq5_F;uB&gt;}"\
+    --form "role=teacher_browser"\
+    --form "fcm_token=ipsam"\
+    --form "image=@/tmp/phpxtZot6" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -1987,15 +1990,15 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('first_name_en', 'neque');
-body.append('last_name_en', 'non');
-body.append('first_name_ar', 'omnis');
-body.append('last_name_ar', 'inventore');
-body.append('phone', 'aut');
-body.append('email', 'hills.shyanne@example.net');
-body.append('password', 'vnsf1:Y$&gt;Rvh1:zjj0N');
-body.append('role', 'student');
-body.append('fcm_token', 'officiis');
+body.append('first_name_en', 'similique');
+body.append('last_name_en', 'et');
+body.append('first_name_ar', 'doloribus');
+body.append('last_name_ar', 'atque');
+body.append('phone', 'debitis');
+body.append('email', 'witting.prince@example.com');
+body.append('password', '()~U8hLKvDq5_F;uB&gt;}');
+body.append('role', 'teacher_browser');
+body.append('fcm_token', 'ipsam');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -2022,7 +2025,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \&quot;user_firebase_tokens\&quot; (\&quot;token\&quot;, \&quot;user_id\&quot;, \&quot;updated_at\&quot;, \&quot;created_at\&quot;) values (officiis, 73, 2023-09-17 14:29:50, 2023-09-17 14:29:50))&quot;,
+    &quot;message&quot;: &quot;SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \&quot;user_firebase_tokens\&quot; (\&quot;token\&quot;, \&quot;user_id\&quot;, \&quot;updated_at\&quot;, \&quot;created_at\&quot;) values (ipsam, 73, 2023-09-17 14:52:42, 2023-09-17 14:52:42))&quot;,
     &quot;exception&quot;: &quot;Illuminate\\Database\\QueryException&quot;,
     &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
     &quot;line&quot;: 801,
@@ -2648,10 +2651,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_en"                data-endpoint="POSTapi-auth-register"
-               value="neque"
+               value="similique"
                data-component="body">
     <br>
-<p>Example: <code>neque</code></p>
+<p>Example: <code>similique</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_en</code></b>&nbsp;&nbsp;
@@ -2659,10 +2662,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_en"                data-endpoint="POSTapi-auth-register"
-               value="non"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>non</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>first_name_ar</code></b>&nbsp;&nbsp;
@@ -2670,10 +2673,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="omnis"
+               value="doloribus"
                data-component="body">
     <br>
-<p>Example: <code>omnis</code></p>
+<p>Example: <code>doloribus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_ar</code></b>&nbsp;&nbsp;
@@ -2681,10 +2684,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="inventore"
+               value="atque"
                data-component="body">
     <br>
-<p>Example: <code>inventore</code></p>
+<p>Example: <code>atque</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -2692,10 +2695,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone"                data-endpoint="POSTapi-auth-register"
-               value="aut"
+               value="debitis"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>debitis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -2703,10 +2706,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-register"
-               value="hills.shyanne@example.net"
+               value="witting.prince@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>hills.shyanne@example.net</code></p>
+<p>Must be a valid email address. Example: <code>witting.prince@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -2714,10 +2717,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-register"
-               value="vnsf1:Y$>Rvh1:zjj0N"
+               value="()~U8hLKvDq5_F;uB>}"
                data-component="body">
     <br>
-<p>Example: <code>vnsf1:Y$&gt;Rvh1:zjj0N</code></p>
+<p>Example: <code>()~U8hLKvDq5_F;uB&gt;}</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -2725,10 +2728,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-register"
-               value="student"
+               value="teacher_browser"
                data-component="body">
     <br>
-<p>Example: <code>student</code></p>
+<p>Example: <code>teacher_browser</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>student</code></li> <li><code>teacher</code></li> <li><code>student_browser</code></li> <li><code>teacher_browser</code></li></ul>
         </div>
@@ -2741,7 +2744,7 @@ Must be one of:
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>/tmp/phpMUPpAh</code></p>
+<p>Must be an image. Example: <code>/tmp/phpxtZot6</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>fcm_token</code></b>&nbsp;&nbsp;
@@ -2749,10 +2752,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="fcm_token"                data-endpoint="POSTapi-auth-register"
-               value="officiis"
+               value="ipsam"
                data-component="body">
     <br>
-<p>Example: <code>officiis</code></p>
+<p>Example: <code>ipsam</code></p>
         </div>
         </form>
 
@@ -3204,13 +3207,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"certificate\": \"quis\",
-    \"specialty\": \"omnis\",
-    \"birth_date\": \"2005-02-02\",
-    \"current_location\": \"laudantium\",
-    \"permanent_location\": \"animi\",
-    \"nationality\": \"molestiae\",
-    \"department_id\": 19
+    \"certificate\": \"deleniti\",
+    \"specialty\": \"nesciunt\",
+    \"birth_date\": \"2006-06-20\",
+    \"current_location\": \"aperiam\",
+    \"permanent_location\": \"eaque\",
+    \"nationality\": \"quod\",
+    \"department_id\": 20
 }"
 </code></pre></div>
 
@@ -3227,13 +3230,13 @@ const headers = {
 };
 
 let body = {
-    "certificate": "quis",
-    "specialty": "omnis",
-    "birth_date": "2005-02-02",
-    "current_location": "laudantium",
-    "permanent_location": "animi",
-    "nationality": "molestiae",
-    "department_id": 19
+    "certificate": "deleniti",
+    "specialty": "nesciunt",
+    "birth_date": "2006-06-20",
+    "current_location": "aperiam",
+    "permanent_location": "eaque",
+    "nationality": "quod",
+    "department_id": 20
 };
 
 fetch(url, {
@@ -3387,10 +3390,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="certificate"                data-endpoint="POSTapi-auth-teacher"
-               value="quis"
+               value="deleniti"
                data-component="body">
     <br>
-<p>Example: <code>quis</code></p>
+<p>Example: <code>deleniti</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>specialty</code></b>&nbsp;&nbsp;
@@ -3398,10 +3401,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="specialty"                data-endpoint="POSTapi-auth-teacher"
-               value="omnis"
+               value="nesciunt"
                data-component="body">
     <br>
-<p>Example: <code>omnis</code></p>
+<p>Example: <code>nesciunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birth_date</code></b>&nbsp;&nbsp;
@@ -3409,10 +3412,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birth_date"                data-endpoint="POSTapi-auth-teacher"
-               value="2005-02-02"
+               value="2006-06-20"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before <code>09/17/2023</code>. Example: <code>2005-02-02</code></p>
+<p>Must be a valid date. Must be a date before <code>09/17/2023</code>. Example: <code>2006-06-20</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>current_location</code></b>&nbsp;&nbsp;
@@ -3420,10 +3423,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="current_location"                data-endpoint="POSTapi-auth-teacher"
-               value="laudantium"
+               value="aperiam"
                data-component="body">
     <br>
-<p>Example: <code>laudantium</code></p>
+<p>Example: <code>aperiam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permanent_location</code></b>&nbsp;&nbsp;
@@ -3431,10 +3434,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="permanent_location"                data-endpoint="POSTapi-auth-teacher"
-               value="animi"
+               value="eaque"
                data-component="body">
     <br>
-<p>Example: <code>animi</code></p>
+<p>Example: <code>eaque</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nationality</code></b>&nbsp;&nbsp;
@@ -3442,10 +3445,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-auth-teacher"
-               value="molestiae"
+               value="quod"
                data-component="body">
     <br>
-<p>Example: <code>molestiae</code></p>
+<p>Example: <code>quod</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -3453,10 +3456,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-auth-teacher"
-               value="19"
+               value="20"
                data-component="body">
     <br>
-<p>Example: <code>19</code></p>
+<p>Example: <code>20</code></p>
         </div>
         </form>
 
@@ -3513,7 +3516,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 45
+x-ratelimit-remaining: 44
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3653,7 +3656,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 44
+x-ratelimit-remaining: 43
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3791,7 +3794,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 43
+x-ratelimit-remaining: 42
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3941,7 +3944,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 42
+x-ratelimit-remaining: 41
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -4095,7 +4098,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 41
+x-ratelimit-remaining: 40
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -4216,12 +4219,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"is_male\": true,
-    \"social_status\": \"sit\",
-    \"nationality\": \"maiores\",
-    \"address\": \"ratione\",
-    \"date_of_birth\": \"2023-09-17T14:29:50\",
-    \"student_type\": \"harum\",
-    \"work_type\": \"quaerat\",
+    \"social_status\": \"nulla\",
+    \"nationality\": \"illo\",
+    \"address\": \"ut\",
+    \"date_of_birth\": \"2023-09-17T14:52:42\",
+    \"student_type\": \"recusandae\",
+    \"work_type\": \"quis\",
     \"is_morning\": true
 }"
 </code></pre></div>
@@ -4240,12 +4243,12 @@ const headers = {
 
 let body = {
     "is_male": true,
-    "social_status": "sit",
-    "nationality": "maiores",
-    "address": "ratione",
-    "date_of_birth": "2023-09-17T14:29:50",
-    "student_type": "harum",
-    "work_type": "quaerat",
+    "social_status": "nulla",
+    "nationality": "illo",
+    "address": "ut",
+    "date_of_birth": "2023-09-17T14:52:42",
+    "student_type": "recusandae",
+    "work_type": "quis",
     "is_morning": true
 };
 
@@ -4267,7 +4270,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 40
+x-ratelimit-remaining: 39
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 <code>Empty response</code>
@@ -4393,10 +4396,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="social_status"                data-endpoint="POSTapi-course--course_id--register"
-               value="sit"
+               value="nulla"
                data-component="body">
     <br>
-<p>Example: <code>sit</code></p>
+<p>Example: <code>nulla</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nationality</code></b>&nbsp;&nbsp;
@@ -4404,10 +4407,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-course--course_id--register"
-               value="maiores"
+               value="illo"
                data-component="body">
     <br>
-<p>Example: <code>maiores</code></p>
+<p>Example: <code>illo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -4415,10 +4418,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-course--course_id--register"
-               value="ratione"
+               value="ut"
                data-component="body">
     <br>
-<p>Example: <code>ratione</code></p>
+<p>Example: <code>ut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>date_of_birth</code></b>&nbsp;&nbsp;
@@ -4426,10 +4429,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date_of_birth"                data-endpoint="POSTapi-course--course_id--register"
-               value="2023-09-17T14:29:50"
+               value="2023-09-17T14:52:42"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-17T14:29:50</code></p>
+<p>Must be a valid date. Example: <code>2023-09-17T14:52:42</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>student_type</code></b>&nbsp;&nbsp;
@@ -4437,10 +4440,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="student_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="harum"
+               value="recusandae"
                data-component="body">
     <br>
-<p>Example: <code>harum</code></p>
+<p>Example: <code>recusandae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>work_type</code></b>&nbsp;&nbsp;
@@ -4448,10 +4451,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="work_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="quaerat"
+               value="quis"
                data-component="body">
     <br>
-<p>Example: <code>quaerat</code></p>
+<p>Example: <code>quis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>is_morning</code></b>&nbsp;&nbsp;
@@ -4493,14 +4496,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/section/sed/departments" \
+    --get "http://localhost:8000/api/section/distinctio/departments" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/section/sed/departments"
+    "http://localhost:8000/api/section/distinctio/departments"
 );
 
 const headers = {
@@ -4608,10 +4611,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="sectionId"                data-endpoint="GETapi-section--sectionId--departments"
-               value="sed"
+               value="distinctio"
                data-component="url">
     <br>
-<p>Example: <code>sed</code></p>
+<p>Example: <code>distinctio</code></p>
             </div>
                     </form>
 
@@ -4636,10 +4639,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"subject\": \"ducimus\",
-    \"mark\": 20,
-    \"reason\": \"aspernatur\",
-    \"teacher\": \"nemo\"
+    \"subject\": \"sunt\",
+    \"mark\": 1,
+    \"reason\": \"dolorem\",
+    \"teacher\": \"dolorem\"
 }"
 </code></pre></div>
 
@@ -4655,10 +4658,10 @@ const headers = {
 };
 
 let body = {
-    "subject": "ducimus",
-    "mark": 20,
-    "reason": "aspernatur",
-    "teacher": "nemo"
+    "subject": "sunt",
+    "mark": 1,
+    "reason": "dolorem",
+    "teacher": "dolorem"
 };
 
 fetch(url, {
@@ -4804,10 +4807,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="subject"                data-endpoint="POSTapi-editMark"
-               value="ducimus"
+               value="sunt"
                data-component="body">
     <br>
-<p>Example: <code>ducimus</code></p>
+<p>Example: <code>sunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>mark</code></b>&nbsp;&nbsp;
@@ -4815,10 +4818,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="mark"                data-endpoint="POSTapi-editMark"
-               value="20"
+               value="1"
                data-component="body">
     <br>
-<p>Must be at least 0. Must not be greater than 100. Example: <code>20</code></p>
+<p>Must be at least 0. Must not be greater than 100. Example: <code>1</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>reason</code></b>&nbsp;&nbsp;
@@ -4826,10 +4829,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="reason"                data-endpoint="POSTapi-editMark"
-               value="aspernatur"
+               value="dolorem"
                data-component="body">
     <br>
-<p>Example: <code>aspernatur</code></p>
+<p>Example: <code>dolorem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>teacher</code></b>&nbsp;&nbsp;
@@ -4837,10 +4840,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="teacher"                data-endpoint="POSTapi-editMark"
-               value="nemo"
+               value="dolorem"
                data-component="body">
     <br>
-<p>Example: <code>nemo</code></p>
+<p>Example: <code>dolorem</code></p>
         </div>
         </form>
 
@@ -4865,8 +4868,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"text\": \"dolores\",
-    \"department_id\": 8449512.67435712
+    \"text\": \"non\",
+    \"department_id\": 1185.7197729
 }"
 </code></pre></div>
 
@@ -4882,8 +4885,8 @@ const headers = {
 };
 
 let body = {
-    "text": "dolores",
-    "department_id": 8449512.67435712
+    "text": "non",
+    "department_id": 1185.7197729
 };
 
 fetch(url, {
@@ -5026,10 +5029,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="text"                data-endpoint="POSTapi-move"
-               value="dolores"
+               value="non"
                data-component="body">
     <br>
-<p>Example: <code>dolores</code></p>
+<p>Example: <code>non</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -5037,10 +5040,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-move"
-               value="8449512.6743571"
+               value="1185.7197729"
                data-component="body">
     <br>
-<p>Example: <code>8449512.6743571</code></p>
+<p>Example: <code>1185.7197729</code></p>
         </div>
         </form>
 
@@ -5207,9 +5210,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"dolorum\",
-    \"description\": \"Natus ab consequatur ut et sapiente eius ad debitis.\",
-    \"note_category_id\": 17
+    \"title\": \"iusto\",
+    \"description\": \"Voluptas distinctio nobis qui.\",
+    \"note_category_id\": 19
 }"
 </code></pre></div>
 
@@ -5226,9 +5229,9 @@ const headers = {
 };
 
 let body = {
-    "title": "dolorum",
-    "description": "Natus ab consequatur ut et sapiente eius ad debitis.",
-    "note_category_id": 17
+    "title": "iusto",
+    "description": "Voluptas distinctio nobis qui.",
+    "note_category_id": 19
 };
 
 fetch(url, {
@@ -5351,10 +5354,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-note"
-               value="dolorum"
+               value="iusto"
                data-component="body">
     <br>
-<p>Example: <code>dolorum</code></p>
+<p>Example: <code>iusto</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -5362,10 +5365,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-note"
-               value="Natus ab consequatur ut et sapiente eius ad debitis."
+               value="Voluptas distinctio nobis qui."
                data-component="body">
     <br>
-<p>Example: <code>Natus ab consequatur ut et sapiente eius ad debitis.</code></p>
+<p>Example: <code>Voluptas distinctio nobis qui.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -5384,10 +5387,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="note_category_id"                data-endpoint="POSTapi-note"
-               value="17"
+               value="19"
                data-component="body">
     <br>
-<p>Example: <code>17</code></p>
+<p>Example: <code>19</code></p>
         </div>
         </form>
 
@@ -5567,8 +5570,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"quos\",
-    \"description\": \"Id accusantium totam tempore est culpa sed tempora.\"
+    \"title\": \"voluptatum\",
+    \"description\": \"Veritatis deleniti nihil et.\"
 }"
 </code></pre></div>
 
@@ -5585,8 +5588,8 @@ const headers = {
 };
 
 let body = {
-    "title": "quos",
-    "description": "Id accusantium totam tempore est culpa sed tempora."
+    "title": "voluptatum",
+    "description": "Veritatis deleniti nihil et."
 };
 
 fetch(url, {
@@ -5615,8 +5618,8 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;title&quot;: &quot;quos&quot;,
-        &quot;description&quot;: &quot;Id accusantium totam tempore est culpa sed tempora.&quot;,
+        &quot;title&quot;: &quot;voluptatum&quot;,
+        &quot;description&quot;: &quot;Veritatis deleniti nihil et.&quot;,
         &quot;category&quot;: &quot;Curt Mraz&quot;
     }
 }</code>
@@ -5725,10 +5728,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="PUTapi-note--id-"
-               value="quos"
+               value="voluptatum"
                data-component="body">
     <br>
-<p>Example: <code>quos</code></p>
+<p>Example: <code>voluptatum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -5736,10 +5739,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="PUTapi-note--id-"
-               value="Id accusantium totam tempore est culpa sed tempora."
+               value="Veritatis deleniti nihil et."
                data-component="body">
     <br>
-<p>Example: <code>Id accusantium totam tempore est culpa sed tempora.</code></p>
+<p>Example: <code>Veritatis deleniti nihil et.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -6057,321 +6060,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
     
 
-                                <h2 id="post-GETapi-post">Display a listing of the resource.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-post">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/post?type=voluptatem" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"type\": \"department\"
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/post"
-);
-
-const params = {
-    "type": "voluptatem",
-};
-Object.keys(params)
-    .forEach(key =&gt; url.searchParams.append(key, params[key]));
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "type": "department"
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-post">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 51
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;content&quot;: &quot;Ipsam sapiente voluptatibus ex et vel minus nobis. Voluptatum laborum aperiam adipisci ut tempore nobis commodi accusantium. Vel vero consequatur fugit non voluptas quidem quae.&quot;,
-            &quot;attachment&quot;: &quot;dolorem&quot;,
-            &quot;attachment_type&quot;: &quot;image&quot;,
-            &quot;likes&quot;: 0,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 0,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;content&quot;: &quot;Et sit adipisci enim ratione. Adipisci dolor enim eius ut tempora laboriosam. Voluptates est ea cumque quia quia.&quot;,
-            &quot;attachment&quot;: &quot;ratione&quot;,
-            &quot;attachment_type&quot;: &quot;image&quot;,
-            &quot;likes&quot;: 0,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 0,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;content&quot;: &quot;Consequuntur aut quam maxime debitis quo eos natus. Eum quis minima tempora quasi sapiente et quod eveniet. Possimus non nemo aliquid vel rerum in ut eius.&quot;,
-            &quot;attachment&quot;: &quot;cumque&quot;,
-            &quot;attachment_type&quot;: &quot;file&quot;,
-            &quot;likes&quot;: 0,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 0,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;content&quot;: &quot;Eos omnis dolor dolores iusto perferendis deleniti sed. Autem ut fugit corporis dolor. Dolorem laboriosam mollitia repellat praesentium nisi dolorem.&quot;,
-            &quot;attachment&quot;: &quot;minima&quot;,
-            &quot;attachment_type&quot;: &quot;image&quot;,
-            &quot;likes&quot;: 0,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 0,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;content&quot;: &quot;Dolor aut dolorum eligendi consequatur fuga doloribus. Aspernatur molestiae voluptatum nesciunt et dolorem est. Magni nisi possimus qui odio illum dolorem suscipit.&quot;,
-            &quot;attachment&quot;: &quot;quia&quot;,
-            &quot;attachment_type&quot;: &quot;file&quot;,
-            &quot;likes&quot;: 1,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 0,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;content&quot;: &quot;Quaerat impedit et error fugiat ut harum. Ut eligendi et esse sit quaerat ut delectus. Rem aut aut perspiciatis et reiciendis est id. Doloribus labore veritatis autem libero commodi eos velit.&quot;,
-            &quot;attachment&quot;: &quot;dicta&quot;,
-            &quot;attachment_type&quot;: &quot;file&quot;,
-            &quot;likes&quot;: 1,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 0,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;content&quot;: &quot;Odio accusamus nobis quas ut in et. Sunt rerum quaerat impedit cupiditate. Est commodi id accusamus ducimus neque.&quot;,
-            &quot;attachment&quot;: &quot;quasi&quot;,
-            &quot;attachment_type&quot;: &quot;file&quot;,
-            &quot;likes&quot;: 1,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 0,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;content&quot;: &quot;Quis quo sed enim culpa possimus voluptas. Qui temporibus in sit facilis quo quia. Et natus et vitae corrupti corporis dolorem. Ex illo iure omnis earum minima modi ut.&quot;,
-            &quot;attachment&quot;: &quot;eos&quot;,
-            &quot;attachment_type&quot;: &quot;file&quot;,
-            &quot;likes&quot;: 1,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 0,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;content&quot;: &quot;Laborum quia alias qui. Voluptatem quia ut sed aliquid fuga non. Debitis a nihil dolor id. Ea omnis cum culpa in cupiditate possimus.&quot;,
-            &quot;attachment&quot;: &quot;voluptatem&quot;,
-            &quot;attachment_type&quot;: &quot;file&quot;,
-            &quot;likes&quot;: 1,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 0,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;content&quot;: &quot;Ad in consequatur rerum atque consequatur illo enim. Commodi nihil similique esse ad blanditiis qui. Accusamus dolorum ipsa eaque ullam non. Itaque eos est earum commodi aut asperiores.&quot;,
-            &quot;attachment&quot;: &quot;aut&quot;,
-            &quot;attachment_type&quot;: &quot;file&quot;,
-            &quot;likes&quot;: 0,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 1,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;content&quot;: &quot;Laboriosam beatae cumque quis quia. Minus qui explicabo explicabo excepturi illo quia soluta. Repellat dignissimos et quis sunt beatae. Explicabo magnam fugit assumenda soluta.&quot;,
-            &quot;attachment&quot;: &quot;voluptas&quot;,
-            &quot;attachment_type&quot;: &quot;file&quot;,
-            &quot;likes&quot;: 0,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 1,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;content&quot;: &quot;Officia architecto molestiae quibusdam harum sunt necessitatibus fuga asperiores. Illo corporis sit laborum aperiam id ea doloribus. Quo aut illum omnis nemo doloribus.&quot;,
-            &quot;attachment&quot;: &quot;ipsa&quot;,
-            &quot;attachment_type&quot;: &quot;image&quot;,
-            &quot;likes&quot;: 0,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 1,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-post" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-post"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-post"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-post" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-post">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-post" data-method="GET"
-      data-path="api/post"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-post', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-post"
-                    onclick="tryItOut('GETapi-post');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-post"
-                    onclick="cancelTryOut('GETapi-post');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-post"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/post</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-post"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-post"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-post"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
-                                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
-<i>optional</i> &nbsp;
-                <input type="text" style="display: none"
-                              name="type"                data-endpoint="GETapi-post"
-               value="voluptatem"
-               data-component="query">
-    <br>
-<p>the type of the post (public, department ,course). Example: <code>voluptatem</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="type"                data-endpoint="GETapi-post"
-               value="department"
-               data-component="body">
-    <br>
-<p>Example: <code>department</code></p>
-Must be one of:
-<ul style="list-style-type: square;"><li><code>public</code></li> <li><code>department</code></li> <li><code>course</code></li></ul>
-        </div>
-        </form>
-
-                    <h2 id="post-POSTapi-post">Store a newly created resource in storage.</h2>
+                                <h2 id="post-POSTapi-post">Store a newly created resource in storage.</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -6390,13 +6079,13 @@ Must be one of:
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"optio\",
-    \"attachment\": \"recusandae\",
-    \"attachment_type\": \"suscipit\",
-    \"user_id\": 7.3,
-    \"department_id\": 21843094.557464,
-    \"course_id\": 2982200.92616449,
-    \"post_type_id\": 19356093
+    \"content\": \"neque\",
+    \"attachment\": \"ex\",
+    \"attachment_type\": \"fuga\",
+    \"user_id\": 18956021.0499,
+    \"department_id\": 6142.6,
+    \"course_id\": 26.11304,
+    \"post_type_id\": 625052.739818344
 }"
 </code></pre></div>
 
@@ -6413,13 +6102,13 @@ const headers = {
 };
 
 let body = {
-    "content": "optio",
-    "attachment": "recusandae",
-    "attachment_type": "suscipit",
-    "user_id": 7.3,
-    "department_id": 21843094.557464,
-    "course_id": 2982200.92616449,
-    "post_type_id": 19356093
+    "content": "neque",
+    "attachment": "ex",
+    "attachment_type": "fuga",
+    "user_id": 18956021.0499,
+    "department_id": 6142.6,
+    "course_id": 26.11304,
+    "post_type_id": 625052.739818344
 };
 
 fetch(url, {
@@ -6441,7 +6130,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 50
+x-ratelimit-remaining: 51
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -6537,10 +6226,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="POSTapi-post"
-               value="optio"
+               value="neque"
                data-component="body">
     <br>
-<p>Example: <code>optio</code></p>
+<p>Example: <code>neque</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment</code></b>&nbsp;&nbsp;
@@ -6548,10 +6237,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="POSTapi-post"
-               value="recusandae"
+               value="ex"
                data-component="body">
     <br>
-<p>Example: <code>recusandae</code></p>
+<p>Example: <code>ex</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment_type</code></b>&nbsp;&nbsp;
@@ -6559,10 +6248,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment_type"                data-endpoint="POSTapi-post"
-               value="suscipit"
+               value="fuga"
                data-component="body">
     <br>
-<p>Example: <code>suscipit</code></p>
+<p>Example: <code>fuga</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -6570,10 +6259,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="POSTapi-post"
-               value="7.3"
+               value="18956021.0499"
                data-component="body">
     <br>
-<p>Example: <code>7.3</code></p>
+<p>Example: <code>18956021.0499</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -6581,10 +6270,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-post"
-               value="21843094.557464"
+               value="6142.6"
                data-component="body">
     <br>
-<p>Example: <code>21843094.557464</code></p>
+<p>Example: <code>6142.6</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -6592,10 +6281,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="POSTapi-post"
-               value="2982200.9261645"
+               value="26.11304"
                data-component="body">
     <br>
-<p>Example: <code>2982200.9261645</code></p>
+<p>Example: <code>26.11304</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>post_type_id</code></b>&nbsp;&nbsp;
@@ -6603,10 +6292,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_type_id"                data-endpoint="POSTapi-post"
-               value="19356093"
+               value="625052.73981834"
                data-component="body">
     <br>
-<p>Example: <code>19356093</code></p>
+<p>Example: <code>625052.73981834</code></p>
         </div>
         </form>
 
@@ -6629,13 +6318,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"quia\",
-    \"attachment\": \"nisi\",
-    \"attachment_type\": \"rerum\",
-    \"user_id\": 39883107.268284984,
-    \"department_id\": 7207.63418,
-    \"course_id\": 0.37533,
-    \"post_type_id\": 66.089087895
+    \"content\": \"consequatur\",
+    \"attachment\": \"quae\",
+    \"attachment_type\": \"distinctio\",
+    \"user_id\": 14603.59005515,
+    \"department_id\": 203664.4562453,
+    \"course_id\": 3452.45032,
+    \"post_type_id\": 11.9
 }"
 </code></pre></div>
 
@@ -6652,13 +6341,13 @@ const headers = {
 };
 
 let body = {
-    "content": "quia",
-    "attachment": "nisi",
-    "attachment_type": "rerum",
-    "user_id": 39883107.268284984,
-    "department_id": 7207.63418,
-    "course_id": 0.37533,
-    "post_type_id": 66.089087895
+    "content": "consequatur",
+    "attachment": "quae",
+    "attachment_type": "distinctio",
+    "user_id": 14603.59005515,
+    "department_id": 203664.4562453,
+    "course_id": 3452.45032,
+    "post_type_id": 11.9
 };
 
 fetch(url, {
@@ -6680,7 +6369,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 49
+x-ratelimit-remaining: 50
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -6792,10 +6481,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="PUTapi-post--id-"
-               value="quia"
+               value="consequatur"
                data-component="body">
     <br>
-<p>Example: <code>quia</code></p>
+<p>Example: <code>consequatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment</code></b>&nbsp;&nbsp;
@@ -6803,10 +6492,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="PUTapi-post--id-"
-               value="nisi"
+               value="quae"
                data-component="body">
     <br>
-<p>Example: <code>nisi</code></p>
+<p>Example: <code>quae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment_type</code></b>&nbsp;&nbsp;
@@ -6814,10 +6503,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment_type"                data-endpoint="PUTapi-post--id-"
-               value="rerum"
+               value="distinctio"
                data-component="body">
     <br>
-<p>Example: <code>rerum</code></p>
+<p>Example: <code>distinctio</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -6825,10 +6514,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="PUTapi-post--id-"
-               value="39883107.268285"
+               value="14603.59005515"
                data-component="body">
     <br>
-<p>Example: <code>39883107.268285</code></p>
+<p>Example: <code>14603.59005515</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -6836,10 +6525,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="PUTapi-post--id-"
-               value="7207.63418"
+               value="203664.4562453"
                data-component="body">
     <br>
-<p>Example: <code>7207.63418</code></p>
+<p>Example: <code>203664.4562453</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -6847,10 +6536,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="PUTapi-post--id-"
-               value="0.37533"
+               value="3452.45032"
                data-component="body">
     <br>
-<p>Example: <code>0.37533</code></p>
+<p>Example: <code>3452.45032</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>post_type_id</code></b>&nbsp;&nbsp;
@@ -6858,10 +6547,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_type_id"                data-endpoint="PUTapi-post--id-"
-               value="66.089087895"
+               value="11.9"
                data-component="body">
     <br>
-<p>Example: <code>66.089087895</code></p>
+<p>Example: <code>11.9</code></p>
         </div>
         </form>
 
@@ -6914,7 +6603,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 48
+x-ratelimit-remaining: 49
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -7017,6 +6706,361 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                    <h2 id="post-GETapi-post">Display a listing of the resource.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-post">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/post?type=quo" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"type\": \"course\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/post"
+);
+
+const params = {
+    "type": "quo",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "type": "course"
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-post">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 48
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 2,
+            &quot;content&quot;: &quot;Iure ut qui non voluptatem. Voluptas rerum alias repellendus explicabo hic cupiditate. Vero esse non itaque et. Aut sit id omnis. Eos nemo architecto voluptas numquam laudantium ex minus autem.&quot;,
+            &quot;attachment&quot;: &quot;voluptates&quot;,
+            &quot;attachment_type&quot;: &quot;image&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;1 day ago&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;content&quot;: &quot;Consequatur et similique autem ipsam quis quasi deserunt. Quaerat non sit libero eos. Sit doloremque officiis dolore sed.&quot;,
+            &quot;attachment&quot;: &quot;odio&quot;,
+            &quot;attachment_type&quot;: &quot;image&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 1,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;1 day ago&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;content&quot;: &quot;Voluptas consequatur vel sint sed repellat eum impedit excepturi. Et officiis rerum ut quas. Voluptatum quis repudiandae deserunt. Mollitia voluptatibus ullam eaque fuga sint.&quot;,
+            &quot;attachment&quot;: &quot;aut&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 1,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;1 day ago&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-post" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-post"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-post"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-post" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-post">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-post" data-method="GET"
+      data-path="api/post"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-post', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-post"
+                    onclick="tryItOut('GETapi-post');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-post"
+                    onclick="cancelTryOut('GETapi-post');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-post"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/post</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-post"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-post"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-post"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="type"                data-endpoint="GETapi-post"
+               value="quo"
+               data-component="query">
+    <br>
+<p>the type of the post (public, department ,course). Example: <code>quo</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="type"                data-endpoint="GETapi-post"
+               value="course"
+               data-component="body">
+    <br>
+<p>Example: <code>course</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>public</code></li> <li><code>department</code></li> <li><code>course</code></li></ul>
+        </div>
+        </form>
+
+                    <h2 id="post-GETapi-saved-posts">Display the specified resource.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-saved-posts">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/saved-posts" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/saved-posts"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-saved-posts">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 47
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: []
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-saved-posts" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-saved-posts"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-saved-posts"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-saved-posts" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-saved-posts">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-saved-posts" data-method="GET"
+      data-path="api/saved-posts"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-saved-posts', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-saved-posts"
+                    onclick="tryItOut('GETapi-saved-posts');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-saved-posts"
+                    onclick="cancelTryOut('GETapi-saved-posts');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-saved-posts"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/saved-posts</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-saved-posts"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-saved-posts"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-saved-posts"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
                     <h2 id="post-POSTapi-post--post_id--like">Display the specified resource.</h2>
 
 <p>
@@ -7065,7 +7109,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 47
+x-ratelimit-remaining: 46
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 <code>Empty response</code>
@@ -7213,7 +7257,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 46
+x-ratelimit-remaining: 45
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 <code>Empty response</code>

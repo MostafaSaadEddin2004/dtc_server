@@ -51,7 +51,7 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: assumenda
+        example: autem
         type: string
         enumValues: []
         custom: []
@@ -59,14 +59,14 @@ endpoints:
       email: my@example.com
       password: password
       role: student_browser
-      fcm_token: assumenda
+      fcm_token: autem
     fileParameters: []
     responses:
       -
         status: 500
         content: |-
           {
-              "message": "SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \"user_firebase_tokens\" (\"token\", \"user_id\", \"updated_at\", \"created_at\") values (assumenda, 22, 2023-09-17 14:29:50, 2023-09-17 14:29:50))",
+              "message": "SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \"user_firebase_tokens\" (\"token\", \"user_id\", \"updated_at\", \"created_at\") values (autem, 22, 2023-09-17 14:52:42, 2023-09-17 14:52:42))",
               "exception": "Illuminate\\Database\\QueryException",
               "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
               "line": 801,
@@ -646,7 +646,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: neque
+        example: similique
         type: string
         enumValues: []
         custom: []
@@ -654,7 +654,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: non
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -662,7 +662,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: omnis
+        example: doloribus
         type: string
         enumValues: []
         custom: []
@@ -670,7 +670,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: inventore
+        example: atque
         type: string
         enumValues: []
         custom: []
@@ -678,7 +678,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: aut
+        example: debitis
         type: string
         enumValues: []
         custom: []
@@ -686,7 +686,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: hills.shyanne@example.net
+        example: witting.prince@example.com
         type: string
         enumValues: []
         custom: []
@@ -694,7 +694,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'vnsf1:Y$>Rvh1:zjj0N'
+        example: '()~U8hLKvDq5_F;uB>}'
         type: string
         enumValues: []
         custom: []
@@ -702,7 +702,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: student
+        example: teacher_browser
         type: string
         enumValues:
           - student
@@ -722,20 +722,20 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: officiis
+        example: ipsam
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      first_name_en: neque
-      last_name_en: non
-      first_name_ar: omnis
-      last_name_ar: inventore
-      phone: aut
-      email: hills.shyanne@example.net
-      password: 'vnsf1:Y$>Rvh1:zjj0N'
-      role: student
-      fcm_token: officiis
+      first_name_en: similique
+      last_name_en: et
+      first_name_ar: doloribus
+      last_name_ar: atque
+      phone: debitis
+      email: witting.prince@example.com
+      password: '()~U8hLKvDq5_F;uB>}'
+      role: teacher_browser
+      fcm_token: ipsam
     fileParameters:
       image: null
     responses:
@@ -743,7 +743,7 @@ endpoints:
         status: 500
         content: |-
           {
-              "message": "SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \"user_firebase_tokens\" (\"token\", \"user_id\", \"updated_at\", \"created_at\") values (officiis, 73, 2023-09-17 14:29:50, 2023-09-17 14:29:50))",
+              "message": "SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \"user_firebase_tokens\" (\"token\", \"user_id\", \"updated_at\", \"created_at\") values (ipsam, 73, 2023-09-17 14:52:42, 2023-09-17 14:52:42))",
               "exception": "Illuminate\\Database\\QueryException",
               "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
               "line": 801,
@@ -1462,7 +1462,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-        example: quis
+        example: deleniti
         type: string
         enumValues: []
         custom: []
@@ -1470,7 +1470,7 @@ endpoints:
         name: specialty
         description: ''
         required: true
-        example: omnis
+        example: nesciunt
         type: string
         enumValues: []
         custom: []
@@ -1478,7 +1478,7 @@ endpoints:
         name: birth_date
         description: 'Must be a valid date. Must be a date before <code>09/17/2023</code>.'
         required: true
-        example: '2005-02-02'
+        example: '2006-06-20'
         type: string
         enumValues: []
         custom: []
@@ -1486,7 +1486,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-        example: laudantium
+        example: aperiam
         type: string
         enumValues: []
         custom: []
@@ -1494,7 +1494,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-        example: animi
+        example: eaque
         type: string
         enumValues: []
         custom: []
@@ -1502,7 +1502,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: molestiae
+        example: quod
         type: string
         enumValues: []
         custom: []
@@ -1510,18 +1510,18 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 19
+        example: 20
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: quis
-      specialty: omnis
-      birth_date: '2005-02-02'
-      current_location: laudantium
-      permanent_location: animi
-      nationality: molestiae
-      department_id: 19
+      certificate: deleniti
+      specialty: nesciunt
+      birth_date: '2006-06-20'
+      current_location: aperiam
+      permanent_location: eaque
+      nationality: quod
+      department_id: 20
     fileParameters: []
     responses:
       -

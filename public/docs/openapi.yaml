@@ -1257,7 +1257,7 @@ paths:
               schema:
                 type: object
                 example:
-                  message: 'SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into "user_firebase_tokens" ("token", "user_id", "updated_at", "created_at") values (assumenda, 22, 2023-09-17 14:29:50, 2023-09-17 14:29:50))'
+                  message: 'SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into "user_firebase_tokens" ("token", "user_id", "updated_at", "created_at") values (autem, 22, 2023-09-17 14:52:42, 2023-09-17 14:52:42))'
                   exception: Illuminate\Database\QueryException
                   file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
                   line: 801
@@ -1719,7 +1719,7 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: 'SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into "user_firebase_tokens" ("token", "user_id", "updated_at", "created_at") values (assumenda, 22, 2023-09-17 14:29:50, 2023-09-17 14:29:50))'
+                    example: 'SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into "user_firebase_tokens" ("token", "user_id", "updated_at", "created_at") values (autem, 22, 2023-09-17 14:52:42, 2023-09-17 14:52:42))'
                   exception:
                     type: string
                     example: Illuminate\Database\QueryException
@@ -2228,7 +2228,7 @@ paths:
                 fcm_token:
                   type: string
                   description: ''
-                  example: assumenda
+                  example: autem
               required:
                 - fcm_token
   /api/auth/register:
@@ -2245,7 +2245,7 @@ paths:
               schema:
                 type: object
                 example:
-                  message: 'SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into "user_firebase_tokens" ("token", "user_id", "updated_at", "created_at") values (officiis, 73, 2023-09-17 14:29:50, 2023-09-17 14:29:50))'
+                  message: 'SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into "user_firebase_tokens" ("token", "user_id", "updated_at", "created_at") values (ipsam, 73, 2023-09-17 14:52:42, 2023-09-17 14:52:42))'
                   exception: Illuminate\Database\QueryException
                   file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php
                   line: 801
@@ -2707,7 +2707,7 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: 'SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into "user_firebase_tokens" ("token", "user_id", "updated_at", "created_at") values (officiis, 73, 2023-09-17 14:29:50, 2023-09-17 14:29:50))'
+                    example: 'SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into "user_firebase_tokens" ("token", "user_id", "updated_at", "created_at") values (ipsam, 73, 2023-09-17 14:52:42, 2023-09-17 14:52:42))'
                   exception:
                     type: string
                     example: Illuminate\Database\QueryException
@@ -3204,35 +3204,35 @@ paths:
                 first_name_en:
                   type: string
                   description: ''
-                  example: neque
+                  example: similique
                 last_name_en:
                   type: string
                   description: ''
-                  example: non
+                  example: et
                 first_name_ar:
                   type: string
                   description: ''
-                  example: omnis
+                  example: doloribus
                 last_name_ar:
                   type: string
                   description: ''
-                  example: inventore
+                  example: atque
                 phone:
                   type: string
                   description: ''
-                  example: aut
+                  example: debitis
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: hills.shyanne@example.net
+                  example: witting.prince@example.com
                 password:
                   type: string
                   description: ''
-                  example: 'vnsf1:Y$>Rvh1:zjj0N'
+                  example: '()~U8hLKvDq5_F;uB>}'
                 role:
                   type: string
                   description: ''
-                  example: student
+                  example: teacher_browser
                   enum:
                     - student
                     - teacher
@@ -3245,7 +3245,7 @@ paths:
                 fcm_token:
                   type: string
                   description: ''
-                  example: officiis
+                  example: ipsam
               required:
                 - first_name_en
                 - last_name_en
@@ -3410,31 +3410,31 @@ paths:
                 certificate:
                   type: string
                   description: ''
-                  example: quis
+                  example: deleniti
                 specialty:
                   type: string
                   description: ''
-                  example: omnis
+                  example: nesciunt
                 birth_date:
                   type: string
                   description: 'Must be a valid date. Must be a date before <code>09/17/2023</code>.'
-                  example: '2005-02-02'
+                  example: '2006-06-20'
                 current_location:
                   type: string
                   description: ''
-                  example: laudantium
+                  example: aperiam
                 permanent_location:
                   type: string
                   description: ''
-                  example: animi
+                  example: eaque
                 nationality:
                   type: string
                   description: ''
-                  example: molestiae
+                  example: quod
                 department_id:
                   type: integer
                   description: ''
-                  example: 19
+                  example: 20
               required:
                 - certificate
                 - specialty
@@ -3559,27 +3559,27 @@ paths:
                 social_status:
                   type: string
                   description: ''
-                  example: sit
+                  example: nulla
                 nationality:
                   type: string
                   description: ''
-                  example: maiores
+                  example: illo
                 address:
                   type: string
                   description: ''
-                  example: ratione
+                  example: ut
                 date_of_birth:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-17T14:29:50'
+                  example: '2023-09-17T14:52:42'
                 student_type:
                   type: string
                   description: ''
-                  example: harum
+                  example: recusandae
                 work_type:
                   type: string
                   description: ''
-                  example: quaerat
+                  example: quis
                 is_morning:
                   type: boolean
                   description: ''
@@ -3649,7 +3649,7 @@ paths:
         in: path
         name: sectionId
         description: ''
-        example: sed
+        example: distinctio
         required: true
         schema:
           type: string
@@ -3755,19 +3755,19 @@ paths:
                 subject:
                   type: string
                   description: ''
-                  example: ducimus
+                  example: sunt
                 mark:
                   type: number
                   description: 'Must be at least 0. Must not be greater than 100.'
-                  example: 20
+                  example: 1
                 reason:
                   type: string
                   description: ''
-                  example: aspernatur
+                  example: dolorem
                 teacher:
                   type: string
                   description: ''
-                  example: nemo
+                  example: dolorem
               required:
                 - subject
                 - mark
@@ -3884,11 +3884,11 @@ paths:
                 text:
                   type: string
                   description: ''
-                  example: dolores
+                  example: non
                 department_id:
                   type: number
                   description: ''
-                  example: 8449512.6743571
+                  example: 1185.7197729
               required:
                 - text
                 - department_id
@@ -3956,11 +3956,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: dolorum
+                  example: iusto
                 description:
                   type: string
                   description: ''
-                  example: 'Natus ab consequatur ut et sapiente eius ad debitis.'
+                  example: 'Voluptas distinctio nobis qui.'
                 category_name:
                   type: string
                   description: ''
@@ -3968,7 +3968,7 @@ paths:
                 note_category_id:
                   type: integer
                   description: ''
-                  example: 17
+                  example: 19
               required:
                 - title
                 - description
@@ -4024,8 +4024,8 @@ paths:
                 example:
                   data:
                     id: 1
-                    title: quos
-                    description: 'Id accusantium totam tempore est culpa sed tempora.'
+                    title: voluptatum
+                    description: 'Veritatis deleniti nihil et.'
                     category: 'Curt Mraz'
                 properties:
                   data:
@@ -4036,10 +4036,10 @@ paths:
                         example: 1
                       title:
                         type: string
-                        example: quos
+                        example: voluptatum
                       description:
                         type: string
-                        example: 'Id accusantium totam tempore est culpa sed tempora.'
+                        example: 'Veritatis deleniti nihil et.'
                       category:
                         type: string
                         example: 'Curt Mraz'
@@ -4055,11 +4055,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: quos
+                  example: voluptatum
                 description:
                   type: string
                   description: ''
-                  example: 'Id accusantium totam tempore est culpa sed tempora.'
+                  example: 'Veritatis deleniti nihil et.'
                 category_name:
                   type: string
                   description: ''
@@ -4112,323 +4112,6 @@ paths:
       tags:
         - Note
   /api/post:
-    get:
-      summary: 'Display a listing of the resource.'
-      operationId: displayAListingOfTheResource
-      description: ''
-      parameters:
-        -
-          in: query
-          name: type
-          description: 'the type of the post (public, department ,course).'
-          example: voluptatem
-          required: false
-          schema:
-            type: string
-            description: 'the type of the post (public, department ,course).'
-            example: voluptatem
-      responses:
-        200:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  data:
-                    -
-                      id: 1
-                      content: 'Ipsam sapiente voluptatibus ex et vel minus nobis. Voluptatum laborum aperiam adipisci ut tempore nobis commodi accusantium. Vel vero consequatur fugit non voluptas quidem quae.'
-                      attachment: dolorem
-                      attachment_type: image
-                      likes: 0
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 3
-                      content: 'Et sit adipisci enim ratione. Adipisci dolor enim eius ut tempora laboriosam. Voluptates est ea cumque quia quia.'
-                      attachment: ratione
-                      attachment_type: image
-                      likes: 0
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 4
-                      content: 'Consequuntur aut quam maxime debitis quo eos natus. Eum quis minima tempora quasi sapiente et quod eveniet. Possimus non nemo aliquid vel rerum in ut eius.'
-                      attachment: cumque
-                      attachment_type: file
-                      likes: 0
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 5
-                      content: 'Eos omnis dolor dolores iusto perferendis deleniti sed. Autem ut fugit corporis dolor. Dolorem laboriosam mollitia repellat praesentium nisi dolorem.'
-                      attachment: minima
-                      attachment_type: image
-                      likes: 0
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 6
-                      content: 'Dolor aut dolorum eligendi consequatur fuga doloribus. Aspernatur molestiae voluptatum nesciunt et dolorem est. Magni nisi possimus qui odio illum dolorem suscipit.'
-                      attachment: quia
-                      attachment_type: file
-                      likes: 1
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 7
-                      content: 'Quaerat impedit et error fugiat ut harum. Ut eligendi et esse sit quaerat ut delectus. Rem aut aut perspiciatis et reiciendis est id. Doloribus labore veritatis autem libero commodi eos velit.'
-                      attachment: dicta
-                      attachment_type: file
-                      likes: 1
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 8
-                      content: 'Odio accusamus nobis quas ut in et. Sunt rerum quaerat impedit cupiditate. Est commodi id accusamus ducimus neque.'
-                      attachment: quasi
-                      attachment_type: file
-                      likes: 1
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 9
-                      content: 'Quis quo sed enim culpa possimus voluptas. Qui temporibus in sit facilis quo quia. Et natus et vitae corrupti corporis dolorem. Ex illo iure omnis earum minima modi ut.'
-                      attachment: eos
-                      attachment_type: file
-                      likes: 1
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 10
-                      content: 'Laborum quia alias qui. Voluptatem quia ut sed aliquid fuga non. Debitis a nihil dolor id. Ea omnis cum culpa in cupiditate possimus.'
-                      attachment: voluptatem
-                      attachment_type: file
-                      likes: 1
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 11
-                      content: 'Ad in consequatur rerum atque consequatur illo enim. Commodi nihil similique esse ad blanditiis qui. Accusamus dolorum ipsa eaque ullam non. Itaque eos est earum commodi aut asperiores.'
-                      attachment: aut
-                      attachment_type: file
-                      likes: 0
-                      liked_by_me: false
-                      saves: 1
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 13
-                      content: 'Laboriosam beatae cumque quis quia. Minus qui explicabo explicabo excepturi illo quia soluta. Repellat dignissimos et quis sunt beatae. Explicabo magnam fugit assumenda soluta.'
-                      attachment: voluptas
-                      attachment_type: file
-                      likes: 0
-                      liked_by_me: false
-                      saves: 1
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                    -
-                      id: 15
-                      content: 'Officia architecto molestiae quibusdam harum sunt necessitatibus fuga asperiores. Illo corporis sit laborum aperiam id ea doloribus. Quo aut illum omnis nemo doloribus.'
-                      attachment: ipsa
-                      attachment_type: image
-                      likes: 0
-                      liked_by_me: false
-                      saves: 1
-                      saved_by_me: false
-                      created_at: '1 day ago'
-                properties:
-                  data:
-                    type: array
-                    example:
-                      -
-                        id: 1
-                        content: 'Ipsam sapiente voluptatibus ex et vel minus nobis. Voluptatum laborum aperiam adipisci ut tempore nobis commodi accusantium. Vel vero consequatur fugit non voluptas quidem quae.'
-                        attachment: dolorem
-                        attachment_type: image
-                        likes: 0
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 3
-                        content: 'Et sit adipisci enim ratione. Adipisci dolor enim eius ut tempora laboriosam. Voluptates est ea cumque quia quia.'
-                        attachment: ratione
-                        attachment_type: image
-                        likes: 0
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 4
-                        content: 'Consequuntur aut quam maxime debitis quo eos natus. Eum quis minima tempora quasi sapiente et quod eveniet. Possimus non nemo aliquid vel rerum in ut eius.'
-                        attachment: cumque
-                        attachment_type: file
-                        likes: 0
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 5
-                        content: 'Eos omnis dolor dolores iusto perferendis deleniti sed. Autem ut fugit corporis dolor. Dolorem laboriosam mollitia repellat praesentium nisi dolorem.'
-                        attachment: minima
-                        attachment_type: image
-                        likes: 0
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 6
-                        content: 'Dolor aut dolorum eligendi consequatur fuga doloribus. Aspernatur molestiae voluptatum nesciunt et dolorem est. Magni nisi possimus qui odio illum dolorem suscipit.'
-                        attachment: quia
-                        attachment_type: file
-                        likes: 1
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 7
-                        content: 'Quaerat impedit et error fugiat ut harum. Ut eligendi et esse sit quaerat ut delectus. Rem aut aut perspiciatis et reiciendis est id. Doloribus labore veritatis autem libero commodi eos velit.'
-                        attachment: dicta
-                        attachment_type: file
-                        likes: 1
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 8
-                        content: 'Odio accusamus nobis quas ut in et. Sunt rerum quaerat impedit cupiditate. Est commodi id accusamus ducimus neque.'
-                        attachment: quasi
-                        attachment_type: file
-                        likes: 1
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 9
-                        content: 'Quis quo sed enim culpa possimus voluptas. Qui temporibus in sit facilis quo quia. Et natus et vitae corrupti corporis dolorem. Ex illo iure omnis earum minima modi ut.'
-                        attachment: eos
-                        attachment_type: file
-                        likes: 1
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 10
-                        content: 'Laborum quia alias qui. Voluptatem quia ut sed aliquid fuga non. Debitis a nihil dolor id. Ea omnis cum culpa in cupiditate possimus.'
-                        attachment: voluptatem
-                        attachment_type: file
-                        likes: 1
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 11
-                        content: 'Ad in consequatur rerum atque consequatur illo enim. Commodi nihil similique esse ad blanditiis qui. Accusamus dolorum ipsa eaque ullam non. Itaque eos est earum commodi aut asperiores.'
-                        attachment: aut
-                        attachment_type: file
-                        likes: 0
-                        liked_by_me: false
-                        saves: 1
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 13
-                        content: 'Laboriosam beatae cumque quis quia. Minus qui explicabo explicabo excepturi illo quia soluta. Repellat dignissimos et quis sunt beatae. Explicabo magnam fugit assumenda soluta.'
-                        attachment: voluptas
-                        attachment_type: file
-                        likes: 0
-                        liked_by_me: false
-                        saves: 1
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                      -
-                        id: 15
-                        content: 'Officia architecto molestiae quibusdam harum sunt necessitatibus fuga asperiores. Illo corporis sit laborum aperiam id ea doloribus. Quo aut illum omnis nemo doloribus.'
-                        attachment: ipsa
-                        attachment_type: image
-                        likes: 0
-                        liked_by_me: false
-                        saves: 1
-                        saved_by_me: false
-                        created_at: '1 day ago'
-                    items:
-                      type: object
-                      properties:
-                        id:
-                          type: integer
-                          example: 1
-                        content:
-                          type: string
-                          example: 'Ipsam sapiente voluptatibus ex et vel minus nobis. Voluptatum laborum aperiam adipisci ut tempore nobis commodi accusantium. Vel vero consequatur fugit non voluptas quidem quae.'
-                        attachment:
-                          type: string
-                          example: dolorem
-                        attachment_type:
-                          type: string
-                          example: image
-                        likes:
-                          type: integer
-                          example: 0
-                        liked_by_me:
-                          type: boolean
-                          example: false
-                        saves:
-                          type: integer
-                          example: 0
-                        saved_by_me:
-                          type: boolean
-                          example: false
-                        created_at:
-                          type: string
-                          example: '1 day ago'
-      tags:
-        - Post
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                type:
-                  type: string
-                  description: ''
-                  example: department
-                  enum:
-                    - public
-                    - department
-                    - course
-              required:
-                - type
     post:
       summary: 'Store a newly created resource in storage.'
       operationId: storeANewlyCreatedResourceInStorage
@@ -4459,31 +4142,31 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: optio
+                  example: neque
                 attachment:
                   type: string
                   description: ''
-                  example: recusandae
+                  example: ex
                 attachment_type:
                   type: string
                   description: ''
-                  example: suscipit
+                  example: fuga
                 user_id:
                   type: number
                   description: ''
-                  example: 7.3
+                  example: 18956021.0499
                 department_id:
                   type: number
                   description: ''
-                  example: 21843094.557464
+                  example: 6142.6
                 course_id:
                   type: number
                   description: ''
-                  example: 2982200.9261645
+                  example: 26.11304
                 post_type_id:
                   type: number
                   description: ''
-                  example: 19356093.0
+                  example: 625052.73981834
               required:
                 - content
                 - attachment
@@ -4492,6 +4175,143 @@ paths:
                 - department_id
                 - course_id
                 - post_type_id
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters:
+        -
+          in: query
+          name: type
+          description: 'the type of the post (public, department ,course).'
+          example: quo
+          required: false
+          schema:
+            type: string
+            description: 'the type of the post (public, department ,course).'
+            example: quo
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 2
+                      content: 'Iure ut qui non voluptatem. Voluptas rerum alias repellendus explicabo hic cupiditate. Vero esse non itaque et. Aut sit id omnis. Eos nemo architecto voluptas numquam laudantium ex minus autem.'
+                      attachment: voluptates
+                      attachment_type: image
+                      likes: 0
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '1 day ago'
+                    -
+                      id: 12
+                      content: 'Consequatur et similique autem ipsam quis quasi deserunt. Quaerat non sit libero eos. Sit doloremque officiis dolore sed.'
+                      attachment: odio
+                      attachment_type: image
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '1 day ago'
+                    -
+                      id: 14
+                      content: 'Voluptas consequatur vel sint sed repellat eum impedit excepturi. Et officiis rerum ut quas. Voluptatum quis repudiandae deserunt. Mollitia voluptatibus ullam eaque fuga sint.'
+                      attachment: aut
+                      attachment_type: file
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '1 day ago'
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 2
+                        content: 'Iure ut qui non voluptatem. Voluptas rerum alias repellendus explicabo hic cupiditate. Vero esse non itaque et. Aut sit id omnis. Eos nemo architecto voluptas numquam laudantium ex minus autem.'
+                        attachment: voluptates
+                        attachment_type: image
+                        likes: 0
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '1 day ago'
+                      -
+                        id: 12
+                        content: 'Consequatur et similique autem ipsam quis quasi deserunt. Quaerat non sit libero eos. Sit doloremque officiis dolore sed.'
+                        attachment: odio
+                        attachment_type: image
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '1 day ago'
+                      -
+                        id: 14
+                        content: 'Voluptas consequatur vel sint sed repellat eum impedit excepturi. Et officiis rerum ut quas. Voluptatum quis repudiandae deserunt. Mollitia voluptatibus ullam eaque fuga sint.'
+                        attachment: aut
+                        attachment_type: file
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '1 day ago'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 2
+                        content:
+                          type: string
+                          example: 'Iure ut qui non voluptatem. Voluptas rerum alias repellendus explicabo hic cupiditate. Vero esse non itaque et. Aut sit id omnis. Eos nemo architecto voluptas numquam laudantium ex minus autem.'
+                        attachment:
+                          type: string
+                          example: voluptates
+                        attachment_type:
+                          type: string
+                          example: image
+                        likes:
+                          type: integer
+                          example: 0
+                        liked_by_me:
+                          type: boolean
+                          example: false
+                        saves:
+                          type: integer
+                          example: 0
+                        saved_by_me:
+                          type: boolean
+                          example: false
+                        created_at:
+                          type: string
+                          example: '1 day ago'
+      tags:
+        - Post
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                  description: ''
+                  example: course
+                  enum:
+                    - public
+                    - department
+                    - course
+              required:
+                - type
   '/api/post/{id}':
     put:
       summary: 'Update the specified resource in storage.'
@@ -4523,31 +4343,31 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: quia
+                  example: consequatur
                 attachment:
                   type: string
                   description: ''
-                  example: nisi
+                  example: quae
                 attachment_type:
                   type: string
                   description: ''
-                  example: rerum
+                  example: distinctio
                 user_id:
                   type: number
                   description: ''
-                  example: 39883107.268285
+                  example: 14603.59005515
                 department_id:
                   type: number
                   description: ''
-                  example: 7207.63418
+                  example: 203664.4562453
                 course_id:
                   type: number
                   description: ''
-                  example: 0.37533
+                  example: 3452.45032
                 post_type_id:
                   type: number
                   description: ''
-                  example: 66.089087895
+                  example: 11.9
               required:
                 - content
                 - attachment
@@ -4585,6 +4405,27 @@ paths:
         required: true
         schema:
           type: integer
+  /api/saved-posts:
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data: []
+                properties:
+                  data:
+                    type: array
+                    example: []
+      tags:
+        - Post
   '/api/post/{post_id}/like':
     post:
       summary: 'Display the specified resource.'

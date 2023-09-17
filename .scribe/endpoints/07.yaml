@@ -26,12 +26,12 @@ endpoints:
         name: sectionId
         description: ''
         required: true
-        example: sed
+        example: distinctio
         type: string
         enumValues: []
         custom: []
     cleanUrlParameters:
-      sectionId: sed
+      sectionId: distinctio
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

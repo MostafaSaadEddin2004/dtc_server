@@ -74,7 +74,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: dolorum
+        example: iusto
         type: string
         enumValues: []
         custom: []
@@ -82,7 +82,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Natus ab consequatur ut et sapiente eius ad debitis.'
+        example: 'Voluptas distinctio nobis qui.'
         type: string
         enumValues: []
         custom: []
@@ -98,14 +98,14 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 17
+        example: 19
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: dolorum
-      description: 'Natus ab consequatur ut et sapiente eius ad debitis.'
-      note_category_id: 17
+      title: iusto
+      description: 'Voluptas distinctio nobis qui.'
+      note_category_id: 19
     fileParameters: []
     responses:
       -
@@ -218,7 +218,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: quos
+        example: voluptatum
         type: string
         enumValues: []
         custom: []
@@ -226,7 +226,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Id accusantium totam tempore est culpa sed tempora.'
+        example: 'Veritatis deleniti nihil et.'
         type: string
         enumValues: []
         custom: []
@@ -247,13 +247,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: quos
-      description: 'Id accusantium totam tempore est culpa sed tempora.'
+      title: voluptatum
+      description: 'Veritatis deleniti nihil et.'
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"quos","description":"Id accusantium totam tempore est culpa sed tempora.","category":"Curt Mraz"}}'
+        content: '{"data":{"id":1,"title":"voluptatum","description":"Veritatis deleniti nihil et.","category":"Curt Mraz"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
