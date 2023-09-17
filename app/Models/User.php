@@ -119,8 +119,22 @@ class User extends Authenticatable
             get: fn () => $this->registeration?->department->section,
         );
     }
+
     public function firebaseTokens()
     {
         return $this->hasMany(UserFirebaseToken::class);
+    }
+
+    public function saves()
+    {
+        return $this->hasMany(Save::class);
+    }
+
+
+    protected function savedPosts(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->saves()->with('posts')->get()->pluck('products')->flatten(),
+        );
     }
 }

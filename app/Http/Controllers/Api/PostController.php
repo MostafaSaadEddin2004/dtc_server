@@ -76,6 +76,16 @@ class PostController extends Controller
     }
 
     /**
+     * Display the specified resource.
+     */
+    public function saves()
+    {
+        $posts = auth()->user()->saved_posts;
+
+        return PostResource::collection($posts);
+    }
+
+    /**
      * Update the specified resource in storage.
      */
     public function update(UpdatePostRequest $request, Post $post)
