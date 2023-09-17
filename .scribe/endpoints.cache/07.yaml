@@ -28,12 +28,12 @@ endpoints:
         name: sectionId
         description: ''
         required: true
-        example: at
+        example: sed
         type: string
         enumValues: []
         custom: []
     cleanUrlParameters:
-      sectionId: at
+      sectionId: sed
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

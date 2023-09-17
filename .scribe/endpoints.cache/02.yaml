@@ -27,12 +27,12 @@ endpoints:
         name: type
         description: 'the type of the post (public, department ,course).'
         required: false
-        example: autem
+        example: voluptatem
         type: string
         enumValues: []
         custom: []
     cleanQueryParameters:
-      type: autem
+      type: voluptatem
     bodyParameters:
       type:
         name: type
@@ -51,12 +51,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":3,"content":"Rerum ea alias qui reiciendis. Ipsam cum saepe aut optio nihil iste. Exercitationem necessitatibus quam rem accusantium mollitia mollitia beatae.","attachment":"cupiditate","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"11 hours ago"},{"id":12,"content":"Et dolorem quisquam non fugiat. Ut consequuntur et iste rerum. Consequatur quia id laudantium itaque ducimus alias.","attachment":"et","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"11 hours ago"},{"id":1,"content":"Facere dignissimos eos exercitationem ullam iste quis provident. Autem adipisci qui qui. Eum odit dignissimos occaecati beatae.","attachment":"qui","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"11 hours ago"},{"id":4,"content":"Sed ut et fuga maxime dignissimos autem sint quo. Facilis consequatur ab consequatur id expedita eaque ut. Velit dolores voluptas ut minus quidem minus earum.","attachment":"quia","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"11 hours ago"},{"id":6,"content":"Fugiat ut aut atque. Eligendi assumenda neque consequatur. Velit veniam facere quia aut rerum consequatur sunt. Excepturi quis autem in totam sapiente iure velit maiores.","attachment":"corrupti","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"11 hours ago"},{"id":7,"content":"Earum quia voluptas animi provident repellat. Ut voluptate iure doloribus veniam perspiciatis consequuntur. Reiciendis dicta magnam tenetur accusantium aspernatur.","attachment":"non","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"11 hours ago"},{"id":9,"content":"Molestiae aliquid unde et. Impedit ipsa quis quas quidem est voluptate adipisci. Quas consequatur hic autem rerum. Repellat dolorum tenetur quia quia velit qui consequatur.","attachment":"enim","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"11 hours ago"},{"id":13,"content":"Ab ipsam at ab. Et qui ipsa laudantium est distinctio suscipit. Non voluptate voluptatibus consequatur qui enim. Id ipsum possimus perferendis quis in repellendus.","attachment":"ex","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"11 hours ago"},{"id":15,"content":"Et corrupti sunt est officia. A officiis sed est id. Iste voluptas voluptatem et laborum nisi.","attachment":"molestiae","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"11 hours ago"},{"id":16,"content":"Fileesadsda","attachment":"qHUwnz2lTwizQnjWJnOlZpqmyB7PcN-metacGhvdG9fMjAyMy0wMS0zMF8xNy0zMy00NS54bHN4-.xlsx","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"8 hours ago"},{"id":17,"content":"Image dfff","attachment":"7am2Rx0UbpGyeV1vwRYRcxgQzJpuK2-metaaW1hZ2VzLXJlbW92ZWJnLXByZXZpZXcucG5n-.png","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"8 hours ago"}]}'
+        content: '{"data":[{"id":1,"content":"Ipsam sapiente voluptatibus ex et vel minus nobis. Voluptatum laborum aperiam adipisci ut tempore nobis commodi accusantium. Vel vero consequatur fugit non voluptas quidem quae.","attachment":"dolorem","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":3,"content":"Et sit adipisci enim ratione. Adipisci dolor enim eius ut tempora laboriosam. Voluptates est ea cumque quia quia.","attachment":"ratione","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":4,"content":"Consequuntur aut quam maxime debitis quo eos natus. Eum quis minima tempora quasi sapiente et quod eveniet. Possimus non nemo aliquid vel rerum in ut eius.","attachment":"cumque","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":5,"content":"Eos omnis dolor dolores iusto perferendis deleniti sed. Autem ut fugit corporis dolor. Dolorem laboriosam mollitia repellat praesentium nisi dolorem.","attachment":"minima","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":6,"content":"Dolor aut dolorum eligendi consequatur fuga doloribus. Aspernatur molestiae voluptatum nesciunt et dolorem est. Magni nisi possimus qui odio illum dolorem suscipit.","attachment":"quia","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":7,"content":"Quaerat impedit et error fugiat ut harum. Ut eligendi et esse sit quaerat ut delectus. Rem aut aut perspiciatis et reiciendis est id. Doloribus labore veritatis autem libero commodi eos velit.","attachment":"dicta","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":8,"content":"Odio accusamus nobis quas ut in et. Sunt rerum quaerat impedit cupiditate. Est commodi id accusamus ducimus neque.","attachment":"quasi","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":9,"content":"Quis quo sed enim culpa possimus voluptas. Qui temporibus in sit facilis quo quia. Et natus et vitae corrupti corporis dolorem. Ex illo iure omnis earum minima modi ut.","attachment":"eos","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":10,"content":"Laborum quia alias qui. Voluptatem quia ut sed aliquid fuga non. Debitis a nihil dolor id. Ea omnis cum culpa in cupiditate possimus.","attachment":"voluptatem","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":11,"content":"Ad in consequatur rerum atque consequatur illo enim. Commodi nihil similique esse ad blanditiis qui. Accusamus dolorum ipsa eaque ullam non. Itaque eos est earum commodi aut asperiores.","attachment":"aut","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"1 day ago"},{"id":13,"content":"Laboriosam beatae cumque quis quia. Minus qui explicabo explicabo excepturi illo quia soluta. Repellat dignissimos et quis sunt beatae. Explicabo magnam fugit assumenda soluta.","attachment":"voluptas","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"1 day ago"},{"id":15,"content":"Officia architecto molestiae quibusdam harum sunt necessitatibus fuga asperiores. Illo corporis sit laborum aperiam id ea doloribus. Quo aut illum omnis nemo doloribus.","attachment":"ipsa","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"1 day ago"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
+          x-ratelimit-remaining: '51'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -64,7 +64,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -95,7 +95,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: ipsa
+        example: optio
         type: string
         enumValues: []
         custom: []
@@ -103,7 +103,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: quae
+        example: recusandae
         type: string
         enumValues: []
         custom: []
@@ -111,7 +111,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: id
+        example: suscipit
         type: string
         enumValues: []
         custom: []
@@ -119,7 +119,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 621.7319272
+        example: 7.3
         type: number
         enumValues: []
         custom: []
@@ -127,7 +127,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 460616037.0
+        example: 21843094.557464
         type: number
         enumValues: []
         custom: []
@@ -135,7 +135,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 31604.75
+        example: 2982200.9261645
         type: number
         enumValues: []
         custom: []
@@ -143,26 +143,28 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 2.82036022
+        example: 19356093.0
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: ipsa
-      attachment: quae
-      attachment_type: id
-      user_id: 621.7319272
-      department_id: 460616037.0
-      course_id: 31604.75
-      post_type_id: 2.82036022
+      content: optio
+      attachment: recusandae
+      attachment_type: suscipit
+      user_id: 7.3
+      department_id: 21843094.557464
+      course_id: 2982200.9261645
+      post_type_id: 19356093.0
     fileParameters: []
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '50'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -170,7 +172,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -211,7 +213,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: quod
+        example: quia
         type: string
         enumValues: []
         custom: []
@@ -219,7 +221,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: aut
+        example: nisi
         type: string
         enumValues: []
         custom: []
@@ -227,7 +229,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: est
+        example: rerum
         type: string
         enumValues: []
         custom: []
@@ -235,7 +237,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 6318.53957968
+        example: 39883107.268285
         type: number
         enumValues: []
         custom: []
@@ -243,7 +245,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 19840.0
+        example: 7207.63418
         type: number
         enumValues: []
         custom: []
@@ -251,7 +253,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 680993078.16524
+        example: 0.37533
         type: number
         enumValues: []
         custom: []
@@ -259,26 +261,28 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 273.9419
+        example: 66.089087895
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: quod
-      attachment: aut
-      attachment_type: est
-      user_id: 6318.53957968
-      department_id: 19840.0
-      course_id: 680993078.16524
-      post_type_id: 273.9419
+      content: quia
+      attachment: nisi
+      attachment_type: rerum
+      user_id: 39883107.268285
+      department_id: 7207.63418
+      course_id: 0.37533
+      post_type_id: 66.089087895
     fileParameters: []
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '49'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -286,7 +290,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -327,10 +331,12 @@ endpoints:
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '48'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -338,7 +344,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -378,11 +384,12 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 204
+        content: ''
         headers:
           cache-control: 'no-cache, private'
-          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '47'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -390,7 +397,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
@@ -430,11 +437,12 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 204
+        content: ''
         headers:
           cache-control: 'no-cache, private'
-          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '46'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -442,7 +450,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
     controller: null
     method: null
     route: null
