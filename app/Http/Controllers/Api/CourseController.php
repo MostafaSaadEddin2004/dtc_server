@@ -63,6 +63,7 @@ class CourseController extends Controller
         $data = $request->validated();
         $data['user_id'] = auth()->id();
 
-        return $course->registerations()->create($data);
+        $course->registerations()->create($data);
+        return response()->noContent();
     }
 }
