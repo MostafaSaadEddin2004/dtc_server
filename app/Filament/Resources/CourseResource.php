@@ -43,8 +43,7 @@ class CourseResource extends Resource
                                     ->required(),
                                 FileUpload::make('attachment')
                                     ->label('Post attachment')
-                                    ->disk('public')
-                                    ->required(),
+                                    ->disk('public'),
                             ]),
                         ]),
                 ])
