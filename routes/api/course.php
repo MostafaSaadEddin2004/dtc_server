@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::apiResource('course', CourseController::class);
-Route::post('course/{course}/register', [CourseController::class, 'register']);
-// Route::middleware('auth:sanctum')->group(function () {
-// });
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('course/{course}/register', [CourseController::class, 'register']);
+});
