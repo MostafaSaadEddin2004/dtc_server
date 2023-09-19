@@ -28,12 +28,12 @@ endpoints:
         name: sectionId
         description: ''
         required: true
-        example: quae
+        example: ad
         type: string
         enumValues: []
         custom: []
     cleanUrlParameters:
-      sectionId: quae
+      sectionId: ad
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

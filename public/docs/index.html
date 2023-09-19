@@ -1131,7 +1131,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"email\": \"my@example.com\",
     \"password\": \"password\",
     \"role\": \"student_browser\",
-    \"fcm_token\": \"similique\"
+    \"fcm_token\": \"ducimus\"
 }"
 </code></pre></div>
 
@@ -1151,7 +1151,7 @@ let body = {
     "email": "my@example.com",
     "password": "password",
     "role": "student_browser",
-    "fcm_token": "similique"
+    "fcm_token": "ducimus"
 };
 
 fetch(url, {
@@ -1178,7 +1178,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;2|LQX8GoTlMOEix5CbwGs4VKVLU5eMRqPuW6wAqYRafc458a95&quot;
+    &quot;token&quot;: &quot;2|ar6quLxST57pfDMeTFbz6HoHFzi8iI7e9vEmOC27df81ab8f&quot;
 }</code>
  </pre>
     </span>
@@ -1302,10 +1302,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="fcm_token"                data-endpoint="POSTapi-auth"
-               value="similique"
+               value="ducimus"
                data-component="body">
     <br>
-<p>Example: <code>similique</code></p>
+<p>Example: <code>ducimus</code></p>
         </div>
         </form>
 
@@ -1327,16 +1327,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "first_name_en=magni"\
-    --form "last_name_en=assumenda"\
-    --form "first_name_ar=eligendi"\
-    --form "last_name_ar=perferendis"\
-    --form "phone=hic"\
-    --form "email=greta.turcotte@example.org"\
-    --form "password=V1hP|W]'f]&gt;hXoU"\
-    --form "role=student_browser"\
-    --form "fcm_token=porro"\
-    --form "image=@/tmp/phpTDos3Y" </code></pre></div>
+    --form "first_name_en=et"\
+    --form "last_name_en=in"\
+    --form "first_name_ar=reprehenderit"\
+    --form "last_name_ar=cupiditate"\
+    --form "phone=nisi"\
+    --form "email=rita34@example.org"\
+    --form "password=v0^v?6V&lt;B[viiz2"\
+    --form "role=student"\
+    --form "fcm_token=at"\
+    --form "image=@/tmp/phprIdKaW" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -1351,15 +1351,15 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('first_name_en', 'magni');
-body.append('last_name_en', 'assumenda');
-body.append('first_name_ar', 'eligendi');
-body.append('last_name_ar', 'perferendis');
-body.append('phone', 'hic');
-body.append('email', 'greta.turcotte@example.org');
-body.append('password', 'V1hP|W]'f]&gt;hXoU');
-body.append('role', 'student_browser');
-body.append('fcm_token', 'porro');
+body.append('first_name_en', 'et');
+body.append('last_name_en', 'in');
+body.append('first_name_ar', 'reprehenderit');
+body.append('last_name_ar', 'cupiditate');
+body.append('phone', 'nisi');
+body.append('email', 'rita34@example.org');
+body.append('password', 'v0^v?6V&lt;B[viiz2');
+body.append('role', 'student');
+body.append('fcm_token', 'at');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -1386,7 +1386,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;2|IjEGwxrmnFORVchf5g2UhkUGNpU7eWa5tnhTiNfAb4e0dbb1&quot;
+    &quot;token&quot;: &quot;2|tbC9Eo9X8fvUsEoI6FbO6Bm7ab36cMLlOsxfCIgy755115bb&quot;
 }</code>
  </pre>
     </span>
@@ -1477,10 +1477,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_en"                data-endpoint="POSTapi-auth-register"
-               value="magni"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>magni</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_en</code></b>&nbsp;&nbsp;
@@ -1488,10 +1488,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_en"                data-endpoint="POSTapi-auth-register"
-               value="assumenda"
+               value="in"
                data-component="body">
     <br>
-<p>Example: <code>assumenda</code></p>
+<p>Example: <code>in</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>first_name_ar</code></b>&nbsp;&nbsp;
@@ -1499,10 +1499,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="eligendi"
+               value="reprehenderit"
                data-component="body">
     <br>
-<p>Example: <code>eligendi</code></p>
+<p>Example: <code>reprehenderit</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_ar</code></b>&nbsp;&nbsp;
@@ -1510,10 +1510,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="perferendis"
+               value="cupiditate"
                data-component="body">
     <br>
-<p>Example: <code>perferendis</code></p>
+<p>Example: <code>cupiditate</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1521,10 +1521,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone"                data-endpoint="POSTapi-auth-register"
-               value="hic"
+               value="nisi"
                data-component="body">
     <br>
-<p>Example: <code>hic</code></p>
+<p>Example: <code>nisi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1532,10 +1532,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-register"
-               value="greta.turcotte@example.org"
+               value="rita34@example.org"
                data-component="body">
     <br>
-<p>يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية. Example: <code>greta.turcotte@example.org</code></p>
+<p>يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية. Example: <code>rita34@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1543,10 +1543,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-register"
-               value="V1hP|W]'f]>hXoU"
+               value="v0^v?6V<B[viiz2"
                data-component="body">
     <br>
-<p>Example: <code>V1hP|W]'f]&gt;hXoU</code></p>
+<p>Example: <code>v0^v?6V&lt;B[viiz2</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -1554,10 +1554,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-register"
-               value="student_browser"
+               value="student"
                data-component="body">
     <br>
-<p>Example: <code>student_browser</code></p>
+<p>Example: <code>student</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>student</code></li> <li><code>teacher</code></li> <li><code>student_browser</code></li> <li><code>teacher_browser</code></li></ul>
         </div>
@@ -1570,7 +1570,7 @@ Must be one of:
                value=""
                data-component="body">
     <br>
-<p>يجب أن يكون حقل value صورةً. Example: <code>/tmp/phpTDos3Y</code></p>
+<p>يجب أن يكون حقل value صورةً. Example: <code>/tmp/phprIdKaW</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>fcm_token</code></b>&nbsp;&nbsp;
@@ -1578,10 +1578,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="fcm_token"                data-endpoint="POSTapi-auth-register"
-               value="porro"
+               value="at"
                data-component="body">
     <br>
-<p>Example: <code>porro</code></p>
+<p>Example: <code>at</code></p>
         </div>
         </form>
 
@@ -1784,7 +1784,7 @@ access-control-allow-origin: *
         &quot;last_name_ar&quot;: &quot;Jarred Reynolds&quot;,
         &quot;phone&quot;: &quot;1-205-535-5950&quot;,
         &quot;image&quot;: null,
-        &quot;depratment&quot;: null,
+        &quot;department&quot;: null,
         &quot;section&quot;: null
     }
 }</code>
@@ -2031,13 +2031,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"certificate\": \"a\",
-    \"specialty\": \"ducimus\",
-    \"birth_date\": \"2002-09-17\",
-    \"current_location\": \"itaque\",
-    \"permanent_location\": \"maxime\",
-    \"nationality\": \"in\",
-    \"department_id\": 13
+    \"certificate\": \"ipsam\",
+    \"specialty\": \"quia\",
+    \"birth_date\": \"2015-09-20\",
+    \"current_location\": \"ullam\",
+    \"permanent_location\": \"quia\",
+    \"nationality\": \"et\",
+    \"department_id\": 10
 }"
 </code></pre></div>
 
@@ -2054,13 +2054,13 @@ const headers = {
 };
 
 let body = {
-    "certificate": "a",
-    "specialty": "ducimus",
-    "birth_date": "2002-09-17",
-    "current_location": "itaque",
-    "permanent_location": "maxime",
-    "nationality": "in",
-    "department_id": 13
+    "certificate": "ipsam",
+    "specialty": "quia",
+    "birth_date": "2015-09-20",
+    "current_location": "ullam",
+    "permanent_location": "quia",
+    "nationality": "et",
+    "department_id": 10
 };
 
 fetch(url, {
@@ -2214,10 +2214,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="certificate"                data-endpoint="POSTapi-auth-teacher"
-               value="a"
+               value="ipsam"
                data-component="body">
     <br>
-<p>Example: <code>a</code></p>
+<p>Example: <code>ipsam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>specialty</code></b>&nbsp;&nbsp;
@@ -2225,10 +2225,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="specialty"                data-endpoint="POSTapi-auth-teacher"
-               value="ducimus"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>ducimus</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birth_date</code></b>&nbsp;&nbsp;
@@ -2236,10 +2236,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birth_date"                data-endpoint="POSTapi-auth-teacher"
-               value="2002-09-17"
+               value="2015-09-20"
                data-component="body">
     <br>
-<p>حقل value ليس تاريخًا صحيحًا. يجب على حقل value أن يكون تاريخًا سابقًا للتاريخ <code>09/19/2023</code>. Example: <code>2002-09-17</code></p>
+<p>حقل value ليس تاريخًا صحيحًا. يجب على حقل value أن يكون تاريخًا سابقًا للتاريخ <code>09/19/2023</code>. Example: <code>2015-09-20</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>current_location</code></b>&nbsp;&nbsp;
@@ -2247,10 +2247,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="current_location"                data-endpoint="POSTapi-auth-teacher"
-               value="itaque"
+               value="ullam"
                data-component="body">
     <br>
-<p>Example: <code>itaque</code></p>
+<p>Example: <code>ullam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permanent_location</code></b>&nbsp;&nbsp;
@@ -2258,10 +2258,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="permanent_location"                data-endpoint="POSTapi-auth-teacher"
-               value="maxime"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>maxime</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nationality</code></b>&nbsp;&nbsp;
@@ -2269,10 +2269,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-auth-teacher"
-               value="in"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>in</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -2280,10 +2280,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-auth-teacher"
-               value="13"
+               value="10"
                data-component="body">
     <br>
-<p>Example: <code>13</code></p>
+<p>Example: <code>10</code></p>
         </div>
         </form>
 
@@ -3042,14 +3042,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"is_male\": false,
+    \"is_male\": true,
     \"social_status\": \"non\",
-    \"nationality\": \"veritatis\",
-    \"address\": \"placeat\",
-    \"date_of_birth\": \"2023-09-19T09:51:07\",
-    \"student_type\": \"aut\",
-    \"work_type\": \"iure\",
-    \"is_morning\": true
+    \"nationality\": \"facilis\",
+    \"address\": \"dolores\",
+    \"date_of_birth\": \"2023-09-19T10:06:46\",
+    \"student_type\": \"ducimus\",
+    \"work_type\": \"corrupti\",
+    \"is_morning\": false
 }"
 </code></pre></div>
 
@@ -3066,14 +3066,14 @@ const headers = {
 };
 
 let body = {
-    "is_male": false,
+    "is_male": true,
     "social_status": "non",
-    "nationality": "veritatis",
-    "address": "placeat",
-    "date_of_birth": "2023-09-19T09:51:07",
-    "student_type": "aut",
-    "work_type": "iure",
-    "is_morning": true
+    "nationality": "facilis",
+    "address": "dolores",
+    "date_of_birth": "2023-09-19T10:06:46",
+    "student_type": "ducimus",
+    "work_type": "corrupti",
+    "is_morning": false
 };
 
 fetch(url, {
@@ -3212,7 +3212,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>social_status</code></b>&nbsp;&nbsp;
@@ -3231,10 +3231,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-course--course_id--register"
-               value="veritatis"
+               value="facilis"
                data-component="body">
     <br>
-<p>Example: <code>veritatis</code></p>
+<p>Example: <code>facilis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -3242,10 +3242,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-course--course_id--register"
-               value="placeat"
+               value="dolores"
                data-component="body">
     <br>
-<p>Example: <code>placeat</code></p>
+<p>Example: <code>dolores</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>date_of_birth</code></b>&nbsp;&nbsp;
@@ -3253,10 +3253,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date_of_birth"                data-endpoint="POSTapi-course--course_id--register"
-               value="2023-09-19T09:51:07"
+               value="2023-09-19T10:06:46"
                data-component="body">
     <br>
-<p>حقل value ليس تاريخًا صحيحًا. Example: <code>2023-09-19T09:51:07</code></p>
+<p>حقل value ليس تاريخًا صحيحًا. Example: <code>2023-09-19T10:06:46</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>student_type</code></b>&nbsp;&nbsp;
@@ -3264,10 +3264,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="student_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="aut"
+               value="ducimus"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>ducimus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>work_type</code></b>&nbsp;&nbsp;
@@ -3275,10 +3275,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="work_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="iure"
+               value="corrupti"
                data-component="body">
     <br>
-<p>Example: <code>iure</code></p>
+<p>Example: <code>corrupti</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>is_morning</code></b>&nbsp;&nbsp;
@@ -3299,7 +3299,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
         </form>
 
@@ -3320,14 +3320,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/section/quae/departments" \
+    --get "http://localhost:8000/api/section/ad/departments" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/section/quae/departments"
+    "http://localhost:8000/api/section/ad/departments"
 );
 
 const headers = {
@@ -3435,10 +3435,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="sectionId"                data-endpoint="GETapi-section--sectionId--departments"
-               value="quae"
+               value="ad"
                data-component="url">
     <br>
-<p>Example: <code>quae</code></p>
+<p>Example: <code>ad</code></p>
             </div>
                     </form>
 
@@ -3463,10 +3463,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"subject\": \"et\",
-    \"mark\": 23,
-    \"reason\": \"corporis\",
-    \"teacher\": \"fugiat\"
+    \"subject\": \"libero\",
+    \"mark\": 15,
+    \"reason\": \"dignissimos\",
+    \"teacher\": \"consequatur\"
 }"
 </code></pre></div>
 
@@ -3482,10 +3482,10 @@ const headers = {
 };
 
 let body = {
-    "subject": "et",
-    "mark": 23,
-    "reason": "corporis",
-    "teacher": "fugiat"
+    "subject": "libero",
+    "mark": 15,
+    "reason": "dignissimos",
+    "teacher": "consequatur"
 };
 
 fetch(url, {
@@ -3631,10 +3631,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="subject"                data-endpoint="POSTapi-editMark"
-               value="et"
+               value="libero"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>libero</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>mark</code></b>&nbsp;&nbsp;
@@ -3642,10 +3642,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="mark"                data-endpoint="POSTapi-editMark"
-               value="23"
+               value="15"
                data-component="body">
     <br>
-<p>يجب أن تكون قيمة حقل value مساوية أو أكبر من 0. يجب أن تكون قيمة حقل value مساوية أو أصغر من 100. Example: <code>23</code></p>
+<p>يجب أن تكون قيمة حقل value مساوية أو أكبر من 0. يجب أن تكون قيمة حقل value مساوية أو أصغر من 100. Example: <code>15</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>reason</code></b>&nbsp;&nbsp;
@@ -3653,10 +3653,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="reason"                data-endpoint="POSTapi-editMark"
-               value="corporis"
+               value="dignissimos"
                data-component="body">
     <br>
-<p>Example: <code>corporis</code></p>
+<p>Example: <code>dignissimos</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>teacher</code></b>&nbsp;&nbsp;
@@ -3664,10 +3664,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="teacher"                data-endpoint="POSTapi-editMark"
-               value="fugiat"
+               value="consequatur"
                data-component="body">
     <br>
-<p>Example: <code>fugiat</code></p>
+<p>Example: <code>consequatur</code></p>
         </div>
         </form>
 
@@ -3692,8 +3692,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"text\": \"magni\",
-    \"department_id\": 127646.710727
+    \"text\": \"temporibus\",
+    \"department_id\": 45.43981
 }"
 </code></pre></div>
 
@@ -3709,8 +3709,8 @@ const headers = {
 };
 
 let body = {
-    "text": "magni",
-    "department_id": 127646.710727
+    "text": "temporibus",
+    "department_id": 45.43981
 };
 
 fetch(url, {
@@ -3853,10 +3853,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="text"                data-endpoint="POSTapi-move"
-               value="magni"
+               value="temporibus"
                data-component="body">
     <br>
-<p>Example: <code>magni</code></p>
+<p>Example: <code>temporibus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -3864,10 +3864,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-move"
-               value="127646.710727"
+               value="45.43981"
                data-component="body">
     <br>
-<p>Example: <code>127646.710727</code></p>
+<p>Example: <code>45.43981</code></p>
         </div>
         </form>
 
@@ -4034,9 +4034,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"doloribus\",
-    \"description\": \"Atque eum qui ratione suscipit id dolor.\",
-    \"note_category_id\": 12
+    \"title\": \"ab\",
+    \"description\": \"Labore placeat impedit quae at.\",
+    \"note_category_id\": 1
 }"
 </code></pre></div>
 
@@ -4053,9 +4053,9 @@ const headers = {
 };
 
 let body = {
-    "title": "doloribus",
-    "description": "Atque eum qui ratione suscipit id dolor.",
-    "note_category_id": 12
+    "title": "ab",
+    "description": "Labore placeat impedit quae at.",
+    "note_category_id": 1
 };
 
 fetch(url, {
@@ -4068,7 +4068,7 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-note">
             <blockquote>
-            <p>Example response (422):</p>
+            <p>Example response (201):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -4082,11 +4082,11 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;note category id غير موجود.&quot;,
-    &quot;errors&quot;: {
-        &quot;note_category_id&quot;: [
-            &quot;note category id غير موجود.&quot;
-        ]
+    &quot;data&quot;: {
+        &quot;id&quot;: 6,
+        &quot;title&quot;: &quot;ab&quot;,
+        &quot;description&quot;: &quot;Labore placeat impedit quae at.&quot;,
+        &quot;category&quot;: &quot;Mr. Bennie Haley IV&quot;
     }
 }</code>
  </pre>
@@ -4178,10 +4178,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-note"
-               value="doloribus"
+               value="ab"
                data-component="body">
     <br>
-<p>Example: <code>doloribus</code></p>
+<p>Example: <code>ab</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -4189,10 +4189,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-note"
-               value="Atque eum qui ratione suscipit id dolor."
+               value="Labore placeat impedit quae at."
                data-component="body">
     <br>
-<p>Example: <code>Atque eum qui ratione suscipit id dolor.</code></p>
+<p>Example: <code>Labore placeat impedit quae at.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -4211,10 +4211,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="note_category_id"                data-endpoint="POSTapi-note"
-               value="12"
+               value="1"
                data-component="body">
     <br>
-<p>Example: <code>12</code></p>
+<p>Example: <code>1</code></p>
         </div>
         </form>
 
@@ -4394,8 +4394,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"doloremque\",
-    \"description\": \"Voluptas veritatis debitis harum ex ut sapiente.\"
+    \"title\": \"aliquam\",
+    \"description\": \"A ratione possimus dignissimos aut impedit esse voluptatibus.\"
 }"
 </code></pre></div>
 
@@ -4412,8 +4412,8 @@ const headers = {
 };
 
 let body = {
-    "title": "doloremque",
-    "description": "Voluptas veritatis debitis harum ex ut sapiente."
+    "title": "aliquam",
+    "description": "A ratione possimus dignissimos aut impedit esse voluptatibus."
 };
 
 fetch(url, {
@@ -4442,8 +4442,8 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;title&quot;: &quot;doloremque&quot;,
-        &quot;description&quot;: &quot;Voluptas veritatis debitis harum ex ut sapiente.&quot;,
+        &quot;title&quot;: &quot;aliquam&quot;,
+        &quot;description&quot;: &quot;A ratione possimus dignissimos aut impedit esse voluptatibus.&quot;,
         &quot;category&quot;: &quot;Margaretta Monahan MD&quot;
     }
 }</code>
@@ -4552,10 +4552,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="PUTapi-note--id-"
-               value="doloremque"
+               value="aliquam"
                data-component="body">
     <br>
-<p>Example: <code>doloremque</code></p>
+<p>Example: <code>aliquam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -4563,10 +4563,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="PUTapi-note--id-"
-               value="Voluptas veritatis debitis harum ex ut sapiente."
+               value="A ratione possimus dignissimos aut impedit esse voluptatibus."
                data-component="body">
     <br>
-<p>Example: <code>Voluptas veritatis debitis harum ex ut sapiente.</code></p>
+<p>Example: <code>A ratione possimus dignissimos aut impedit esse voluptatibus.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -4903,13 +4903,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"corrupti\",
-    \"attachment\": \"illum\",
-    \"attachment_type\": \"eos\",
-    \"user_id\": 28441384.419,
-    \"department_id\": 453124.933391423,
-    \"course_id\": 1764.266,
-    \"post_type_id\": 667614.6
+    \"content\": \"tempora\",
+    \"attachment\": \"veniam\",
+    \"attachment_type\": \"dolorum\",
+    \"user_id\": 1833.72986552,
+    \"department_id\": 10749618.424,
+    \"course_id\": 280599.20012351,
+    \"post_type_id\": 2948
 }"
 </code></pre></div>
 
@@ -4926,13 +4926,13 @@ const headers = {
 };
 
 let body = {
-    "content": "corrupti",
-    "attachment": "illum",
-    "attachment_type": "eos",
-    "user_id": 28441384.419,
-    "department_id": 453124.933391423,
-    "course_id": 1764.266,
-    "post_type_id": 667614.6
+    "content": "tempora",
+    "attachment": "veniam",
+    "attachment_type": "dolorum",
+    "user_id": 1833.72986552,
+    "department_id": 10749618.424,
+    "course_id": 280599.20012351,
+    "post_type_id": 2948
 };
 
 fetch(url, {
@@ -5064,10 +5064,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="POSTapi-post"
-               value="corrupti"
+               value="tempora"
                data-component="body">
     <br>
-<p>Example: <code>corrupti</code></p>
+<p>Example: <code>tempora</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment</code></b>&nbsp;&nbsp;
@@ -5075,10 +5075,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="POSTapi-post"
-               value="illum"
+               value="veniam"
                data-component="body">
     <br>
-<p>Example: <code>illum</code></p>
+<p>Example: <code>veniam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment_type</code></b>&nbsp;&nbsp;
@@ -5086,10 +5086,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment_type"                data-endpoint="POSTapi-post"
-               value="eos"
+               value="dolorum"
                data-component="body">
     <br>
-<p>Example: <code>eos</code></p>
+<p>Example: <code>dolorum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -5097,10 +5097,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="POSTapi-post"
-               value="28441384.419"
+               value="1833.72986552"
                data-component="body">
     <br>
-<p>Example: <code>28441384.419</code></p>
+<p>Example: <code>1833.72986552</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -5108,10 +5108,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-post"
-               value="453124.93339142"
+               value="10749618.424"
                data-component="body">
     <br>
-<p>Example: <code>453124.93339142</code></p>
+<p>Example: <code>10749618.424</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -5119,10 +5119,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="POSTapi-post"
-               value="1764.266"
+               value="280599.20012351"
                data-component="body">
     <br>
-<p>Example: <code>1764.266</code></p>
+<p>Example: <code>280599.20012351</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>post_type_id</code></b>&nbsp;&nbsp;
@@ -5130,10 +5130,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_type_id"                data-endpoint="POSTapi-post"
-               value="667614.6"
+               value="2948"
                data-component="body">
     <br>
-<p>Example: <code>667614.6</code></p>
+<p>Example: <code>2948</code></p>
         </div>
         </form>
 
@@ -5156,13 +5156,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"labore\",
-    \"attachment\": \"natus\",
-    \"attachment_type\": \"vero\",
-    \"user_id\": 278143.32550626,
-    \"department_id\": 115500.08,
-    \"course_id\": 4180.005314,
-    \"post_type_id\": 1
+    \"content\": \"perspiciatis\",
+    \"attachment\": \"itaque\",
+    \"attachment_type\": \"quo\",
+    \"user_id\": 273.01223,
+    \"department_id\": 18885.745905,
+    \"course_id\": 476,
+    \"post_type_id\": 360.588
 }"
 </code></pre></div>
 
@@ -5179,13 +5179,13 @@ const headers = {
 };
 
 let body = {
-    "content": "labore",
-    "attachment": "natus",
-    "attachment_type": "vero",
-    "user_id": 278143.32550626,
-    "department_id": 115500.08,
-    "course_id": 4180.005314,
-    "post_type_id": 1
+    "content": "perspiciatis",
+    "attachment": "itaque",
+    "attachment_type": "quo",
+    "user_id": 273.01223,
+    "department_id": 18885.745905,
+    "course_id": 476,
+    "post_type_id": 360.588
 };
 
 fetch(url, {
@@ -5212,7 +5212,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;user id غير موجود. (and 2 more errors)&quot;,
+    &quot;message&quot;: &quot;user id غير موجود. (and 3 more errors)&quot;,
     &quot;errors&quot;: {
         &quot;user_id&quot;: [
             &quot;user id غير موجود.&quot;
@@ -5222,6 +5222,9 @@ access-control-allow-origin: *
         ],
         &quot;course_id&quot;: [
             &quot;course id غير موجود.&quot;
+        ],
+        &quot;post_type_id&quot;: [
+            &quot;post type id غير موجود.&quot;
         ]
     }
 }</code>
@@ -5330,10 +5333,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="PUTapi-post--id-"
-               value="labore"
+               value="perspiciatis"
                data-component="body">
     <br>
-<p>Example: <code>labore</code></p>
+<p>Example: <code>perspiciatis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment</code></b>&nbsp;&nbsp;
@@ -5341,10 +5344,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="PUTapi-post--id-"
-               value="natus"
+               value="itaque"
                data-component="body">
     <br>
-<p>Example: <code>natus</code></p>
+<p>Example: <code>itaque</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment_type</code></b>&nbsp;&nbsp;
@@ -5352,10 +5355,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment_type"                data-endpoint="PUTapi-post--id-"
-               value="vero"
+               value="quo"
                data-component="body">
     <br>
-<p>Example: <code>vero</code></p>
+<p>Example: <code>quo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -5363,10 +5366,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="PUTapi-post--id-"
-               value="278143.32550626"
+               value="273.01223"
                data-component="body">
     <br>
-<p>Example: <code>278143.32550626</code></p>
+<p>Example: <code>273.01223</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -5374,10 +5377,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="PUTapi-post--id-"
-               value="115500.08"
+               value="18885.745905"
                data-component="body">
     <br>
-<p>Example: <code>115500.08</code></p>
+<p>Example: <code>18885.745905</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -5385,10 +5388,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="PUTapi-post--id-"
-               value="4180.005314"
+               value="476"
                data-component="body">
     <br>
-<p>Example: <code>4180.005314</code></p>
+<p>Example: <code>476</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>post_type_id</code></b>&nbsp;&nbsp;
@@ -5396,10 +5399,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_type_id"                data-endpoint="PUTapi-post--id-"
-               value="1"
+               value="360.588"
                data-component="body">
     <br>
-<p>Example: <code>1</code></p>
+<p>Example: <code>360.588</code></p>
         </div>
         </form>
 
@@ -5565,12 +5568,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/post?type=minus" \
+    --get "http://localhost:8000/api/post?type=voluptate" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"public\"
+    \"type\": \"department\"
 }"
 </code></pre></div>
 
@@ -5581,7 +5584,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "type": "minus",
+    "type": "voluptate",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -5593,7 +5596,7 @@ const headers = {
 };
 
 let body = {
-    "type": "public"
+    "type": "department"
 };
 
 fetch(url, {
@@ -5625,56 +5628,157 @@ access-control-allow-origin: *
             &quot;id&quot;: 16,
             &quot;content&quot;: &quot;Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.&quot;,
             &quot;attachment&quot;: &quot;blanditiis&quot;,
+            &quot;department_name&quot;: &quot;Prof. Troy Carroll&quot;,
+            &quot;course_name&quot;: &quot;Soledad Tremblay&quot;,
             &quot;attachment_type&quot;: &quot;file&quot;,
             &quot;likes&quot;: 1,
             &quot;liked_by_me&quot;: true,
             &quot;saves&quot;: 1,
             &quot;saved_by_me&quot;: true,
-            &quot;created_at&quot;: &quot;منذ 22 دقيقة&quot;
+            &quot;created_at&quot;: &quot;منذ 38 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;content&quot;: &quot;Soluta eius vel est qui in et tenetur. Perferendis repellendus porro incidunt aliquam cum. Dolores et animi possimus aut ipsum.&quot;,
+            &quot;attachment&quot;: &quot;nihil&quot;,
+            &quot;department_name&quot;: &quot;Abdullah Goldner&quot;,
+            &quot;course_name&quot;: &quot;Mr. Sheldon Morar&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;content&quot;: &quot;Illum non ut perferendis voluptas repellat enim ipsum. Quam molestiae totam est doloremque molestiae inventore sit aut. Provident repellat amet aperiam ad corrupti amet.&quot;,
+            &quot;attachment&quot;: &quot;consequatur&quot;,
+            &quot;department_name&quot;: &quot;Saige Boyer&quot;,
+            &quot;course_name&quot;: &quot;Jeromy Fahey&quot;,
+            &quot;attachment_type&quot;: &quot;image&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
         },
         {
             &quot;id&quot;: 4,
             &quot;content&quot;: &quot;Sed molestiae ea temporibus non recusandae. Beatae natus maxime doloremque dolor neque veritatis.&quot;,
             &quot;attachment&quot;: &quot;consequatur&quot;,
+            &quot;department_name&quot;: &quot;Toby McDermott&quot;,
+            &quot;course_name&quot;: &quot;Zane Blanda&quot;,
             &quot;attachment_type&quot;: &quot;file&quot;,
             &quot;likes&quot;: 0,
             &quot;liked_by_me&quot;: false,
             &quot;saves&quot;: 0,
             &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;منذ 23 دقيقة&quot;
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;content&quot;: &quot;Provident omnis qui sed qui aliquid totam magnam. Quo eos beatae accusamus minus est. Voluptatem provident omnis aut temporibus. Quibusdam aut est a expedita.&quot;,
+            &quot;attachment&quot;: &quot;est&quot;,
+            &quot;department_name&quot;: &quot;Mr. Rickey Beier I&quot;,
+            &quot;course_name&quot;: &quot;Ms. Rebeca Schuster&quot;,
+            &quot;attachment_type&quot;: &quot;image&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
         },
         {
             &quot;id&quot;: 7,
             &quot;content&quot;: &quot;Officia aut blanditiis tempora ipsa animi aut. Quasi voluptatem sed repudiandae. Sed fugit aliquid ab voluptas commodi dolorem. Sequi voluptatum eum qui adipisci cupiditate recusandae.&quot;,
             &quot;attachment&quot;: &quot;impedit&quot;,
+            &quot;department_name&quot;: &quot;Donavon Koelpin&quot;,
+            &quot;course_name&quot;: &quot;Dr. Elsie Fritsch&quot;,
             &quot;attachment_type&quot;: &quot;image&quot;,
             &quot;likes&quot;: 1,
             &quot;liked_by_me&quot;: false,
             &quot;saves&quot;: 0,
             &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;منذ 23 دقيقة&quot;
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
         },
         {
             &quot;id&quot;: 8,
             &quot;content&quot;: &quot;Repellat quos reiciendis maxime quaerat nisi sed accusamus. Iure laboriosam similique illo repudiandae iste sint ratione. Consectetur nobis in et ea recusandae repellat iste.&quot;,
             &quot;attachment&quot;: &quot;quaerat&quot;,
+            &quot;department_name&quot;: &quot;Adrianna Ward&quot;,
+            &quot;course_name&quot;: &quot;Mr. Leon Welch I&quot;,
             &quot;attachment_type&quot;: &quot;file&quot;,
             &quot;likes&quot;: 1,
             &quot;liked_by_me&quot;: false,
             &quot;saves&quot;: 0,
             &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;منذ 23 دقيقة&quot;
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
         },
         {
-            &quot;id&quot;: 14,
-            &quot;content&quot;: &quot;Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.&quot;,
-            &quot;attachment&quot;: &quot;omnis&quot;,
+            &quot;id&quot;: 9,
+            &quot;content&quot;: &quot;Omnis cumque ut dolor velit sapiente. Aut sint provident ullam quia ex excepturi voluptatem. Et doloribus qui qui voluptas nobis non. Omnis sed modi tempore quaerat quidem.&quot;,
+            &quot;attachment&quot;: &quot;et&quot;,
+            &quot;department_name&quot;: &quot;Prof. Theron Mitchell&quot;,
+            &quot;course_name&quot;: &quot;Dr. Mustafa Wolf&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
+            &quot;likes&quot;: 1,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;content&quot;: &quot;Laudantium minima natus dignissimos earum est. Reiciendis omnis provident explicabo dolor. Quod laboriosam est est totam ut. Voluptatum voluptatem temporibus qui quidem rem quo atque voluptate.&quot;,
+            &quot;attachment&quot;: &quot;officia&quot;,
+            &quot;department_name&quot;: &quot;Dr. Misael Effertz DDS&quot;,
+            &quot;course_name&quot;: &quot;Dr. London Gutmann MD&quot;,
+            &quot;attachment_type&quot;: &quot;image&quot;,
+            &quot;likes&quot;: 1,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;content&quot;: &quot;Dolorem eum quo sunt voluptatum est amet. Qui aut officiis porro mollitia labore possimus eum. Ipsum perspiciatis qui velit tempora consequatur.&quot;,
+            &quot;attachment&quot;: &quot;nostrum&quot;,
+            &quot;department_name&quot;: &quot;Branson Bosco&quot;,
+            &quot;course_name&quot;: &quot;Keely Schneider MD&quot;,
             &quot;attachment_type&quot;: &quot;image&quot;,
             &quot;likes&quot;: 0,
             &quot;liked_by_me&quot;: false,
             &quot;saves&quot;: 1,
             &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;منذ 23 دقيقة&quot;
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;content&quot;: &quot;Doloremque consequatur laboriosam qui qui totam. Officia aperiam aut minima quia eaque tempore quam. Et vel inventore quis vel rem quisquam. Atque dolor occaecati aut voluptatibus.&quot;,
+            &quot;attachment&quot;: &quot;vero&quot;,
+            &quot;department_name&quot;: &quot;Gregory Davis&quot;,
+            &quot;course_name&quot;: &quot;Ahmad Harvey&quot;,
+            &quot;attachment_type&quot;: &quot;image&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 1,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;content&quot;: &quot;Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.&quot;,
+            &quot;attachment&quot;: &quot;omnis&quot;,
+            &quot;department_name&quot;: &quot;Dr. Darron Bruen DDS&quot;,
+            &quot;course_name&quot;: &quot;Mr. Noel Ledner&quot;,
+            &quot;attachment_type&quot;: &quot;image&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 1,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;منذ 39 دقيقة&quot;
         }
     ]
 }</code>
@@ -5767,10 +5871,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-post"
-               value="minus"
+               value="voluptate"
                data-component="query">
     <br>
-<p>the type of the post (public, department ,course). Example: <code>minus</code></p>
+<p>the type of the post (public, department ,course). Example: <code>voluptate</code></p>
             </div>
                         <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -5779,10 +5883,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-post"
-               value="public"
+               value="department"
                data-component="body">
     <br>
-<p>Example: <code>public</code></p>
+<p>Example: <code>department</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>public</code></li> <li><code>department</code></li> <li><code>course</code></li></ul>
         </div>
@@ -5847,12 +5951,14 @@ access-control-allow-origin: *
             &quot;id&quot;: 16,
             &quot;content&quot;: &quot;Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.&quot;,
             &quot;attachment&quot;: &quot;blanditiis&quot;,
+            &quot;department_name&quot;: &quot;Prof. Troy Carroll&quot;,
+            &quot;course_name&quot;: &quot;Soledad Tremblay&quot;,
             &quot;attachment_type&quot;: &quot;file&quot;,
             &quot;likes&quot;: 1,
             &quot;liked_by_me&quot;: true,
             &quot;saves&quot;: 1,
             &quot;saved_by_me&quot;: true,
-            &quot;created_at&quot;: &quot;منذ 22 دقيقة&quot;
+            &quot;created_at&quot;: &quot;منذ 38 دقيقة&quot;
         }
     ]
 }</code>

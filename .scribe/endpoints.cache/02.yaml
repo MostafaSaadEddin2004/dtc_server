@@ -29,7 +29,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: corrupti
+        example: tempora
         type: string
         enumValues: []
         custom: []
@@ -37,7 +37,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: illum
+        example: veniam
         type: string
         enumValues: []
         custom: []
@@ -45,7 +45,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: eos
+        example: dolorum
         type: string
         enumValues: []
         custom: []
@@ -53,7 +53,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 28441384.419
+        example: 1833.72986552
         type: number
         enumValues: []
         custom: []
@@ -61,7 +61,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 453124.93339142
+        example: 10749618.424
         type: number
         enumValues: []
         custom: []
@@ -69,7 +69,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 1764.266
+        example: 280599.20012351
         type: number
         enumValues: []
         custom: []
@@ -77,18 +77,18 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 667614.6
+        example: 2948.0
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: corrupti
-      attachment: illum
-      attachment_type: eos
-      user_id: 28441384.419
-      department_id: 453124.93339142
-      course_id: 1764.266
-      post_type_id: 667614.6
+      content: tempora
+      attachment: veniam
+      attachment_type: dolorum
+      user_id: 1833.72986552
+      department_id: 10749618.424
+      course_id: 280599.20012351
+      post_type_id: 2948.0
     fileParameters: []
     responses:
       -
@@ -147,7 +147,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: labore
+        example: perspiciatis
         type: string
         enumValues: []
         custom: []
@@ -155,7 +155,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: natus
+        example: itaque
         type: string
         enumValues: []
         custom: []
@@ -163,7 +163,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: vero
+        example: quo
         type: string
         enumValues: []
         custom: []
@@ -171,7 +171,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 278143.32550626
+        example: 273.01223
         type: number
         enumValues: []
         custom: []
@@ -179,7 +179,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 115500.08
+        example: 18885.745905
         type: number
         enumValues: []
         custom: []
@@ -187,7 +187,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 4180.005314
+        example: 476.0
         type: number
         enumValues: []
         custom: []
@@ -195,23 +195,23 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 1.0
+        example: 360.588
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: labore
-      attachment: natus
-      attachment_type: vero
-      user_id: 278143.32550626
-      department_id: 115500.08
-      course_id: 4180.005314
-      post_type_id: 1.0
+      content: perspiciatis
+      attachment: itaque
+      attachment_type: quo
+      user_id: 273.01223
+      department_id: 18885.745905
+      course_id: 476.0
+      post_type_id: 360.588
     fileParameters: []
     responses:
       -
         status: 422
-        content: '{"message":"user id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f. (and 2 more errors)","errors":{"user_id":["user id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"department_id":["department id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"course_id":["course id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."]}}'
+        content: '{"message":"user id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f. (and 3 more errors)","errors":{"user_id":["user id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"department_id":["department id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"course_id":["course id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"post_type_id":["post type id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -306,18 +306,18 @@ endpoints:
         name: type
         description: 'the type of the post (public, department ,course).'
         required: false
-        example: minus
+        example: voluptate
         type: string
         enumValues: []
         custom: []
     cleanQueryParameters:
-      type: minus
+      type: voluptate
     bodyParameters:
       type:
         name: type
         description: ''
         required: true
-        example: public
+        example: department
         type: string
         enumValues:
           - public
@@ -325,12 +325,12 @@ endpoints:
           - course
         custom: []
     cleanBodyParameters:
-      type: public
+      type: department
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":[{"id":16,"content":"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.","attachment":"blanditiis","attachment_type":"file","likes":1,"liked_by_me":true,"saves":1,"saved_by_me":true,"created_at":"\u0645\u0646\u0630 22 \u062f\u0642\u064a\u0642\u0629"},{"id":4,"content":"Sed molestiae ea temporibus non recusandae. Beatae natus maxime doloremque dolor neque veritatis.","attachment":"consequatur","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 23 \u062f\u0642\u064a\u0642\u0629"},{"id":7,"content":"Officia aut blanditiis tempora ipsa animi aut. Quasi voluptatem sed repudiandae. Sed fugit aliquid ab voluptas commodi dolorem. Sequi voluptatum eum qui adipisci cupiditate recusandae.","attachment":"impedit","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 23 \u062f\u0642\u064a\u0642\u0629"},{"id":8,"content":"Repellat quos reiciendis maxime quaerat nisi sed accusamus. Iure laboriosam similique illo repudiandae iste sint ratione. Consectetur nobis in et ea recusandae repellat iste.","attachment":"quaerat","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 23 \u062f\u0642\u064a\u0642\u0629"},{"id":14,"content":"Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.","attachment":"omnis","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 23 \u062f\u0642\u064a\u0642\u0629"}]}'
+        content: '{"data":[{"id":16,"content":"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.","attachment":"blanditiis","department_name":"Prof. Troy Carroll","course_name":"Soledad Tremblay","attachment_type":"file","likes":1,"liked_by_me":true,"saves":1,"saved_by_me":true,"created_at":"\u0645\u0646\u0630 38 \u062f\u0642\u064a\u0642\u0629"},{"id":2,"content":"Soluta eius vel est qui in et tenetur. Perferendis repellendus porro incidunt aliquam cum. Dolores et animi possimus aut ipsum.","attachment":"nihil","department_name":"Abdullah Goldner","course_name":"Mr. Sheldon Morar","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":3,"content":"Illum non ut perferendis voluptas repellat enim ipsum. Quam molestiae totam est doloremque molestiae inventore sit aut. Provident repellat amet aperiam ad corrupti amet.","attachment":"consequatur","department_name":"Saige Boyer","course_name":"Jeromy Fahey","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":4,"content":"Sed molestiae ea temporibus non recusandae. Beatae natus maxime doloremque dolor neque veritatis.","attachment":"consequatur","department_name":"Toby McDermott","course_name":"Zane Blanda","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":5,"content":"Provident omnis qui sed qui aliquid totam magnam. Quo eos beatae accusamus minus est. Voluptatem provident omnis aut temporibus. Quibusdam aut est a expedita.","attachment":"est","department_name":"Mr. Rickey Beier I","course_name":"Ms. Rebeca Schuster","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":7,"content":"Officia aut blanditiis tempora ipsa animi aut. Quasi voluptatem sed repudiandae. Sed fugit aliquid ab voluptas commodi dolorem. Sequi voluptatum eum qui adipisci cupiditate recusandae.","attachment":"impedit","department_name":"Donavon Koelpin","course_name":"Dr. Elsie Fritsch","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":8,"content":"Repellat quos reiciendis maxime quaerat nisi sed accusamus. Iure laboriosam similique illo repudiandae iste sint ratione. Consectetur nobis in et ea recusandae repellat iste.","attachment":"quaerat","department_name":"Adrianna Ward","course_name":"Mr. Leon Welch I","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":9,"content":"Omnis cumque ut dolor velit sapiente. Aut sint provident ullam quia ex excepturi voluptatem. Et doloribus qui qui voluptas nobis non. Omnis sed modi tempore quaerat quidem.","attachment":"et","department_name":"Prof. Theron Mitchell","course_name":"Dr. Mustafa Wolf","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":10,"content":"Laudantium minima natus dignissimos earum est. Reiciendis omnis provident explicabo dolor. Quod laboriosam est est totam ut. Voluptatum voluptatem temporibus qui quidem rem quo atque voluptate.","attachment":"officia","department_name":"Dr. Misael Effertz DDS","course_name":"Dr. London Gutmann MD","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":12,"content":"Dolorem eum quo sunt voluptatum est amet. Qui aut officiis porro mollitia labore possimus eum. Ipsum perspiciatis qui velit tempora consequatur.","attachment":"nostrum","department_name":"Branson Bosco","course_name":"Keely Schneider MD","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":13,"content":"Doloremque consequatur laboriosam qui qui totam. Officia aperiam aut minima quia eaque tempore quam. Et vel inventore quis vel rem quisquam. Atque dolor occaecati aut voluptatibus.","attachment":"vero","department_name":"Gregory Davis","course_name":"Ahmad Harvey","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"},{"id":14,"content":"Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.","attachment":"omnis","department_name":"Dr. Darron Bruen DDS","course_name":"Mr. Noel Ledner","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 39 \u062f\u0642\u064a\u0642\u0629"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -375,7 +375,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":16,"content":"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.","attachment":"blanditiis","attachment_type":"file","likes":1,"liked_by_me":true,"saves":1,"saved_by_me":true,"created_at":"\u0645\u0646\u0630 22 \u062f\u0642\u064a\u0642\u0629"}]}'
+        content: '{"data":[{"id":16,"content":"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.","attachment":"blanditiis","department_name":"Prof. Troy Carroll","course_name":"Soledad Tremblay","attachment_type":"file","likes":1,"liked_by_me":true,"saves":1,"saved_by_me":true,"created_at":"\u0645\u0646\u0630 38 \u062f\u0642\u064a\u0642\u0629"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

@@ -289,7 +289,7 @@ endpoints:
         name: is_male
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         custom: []
@@ -305,7 +305,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: veritatis
+        example: facilis
         type: string
         enumValues: []
         custom: []
@@ -313,7 +313,7 @@ endpoints:
         name: address
         description: ''
         required: true
-        example: placeat
+        example: dolores
         type: string
         enumValues: []
         custom: []
@@ -321,7 +321,7 @@ endpoints:
         name: date_of_birth
         description: 'حقل value ليس تاريخًا صحيحًا.'
         required: true
-        example: '2023-09-19T09:51:07'
+        example: '2023-09-19T10:06:46'
         type: string
         enumValues: []
         custom: []
@@ -329,7 +329,7 @@ endpoints:
         name: student_type
         description: ''
         required: true
-        example: aut
+        example: ducimus
         type: string
         enumValues: []
         custom: []
@@ -337,7 +337,7 @@ endpoints:
         name: work_type
         description: ''
         required: true
-        example: iure
+        example: corrupti
         type: string
         enumValues: []
         custom: []
@@ -345,19 +345,19 @@ endpoints:
         name: is_morning
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         enumValues: []
         custom: []
     cleanBodyParameters:
-      is_male: false
+      is_male: true
       social_status: non
-      nationality: veritatis
-      address: placeat
-      date_of_birth: '2023-09-19T09:51:07'
-      student_type: aut
-      work_type: iure
-      is_morning: true
+      nationality: facilis
+      address: dolores
+      date_of_birth: '2023-09-19T10:06:46'
+      student_type: ducimus
+      work_type: corrupti
+      is_morning: false
     fileParameters: []
     responses:
       -

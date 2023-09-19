@@ -51,7 +51,7 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: similique
+        example: ducimus
         type: string
         enumValues: []
         custom: []
@@ -59,12 +59,12 @@ endpoints:
       email: my@example.com
       password: password
       role: student_browser
-      fcm_token: similique
+      fcm_token: ducimus
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"2|LQX8GoTlMOEix5CbwGs4VKVLU5eMRqPuW6wAqYRafc458a95"}'
+        content: '{"token":"2|ar6quLxST57pfDMeTFbz6HoHFzi8iI7e9vEmOC27df81ab8f"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -108,7 +108,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: magni
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -116,7 +116,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: assumenda
+        example: in
         type: string
         enumValues: []
         custom: []
@@ -124,7 +124,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: eligendi
+        example: reprehenderit
         type: string
         enumValues: []
         custom: []
@@ -132,7 +132,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: perferendis
+        example: cupiditate
         type: string
         enumValues: []
         custom: []
@@ -140,7 +140,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: hic
+        example: nisi
         type: string
         enumValues: []
         custom: []
@@ -148,7 +148,7 @@ endpoints:
         name: email
         description: 'يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية.'
         required: true
-        example: greta.turcotte@example.org
+        example: rita34@example.org
         type: string
         enumValues: []
         custom: []
@@ -156,7 +156,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: "V1hP|W]'f]>hXoU"
+        example: 'v0^v?6V<B[viiz2'
         type: string
         enumValues: []
         custom: []
@@ -164,7 +164,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: student_browser
+        example: student
         type: string
         enumValues:
           - student
@@ -184,26 +184,26 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: porro
+        example: at
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      first_name_en: magni
-      last_name_en: assumenda
-      first_name_ar: eligendi
-      last_name_ar: perferendis
-      phone: hic
-      email: greta.turcotte@example.org
-      password: "V1hP|W]'f]>hXoU"
-      role: student_browser
-      fcm_token: porro
+      first_name_en: et
+      last_name_en: in
+      first_name_ar: reprehenderit
+      last_name_ar: cupiditate
+      phone: nisi
+      email: rita34@example.org
+      password: 'v0^v?6V<B[viiz2'
+      role: student
+      fcm_token: at
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"2|IjEGwxrmnFORVchf5g2UhkUGNpU7eWa5tnhTiNfAb4e0dbb1"}'
+        content: '{"token":"2|tbC9Eo9X8fvUsEoI6FbO6Bm7ab36cMLlOsxfCIgy755115bb"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -297,7 +297,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"email":"samanta52@example.org","first_name_en":"Mr. Lonnie Schneider I","first_name_ar":"Triston McKenzie IV","last_name_en":"Easter Schultz","last_name_ar":"Jarred Reynolds","phone":"1-205-535-5950","image":null,"depratment":null,"section":null}}'
+        content: '{"data":{"email":"samanta52@example.org","first_name_en":"Mr. Lonnie Schneider I","first_name_ar":"Triston McKenzie IV","last_name_en":"Easter Schultz","last_name_ar":"Jarred Reynolds","phone":"1-205-535-5950","image":null,"department":null,"section":null}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -386,7 +386,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-        example: a
+        example: ipsam
         type: string
         enumValues: []
         custom: []
@@ -394,7 +394,7 @@ endpoints:
         name: specialty
         description: ''
         required: true
-        example: ducimus
+        example: quia
         type: string
         enumValues: []
         custom: []
@@ -402,7 +402,7 @@ endpoints:
         name: birth_date
         description: 'حقل value ليس تاريخًا صحيحًا. يجب على حقل value أن يكون تاريخًا سابقًا للتاريخ <code>09/19/2023</code>.'
         required: true
-        example: '2002-09-17'
+        example: '2015-09-20'
         type: string
         enumValues: []
         custom: []
@@ -410,7 +410,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-        example: itaque
+        example: ullam
         type: string
         enumValues: []
         custom: []
@@ -418,7 +418,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-        example: maxime
+        example: quia
         type: string
         enumValues: []
         custom: []
@@ -426,7 +426,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: in
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -434,18 +434,18 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 13
+        example: 10
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: a
-      specialty: ducimus
-      birth_date: '2002-09-17'
-      current_location: itaque
-      permanent_location: maxime
-      nationality: in
-      department_id: 13
+      certificate: ipsam
+      specialty: quia
+      birth_date: '2015-09-20'
+      current_location: ullam
+      permanent_location: quia
+      nationality: et
+      department_id: 10
     fileParameters: []
     responses:
       -

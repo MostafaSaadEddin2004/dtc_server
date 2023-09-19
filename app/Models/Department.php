@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
@@ -42,6 +43,12 @@ class Department extends Model
     public function academicRegistrations(): HasMany
     {
         return $this->hasMany(AcademicRegistration::class);
+    }
+
+
+    public function wishes(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class);
     }
 
     public function certificateType()
