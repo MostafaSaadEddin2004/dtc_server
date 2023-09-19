@@ -51,7 +51,7 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: ducimus
+        example: similique
         type: string
         enumValues: []
         custom: []
@@ -59,12 +59,12 @@ endpoints:
       email: my@example.com
       password: password
       role: student_browser
-      fcm_token: ducimus
+      fcm_token: similique
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"2|ar6quLxST57pfDMeTFbz6HoHFzi8iI7e9vEmOC27df81ab8f"}'
+        content: '{"token":"2|cRyaMEH9DxmNyymjIYtnFLEp7Vqq3CF9pcnSdfGK07bbf57c"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -77,7 +77,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
+      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
     controller: null
     method: null
     route: null
@@ -108,7 +108,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: et
+        example: expedita
         type: string
         enumValues: []
         custom: []
@@ -116,7 +116,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: in
+        example: error
         type: string
         enumValues: []
         custom: []
@@ -124,7 +124,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: reprehenderit
+        example: earum
         type: string
         enumValues: []
         custom: []
@@ -132,7 +132,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: cupiditate
+        example: reprehenderit
         type: string
         enumValues: []
         custom: []
@@ -140,15 +140,15 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: nisi
+        example: blanditiis
         type: string
         enumValues: []
         custom: []
       email:
         name: email
-        description: 'يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية.'
+        description: 'Must be a valid email address.'
         required: true
-        example: rita34@example.org
+        example: vbarton@example.org
         type: string
         enumValues: []
         custom: []
@@ -156,7 +156,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'v0^v?6V<B[viiz2'
+        example: '#yJjfrffTN`LF'
         type: string
         enumValues: []
         custom: []
@@ -174,7 +174,7 @@ endpoints:
         custom: []
       image:
         name: image
-        description: 'يجب أن يكون حقل value صورةً.'
+        description: 'Must be an image.'
         required: false
         example: null
         type: file
@@ -184,26 +184,26 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: at
+        example: nam
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      first_name_en: et
-      last_name_en: in
-      first_name_ar: reprehenderit
-      last_name_ar: cupiditate
-      phone: nisi
-      email: rita34@example.org
-      password: 'v0^v?6V<B[viiz2'
+      first_name_en: expedita
+      last_name_en: error
+      first_name_ar: earum
+      last_name_ar: reprehenderit
+      phone: blanditiis
+      email: vbarton@example.org
+      password: '#yJjfrffTN`LF'
       role: student
-      fcm_token: at
+      fcm_token: nam
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"2|tbC9Eo9X8fvUsEoI6FbO6Bm7ab36cMLlOsxfCIgy755115bb"}'
+        content: '{"token":"2|39ZSlvgqrjyHjvg4vO86yqRYf68fRAKeOx00tD8rcf113ffa"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -216,7 +216,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
+      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
     controller: null
     method: null
     route: null
@@ -265,7 +265,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
+      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
     controller: null
     method: null
     route: null
@@ -297,12 +297,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"email":"samanta52@example.org","first_name_en":"Mr. Lonnie Schneider I","first_name_ar":"Triston McKenzie IV","last_name_en":"Easter Schultz","last_name_ar":"Jarred Reynolds","phone":"1-205-535-5950","image":null,"department":null,"section":null}}'
+        content: '{"data":{"email":"stokes.laurianne@example.com","first_name_en":"Mrs. Vena Bogan DDS","first_name_ar":"Mr. Jayson Lebsack IV","last_name_en":"Justus Lang","last_name_ar":"Alfreda Swift","phone":"+1-321-651-6257","image":null,"department":null,"section":null}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '59'
+          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -310,7 +310,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
+      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
     controller: null
     method: null
     route: null
@@ -342,12 +342,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"role":"teacher"}'
+        content: '{"role":"student_browser"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -355,7 +355,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
+      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
     controller: null
     method: null
     route: null
@@ -386,7 +386,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-        example: ipsam
+        example: blanditiis
         type: string
         enumValues: []
         custom: []
@@ -394,15 +394,15 @@ endpoints:
         name: specialty
         description: ''
         required: true
-        example: quia
+        example: dicta
         type: string
         enumValues: []
         custom: []
       birth_date:
         name: birth_date
-        description: 'حقل value ليس تاريخًا صحيحًا. يجب على حقل value أن يكون تاريخًا سابقًا للتاريخ <code>09/19/2023</code>.'
+        description: 'Must be a valid date. Must be a date before <code>09/19/2023</code>.'
         required: true
-        example: '2015-09-20'
+        example: '2011-07-30'
         type: string
         enumValues: []
         custom: []
@@ -410,7 +410,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-        example: ullam
+        example: voluptatem
         type: string
         enumValues: []
         custom: []
@@ -418,7 +418,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-        example: quia
+        example: doloremque
         type: string
         enumValues: []
         custom: []
@@ -426,7 +426,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: et
+        example: soluta
         type: string
         enumValues: []
         custom: []
@@ -434,18 +434,18 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 10
+        example: 4
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: ipsam
-      specialty: quia
-      birth_date: '2015-09-20'
-      current_location: ullam
-      permanent_location: quia
-      nationality: et
-      department_id: 10
+      certificate: blanditiis
+      specialty: dicta
+      birth_date: '2011-07-30'
+      current_location: voluptatem
+      permanent_location: doloremque
+      nationality: soluta
+      department_id: 4
     fileParameters: []
     responses:
       -
@@ -506,7 +506,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
+      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
     controller: null
     method: null
     route: null

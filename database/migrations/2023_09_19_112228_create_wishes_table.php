@@ -13,10 +13,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('department_user', function (Blueprint $table) {
+        Schema::create('wishes', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Department::class)->constrained();
             $table->foreignIdFor(User::class)->constrained();
+            $table->foreignIdFor(Department::class)->constrained();
+            $table->boolean('reserved')->default(false);
             $table->timestamps();
         });
     }

@@ -25,7 +25,7 @@ class StoreAcademicRegisterationRequest extends FormRequest
             'full_name' => ['required'],
             'father_name' => ['required'],
             'mother_name' => ['required'],
-            'date_of_birth' => ['required'],
+            'date_of_birth' => ['required', 'date'],
             'place_of_birth' => ['required'],
             'military' => ['required'],
             'full_name_en' => ['required'],

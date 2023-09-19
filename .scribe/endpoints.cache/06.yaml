@@ -32,7 +32,7 @@ endpoints:
         name: text
         description: ''
         required: true
-        example: temporibus
+        example: similique
         type: string
         enumValues: []
         custom: []
@@ -40,13 +40,13 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 45.43981
+        example: 13.958
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      text: temporibus
-      department_id: 45.43981
+      text: similique
+      department_id: 13.958
     fileParameters: []
     responses:
       -

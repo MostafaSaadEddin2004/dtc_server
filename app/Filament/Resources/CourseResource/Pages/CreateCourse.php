@@ -14,8 +14,8 @@ class CreateCourse extends CreateRecord
     protected function handleRecordCreation(array $data): Model
     {
 
-        $dataPost=$data;
-        $dataCourse=$data;
+        $dataPost = $data;
+        $dataCourse = $data;
         $keysToRemoveFromdataPost = [
             "name",
         ];
@@ -35,9 +35,11 @@ class CreateCourse extends CreateRecord
             unset($dataPost[$key]);
         }
 
+        $course = static::getModel()::create($dataCourse);
+        $dataPost['course_id'] = $course->id;
         // // Create the record
-        $createdPost=Post::create($dataPost);
-        return static::getModel()::create($dataCourse);
+        $createdPost = Post::create($dataPost);
+        return $course;
     }
     protected function mutateFormDataBeforeCreate(array $data): array
     {
@@ -52,13 +54,12 @@ class CreateCourse extends CreateRecord
 
         // Check if the file extension is in the list of image extensions
         if (in_array($file_extension, $image_extensions)) {
-            $data['attachment_type']='image';
+            $data['attachment_type'] = 'image';
         } else {
-            $data['attachment_type']='file';
+            $data['attachment_type'] = 'file';
         }
-        $data['user_id']=auth()->id();
-        $data['post_type_id']=2;
+        $data['user_id'] = auth()->id();
+        $data['post_type_id'] = 2;
         return $data;
     }
-
 }

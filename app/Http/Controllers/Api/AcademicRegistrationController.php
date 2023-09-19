@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\StoreAcademicRegisterationRequest;
 use App\Http\Resources\CertificateTypeResource;
 use App\Http\Resources\DepartmentResource;
+use App\Models\AcademicRegistration;
 use App\Models\CertificateType;
 use App\Models\Department;
 
@@ -50,12 +51,21 @@ class AcademicRegistrationController extends Controller
         $data['personal_image'] = $personalImagePath;
         $data['un_image'] = $unImagePath;
 
+        $user = auth()->user();
+
         foreach ($data['department_ids'] as $departmentId) {
             $department = Department::with('departmentMarks')->find($departmentId);
 
-            if ($department->mark_of_this_year <= $data['avg_mark']) {
-                auth()->user()->wishes()->create(['department_id' => $department->id]);
+            //TODO:: check if department is already full
+            if (now()->diffInYears($data['date_of_birth']) > 22) {
+                $user->wishes()->create(['department_id' => $department->id, 'reserved' => true]);
+            } else if ($department->mark_of_this_year <= $data['avg_mark']) {
+                $user->wishes()->create(['department_id' => $department->id]);
+            } else {
+                $user->wishes()->create(['department_id' => $department->id, 'reserved' => true]);
             }
         }
+
+        return AcademicRegistration::create($data);
     }
 }

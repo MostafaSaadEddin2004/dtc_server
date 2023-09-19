@@ -30,15 +30,15 @@ endpoints:
         name: subject
         description: ''
         required: true
-        example: libero
+        example: nostrum
         type: string
         enumValues: []
         custom: []
       mark:
         name: mark
-        description: 'يجب أن تكون قيمة حقل value مساوية أو أكبر من 0. يجب أن تكون قيمة حقل value مساوية أو أصغر من 100.'
+        description: 'Must be at least 0. Must not be greater than 100.'
         required: true
-        example: 15
+        example: 20
         type: number
         enumValues: []
         custom: []
@@ -46,7 +46,7 @@ endpoints:
         name: reason
         description: ''
         required: true
-        example: dignissimos
+        example: sed
         type: string
         enumValues: []
         custom: []
@@ -54,15 +54,15 @@ endpoints:
         name: teacher
         description: ''
         required: true
-        example: consequatur
+        example: amet
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      subject: libero
-      mark: 15
-      reason: dignissimos
-      teacher: consequatur
+      subject: nostrum
+      mark: 20
+      reason: sed
+      teacher: amet
     fileParameters: []
     responses:
       -
