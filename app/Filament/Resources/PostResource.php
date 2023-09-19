@@ -30,7 +30,8 @@ class PostResource extends Resource
                 Textarea::make('content')
                     ->required(),
                 FileUpload::make('attachment')
-                    ->disk('public'),
+                    ->disk('public')
+                    ->nullable(),
             ]);
     }
 
