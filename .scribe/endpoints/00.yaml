@@ -51,7 +51,7 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: similique
+        example: omnis
         type: string
         enumValues: []
         custom: []
@@ -59,12 +59,12 @@ endpoints:
       email: my@example.com
       password: password
       role: student_browser
-      fcm_token: similique
+      fcm_token: omnis
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"2|cRyaMEH9DxmNyymjIYtnFLEp7Vqq3CF9pcnSdfGK07bbf57c"}'
+        content: '{"token":"2|0cSiYvP1BcuLXsvDLaZjMecKEYR4cuce2yZNkBTE2bfed13f"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -108,7 +108,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: expedita
+        example: sint
         type: string
         enumValues: []
         custom: []
@@ -116,7 +116,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: error
+        example: ducimus
         type: string
         enumValues: []
         custom: []
@@ -124,7 +124,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: earum
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -132,7 +132,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: reprehenderit
+        example: pariatur
         type: string
         enumValues: []
         custom: []
@@ -140,7 +140,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: blanditiis
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -148,7 +148,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: vbarton@example.org
+        example: marley50@example.org
         type: string
         enumValues: []
         custom: []
@@ -156,7 +156,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: '#yJjfrffTN`LF'
+        example: 'dYu}qmeN;KZ^#MML'
         type: string
         enumValues: []
         custom: []
@@ -184,26 +184,26 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: nam
+        example: excepturi
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      first_name_en: expedita
-      last_name_en: error
-      first_name_ar: earum
-      last_name_ar: reprehenderit
-      phone: blanditiis
-      email: vbarton@example.org
-      password: '#yJjfrffTN`LF'
+      first_name_en: sint
+      last_name_en: ducimus
+      first_name_ar: et
+      last_name_ar: pariatur
+      phone: ut
+      email: marley50@example.org
+      password: 'dYu}qmeN;KZ^#MML'
       role: student
-      fcm_token: nam
+      fcm_token: excepturi
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"2|39ZSlvgqrjyHjvg4vO86yqRYf68fRAKeOx00tD8rcf113ffa"}'
+        content: '{"token":"2|aY2U74iJYp7u4jNQoNewERTK2cGkpR9MVRolLtdA6c1170b7"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -272,6 +272,92 @@ endpoints:
     custom: []
   -
     httpMethods:
+      - POST
+    uri: api/auth/profile
+    metadata:
+      groupName: Authentication
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: false
+        example: hcarroll@example.org
+        type: string
+        enumValues: []
+        custom: []
+      phone:
+        name: phone
+        description: ''
+        required: false
+        example: null
+        type: string
+        enumValues: []
+        custom: []
+      address:
+        name: address
+        description: ''
+        required: false
+        example: null
+        type: string
+        enumValues: []
+        custom: []
+      current_password:
+        name: current_password
+        description: ''
+        required: false
+        example: null
+        type: string
+        enumValues: []
+        custom: []
+      new_password:
+        name: new_password
+        description: ''
+        required: false
+        example: null
+        type: string
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      email: hcarroll@example.org
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"email":"hcarroll@example.org","first_name_en":"Mrs. Vena Bogan DDS","first_name_ar":"Mr. Jayson Lebsack IV","last_name_en":"Justus Lang","last_name_ar":"Alfreda Swift","phone":"+1-321-651-6257","image":null,"department":null,"section":null}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
       - GET
     uri: api/auth/profile
     metadata:
@@ -297,7 +383,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"email":"stokes.laurianne@example.com","first_name_en":"Mrs. Vena Bogan DDS","first_name_ar":"Mr. Jayson Lebsack IV","last_name_en":"Justus Lang","last_name_ar":"Alfreda Swift","phone":"+1-321-651-6257","image":null,"department":null,"section":null}}'
+        content: '{"data":{"email":"hcarroll@example.org","first_name_en":"Mrs. Vena Bogan DDS","first_name_ar":"Mr. Jayson Lebsack IV","last_name_en":"Justus Lang","last_name_ar":"Alfreda Swift","phone":"+1-321-651-6257","image":null,"department":null,"section":null}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -386,7 +472,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-        example: blanditiis
+        example: veniam
         type: string
         enumValues: []
         custom: []
@@ -394,7 +480,7 @@ endpoints:
         name: specialty
         description: ''
         required: true
-        example: dicta
+        example: cum
         type: string
         enumValues: []
         custom: []
@@ -402,7 +488,7 @@ endpoints:
         name: birth_date
         description: 'Must be a valid date. Must be a date before <code>09/19/2023</code>.'
         required: true
-        example: '2011-07-30'
+        example: '1995-08-28'
         type: string
         enumValues: []
         custom: []
@@ -410,7 +496,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-        example: voluptatem
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -418,7 +504,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-        example: doloremque
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -426,7 +512,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: soluta
+        example: vel
         type: string
         enumValues: []
         custom: []
@@ -434,18 +520,18 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 4
+        example: 12
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: blanditiis
-      specialty: dicta
-      birth_date: '2011-07-30'
-      current_location: voluptatem
-      permanent_location: doloremque
-      nationality: soluta
-      department_id: 4
+      certificate: veniam
+      specialty: cum
+      birth_date: '1995-08-28'
+      current_location: ut
+      permanent_location: et
+      nationality: vel
+      department_id: 12
     fileParameters: []
     responses:
       -

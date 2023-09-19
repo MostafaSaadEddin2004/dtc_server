@@ -101,10 +101,14 @@ class User extends Authenticatable
         return $this->hasOne(Teacher::class);
     }
 
-
     public function wishes(): HasMany
     {
         return $this->hasMany(Wish::class);
+    }
+
+    public function notifications(): HasMany
+    {
+        return $this->hasMany(Notification::class);
     }
 
     public function registeration(): HasOne

@@ -72,7 +72,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: ut
+        example: est
         type: string
         enumValues: []
         custom: []
@@ -80,7 +80,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Illum nulla quos soluta culpa soluta.'
+        example: 'Ipsum officiis at sed molestiae iste provident.'
         type: string
         enumValues: []
         custom: []
@@ -96,19 +96,19 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 16
+        example: 8
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: ut
-      description: 'Illum nulla quos soluta culpa soluta.'
-      note_category_id: 16
+      title: est
+      description: 'Ipsum officiis at sed molestiae iste provident.'
+      note_category_id: 8
     fileParameters: []
     responses:
       -
-        status: 422
-        content: '{"message":"The selected note category id is invalid.","errors":{"note_category_id":["The selected note category id is invalid."]}}'
+        status: 201
+        content: '{"data":{"id":6,"title":"est","description":"Ipsum officiis at sed molestiae iste provident.","category":"Dr. Kellie Orn"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -216,7 +216,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: harum
+        example: nulla
         type: string
         enumValues: []
         custom: []
@@ -224,7 +224,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Hic ut tenetur laudantium aut.'
+        example: 'Voluptas occaecati amet quis earum.'
         type: string
         enumValues: []
         custom: []
@@ -245,13 +245,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: harum
-      description: 'Hic ut tenetur laudantium aut.'
+      title: nulla
+      description: 'Voluptas occaecati amet quis earum.'
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"harum","description":"Hic ut tenetur laudantium aut.","category":"Dr. Mia Rogahn III"}}'
+        content: '{"data":{"id":1,"title":"nulla","description":"Voluptas occaecati amet quis earum.","category":"Dr. Mia Rogahn III"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
