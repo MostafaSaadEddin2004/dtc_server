@@ -32,7 +32,7 @@ endpoints:
         name: subject
         description: ''
         required: true
-        example: sed
+        example: dolorum
         type: string
         enumValues: []
         custom: []
@@ -40,7 +40,7 @@ endpoints:
         name: mark
         description: 'Must be at least 0. Must not be greater than 100.'
         required: true
-        example: 19
+        example: 5
         type: number
         enumValues: []
         custom: []
@@ -48,7 +48,7 @@ endpoints:
         name: reason
         description: ''
         required: true
-        example: et
+        example: rerum
         type: string
         enumValues: []
         custom: []
@@ -56,15 +56,15 @@ endpoints:
         name: teacher
         description: ''
         required: true
-        example: qui
+        example: magni
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      subject: sed
-      mark: 19
-      reason: et
-      teacher: qui
+      subject: dolorum
+      mark: 5
+      reason: rerum
+      teacher: magni
     fileParameters: []
     responses:
       -

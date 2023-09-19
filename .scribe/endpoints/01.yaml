@@ -72,7 +72,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: tempora
+        example: aut
         type: string
         enumValues: []
         custom: []
@@ -80,7 +80,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Doloribus consequuntur temporibus et tempora.'
+        example: 'Et qui repudiandae molestiae rem est et ut rerum.'
         type: string
         enumValues: []
         custom: []
@@ -96,19 +96,19 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 6
+        example: 3
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: tempora
-      description: 'Doloribus consequuntur temporibus et tempora.'
-      note_category_id: 6
+      title: aut
+      description: 'Et qui repudiandae molestiae rem est et ut rerum.'
+      note_category_id: 3
     fileParameters: []
     responses:
       -
         status: 201
-        content: '{"data":{"id":6,"title":"tempora","description":"Doloribus consequuntur temporibus et tempora.","category":"Cecilia Luettgen"}}'
+        content: '{"data":{"id":6,"title":"aut","description":"Et qui repudiandae molestiae rem est et ut rerum.","category":"Holden Ebert"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -216,7 +216,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: consequatur
+        example: rerum
         type: string
         enumValues: []
         custom: []
@@ -224,7 +224,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Maxime eum error aspernatur molestiae quo iure.'
+        example: 'Impedit pariatur inventore vitae impedit amet laudantium.'
         type: string
         enumValues: []
         custom: []
@@ -245,13 +245,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: consequatur
-      description: 'Maxime eum error aspernatur molestiae quo iure.'
+      title: rerum
+      description: 'Impedit pariatur inventore vitae impedit amet laudantium.'
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"consequatur","description":"Maxime eum error aspernatur molestiae quo iure.","category":"Cecilia Luettgen"}}'
+        content: '{"data":{"id":1,"title":"rerum","description":"Impedit pariatur inventore vitae impedit amet laudantium.","category":"Cecilia Luettgen"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

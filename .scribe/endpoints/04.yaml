@@ -534,19 +534,11 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      full_name:
-        name: full_name
-        description: ''
-        required: true
-        example: atque
-        type: string
-        enumValues: []
-        custom: []
       father_name:
         name: father_name
         description: ''
         required: true
-        example: fugiat
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -554,7 +546,7 @@ endpoints:
         name: mother_name
         description: ''
         required: true
-        example: illum
+        example: asperiores
         type: string
         enumValues: []
         custom: []
@@ -562,7 +554,7 @@ endpoints:
         name: date_of_birth
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-19T13:55:46'
+        example: '2023-09-19T14:08:37'
         type: string
         enumValues: []
         custom: []
@@ -570,20 +562,12 @@ endpoints:
         name: place_of_birth
         description: ''
         required: true
-        example: veritatis
+        example: cupiditate
         type: string
         enumValues: []
         custom: []
       military:
         name: military
-        description: ''
-        required: true
-        example: earum
-        type: string
-        enumValues: []
-        custom: []
-      full_name_en:
-        name: full_name_en
         description: ''
         required: true
         example: aut
@@ -594,7 +578,7 @@ endpoints:
         name: current_address
         description: ''
         required: true
-        example: nostrum
+        example: veritatis
         type: string
         enumValues: []
         custom: []
@@ -602,7 +586,7 @@ endpoints:
         name: address
         description: ''
         required: true
-        example: et
+        example: quod
         type: string
         enumValues: []
         custom: []
@@ -610,7 +594,7 @@ endpoints:
         name: name_of_parent
         description: ''
         required: true
-        example: velit
+        example: non
         type: string
         enumValues: []
         custom: []
@@ -618,7 +602,7 @@ endpoints:
         name: job_of_parent
         description: ''
         required: true
-        example: quia
+        example: assumenda
         type: string
         enumValues: []
         custom: []
@@ -626,7 +610,7 @@ endpoints:
         name: phone_of_parent
         description: ''
         required: true
-        example: fugit
+        example: esse
         type: string
         enumValues: []
         custom: []
@@ -634,15 +618,7 @@ endpoints:
         name: phone_of_mother
         description: ''
         required: true
-        example: incidunt
-        type: string
-        enumValues: []
-        custom: []
-      telephone_fix:
-        name: telephone_fix
-        description: ''
-        required: true
-        example: maxime
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -650,7 +626,7 @@ endpoints:
         name: avg_mark
         description: ''
         required: true
-        example: 6
+        example: 9
         type: integer
         enumValues: []
         custom: []
@@ -658,7 +634,7 @@ endpoints:
         name: certificate_year
         description: ''
         required: true
-        example: et
+        example: perspiciatis
         type: string
         enumValues: []
         custom: []
@@ -703,22 +679,19 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      full_name: atque
-      father_name: fugiat
-      mother_name: illum
-      date_of_birth: '2023-09-19T13:55:46'
-      place_of_birth: veritatis
-      military: earum
-      full_name_en: aut
-      current_address: nostrum
-      address: et
-      name_of_parent: velit
-      job_of_parent: quia
-      phone_of_parent: fugit
-      phone_of_mother: incidunt
-      telephone_fix: maxime
-      avg_mark: 6
-      certificate_year: et
+      father_name: et
+      mother_name: asperiores
+      date_of_birth: '2023-09-19T14:08:37'
+      place_of_birth: cupiditate
+      military: aut
+      current_address: veritatis
+      address: quod
+      name_of_parent: non
+      job_of_parent: assumenda
+      phone_of_parent: esse
+      phone_of_mother: ut
+      avg_mark: 9
+      certificate_year: perspiciatis
       department_ids: []
     fileParameters:
       id_image: null
