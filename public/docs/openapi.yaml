@@ -24,38 +24,38 @@ paths:
                   data:
                     -
                       id: 1
-                      name: 'Dallas Blanda'
+                      name: 'Marc Senger'
                     -
                       id: 2
-                      name: 'Pattie Herman'
+                      name: 'Allen Feest'
                     -
                       id: 3
-                      name: 'Mr. Jason Boehm'
+                      name: 'Marty Murphy'
                     -
                       id: 4
-                      name: 'Dr. Guiseppe Gutmann IV'
+                      name: 'Ciara Russel'
                     -
                       id: 5
-                      name: 'Morton Botsford'
+                      name: 'Dr. Elsa Gerhold'
                 properties:
                   data:
                     type: array
                     example:
                       -
                         id: 1
-                        name: 'Dallas Blanda'
+                        name: 'Marc Senger'
                       -
                         id: 2
-                        name: 'Pattie Herman'
+                        name: 'Allen Feest'
                       -
                         id: 3
-                        name: 'Mr. Jason Boehm'
+                        name: 'Marty Murphy'
                       -
                         id: 4
-                        name: 'Dr. Guiseppe Gutmann IV'
+                        name: 'Ciara Russel'
                       -
                         id: 5
-                        name: 'Morton Botsford'
+                        name: 'Dr. Elsa Gerhold'
                     items:
                       type: object
                       properties:
@@ -64,7 +64,7 @@ paths:
                           example: 1
                         name:
                           type: string
-                          example: 'Dallas Blanda'
+                          example: 'Marc Senger'
       tags:
         - AcademicRegistration
       security: []
@@ -848,42 +848,153 @@ paths:
             summary: 'When the value is present'
             value: 20
   /api/academic-registration:
-    get:
+    post:
       summary: ''
-      operationId: getApiAcademicRegistration
+      operationId: postApiAcademicRegistration
       description: ''
       parameters: []
       responses:
-        200:
+        422:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  data: []
+                  message: 'The department ids field is required.'
+                  errors:
+                    department_ids:
+                      - 'The department ids field is required.'
                 properties:
-                  data:
-                    type: array
-                    example: []
+                  message:
+                    type: string
+                    example: 'The department ids field is required.'
+                  errors:
+                    type: object
+                    properties:
+                      department_ids:
+                        type: array
+                        example:
+                          - 'The department ids field is required.'
+                        items:
+                          type: string
       tags:
         - AcademicRegistration
-      security: []
-    parameters:
-      -
-        in: path
-        name: certificateType_id
-        description: 'Optional parameter. The ID of the certificateType.'
+      requestBody:
         required: true
-        schema:
-          type: integer
-        examples:
-          omitted:
-            summary: 'When the value is omitted'
-            value: ''
-          present:
-            summary: 'When the value is present'
-            value: 20
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                full_name:
+                  type: string
+                  description: ''
+                  example: facilis
+                father_name:
+                  type: string
+                  description: ''
+                  example: qui
+                mother_name:
+                  type: string
+                  description: ''
+                  example: velit
+                date_of_birth:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2023-09-19T11:47:09'
+                place_of_birth:
+                  type: string
+                  description: ''
+                  example: dolores
+                military:
+                  type: string
+                  description: ''
+                  example: quas
+                full_name_en:
+                  type: string
+                  description: ''
+                  example: quia
+                current_address:
+                  type: string
+                  description: ''
+                  example: est
+                address:
+                  type: string
+                  description: ''
+                  example: omnis
+                name_of_parent:
+                  type: string
+                  description: ''
+                  example: odio
+                job_of_parent:
+                  type: string
+                  description: ''
+                  example: ut
+                phone_of_parent:
+                  type: string
+                  description: ''
+                  example: est
+                phone_of_mother:
+                  type: string
+                  description: ''
+                  example: voluptas
+                telephone_fix:
+                  type: string
+                  description: ''
+                  example: et
+                avg_mark:
+                  type: integer
+                  description: ''
+                  example: 12
+                certificate_year:
+                  type: string
+                  description: ''
+                  example: iure
+                id_image:
+                  type: string
+                  format: binary
+                  description: 'Must be an image.'
+                certificate_image:
+                  type: string
+                  format: binary
+                  description: 'Must be an image.'
+                personal_image:
+                  type: string
+                  format: binary
+                  description: 'Must be an image.'
+                un_image:
+                  type: string
+                  format: binary
+                  description: 'Must be an image.'
+                department_ids:
+                  type: object
+                  description: ''
+                  example: []
+                  properties: {  }
+              required:
+                - full_name
+                - father_name
+                - mother_name
+                - date_of_birth
+                - place_of_birth
+                - military
+                - full_name_en
+                - current_address
+                - address
+                - name_of_parent
+                - job_of_parent
+                - phone_of_parent
+                - phone_of_mother
+                - telephone_fix
+                - avg_mark
+                - certificate_year
+                - id_image
+                - certificate_image
+                - personal_image
+                - un_image
+                - department_ids
+      security: []
   /api/auth:
     post:
       summary: ''
@@ -898,11 +1009,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 2|ar6quLxST57pfDMeTFbz6HoHFzi8iI7e9vEmOC27df81ab8f
+                  token: 2|cRyaMEH9DxmNyymjIYtnFLEp7Vqq3CF9pcnSdfGK07bbf57c
                 properties:
                   token:
                     type: string
-                    example: 2|ar6quLxST57pfDMeTFbz6HoHFzi8iI7e9vEmOC27df81ab8f
+                    example: 2|cRyaMEH9DxmNyymjIYtnFLEp7Vqq3CF9pcnSdfGK07bbf57c
       tags:
         - Authentication
       requestBody:
@@ -927,7 +1038,7 @@ paths:
                 fcm_token:
                   type: string
                   description: ''
-                  example: ducimus
+                  example: similique
               required:
                 - fcm_token
   /api/auth/register:
@@ -944,11 +1055,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 2|tbC9Eo9X8fvUsEoI6FbO6Bm7ab36cMLlOsxfCIgy755115bb
+                  token: 2|39ZSlvgqrjyHjvg4vO86yqRYf68fRAKeOx00tD8rcf113ffa
                 properties:
                   token:
                     type: string
-                    example: 2|tbC9Eo9X8fvUsEoI6FbO6Bm7ab36cMLlOsxfCIgy755115bb
+                    example: 2|39ZSlvgqrjyHjvg4vO86yqRYf68fRAKeOx00tD8rcf113ffa
       tags:
         - Authentication
       requestBody:
@@ -961,31 +1072,31 @@ paths:
                 first_name_en:
                   type: string
                   description: ''
-                  example: et
+                  example: expedita
                 last_name_en:
                   type: string
                   description: ''
-                  example: in
+                  example: error
                 first_name_ar:
                   type: string
                   description: ''
-                  example: reprehenderit
+                  example: earum
                 last_name_ar:
                   type: string
                   description: ''
-                  example: cupiditate
+                  example: reprehenderit
                 phone:
                   type: string
                   description: ''
-                  example: nisi
+                  example: blanditiis
                 email:
                   type: string
-                  description: 'يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية.'
-                  example: rita34@example.org
+                  description: 'Must be a valid email address.'
+                  example: vbarton@example.org
                 password:
                   type: string
                   description: ''
-                  example: 'v0^v?6V<B[viiz2'
+                  example: '#yJjfrffTN`LF'
                 role:
                   type: string
                   description: ''
@@ -998,11 +1109,11 @@ paths:
                 image:
                   type: string
                   format: binary
-                  description: 'يجب أن يكون حقل value صورةً.'
+                  description: 'Must be an image.'
                 fcm_token:
                   type: string
                   description: ''
-                  example: at
+                  example: nam
               required:
                 - first_name_en
                 - last_name_en
@@ -1051,12 +1162,12 @@ paths:
                 type: object
                 example:
                   data:
-                    email: samanta52@example.org
-                    first_name_en: 'Mr. Lonnie Schneider I'
-                    first_name_ar: 'Triston McKenzie IV'
-                    last_name_en: 'Easter Schultz'
-                    last_name_ar: 'Jarred Reynolds'
-                    phone: 1-205-535-5950
+                    email: stokes.laurianne@example.com
+                    first_name_en: 'Mrs. Vena Bogan DDS'
+                    first_name_ar: 'Mr. Jayson Lebsack IV'
+                    last_name_en: 'Justus Lang'
+                    last_name_ar: 'Alfreda Swift'
+                    phone: +1-321-651-6257
                     image: null
                     department: null
                     section: null
@@ -1066,22 +1177,22 @@ paths:
                     properties:
                       email:
                         type: string
-                        example: samanta52@example.org
+                        example: stokes.laurianne@example.com
                       first_name_en:
                         type: string
-                        example: 'Mr. Lonnie Schneider I'
+                        example: 'Mrs. Vena Bogan DDS'
                       first_name_ar:
                         type: string
-                        example: 'Triston McKenzie IV'
+                        example: 'Mr. Jayson Lebsack IV'
                       last_name_en:
                         type: string
-                        example: 'Easter Schultz'
+                        example: 'Justus Lang'
                       last_name_ar:
                         type: string
-                        example: 'Jarred Reynolds'
+                        example: 'Alfreda Swift'
                       phone:
                         type: string
-                        example: 1-205-535-5950
+                        example: +1-321-651-6257
                       image:
                         type: string
                         example: null
@@ -1107,11 +1218,11 @@ paths:
               schema:
                 type: object
                 example:
-                  role: teacher
+                  role: student_browser
                 properties:
                   role:
                     type: string
-                    example: teacher
+                    example: student_browser
       tags:
         - Authentication
   /api/auth/teacher:
@@ -1159,31 +1270,31 @@ paths:
                 certificate:
                   type: string
                   description: ''
-                  example: ipsam
+                  example: blanditiis
                 specialty:
                   type: string
                   description: ''
-                  example: quia
+                  example: dicta
                 birth_date:
                   type: string
-                  description: 'حقل value ليس تاريخًا صحيحًا. يجب على حقل value أن يكون تاريخًا سابقًا للتاريخ <code>09/19/2023</code>.'
-                  example: '2015-09-20'
+                  description: 'Must be a valid date. Must be a date before <code>09/19/2023</code>.'
+                  example: '2011-07-30'
                 current_location:
                   type: string
                   description: ''
-                  example: ullam
+                  example: voluptatem
                 permanent_location:
                   type: string
                   description: ''
-                  example: quia
+                  example: doloremque
                 nationality:
                   type: string
                   description: ''
-                  example: et
+                  example: soluta
                 department_id:
                   type: integer
                   description: ''
-                  example: 10
+                  example: 4
               required:
                 - certificate
                 - specialty
@@ -1304,31 +1415,31 @@ paths:
                 is_male:
                   type: boolean
                   description: ''
-                  example: true
+                  example: false
                 social_status:
                   type: string
                   description: ''
-                  example: non
+                  example: dicta
                 nationality:
                   type: string
                   description: ''
-                  example: facilis
+                  example: molestiae
                 address:
                   type: string
                   description: ''
-                  example: dolores
+                  example: consequuntur
                 date_of_birth:
                   type: string
-                  description: 'حقل value ليس تاريخًا صحيحًا.'
-                  example: '2023-09-19T10:06:46'
+                  description: 'Must be a valid date.'
+                  example: '2023-09-19T11:47:09'
                 student_type:
                   type: string
                   description: ''
-                  example: ducimus
+                  example: dolorum
                 work_type:
                   type: string
                   description: ''
-                  example: corrupti
+                  example: magnam
                 is_morning:
                   type: boolean
                   description: ''
@@ -1398,7 +1509,7 @@ paths:
         in: path
         name: sectionId
         description: ''
-        example: ad
+        example: sed
         required: true
         schema:
           type: string
@@ -1504,19 +1615,19 @@ paths:
                 subject:
                   type: string
                   description: ''
-                  example: libero
+                  example: nostrum
                 mark:
                   type: number
-                  description: 'يجب أن تكون قيمة حقل value مساوية أو أكبر من 0. يجب أن تكون قيمة حقل value مساوية أو أصغر من 100.'
-                  example: 15
+                  description: 'Must be at least 0. Must not be greater than 100.'
+                  example: 20
                 reason:
                   type: string
                   description: ''
-                  example: dignissimos
+                  example: sed
                 teacher:
                   type: string
                   description: ''
-                  example: consequatur
+                  example: amet
               required:
                 - subject
                 - mark
@@ -1633,11 +1744,11 @@ paths:
                 text:
                   type: string
                   description: ''
-                  example: temporibus
+                  example: similique
                 department_id:
                   type: number
                   description: ''
-                  example: 45.43981
+                  example: 13.958
               required:
                 - text
                 - department_id
@@ -1669,34 +1780,30 @@ paths:
       description: ''
       parameters: []
       responses:
-        201:
+        422:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  data:
-                    id: 6
-                    title: ab
-                    description: 'Labore placeat impedit quae at.'
-                    category: 'Mr. Bennie Haley IV'
+                  message: 'The selected note category id is invalid.'
+                  errors:
+                    note_category_id:
+                      - 'The selected note category id is invalid.'
                 properties:
-                  data:
+                  message:
+                    type: string
+                    example: 'The selected note category id is invalid.'
+                  errors:
                     type: object
                     properties:
-                      id:
-                        type: integer
-                        example: 6
-                      title:
-                        type: string
-                        example: ab
-                      description:
-                        type: string
-                        example: 'Labore placeat impedit quae at.'
-                      category:
-                        type: string
-                        example: 'Mr. Bennie Haley IV'
+                      note_category_id:
+                        type: array
+                        example:
+                          - 'The selected note category id is invalid.'
+                        items:
+                          type: string
       tags:
         - Note
       requestBody:
@@ -1709,11 +1816,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: ab
+                  example: ut
                 description:
                   type: string
                   description: ''
-                  example: 'Labore placeat impedit quae at.'
+                  example: 'Illum nulla quos soluta culpa soluta.'
                 category_name:
                   type: string
                   description: ''
@@ -1721,7 +1828,7 @@ paths:
                 note_category_id:
                   type: integer
                   description: ''
-                  example: 1
+                  example: 16
               required:
                 - title
                 - description
@@ -1741,9 +1848,9 @@ paths:
                 example:
                   data:
                     id: 1
-                    title: 'Voluptas deleniti ratione vitae.'
-                    description: 'Sint inventore omnis ea ut doloremque quia rerum. Quis unde delectus voluptatem maiores iure.'
-                    category: 'Margaretta Monahan MD'
+                    title: 'Et vero sit voluptas.'
+                    description: 'Omnis labore eum blanditiis. Reprehenderit occaecati soluta repudiandae error in magnam. Excepturi modi non dolor ipsam occaecati neque.'
+                    category: 'Dr. Mia Rogahn III'
                 properties:
                   data:
                     type: object
@@ -1753,13 +1860,13 @@ paths:
                         example: 1
                       title:
                         type: string
-                        example: 'Voluptas deleniti ratione vitae.'
+                        example: 'Et vero sit voluptas.'
                       description:
                         type: string
-                        example: 'Sint inventore omnis ea ut doloremque quia rerum. Quis unde delectus voluptatem maiores iure.'
+                        example: 'Omnis labore eum blanditiis. Reprehenderit occaecati soluta repudiandae error in magnam. Excepturi modi non dolor ipsam occaecati neque.'
                       category:
                         type: string
-                        example: 'Margaretta Monahan MD'
+                        example: 'Dr. Mia Rogahn III'
       tags:
         - Note
     put:
@@ -1777,9 +1884,9 @@ paths:
                 example:
                   data:
                     id: 1
-                    title: aliquam
-                    description: 'A ratione possimus dignissimos aut impedit esse voluptatibus.'
-                    category: 'Margaretta Monahan MD'
+                    title: harum
+                    description: 'Hic ut tenetur laudantium aut.'
+                    category: 'Dr. Mia Rogahn III'
                 properties:
                   data:
                     type: object
@@ -1789,13 +1896,13 @@ paths:
                         example: 1
                       title:
                         type: string
-                        example: aliquam
+                        example: harum
                       description:
                         type: string
-                        example: 'A ratione possimus dignissimos aut impedit esse voluptatibus.'
+                        example: 'Hic ut tenetur laudantium aut.'
                       category:
                         type: string
-                        example: 'Margaretta Monahan MD'
+                        example: 'Dr. Mia Rogahn III'
       tags:
         - Note
       requestBody:
@@ -1808,11 +1915,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: aliquam
+                  example: harum
                 description:
                   type: string
                   description: ''
-                  example: 'A ratione possimus dignissimos aut impedit esse voluptatibus.'
+                  example: 'Hic ut tenetur laudantium aut.'
                 category_name:
                   type: string
                   description: ''
@@ -1871,54 +1978,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        422:
+        401:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: 'user id غير موجود. (and 3 more errors)'
-                  errors:
-                    user_id:
-                      - 'user id غير موجود.'
-                    department_id:
-                      - 'department id غير موجود.'
-                    course_id:
-                      - 'course id غير موجود.'
-                    post_type_id:
-                      - 'post type id غير موجود.'
+                  message: unauthorized
                 properties:
                   message:
                     type: string
-                    example: 'user id غير موجود. (and 3 more errors)'
-                  errors:
-                    type: object
-                    properties:
-                      user_id:
-                        type: array
-                        example:
-                          - 'user id غير موجود.'
-                        items:
-                          type: string
-                      department_id:
-                        type: array
-                        example:
-                          - 'department id غير موجود.'
-                        items:
-                          type: string
-                      course_id:
-                        type: array
-                        example:
-                          - 'course id غير موجود.'
-                        items:
-                          type: string
-                      post_type_id:
-                        type: array
-                        example:
-                          - 'post type id غير موجود.'
-                        items:
-                          type: string
+                    example: unauthorized
       tags:
         - Post
       requestBody:
@@ -1931,31 +2002,31 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: tempora
+                  example: quibusdam
                 attachment:
                   type: string
                   description: ''
-                  example: veniam
+                  example: maxime
                 attachment_type:
                   type: string
                   description: ''
-                  example: dolorum
+                  example: perferendis
                 user_id:
                   type: number
                   description: ''
-                  example: 1833.72986552
+                  example: 182840.3415207
                 department_id:
                   type: number
                   description: ''
-                  example: 10749618.424
+                  example: 31323.8590001
                 course_id:
                   type: number
                   description: ''
-                  example: 280599.20012351
+                  example: 555779.6216
                 post_type_id:
                   type: number
                   description: ''
-                  example: 2948.0
+                  example: 21402095.552846
               required:
                 - content
                 - attachment
@@ -1973,12 +2044,12 @@ paths:
           in: query
           name: type
           description: 'the type of the post (public, department ,course).'
-          example: voluptate
+          example: maiores
           required: false
           schema:
             type: string
             description: 'the type of the post (public, department ,course).'
-            example: voluptate
+            example: maiores
       responses:
         200:
           description: ''
@@ -1989,333 +2060,381 @@ paths:
                 example:
                   data:
                     -
-                      id: 16
-                      content: 'Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.'
-                      attachment: blanditiis
-                      department_name: 'Prof. Troy Carroll'
-                      course_name: 'Soledad Tremblay'
+                      id: 1
+                      content: 'Officia at enim odio ex. Labore aut adipisci ipsam qui fugiat enim saepe sapiente. Voluptatibus voluptatem enim ipsam id.'
+                      attachment: sed
+                      department_name: 'Estefania Watsica'
+                      course_name: "Tristin O'Reilly"
                       attachment_type: file
-                      likes: 1
-                      liked_by_me: true
-                      saves: 1
-                      saved_by_me: true
-                      created_at: 'منذ 38 دقيقة'
+                      likes: 0
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '20 minutes ago'
                     -
                       id: 2
-                      content: 'Soluta eius vel est qui in et tenetur. Perferendis repellendus porro incidunt aliquam cum. Dolores et animi possimus aut ipsum.'
-                      attachment: nihil
-                      department_name: 'Abdullah Goldner'
-                      course_name: 'Mr. Sheldon Morar'
+                      content: 'Unde quae et quas consequatur rerum ipsum harum earum. Iste dolorem optio at ratione. Qui sed et laboriosam aut accusamus provident et distinctio.'
+                      attachment: asperiores
+                      department_name: 'Anika Leffler'
+                      course_name: 'Mr. Antonio Kiehn'
                       attachment_type: file
                       likes: 0
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
                     -
                       id: 3
-                      content: 'Illum non ut perferendis voluptas repellat enim ipsum. Quam molestiae totam est doloremque molestiae inventore sit aut. Provident repellat amet aperiam ad corrupti amet.'
-                      attachment: consequatur
-                      department_name: 'Saige Boyer'
-                      course_name: 'Jeromy Fahey'
-                      attachment_type: image
-                      likes: 0
-                      liked_by_me: false
-                      saves: 0
-                      saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
-                    -
-                      id: 4
-                      content: 'Sed molestiae ea temporibus non recusandae. Beatae natus maxime doloremque dolor neque veritatis.'
-                      attachment: consequatur
-                      department_name: 'Toby McDermott'
-                      course_name: 'Zane Blanda'
+                      content: 'Ea inventore sed perferendis consectetur. Vitae aut modi ut est rem eos. Suscipit tempora delectus sit doloribus.'
+                      attachment: ut
+                      department_name: 'Georgette Ritchie'
+                      course_name: 'Lauryn Mayert'
                       attachment_type: file
                       likes: 0
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
                     -
                       id: 5
-                      content: 'Provident omnis qui sed qui aliquid totam magnam. Quo eos beatae accusamus minus est. Voluptatem provident omnis aut temporibus. Quibusdam aut est a expedita.'
-                      attachment: est
-                      department_name: 'Mr. Rickey Beier I'
-                      course_name: 'Ms. Rebeca Schuster'
-                      attachment_type: image
+                      content: 'Id reprehenderit id quod facilis est consequatur cum. Dolor expedita ut sint excepturi possimus voluptatem quibusdam. Voluptatem excepturi omnis sed qui dignissimos. Voluptas nostrum sit soluta quia.'
+                      attachment: laborum
+                      department_name: 'Mr. Wayne Roberts'
+                      course_name: "Mr. Johan O'Kon"
+                      attachment_type: file
                       likes: 0
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
+                    -
+                      id: 6
+                      content: 'Dolorum vitae omnis ea facere perferendis. Aut dolor laudantium fugiat minus asperiores alias nisi. Quae id quia dignissimos laborum aperiam.'
+                      attachment: eum
+                      department_name: 'Dr. Jesse Huel V'
+                      course_name: 'Kayden Powlowski'
+                      attachment_type: file
+                      likes: 1
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '20 minutes ago'
                     -
                       id: 7
-                      content: 'Officia aut blanditiis tempora ipsa animi aut. Quasi voluptatem sed repudiandae. Sed fugit aliquid ab voluptas commodi dolorem. Sequi voluptatum eum qui adipisci cupiditate recusandae.'
-                      attachment: impedit
-                      department_name: 'Donavon Koelpin'
-                      course_name: 'Dr. Elsie Fritsch'
-                      attachment_type: image
+                      content: 'Consequatur dolor odio fuga qui cumque laborum nobis. Ut illo necessitatibus tempore.'
+                      attachment: pariatur
+                      department_name: 'Miss Lelah Zulauf'
+                      course_name: 'Charley Hickle'
+                      attachment_type: file
                       likes: 1
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
                     -
                       id: 8
-                      content: 'Repellat quos reiciendis maxime quaerat nisi sed accusamus. Iure laboriosam similique illo repudiandae iste sint ratione. Consectetur nobis in et ea recusandae repellat iste.'
-                      attachment: quaerat
-                      department_name: 'Adrianna Ward'
-                      course_name: 'Mr. Leon Welch I'
-                      attachment_type: file
+                      content: 'Animi quidem dolores cumque vitae ut ut consectetur. Quo nihil omnis nostrum architecto.'
+                      attachment: voluptatem
+                      department_name: 'Kaya Goodwin'
+                      course_name: 'Vern Schinner'
+                      attachment_type: image
                       likes: 1
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
                     -
                       id: 9
-                      content: 'Omnis cumque ut dolor velit sapiente. Aut sint provident ullam quia ex excepturi voluptatem. Et doloribus qui qui voluptas nobis non. Omnis sed modi tempore quaerat quidem.'
-                      attachment: et
-                      department_name: 'Prof. Theron Mitchell'
-                      course_name: 'Dr. Mustafa Wolf'
+                      content: 'Consequatur est odio quod deleniti ea aperiam. Quae ratione tempora cupiditate quae. Vero debitis est ad alias. Quia itaque inventore nam est sint. Voluptatum ad temporibus eaque sit.'
+                      attachment: libero
+                      department_name: 'Glenda Hane'
+                      course_name: 'Hillard Hand'
                       attachment_type: file
                       likes: 1
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
                     -
                       id: 10
-                      content: 'Laudantium minima natus dignissimos earum est. Reiciendis omnis provident explicabo dolor. Quod laboriosam est est totam ut. Voluptatum voluptatem temporibus qui quidem rem quo atque voluptate.'
-                      attachment: officia
-                      department_name: 'Dr. Misael Effertz DDS'
-                      course_name: 'Dr. London Gutmann MD'
+                      content: 'Nihil nulla enim est omnis voluptatem enim. Blanditiis aut hic dolores quisquam ut dolorum libero. Praesentium sit aut velit pariatur.'
+                      attachment: in
+                      department_name: 'Dr. Alanis Weber'
+                      course_name: 'Ahmed Collier'
                       attachment_type: image
                       likes: 1
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
+                    -
+                      id: 11
+                      content: 'Debitis vel quisquam aut quia voluptatibus iste iste. Molestiae doloribus consequatur sapiente non qui ut. Ut autem temporibus alias eos eum dolorem.'
+                      attachment: voluptatem
+                      department_name: 'Deonte Bosco'
+                      course_name: 'Mr. Travis Eichmann PhD'
+                      attachment_type: image
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '20 minutes ago'
                     -
                       id: 12
-                      content: 'Dolorem eum quo sunt voluptatum est amet. Qui aut officiis porro mollitia labore possimus eum. Ipsum perspiciatis qui velit tempora consequatur.'
-                      attachment: nostrum
-                      department_name: 'Branson Bosco'
-                      course_name: 'Keely Schneider MD'
+                      content: 'Asperiores reprehenderit blanditiis magni omnis sint alias est corrupti. Incidunt saepe nostrum asperiores reprehenderit molestiae. Ipsa delectus est officiis odio.'
+                      attachment: sed
+                      department_name: 'Gennaro Zboncak'
+                      course_name: 'Mr. Tomas Howe'
                       attachment_type: image
                       likes: 0
                       liked_by_me: false
                       saves: 1
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
                     -
                       id: 13
-                      content: 'Doloremque consequatur laboriosam qui qui totam. Officia aperiam aut minima quia eaque tempore quam. Et vel inventore quis vel rem quisquam. Atque dolor occaecati aut voluptatibus.'
-                      attachment: vero
-                      department_name: 'Gregory Davis'
-                      course_name: 'Ahmad Harvey'
-                      attachment_type: image
+                      content: 'Aut delectus laboriosam veritatis dolorem aperiam vel. Adipisci labore qui aut quia ea cupiditate nisi. Assumenda harum qui illo quisquam illo.'
+                      attachment: minima
+                      department_name: 'Alexandrine Marks'
+                      course_name: 'Curtis Stiedemann'
+                      attachment_type: file
                       likes: 0
                       liked_by_me: false
                       saves: 1
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
                     -
                       id: 14
-                      content: 'Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.'
-                      attachment: omnis
-                      department_name: 'Dr. Darron Bruen DDS'
-                      course_name: 'Mr. Noel Ledner'
-                      attachment_type: image
+                      content: 'Corrupti amet assumenda excepturi. Commodi qui porro in sed. Omnis earum inventore ea voluptatem occaecati itaque. Doloremque sit suscipit repellat minima earum repellat aliquid.'
+                      attachment: quod
+                      department_name: 'Velma Gusikowski'
+                      course_name: 'Kyleigh Fay II'
+                      attachment_type: file
                       likes: 0
                       liked_by_me: false
                       saves: 1
                       saved_by_me: false
-                      created_at: 'منذ 39 دقيقة'
+                      created_at: '20 minutes ago'
+                    -
+                      id: 15
+                      content: 'Fuga vel dolor temporibus veniam. Ea voluptatibus unde nihil a tenetur. Sit rerum ea cupiditate id est omnis. Qui deserunt iure ab ratione.'
+                      attachment: eius
+                      department_name: 'Dr. Imani Hansen'
+                      course_name: 'Larissa Yost'
+                      attachment_type: file
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '20 minutes ago'
                 properties:
                   data:
                     type: array
                     example:
                       -
-                        id: 16
-                        content: 'Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.'
-                        attachment: blanditiis
-                        department_name: 'Prof. Troy Carroll'
-                        course_name: 'Soledad Tremblay'
+                        id: 1
+                        content: 'Officia at enim odio ex. Labore aut adipisci ipsam qui fugiat enim saepe sapiente. Voluptatibus voluptatem enim ipsam id.'
+                        attachment: sed
+                        department_name: 'Estefania Watsica'
+                        course_name: "Tristin O'Reilly"
                         attachment_type: file
-                        likes: 1
-                        liked_by_me: true
-                        saves: 1
-                        saved_by_me: true
-                        created_at: 'منذ 38 دقيقة'
+                        likes: 0
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '20 minutes ago'
                       -
                         id: 2
-                        content: 'Soluta eius vel est qui in et tenetur. Perferendis repellendus porro incidunt aliquam cum. Dolores et animi possimus aut ipsum.'
-                        attachment: nihil
-                        department_name: 'Abdullah Goldner'
-                        course_name: 'Mr. Sheldon Morar'
+                        content: 'Unde quae et quas consequatur rerum ipsum harum earum. Iste dolorem optio at ratione. Qui sed et laboriosam aut accusamus provident et distinctio.'
+                        attachment: asperiores
+                        department_name: 'Anika Leffler'
+                        course_name: 'Mr. Antonio Kiehn'
                         attachment_type: file
                         likes: 0
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
                       -
                         id: 3
-                        content: 'Illum non ut perferendis voluptas repellat enim ipsum. Quam molestiae totam est doloremque molestiae inventore sit aut. Provident repellat amet aperiam ad corrupti amet.'
-                        attachment: consequatur
-                        department_name: 'Saige Boyer'
-                        course_name: 'Jeromy Fahey'
-                        attachment_type: image
-                        likes: 0
-                        liked_by_me: false
-                        saves: 0
-                        saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
-                      -
-                        id: 4
-                        content: 'Sed molestiae ea temporibus non recusandae. Beatae natus maxime doloremque dolor neque veritatis.'
-                        attachment: consequatur
-                        department_name: 'Toby McDermott'
-                        course_name: 'Zane Blanda'
+                        content: 'Ea inventore sed perferendis consectetur. Vitae aut modi ut est rem eos. Suscipit tempora delectus sit doloribus.'
+                        attachment: ut
+                        department_name: 'Georgette Ritchie'
+                        course_name: 'Lauryn Mayert'
                         attachment_type: file
                         likes: 0
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
                       -
                         id: 5
-                        content: 'Provident omnis qui sed qui aliquid totam magnam. Quo eos beatae accusamus minus est. Voluptatem provident omnis aut temporibus. Quibusdam aut est a expedita.'
-                        attachment: est
-                        department_name: 'Mr. Rickey Beier I'
-                        course_name: 'Ms. Rebeca Schuster'
-                        attachment_type: image
+                        content: 'Id reprehenderit id quod facilis est consequatur cum. Dolor expedita ut sint excepturi possimus voluptatem quibusdam. Voluptatem excepturi omnis sed qui dignissimos. Voluptas nostrum sit soluta quia.'
+                        attachment: laborum
+                        department_name: 'Mr. Wayne Roberts'
+                        course_name: "Mr. Johan O'Kon"
+                        attachment_type: file
                         likes: 0
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
+                      -
+                        id: 6
+                        content: 'Dolorum vitae omnis ea facere perferendis. Aut dolor laudantium fugiat minus asperiores alias nisi. Quae id quia dignissimos laborum aperiam.'
+                        attachment: eum
+                        department_name: 'Dr. Jesse Huel V'
+                        course_name: 'Kayden Powlowski'
+                        attachment_type: file
+                        likes: 1
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '20 minutes ago'
                       -
                         id: 7
-                        content: 'Officia aut blanditiis tempora ipsa animi aut. Quasi voluptatem sed repudiandae. Sed fugit aliquid ab voluptas commodi dolorem. Sequi voluptatum eum qui adipisci cupiditate recusandae.'
-                        attachment: impedit
-                        department_name: 'Donavon Koelpin'
-                        course_name: 'Dr. Elsie Fritsch'
-                        attachment_type: image
+                        content: 'Consequatur dolor odio fuga qui cumque laborum nobis. Ut illo necessitatibus tempore.'
+                        attachment: pariatur
+                        department_name: 'Miss Lelah Zulauf'
+                        course_name: 'Charley Hickle'
+                        attachment_type: file
                         likes: 1
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
                       -
                         id: 8
-                        content: 'Repellat quos reiciendis maxime quaerat nisi sed accusamus. Iure laboriosam similique illo repudiandae iste sint ratione. Consectetur nobis in et ea recusandae repellat iste.'
-                        attachment: quaerat
-                        department_name: 'Adrianna Ward'
-                        course_name: 'Mr. Leon Welch I'
-                        attachment_type: file
+                        content: 'Animi quidem dolores cumque vitae ut ut consectetur. Quo nihil omnis nostrum architecto.'
+                        attachment: voluptatem
+                        department_name: 'Kaya Goodwin'
+                        course_name: 'Vern Schinner'
+                        attachment_type: image
                         likes: 1
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
                       -
                         id: 9
-                        content: 'Omnis cumque ut dolor velit sapiente. Aut sint provident ullam quia ex excepturi voluptatem. Et doloribus qui qui voluptas nobis non. Omnis sed modi tempore quaerat quidem.'
-                        attachment: et
-                        department_name: 'Prof. Theron Mitchell'
-                        course_name: 'Dr. Mustafa Wolf'
+                        content: 'Consequatur est odio quod deleniti ea aperiam. Quae ratione tempora cupiditate quae. Vero debitis est ad alias. Quia itaque inventore nam est sint. Voluptatum ad temporibus eaque sit.'
+                        attachment: libero
+                        department_name: 'Glenda Hane'
+                        course_name: 'Hillard Hand'
                         attachment_type: file
                         likes: 1
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
                       -
                         id: 10
-                        content: 'Laudantium minima natus dignissimos earum est. Reiciendis omnis provident explicabo dolor. Quod laboriosam est est totam ut. Voluptatum voluptatem temporibus qui quidem rem quo atque voluptate.'
-                        attachment: officia
-                        department_name: 'Dr. Misael Effertz DDS'
-                        course_name: 'Dr. London Gutmann MD'
+                        content: 'Nihil nulla enim est omnis voluptatem enim. Blanditiis aut hic dolores quisquam ut dolorum libero. Praesentium sit aut velit pariatur.'
+                        attachment: in
+                        department_name: 'Dr. Alanis Weber'
+                        course_name: 'Ahmed Collier'
                         attachment_type: image
                         likes: 1
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
+                      -
+                        id: 11
+                        content: 'Debitis vel quisquam aut quia voluptatibus iste iste. Molestiae doloribus consequatur sapiente non qui ut. Ut autem temporibus alias eos eum dolorem.'
+                        attachment: voluptatem
+                        department_name: 'Deonte Bosco'
+                        course_name: 'Mr. Travis Eichmann PhD'
+                        attachment_type: image
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '20 minutes ago'
                       -
                         id: 12
-                        content: 'Dolorem eum quo sunt voluptatum est amet. Qui aut officiis porro mollitia labore possimus eum. Ipsum perspiciatis qui velit tempora consequatur.'
-                        attachment: nostrum
-                        department_name: 'Branson Bosco'
-                        course_name: 'Keely Schneider MD'
+                        content: 'Asperiores reprehenderit blanditiis magni omnis sint alias est corrupti. Incidunt saepe nostrum asperiores reprehenderit molestiae. Ipsa delectus est officiis odio.'
+                        attachment: sed
+                        department_name: 'Gennaro Zboncak'
+                        course_name: 'Mr. Tomas Howe'
                         attachment_type: image
                         likes: 0
                         liked_by_me: false
                         saves: 1
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
                       -
                         id: 13
-                        content: 'Doloremque consequatur laboriosam qui qui totam. Officia aperiam aut minima quia eaque tempore quam. Et vel inventore quis vel rem quisquam. Atque dolor occaecati aut voluptatibus.'
-                        attachment: vero
-                        department_name: 'Gregory Davis'
-                        course_name: 'Ahmad Harvey'
-                        attachment_type: image
+                        content: 'Aut delectus laboriosam veritatis dolorem aperiam vel. Adipisci labore qui aut quia ea cupiditate nisi. Assumenda harum qui illo quisquam illo.'
+                        attachment: minima
+                        department_name: 'Alexandrine Marks'
+                        course_name: 'Curtis Stiedemann'
+                        attachment_type: file
                         likes: 0
                         liked_by_me: false
                         saves: 1
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
                       -
                         id: 14
-                        content: 'Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.'
-                        attachment: omnis
-                        department_name: 'Dr. Darron Bruen DDS'
-                        course_name: 'Mr. Noel Ledner'
-                        attachment_type: image
+                        content: 'Corrupti amet assumenda excepturi. Commodi qui porro in sed. Omnis earum inventore ea voluptatem occaecati itaque. Doloremque sit suscipit repellat minima earum repellat aliquid.'
+                        attachment: quod
+                        department_name: 'Velma Gusikowski'
+                        course_name: 'Kyleigh Fay II'
+                        attachment_type: file
                         likes: 0
                         liked_by_me: false
                         saves: 1
                         saved_by_me: false
-                        created_at: 'منذ 39 دقيقة'
+                        created_at: '20 minutes ago'
+                      -
+                        id: 15
+                        content: 'Fuga vel dolor temporibus veniam. Ea voluptatibus unde nihil a tenetur. Sit rerum ea cupiditate id est omnis. Qui deserunt iure ab ratione.'
+                        attachment: eius
+                        department_name: 'Dr. Imani Hansen'
+                        course_name: 'Larissa Yost'
+                        attachment_type: file
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '20 minutes ago'
                     items:
                       type: object
                       properties:
                         id:
                           type: integer
-                          example: 16
+                          example: 1
                         content:
                           type: string
-                          example: 'Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.'
+                          example: 'Officia at enim odio ex. Labore aut adipisci ipsam qui fugiat enim saepe sapiente. Voluptatibus voluptatem enim ipsam id.'
                         attachment:
                           type: string
-                          example: blanditiis
+                          example: sed
                         department_name:
                           type: string
-                          example: 'Prof. Troy Carroll'
+                          example: 'Estefania Watsica'
                         course_name:
                           type: string
-                          example: 'Soledad Tremblay'
+                          example: "Tristin O'Reilly"
                         attachment_type:
                           type: string
                           example: file
                         likes:
                           type: integer
-                          example: 1
+                          example: 0
                         liked_by_me:
                           type: boolean
-                          example: true
+                          example: false
                         saves:
                           type: integer
-                          example: 1
+                          example: 0
                         saved_by_me:
                           type: boolean
-                          example: true
+                          example: false
                         created_at:
                           type: string
-                          example: 'منذ 38 دقيقة'
+                          example: '20 minutes ago'
       tags:
         - Post
       requestBody:
@@ -2342,54 +2461,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        422:
+        401:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: 'user id غير موجود. (and 3 more errors)'
-                  errors:
-                    user_id:
-                      - 'user id غير موجود.'
-                    department_id:
-                      - 'department id غير موجود.'
-                    course_id:
-                      - 'course id غير موجود.'
-                    post_type_id:
-                      - 'post type id غير موجود.'
+                  message: unauthorized
                 properties:
                   message:
                     type: string
-                    example: 'user id غير موجود. (and 3 more errors)'
-                  errors:
-                    type: object
-                    properties:
-                      user_id:
-                        type: array
-                        example:
-                          - 'user id غير موجود.'
-                        items:
-                          type: string
-                      department_id:
-                        type: array
-                        example:
-                          - 'department id غير موجود.'
-                        items:
-                          type: string
-                      course_id:
-                        type: array
-                        example:
-                          - 'course id غير موجود.'
-                        items:
-                          type: string
-                      post_type_id:
-                        type: array
-                        example:
-                          - 'post type id غير موجود.'
-                        items:
-                          type: string
+                    example: unauthorized
       tags:
         - Post
       requestBody:
@@ -2402,31 +2485,31 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: perspiciatis
+                  example: qui
                 attachment:
                   type: string
                   description: ''
-                  example: itaque
+                  example: aperiam
                 attachment_type:
                   type: string
                   description: ''
-                  example: quo
+                  example: rerum
                 user_id:
                   type: number
                   description: ''
-                  example: 273.01223
+                  example: 414.0
                 department_id:
                   type: number
                   description: ''
-                  example: 18885.745905
+                  example: 28.20468
                 course_id:
                   type: number
                   description: ''
-                  example: 476.0
+                  example: 199.69
                 post_type_id:
                   type: number
                   description: ''
-                  example: 360.588
+                  example: 255624549.0
               required:
                 - content
                 - attachment
@@ -2441,8 +2524,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        204:
+        401:
           description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: unauthorized
+                properties:
+                  message:
+                    type: string
+                    example: unauthorized
       tags:
         - Post
     parameters:
@@ -2468,71 +2561,11 @@ paths:
               schema:
                 type: object
                 example:
-                  data:
-                    -
-                      id: 16
-                      content: 'Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.'
-                      attachment: blanditiis
-                      department_name: 'Prof. Troy Carroll'
-                      course_name: 'Soledad Tremblay'
-                      attachment_type: file
-                      likes: 1
-                      liked_by_me: true
-                      saves: 1
-                      saved_by_me: true
-                      created_at: 'منذ 38 دقيقة'
+                  data: []
                 properties:
                   data:
                     type: array
-                    example:
-                      -
-                        id: 16
-                        content: 'Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.'
-                        attachment: blanditiis
-                        department_name: 'Prof. Troy Carroll'
-                        course_name: 'Soledad Tremblay'
-                        attachment_type: file
-                        likes: 1
-                        liked_by_me: true
-                        saves: 1
-                        saved_by_me: true
-                        created_at: 'منذ 38 دقيقة'
-                    items:
-                      type: object
-                      properties:
-                        id:
-                          type: integer
-                          example: 16
-                        content:
-                          type: string
-                          example: 'Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.'
-                        attachment:
-                          type: string
-                          example: blanditiis
-                        department_name:
-                          type: string
-                          example: 'Prof. Troy Carroll'
-                        course_name:
-                          type: string
-                          example: 'Soledad Tremblay'
-                        attachment_type:
-                          type: string
-                          example: file
-                        likes:
-                          type: integer
-                          example: 1
-                        liked_by_me:
-                          type: boolean
-                          example: true
-                        saves:
-                          type: integer
-                          example: 1
-                        saved_by_me:
-                          type: boolean
-                          example: true
-                        created_at:
-                          type: string
-                          example: 'منذ 38 دقيقة'
+                    example: []
       tags:
         - Post
   '/api/post/{post_id}/like':

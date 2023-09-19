@@ -102,9 +102,9 @@ class User extends Authenticatable
     }
 
 
-    public function wishes(): BelongsToMany
+    public function wishes(): HasMany
     {
-        return $this->belongsToMany(Department::class);
+        return $this->hasMany(Wish::class);
     }
 
     public function registeration(): HasOne

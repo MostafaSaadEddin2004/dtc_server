@@ -27,12 +27,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":1,"name":"Dallas Blanda"},{"id":2,"name":"Pattie Herman"},{"id":3,"name":"Mr. Jason Boehm"},{"id":4,"name":"Dr. Guiseppe Gutmann IV"},{"id":5,"name":"Morton Botsford"}]}'
+        content: '{"data":[{"id":1,"name":"Marc Senger"},{"id":2,"name":"Allen Feest"},{"id":3,"name":"Marty Murphy"},{"id":4,"name":"Ciara Russel"},{"id":5,"name":"Dr. Elsa Gerhold"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '36'
+          x-ratelimit-remaining: '35'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -503,7 +503,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '35'
+          x-ratelimit-remaining: '34'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -515,7 +515,7 @@ endpoints:
     custom: []
   -
     httpMethods:
-      - GET
+      - POST
     uri: api/academic-registration
     metadata:
       groupName: AcademicRegistration
@@ -527,33 +527,213 @@ endpoints:
       authenticated: false
       custom: []
     headers:
-      Content-Type: application/json
+      Content-Type: multipart/form-data
       Accept: application/json
-    urlParameters:
-      certificateType_id:
-        name: certificateType_id
-        description: 'The ID of the certificateType.'
-        required: false
-        example: 20
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      full_name:
+        name: full_name
+        description: ''
+        required: true
+        example: facilis
+        type: string
+        enumValues: []
+        custom: []
+      father_name:
+        name: father_name
+        description: ''
+        required: true
+        example: qui
+        type: string
+        enumValues: []
+        custom: []
+      mother_name:
+        name: mother_name
+        description: ''
+        required: true
+        example: velit
+        type: string
+        enumValues: []
+        custom: []
+      date_of_birth:
+        name: date_of_birth
+        description: 'Must be a valid date.'
+        required: true
+        example: '2023-09-19T11:47:09'
+        type: string
+        enumValues: []
+        custom: []
+      place_of_birth:
+        name: place_of_birth
+        description: ''
+        required: true
+        example: dolores
+        type: string
+        enumValues: []
+        custom: []
+      military:
+        name: military
+        description: ''
+        required: true
+        example: quas
+        type: string
+        enumValues: []
+        custom: []
+      full_name_en:
+        name: full_name_en
+        description: ''
+        required: true
+        example: quia
+        type: string
+        enumValues: []
+        custom: []
+      current_address:
+        name: current_address
+        description: ''
+        required: true
+        example: est
+        type: string
+        enumValues: []
+        custom: []
+      address:
+        name: address
+        description: ''
+        required: true
+        example: omnis
+        type: string
+        enumValues: []
+        custom: []
+      name_of_parent:
+        name: name_of_parent
+        description: ''
+        required: true
+        example: odio
+        type: string
+        enumValues: []
+        custom: []
+      job_of_parent:
+        name: job_of_parent
+        description: ''
+        required: true
+        example: ut
+        type: string
+        enumValues: []
+        custom: []
+      phone_of_parent:
+        name: phone_of_parent
+        description: ''
+        required: true
+        example: est
+        type: string
+        enumValues: []
+        custom: []
+      phone_of_mother:
+        name: phone_of_mother
+        description: ''
+        required: true
+        example: voluptas
+        type: string
+        enumValues: []
+        custom: []
+      telephone_fix:
+        name: telephone_fix
+        description: ''
+        required: true
+        example: et
+        type: string
+        enumValues: []
+        custom: []
+      avg_mark:
+        name: avg_mark
+        description: ''
+        required: true
+        example: 12
         type: integer
         enumValues: []
         custom: []
-    cleanUrlParameters:
-      certificateType_id: 20
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
+      certificate_year:
+        name: certificate_year
+        description: ''
+        required: true
+        example: iure
+        type: string
+        enumValues: []
+        custom: []
+      id_image:
+        name: id_image
+        description: 'Must be an image.'
+        required: true
+        example: null
+        type: file
+        enumValues: []
+        custom: []
+      certificate_image:
+        name: certificate_image
+        description: 'Must be an image.'
+        required: true
+        example: null
+        type: file
+        enumValues: []
+        custom: []
+      personal_image:
+        name: personal_image
+        description: 'Must be an image.'
+        required: true
+        example: null
+        type: file
+        enumValues: []
+        custom: []
+      un_image:
+        name: un_image
+        description: 'Must be an image.'
+        required: true
+        example: null
+        type: file
+        enumValues: []
+        custom: []
+      department_ids:
+        name: department_ids
+        description: ''
+        required: true
+        example: []
+        type: object
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      full_name: facilis
+      father_name: qui
+      mother_name: velit
+      date_of_birth: '2023-09-19T11:47:09'
+      place_of_birth: dolores
+      military: quas
+      full_name_en: quia
+      current_address: est
+      address: omnis
+      name_of_parent: odio
+      job_of_parent: ut
+      phone_of_parent: est
+      phone_of_mother: voluptas
+      telephone_fix: et
+      avg_mark: 12
+      certificate_year: iure
+      department_ids: []
+    fileParameters:
+      id_image: null
+      certificate_image: null
+      personal_image: null
+      un_image: null
     responses:
       -
-        status: 200
-        content: '{"data":[]}'
+        status: 422
+        content: '{"message":"The department ids field is required.","errors":{"department_ids":["The department ids field is required."]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '34'
+          x-ratelimit-remaining: '33'
           access-control-allow-origin: '*'
         description: null
         custom: []

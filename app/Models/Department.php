@@ -55,9 +55,9 @@ class Department extends Model
     }
 
 
-    public function wishes(): BelongsToMany
+    public function wishes(): HasMany
     {
-        return $this->belongsToMany(User::class);
+        return $this->hasMany(Wish::class);
     }
 
     public function certificateType()
