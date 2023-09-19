@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "DTC App",
-        "_postman_id": "606a9541-842b-42c7-8e0e-ef40033faa4c",
+        "_postman_id": "65ace5e3-d2e0-4719-ad46-d453d269d793",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -231,7 +231,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"my@example.com\",\"password\":\"password\",\"role\":\"student_browser\",\"fcm_token\":\"similique\"}"
+                            "raw": "{\"email\":\"my@example.com\",\"password\":\"password\",\"role\":\"student_browser\",\"fcm_token\":\"ducimus\"}"
                         },
                         "description": ""
                     },
@@ -260,7 +260,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"2|LQX8GoTlMOEix5CbwGs4VKVLU5eMRqPuW6wAqYRafc458a95\"}",
+                            "body": "{\"token\":\"2|ar6quLxST57pfDMeTFbz6HoHFzi8iI7e9vEmOC27df81ab8f\"}",
                             "name": ""
                         }
                     ]
@@ -290,55 +290,55 @@
                             "formdata": [
                                 {
                                     "key": "first_name_en",
-                                    "value": "magni",
+                                    "value": "et",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "last_name_en",
-                                    "value": "assumenda",
+                                    "value": "in",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "first_name_ar",
-                                    "value": "eligendi",
+                                    "value": "reprehenderit",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "last_name_ar",
-                                    "value": "perferendis",
+                                    "value": "cupiditate",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "phone",
-                                    "value": "hic",
+                                    "value": "nisi",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "email",
-                                    "value": "greta.turcotte@example.org",
+                                    "value": "rita34@example.org",
                                     "type": "text",
                                     "description": "\u064a\u062c\u0628 \u0623\u0646 \u064a\u0643\u0648\u0646 \u062d\u0642\u0644 value \u0639\u0646\u0648\u0627\u0646 \u0628\u0631\u064a\u062f \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a \u0635\u062d\u064a\u062d \u0627\u0644\u0628\u064f\u0646\u064a\u0629."
                                 },
                                 {
                                     "key": "password",
-                                    "value": "V1hP|W]'f]>hXoU",
+                                    "value": "v0^v?6V<B[viiz2",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "role",
-                                    "value": "student_browser",
+                                    "value": "student",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "fcm_token",
-                                    "value": "porro",
+                                    "value": "at",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -376,7 +376,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"2|IjEGwxrmnFORVchf5g2UhkUGNpU7eWa5tnhTiNfAb4e0dbb1\"}",
+                            "body": "{\"token\":\"2|tbC9Eo9X8fvUsEoI6FbO6Bm7ab36cMLlOsxfCIgy755115bb\"}",
                             "name": ""
                         }
                     ]
@@ -467,7 +467,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":{\"email\":\"samanta52@example.org\",\"first_name_en\":\"Mr. Lonnie Schneider I\",\"first_name_ar\":\"Triston McKenzie IV\",\"last_name_en\":\"Easter Schultz\",\"last_name_ar\":\"Jarred Reynolds\",\"phone\":\"1-205-535-5950\",\"image\":null,\"depratment\":null,\"section\":null}}",
+                            "body": "{\"data\":{\"email\":\"samanta52@example.org\",\"first_name_en\":\"Mr. Lonnie Schneider I\",\"first_name_ar\":\"Triston McKenzie IV\",\"last_name_en\":\"Easter Schultz\",\"last_name_ar\":\"Jarred Reynolds\",\"phone\":\"1-205-535-5950\",\"image\":null,\"department\":null,\"section\":null}}",
                             "name": ""
                         }
                     ]
@@ -547,7 +547,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"certificate\":\"a\",\"specialty\":\"ducimus\",\"birth_date\":\"2002-09-17\",\"current_location\":\"itaque\",\"permanent_location\":\"maxime\",\"nationality\":\"in\",\"department_id\":13}"
+                            "raw": "{\"certificate\":\"ipsam\",\"specialty\":\"quia\",\"birth_date\":\"2015-09-20\",\"current_location\":\"ullam\",\"permanent_location\":\"quia\",\"nationality\":\"et\",\"department_id\":10}"
                         },
                         "description": ""
                     },
@@ -897,7 +897,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"is_male\":false,\"social_status\":\"non\",\"nationality\":\"veritatis\",\"address\":\"placeat\",\"date_of_birth\":\"2023-09-19T09:51:07\",\"student_type\":\"aut\",\"work_type\":\"iure\",\"is_morning\":true}"
+                            "raw": "{\"is_male\":true,\"social_status\":\"non\",\"nationality\":\"facilis\",\"address\":\"dolores\",\"date_of_birth\":\"2023-09-19T10:06:46\",\"student_type\":\"ducimus\",\"work_type\":\"corrupti\",\"is_morning\":false}"
                         },
                         "description": ""
                     },
@@ -945,7 +945,7 @@
                                 {
                                     "id": "sectionId",
                                     "key": "sectionId",
-                                    "value": "quae",
+                                    "value": "ad",
                                     "description": ""
                                 }
                             ]
@@ -1004,7 +1004,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"subject\":\"et\",\"mark\":23,\"reason\":\"corporis\",\"teacher\":\"fugiat\"}"
+                            "raw": "{\"subject\":\"libero\",\"mark\":15,\"reason\":\"dignissimos\",\"teacher\":\"consequatur\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1060,7 +1060,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"text\":\"magni\",\"department_id\":127646.710727}"
+                            "raw": "{\"text\":\"temporibus\",\"department_id\":45.43981}"
                         },
                         "description": "",
                         "auth": {
@@ -1169,7 +1169,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"doloribus\",\"description\":\"Atque eum qui ratione suscipit id dolor.\",\"note_category_id\":12}"
+                            "raw": "{\"title\":\"ab\",\"description\":\"Labore placeat impedit quae at.\",\"note_category_id\":1}"
                         },
                         "description": ""
                     },
@@ -1197,8 +1197,8 @@
                                     "value": "*"
                                 }
                             ],
-                            "code": 422,
-                            "body": "{\"message\":\"note category id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f.\",\"errors\":{\"note_category_id\":[\"note category id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f.\"]}}",
+                            "code": 201,
+                            "body": "{\"data\":{\"id\":6,\"title\":\"ab\",\"description\":\"Labore placeat impedit quae at.\",\"category\":\"Mr. Bennie Haley IV\"}}",
                             "name": ""
                         }
                     ]
@@ -1294,7 +1294,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"doloremque\",\"description\":\"Voluptas veritatis debitis harum ex ut sapiente.\"}"
+                            "raw": "{\"title\":\"aliquam\",\"description\":\"A ratione possimus dignissimos aut impedit esse voluptatibus.\"}"
                         },
                         "description": ""
                     },
@@ -1323,7 +1323,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":{\"id\":1,\"title\":\"doloremque\",\"description\":\"Voluptas veritatis debitis harum ex ut sapiente.\",\"category\":\"Margaretta Monahan MD\"}}",
+                            "body": "{\"data\":{\"id\":1,\"title\":\"aliquam\",\"description\":\"A ratione possimus dignissimos aut impedit esse voluptatibus.\",\"category\":\"Margaretta Monahan MD\"}}",
                             "name": ""
                         }
                     ]
@@ -1466,7 +1466,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"content\":\"corrupti\",\"attachment\":\"illum\",\"attachment_type\":\"eos\",\"user_id\":28441384.419,\"department_id\":453124.933391423,\"course_id\":1764.266,\"post_type_id\":667614.6}"
+                            "raw": "{\"content\":\"tempora\",\"attachment\":\"veniam\",\"attachment_type\":\"dolorum\",\"user_id\":1833.72986552,\"department_id\":10749618.424,\"course_id\":280599.20012351,\"post_type_id\":2948}"
                         },
                         "description": ""
                     },
@@ -1530,7 +1530,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"content\":\"labore\",\"attachment\":\"natus\",\"attachment_type\":\"vero\",\"user_id\":278143.32550626,\"department_id\":115500.08,\"course_id\":4180.005314,\"post_type_id\":1}"
+                            "raw": "{\"content\":\"perspiciatis\",\"attachment\":\"itaque\",\"attachment_type\":\"quo\",\"user_id\":273.01223,\"department_id\":18885.745905,\"course_id\":476,\"post_type_id\":360.588}"
                         },
                         "description": ""
                     },
@@ -1559,7 +1559,7 @@
                                 }
                             ],
                             "code": 422,
-                            "body": "{\"message\":\"user id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f. (and 2 more errors)\",\"errors\":{\"user_id\":[\"user id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f.\"],\"department_id\":[\"department id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f.\"],\"course_id\":[\"course id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f.\"]}}",
+                            "body": "{\"message\":\"user id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f. (and 3 more errors)\",\"errors\":{\"user_id\":[\"user id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f.\"],\"department_id\":[\"department id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f.\"],\"course_id\":[\"course id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f.\"],\"post_type_id\":[\"post type id \\u063a\\u064a\\u0631 \\u0645\\u0648\\u062c\\u0648\\u062f.\"]}}",
                             "name": ""
                         }
                     ]
@@ -1630,12 +1630,12 @@
                             "query": [
                                 {
                                     "key": "type",
-                                    "value": "minus",
+                                    "value": "voluptate",
                                     "description": "the type of the post (public, department ,course).",
                                     "disabled": false
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/post?type=minus"
+                            "raw": "{{baseUrl}}\/api\/post?type=voluptate"
                         },
                         "method": "GET",
                         "header": [
@@ -1650,7 +1650,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"type\":\"public\"}"
+                            "raw": "{\"type\":\"department\"}"
                         },
                         "description": ""
                     },
@@ -1679,7 +1679,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":[{\"id\":16,\"content\":\"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.\",\"attachment\":\"blanditiis\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":true,\"saves\":1,\"saved_by_me\":true,\"created_at\":\"\\u0645\\u0646\\u0630 22 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":4,\"content\":\"Sed molestiae ea temporibus non recusandae. Beatae natus maxime doloremque dolor neque veritatis.\",\"attachment\":\"consequatur\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 23 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":7,\"content\":\"Officia aut blanditiis tempora ipsa animi aut. Quasi voluptatem sed repudiandae. Sed fugit aliquid ab voluptas commodi dolorem. Sequi voluptatum eum qui adipisci cupiditate recusandae.\",\"attachment\":\"impedit\",\"attachment_type\":\"image\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 23 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":8,\"content\":\"Repellat quos reiciendis maxime quaerat nisi sed accusamus. Iure laboriosam similique illo repudiandae iste sint ratione. Consectetur nobis in et ea recusandae repellat iste.\",\"attachment\":\"quaerat\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 23 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":14,\"content\":\"Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.\",\"attachment\":\"omnis\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 23 \\u062f\\u0642\\u064a\\u0642\\u0629\"}]}",
+                            "body": "{\"data\":[{\"id\":16,\"content\":\"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.\",\"attachment\":\"blanditiis\",\"department_name\":\"Prof. Troy Carroll\",\"course_name\":\"Soledad Tremblay\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":true,\"saves\":1,\"saved_by_me\":true,\"created_at\":\"\\u0645\\u0646\\u0630 38 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":2,\"content\":\"Soluta eius vel est qui in et tenetur. Perferendis repellendus porro incidunt aliquam cum. Dolores et animi possimus aut ipsum.\",\"attachment\":\"nihil\",\"department_name\":\"Abdullah Goldner\",\"course_name\":\"Mr. Sheldon Morar\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":3,\"content\":\"Illum non ut perferendis voluptas repellat enim ipsum. Quam molestiae totam est doloremque molestiae inventore sit aut. Provident repellat amet aperiam ad corrupti amet.\",\"attachment\":\"consequatur\",\"department_name\":\"Saige Boyer\",\"course_name\":\"Jeromy Fahey\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":4,\"content\":\"Sed molestiae ea temporibus non recusandae. Beatae natus maxime doloremque dolor neque veritatis.\",\"attachment\":\"consequatur\",\"department_name\":\"Toby McDermott\",\"course_name\":\"Zane Blanda\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":5,\"content\":\"Provident omnis qui sed qui aliquid totam magnam. Quo eos beatae accusamus minus est. Voluptatem provident omnis aut temporibus. Quibusdam aut est a expedita.\",\"attachment\":\"est\",\"department_name\":\"Mr. Rickey Beier I\",\"course_name\":\"Ms. Rebeca Schuster\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":7,\"content\":\"Officia aut blanditiis tempora ipsa animi aut. Quasi voluptatem sed repudiandae. Sed fugit aliquid ab voluptas commodi dolorem. Sequi voluptatum eum qui adipisci cupiditate recusandae.\",\"attachment\":\"impedit\",\"department_name\":\"Donavon Koelpin\",\"course_name\":\"Dr. Elsie Fritsch\",\"attachment_type\":\"image\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":8,\"content\":\"Repellat quos reiciendis maxime quaerat nisi sed accusamus. Iure laboriosam similique illo repudiandae iste sint ratione. Consectetur nobis in et ea recusandae repellat iste.\",\"attachment\":\"quaerat\",\"department_name\":\"Adrianna Ward\",\"course_name\":\"Mr. Leon Welch I\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":9,\"content\":\"Omnis cumque ut dolor velit sapiente. Aut sint provident ullam quia ex excepturi voluptatem. Et doloribus qui qui voluptas nobis non. Omnis sed modi tempore quaerat quidem.\",\"attachment\":\"et\",\"department_name\":\"Prof. Theron Mitchell\",\"course_name\":\"Dr. Mustafa Wolf\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":10,\"content\":\"Laudantium minima natus dignissimos earum est. Reiciendis omnis provident explicabo dolor. Quod laboriosam est est totam ut. Voluptatum voluptatem temporibus qui quidem rem quo atque voluptate.\",\"attachment\":\"officia\",\"department_name\":\"Dr. Misael Effertz DDS\",\"course_name\":\"Dr. London Gutmann MD\",\"attachment_type\":\"image\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":12,\"content\":\"Dolorem eum quo sunt voluptatum est amet. Qui aut officiis porro mollitia labore possimus eum. Ipsum perspiciatis qui velit tempora consequatur.\",\"attachment\":\"nostrum\",\"department_name\":\"Branson Bosco\",\"course_name\":\"Keely Schneider MD\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":13,\"content\":\"Doloremque consequatur laboriosam qui qui totam. Officia aperiam aut minima quia eaque tempore quam. Et vel inventore quis vel rem quisquam. Atque dolor occaecati aut voluptatibus.\",\"attachment\":\"vero\",\"department_name\":\"Gregory Davis\",\"course_name\":\"Ahmad Harvey\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"},{\"id\":14,\"content\":\"Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.\",\"attachment\":\"omnis\",\"department_name\":\"Dr. Darron Bruen DDS\",\"course_name\":\"Mr. Noel Ledner\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"\\u0645\\u0646\\u0630 39 \\u062f\\u0642\\u064a\\u0642\\u0629\"}]}",
                             "name": ""
                         }
                     ]
@@ -1732,7 +1732,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":[{\"id\":16,\"content\":\"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.\",\"attachment\":\"blanditiis\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":true,\"saves\":1,\"saved_by_me\":true,\"created_at\":\"\\u0645\\u0646\\u0630 22 \\u062f\\u0642\\u064a\\u0642\\u0629\"}]}",
+                            "body": "{\"data\":[{\"id\":16,\"content\":\"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.\",\"attachment\":\"blanditiis\",\"department_name\":\"Prof. Troy Carroll\",\"course_name\":\"Soledad Tremblay\",\"attachment_type\":\"file\",\"likes\":1,\"liked_by_me\":true,\"saves\":1,\"saved_by_me\":true,\"created_at\":\"\\u0645\\u0646\\u0630 38 \\u062f\\u0642\\u064a\\u0642\\u0629\"}]}",
                             "name": ""
                         }
                     ]

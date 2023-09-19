@@ -32,7 +32,7 @@ endpoints:
         name: text
         description: ''
         required: true
-        example: magni
+        example: temporibus
         type: string
         enumValues: []
         custom: []
@@ -40,13 +40,13 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 127646.710727
+        example: 45.43981
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      text: magni
-      department_id: 127646.710727
+      text: temporibus
+      department_id: 45.43981
     fileParameters: []
     responses:
       -

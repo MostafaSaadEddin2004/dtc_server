@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Api\StoreAcademicRegisterationRequest;
 use App\Http\Resources\CertificateTypeResource;
 use App\Http\Resources\DepartmentResource;
 use App\Models\CertificateType;
@@ -33,7 +34,9 @@ class AcademicRegistrationController extends Controller
         return DepartmentResource::collection($departments);
     }
 
-    public function store()
+    public function store(StoreAcademicRegisterationRequest $request)
     {
+        $data = $request->validated();
+        $data['user_id'] = auth()->id();
     }
 }

@@ -18,6 +18,8 @@ class PostResource extends JsonResource
             'id' => $this->id,
             'content' => $this->content,
             'attachment' => $this->attachment,
+            'department_name' => $this->department?->name,
+            'course_name' => $this->course?->name,
             'attachment_type' => $this->attachment_type,
             'likes' => $this->likes->count(),
             'liked_by_me' => $this->likes()->where('user_id', auth()->id())->exists(),

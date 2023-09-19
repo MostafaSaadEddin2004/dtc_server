@@ -7,6 +7,7 @@ namespace App\Models;
 use App\Traits\HasRole;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\HasOne;
@@ -94,9 +95,16 @@ class User extends Authenticatable
     {
         return $this->hasMany(CourseRegistration::class);
     }
+
     public function teacher(): HasOne
     {
         return $this->hasOne(Teacher::class);
+    }
+
+
+    public function wishes(): BelongsToMany
+    {
+        return $this->belongsToMany(Department::class);
     }
 
     public function registeration(): HasOne
