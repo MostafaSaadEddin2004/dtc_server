@@ -23,20 +23,17 @@ class AcademicRegistrationFactory extends Factory
     public function definition(): array
     {
         return [
-            'full_name' => $this->faker->word,
             'father_name' => $this->faker->word,
             'mother_name' => $this->faker->word,
             'date_of_birth' => $this->faker->date(),
             'place_of_birth' => $this->faker->word,
             'military' => $this->faker->word,
-            'full_name_en' => $this->faker->word,
             'current_address' => $this->faker->word,
             'address' => $this->faker->word,
             'name_of_parent' => $this->faker->word,
             'job_of_parent' => $this->faker->word,
             'phone_of_parent' => $this->faker->regexify('[A-Za-z0-9]{10}'),
             'phone_of_mother' => $this->faker->regexify('[A-Za-z0-9]{10}'),
-            'telephone_fix' => $this->faker->regexify('[A-Za-z0-9]{7}'),
             'avg_mark' => $this->faker->numberBetween(-10000, 10000),
             'certificate_year' => $this->faker->word,
             'id_image' => $this->faker->word,
