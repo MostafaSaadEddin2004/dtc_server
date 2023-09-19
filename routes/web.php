@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-app()->setLocale('en');
 
 Route::get('/', function () {
     Notification::send(User::find(72), new FcmNotification('test', 'test test', []));

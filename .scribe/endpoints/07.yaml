@@ -26,12 +26,12 @@ endpoints:
         name: sectionId
         description: ''
         required: true
-        example: labore
+        example: quo
         type: string
         enumValues: []
         custom: []
     cleanUrlParameters:
-      sectionId: labore
+      sectionId: quo
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

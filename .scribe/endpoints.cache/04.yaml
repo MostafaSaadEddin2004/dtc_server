@@ -29,7 +29,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":1,"name":"Marc Senger"},{"id":2,"name":"Allen Feest"},{"id":3,"name":"Marty Murphy"},{"id":4,"name":"Ciara Russel"},{"id":5,"name":"Dr. Elsa Gerhold"}]}'
+        content: '{"data":[{"id":1,"name":"Caterina Reichel PhD"},{"id":2,"name":"Prudence Simonis"},{"id":3,"name":"Zane Hyatt MD"},{"id":4,"name":"Prof. Godfrey Hoppe"},{"id":5,"name":"Krista Flatley"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -540,7 +540,7 @@ endpoints:
         name: full_name
         description: ''
         required: true
-        example: eos
+        example: atque
         type: string
         enumValues: []
         custom: []
@@ -548,7 +548,7 @@ endpoints:
         name: father_name
         description: ''
         required: true
-        example: cupiditate
+        example: fugiat
         type: string
         enumValues: []
         custom: []
@@ -556,7 +556,7 @@ endpoints:
         name: mother_name
         description: ''
         required: true
-        example: delectus
+        example: illum
         type: string
         enumValues: []
         custom: []
@@ -564,7 +564,7 @@ endpoints:
         name: date_of_birth
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-19T12:18:51'
+        example: '2023-09-19T13:55:46'
         type: string
         enumValues: []
         custom: []
@@ -572,7 +572,7 @@ endpoints:
         name: place_of_birth
         description: ''
         required: true
-        example: nulla
+        example: veritatis
         type: string
         enumValues: []
         custom: []
@@ -580,7 +580,7 @@ endpoints:
         name: military
         description: ''
         required: true
-        example: rerum
+        example: earum
         type: string
         enumValues: []
         custom: []
@@ -588,7 +588,7 @@ endpoints:
         name: full_name_en
         description: ''
         required: true
-        example: excepturi
+        example: aut
         type: string
         enumValues: []
         custom: []
@@ -596,7 +596,7 @@ endpoints:
         name: current_address
         description: ''
         required: true
-        example: in
+        example: nostrum
         type: string
         enumValues: []
         custom: []
@@ -604,7 +604,7 @@ endpoints:
         name: address
         description: ''
         required: true
-        example: pariatur
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -612,7 +612,7 @@ endpoints:
         name: name_of_parent
         description: ''
         required: true
-        example: in
+        example: velit
         type: string
         enumValues: []
         custom: []
@@ -620,7 +620,7 @@ endpoints:
         name: job_of_parent
         description: ''
         required: true
-        example: est
+        example: quia
         type: string
         enumValues: []
         custom: []
@@ -628,7 +628,7 @@ endpoints:
         name: phone_of_parent
         description: ''
         required: true
-        example: dolorem
+        example: fugit
         type: string
         enumValues: []
         custom: []
@@ -636,7 +636,7 @@ endpoints:
         name: phone_of_mother
         description: ''
         required: true
-        example: ut
+        example: incidunt
         type: string
         enumValues: []
         custom: []
@@ -644,7 +644,7 @@ endpoints:
         name: telephone_fix
         description: ''
         required: true
-        example: et
+        example: maxime
         type: string
         enumValues: []
         custom: []
@@ -652,7 +652,7 @@ endpoints:
         name: avg_mark
         description: ''
         required: true
-        example: 5
+        example: 6
         type: integer
         enumValues: []
         custom: []
@@ -660,7 +660,7 @@ endpoints:
         name: certificate_year
         description: ''
         required: true
-        example: in
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -705,22 +705,22 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      full_name: eos
-      father_name: cupiditate
-      mother_name: delectus
-      date_of_birth: '2023-09-19T12:18:51'
-      place_of_birth: nulla
-      military: rerum
-      full_name_en: excepturi
-      current_address: in
-      address: pariatur
-      name_of_parent: in
-      job_of_parent: est
-      phone_of_parent: dolorem
-      phone_of_mother: ut
-      telephone_fix: et
-      avg_mark: 5
-      certificate_year: in
+      full_name: atque
+      father_name: fugiat
+      mother_name: illum
+      date_of_birth: '2023-09-19T13:55:46'
+      place_of_birth: veritatis
+      military: earum
+      full_name_en: aut
+      current_address: nostrum
+      address: et
+      name_of_parent: velit
+      job_of_parent: quia
+      phone_of_parent: fugit
+      phone_of_mother: incidunt
+      telephone_fix: maxime
+      avg_mark: 6
+      certificate_year: et
       department_ids: []
     fileParameters:
       id_image: null
