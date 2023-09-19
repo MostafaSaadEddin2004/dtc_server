@@ -51,7 +51,7 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: voluptatem
+        example: incidunt
         type: string
         enumValues: []
         custom: []
@@ -59,12 +59,12 @@ endpoints:
       email: my@example.com
       password: password
       role: student_browser
-      fcm_token: voluptatem
+      fcm_token: incidunt
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"2|jSYsbk1uKO3q11fXr07jLoQcnHsO2S8RcIbBl45Y7c877062"}'
+        content: '{"token":"2|CSO7ltoA5aNdWyW7OMU2doTgor2yjo6i9OK3fUova517f36d"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -108,7 +108,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: nam
+        example: voluptatem
         type: string
         enumValues: []
         custom: []
@@ -116,7 +116,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: rerum
+        example: sint
         type: string
         enumValues: []
         custom: []
@@ -124,7 +124,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: molestias
+        example: maxime
         type: string
         enumValues: []
         custom: []
@@ -132,7 +132,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: et
+        example: molestiae
         type: string
         enumValues: []
         custom: []
@@ -140,7 +140,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: perspiciatis
+        example: aliquid
         type: string
         enumValues: []
         custom: []
@@ -148,7 +148,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: hertha.walsh@example.com
+        example: brenda.gleason@example.net
         type: string
         enumValues: []
         custom: []
@@ -156,7 +156,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'AdSm?x$;v'
+        example: 'I{G*Gs&al'
         type: string
         enumValues: []
         custom: []
@@ -164,7 +164,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: student
+        example: teacher
         type: string
         enumValues:
           - student
@@ -184,26 +184,26 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: occaecati
+        example: cum
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      first_name_en: nam
-      last_name_en: rerum
-      first_name_ar: molestias
-      last_name_ar: et
-      phone: perspiciatis
-      email: hertha.walsh@example.com
-      password: 'AdSm?x$;v'
-      role: student
-      fcm_token: occaecati
+      first_name_en: voluptatem
+      last_name_en: sint
+      first_name_ar: maxime
+      last_name_ar: molestiae
+      phone: aliquid
+      email: brenda.gleason@example.net
+      password: 'I{G*Gs&al'
+      role: teacher
+      fcm_token: cum
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"2|jaEppsHsfy6tmizjOIpIFyB1HUU1DTDdIkz79Vhfebf90aa1"}'
+        content: '{"token":"2|M3zceDTZAZBXGP5ntyLWfoY1s5C6No0yiRCpLBbG994d3c3d"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -296,7 +296,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: false
-        example: willie19@example.org
+        example: reichert.elva@example.com
         type: string
         enumValues: []
         custom: []
@@ -333,12 +333,12 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      email: willie19@example.org
+      email: reichert.elva@example.com
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":{"email":"willie19@example.org","first_name_en":"Josiane Harber","first_name_ar":"Zora Halvorson","last_name_en":"Efren Altenwerth","last_name_ar":"Ross Trantow DDS","phone":"+1-469-373-3511","image":null,"department":null,"section":null}}'
+        content: '{"data":{"email":"reichert.elva@example.com","first_name_en":"Josiane Harber","first_name_ar":"Zora Halvorson","last_name_en":"Efren Altenwerth","last_name_ar":"Ross Trantow DDS","phone":"+1-469-373-3511","image":null,"department":null,"section":null}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -383,7 +383,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"email":"willie19@example.org","first_name_en":"Josiane Harber","first_name_ar":"Zora Halvorson","last_name_en":"Efren Altenwerth","last_name_ar":"Ross Trantow DDS","phone":"+1-469-373-3511","image":null,"department":null,"section":null}}'
+        content: '{"data":{"email":"reichert.elva@example.com","first_name_en":"Josiane Harber","first_name_ar":"Zora Halvorson","last_name_en":"Efren Altenwerth","last_name_ar":"Ross Trantow DDS","phone":"+1-469-373-3511","image":null,"department":null,"section":null}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -472,7 +472,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-        example: ratione
+        example: est
         type: string
         enumValues: []
         custom: []
@@ -480,7 +480,7 @@ endpoints:
         name: specialty
         description: ''
         required: true
-        example: dolorem
+        example: dignissimos
         type: string
         enumValues: []
         custom: []
@@ -488,7 +488,7 @@ endpoints:
         name: birth_date
         description: 'Must be a valid date. Must be a date before <code>09/19/2023</code>.'
         required: true
-        example: '2015-01-10'
+        example: '2023-02-23'
         type: string
         enumValues: []
         custom: []
@@ -496,7 +496,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-        example: sint
+        example: maxime
         type: string
         enumValues: []
         custom: []
@@ -504,7 +504,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-        example: non
+        example: rerum
         type: string
         enumValues: []
         custom: []
@@ -512,7 +512,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: autem
+        example: aut
         type: string
         enumValues: []
         custom: []
@@ -520,18 +520,18 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 2
+        example: 1
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: ratione
-      specialty: dolorem
-      birth_date: '2015-01-10'
-      current_location: sint
-      permanent_location: non
-      nationality: autem
-      department_id: 2
+      certificate: est
+      specialty: dignissimos
+      birth_date: '2023-02-23'
+      current_location: maxime
+      permanent_location: rerum
+      nationality: aut
+      department_id: 1
     fileParameters: []
     responses:
       -

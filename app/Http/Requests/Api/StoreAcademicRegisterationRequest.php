@@ -22,20 +22,17 @@ class StoreAcademicRegisterationRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'full_name' => ['required'],
             'father_name' => ['required'],
             'mother_name' => ['required'],
             'date_of_birth' => ['required', 'date'],
             'place_of_birth' => ['required'],
             'military' => ['required'],
-            'full_name_en' => ['required'],
             'current_address' => ['required'],
             'address' => ['required'],
             'name_of_parent' => ['required'],
             'job_of_parent' => ['required'],
             'phone_of_parent' => ['required'],
             'phone_of_mother' => ['required'],
-            'telephone_fix' => ['required'],
             'avg_mark' => ['required', 'integer'],
             'certificate_year' => ['required'],
             'id_image' => ['required', 'image'],

@@ -16,20 +16,17 @@ class AcademicRegistration extends Model
      * @var array
      */
     protected $fillable = [
-        'full_name',
         'father_name',
         'mother_name',
         'date_of_birth',
         'place_of_birth',
         'military',
-        'full_name_en',
         'current_address',
         'address',
         'name_of_parent',
         'job_of_parent',
         'phone_of_parent',
         'phone_of_mother',
-        'telephone_fix',
         'avg_mark',
         'certificate_year',
         'id_image',

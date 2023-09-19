@@ -291,7 +291,7 @@ endpoints:
         name: is_male
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         enumValues: []
         custom: []
@@ -307,7 +307,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: eum
+        example: voluptas
         type: string
         enumValues: []
         custom: []
@@ -315,7 +315,7 @@ endpoints:
         name: address
         description: ''
         required: true
-        example: non
+        example: laudantium
         type: string
         enumValues: []
         custom: []
@@ -323,7 +323,7 @@ endpoints:
         name: date_of_birth
         description: 'Must be a valid date.'
         required: true
-        example: '2023-09-19T13:55:46'
+        example: '2023-09-19T14:08:37'
         type: string
         enumValues: []
         custom: []
@@ -331,7 +331,7 @@ endpoints:
         name: student_type
         description: ''
         required: true
-        example: qui
+        example: voluptas
         type: string
         enumValues: []
         custom: []
@@ -339,7 +339,7 @@ endpoints:
         name: work_type
         description: ''
         required: true
-        example: exercitationem
+        example: voluptas
         type: string
         enumValues: []
         custom: []
@@ -352,13 +352,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      is_male: true
+      is_male: false
       social_status: ut
-      nationality: eum
-      address: non
-      date_of_birth: '2023-09-19T13:55:46'
-      student_type: qui
-      work_type: exercitationem
+      nationality: voluptas
+      address: laudantium
+      date_of_birth: '2023-09-19T14:08:37'
+      student_type: voluptas
+      work_type: voluptas
       is_morning: true
     fileParameters: []
     responses:

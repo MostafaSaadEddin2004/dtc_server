@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "DTC App",
-        "_postman_id": "d67941b2-14cf-480d-badc-150212daa629",
+        "_postman_id": "c7032c6e-bbb7-4ccf-a96f-69b447c9f794",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -163,98 +163,80 @@
                             "mode": "formdata",
                             "formdata": [
                                 {
-                                    "key": "full_name",
-                                    "value": "atque",
-                                    "type": "text",
-                                    "description": ""
-                                },
-                                {
                                     "key": "father_name",
-                                    "value": "fugiat",
+                                    "value": "et",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "mother_name",
-                                    "value": "illum",
+                                    "value": "asperiores",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "date_of_birth",
-                                    "value": "2023-09-19T13:55:46",
+                                    "value": "2023-09-19T14:08:37",
                                     "type": "text",
                                     "description": "Must be a valid date."
                                 },
                                 {
                                     "key": "place_of_birth",
-                                    "value": "veritatis",
+                                    "value": "cupiditate",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "military",
-                                    "value": "earum",
-                                    "type": "text",
-                                    "description": ""
-                                },
-                                {
-                                    "key": "full_name_en",
                                     "value": "aut",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "current_address",
-                                    "value": "nostrum",
+                                    "value": "veritatis",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "address",
-                                    "value": "et",
+                                    "value": "quod",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "name_of_parent",
-                                    "value": "velit",
+                                    "value": "non",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "job_of_parent",
-                                    "value": "quia",
+                                    "value": "assumenda",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "phone_of_parent",
-                                    "value": "fugit",
+                                    "value": "esse",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "phone_of_mother",
-                                    "value": "incidunt",
-                                    "type": "text",
-                                    "description": ""
-                                },
-                                {
-                                    "key": "telephone_fix",
-                                    "value": "maxime",
+                                    "value": "ut",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "avg_mark",
-                                    "value": 6,
+                                    "value": 9,
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "certificate_year",
-                                    "value": "et",
+                                    "value": "perspiciatis",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -343,7 +325,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"my@example.com\",\"password\":\"password\",\"role\":\"student_browser\",\"fcm_token\":\"voluptatem\"}"
+                            "raw": "{\"email\":\"my@example.com\",\"password\":\"password\",\"role\":\"student_browser\",\"fcm_token\":\"incidunt\"}"
                         },
                         "description": ""
                     },
@@ -372,7 +354,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"2|jSYsbk1uKO3q11fXr07jLoQcnHsO2S8RcIbBl45Y7c877062\"}",
+                            "body": "{\"token\":\"2|CSO7ltoA5aNdWyW7OMU2doTgor2yjo6i9OK3fUova517f36d\"}",
                             "name": ""
                         }
                     ]
@@ -402,55 +384,55 @@
                             "formdata": [
                                 {
                                     "key": "first_name_en",
-                                    "value": "nam",
+                                    "value": "voluptatem",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "last_name_en",
-                                    "value": "rerum",
+                                    "value": "sint",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "first_name_ar",
-                                    "value": "molestias",
+                                    "value": "maxime",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "last_name_ar",
-                                    "value": "et",
+                                    "value": "molestiae",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "phone",
-                                    "value": "perspiciatis",
+                                    "value": "aliquid",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "email",
-                                    "value": "hertha.walsh@example.com",
+                                    "value": "brenda.gleason@example.net",
                                     "type": "text",
                                     "description": "Must be a valid email address."
                                 },
                                 {
                                     "key": "password",
-                                    "value": "AdSm?x$;v",
+                                    "value": "I{G*Gs&al",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "role",
-                                    "value": "student",
+                                    "value": "teacher",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "fcm_token",
-                                    "value": "occaecati",
+                                    "value": "cum",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -488,7 +470,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"token\":\"2|jaEppsHsfy6tmizjOIpIFyB1HUU1DTDdIkz79Vhfebf90aa1\"}",
+                            "body": "{\"token\":\"2|M3zceDTZAZBXGP5ntyLWfoY1s5C6No0yiRCpLBbG994d3c3d\"}",
                             "name": ""
                         }
                     ]
@@ -553,7 +535,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"willie19@example.org\"}"
+                            "raw": "{\"email\":\"reichert.elva@example.com\"}"
                         },
                         "description": ""
                     },
@@ -582,7 +564,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":{\"email\":\"willie19@example.org\",\"first_name_en\":\"Josiane Harber\",\"first_name_ar\":\"Zora Halvorson\",\"last_name_en\":\"Efren Altenwerth\",\"last_name_ar\":\"Ross Trantow DDS\",\"phone\":\"+1-469-373-3511\",\"image\":null,\"department\":null,\"section\":null}}",
+                            "body": "{\"data\":{\"email\":\"reichert.elva@example.com\",\"first_name_en\":\"Josiane Harber\",\"first_name_ar\":\"Zora Halvorson\",\"last_name_en\":\"Efren Altenwerth\",\"last_name_ar\":\"Ross Trantow DDS\",\"phone\":\"+1-469-373-3511\",\"image\":null,\"department\":null,\"section\":null}}",
                             "name": ""
                         }
                     ]
@@ -635,7 +617,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":{\"email\":\"willie19@example.org\",\"first_name_en\":\"Josiane Harber\",\"first_name_ar\":\"Zora Halvorson\",\"last_name_en\":\"Efren Altenwerth\",\"last_name_ar\":\"Ross Trantow DDS\",\"phone\":\"+1-469-373-3511\",\"image\":null,\"department\":null,\"section\":null}}",
+                            "body": "{\"data\":{\"email\":\"reichert.elva@example.com\",\"first_name_en\":\"Josiane Harber\",\"first_name_ar\":\"Zora Halvorson\",\"last_name_en\":\"Efren Altenwerth\",\"last_name_ar\":\"Ross Trantow DDS\",\"phone\":\"+1-469-373-3511\",\"image\":null,\"department\":null,\"section\":null}}",
                             "name": ""
                         }
                     ]
@@ -715,7 +697,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"certificate\":\"ratione\",\"specialty\":\"dolorem\",\"birth_date\":\"2015-01-10\",\"current_location\":\"sint\",\"permanent_location\":\"non\",\"nationality\":\"autem\",\"department_id\":2}"
+                            "raw": "{\"certificate\":\"est\",\"specialty\":\"dignissimos\",\"birth_date\":\"2023-02-23\",\"current_location\":\"maxime\",\"permanent_location\":\"rerum\",\"nationality\":\"aut\",\"department_id\":1}"
                         },
                         "description": ""
                     },
@@ -1065,7 +1047,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"is_male\":true,\"social_status\":\"ut\",\"nationality\":\"eum\",\"address\":\"non\",\"date_of_birth\":\"2023-09-19T13:55:46\",\"student_type\":\"qui\",\"work_type\":\"exercitationem\",\"is_morning\":true}"
+                            "raw": "{\"is_male\":false,\"social_status\":\"ut\",\"nationality\":\"voluptas\",\"address\":\"laudantium\",\"date_of_birth\":\"2023-09-19T14:08:37\",\"student_type\":\"voluptas\",\"work_type\":\"voluptas\",\"is_morning\":true}"
                         },
                         "description": ""
                     },
@@ -1113,7 +1095,7 @@
                                 {
                                     "id": "sectionId",
                                     "key": "sectionId",
-                                    "value": "quo",
+                                    "value": "sunt",
                                     "description": ""
                                 }
                             ]
@@ -1172,7 +1154,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"subject\":\"sed\",\"mark\":19,\"reason\":\"et\",\"teacher\":\"qui\"}"
+                            "raw": "{\"subject\":\"dolorum\",\"mark\":5,\"reason\":\"rerum\",\"teacher\":\"magni\"}"
                         },
                         "description": "",
                         "auth": {
@@ -1228,7 +1210,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"text\":\"tempore\",\"department_id\":312.6}"
+                            "raw": "{\"text\":\"ut\",\"department_id\":20791.92236943}"
                         },
                         "description": "",
                         "auth": {
@@ -1337,7 +1319,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"tempora\",\"description\":\"Doloribus consequuntur temporibus et tempora.\",\"note_category_id\":6}"
+                            "raw": "{\"title\":\"aut\",\"description\":\"Et qui repudiandae molestiae rem est et ut rerum.\",\"note_category_id\":3}"
                         },
                         "description": ""
                     },
@@ -1366,7 +1348,7 @@
                                 }
                             ],
                             "code": 201,
-                            "body": "{\"data\":{\"id\":6,\"title\":\"tempora\",\"description\":\"Doloribus consequuntur temporibus et tempora.\",\"category\":\"Cecilia Luettgen\"}}",
+                            "body": "{\"data\":{\"id\":6,\"title\":\"aut\",\"description\":\"Et qui repudiandae molestiae rem est et ut rerum.\",\"category\":\"Holden Ebert\"}}",
                             "name": ""
                         }
                     ]
@@ -1462,7 +1444,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"consequatur\",\"description\":\"Maxime eum error aspernatur molestiae quo iure.\"}"
+                            "raw": "{\"title\":\"rerum\",\"description\":\"Impedit pariatur inventore vitae impedit amet laudantium.\"}"
                         },
                         "description": ""
                     },
@@ -1491,7 +1473,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":{\"id\":1,\"title\":\"consequatur\",\"description\":\"Maxime eum error aspernatur molestiae quo iure.\",\"category\":\"Cecilia Luettgen\"}}",
+                            "body": "{\"data\":{\"id\":1,\"title\":\"rerum\",\"description\":\"Impedit pariatur inventore vitae impedit amet laudantium.\",\"category\":\"Cecilia Luettgen\"}}",
                             "name": ""
                         }
                     ]
@@ -1696,7 +1678,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"content\":\"et\",\"attachment\":\"itaque\"}"
+                            "raw": "{\"content\":\"voluptas\",\"attachment\":\"non\"}"
                         },
                         "description": ""
                     },
@@ -1760,7 +1742,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"content\":\"cum\",\"attachment\":\"dolor\",\"attachment_type\":\"eligendi\",\"user_id\":4112371.47,\"department_id\":1946.933,\"course_id\":27808.16299,\"post_type_id\":66756210.19208603}"
+                            "raw": "{\"content\":\"sunt\",\"attachment\":\"sit\",\"attachment_type\":\"ut\",\"user_id\":41.2795315,\"department_id\":31585.1,\"course_id\":34.698133,\"post_type_id\":87.973693603}"
                         },
                         "description": ""
                     },
@@ -1860,12 +1842,12 @@
                             "query": [
                                 {
                                     "key": "type",
-                                    "value": "dolorem",
+                                    "value": "ipsam",
                                     "description": "the type of the post (public, department ,course).",
                                     "disabled": false
                                 }
                             ],
-                            "raw": "{{baseUrl}}\/api\/post?type=dolorem"
+                            "raw": "{{baseUrl}}\/api\/post?type=ipsam"
                         },
                         "method": "GET",
                         "header": [
@@ -1880,7 +1862,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"type\":\"public\"}"
+                            "raw": "{\"type\":\"department\"}"
                         },
                         "description": ""
                     },
@@ -1909,7 +1891,7 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"data\":[{\"id\":1,\"content\":\"Explicabo alias natus quis eum non repellendus. Et ea tempora animi ipsum. Maiores aut repellat quibusdam praesentium.\",\"attachment\":\"odit\",\"department_name\":\"Gilbert Nolan\",\"course_name\":\"Prof. Christopher Dare DVM\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"3 minutes ago\"},{\"id\":2,\"content\":\"Ut reiciendis blanditiis repudiandae incidunt voluptatibus quis ea doloremque. Accusamus et sint ut. Quo placeat necessitatibus temporibus inventore voluptatem ea.\",\"attachment\":\"rerum\",\"department_name\":\"Viviane Wiegand\",\"course_name\":\"Raheem Schuppe\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"3 minutes ago\"},{\"id\":4,\"content\":\"Temporibus cum sit animi perspiciatis. Non quam ad sint est nobis hic ea commodi. Quam qui rerum ab optio. Error beatae sunt omnis facere incidunt. Ex amet tempora quis.\",\"attachment\":\"et\",\"department_name\":\"Javier Stanton\",\"course_name\":\"Prof. Annie Kilback Sr.\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"3 minutes ago\"},{\"id\":7,\"content\":\"Iusto dolorem et corrupti suscipit veritatis consequatur doloremque. Quo sint est dolorum voluptate. Fugiat illum id totam magnam. Et nam voluptatem possimus occaecati corporis et.\",\"attachment\":\"sed\",\"department_name\":\"Malinda Oberbrunner II\",\"course_name\":\"Aidan Von III\",\"attachment_type\":\"image\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"3 minutes ago\"},{\"id\":12,\"content\":\"Quia error repudiandae voluptatem iure. Quo tempora sequi quo alias et. Animi quia nihil optio reprehenderit.\",\"attachment\":\"quia\",\"department_name\":\"Deborah Hermann IV\",\"course_name\":\"Velda Kshlerin DDS\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"3 minutes ago\"},{\"id\":15,\"content\":\"Ipsam sapiente aut nobis ut. Ea est quis laudantium. Voluptate et aut autem mollitia veritatis rerum. Laborum praesentium asperiores autem qui eum.\",\"attachment\":\"similique\",\"department_name\":\"Tyra Krajcik\",\"course_name\":\"Anthony Heaney III\",\"attachment_type\":\"image\",\"likes\":0,\"liked_by_me\":false,\"saves\":1,\"saved_by_me\":false,\"created_at\":\"3 minutes ago\"}]}",
+                            "body": "{\"data\":[{\"id\":5,\"content\":\"Consequatur aut quo quod officiis. Et mollitia ut blanditiis optio fuga minus. Rerum quam facilis nihil.\",\"attachment\":\"deleniti\",\"department_name\":\"Nedra Monahan\",\"course_name\":\"Itzel Beahan\",\"attachment_type\":\"file\",\"likes\":0,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"15 minutes ago\"},{\"id\":10,\"content\":\"Ea enim exercitationem et minus et quis. Aut soluta voluptate voluptas et et vitae. Et illo dolorem id omnis asperiores quidem. Rerum quod eos nisi sit eaque sit.\",\"attachment\":\"ut\",\"department_name\":\"Mrs. Albina Bradtke I\",\"course_name\":\"Daisy Waelchi\",\"attachment_type\":\"image\",\"likes\":1,\"liked_by_me\":false,\"saves\":0,\"saved_by_me\":false,\"created_at\":\"15 minutes ago\"}]}",
                             "name": ""
                         }
                     ]

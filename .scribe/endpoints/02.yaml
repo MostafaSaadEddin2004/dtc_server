@@ -27,7 +27,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: et
+        example: voluptas
         type: string
         enumValues: []
         custom: []
@@ -35,13 +35,13 @@ endpoints:
         name: attachment
         description: ''
         required: false
-        example: itaque
+        example: non
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: et
-      attachment: itaque
+      content: voluptas
+      attachment: non
     fileParameters: []
     responses:
       -
@@ -591,7 +591,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: cum
+        example: sunt
         type: string
         enumValues: []
         custom: []
@@ -599,7 +599,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: dolor
+        example: sit
         type: string
         enumValues: []
         custom: []
@@ -607,7 +607,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: eligendi
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -615,7 +615,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 4112371.47
+        example: 41.2795315
         type: number
         enumValues: []
         custom: []
@@ -623,7 +623,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 1946.933
+        example: 31585.1
         type: number
         enumValues: []
         custom: []
@@ -631,7 +631,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 27808.16299
+        example: 34.698133
         type: number
         enumValues: []
         custom: []
@@ -639,18 +639,18 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 66756210.192086
+        example: 87.973693603
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: cum
-      attachment: dolor
-      attachment_type: eligendi
-      user_id: 4112371.47
-      department_id: 1946.933
-      course_id: 27808.16299
-      post_type_id: 66756210.192086
+      content: sunt
+      attachment: sit
+      attachment_type: ut
+      user_id: 41.2795315
+      department_id: 31585.1
+      course_id: 34.698133
+      post_type_id: 87.973693603
     fileParameters: []
     responses:
       -
@@ -750,18 +750,18 @@ endpoints:
         name: type
         description: 'the type of the post (public, department ,course).'
         required: false
-        example: dolorem
+        example: ipsam
         type: string
         enumValues: []
         custom: []
     cleanQueryParameters:
-      type: dolorem
+      type: ipsam
     bodyParameters:
       type:
         name: type
         description: ''
         required: true
-        example: public
+        example: department
         type: string
         enumValues:
           - public
@@ -769,12 +769,12 @@ endpoints:
           - course
         custom: []
     cleanBodyParameters:
-      type: public
+      type: department
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":[{"id":1,"content":"Explicabo alias natus quis eum non repellendus. Et ea tempora animi ipsum. Maiores aut repellat quibusdam praesentium.","attachment":"odit","department_name":"Gilbert Nolan","course_name":"Prof. Christopher Dare DVM","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"3 minutes ago"},{"id":2,"content":"Ut reiciendis blanditiis repudiandae incidunt voluptatibus quis ea doloremque. Accusamus et sint ut. Quo placeat necessitatibus temporibus inventore voluptatem ea.","attachment":"rerum","department_name":"Viviane Wiegand","course_name":"Raheem Schuppe","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"3 minutes ago"},{"id":4,"content":"Temporibus cum sit animi perspiciatis. Non quam ad sint est nobis hic ea commodi. Quam qui rerum ab optio. Error beatae sunt omnis facere incidunt. Ex amet tempora quis.","attachment":"et","department_name":"Javier Stanton","course_name":"Prof. Annie Kilback Sr.","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"3 minutes ago"},{"id":7,"content":"Iusto dolorem et corrupti suscipit veritatis consequatur doloremque. Quo sint est dolorum voluptate. Fugiat illum id totam magnam. Et nam voluptatem possimus occaecati corporis et.","attachment":"sed","department_name":"Malinda Oberbrunner II","course_name":"Aidan Von III","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"3 minutes ago"},{"id":12,"content":"Quia error repudiandae voluptatem iure. Quo tempora sequi quo alias et. Animi quia nihil optio reprehenderit.","attachment":"quia","department_name":"Deborah Hermann IV","course_name":"Velda Kshlerin DDS","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"3 minutes ago"},{"id":15,"content":"Ipsam sapiente aut nobis ut. Ea est quis laudantium. Voluptate et aut autem mollitia veritatis rerum. Laborum praesentium asperiores autem qui eum.","attachment":"similique","department_name":"Tyra Krajcik","course_name":"Anthony Heaney III","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"3 minutes ago"}]}'
+        content: '{"data":[{"id":5,"content":"Consequatur aut quo quod officiis. Et mollitia ut blanditiis optio fuga minus. Rerum quam facilis nihil.","attachment":"deleniti","department_name":"Nedra Monahan","course_name":"Itzel Beahan","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"15 minutes ago"},{"id":10,"content":"Ea enim exercitationem et minus et quis. Aut soluta voluptate voluptas et et vitae. Et illo dolorem id omnis asperiores quidem. Rerum quod eos nisi sit eaque sit.","attachment":"ut","department_name":"Mrs. Albina Bradtke I","course_name":"Daisy Waelchi","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"15 minutes ago"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

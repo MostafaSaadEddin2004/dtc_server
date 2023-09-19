@@ -32,7 +32,7 @@ endpoints:
         name: text
         description: ''
         required: true
-        example: tempore
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -40,13 +40,13 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 312.6
+        example: 20791.92236943
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      text: tempore
-      department_id: 312.6
+      text: ut
+      department_id: 20791.92236943
     fileParameters: []
     responses:
       -
