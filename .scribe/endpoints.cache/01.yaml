@@ -43,7 +43,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
+      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
     controller: null
     method: null
     route: null
@@ -74,7 +74,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: est
+        example: tempora
         type: string
         enumValues: []
         custom: []
@@ -82,7 +82,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Ipsum officiis at sed molestiae iste provident.'
+        example: 'Doloribus consequuntur temporibus et tempora.'
         type: string
         enumValues: []
         custom: []
@@ -98,19 +98,19 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 8
+        example: 6
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: est
-      description: 'Ipsum officiis at sed molestiae iste provident.'
-      note_category_id: 8
+      title: tempora
+      description: 'Doloribus consequuntur temporibus et tempora.'
+      note_category_id: 6
     fileParameters: []
     responses:
       -
         status: 201
-        content: '{"data":{"id":6,"title":"est","description":"Ipsum officiis at sed molestiae iste provident.","category":"Dr. Kellie Orn"}}'
+        content: '{"data":{"id":6,"title":"tempora","description":"Doloribus consequuntur temporibus et tempora.","category":"Cecilia Luettgen"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -123,7 +123,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
+      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
     controller: null
     method: null
     route: null
@@ -164,7 +164,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"Et vero sit voluptas.","description":"Omnis labore eum blanditiis. Reprehenderit occaecati soluta repudiandae error in magnam. Excepturi modi non dolor ipsam occaecati neque.","category":"Dr. Mia Rogahn III"}}'
+        content: '{"data":{"id":1,"title":"Laborum labore unde maxime ut.","description":"Magnam pariatur quam iste et. Aperiam corporis quia nobis fuga nostrum. Voluptatibus et quis ipsum harum et voluptas.","category":"Cecilia Luettgen"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -177,7 +177,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
+      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
     controller: null
     method: null
     route: null
@@ -218,7 +218,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: nulla
+        example: consequatur
         type: string
         enumValues: []
         custom: []
@@ -226,7 +226,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Voluptas occaecati amet quis earum.'
+        example: 'Maxime eum error aspernatur molestiae quo iure.'
         type: string
         enumValues: []
         custom: []
@@ -247,13 +247,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: nulla
-      description: 'Voluptas occaecati amet quis earum.'
+      title: consequatur
+      description: 'Maxime eum error aspernatur molestiae quo iure.'
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"nulla","description":"Voluptas occaecati amet quis earum.","category":"Dr. Mia Rogahn III"}}'
+        content: '{"data":{"id":1,"title":"consequatur","description":"Maxime eum error aspernatur molestiae quo iure.","category":"Cecilia Luettgen"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -266,7 +266,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
+      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
     controller: null
     method: null
     route: null
@@ -319,7 +319,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
+      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
     controller: null
     method: null
     route: null
@@ -364,7 +364,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|oJ8KPd9xcgcETXb6mSVY0a5A5X09f5r3TUwkgsbv12336a80'
+      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
     controller: null
     method: null
     route: null

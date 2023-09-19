@@ -1,5 +1,9 @@
 <?php
-app()->setLocale('ar');
+if (request()->expectsJson()) {
+    app()->setLocale('ar');
+} else {
+    app()->setLocale('en');
+}
 require_once 'api/auth.php';
 require_once 'api/note.php';
 require_once 'api/post.php';
@@ -10,3 +14,4 @@ require_once 'api/move.php';
 require_once 'api/department.php';
 require_once 'api/section.php';
 require_once 'api/teacher.php';
+require_once 'api/notification.php';
