@@ -36,7 +36,7 @@ class StoreAcademicRegisterationRequest extends FormRequest
             'phone_of_parent' => ['required'],
             'phone_of_mother' => ['required'],
             'telephone_fix' => ['required'],
-            'avg_mark' => ['required'],
+            'avg_mark' => ['required', 'integer'],
             'certificate_year' => ['required'],
             'id_image' => ['required', 'image'],
             'certificate_image' => ['required', 'image'],

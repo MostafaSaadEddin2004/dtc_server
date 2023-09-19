@@ -7,6 +7,7 @@ use App\Http\Requests\Api\StoreAcademicRegisterationRequest;
 use App\Http\Resources\CertificateTypeResource;
 use App\Http\Resources\DepartmentResource;
 use App\Models\CertificateType;
+use App\Models\Department;
 
 /**
  * @group AcademicRegistration
@@ -38,5 +39,23 @@ class AcademicRegistrationController extends Controller
     {
         $data = $request->validated();
         $data['user_id'] = auth()->id();
+
+        $idImagePath = $request->file('id_image')->store('public/AcademicRegistrationImages');
+        $certificateImagePath = $request->file('certificate_image')->store('public/AcademicRegistrationImages');
+        $personalImagePath = $request->file('personal_image')->store('public/AcademicRegistrationImages');
+        $unImagePath = $request->file('un_image')->store('public/AcademicRegistrationImages');
+
+        $data['id_image'] = $idImagePath;
+        $data['certificate_image'] = $certificateImagePath;
+        $data['personal_image'] = $personalImagePath;
+        $data['un_image'] = $unImagePath;
+
+        foreach ($data['department_ids'] as $departmentId) {
+            $department = Department::with('departmentMarks')->find($departmentId);
+
+            if ($department->mark_of_this_year <= $data['avg_mark']) {
+                auth()->user()->wishes()->create(['department_id' => $department->id]);
+            }
+        }
     }
 }
