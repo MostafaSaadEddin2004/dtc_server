@@ -22,12 +22,12 @@ class CreatePost extends CreateRecord
 
         // Check if the file extension is in the list of image extensions
         if (in_array($file_extension, $image_extensions)) {
-            $data['attachment_type']='image';
+            $data['attachment_type'] = 'image';
         } else {
-            $data['attachment_type']='file';
+            $data['attachment_type'] = 'file';
         }
-        $data['user_id']=auth()->id();
-        $data['post_type_id']=3;
+        $data['user_id'] = auth()->id();
+        $data['post_type_id'] = 3;
         return $data;
     }
 }

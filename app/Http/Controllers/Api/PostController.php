@@ -29,7 +29,7 @@ class PostController extends Controller
                 ->whereHas('postType', fn ($query)  => $query->where('name', 'public'))->latest()->get();
         } else if ($request->type == 'department') {
             $posts = Post::with(['likes', 'saves'])
-                ->whereHas('postType', fn ($query)  => $query->where('name', 'department')->orWhere('name', 'public'))->latest()->get();
+                ->whereHas('postType', fn ($query)  => $query->where('name', 'department'))->latest()->get();
         } else {
             $posts = Post::with(['likes', 'saves'])
                 ->whereHas('postType', fn ($query)  => $query->where('name', 'course'))->latest()->get();
