@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+/**
+ * @group Notification
+ */
 class NotificationController extends Controller
 {
     /**

@@ -26,12 +26,12 @@ endpoints:
         name: sectionId
         description: ''
         required: true
-        example: sed
+        example: labore
         type: string
         enumValues: []
         custom: []
     cleanUrlParameters:
-      sectionId: sed
+      sectionId: labore
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
