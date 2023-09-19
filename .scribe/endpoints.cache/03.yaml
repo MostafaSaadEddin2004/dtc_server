@@ -35,7 +35,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '44'
+          x-ratelimit-remaining: '42'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -43,7 +43,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -80,7 +80,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '43'
+          x-ratelimit-remaining: '41'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -88,7 +88,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -134,7 +134,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '42'
+          x-ratelimit-remaining: '40'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -142,7 +142,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -189,7 +189,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '41'
+          x-ratelimit-remaining: '39'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -197,7 +197,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -243,7 +243,7 @@ endpoints:
           content-type: 'text/html; charset=UTF-8'
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '40'
+          x-ratelimit-remaining: '38'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -251,7 +251,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -291,7 +291,7 @@ endpoints:
         name: is_male
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         enumValues: []
         custom: []
@@ -299,7 +299,7 @@ endpoints:
         name: social_status
         description: ''
         required: true
-        example: nulla
+        example: non
         type: string
         enumValues: []
         custom: []
@@ -307,7 +307,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: illo
+        example: veritatis
         type: string
         enumValues: []
         custom: []
@@ -315,15 +315,15 @@ endpoints:
         name: address
         description: ''
         required: true
-        example: ut
+        example: placeat
         type: string
         enumValues: []
         custom: []
       date_of_birth:
         name: date_of_birth
-        description: 'Must be a valid date.'
+        description: 'حقل value ليس تاريخًا صحيحًا.'
         required: true
-        example: '2023-09-17T14:52:42'
+        example: '2023-09-19T09:51:07'
         type: string
         enumValues: []
         custom: []
@@ -331,7 +331,7 @@ endpoints:
         name: student_type
         description: ''
         required: true
-        example: recusandae
+        example: aut
         type: string
         enumValues: []
         custom: []
@@ -339,7 +339,7 @@ endpoints:
         name: work_type
         description: ''
         required: true
-        example: quis
+        example: iure
         type: string
         enumValues: []
         custom: []
@@ -352,13 +352,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      is_male: true
-      social_status: nulla
-      nationality: illo
-      address: ut
-      date_of_birth: '2023-09-17T14:52:42'
-      student_type: recusandae
-      work_type: quis
+      is_male: false
+      social_status: non
+      nationality: veritatis
+      address: placeat
+      date_of_birth: '2023-09-19T09:51:07'
+      student_type: aut
+      work_type: iure
       is_morning: true
     fileParameters: []
     responses:
@@ -368,7 +368,7 @@ endpoints:
         headers:
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '39'
+          x-ratelimit-remaining: '37'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -376,7 +376,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null

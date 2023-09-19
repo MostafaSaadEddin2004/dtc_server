@@ -29,12 +29,12 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":1,"name":"Prof. Tanya Hintz Jr."},{"id":2,"name":"Nola Brakus"},{"id":3,"name":"Anya Cronin I"},{"id":4,"name":"Trevion Bechtelar Jr."},{"id":5,"name":"Ms. Mina Lind IV"},{"id":6,"name":"Terence Zemlak"},{"id":7,"name":"Missouri Kuhlman"},{"id":8,"name":"Mr. Johann Rempel"},{"id":9,"name":"Gabriella McGlynn"},{"id":10,"name":"Chelsea Ferry"},{"id":11,"name":"Keshaun Schimmel III"},{"id":12,"name":"Cyrus Braun"},{"id":13,"name":"Brennon Greenholt"},{"id":14,"name":"Ms. Joyce Hyatt"},{"id":15,"name":"Cyrus Flatley"},{"id":16,"name":"Noe Pfannerstill"},{"id":17,"name":"Elinor Schaden"},{"id":18,"name":"Victor Erdman"},{"id":19,"name":"Mr. Murl Ernser Sr."},{"id":20,"name":"Citlalli Breitenberg"},{"id":21,"name":"Verner Wolf III"},{"id":22,"name":"Buddy Schamberger"},{"id":23,"name":"Prof. Santos Pacocha"},{"id":24,"name":"Major Kemmer"},{"id":25,"name":"Michelle Goyette Jr."},{"id":26,"name":"Prof. Durward Stroman DDS"},{"id":27,"name":"Brady Turcotte"},{"id":28,"name":"Mrs. Layla Flatley"},{"id":29,"name":"Miss Yolanda Wilkinson II"},{"id":30,"name":"Dr. Dereck Legros Sr."},{"id":31,"name":"Kim Schulist V"},{"id":32,"name":"Chloe Bartoletti"},{"id":33,"name":"Hilma Rogahn"},{"id":34,"name":"Verda Krajcik II"},{"id":35,"name":"Lyda Wisozk"},{"id":36,"name":"Antonia Lind"},{"id":37,"name":"Gerda Blanda"},{"id":38,"name":"Prof. Savannah Kutch"},{"id":39,"name":"Giovanni Stracke"},{"id":40,"name":"Aiden Dare"},{"id":41,"name":"Thelma Howell"},{"id":42,"name":"Rozella Morar"},{"id":43,"name":"Prof. Darwin Gislason Sr."},{"id":44,"name":"Dr. Laverne Bernier"},{"id":45,"name":"Mr. Price McDermott"}]}'
+        content: '{"data":[{"id":1,"name":"Dallas Blanda"},{"id":2,"name":"Pattie Herman"},{"id":3,"name":"Mr. Jason Boehm"},{"id":4,"name":"Dr. Guiseppe Gutmann IV"},{"id":5,"name":"Morton Botsford"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '38'
+          x-ratelimit-remaining: '36'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -78,131 +78,40 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 500
+        status: 404
         content: |-
           {
-              "message": "SQLSTATE[HY000]: General error: 1 no such table: certificate_type_department (Connection: sqlite, SQL: select \"departments\".*, \"certificate_type_department\".\"certificate_type_id\" as \"pivot_certificate_type_id\", \"certificate_type_department\".\"department_id\" as \"pivot_department_id\" from \"departments\" inner join \"certificate_type_department\" on \"departments\".\"id\" = \"certificate_type_department\".\"department_id\" where \"certificate_type_department\".\"certificate_type_id\" = 20)",
-              "exception": "Illuminate\\Database\\QueryException",
-              "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
-              "line": 801,
+              "message": "No query results for model [App\\Models\\CertificateType] 20",
+              "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
+              "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+              "line": 446,
               "trace": [
                   {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
-                      "line": 755,
-                      "function": "runQueryCallback",
-                      "class": "Illuminate\\Database\\Connection",
+                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+                      "line": 422,
+                      "function": "prepareException",
+                      "class": "Illuminate\\Foundation\\Exceptions\\Handler",
                       "type": "->"
                   },
                   {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
-                      "line": 424,
-                      "function": "run",
-                      "class": "Illuminate\\Database\\Connection",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
-                      "line": 2752,
-                      "function": "select",
-                      "class": "Illuminate\\Database\\Connection",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
-                      "line": 2740,
-                      "function": "runSelect",
-                      "class": "Illuminate\\Database\\Query\\Builder",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
-                      "line": 3294,
-                      "function": "Illuminate\\Database\\Query\\{closure}",
-                      "class": "Illuminate\\Database\\Query\\Builder",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
-                      "line": 2741,
-                      "function": "onceWithColumns",
-                      "class": "Illuminate\\Database\\Query\\Builder",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
-                      "line": 737,
-                      "function": "get",
-                      "class": "Illuminate\\Database\\Query\\Builder",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
-                      "line": 874,
-                      "function": "getModels",
-                      "class": "Illuminate\\Database\\Eloquent\\Builder",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/app/Http/Controllers/Api/AcademicRegistrationController.php",
-                      "line": 31,
-                      "function": "get",
-                      "class": "Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Controller.php",
+                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php",
                       "line": 54,
-                      "function": "departmentsByCertificateType",
-                      "class": "App\\Http\\Controllers\\Api\\AcademicRegistrationController",
+                      "function": "render",
+                      "class": "Illuminate\\Foundation\\Exceptions\\Handler",
                       "type": "->"
                   },
                   {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php",
-                      "line": 43,
-                      "function": "callAction",
-                      "class": "Illuminate\\Routing\\Controller",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
-                      "line": 260,
-                      "function": "dispatch",
-                      "class": "Illuminate\\Routing\\ControllerDispatcher",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
-                      "line": 205,
-                      "function": "runController",
-                      "class": "Illuminate\\Routing\\Route",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
-                      "line": 799,
-                      "function": "run",
-                      "class": "Illuminate\\Routing\\Route",
+                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php",
+                      "line": 51,
+                      "function": "render",
+                      "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
                       "type": "->"
                   },
                   {
                       "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
-                      "line": 141,
-                      "function": "Illuminate\\Routing\\{closure}",
-                      "class": "Illuminate\\Routing\\Router",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php",
-                      "line": 50,
-                      "function": "Illuminate\\Pipeline\\{closure}",
-                      "class": "Illuminate\\Pipeline\\Pipeline",
-                      "type": "->"
-                  },
-                  {
-                      "file": "/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php",
-                      "line": 180,
-                      "function": "handle",
-                      "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+                      "line": 185,
+                      "function": "handleException",
+                      "class": "Illuminate\\Routing\\Pipeline",
                       "type": "->"
                   },
                   {
@@ -596,7 +505,57 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '37'
+          x-ratelimit-remaining: '35'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/academic-registration
+    metadata:
+      groupName: AcademicRegistration
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      certificateType_id:
+        name: certificateType_id
+        description: 'The ID of the certificateType.'
+        required: false
+        example: 20
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      certificateType_id: 20
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '34'
           access-control-allow-origin: '*'
         description: null
         custom: []

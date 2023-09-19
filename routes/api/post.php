@@ -11,4 +11,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('saved-posts', [PostController::class, 'saves']);
     Route::post('/post/{post}/like', [PostController::class, 'like']);
     Route::post('/post/{post}/save', [PostController::class, 'save']);
+    Route::post('/post/{post}/dislike', [PostController::class, 'dislike']);
+    Route::post('/post/{post}/unsave', [PostController::class, 'unsave']);
 });

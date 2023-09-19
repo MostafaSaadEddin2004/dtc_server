@@ -26,13 +26,13 @@ class PostController extends Controller
     {
         if ($request->type == 'public') {
             $posts = Post::with(['likes', 'saves'])
-                ->whereHas('postType', fn ($query)  => $query->where('name', 'public'))->get();
+                ->whereHas('postType', fn ($query)  => $query->where('name', 'public'))->latest()->get();
         } else if ($request->type == 'department') {
             $posts = Post::with(['likes', 'saves'])
-                ->whereHas('postType', fn ($query)  => $query->where('name', 'department')->orWhere('name', 'public'))->get();
+                ->whereHas('postType', fn ($query)  => $query->where('name', 'department')->orWhere('name', 'public'))->latest()->get();
         } else {
             $posts = Post::with(['likes', 'saves'])
-                ->whereHas('postType', fn ($query)  => $query->where('name', 'course'))->get();
+                ->whereHas('postType', fn ($query)  => $query->where('name', 'course'))->latest()->get();
         }
 
         return PostResource::collection($posts);
@@ -71,6 +71,27 @@ class PostController extends Controller
     public function save(Post $post)
     {
         $post->saves()->create(['user_id' => auth()->id()]);
+
+        return response()->noContent();
+    }
+
+
+    /**
+     * Display the specified resource.
+     */
+    public function dislike(Post $post)
+    {
+        $post->likes()->where('user_id', auth()->id())->delete();
+
+        return response()->noContent();
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function unsave(Post $post)
+    {
+        $post->saves()->where('user_id', auth()->id())->delete();
 
         return response()->noContent();
     }
