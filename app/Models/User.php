@@ -46,7 +46,6 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
-        'phone',
         'registeration',
         'is_admin',
         'name',
@@ -109,14 +108,14 @@ class User extends Authenticatable
     protected function department(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->registeration?->department,
+            get: fn () => $this->teacher?->department ?? $this->registeration?->department,
         );
     }
 
     protected function section(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->registeration?->department->section,
+            get: fn () => $this->teacher?->department->section ?? $this->registeration?->department->section,
         );
     }
 
@@ -134,7 +133,7 @@ class User extends Authenticatable
     protected function savedPosts(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->saves()->with('posts')->get()->pluck('products')->flatten(),
+            get: fn () => $this->saves()->with('post')->get()->pluck('post')->flatten(),
         );
     }
 }

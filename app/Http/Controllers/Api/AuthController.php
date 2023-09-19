@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\LoginRequest;
 use App\Http\Requests\Api\RegisterRequest;
 use App\Http\Requests\Api\TeacherRequest;
+use App\Http\Resources\UserProfileResource;
 use App\Models\Role;
 use App\Models\Teacher;
 use App\Models\User;
@@ -141,13 +142,8 @@ class AuthController extends Controller
     public function profile()
     {
         $user = auth()->user();
-        $data = ['user' => $user];
 
-        if ($user->department) {
-            $data['department'] = $user->department;
-            $data['section'] = $user->section;
-        }
-        return $data;
+        return new UserProfileResource($user);
     }
 
     public function getRole()

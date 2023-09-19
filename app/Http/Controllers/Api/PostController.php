@@ -75,6 +75,27 @@ class PostController extends Controller
         return response()->noContent();
     }
 
+
+    /**
+     * Display the specified resource.
+     */
+    public function dislike(Post $post)
+    {
+        $post->likes()->where('user_id', auth()->id())->delete();
+
+        return response()->noContent();
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function unsave(Post $post)
+    {
+        $post->saves()->where('user_id', auth()->id())->delete();
+
+        return response()->noContent();
+    }
+
     /**
      * Display the specified resource.
      */

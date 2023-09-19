@@ -32,4 +32,8 @@ class AcademicRegistrationController extends Controller
 
         return DepartmentResource::collection($departments);
     }
+
+    public function store()
+    {
+    }
 }
