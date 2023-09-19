@@ -20,6 +20,7 @@ Route::controller(AuthController::class)->group(function () {
 
     Route::middleware('auth:sanctum')->group(function () {
         Route::post('auth/logout', 'logout');
+        Route::post('auth/profile', 'updateProfile');
         Route::get('auth/profile', 'profile');
         Route::get('auth/role', 'getRole');
     });

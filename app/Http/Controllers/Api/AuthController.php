@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\LoginRequest;
 use App\Http\Requests\Api\RegisterRequest;
 use App\Http\Requests\Api\TeacherRequest;
+use App\Http\Requests\Api\UpdateProfileRequest;
 use App\Http\Resources\UserProfileResource;
 use App\Models\Role;
 use App\Models\Teacher;
@@ -142,6 +143,28 @@ class AuthController extends Controller
     public function profile()
     {
         $user = auth()->user();
+
+        return new UserProfileResource($user);
+    }
+
+    public function updateProfile(UpdateProfileRequest $request)
+    {
+        $user = auth()->user();
+        $data = [];
+        if ($request->email) {
+            $data['email'] = $request->email;
+        }
+        if ($request->phone) {
+            $data['phone'] = $request->phone;
+        }
+        if ($request->address) {
+            $data['address'] = $request->address;
+        }
+        if ($request->current_password) {
+            $data['password'] = $request->new_password;
+        }
+
+        $user->update($data);
 
         return new UserProfileResource($user);
     }
