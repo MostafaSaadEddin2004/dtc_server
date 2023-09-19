@@ -27,7 +27,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: neque
+        example: corrupti
         type: string
         enumValues: []
         custom: []
@@ -35,7 +35,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: ex
+        example: illum
         type: string
         enumValues: []
         custom: []
@@ -43,7 +43,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: fuga
+        example: eos
         type: string
         enumValues: []
         custom: []
@@ -51,7 +51,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 18956021.0499
+        example: 28441384.419
         type: number
         enumValues: []
         custom: []
@@ -59,7 +59,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 6142.6
+        example: 453124.93339142
         type: number
         enumValues: []
         custom: []
@@ -67,7 +67,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 26.11304
+        example: 1764.266
         type: number
         enumValues: []
         custom: []
@@ -75,23 +75,23 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 625052.73981834
+        example: 667614.6
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: neque
-      attachment: ex
-      attachment_type: fuga
-      user_id: 18956021.0499
-      department_id: 6142.6
-      course_id: 26.11304
-      post_type_id: 625052.73981834
+      content: corrupti
+      attachment: illum
+      attachment_type: eos
+      user_id: 28441384.419
+      department_id: 453124.93339142
+      course_id: 1764.266
+      post_type_id: 667614.6
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"unauthorized"}'
+        status: 422
+        content: '{"message":"user id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f. (and 3 more errors)","errors":{"user_id":["user id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"department_id":["department id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"course_id":["course id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"post_type_id":["post type id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -104,7 +104,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -145,7 +145,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: consequatur
+        example: labore
         type: string
         enumValues: []
         custom: []
@@ -153,7 +153,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: quae
+        example: natus
         type: string
         enumValues: []
         custom: []
@@ -161,7 +161,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: distinctio
+        example: vero
         type: string
         enumValues: []
         custom: []
@@ -169,7 +169,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 14603.59005515
+        example: 278143.32550626
         type: number
         enumValues: []
         custom: []
@@ -177,7 +177,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 203664.4562453
+        example: 115500.08
         type: number
         enumValues: []
         custom: []
@@ -185,7 +185,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 3452.45032
+        example: 4180.005314
         type: number
         enumValues: []
         custom: []
@@ -193,23 +193,23 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 11.9
+        example: 1.0
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: consequatur
-      attachment: quae
-      attachment_type: distinctio
-      user_id: 14603.59005515
-      department_id: 203664.4562453
-      course_id: 3452.45032
-      post_type_id: 11.9
+      content: labore
+      attachment: natus
+      attachment_type: vero
+      user_id: 278143.32550626
+      department_id: 115500.08
+      course_id: 4180.005314
+      post_type_id: 1.0
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"unauthorized"}'
+        status: 422
+        content: '{"message":"user id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f. (and 2 more errors)","errors":{"user_id":["user id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"department_id":["department id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."],"course_id":["course id \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f."]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -222,7 +222,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -262,11 +262,10 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"unauthorized"}'
+        status: 204
+        content: ''
         headers:
           cache-control: 'no-cache, private'
-          content-type: application/json
           x-ratelimit-limit: '60'
           x-ratelimit-remaining: '49'
           access-control-allow-origin: '*'
@@ -276,7 +275,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -305,18 +304,18 @@ endpoints:
         name: type
         description: 'the type of the post (public, department ,course).'
         required: false
-        example: quo
+        example: minus
         type: string
         enumValues: []
         custom: []
     cleanQueryParameters:
-      type: quo
+      type: minus
     bodyParameters:
       type:
         name: type
         description: ''
         required: true
-        example: course
+        example: public
         type: string
         enumValues:
           - public
@@ -324,12 +323,12 @@ endpoints:
           - course
         custom: []
     cleanBodyParameters:
-      type: course
+      type: public
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":[{"id":2,"content":"Iure ut qui non voluptatem. Voluptas rerum alias repellendus explicabo hic cupiditate. Vero esse non itaque et. Aut sit id omnis. Eos nemo architecto voluptas numquam laudantium ex minus autem.","attachment":"voluptates","attachment_type":"image","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 day ago"},{"id":12,"content":"Consequatur et similique autem ipsam quis quasi deserunt. Quaerat non sit libero eos. Sit doloremque officiis dolore sed.","attachment":"odio","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"1 day ago"},{"id":14,"content":"Voluptas consequatur vel sint sed repellat eum impedit excepturi. Et officiis rerum ut quas. Voluptatum quis repudiandae deserunt. Mollitia voluptatibus ullam eaque fuga sint.","attachment":"aut","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"1 day ago"}]}'
+        content: '{"data":[{"id":16,"content":"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.","attachment":"blanditiis","attachment_type":"file","likes":1,"liked_by_me":true,"saves":1,"saved_by_me":true,"created_at":"\u0645\u0646\u0630 22 \u062f\u0642\u064a\u0642\u0629"},{"id":4,"content":"Sed molestiae ea temporibus non recusandae. Beatae natus maxime doloremque dolor neque veritatis.","attachment":"consequatur","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 23 \u062f\u0642\u064a\u0642\u0629"},{"id":7,"content":"Officia aut blanditiis tempora ipsa animi aut. Quasi voluptatem sed repudiandae. Sed fugit aliquid ab voluptas commodi dolorem. Sequi voluptatum eum qui adipisci cupiditate recusandae.","attachment":"impedit","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 23 \u062f\u0642\u064a\u0642\u0629"},{"id":8,"content":"Repellat quos reiciendis maxime quaerat nisi sed accusamus. Iure laboriosam similique illo repudiandae iste sint ratione. Consectetur nobis in et ea recusandae repellat iste.","attachment":"quaerat","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 23 \u062f\u0642\u064a\u0642\u0629"},{"id":14,"content":"Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.","attachment":"omnis","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"\u0645\u0646\u0630 23 \u062f\u0642\u064a\u0642\u0629"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -342,7 +341,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -374,7 +373,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[]}'
+        content: '{"data":[{"id":16,"content":"Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.","attachment":"blanditiis","attachment_type":"file","likes":1,"liked_by_me":true,"saves":1,"saved_by_me":true,"created_at":"\u0645\u0646\u0630 22 \u062f\u0642\u064a\u0642\u0629"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -387,7 +386,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -440,7 +439,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null
@@ -493,7 +492,113 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|BzCfStLNTQZfgW47iwqGlOAokB9Itfs6G29epsAGb47dc1a0'
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/post/{post_id}/dislike'
+    metadata:
+      groupName: Post
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      post_id:
+        name: post_id
+        description: 'The ID of the post.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      post_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '44'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/post/{post_id}/unsave'
+    metadata:
+      groupName: Post
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      post_id:
+        name: post_id
+        description: 'The ID of the post.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      post_id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '43'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|GFxqMCqJoS9o0txoieFnRtxRypQVPlUDNCwd7e2D1b3a319a'
     controller: null
     method: null
     route: null

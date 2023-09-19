@@ -26,12 +26,12 @@ endpoints:
         name: sectionId
         description: ''
         required: true
-        example: distinctio
+        example: quae
         type: string
         enumValues: []
         custom: []
     cleanUrlParameters:
-      sectionId: distinctio
+      sectionId: quae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

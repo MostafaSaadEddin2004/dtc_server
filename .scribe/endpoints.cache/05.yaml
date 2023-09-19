@@ -32,15 +32,15 @@ endpoints:
         name: subject
         description: ''
         required: true
-        example: sunt
+        example: et
         type: string
         enumValues: []
         custom: []
       mark:
         name: mark
-        description: 'Must be at least 0. Must not be greater than 100.'
+        description: 'يجب أن تكون قيمة حقل value مساوية أو أكبر من 0. يجب أن تكون قيمة حقل value مساوية أو أصغر من 100.'
         required: true
-        example: 1
+        example: 23
         type: number
         enumValues: []
         custom: []
@@ -48,7 +48,7 @@ endpoints:
         name: reason
         description: ''
         required: true
-        example: dolorem
+        example: corporis
         type: string
         enumValues: []
         custom: []
@@ -56,15 +56,15 @@ endpoints:
         name: teacher
         description: ''
         required: true
-        example: dolorem
+        example: fugiat
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      subject: sunt
-      mark: 1
-      reason: dolorem
-      teacher: dolorem
+      subject: et
+      mark: 23
+      reason: corporis
+      teacher: fugiat
     fileParameters: []
     responses:
       -

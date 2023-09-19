@@ -30,9 +30,9 @@
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
-    <script src="../docs/js/tryitout-4.23.1.js"></script>
+    <script src="../docs/js/tryitout-4.24.0.js"></script>
 
-    <script src="../docs/js/theme-default-4.23.1.js"></script>
+    <script src="../docs/js/theme-default-4.24.0.js"></script>
 
 </head>
 
@@ -76,6 +76,9 @@
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="academicregistration-GETapi-certificate-type--certificateType_id--department">
                                 <a href="#academicregistration-GETapi-certificate-type--certificateType_id--department">GET api/certificate-type/{certificateType_id}/department</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="academicregistration-GETapi-academic-registration">
+                                <a href="#academicregistration-GETapi-academic-registration">GET api/academic-registration</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -210,6 +213,12 @@
                                                                                 <li class="tocify-item level-2" data-unique="post-POSTapi-post--post_id--save">
                                 <a href="#post-POSTapi-post--post_id--save">Display the specified resource.</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="post-POSTapi-post--post_id--dislike">
+                                <a href="#post-POSTapi-post--post_id--dislike">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="post-POSTapi-post--post_id--unsave">
+                                <a href="#post-POSTapi-post--post_id--unsave">Display the specified resource.</a>
+                            </li>
                                                                         </ul>
                             </ul>
                     <ul id="tocify-header-section" class="tocify-header">
@@ -231,7 +240,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: September 17, 2023</li>
+        <li>Last updated: September 19, 2023</li>
     </ul>
 </div>
 
@@ -301,7 +310,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 38
+x-ratelimit-remaining: 36
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -309,183 +318,23 @@ access-control-allow-origin: *
     &quot;data&quot;: [
         {
             &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;Prof. Tanya Hintz Jr.&quot;
+            &quot;name&quot;: &quot;Dallas Blanda&quot;
         },
         {
             &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;Nola Brakus&quot;
+            &quot;name&quot;: &quot;Pattie Herman&quot;
         },
         {
             &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;Anya Cronin I&quot;
+            &quot;name&quot;: &quot;Mr. Jason Boehm&quot;
         },
         {
             &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;Trevion Bechtelar Jr.&quot;
+            &quot;name&quot;: &quot;Dr. Guiseppe Gutmann IV&quot;
         },
         {
             &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;Ms. Mina Lind IV&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;Terence Zemlak&quot;
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;name&quot;: &quot;Missouri Kuhlman&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;name&quot;: &quot;Mr. Johann Rempel&quot;
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;name&quot;: &quot;Gabriella McGlynn&quot;
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;name&quot;: &quot;Chelsea Ferry&quot;
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;name&quot;: &quot;Keshaun Schimmel III&quot;
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;name&quot;: &quot;Cyrus Braun&quot;
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;name&quot;: &quot;Brennon Greenholt&quot;
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;name&quot;: &quot;Ms. Joyce Hyatt&quot;
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;name&quot;: &quot;Cyrus Flatley&quot;
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;name&quot;: &quot;Noe Pfannerstill&quot;
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;name&quot;: &quot;Elinor Schaden&quot;
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;name&quot;: &quot;Victor Erdman&quot;
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;name&quot;: &quot;Mr. Murl Ernser Sr.&quot;
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;name&quot;: &quot;Citlalli Breitenberg&quot;
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;name&quot;: &quot;Verner Wolf III&quot;
-        },
-        {
-            &quot;id&quot;: 22,
-            &quot;name&quot;: &quot;Buddy Schamberger&quot;
-        },
-        {
-            &quot;id&quot;: 23,
-            &quot;name&quot;: &quot;Prof. Santos Pacocha&quot;
-        },
-        {
-            &quot;id&quot;: 24,
-            &quot;name&quot;: &quot;Major Kemmer&quot;
-        },
-        {
-            &quot;id&quot;: 25,
-            &quot;name&quot;: &quot;Michelle Goyette Jr.&quot;
-        },
-        {
-            &quot;id&quot;: 26,
-            &quot;name&quot;: &quot;Prof. Durward Stroman DDS&quot;
-        },
-        {
-            &quot;id&quot;: 27,
-            &quot;name&quot;: &quot;Brady Turcotte&quot;
-        },
-        {
-            &quot;id&quot;: 28,
-            &quot;name&quot;: &quot;Mrs. Layla Flatley&quot;
-        },
-        {
-            &quot;id&quot;: 29,
-            &quot;name&quot;: &quot;Miss Yolanda Wilkinson II&quot;
-        },
-        {
-            &quot;id&quot;: 30,
-            &quot;name&quot;: &quot;Dr. Dereck Legros Sr.&quot;
-        },
-        {
-            &quot;id&quot;: 31,
-            &quot;name&quot;: &quot;Kim Schulist V&quot;
-        },
-        {
-            &quot;id&quot;: 32,
-            &quot;name&quot;: &quot;Chloe Bartoletti&quot;
-        },
-        {
-            &quot;id&quot;: 33,
-            &quot;name&quot;: &quot;Hilma Rogahn&quot;
-        },
-        {
-            &quot;id&quot;: 34,
-            &quot;name&quot;: &quot;Verda Krajcik II&quot;
-        },
-        {
-            &quot;id&quot;: 35,
-            &quot;name&quot;: &quot;Lyda Wisozk&quot;
-        },
-        {
-            &quot;id&quot;: 36,
-            &quot;name&quot;: &quot;Antonia Lind&quot;
-        },
-        {
-            &quot;id&quot;: 37,
-            &quot;name&quot;: &quot;Gerda Blanda&quot;
-        },
-        {
-            &quot;id&quot;: 38,
-            &quot;name&quot;: &quot;Prof. Savannah Kutch&quot;
-        },
-        {
-            &quot;id&quot;: 39,
-            &quot;name&quot;: &quot;Giovanni Stracke&quot;
-        },
-        {
-            &quot;id&quot;: 40,
-            &quot;name&quot;: &quot;Aiden Dare&quot;
-        },
-        {
-            &quot;id&quot;: 41,
-            &quot;name&quot;: &quot;Thelma Howell&quot;
-        },
-        {
-            &quot;id&quot;: 42,
-            &quot;name&quot;: &quot;Rozella Morar&quot;
-        },
-        {
-            &quot;id&quot;: 43,
-            &quot;name&quot;: &quot;Prof. Darwin Gislason Sr.&quot;
-        },
-        {
-            &quot;id&quot;: 44,
-            &quot;name&quot;: &quot;Dr. Laverne Bernier&quot;
-        },
-        {
-            &quot;id&quot;: 45,
-            &quot;name&quot;: &quot;Mr. Price McDermott&quot;
+            &quot;name&quot;: &quot;Morton Botsford&quot;
         }
     ]
 }</code>
@@ -599,7 +448,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-certificate-type--certificateType_id--department">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (404):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -608,133 +457,42 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 37
+x-ratelimit-remaining: 35
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;SQLSTATE[HY000]: General error: 1 no such table: certificate_type_department (Connection: sqlite, SQL: select \&quot;departments\&quot;.*, \&quot;certificate_type_department\&quot;.\&quot;certificate_type_id\&quot; as \&quot;pivot_certificate_type_id\&quot;, \&quot;certificate_type_department\&quot;.\&quot;department_id\&quot; as \&quot;pivot_department_id\&quot; from \&quot;departments\&quot; inner join \&quot;certificate_type_department\&quot; on \&quot;departments\&quot;.\&quot;id\&quot; = \&quot;certificate_type_department\&quot;.\&quot;department_id\&quot; where \&quot;certificate_type_department\&quot;.\&quot;certificate_type_id\&quot; = 20)&quot;,
-    &quot;exception&quot;: &quot;Illuminate\\Database\\QueryException&quot;,
-    &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-    &quot;line&quot;: 801,
+    &quot;message&quot;: &quot;No query results for model [App\\Models\\CertificateType] 20&quot;,
+    &quot;exception&quot;: &quot;Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException&quot;,
+    &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+    &quot;line&quot;: 446,
     &quot;trace&quot;: [
         {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-            &quot;line&quot;: 755,
-            &quot;function&quot;: &quot;runQueryCallback&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+            &quot;line&quot;: 422,
+            &quot;function&quot;: &quot;prepareException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-            &quot;line&quot;: 424,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php&quot;,
-            &quot;line&quot;: 2752,
-            &quot;function&quot;: &quot;select&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php&quot;,
-            &quot;line&quot;: 2740,
-            &quot;function&quot;: &quot;runSelect&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php&quot;,
-            &quot;line&quot;: 3294,
-            &quot;function&quot;: &quot;Illuminate\\Database\\Query\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php&quot;,
-            &quot;line&quot;: 2741,
-            &quot;function&quot;: &quot;onceWithColumns&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php&quot;,
-            &quot;line&quot;: 737,
-            &quot;function&quot;: &quot;get&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php&quot;,
-            &quot;line&quot;: 874,
-            &quot;function&quot;: &quot;getModels&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/app/Http/Controllers/Api/AcademicRegistrationController.php&quot;,
-            &quot;line&quot;: 31,
-            &quot;function&quot;: &quot;get&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Controller.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php&quot;,
             &quot;line&quot;: 54,
-            &quot;function&quot;: &quot;departmentsByCertificateType&quot;,
-            &quot;class&quot;: &quot;App\\Http\\Controllers\\Api\\AcademicRegistrationController&quot;,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php&quot;,
-            &quot;line&quot;: 43,
-            &quot;function&quot;: &quot;callAction&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Controller&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php&quot;,
-            &quot;line&quot;: 260,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\ControllerDispatcher&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php&quot;,
-            &quot;line&quot;: 205,
-            &quot;function&quot;: &quot;runController&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 799,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
             &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Routing\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php&quot;,
-            &quot;line&quot;: 50,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
+            &quot;line&quot;: 185,
+            &quot;function&quot;: &quot;handleException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
@@ -1209,6 +967,144 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                    <h2 id="academicregistration-GETapi-academic-registration">GET api/academic-registration</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-academic-registration">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/academic-registration" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/academic-registration"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-academic-registration">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 34
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: []
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-academic-registration" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-academic-registration"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-academic-registration"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-academic-registration" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-academic-registration">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-academic-registration" data-method="GET"
+      data-path="api/academic-registration"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-academic-registration', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-academic-registration"
+                    onclick="tryItOut('GETapi-academic-registration');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-academic-registration"
+                    onclick="cancelTryOut('GETapi-academic-registration');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-academic-registration"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/academic-registration</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-academic-registration"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-academic-registration"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>certificateType_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="certificateType_id"                data-endpoint="GETapi-academic-registration"
+               value="20"
+               data-component="url">
+    <br>
+<p>The ID of the certificateType. Example: <code>20</code></p>
+            </div>
+                    </form>
+
                 <h1 id="authentication">Authentication</h1>
 
     
@@ -1235,7 +1131,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"email\": \"my@example.com\",
     \"password\": \"password\",
     \"role\": \"student_browser\",
-    \"fcm_token\": \"autem\"
+    \"fcm_token\": \"similique\"
 }"
 </code></pre></div>
 
@@ -1255,7 +1151,7 @@ let body = {
     "email": "my@example.com",
     "password": "password",
     "role": "student_browser",
-    "fcm_token": "autem"
+    "fcm_token": "similique"
 };
 
 fetch(url, {
@@ -1268,7 +1164,7 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-auth">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -1282,542 +1178,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \&quot;user_firebase_tokens\&quot; (\&quot;token\&quot;, \&quot;user_id\&quot;, \&quot;updated_at\&quot;, \&quot;created_at\&quot;) values (autem, 22, 2023-09-17 14:52:42, 2023-09-17 14:52:42))&quot;,
-    &quot;exception&quot;: &quot;Illuminate\\Database\\QueryException&quot;,
-    &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-    &quot;line&quot;: 801,
-    &quot;trace&quot;: [
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-            &quot;line&quot;: 755,
-            &quot;function&quot;: &quot;runQueryCallback&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-            &quot;line&quot;: 581,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-            &quot;line&quot;: 533,
-            &quot;function&quot;: &quot;statement&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php&quot;,
-            &quot;line&quot;: 32,
-            &quot;function&quot;: &quot;insert&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php&quot;,
-            &quot;line&quot;: 3387,
-            &quot;function&quot;: &quot;processInsertGetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Processors\\Processor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php&quot;,
-            &quot;line&quot;: 1968,
-            &quot;function&quot;: &quot;insertGetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&quot;,
-            &quot;line&quot;: 1333,
-            &quot;function&quot;: &quot;__call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&quot;,
-            &quot;line&quot;: 1298,
-            &quot;function&quot;: &quot;insertAndSetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&quot;,
-            &quot;line&quot;: 1137,
-            &quot;function&quot;: &quot;performInsert&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php&quot;,
-            &quot;line&quot;: 342,
-            &quot;function&quot;: &quot;save&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Support/helpers.php&quot;,
-            &quot;line&quot;: 307,
-            &quot;function&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php&quot;,
-            &quot;line&quot;: 343,
-            &quot;function&quot;: &quot;tap&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/app/Http/Controllers/Api/AuthController.php&quot;,
-            &quot;line&quot;: 39,
-            &quot;function&quot;: &quot;create&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Controller.php&quot;,
-            &quot;line&quot;: 54,
-            &quot;function&quot;: &quot;login&quot;,
-            &quot;class&quot;: &quot;App\\Http\\Controllers\\Api\\AuthController&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php&quot;,
-            &quot;line&quot;: 43,
-            &quot;function&quot;: &quot;callAction&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Controller&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php&quot;,
-            &quot;line&quot;: 260,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\ControllerDispatcher&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php&quot;,
-            &quot;line&quot;: 205,
-            &quot;function&quot;: &quot;runController&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 799,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Routing\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php&quot;,
-            &quot;line&quot;: 50,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
-            &quot;line&quot;: 159,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
-            &quot;line&quot;: 135,
-            &quot;function&quot;: &quot;handleRequest&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
-            &quot;line&quot;: 87,
-            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 800,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 777,
-            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 741,
-            &quot;function&quot;: &quot;runRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 730,
-            &quot;function&quot;: &quot;dispatchToRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
-            &quot;line&quot;: 200,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/livewire/livewire/src/DisableBrowserCache.php&quot;,
-            &quot;line&quot;: 19,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Livewire\\DisableBrowserCache&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php&quot;,
-            &quot;line&quot;: 31,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&quot;,
-            &quot;line&quot;: 40,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php&quot;,
-            &quot;line&quot;: 27,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php&quot;,
-            &quot;line&quot;: 89,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php&quot;,
-            &quot;line&quot;: 62,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php&quot;,
-            &quot;line&quot;: 39,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
-            &quot;line&quot;: 175,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
-            &quot;line&quot;: 144,
-            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 299,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 287,
-            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 92,
-            &quot;function&quot;: &quot;makeApiCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 45,
-            &quot;function&quot;: &quot;makeResponseCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
-            &quot;line&quot;: 209,
-            &quot;function&quot;: &quot;__invoke&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
-            &quot;line&quot;: 166,
-            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
-            &quot;line&quot;: 95,
-            &quot;function&quot;: &quot;fetchResponses&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 124,
-            &quot;function&quot;: &quot;processRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 71,
-            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 49,
-            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php&quot;,
-            &quot;line&quot;: 51,
-            &quot;function&quot;: &quot;get&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
-            &quot;line&quot;: 36,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Util.php&quot;,
-            &quot;line&quot;: 41,
-            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
-            &quot;line&quot;: 93,
-            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
-            &quot;line&quot;: 37,
-            &quot;function&quot;: &quot;callBoundMethod&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Container.php&quot;,
-            &quot;line&quot;: 662,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
-            &quot;line&quot;: 211,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Command/Command.php&quot;,
-            &quot;line&quot;: 326,
-            &quot;function&quot;: &quot;execute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
-            &quot;line&quot;: 181,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php&quot;,
-            &quot;line&quot;: 1081,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php&quot;,
-            &quot;line&quot;: 320,
-            &quot;function&quot;: &quot;doRunCommand&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php&quot;,
-            &quot;line&quot;: 174,
-            &quot;function&quot;: &quot;doRun&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php&quot;,
-            &quot;line&quot;: 201,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/artisan&quot;,
-            &quot;line&quot;: 37,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        }
-    ]
+    &quot;token&quot;: &quot;2|LQX8GoTlMOEix5CbwGs4VKVLU5eMRqPuW6wAqYRafc458a95&quot;
 }</code>
  </pre>
     </span>
@@ -1941,10 +1302,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="fcm_token"                data-endpoint="POSTapi-auth"
-               value="autem"
+               value="similique"
                data-component="body">
     <br>
-<p>Example: <code>autem</code></p>
+<p>Example: <code>similique</code></p>
         </div>
         </form>
 
@@ -1966,16 +1327,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "first_name_en=similique"\
-    --form "last_name_en=et"\
-    --form "first_name_ar=doloribus"\
-    --form "last_name_ar=atque"\
-    --form "phone=debitis"\
-    --form "email=witting.prince@example.com"\
-    --form "password=()~U8hLKvDq5_F;uB&gt;}"\
-    --form "role=teacher_browser"\
-    --form "fcm_token=ipsam"\
-    --form "image=@/tmp/phpxtZot6" </code></pre></div>
+    --form "first_name_en=magni"\
+    --form "last_name_en=assumenda"\
+    --form "first_name_ar=eligendi"\
+    --form "last_name_ar=perferendis"\
+    --form "phone=hic"\
+    --form "email=greta.turcotte@example.org"\
+    --form "password=V1hP|W]'f]&gt;hXoU"\
+    --form "role=student_browser"\
+    --form "fcm_token=porro"\
+    --form "image=@/tmp/phpTDos3Y" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -1990,15 +1351,15 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('first_name_en', 'similique');
-body.append('last_name_en', 'et');
-body.append('first_name_ar', 'doloribus');
-body.append('last_name_ar', 'atque');
-body.append('phone', 'debitis');
-body.append('email', 'witting.prince@example.com');
-body.append('password', '()~U8hLKvDq5_F;uB&gt;}');
-body.append('role', 'teacher_browser');
-body.append('fcm_token', 'ipsam');
+body.append('first_name_en', 'magni');
+body.append('last_name_en', 'assumenda');
+body.append('first_name_ar', 'eligendi');
+body.append('last_name_ar', 'perferendis');
+body.append('phone', 'hic');
+body.append('email', 'greta.turcotte@example.org');
+body.append('password', 'V1hP|W]'f]&gt;hXoU');
+body.append('role', 'student_browser');
+body.append('fcm_token', 'porro');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -2011,7 +1372,7 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-auth-register">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2025,542 +1386,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;SQLSTATE[HY000]: General error: 1 no such table: user_firebase_tokens (Connection: sqlite, SQL: insert into \&quot;user_firebase_tokens\&quot; (\&quot;token\&quot;, \&quot;user_id\&quot;, \&quot;updated_at\&quot;, \&quot;created_at\&quot;) values (ipsam, 73, 2023-09-17 14:52:42, 2023-09-17 14:52:42))&quot;,
-    &quot;exception&quot;: &quot;Illuminate\\Database\\QueryException&quot;,
-    &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-    &quot;line&quot;: 801,
-    &quot;trace&quot;: [
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-            &quot;line&quot;: 755,
-            &quot;function&quot;: &quot;runQueryCallback&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-            &quot;line&quot;: 581,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Connection.php&quot;,
-            &quot;line&quot;: 533,
-            &quot;function&quot;: &quot;statement&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php&quot;,
-            &quot;line&quot;: 32,
-            &quot;function&quot;: &quot;insert&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Connection&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php&quot;,
-            &quot;line&quot;: 3387,
-            &quot;function&quot;: &quot;processInsertGetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Processors\\Processor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php&quot;,
-            &quot;line&quot;: 1968,
-            &quot;function&quot;: &quot;insertGetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Query\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&quot;,
-            &quot;line&quot;: 1333,
-            &quot;function&quot;: &quot;__call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Builder&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&quot;,
-            &quot;line&quot;: 1298,
-            &quot;function&quot;: &quot;insertAndSetId&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php&quot;,
-            &quot;line&quot;: 1137,
-            &quot;function&quot;: &quot;performInsert&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php&quot;,
-            &quot;line&quot;: 342,
-            &quot;function&quot;: &quot;save&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Model&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Support/helpers.php&quot;,
-            &quot;line&quot;: 307,
-            &quot;function&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php&quot;,
-            &quot;line&quot;: 343,
-            &quot;function&quot;: &quot;tap&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/app/Http/Controllers/Api/AuthController.php&quot;,
-            &quot;line&quot;: 51,
-            &quot;function&quot;: &quot;create&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Controller.php&quot;,
-            &quot;line&quot;: 54,
-            &quot;function&quot;: &quot;register&quot;,
-            &quot;class&quot;: &quot;App\\Http\\Controllers\\Api\\AuthController&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php&quot;,
-            &quot;line&quot;: 43,
-            &quot;function&quot;: &quot;callAction&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Controller&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php&quot;,
-            &quot;line&quot;: 260,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\ControllerDispatcher&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Route.php&quot;,
-            &quot;line&quot;: 205,
-            &quot;function&quot;: &quot;runController&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 799,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Routing\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php&quot;,
-            &quot;line&quot;: 50,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
-            &quot;line&quot;: 159,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
-            &quot;line&quot;: 135,
-            &quot;function&quot;: &quot;handleRequest&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
-            &quot;line&quot;: 87,
-            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 800,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 777,
-            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 741,
-            &quot;function&quot;: &quot;runRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
-            &quot;line&quot;: 730,
-            &quot;function&quot;: &quot;dispatchToRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
-            &quot;line&quot;: 200,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/livewire/livewire/src/DisableBrowserCache.php&quot;,
-            &quot;line&quot;: 19,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Livewire\\DisableBrowserCache&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php&quot;,
-            &quot;line&quot;: 31,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&quot;,
-            &quot;line&quot;: 40,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php&quot;,
-            &quot;line&quot;: 27,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php&quot;,
-            &quot;line&quot;: 89,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php&quot;,
-            &quot;line&quot;: 62,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php&quot;,
-            &quot;line&quot;: 39,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
-            &quot;line&quot;: 175,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
-            &quot;line&quot;: 144,
-            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 299,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 287,
-            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 92,
-            &quot;function&quot;: &quot;makeApiCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 45,
-            &quot;function&quot;: &quot;makeResponseCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
-            &quot;line&quot;: 209,
-            &quot;function&quot;: &quot;__invoke&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
-            &quot;line&quot;: 166,
-            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
-            &quot;line&quot;: 95,
-            &quot;function&quot;: &quot;fetchResponses&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 124,
-            &quot;function&quot;: &quot;processRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 71,
-            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 49,
-            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php&quot;,
-            &quot;line&quot;: 51,
-            &quot;function&quot;: &quot;get&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
-            &quot;line&quot;: 36,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Util.php&quot;,
-            &quot;line&quot;: 41,
-            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
-            &quot;line&quot;: 93,
-            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
-            &quot;line&quot;: 37,
-            &quot;function&quot;: &quot;callBoundMethod&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Container.php&quot;,
-            &quot;line&quot;: 662,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
-            &quot;line&quot;: 211,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Command/Command.php&quot;,
-            &quot;line&quot;: 326,
-            &quot;function&quot;: &quot;execute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
-            &quot;line&quot;: 181,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php&quot;,
-            &quot;line&quot;: 1081,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php&quot;,
-            &quot;line&quot;: 320,
-            &quot;function&quot;: &quot;doRunCommand&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php&quot;,
-            &quot;line&quot;: 174,
-            &quot;function&quot;: &quot;doRun&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php&quot;,
-            &quot;line&quot;: 201,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/artisan&quot;,
-            &quot;line&quot;: 37,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        }
-    ]
+    &quot;token&quot;: &quot;2|IjEGwxrmnFORVchf5g2UhkUGNpU7eWa5tnhTiNfAb4e0dbb1&quot;
 }</code>
  </pre>
     </span>
@@ -2651,10 +1477,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_en"                data-endpoint="POSTapi-auth-register"
-               value="similique"
+               value="magni"
                data-component="body">
     <br>
-<p>Example: <code>similique</code></p>
+<p>Example: <code>magni</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_en</code></b>&nbsp;&nbsp;
@@ -2662,10 +1488,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_en"                data-endpoint="POSTapi-auth-register"
-               value="et"
+               value="assumenda"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>assumenda</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>first_name_ar</code></b>&nbsp;&nbsp;
@@ -2673,10 +1499,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="doloribus"
+               value="eligendi"
                data-component="body">
     <br>
-<p>Example: <code>doloribus</code></p>
+<p>Example: <code>eligendi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_ar</code></b>&nbsp;&nbsp;
@@ -2684,10 +1510,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="atque"
+               value="perferendis"
                data-component="body">
     <br>
-<p>Example: <code>atque</code></p>
+<p>Example: <code>perferendis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -2695,10 +1521,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone"                data-endpoint="POSTapi-auth-register"
-               value="debitis"
+               value="hic"
                data-component="body">
     <br>
-<p>Example: <code>debitis</code></p>
+<p>Example: <code>hic</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -2706,10 +1532,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-register"
-               value="witting.prince@example.com"
+               value="greta.turcotte@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>witting.prince@example.com</code></p>
+<p>يجب أن يكون حقل value عنوان بريد إلكتروني صحيح البُنية. Example: <code>greta.turcotte@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -2717,10 +1543,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-register"
-               value="()~U8hLKvDq5_F;uB>}"
+               value="V1hP|W]'f]>hXoU"
                data-component="body">
     <br>
-<p>Example: <code>()~U8hLKvDq5_F;uB&gt;}</code></p>
+<p>Example: <code>V1hP|W]'f]&gt;hXoU</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -2728,10 +1554,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-register"
-               value="teacher_browser"
+               value="student_browser"
                data-component="body">
     <br>
-<p>Example: <code>teacher_browser</code></p>
+<p>Example: <code>student_browser</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>student</code></li> <li><code>teacher</code></li> <li><code>student_browser</code></li> <li><code>teacher_browser</code></li></ul>
         </div>
@@ -2744,7 +1570,7 @@ Must be one of:
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>/tmp/phpxtZot6</code></p>
+<p>يجب أن يكون حقل value صورةً. Example: <code>/tmp/phpTDos3Y</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>fcm_token</code></b>&nbsp;&nbsp;
@@ -2752,10 +1578,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="fcm_token"                data-endpoint="POSTapi-auth-register"
-               value="ipsam"
+               value="porro"
                data-component="body">
     <br>
-<p>Example: <code>ipsam</code></p>
+<p>Example: <code>porro</code></p>
         </div>
         </form>
 
@@ -2950,18 +1776,16 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;user&quot;: {
-        &quot;id&quot;: 10,
-        &quot;first_name_en&quot;: &quot;Prof. Kevon Braun&quot;,
-        &quot;last_name_en&quot;: &quot;Winnifred Kutch&quot;,
-        &quot;first_name_ar&quot;: &quot;Merl Kuphal&quot;,
-        &quot;last_name_ar&quot;: &quot;Violette Mayert&quot;,
-        &quot;email&quot;: &quot;rdenesik@example.net&quot;,
-        &quot;email_verified_at&quot;: &quot;2023-09-16T08:23:57.000000Z&quot;,
+    &quot;data&quot;: {
+        &quot;email&quot;: &quot;samanta52@example.org&quot;,
+        &quot;first_name_en&quot;: &quot;Mr. Lonnie Schneider I&quot;,
+        &quot;first_name_ar&quot;: &quot;Triston McKenzie IV&quot;,
+        &quot;last_name_en&quot;: &quot;Easter Schultz&quot;,
+        &quot;last_name_ar&quot;: &quot;Jarred Reynolds&quot;,
+        &quot;phone&quot;: &quot;1-205-535-5950&quot;,
         &quot;image&quot;: null,
-        &quot;created_at&quot;: &quot;2023-09-16T08:23:57.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-09-16T08:23:57.000000Z&quot;,
-        &quot;role_id&quot;: 3
+        &quot;depratment&quot;: null,
+        &quot;section&quot;: null
     }
 }</code>
  </pre>
@@ -3102,7 +1926,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;role&quot;: &quot;teacher_browser&quot;
+    &quot;role&quot;: &quot;teacher&quot;
 }</code>
  </pre>
     </span>
@@ -3207,13 +2031,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"certificate\": \"deleniti\",
-    \"specialty\": \"nesciunt\",
-    \"birth_date\": \"2006-06-20\",
-    \"current_location\": \"aperiam\",
-    \"permanent_location\": \"eaque\",
-    \"nationality\": \"quod\",
-    \"department_id\": 20
+    \"certificate\": \"a\",
+    \"specialty\": \"ducimus\",
+    \"birth_date\": \"2002-09-17\",
+    \"current_location\": \"itaque\",
+    \"permanent_location\": \"maxime\",
+    \"nationality\": \"in\",
+    \"department_id\": 13
 }"
 </code></pre></div>
 
@@ -3230,13 +2054,13 @@ const headers = {
 };
 
 let body = {
-    "certificate": "deleniti",
-    "specialty": "nesciunt",
-    "birth_date": "2006-06-20",
-    "current_location": "aperiam",
-    "permanent_location": "eaque",
-    "nationality": "quod",
-    "department_id": 20
+    "certificate": "a",
+    "specialty": "ducimus",
+    "birth_date": "2002-09-17",
+    "current_location": "itaque",
+    "permanent_location": "maxime",
+    "nationality": "in",
+    "department_id": 13
 };
 
 fetch(url, {
@@ -3390,10 +2214,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="certificate"                data-endpoint="POSTapi-auth-teacher"
-               value="deleniti"
+               value="a"
                data-component="body">
     <br>
-<p>Example: <code>deleniti</code></p>
+<p>Example: <code>a</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>specialty</code></b>&nbsp;&nbsp;
@@ -3401,10 +2225,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="specialty"                data-endpoint="POSTapi-auth-teacher"
-               value="nesciunt"
+               value="ducimus"
                data-component="body">
     <br>
-<p>Example: <code>nesciunt</code></p>
+<p>Example: <code>ducimus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birth_date</code></b>&nbsp;&nbsp;
@@ -3412,10 +2236,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birth_date"                data-endpoint="POSTapi-auth-teacher"
-               value="2006-06-20"
+               value="2002-09-17"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before <code>09/17/2023</code>. Example: <code>2006-06-20</code></p>
+<p>حقل value ليس تاريخًا صحيحًا. يجب على حقل value أن يكون تاريخًا سابقًا للتاريخ <code>09/19/2023</code>. Example: <code>2002-09-17</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>current_location</code></b>&nbsp;&nbsp;
@@ -3423,10 +2247,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="current_location"                data-endpoint="POSTapi-auth-teacher"
-               value="aperiam"
+               value="itaque"
                data-component="body">
     <br>
-<p>Example: <code>aperiam</code></p>
+<p>Example: <code>itaque</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permanent_location</code></b>&nbsp;&nbsp;
@@ -3434,10 +2258,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="permanent_location"                data-endpoint="POSTapi-auth-teacher"
-               value="eaque"
+               value="maxime"
                data-component="body">
     <br>
-<p>Example: <code>eaque</code></p>
+<p>Example: <code>maxime</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nationality</code></b>&nbsp;&nbsp;
@@ -3445,10 +2269,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-auth-teacher"
-               value="quod"
+               value="in"
                data-component="body">
     <br>
-<p>Example: <code>quod</code></p>
+<p>Example: <code>in</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -3456,10 +2280,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-auth-teacher"
-               value="20"
+               value="13"
                data-component="body">
     <br>
-<p>Example: <code>20</code></p>
+<p>Example: <code>13</code></p>
         </div>
         </form>
 
@@ -3516,7 +2340,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 44
+x-ratelimit-remaining: 42
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3656,7 +2480,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 43
+x-ratelimit-remaining: 41
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3794,7 +2618,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 42
+x-ratelimit-remaining: 40
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3944,7 +2768,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 41
+x-ratelimit-remaining: 39
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -4098,7 +2922,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 40
+x-ratelimit-remaining: 38
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -4218,13 +3042,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"is_male\": true,
-    \"social_status\": \"nulla\",
-    \"nationality\": \"illo\",
-    \"address\": \"ut\",
-    \"date_of_birth\": \"2023-09-17T14:52:42\",
-    \"student_type\": \"recusandae\",
-    \"work_type\": \"quis\",
+    \"is_male\": false,
+    \"social_status\": \"non\",
+    \"nationality\": \"veritatis\",
+    \"address\": \"placeat\",
+    \"date_of_birth\": \"2023-09-19T09:51:07\",
+    \"student_type\": \"aut\",
+    \"work_type\": \"iure\",
     \"is_morning\": true
 }"
 </code></pre></div>
@@ -4242,13 +3066,13 @@ const headers = {
 };
 
 let body = {
-    "is_male": true,
-    "social_status": "nulla",
-    "nationality": "illo",
-    "address": "ut",
-    "date_of_birth": "2023-09-17T14:52:42",
-    "student_type": "recusandae",
-    "work_type": "quis",
+    "is_male": false,
+    "social_status": "non",
+    "nationality": "veritatis",
+    "address": "placeat",
+    "date_of_birth": "2023-09-19T09:51:07",
+    "student_type": "aut",
+    "work_type": "iure",
     "is_morning": true
 };
 
@@ -4270,7 +3094,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 39
+x-ratelimit-remaining: 37
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 <code>Empty response</code>
@@ -4388,7 +3212,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>social_status</code></b>&nbsp;&nbsp;
@@ -4396,10 +3220,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="social_status"                data-endpoint="POSTapi-course--course_id--register"
-               value="nulla"
+               value="non"
                data-component="body">
     <br>
-<p>Example: <code>nulla</code></p>
+<p>Example: <code>non</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nationality</code></b>&nbsp;&nbsp;
@@ -4407,10 +3231,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-course--course_id--register"
-               value="illo"
+               value="veritatis"
                data-component="body">
     <br>
-<p>Example: <code>illo</code></p>
+<p>Example: <code>veritatis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -4418,10 +3242,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-course--course_id--register"
-               value="ut"
+               value="placeat"
                data-component="body">
     <br>
-<p>Example: <code>ut</code></p>
+<p>Example: <code>placeat</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>date_of_birth</code></b>&nbsp;&nbsp;
@@ -4429,10 +3253,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date_of_birth"                data-endpoint="POSTapi-course--course_id--register"
-               value="2023-09-17T14:52:42"
+               value="2023-09-19T09:51:07"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-17T14:52:42</code></p>
+<p>حقل value ليس تاريخًا صحيحًا. Example: <code>2023-09-19T09:51:07</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>student_type</code></b>&nbsp;&nbsp;
@@ -4440,10 +3264,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="student_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="recusandae"
+               value="aut"
                data-component="body">
     <br>
-<p>Example: <code>recusandae</code></p>
+<p>Example: <code>aut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>work_type</code></b>&nbsp;&nbsp;
@@ -4451,10 +3275,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="work_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="quis"
+               value="iure"
                data-component="body">
     <br>
-<p>Example: <code>quis</code></p>
+<p>Example: <code>iure</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>is_morning</code></b>&nbsp;&nbsp;
@@ -4496,14 +3320,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/section/distinctio/departments" \
+    --get "http://localhost:8000/api/section/quae/departments" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/section/distinctio/departments"
+    "http://localhost:8000/api/section/quae/departments"
 );
 
 const headers = {
@@ -4611,10 +3435,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="sectionId"                data-endpoint="GETapi-section--sectionId--departments"
-               value="distinctio"
+               value="quae"
                data-component="url">
     <br>
-<p>Example: <code>distinctio</code></p>
+<p>Example: <code>quae</code></p>
             </div>
                     </form>
 
@@ -4639,10 +3463,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"subject\": \"sunt\",
-    \"mark\": 1,
-    \"reason\": \"dolorem\",
-    \"teacher\": \"dolorem\"
+    \"subject\": \"et\",
+    \"mark\": 23,
+    \"reason\": \"corporis\",
+    \"teacher\": \"fugiat\"
 }"
 </code></pre></div>
 
@@ -4658,10 +3482,10 @@ const headers = {
 };
 
 let body = {
-    "subject": "sunt",
-    "mark": 1,
-    "reason": "dolorem",
-    "teacher": "dolorem"
+    "subject": "et",
+    "mark": 23,
+    "reason": "corporis",
+    "teacher": "fugiat"
 };
 
 fetch(url, {
@@ -4807,10 +3631,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="subject"                data-endpoint="POSTapi-editMark"
-               value="sunt"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>sunt</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>mark</code></b>&nbsp;&nbsp;
@@ -4818,10 +3642,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="mark"                data-endpoint="POSTapi-editMark"
-               value="1"
+               value="23"
                data-component="body">
     <br>
-<p>Must be at least 0. Must not be greater than 100. Example: <code>1</code></p>
+<p>يجب أن تكون قيمة حقل value مساوية أو أكبر من 0. يجب أن تكون قيمة حقل value مساوية أو أصغر من 100. Example: <code>23</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>reason</code></b>&nbsp;&nbsp;
@@ -4829,10 +3653,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="reason"                data-endpoint="POSTapi-editMark"
-               value="dolorem"
+               value="corporis"
                data-component="body">
     <br>
-<p>Example: <code>dolorem</code></p>
+<p>Example: <code>corporis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>teacher</code></b>&nbsp;&nbsp;
@@ -4840,10 +3664,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="teacher"                data-endpoint="POSTapi-editMark"
-               value="dolorem"
+               value="fugiat"
                data-component="body">
     <br>
-<p>Example: <code>dolorem</code></p>
+<p>Example: <code>fugiat</code></p>
         </div>
         </form>
 
@@ -4868,8 +3692,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"text\": \"non\",
-    \"department_id\": 1185.7197729
+    \"text\": \"magni\",
+    \"department_id\": 127646.710727
 }"
 </code></pre></div>
 
@@ -4885,8 +3709,8 @@ const headers = {
 };
 
 let body = {
-    "text": "non",
-    "department_id": 1185.7197729
+    "text": "magni",
+    "department_id": 127646.710727
 };
 
 fetch(url, {
@@ -5029,10 +3853,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="text"                data-endpoint="POSTapi-move"
-               value="non"
+               value="magni"
                data-component="body">
     <br>
-<p>Example: <code>non</code></p>
+<p>Example: <code>magni</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -5040,10 +3864,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-move"
-               value="1185.7197729"
+               value="127646.710727"
                data-component="body">
     <br>
-<p>Example: <code>1185.7197729</code></p>
+<p>Example: <code>127646.710727</code></p>
         </div>
         </form>
 
@@ -5210,9 +4034,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"iusto\",
-    \"description\": \"Voluptas distinctio nobis qui.\",
-    \"note_category_id\": 19
+    \"title\": \"doloribus\",
+    \"description\": \"Atque eum qui ratione suscipit id dolor.\",
+    \"note_category_id\": 12
 }"
 </code></pre></div>
 
@@ -5229,9 +4053,9 @@ const headers = {
 };
 
 let body = {
-    "title": "iusto",
-    "description": "Voluptas distinctio nobis qui.",
-    "note_category_id": 19
+    "title": "doloribus",
+    "description": "Atque eum qui ratione suscipit id dolor.",
+    "note_category_id": 12
 };
 
 fetch(url, {
@@ -5258,10 +4082,10 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;The selected note category id is invalid.&quot;,
+    &quot;message&quot;: &quot;note category id غير موجود.&quot;,
     &quot;errors&quot;: {
         &quot;note_category_id&quot;: [
-            &quot;The selected note category id is invalid.&quot;
+            &quot;note category id غير موجود.&quot;
         ]
     }
 }</code>
@@ -5354,10 +4178,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-note"
-               value="iusto"
+               value="doloribus"
                data-component="body">
     <br>
-<p>Example: <code>iusto</code></p>
+<p>Example: <code>doloribus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -5365,10 +4189,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-note"
-               value="Voluptas distinctio nobis qui."
+               value="Atque eum qui ratione suscipit id dolor."
                data-component="body">
     <br>
-<p>Example: <code>Voluptas distinctio nobis qui.</code></p>
+<p>Example: <code>Atque eum qui ratione suscipit id dolor.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -5387,10 +4211,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="note_category_id"                data-endpoint="POSTapi-note"
-               value="19"
+               value="12"
                data-component="body">
     <br>
-<p>Example: <code>19</code></p>
+<p>Example: <code>12</code></p>
         </div>
         </form>
 
@@ -5450,9 +4274,9 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;title&quot;: &quot;Mollitia et ab excepturi et temporibus.&quot;,
-        &quot;description&quot;: &quot;Cumque beatae voluptas quam repellendus in molestiae. Eius dolores sit natus voluptas facere.&quot;,
-        &quot;category&quot;: &quot;Curt Mraz&quot;
+        &quot;title&quot;: &quot;Voluptas deleniti ratione vitae.&quot;,
+        &quot;description&quot;: &quot;Sint inventore omnis ea ut doloremque quia rerum. Quis unde delectus voluptatem maiores iure.&quot;,
+        &quot;category&quot;: &quot;Margaretta Monahan MD&quot;
     }
 }</code>
  </pre>
@@ -5570,8 +4394,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"voluptatum\",
-    \"description\": \"Veritatis deleniti nihil et.\"
+    \"title\": \"doloremque\",
+    \"description\": \"Voluptas veritatis debitis harum ex ut sapiente.\"
 }"
 </code></pre></div>
 
@@ -5588,8 +4412,8 @@ const headers = {
 };
 
 let body = {
-    "title": "voluptatum",
-    "description": "Veritatis deleniti nihil et."
+    "title": "doloremque",
+    "description": "Voluptas veritatis debitis harum ex ut sapiente."
 };
 
 fetch(url, {
@@ -5618,9 +4442,9 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;title&quot;: &quot;voluptatum&quot;,
-        &quot;description&quot;: &quot;Veritatis deleniti nihil et.&quot;,
-        &quot;category&quot;: &quot;Curt Mraz&quot;
+        &quot;title&quot;: &quot;doloremque&quot;,
+        &quot;description&quot;: &quot;Voluptas veritatis debitis harum ex ut sapiente.&quot;,
+        &quot;category&quot;: &quot;Margaretta Monahan MD&quot;
     }
 }</code>
  </pre>
@@ -5728,10 +4552,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="PUTapi-note--id-"
-               value="voluptatum"
+               value="doloremque"
                data-component="body">
     <br>
-<p>Example: <code>voluptatum</code></p>
+<p>Example: <code>doloremque</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -5739,10 +4563,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="PUTapi-note--id-"
-               value="Veritatis deleniti nihil et."
+               value="Voluptas veritatis debitis harum ex ut sapiente."
                data-component="body">
     <br>
-<p>Example: <code>Veritatis deleniti nihil et.</code></p>
+<p>Example: <code>Voluptas veritatis debitis harum ex ut sapiente.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -6079,13 +4903,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"neque\",
-    \"attachment\": \"ex\",
-    \"attachment_type\": \"fuga\",
-    \"user_id\": 18956021.0499,
-    \"department_id\": 6142.6,
-    \"course_id\": 26.11304,
-    \"post_type_id\": 625052.739818344
+    \"content\": \"corrupti\",
+    \"attachment\": \"illum\",
+    \"attachment_type\": \"eos\",
+    \"user_id\": 28441384.419,
+    \"department_id\": 453124.933391423,
+    \"course_id\": 1764.266,
+    \"post_type_id\": 667614.6
 }"
 </code></pre></div>
 
@@ -6102,13 +4926,13 @@ const headers = {
 };
 
 let body = {
-    "content": "neque",
-    "attachment": "ex",
-    "attachment_type": "fuga",
-    "user_id": 18956021.0499,
-    "department_id": 6142.6,
-    "course_id": 26.11304,
-    "post_type_id": 625052.739818344
+    "content": "corrupti",
+    "attachment": "illum",
+    "attachment_type": "eos",
+    "user_id": 28441384.419,
+    "department_id": 453124.933391423,
+    "course_id": 1764.266,
+    "post_type_id": 667614.6
 };
 
 fetch(url, {
@@ -6121,7 +4945,7 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-post">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (422):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -6135,7 +4959,21 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;unauthorized&quot;
+    &quot;message&quot;: &quot;user id غير موجود. (and 3 more errors)&quot;,
+    &quot;errors&quot;: {
+        &quot;user_id&quot;: [
+            &quot;user id غير موجود.&quot;
+        ],
+        &quot;department_id&quot;: [
+            &quot;department id غير موجود.&quot;
+        ],
+        &quot;course_id&quot;: [
+            &quot;course id غير موجود.&quot;
+        ],
+        &quot;post_type_id&quot;: [
+            &quot;post type id غير موجود.&quot;
+        ]
+    }
 }</code>
  </pre>
     </span>
@@ -6226,10 +5064,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="POSTapi-post"
-               value="neque"
+               value="corrupti"
                data-component="body">
     <br>
-<p>Example: <code>neque</code></p>
+<p>Example: <code>corrupti</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment</code></b>&nbsp;&nbsp;
@@ -6237,10 +5075,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="POSTapi-post"
-               value="ex"
+               value="illum"
                data-component="body">
     <br>
-<p>Example: <code>ex</code></p>
+<p>Example: <code>illum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment_type</code></b>&nbsp;&nbsp;
@@ -6248,10 +5086,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment_type"                data-endpoint="POSTapi-post"
-               value="fuga"
+               value="eos"
                data-component="body">
     <br>
-<p>Example: <code>fuga</code></p>
+<p>Example: <code>eos</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -6259,10 +5097,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="POSTapi-post"
-               value="18956021.0499"
+               value="28441384.419"
                data-component="body">
     <br>
-<p>Example: <code>18956021.0499</code></p>
+<p>Example: <code>28441384.419</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -6270,10 +5108,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-post"
-               value="6142.6"
+               value="453124.93339142"
                data-component="body">
     <br>
-<p>Example: <code>6142.6</code></p>
+<p>Example: <code>453124.93339142</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -6281,10 +5119,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="POSTapi-post"
-               value="26.11304"
+               value="1764.266"
                data-component="body">
     <br>
-<p>Example: <code>26.11304</code></p>
+<p>Example: <code>1764.266</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>post_type_id</code></b>&nbsp;&nbsp;
@@ -6292,10 +5130,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_type_id"                data-endpoint="POSTapi-post"
-               value="625052.73981834"
+               value="667614.6"
                data-component="body">
     <br>
-<p>Example: <code>625052.73981834</code></p>
+<p>Example: <code>667614.6</code></p>
         </div>
         </form>
 
@@ -6318,13 +5156,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"consequatur\",
-    \"attachment\": \"quae\",
-    \"attachment_type\": \"distinctio\",
-    \"user_id\": 14603.59005515,
-    \"department_id\": 203664.4562453,
-    \"course_id\": 3452.45032,
-    \"post_type_id\": 11.9
+    \"content\": \"labore\",
+    \"attachment\": \"natus\",
+    \"attachment_type\": \"vero\",
+    \"user_id\": 278143.32550626,
+    \"department_id\": 115500.08,
+    \"course_id\": 4180.005314,
+    \"post_type_id\": 1
 }"
 </code></pre></div>
 
@@ -6341,13 +5179,13 @@ const headers = {
 };
 
 let body = {
-    "content": "consequatur",
-    "attachment": "quae",
-    "attachment_type": "distinctio",
-    "user_id": 14603.59005515,
-    "department_id": 203664.4562453,
-    "course_id": 3452.45032,
-    "post_type_id": 11.9
+    "content": "labore",
+    "attachment": "natus",
+    "attachment_type": "vero",
+    "user_id": 278143.32550626,
+    "department_id": 115500.08,
+    "course_id": 4180.005314,
+    "post_type_id": 1
 };
 
 fetch(url, {
@@ -6360,7 +5198,7 @@ fetch(url, {
 
 <span id="example-responses-PUTapi-post--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (422):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -6374,7 +5212,18 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;unauthorized&quot;
+    &quot;message&quot;: &quot;user id غير موجود. (and 2 more errors)&quot;,
+    &quot;errors&quot;: {
+        &quot;user_id&quot;: [
+            &quot;user id غير موجود.&quot;
+        ],
+        &quot;department_id&quot;: [
+            &quot;department id غير موجود.&quot;
+        ],
+        &quot;course_id&quot;: [
+            &quot;course id غير موجود.&quot;
+        ]
+    }
 }</code>
  </pre>
     </span>
@@ -6481,10 +5330,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="PUTapi-post--id-"
-               value="consequatur"
+               value="labore"
                data-component="body">
     <br>
-<p>Example: <code>consequatur</code></p>
+<p>Example: <code>labore</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment</code></b>&nbsp;&nbsp;
@@ -6492,10 +5341,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="PUTapi-post--id-"
-               value="quae"
+               value="natus"
                data-component="body">
     <br>
-<p>Example: <code>quae</code></p>
+<p>Example: <code>natus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment_type</code></b>&nbsp;&nbsp;
@@ -6503,10 +5352,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment_type"                data-endpoint="PUTapi-post--id-"
-               value="distinctio"
+               value="vero"
                data-component="body">
     <br>
-<p>Example: <code>distinctio</code></p>
+<p>Example: <code>vero</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -6514,10 +5363,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="PUTapi-post--id-"
-               value="14603.59005515"
+               value="278143.32550626"
                data-component="body">
     <br>
-<p>Example: <code>14603.59005515</code></p>
+<p>Example: <code>278143.32550626</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -6525,10 +5374,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="PUTapi-post--id-"
-               value="203664.4562453"
+               value="115500.08"
                data-component="body">
     <br>
-<p>Example: <code>203664.4562453</code></p>
+<p>Example: <code>115500.08</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -6536,10 +5385,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="PUTapi-post--id-"
-               value="3452.45032"
+               value="4180.005314"
                data-component="body">
     <br>
-<p>Example: <code>3452.45032</code></p>
+<p>Example: <code>4180.005314</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>post_type_id</code></b>&nbsp;&nbsp;
@@ -6547,10 +5396,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_type_id"                data-endpoint="PUTapi-post--id-"
-               value="11.9"
+               value="1"
                data-component="body">
     <br>
-<p>Example: <code>11.9</code></p>
+<p>Example: <code>1</code></p>
         </div>
         </form>
 
@@ -6594,22 +5443,18 @@ fetch(url, {
 
 <span id="example-responses-DELETEapi-post--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
 x-ratelimit-limit: 60
 x-ratelimit-remaining: 49
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;unauthorized&quot;
-}</code>
+<code>Empty response</code>
  </pre>
     </span>
 <span id="execution-results-DELETEapi-post--id-" hidden>
@@ -6720,12 +5565,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/post?type=quo" \
+    --get "http://localhost:8000/api/post?type=minus" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"course\"
+    \"type\": \"public\"
 }"
 </code></pre></div>
 
@@ -6736,7 +5581,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "type": "quo",
+    "type": "minus",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -6748,7 +5593,7 @@ const headers = {
 };
 
 let body = {
-    "type": "course"
+    "type": "public"
 };
 
 fetch(url, {
@@ -6777,37 +5622,59 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: 2,
-            &quot;content&quot;: &quot;Iure ut qui non voluptatem. Voluptas rerum alias repellendus explicabo hic cupiditate. Vero esse non itaque et. Aut sit id omnis. Eos nemo architecto voluptas numquam laudantium ex minus autem.&quot;,
-            &quot;attachment&quot;: &quot;voluptates&quot;,
-            &quot;attachment_type&quot;: &quot;image&quot;,
+            &quot;id&quot;: 16,
+            &quot;content&quot;: &quot;Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.&quot;,
+            &quot;attachment&quot;: &quot;blanditiis&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
+            &quot;likes&quot;: 1,
+            &quot;liked_by_me&quot;: true,
+            &quot;saves&quot;: 1,
+            &quot;saved_by_me&quot;: true,
+            &quot;created_at&quot;: &quot;منذ 22 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;content&quot;: &quot;Sed molestiae ea temporibus non recusandae. Beatae natus maxime doloremque dolor neque veritatis.&quot;,
+            &quot;attachment&quot;: &quot;consequatur&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
             &quot;likes&quot;: 0,
             &quot;liked_by_me&quot;: false,
             &quot;saves&quot;: 0,
             &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
+            &quot;created_at&quot;: &quot;منذ 23 دقيقة&quot;
         },
         {
-            &quot;id&quot;: 12,
-            &quot;content&quot;: &quot;Consequatur et similique autem ipsam quis quasi deserunt. Quaerat non sit libero eos. Sit doloremque officiis dolore sed.&quot;,
-            &quot;attachment&quot;: &quot;odio&quot;,
+            &quot;id&quot;: 7,
+            &quot;content&quot;: &quot;Officia aut blanditiis tempora ipsa animi aut. Quasi voluptatem sed repudiandae. Sed fugit aliquid ab voluptas commodi dolorem. Sequi voluptatum eum qui adipisci cupiditate recusandae.&quot;,
+            &quot;attachment&quot;: &quot;impedit&quot;,
+            &quot;attachment_type&quot;: &quot;image&quot;,
+            &quot;likes&quot;: 1,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;منذ 23 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;content&quot;: &quot;Repellat quos reiciendis maxime quaerat nisi sed accusamus. Iure laboriosam similique illo repudiandae iste sint ratione. Consectetur nobis in et ea recusandae repellat iste.&quot;,
+            &quot;attachment&quot;: &quot;quaerat&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
+            &quot;likes&quot;: 1,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;منذ 23 دقيقة&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;content&quot;: &quot;Ut est neque delectus quis cupiditate ut. Excepturi quibusdam quia soluta omnis aut recusandae eius. Earum ratione iusto quas tempore odit nisi. Qui aut dolores hic facilis.&quot;,
+            &quot;attachment&quot;: &quot;omnis&quot;,
             &quot;attachment_type&quot;: &quot;image&quot;,
             &quot;likes&quot;: 0,
             &quot;liked_by_me&quot;: false,
             &quot;saves&quot;: 1,
             &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;content&quot;: &quot;Voluptas consequatur vel sint sed repellat eum impedit excepturi. Et officiis rerum ut quas. Voluptatum quis repudiandae deserunt. Mollitia voluptatibus ullam eaque fuga sint.&quot;,
-            &quot;attachment&quot;: &quot;aut&quot;,
-            &quot;attachment_type&quot;: &quot;file&quot;,
-            &quot;likes&quot;: 0,
-            &quot;liked_by_me&quot;: false,
-            &quot;saves&quot;: 1,
-            &quot;saved_by_me&quot;: false,
-            &quot;created_at&quot;: &quot;1 day ago&quot;
+            &quot;created_at&quot;: &quot;منذ 23 دقيقة&quot;
         }
     ]
 }</code>
@@ -6900,10 +5767,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-post"
-               value="quo"
+               value="minus"
                data-component="query">
     <br>
-<p>the type of the post (public, department ,course). Example: <code>quo</code></p>
+<p>the type of the post (public, department ,course). Example: <code>minus</code></p>
             </div>
                         <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -6912,10 +5779,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-post"
-               value="course"
+               value="public"
                data-component="body">
     <br>
-<p>Example: <code>course</code></p>
+<p>Example: <code>public</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>public</code></li> <li><code>department</code></li> <li><code>course</code></li></ul>
         </div>
@@ -6975,7 +5842,19 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: []
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 16,
+            &quot;content&quot;: &quot;Eum ab aut facilis recusandae sunt. Quia et aperiam quis quae ipsum nisi qui. Aut veritatis ut eos vitae quibusdam illum quidem.&quot;,
+            &quot;attachment&quot;: &quot;blanditiis&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
+            &quot;likes&quot;: 1,
+            &quot;liked_by_me&quot;: true,
+            &quot;saves&quot;: 1,
+            &quot;saved_by_me&quot;: true,
+            &quot;created_at&quot;: &quot;منذ 22 دقيقة&quot;
+        }
+    ]
 }</code>
  </pre>
     </span>
@@ -7350,6 +6229,302 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_id"                data-endpoint="POSTapi-post--post_id--save"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the post. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="post-POSTapi-post--post_id--dislike">Display the specified resource.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-post--post_id--dislike">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/post/1/dislike" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/post/1/dislike"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-post--post_id--dislike">
+            <blockquote>
+            <p>Example response (204):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 44
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+<code>Empty response</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-post--post_id--dislike" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-post--post_id--dislike"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-post--post_id--dislike"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-post--post_id--dislike" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-post--post_id--dislike">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-post--post_id--dislike" data-method="POST"
+      data-path="api/post/{post_id}/dislike"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-post--post_id--dislike', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-post--post_id--dislike"
+                    onclick="tryItOut('POSTapi-post--post_id--dislike');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-post--post_id--dislike"
+                    onclick="cancelTryOut('POSTapi-post--post_id--dislike');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-post--post_id--dislike"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/post/{post_id}/dislike</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-post--post_id--dislike"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-post--post_id--dislike"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-post--post_id--dislike"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>post_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="post_id"                data-endpoint="POSTapi-post--post_id--dislike"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the post. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="post-POSTapi-post--post_id--unsave">Display the specified resource.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-post--post_id--unsave">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/post/1/unsave" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/post/1/unsave"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-post--post_id--unsave">
+            <blockquote>
+            <p>Example response (204):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 43
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+<code>Empty response</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-post--post_id--unsave" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-post--post_id--unsave"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-post--post_id--unsave"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-post--post_id--unsave" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-post--post_id--unsave">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-post--post_id--unsave" data-method="POST"
+      data-path="api/post/{post_id}/unsave"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-post--post_id--unsave', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-post--post_id--unsave"
+                    onclick="tryItOut('POSTapi-post--post_id--unsave');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-post--post_id--unsave"
+                    onclick="cancelTryOut('POSTapi-post--post_id--unsave');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-post--post_id--unsave"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/post/{post_id}/unsave</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-post--post_id--unsave"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-post--post_id--unsave"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-post--post_id--unsave"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>post_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="post_id"                data-endpoint="POSTapi-post--post_id--unsave"
                value="1"
                data-component="url">
     <br>
