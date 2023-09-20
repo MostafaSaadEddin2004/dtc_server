@@ -58,7 +58,7 @@ class MoveResource extends Resource
                 Action::make('accept')
                     ->action(function (Move $record) {
                         $record->delete();
-                        Notification::create([
+                        $record->user->notifications()->create([
                             'title' => 'طلب الانتقال',
                             'body' => 'تم قبول طلبك بنجاح. يرجى التواصل مع الإدارة.',
                         ]);
@@ -67,7 +67,7 @@ class MoveResource extends Resource
                 Action::make('cancel')
                     ->action(function (Move $record) {
                         $record->delete();
-                        Notification::create([
+                        $record->user->notifications()->create([
                             'title' => 'طلب الانتقال',
                             'body' => 'نعتذر لقد تم رفض طلبك.',
                         ]);
