@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Course extends Model
 {
@@ -36,5 +37,16 @@ class Course extends Model
     public function registerations(): HasMany
     {
         return $this->hasMany(CourseRegistration::class);
+    }
+
+
+    /**
+     * Get all of the registerations for the Course
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function post(): HasOne
+    {
+        return $this->hasOne(Post::class);
     }
 }

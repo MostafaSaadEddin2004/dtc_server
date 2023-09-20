@@ -16,6 +16,7 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -58,6 +59,12 @@ class CourseResource extends Resource
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
+                TextColumn::make('post.content')
+                    ->searchable()
+                    ->sortable()
+                    ->limit(25),
+                ImageColumn::make('post.attachment')
+                    ->defaultImageUrl(url('/logo.png')),
             ])
             ->filters([
                 //
