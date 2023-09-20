@@ -11,8 +11,7 @@ use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
 use Filament\Tables\Filters\SelectFilter;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Actions\Action;
 
 class CourseStudentResource extends Resource
 {
@@ -51,7 +50,10 @@ class CourseStudentResource extends Resource
                     ->relationship('course', 'name')
                     ->multiple(),
             ])
-            ->actions([])
+            ->actions([
+                Action::make('View data')
+                    ->url(fn (CourseStudent $record): string => route('filament.resources.course-registrations.view', $record->user->courseRegisteration()->where('course_id', $record->course->id)->first())),
+            ])
             ->bulkActions([
                 // Tables\Actions\DeleteBulkAction::make(),
             ]);

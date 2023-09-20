@@ -104,11 +104,19 @@ class CourseRegistrationResource extends Resource
                     ->action(function (CourseRegistration $record) {
                         $record->update(['accepted' => true]);
                         $record->course->students()->create(['user_id' => $record->user->id]);
+                        $record->user->notifications()->create([
+                            'title' => 'طلب التسجيل على الدورة القصيرة',
+                            'body' => 'تم قبول انتسابك الى الدورة ' . $record->course->name . ' بنجاح . يرجى التواصل مع الإدارة.',
+                        ]);
                     }),
                 //TODO:: make the correct logic for this action
                 Action::make('cancel')
                     ->action(function (CourseRegistration $record) {
                         $record->update(['accepted' => false]);
+                        $record->user->notifications()->create([
+                            'title' => 'طلب التسجيل على الدورة القصيرة',
+                            'body' => 'نعتذر لقد تم رفض طلب انتسابك الى الدورة ' . $record->course->name . '.',
+                        ]);
                     })
                     ->color('danger'),
             ])

@@ -61,10 +61,22 @@ class EditMarkResource extends Resource
                 ViewAction::make('view'),
                 //TODO:: make the correct logic for this action
                 Action::make('accept')
-                    ->action(fn (EditMark $record) => $record->delete()),
+                    ->action(function (EditMark $record) {
+                        $record->delete();
+                        $record->user->notifications()->create([
+                            'title' => 'طلب تعديل علامة',
+                            'body' => 'تم قبول طلبك بنجاح. يرجى التواصل مع الإدارة.',
+                        ]);
+                    }),
                 //TODO:: make the correct logic for this action
-                    Action::make('cancel')
-                    ->action(fn (EditMark $record) => $record->delete())
+                Action::make('cancel')
+                    ->action(function (EditMark $record) {
+                        $record->delete();
+                        $record->user->notifications()->create([
+                            'title' => 'طلب تعديل علامة',
+                            'body' => 'نعتذر لقد تم رفض طلبك.',
+                        ]);
+                    })
                     ->color('danger'),
             ])
             ->bulkActions([
