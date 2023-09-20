@@ -30,7 +30,6 @@ class PostResource extends Resource
         return parent::getEloquentQuery()->withoutGlobalScopes()->whereHas('postType', fn ($query) => $query->where('name', 'public'));
     }
 
-
     public static function form(Form $form): Form
     {
         return $form

@@ -26,6 +26,7 @@ class CourseRegistration extends Model
         'is_morning',
         'user_id',
         'course_id',
+        'accepted',
     ];
 
     /**
@@ -38,6 +39,7 @@ class CourseRegistration extends Model
         'is_male' => 'boolean',
         'date_of_birth' => 'date',
         'is_morning' => 'boolean',
+        'accepted' => 'boolean',
         'user_id' => 'integer',
         'course_id' => 'integer',
     ];

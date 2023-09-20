@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('student_type');
             $table->string('work_type');
             $table->boolean('is_morning');
+            $table->boolean('accepted')->nullable();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('course_id')->constrained();
             $table->timestamps();

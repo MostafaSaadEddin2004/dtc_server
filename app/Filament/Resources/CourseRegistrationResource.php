@@ -3,7 +3,6 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CourseRegistrationResource\Pages;
-use App\Filament\Resources\CourseRegistrationResource\RelationManagers;
 use App\Models\CourseRegistration;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -14,13 +13,21 @@ use Filament\Tables\Actions\Action;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class CourseRegistrationResource extends Resource
 {
     protected static ?string $model = CourseRegistration::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
+
+    public static function getEloquentQuery(): Builder
+    {
+        $builder = parent::getEloquentQuery()->withoutGlobalScopes();
+        if (request()->routeIs('filament.resources.course-registrations.view')) {
+            return $builder;
+        }
+        return $builder->whereNull('accepted');
+    }
 
     public static function form(Form $form): Form
     {
@@ -94,14 +101,19 @@ class CourseRegistrationResource extends Resource
                 Tables\Actions\ViewAction::make(),
                 //TODO:: make the correct logic for this action
                 Action::make('accept')
-                    ->action(fn (CourseRegistration $record) => $record->delete()),
+                    ->action(function (CourseRegistration $record) {
+                        $record->update(['accepted' => true]);
+                        $record->course->students()->create(['user_id' => $record->user->id]);
+                    }),
                 //TODO:: make the correct logic for this action
                 Action::make('cancel')
-                    ->action(fn (CourseRegistration $record) => $record->delete())
+                    ->action(function (CourseRegistration $record) {
+                        $record->update(['accepted' => false]);
+                    })
                     ->color('danger'),
             ])
             ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make(),
+                // Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
 
@@ -116,6 +128,7 @@ class CourseRegistrationResource extends Resource
     {
         return [
             'index' => Pages\ListCourseRegistrations::route('/'),
+            'view' => Pages\ViewCourseRegistration::route('/{record}'),
             // 'create' => Pages\CreateCourseRegistration::route('/create'),
             // 'edit' => Pages\EditCourseRegistration::route('/{record}/edit'),
         ];

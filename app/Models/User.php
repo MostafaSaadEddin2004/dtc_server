@@ -116,6 +116,15 @@ class User extends Authenticatable
         return $this->hasOne(AcademicRegistration::class);
     }
 
+    /**
+     * The students that belong to the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function students(): HasMany
+    {
+        return $this->hasMany(CourseStudent::class);
+    }
 
     protected function department(): Attribute
     {

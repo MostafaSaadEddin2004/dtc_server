@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\MoveResource\Pages;
 use App\Models\Move;
+use App\Models\Notification;
 use App\Models\User;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -55,14 +56,26 @@ class MoveResource extends Resource
                 Tables\Actions\ViewAction::make(),
                 //TODO:: make the correct logic for this action
                 Action::make('accept')
-                    ->action(fn (Move $record) => $record->delete()),
+                    ->action(function (Move $record) {
+                        $record->delete();
+                        Notification::create([
+                            'title' => 'طلب الانتقال',
+                            'body' => 'تم قبول طلبك بنجاح. يرجى التواصل مع الإدارة.',
+                        ]);
+                    }),
                 //TODO:: make the correct logic for this action
                 Action::make('cancel')
-                    ->action(fn (Move $record) => $record->delete())
+                    ->action(function (Move $record) {
+                        $record->delete();
+                        Notification::create([
+                            'title' => 'طلب الانتقال',
+                            'body' => 'نعتذر لقد تم رفض طلبك.',
+                        ]);
+                    })
                     ->color('danger'),
             ])
             ->bulkActions([
-                Tables\Actions\DeleteBulkAction::make(),
+                // Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
 
