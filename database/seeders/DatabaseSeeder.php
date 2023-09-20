@@ -35,6 +35,7 @@ class DatabaseSeeder extends Seeder
             MoveSeeder::class,
             EditMarkSeeder::class,
             TeacherRegistrationSeeder::class,
+            CourseRegistrationSeeder::class,
         ]);
     }
 }

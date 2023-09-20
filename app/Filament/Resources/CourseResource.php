@@ -64,7 +64,9 @@ class CourseResource extends Resource
                     ->searchable()
                     ->sortable()
                     ->limit(25),
+                //TODO:: handle attachment view
                 ImageColumn::make('post.attachment')
+                    ->label('Attachment')
                     ->defaultImageUrl(url('/logo.png')),
                 TextColumn::make('created_at')->since(),
             ])
