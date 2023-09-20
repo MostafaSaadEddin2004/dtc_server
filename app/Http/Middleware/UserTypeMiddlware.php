@@ -15,19 +15,19 @@ class UserTypeMiddlware
      */
     public function handle(Request $request, Closure $next, $role): Response
     {
-        if($role == 'admin' && auth()->user()->role->name != 'admin'){
+        if($role != auth()->user()->role->name ){
             return response(['message' => 'unauthorized'], 401);
         }
-        if($role == 'student_browser' && auth()->user()->role->name != 'student_browser'){
+        if($role != auth()->user()->role->name ){
             return response(['message' => 'unauthorized'], 401);
         }
-        if($role == 'teacher_browser' && auth()->user()->role->name != 'teacher_browser'){
+        if($role != auth()->user()->role->name ){
             return response(['message' => 'unauthorized'], 401);
         }
-        if($role == 'student' && auth()->user()->role->name != 'student'){
+        if($role != auth()->user()->role->name ){
             return response(['message' => 'unauthorized'], 401);
         }
-        if($role == 'teacher' && auth()->user()->role->name != 'teacher'){
+        if($role != auth()->user()->role->name ){
             return response(['message' => 'unauthorized'], 401);
         }
         return $next($request);
