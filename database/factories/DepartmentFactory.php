@@ -25,7 +25,6 @@ class DepartmentFactory extends Factory
         return [
             'name' => $this->faker->name,
             'section_id' => Section::factory(),
-            'certificate_type_id' => CertificateType::factory(),
         ];
     }
 }

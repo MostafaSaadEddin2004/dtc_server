@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             DepartmentSeeder::class,
             DepartmentMarkSeeder::class,
             AcademicRegistrationSeeder::class,
+            TeacherSeeder::class,
             CourseSeeder::class,
             PostTypeSeeder::class,
             PostSeeder::class,

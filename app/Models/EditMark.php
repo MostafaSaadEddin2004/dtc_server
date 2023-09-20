@@ -19,7 +19,7 @@ class EditMark extends Model
         'subject',
         'mark',
         'reason',
-        'teacher',
+        'teacher_id',
         'user_id',
     ];
 
@@ -36,5 +36,10 @@ class EditMark extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function teacher(): BelongsTo
+    {
+        return $this->belongsTo(Teacher::class);
     }
 }

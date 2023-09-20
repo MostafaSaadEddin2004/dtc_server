@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -24,6 +25,14 @@ class Teacher extends Model
         'birth_date' => 'date',
         'department_id' => 'integer',
     ];
+
+    public function name(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->user->first_name_en,
+        );
+    }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

@@ -15,12 +15,12 @@ class EditMarkResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'subject'=>$this->id,
-            'subject'=>$this->subject,
-            'mark'=>$this->mark,
-            'reason'=>$this->reason,
-            'teacher'=>$this->teacher,
-            'user'=>new UserResource($this->user),
+            'subject' => $this->id,
+            'subject' => $this->subject,
+            'mark' => $this->mark,
+            'reason' => $this->reason,
+            'teacher' => $this->teacher->name,
+            'user' => new UserResource($this->user),
         ];
     }
 }

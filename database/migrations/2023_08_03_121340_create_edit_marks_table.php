@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Teacher;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -18,7 +19,7 @@ return new class extends Migration
             $table->string('subject');
             $table->integer('mark');
             $table->string('reason');
-            $table->string('teacher');
+            $table->foreignIdFor(Teacher::class)->constrained();
             $table->foreignId('user_id')->reference('id')->on('users');
             $table->timestamps();
         });

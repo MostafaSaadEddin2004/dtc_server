@@ -22,7 +22,7 @@ class EditMarkController extends Controller
         "subject": "علوم",
         "mark": "100",
         "reason": "ناجح",
-        "teacher": "ديزيجينيتيد",
+        "teacher_id": 16,
         "user": {
             "id": 51,
             "first_name_en": "Finn O'Keefe",

@@ -3,19 +3,19 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\EditMarkResource\Pages;
-use App\Filament\Resources\EditMarkResource\RelationManagers;
 use App\Models\EditMark;
-use Filament\Forms;
-use Filament\Forms\Components\Actions\Action;
+use App\Models\Teacher;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Actions\Action;
+use Filament\Tables\Actions\ViewAction;
+use Illuminate\Contracts\Database\Query\Builder;
 
 class EditMarkResource extends Resource
 {
@@ -29,8 +29,10 @@ class EditMarkResource extends Resource
             ->schema([
                 TextInput::make("subject"),
                 TextInput::make("mark"),
-                TextInput::make("reason"),
-                TextInput::make("teacher"),
+                Textarea::make("reason"),
+                Select::make("teacher_id")
+                    ->relationship('teacher', 'user_id')
+                    ->getOptionLabelFromRecordUsing(fn (Teacher $record) => "{$record->name}"),
                 Select::make("user_id")
                     ->relationship('user', 'first_name_en'),
             ]);
@@ -40,19 +42,30 @@ class EditMarkResource extends Resource
     {
         return $table
             ->columns([
-                // TextColumn::make("subject"),
-                // TextColumn::make("mark"),
-                // TextColumn::make("reason"),
-                TextColumn::make("teacher"),
-                TextColumn::make("user.first_name_en"),
+                TextColumn::make("teacher.name")
+                    ->searchable()
+                    ->sortable()
+                    ->label('Teacher'),
+                TextColumn::make("user.first_name_en")
+                    ->searchable()
+                    ->sortable(),
+                TextColumn::make("subject")->searchable()
+                    ->sortable(),
+                TextColumn::make("mark"),
+                TextColumn::make("reason")->limit(25),
             ])
             ->filters([
                 //
             ])
             ->actions([
-                // Tables\Actions\EditAction::make(),
-                Action::make()
-                    ->action()
+                ViewAction::make('view'),
+                //TODO:: make the correct logic for this action
+                Action::make('accept')
+                    ->action(fn (EditMark $record) => $record->delete()),
+                //TODO:: make the correct logic for this action
+                    Action::make('cancel')
+                    ->action(fn (EditMark $record) => $record->delete())
+                    ->color('danger'),
             ])
             ->bulkActions([
                 // Tables\Actions\DeleteBulkAction::make(),
