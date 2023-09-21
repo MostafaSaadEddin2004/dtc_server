@@ -117,7 +117,9 @@ class AuthController extends Controller
         }
         $data = $request->validated();
         $data['user_id'] = $userId;
+        $data['is_department_head'] = $user->role_id == 5;
         Teacher::create($data);
+        $user->update(['role_id' => 2]);
         return response()->json([
             'message' => 'your request in wait',
         ], 200);

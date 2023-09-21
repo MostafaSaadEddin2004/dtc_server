@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('permanent_location');
             $table->string('nationality');
             $table->foreignId('department_id')->constrained();
+            $table->boolean('accepted')->nullable();
+            $table->boolean('is_department_head')->default(false);
             $table->timestamps();
         });
     }

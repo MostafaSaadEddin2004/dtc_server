@@ -22,6 +22,8 @@ class CourseFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
+            'registration_start_at' => $this->faker->date(),
+            'registration_end_at' => $this->faker->date(),
         ];
     }
 }

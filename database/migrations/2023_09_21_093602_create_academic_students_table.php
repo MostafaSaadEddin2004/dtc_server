@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Department;
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,17 +13,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::disableForeignKeyConstraints();
-
-        Schema::create('courses', function (Blueprint $table) {
+        Schema::create('academic_students', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->date('registration_start_at');
-            $table->date('registration_end_at');
+            $table->foreignIdFor(User::class)->constrained()->cascadeOnDelete();
+            $table->foreignIdFor(Department::class)->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
-
-        Schema::enableForeignKeyConstraints();
     }
 
     /**
@@ -29,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('courses');
+        Schema::dropIfExists('academic_students');
     }
 };

@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\StoreEditMarkRequest;
 use App\Http\Resources\Api\EditMarkResource;
+use App\Http\Resources\TeacherResource;
 use App\Models\EditMark;
+use App\Models\Teacher;
 use Illuminate\Http\Request;
 
 /**
@@ -70,5 +72,12 @@ class EditMarkController extends Controller
         $data['user_id'] = $userId;
         $move = EditMark::create($data);
         return new EditMarkResource($move);
+    }
+
+    public function teachers()
+    {
+        $teachers = Teacher::with('user')->get();
+
+        return TeacherResource::collection($teachers);
     }
 }

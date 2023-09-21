@@ -3,10 +3,10 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CourseResource\Pages;
-use App\Filament\Resources\CourseResource\RelationManagers;
 use App\Models\Course;
 use Filament\Forms;
 use Filament\Forms\Components\Card;
+use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Tabs;
 use Filament\Forms\Components\Tabs\Tab;
@@ -20,7 +20,6 @@ use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class CourseResource extends Resource
 {
@@ -37,6 +36,10 @@ class CourseResource extends Resource
                         ->tabs([
                             Tab::make('Course Info')->schema([
                                 TextInput::make('name')
+                                    ->required(),
+                                DatePicker::make('registration_start_at')
+                                    ->required(),
+                                DatePicker::make('registration_end_at')
                                     ->required(),
                             ]),
                             Tab::make('Post Info')->schema([
@@ -60,6 +63,8 @@ class CourseResource extends Resource
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
+                TextColumn::make('registration_start_at')->date(),
+                TextColumn::make('registration_end_at')->date(),
                 TextColumn::make('post.content')
                     ->searchable()
                     ->sortable()
@@ -91,6 +96,10 @@ class CourseResource extends Resource
             ->actions([
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
+                Tables\Actions\Action::make('Show students')
+                    ->icon('heroicon-o-user-group')
+                    ->color('warning')
+                    ->url(fn (Course $record) => route('filament.resources.course-students.index') . '?tableFilters[course][values][0]=' . $record->id),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),

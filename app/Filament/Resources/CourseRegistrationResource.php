@@ -79,8 +79,14 @@ class CourseRegistrationResource extends Resource
                     ->since(),
             ])
             ->filters([
-                TernaryFilter::make('is_male'),
-                TernaryFilter::make('is_morning'),
+                TernaryFilter::make('is_male')
+                    ->label('Gender')
+                    ->trueLabel('Male')
+                    ->falseLabel('Female'),
+                TernaryFilter::make('is_morning')
+                    ->label('Time')
+                    ->trueLabel('Morning')
+                    ->falseLabel('Evening'),
                 SelectFilter::make('student_type')
                     ->multiple()
                     ->options([

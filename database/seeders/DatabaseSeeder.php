@@ -34,7 +34,6 @@ class DatabaseSeeder extends Seeder
             NoteSeeder::class,
             MoveSeeder::class,
             EditMarkSeeder::class,
-            TeacherRegistrationSeeder::class,
             CourseRegistrationSeeder::class,
         ]);
     }

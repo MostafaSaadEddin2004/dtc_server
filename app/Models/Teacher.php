@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Teacher extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'user_id',
         'certificate',
@@ -20,6 +21,7 @@ class Teacher extends Model
         'nationality',
         'department_id',
     ];
+
     protected $casts = [
         'id' => 'integer',
         'birth_date' => 'date',
@@ -37,6 +39,7 @@ class Teacher extends Model
     {
         return $this->belongsTo(User::class);
     }
+
     public function department(): BelongsTo
     {
         return $this->belongsTo(Department::class);

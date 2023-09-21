@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
@@ -19,6 +19,8 @@ class Course extends Model
      */
     protected $fillable = [
         'name',
+        'registration_start_at',
+        'registration_end_at',
     ];
 
     /**
@@ -28,7 +30,16 @@ class Course extends Model
      */
     protected $casts = [
         'id' => 'integer',
+        'registration_start_at' => 'date',
     ];
+
+
+    protected function isOpen(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->registration_start_at <= now() && $this->registration_end_at >= now(),
+        );
+    }
 
     /**
      * Get all of the registerations for the Course
