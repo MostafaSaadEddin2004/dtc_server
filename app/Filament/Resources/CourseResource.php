@@ -76,6 +76,7 @@ class CourseResource extends Resource
                     ->label('Attachment')
                     ->defaultImageUrl(url('/logo.png')),
                 TextColumn::make('created_at')->since(),
+                TextColumn::make('post.likes')->label('Likes'),
             ])
             ->filters([
                 Filter::make('created_at')

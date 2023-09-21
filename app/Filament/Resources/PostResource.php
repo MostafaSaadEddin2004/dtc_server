@@ -27,7 +27,7 @@ class PostResource extends Resource
 
     public static function getEloquentQuery(): Builder
     {
-        return parent::getEloquentQuery()->withoutGlobalScopes()->whereHas('postType', fn ($query) => $query->where('name', 'public'));
+        return parent::getEloquentQuery()->withoutGlobalScopes()->withCount('likes')->whereHas('postType', fn ($query) => $query->where('name', 'public'));
     }
 
     public static function form(Form $form): Form
@@ -50,6 +50,7 @@ class PostResource extends Resource
                 ImageColumn::make('attachment')
                     ->defaultImageUrl(url('/logo.png')),
                 TextColumn::make('created_at')->since(),
+                TextColumn::make('likes_count')->label('Likes'),
             ])
             ->filters([
                 Filter::make('created_at')

@@ -82,7 +82,10 @@ class PostController extends Controller
      */
     public function like(Post $post)
     {
-        $post->likes()->create(['user_id' => auth()->id()]);
+
+        if (!$post->likes()->where('user_id', auth()->id())->exists()) {
+            $post->likes()->create(['user_id' => auth()->id()]);
+        }
 
         return response()->noContent();
     }
@@ -92,7 +95,9 @@ class PostController extends Controller
      */
     public function save(Post $post)
     {
-        $post->saves()->create(['user_id' => auth()->id()]);
+        if (!$post->saves()->where('user_id', auth()->id())->exists()) {
+            $post->saves()->create(['user_id' => auth()->id()]);
+        }
 
         return response()->noContent();
     }
