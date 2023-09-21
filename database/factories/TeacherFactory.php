@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Department;
+use App\Models\Section;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -26,7 +27,7 @@ class TeacherFactory extends Factory
             'current_location' => $this->faker->name,
             'permanent_location' => $this->faker->name,
             'nationality' => $this->faker->name,
-            'department_id' => Department::factory(),
+            'section_id' => Section::factory(),
         ];
     }
 }

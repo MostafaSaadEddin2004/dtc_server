@@ -32,4 +32,9 @@ class Section extends Model
     {
         return $this->hasMany(Department::class);
     }
+
+    public function teachers(): HasMany
+    {
+        return $this->hasMany(Teacher::class);
+    }
 }

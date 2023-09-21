@@ -37,8 +37,8 @@ class TeacherResource extends Resource
                 Forms\Components\Select::make('user_id')
                     ->relationship('user', 'first_name_en')
                     ->required(),
-                Forms\Components\Select::make('department_id')
-                    ->relationship('department', 'name')
+                Forms\Components\Select::make('section_id')
+                    ->relationship('section', 'name')
                     ->required(),
                 Forms\Components\TextInput::make('certificate')
                     ->required(),
@@ -64,7 +64,7 @@ class TeacherResource extends Resource
                 Tables\Columns\TextColumn::make('user.first_name_en')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('department.name')
+                Tables\Columns\TextColumn::make('section.name')
                     ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('is_department_head')

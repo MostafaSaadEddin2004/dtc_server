@@ -29,7 +29,7 @@ class TeacherRequest extends FormRequest
             'current_location' => ['required', 'string'],
             'permanent_location' => ['required', 'string'],
             'nationality' => ['required', 'string'],
-            'department_id' => ['required', 'integer','exists:departments,id'],
+            'section_id' => ['required', 'integer','exists:sections,id'],
         ];
     }
 }

@@ -76,7 +76,7 @@ class EditMarkController extends Controller
 
     public function teachers()
     {
-        $teachers = Teacher::with('user')->get();
+        $teachers = auth()->user()->department->section->teachers()->with('user')->get();
 
         return TeacherResource::collection($teachers);
     }

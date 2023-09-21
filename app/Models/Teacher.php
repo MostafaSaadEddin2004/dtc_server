@@ -19,13 +19,13 @@ class Teacher extends Model
         'current_location',
         'permanent_location',
         'nationality',
-        'department_id',
+        'section_id',
     ];
 
     protected $casts = [
         'id' => 'integer',
         'birth_date' => 'date',
-        'department_id' => 'integer',
+        'section_id' => 'integer',
     ];
 
     public function name(): Attribute
@@ -40,8 +40,8 @@ class Teacher extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function department(): BelongsTo
+    public function section(): BelongsTo
     {
-        return $this->belongsTo(Department::class);
+        return $this->belongsTo(Section::class);
     }
 }
