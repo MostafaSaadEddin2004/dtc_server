@@ -11,7 +11,6 @@ class AcademicStudent extends Model
     use HasFactory;
 
     protected $fillable = ['user_id', 'department_id'];
-
     /**
      * Get the user that owns the AcademicStudent
      *

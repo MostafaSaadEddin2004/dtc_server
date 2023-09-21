@@ -54,10 +54,14 @@ class Department extends Model
         return $this->hasMany(AcademicRegistration::class);
     }
 
-
     public function wishes(): HasMany
     {
         return $this->hasMany(Wish::class);
+    }
+
+    public function students(): HasMany
+    {
+        return $this->hasMany(AcademicStudent::class);
     }
 
     public function certificateType()

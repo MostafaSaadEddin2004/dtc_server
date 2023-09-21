@@ -148,7 +148,7 @@ class AcademicRegistrationResource extends Resource
                             'body' => 'تم قبول طلب تسجيلك كطالب.',
                         ]);
                         $record->user->update(['role_id' => 4]);
-                        // $record->user->students
+                        // $record->department->students()->create([['user_id' => $record->user->id]]);
                     }),
                 Tables\Actions\Action::make('cancel')
                     ->action(function (AcademicRegistration $record) {
