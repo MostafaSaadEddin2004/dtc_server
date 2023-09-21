@@ -80,7 +80,8 @@ class AcademicRegistrationResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('user.first_name_en'),
-                Tables\Columns\TextColumn::make('department.name'),
+                Tables\Columns\TextColumn::make('department.name')
+                ->label('Class'),
                 Tables\Columns\TextColumn::make('father_name'),
                 Tables\Columns\TextColumn::make('mother_name'),
                 Tables\Columns\TextColumn::make('date_of_birth')

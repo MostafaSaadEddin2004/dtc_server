@@ -43,8 +43,8 @@ class MoveResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('user.first_name_en'),
-                Tables\Columns\TextColumn::make('user.department.name')->label('Current Department'),
-                Tables\Columns\TextColumn::make('department.name')->label('Department to move to'),
+                Tables\Columns\TextColumn::make('user.department.name')->label('Current Class'),
+                Tables\Columns\TextColumn::make('department.name')->label('Class to move to'),
                 Tables\Columns\TextColumn::make('text'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->since(),

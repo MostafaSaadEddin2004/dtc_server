@@ -25,6 +25,10 @@ class DepartmentResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
+    protected static ?string $pluralModelLabel = 'Classes';
+
+    protected static ?string $modelLabel = 'Class';
+
     public static function form(Form $form): Form
     {
         return $form
@@ -38,6 +42,7 @@ class DepartmentResource extends Resource
                             ->preload()
                             ->relationship('certificateType', 'name'),
                         Select::make('section_id')
+                            ->label('Department')
                             ->relationship('section', 'name')
                     ]),
             ]);
@@ -54,6 +59,7 @@ class DepartmentResource extends Resource
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('section.name')
+                    ->label('Department')
                     ->searchable()
                     ->sortable(),
             ])

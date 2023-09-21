@@ -37,7 +37,8 @@ class AcademicStudentResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('user.first_name_en'),
-                Tables\Columns\TextColumn::make('department.name'),
+                Tables\Columns\TextColumn::make('department.name')
+                    ->label('Class'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->since(),
             ])

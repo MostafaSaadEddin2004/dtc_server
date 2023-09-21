@@ -22,6 +22,10 @@ class SectionResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
+    protected static ?string $pluralModelLabel = 'Departments';
+
+    protected static ?string $modelLabel = 'Department';
+
     public static function form(Form $form): Form
     {
         return $form

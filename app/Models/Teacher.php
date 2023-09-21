@@ -20,6 +20,7 @@ class Teacher extends Model
         'permanent_location',
         'nationality',
         'section_id',
+        'accepted',
     ];
 
     protected $casts = [

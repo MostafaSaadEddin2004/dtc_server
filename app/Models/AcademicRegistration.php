@@ -35,6 +35,7 @@ class AcademicRegistration extends Model
         'un_image',
         'user_id',
         'department_id',
+        'accepted',
     ];
 
     /**
