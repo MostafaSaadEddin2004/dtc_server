@@ -9,12 +9,22 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Illuminate\Database\Eloquent\Builder;
 
 class AcademicRegistrationResource extends Resource
 {
     protected static ?string $model = AcademicRegistration::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
+
+    public static function getEloquentQuery(): Builder
+    {
+        $builder = parent::getEloquentQuery()->withoutGlobalScopes();
+        if (request()->routeIs('filament.resources.academic-registrations.view')) {
+            return $builder;
+        }
+        return $builder->whereNull('accepted');
+    }
 
     public static function form(Form $form): Form
     {
@@ -97,7 +107,38 @@ class AcademicRegistrationResource extends Resource
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
-                // Tables\Actions\EditAction::make(),
+                Tables\Actions\Action::make('accept')
+                    ->action(function (AcademicRegistration $record) {
+                        $record->update(['accepted' => true]);
+                        if (!$record->is_department_head) {
+                            $record->user->notifications()->create([
+                                'title' => 'تسجيل الدخول كأستاذ',
+                                'body' => 'تم قبول طلب تسجيلك كأستاذ.',
+                            ]);
+                        } else {
+                            $record->user->notifications()->create([
+                                'title' => 'تسجيل الدخول كرئيس قسم',
+                                'body' => 'تم قبول طلب تسجيلك كرئيس قسم.',
+                            ]);
+                        }
+                        $record->user->update(['role_id' => 5]);
+                    }),
+                Tables\Actions\Action::make('cancel')
+                    ->action(function (AcademicRegistration $record) {
+                        $record->update(['accepted' => false]);
+                        if (!$record->is_department_head) {
+                            $record->user->notifications()->create([
+                                'title' => 'تسجيل الدخول كأستاذ',
+                                'body' => 'نعتذر لقد تم رفض طلب تسجيل دخولك كأستاذ',
+                            ]);
+                        } else {
+                            $record->user->notifications()->create([
+                                'title' => 'تسجيل الدخول كرئيس قسم',
+                                'body' => 'نعتذر لقد تم رفض طلب تسجيل دخولك كرئيس قسم',
+                            ]);
+                        }
+                    })
+                    ->color('danger'),
             ])
             ->bulkActions([
                 // Tables\Actions\DeleteBulkAction::make(),

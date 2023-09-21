@@ -32,8 +32,9 @@ return new class extends Migration
             $table->string('certificate_image');
             $table->string('personal_image');
             $table->string('un_image');
-            $table->foreignId('user_id')->constrained();
-            $table->foreignId('department_id')->constrained();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('department_id')->constrained()->cascadeOnDelete();
+            $table->boolean('accepted')->nullable();
             $table->timestamps();
         });
 

@@ -10,7 +10,6 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -21,10 +20,11 @@ class TeacherResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
+
     public static function getEloquentQuery(): Builder
     {
         $builder = parent::getEloquentQuery()->withoutGlobalScopes();
-        if (request()->routeIs('filament.resources.teacher-registrations.view')) {
+        if (request()->routeIs('filament.resources.teachers.view')) {
             return $builder;
         }
         return $builder->whereNull('accepted');
@@ -67,7 +67,12 @@ class TeacherResource extends Resource
                 Tables\Columns\TextColumn::make('department.name')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\IconColumn::make('is_department_head')->boolean(),
+                Tables\Columns\TextColumn::make('is_department_head')
+                    ->enum([
+                        true => 'Department Head',
+                        false => 'Teacher',
+                    ])
+                    ->label('Teacher Type'),
                 // Tables\Columns\TextColumn::make('certificate'),
                 // Tables\Columns\TextColumn::make('specialty'),
                 // Tables\Columns\TextColumn::make('birth_date')
@@ -132,11 +137,13 @@ class TeacherResource extends Resource
         ];
     }
 
+
     public static function getPages(): array
     {
         return [
             'index' => Pages\ListTeachers::route('/'),
             // 'create' => Pages\CreateTeacher::route('/create'),
+            'view' => Pages\ViewTeacher::route('/{record}'),
             // 'edit' => Pages\EditTeacher::route('/{record}/edit'),
         ];
     }
