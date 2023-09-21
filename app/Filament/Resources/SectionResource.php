@@ -26,6 +26,8 @@ class SectionResource extends Resource
 
     protected static ?string $modelLabel = 'Department';
 
+    protected static ?string $navigationGroup = 'Department';
+
     public static function form(Form $form): Form
     {
         return $form

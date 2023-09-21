@@ -17,7 +17,13 @@ class AcademicStudentResource extends Resource
 {
     protected static ?string $model = AcademicStudent::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-s-academic-cap';
+
+    protected static ?string $navigationGroup = 'Academic';
+
+    protected static ?string $pluralModelLabel = 'Students';
+
+    protected static ?string $modelLabel = 'Student';
 
     public static function form(Form $form): Form
     {
@@ -46,7 +52,7 @@ class AcademicStudentResource extends Resource
                 //
             ])
             ->actions([
-                // Tables\Actions\ViewAction::make(),
+                Tables\Actions\ViewAction::make(),
                 // Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
@@ -66,7 +72,7 @@ class AcademicStudentResource extends Resource
         return [
             'index' => Pages\ListAcademicStudents::route('/'),
             // 'create' => Pages\CreateAcademicStudent::route('/create'),
-            // 'view' => Pages\ViewAcademicStudent::route('/{record}'),
+            'view' => Pages\ViewAcademicStudent::route('/{record}'),
             // 'edit' => Pages\EditAcademicStudent::route('/{record}/edit'),
         ];
     }

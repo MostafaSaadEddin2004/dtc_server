@@ -30,6 +30,11 @@ class TeacherResource extends Resource
         return $builder->whereNull('accepted');
     }
 
+    protected static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::whereNull('accepted')->count();
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -69,10 +74,13 @@ class TeacherResource extends Resource
                     ->label('Department')
                     ->searchable()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('is_department_head')
+                Tables\Columns\BadgeColumn::make('is_department_head')
                     ->enum([
                         true => 'Department Head',
                         false => 'Teacher',
+                    ])->colors([
+                        'primary',
+                        'warning' => static fn ($state): bool => $state == false,
                     ])
                     ->label('Teacher Type'),
                 // Tables\Columns\TextColumn::make('certificate'),

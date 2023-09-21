@@ -66,7 +66,7 @@ class AcademicRegistrationController extends Controller
             }
         }
 
-        $user->role_id = 2;
+        $user->update(['role_id' => 2]);
 
         return AcademicRegistration::create($data);
     }

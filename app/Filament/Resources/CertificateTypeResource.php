@@ -22,6 +22,8 @@ class CertificateTypeResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
+    protected static ?string $navigationGroup = 'Department';
+
     public static function form(Form $form): Form
     {
         return $form

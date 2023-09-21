@@ -20,6 +20,14 @@ class CourseRegistrationResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
+    protected static ?string $navigationGroup = 'Course';
+
+
+    protected static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::whereNull('accepted')->count();
+    }
+
     public static function getEloquentQuery(): Builder
     {
         $builder = parent::getEloquentQuery()->withoutGlobalScopes();

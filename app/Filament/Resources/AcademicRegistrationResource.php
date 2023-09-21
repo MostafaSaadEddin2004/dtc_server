@@ -15,7 +15,9 @@ class AcademicRegistrationResource extends Resource
 {
     protected static ?string $model = AcademicRegistration::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-academic-cap';
+
+    protected static ?string $navigationGroup = 'Academic';
 
     public static function getEloquentQuery(): Builder
     {
@@ -26,52 +28,76 @@ class AcademicRegistrationResource extends Resource
         return $builder->whereNull('accepted');
     }
 
+    protected static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::whereNull('accepted')->count();
+    }
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\Select::make('user_id')
                     ->relationship('user', 'first_name_en')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\Select::make('department_id')
                     ->relationship('department', 'name')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('father_name')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('mother_name')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\DatePicker::make('date_of_birth')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('place_of_birth')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('military')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('current_address')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('address')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('name_of_parent')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('job_of_parent')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('phone_of_parent')
                     ->tel()
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('phone_of_mother')
                     ->tel()
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('avg_mark')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('certificate_year')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\FileUpload::make('id_image')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\FileUpload::make('certificate_image')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\FileUpload::make('personal_image')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
                 Forms\Components\FileUpload::make('un_image')
-                    ->required(),
+                    ->required()
+                    ->hiddenOn('edit'),
             ]);
     }
 
@@ -81,11 +107,11 @@ class AcademicRegistrationResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('user.first_name_en'),
                 Tables\Columns\TextColumn::make('department.name')
-                ->label('Class'),
-                Tables\Columns\TextColumn::make('father_name'),
-                Tables\Columns\TextColumn::make('mother_name'),
-                Tables\Columns\TextColumn::make('date_of_birth')
-                    ->date(),
+                    ->label('Class'),
+                // Tables\Columns\TextColumn::make('father_name'),
+                // Tables\Columns\TextColumn::make('mother_name'),
+                // Tables\Columns\TextColumn::make('date_of_birth')
+                //     ->date(),
                 // Tables\Columns\TextColumn::make('place_of_birth'),
                 // Tables\Columns\TextColumn::make('military'),
                 // Tables\Columns\TextColumn::make('current_address'),
@@ -107,37 +133,25 @@ class AcademicRegistrationResource extends Resource
                 //
             ])
             ->actions([
+                Tables\Actions\EditAction::make(),
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\Action::make('accept')
                     ->action(function (AcademicRegistration $record) {
                         $record->update(['accepted' => true]);
-                        if (!$record->is_department_head) {
-                            $record->user->notifications()->create([
-                                'title' => 'تسجيل الدخول كأستاذ',
-                                'body' => 'تم قبول طلب تسجيلك كأستاذ.',
-                            ]);
-                        } else {
-                            $record->user->notifications()->create([
-                                'title' => 'تسجيل الدخول كرئيس قسم',
-                                'body' => 'تم قبول طلب تسجيلك كرئيس قسم.',
-                            ]);
-                        }
-                        $record->user->update(['role_id' => 5]);
+                        $record->user->notifications()->create([
+                            'title' => 'تسجيل الدخول كطالب',
+                            'body' => 'تم قبول طلب تسجيلك كطالب.',
+                        ]);
+                        $record->user->update(['role_id' => 4]);
+                        // $record->user->students
                     }),
                 Tables\Actions\Action::make('cancel')
                     ->action(function (AcademicRegistration $record) {
                         $record->update(['accepted' => false]);
-                        if (!$record->is_department_head) {
-                            $record->user->notifications()->create([
-                                'title' => 'تسجيل الدخول كأستاذ',
-                                'body' => 'نعتذر لقد تم رفض طلب تسجيل دخولك كأستاذ',
-                            ]);
-                        } else {
-                            $record->user->notifications()->create([
-                                'title' => 'تسجيل الدخول كرئيس قسم',
-                                'body' => 'نعتذر لقد تم رفض طلب تسجيل دخولك كرئيس قسم',
-                            ]);
-                        }
+                        $record->user->notifications()->create([
+                            'title' => 'تسجيل الدخول كطالب',
+                            'body' => 'تم قبول طلب تسجيلك كطالب.',
+                        ]);
                     })
                     ->color('danger'),
             ])
@@ -159,7 +173,7 @@ class AcademicRegistrationResource extends Resource
             'index' => Pages\ListAcademicRegistrations::route('/'),
             // 'create' => Pages\CreateAcademicRegistration::route('/create'),
             'view' => Pages\ViewAcademicRegistration::route('/{record}'),
-            // 'edit' => Pages\EditAcademicRegistration::route('/{record}/edit'),
+            'edit' => Pages\EditAcademicRegistration::route('/{record}/edit'),
         ];
     }
 }

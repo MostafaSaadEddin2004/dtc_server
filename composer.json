@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "blade-ui-kit/blade-heroicons": "^1.4",
         "filament/filament": "^2.17",
         "guzzlehttp/guzzle": "^7.2",
         "kutia-software-company/larafirebase": "^1.3",
