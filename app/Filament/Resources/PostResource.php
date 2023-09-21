@@ -18,6 +18,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Livewire\TemporaryUploadedFile;
 
 class PostResource extends Resource
 {
@@ -37,7 +38,10 @@ class PostResource extends Resource
                 Textarea::make('content')
                     ->required(),
                 FileUpload::make('attachment')
-                    ->disk('public')
+                    ->getUploadedFileNameForStorageUsing(function (TemporaryUploadedFile $file): string {
+                        $fileName = $file->hashName();
+                        return 'posts/' . $fileName;
+                    })
                     ->nullable(),
             ]);
     }
@@ -46,10 +50,13 @@ class PostResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('content')->limit(25)->searchable(),
+                TextColumn::make('content')->limit(25)
+                    ->searchable(),
                 ImageColumn::make('attachment')
                     ->defaultImageUrl(url('/logo.png')),
-                TextColumn::make('created_at')->since(),
+                TextColumn::make('created_at')
+                    ->since()
+                    ->sortable(),
                 TextColumn::make('likes_count')->label('Likes'),
             ])
             ->filters([

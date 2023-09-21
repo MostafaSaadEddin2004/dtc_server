@@ -51,6 +51,14 @@ class Course extends Model
         return $this->hasMany(CourseRegistration::class);
     }
 
+
+    protected function likes(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->post?->likes()->count(),
+        );
+    }
+
     /**
      * The students that belong to the User
      *

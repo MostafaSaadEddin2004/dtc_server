@@ -101,9 +101,9 @@ class User extends Authenticatable
         return $this->hasOne(Teacher::class);
     }
 
-    public function wishes(): HasMany
+    public function wishes(): HasManyThrough
     {
-        return $this->hasMany(Wish::class);
+        return $this->hasManyThrough(AcademicRegistration::class, Wish::class);
     }
 
     public function notifications(): HasMany

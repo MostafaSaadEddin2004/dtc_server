@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\AcademicRegistrationResource\Pages;
+use App\Filament\Resources\AcademicRegistrationResource\RelationManagers\WishesRelationManager;
 use App\Models\AcademicRegistration;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -105,9 +106,13 @@ class AcademicRegistrationResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('user.first_name_en'),
+                Tables\Columns\TextColumn::make('user.first_name_en')
+                    ->searchable()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('department.name')
-                    ->label('Class'),
+                    ->label('Class')
+                    ->searchable()
+                    ->sortable(),
                 // Tables\Columns\TextColumn::make('father_name'),
                 // Tables\Columns\TextColumn::make('mother_name'),
                 // Tables\Columns\TextColumn::make('date_of_birth')
@@ -133,7 +138,7 @@ class AcademicRegistrationResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                // Tables\Actions\EditAction::make(),
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\Action::make('accept')
                     ->action(function (AcademicRegistration $record) {
@@ -163,7 +168,7 @@ class AcademicRegistrationResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            WishesRelationManager::class,
         ];
     }
 
@@ -173,7 +178,7 @@ class AcademicRegistrationResource extends Resource
             'index' => Pages\ListAcademicRegistrations::route('/'),
             // 'create' => Pages\CreateAcademicRegistration::route('/create'),
             'view' => Pages\ViewAcademicRegistration::route('/{record}'),
-            'edit' => Pages\EditAcademicRegistration::route('/{record}/edit'),
+            // 'edit' => Pages\EditAcademicRegistration::route('/{record}/edit'),
         ];
     }
 }

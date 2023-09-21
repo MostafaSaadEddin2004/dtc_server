@@ -72,8 +72,15 @@ class CourseRegistrationResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('user.first_name_en')->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('course.name')->searchable()->sortable(),
-                Tables\Columns\IconColumn::make('is_male')
-                    ->boolean(),
+                Tables\Columns\BadgeColumn::make('is_male')
+                    ->enum([
+                        true => 'Male',
+                        false => 'Female',
+                    ])->colors([
+                        'primary',
+                        'warning' => static fn ($state): bool => $state == false,
+                    ])
+                    ->label('Gender'),
                 // Tables\Columns\TextColumn::make('social_status'),
                 // Tables\Columns\TextColumn::make('nationality'),
                 Tables\Columns\TextColumn::make('address'),
@@ -81,8 +88,15 @@ class CourseRegistrationResource extends Resource
                     ->date(),
                 // Tables\Columns\TextColumn::make('student_type'),
                 // Tables\Columns\TextColumn::make('work_type'),
-                Tables\Columns\IconColumn::make('is_morning')
-                    ->boolean(),
+                Tables\Columns\BadgeColumn::make('is_morning')
+                    ->enum([
+                        true => 'Morning',
+                        false => 'Evening',
+                    ])->colors([
+                        'primary',
+                        'warning' => static fn ($state): bool => $state == false,
+                    ])
+                    ->label('Time'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->since(),
             ])
