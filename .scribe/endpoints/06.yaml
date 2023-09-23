@@ -30,7 +30,7 @@ endpoints:
         name: text
         description: ''
         required: true
-        example: ut
+        example: similique
         type: string
         enumValues: []
         custom: []
@@ -38,13 +38,13 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 20791.92236943
+        example: 5857.264708
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      text: ut
-      department_id: 20791.92236943
+      text: similique
+      department_id: 5857.264708
     fileParameters: []
     responses:
       -

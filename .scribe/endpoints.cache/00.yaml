@@ -53,7 +53,7 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: incidunt
+        example: error
         type: string
         enumValues: []
         custom: []
@@ -61,12 +61,12 @@ endpoints:
       email: my@example.com
       password: password
       role: student_browser
-      fcm_token: incidunt
+      fcm_token: error
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"2|CSO7ltoA5aNdWyW7OMU2doTgor2yjo6i9OK3fUova517f36d"}'
+        content: '{"token":"3|fgBj6uN4mAlbPc37WjvFjayIyIaEeqGaKTvd7Sf542c2b7d4"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -79,7 +79,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -110,7 +110,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: voluptatem
+        example: libero
         type: string
         enumValues: []
         custom: []
@@ -118,7 +118,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: sint
+        example: est
         type: string
         enumValues: []
         custom: []
@@ -126,7 +126,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: maxime
+        example: fugit
         type: string
         enumValues: []
         custom: []
@@ -134,7 +134,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: molestiae
+        example: ducimus
         type: string
         enumValues: []
         custom: []
@@ -142,7 +142,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: aliquid
+        example: assumenda
         type: string
         enumValues: []
         custom: []
@@ -150,7 +150,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: brenda.gleason@example.net
+        example: robel.bradly@example.org
         type: string
         enumValues: []
         custom: []
@@ -158,7 +158,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: 'I{G*Gs&al'
+        example: "o'HvAl*lyKfvWBA:"
         type: string
         enumValues: []
         custom: []
@@ -166,7 +166,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: teacher
+        example: student_browser
         type: string
         enumValues:
           - student
@@ -186,26 +186,26 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: cum
+        example: sint
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      first_name_en: voluptatem
-      last_name_en: sint
-      first_name_ar: maxime
-      last_name_ar: molestiae
-      phone: aliquid
-      email: brenda.gleason@example.net
-      password: 'I{G*Gs&al'
-      role: teacher
-      fcm_token: cum
+      first_name_en: libero
+      last_name_en: est
+      first_name_ar: fugit
+      last_name_ar: ducimus
+      phone: assumenda
+      email: robel.bradly@example.org
+      password: "o'HvAl*lyKfvWBA:"
+      role: student_browser
+      fcm_token: sint
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"2|M3zceDTZAZBXGP5ntyLWfoY1s5C6No0yiRCpLBbG994d3c3d"}'
+        content: '{"token":"3|CrLs5rMOenQS7lJj5p6D10A8rZva0a0zcynTZN4u31101033"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -218,7 +218,154 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/auth/tokenForResetPassword
+    metadata:
+      groupName: Authentication
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Send Token For Reset Password'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: eboehm@example.org
+        type: string
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      email: eboehm@example.org
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+          "status": "success",
+          "message": "Verification code has been sent."
+          }
+        headers: []
+        description: 'Success Process'
+        custom: []
+      -
+        status: 422
+        content: |-
+          {
+              "status": "error",
+          "message": "The verification code has already been sent. Try again after قبل 29 دقيقة"
+          }
+        headers: []
+        description: 'Validation errors'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/auth/checkForgetPassword
+    metadata:
+      groupName: Authentication
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Check Complete Forget Password'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: ''
+        required: true
+        example: dignissimos
+        type: string
+        enumValues: []
+        custom: []
+      token:
+        name: token
+        description: ''
+        required: true
+        example: sed
+        type: string
+        enumValues: []
+        custom: []
+      fcm_token:
+        name: fcm_token
+        description: ''
+        required: true
+        example: enim
+        type: string
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      email: dignissimos
+      token: sed
+      fcm_token: enim
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+          "token": "2|sGAkjsvLaLA1C3saPmAEVJoU88x9JXW3yXViGaNrd2e177c4"
+          }
+        headers: []
+        description: 'Success Process'
+        custom: []
+      -
+        status: 422
+        content: |-
+          {
+          "message": "token غير موجود.",
+          "errors": {
+          "token": [
+          "token غير موجود."
+          ]
+          }
+          }
+        headers: []
+        description: 'Validation errors'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -267,7 +414,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -298,7 +445,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: false
-        example: reichert.elva@example.com
+        example: hessel.casandra@example.com
         type: string
         enumValues: []
         custom: []
@@ -335,17 +482,15 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      email: reichert.elva@example.com
+      email: hessel.casandra@example.com
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":{"email":"reichert.elva@example.com","first_name_en":"Josiane Harber","first_name_ar":"Zora Halvorson","last_name_en":"Efren Altenwerth","last_name_ar":"Ross Trantow DDS","phone":"+1-469-373-3511","image":null,"department":null,"section":null}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -353,7 +498,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -384,13 +529,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"data":{"email":"reichert.elva@example.com","first_name_en":"Josiane Harber","first_name_ar":"Zora Halvorson","last_name_en":"Efren Altenwerth","last_name_ar":"Ross Trantow DDS","phone":"+1-469-373-3511","image":null,"department":null,"section":null}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -398,7 +541,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -429,13 +572,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"role":"teacher"}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -443,7 +584,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null
@@ -474,7 +615,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-        example: est
+        example: quasi
         type: string
         enumValues: []
         custom: []
@@ -482,15 +623,15 @@ endpoints:
         name: specialty
         description: ''
         required: true
-        example: dignissimos
+        example: dolorum
         type: string
         enumValues: []
         custom: []
       birth_date:
         name: birth_date
-        description: 'Must be a valid date. Must be a date before <code>09/19/2023</code>.'
+        description: 'Must be a valid date. Must be a date before <code>09/24/2023</code>.'
         required: true
-        example: '2023-02-23'
+        example: '2020-03-04'
         type: string
         enumValues: []
         custom: []
@@ -498,7 +639,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-        example: maxime
+        example: exercitationem
         type: string
         enumValues: []
         custom: []
@@ -506,7 +647,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-        example: rerum
+        example: aliquid
         type: string
         enumValues: []
         custom: []
@@ -514,26 +655,26 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: aut
+        example: ex
         type: string
         enumValues: []
         custom: []
-      department_id:
-        name: department_id
+      section_id:
+        name: section_id
         description: ''
         required: true
-        example: 1
+        example: 6
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: est
-      specialty: dignissimos
-      birth_date: '2023-02-23'
-      current_location: maxime
-      permanent_location: rerum
-      nationality: aut
-      department_id: 1
+      certificate: quasi
+      specialty: dolorum
+      birth_date: '2020-03-04'
+      current_location: exercitationem
+      permanent_location: aliquid
+      nationality: ex
+      section_id: 6
     fileParameters: []
     responses:
       -
@@ -594,7 +735,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 1|1AZ6eP6E5lCYftJuDntE01IXg7ysOWR1PvSPNsK01047ce36'
+      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
     controller: null
     method: null
     route: null

@@ -30,7 +30,7 @@ endpoints:
         name: subject
         description: ''
         required: true
-        example: dolorum
+        example: ut
         type: string
         enumValues: []
         custom: []
@@ -38,7 +38,7 @@ endpoints:
         name: mark
         description: 'Must be at least 0. Must not be greater than 100.'
         required: true
-        example: 5
+        example: 8
         type: number
         enumValues: []
         custom: []
@@ -46,23 +46,23 @@ endpoints:
         name: reason
         description: ''
         required: true
-        example: rerum
+        example: sed
         type: string
         enumValues: []
         custom: []
-      teacher:
-        name: teacher
+      teacher_id:
+        name: teacher_id
         description: ''
         required: true
-        example: magni
+        example: minima
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      subject: dolorum
-      mark: 5
-      reason: rerum
-      teacher: magni
+      subject: ut
+      mark: 8
+      reason: sed
+      teacher_id: minima
     fileParameters: []
     responses:
       -
@@ -73,7 +73,7 @@ endpoints:
           "subject": "علوم",
           "mark": "100",
           "reason": "ناجح",
-          "teacher": "ديزيجينيتيد",
+          "teacher_id": 16,
           "user": {
           "id": 51,
           "first_name_en": "Finn O'Keefe",
@@ -121,6 +121,47 @@ endpoints:
           }
         headers: []
         description: 'Validation errors'
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/teachers
+    metadata:
+      groupName: 'Edit Mark'
+      groupDescription: |-
+
+        This Api For teacher to Move
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
         custom: []
     responseFields: []
     auth: []

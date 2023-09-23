@@ -28,12 +28,12 @@ endpoints:
         name: sectionId
         description: ''
         required: true
-        example: sunt
+        example: commodi
         type: string
         enumValues: []
         custom: []
     cleanUrlParameters:
-      sectionId: sunt
+      sectionId: commodi
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
