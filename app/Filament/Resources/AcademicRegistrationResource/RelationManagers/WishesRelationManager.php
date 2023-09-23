@@ -29,6 +29,7 @@ class WishesRelationManager extends RelationManager
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('department.name')->label('Class'),
+                Tables\Columns\IconColumn::make('reserved')->boolean(),
             ])
             ->filters([
                 //
