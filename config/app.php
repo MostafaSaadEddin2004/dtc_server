@@ -159,7 +159,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        OwenVoke\BladeFontAwesome\BladeFontAwesomeServiceProvider::class,
         /*
          * Application Service Providers...
          */

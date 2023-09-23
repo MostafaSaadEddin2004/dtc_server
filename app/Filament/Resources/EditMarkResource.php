@@ -21,7 +21,7 @@ class EditMarkResource extends Resource
 {
     protected static ?string $model = EditMark::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'fas-edit-mark';
 
     protected static ?string $navigationGroup = 'Student Requests';
 

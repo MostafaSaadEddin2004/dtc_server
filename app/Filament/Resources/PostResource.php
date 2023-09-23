@@ -24,7 +24,7 @@ class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'fas-post';
 
     public static function getEloquentQuery(): Builder
     {
