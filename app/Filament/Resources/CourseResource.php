@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\CourseResource\Pages;
 use App\Models\Course;
+use App\Models\Post;
 use Filament\Forms;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\DatePicker;
@@ -25,7 +26,7 @@ class CourseResource extends Resource
 {
     protected static ?string $model = Course::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'fas-post';
 
     protected static ?string $navigationGroup = 'Course';
 
@@ -67,14 +68,14 @@ class CourseResource extends Resource
                     ->sortable(),
                 TextColumn::make('registration_start_at')->date(),
                 TextColumn::make('registration_end_at')->date(),
-                TextColumn::make('post.content')
-                    ->searchable()
-                    ->sortable()
-                    ->limit(25),
+                // TextColumn::make('post.content')
+                //     ->searchable()
+                //     ->sortable()
+                //     ->limit(25),
                 //TODO:: handle attachment view
-                ImageColumn::make('post.attachment')
-                    ->label('Attachment')
-                    ->defaultImageUrl(url('/logo.png')),
+                // ImageColumn::make('post.attachment')
+                //     ->label('Attachment')
+                //     ->defaultImageUrl(url('/logo.png')),
                 TextColumn::make('created_at')->since(),
                 TextColumn::make('likes')->label('Likes'),
             ])
@@ -97,12 +98,22 @@ class CourseResource extends Resource
                     }),
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
-                Tables\Actions\Action::make('Show students')
-                    ->icon('heroicon-o-user-group')
-                    ->color('warning')
-                    ->url(fn (Course $record) => route('filament.resources.course-students.index') . '?tableFilters[course][values][0]=' . $record->id),
+                Tables\Actions\ActionGroup::make([
+                    Tables\Actions\EditAction::make(),
+                    Tables\Actions\ViewAction::make()
+                        ->mutateRecordDataUsing(function (array $data): array {
+                            $post = Post::where('course_id', $data['id'])->first();
+                            $data['content'] = $post->content;
+                            $data['attachment'] = $post->attachment;
+
+                            return $data;
+                        }),
+                    Tables\Actions\DeleteAction::make(),
+                    Tables\Actions\Action::make('Show students')
+                        ->icon('heroicon-o-user-group')
+                        ->color('warning')
+                        ->url(fn (Course $record) => route('filament.resources.course-students.index') . '?tableFilters[course][values][0]=' . $record->id),
+                ]),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),

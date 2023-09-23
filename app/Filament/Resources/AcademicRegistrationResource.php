@@ -42,10 +42,6 @@ class AcademicRegistrationResource extends Resource
                     ->relationship('user', 'first_name_en')
                     ->required()
                     ->hiddenOn('edit'),
-                Forms\Components\Select::make('department_id')
-                    ->relationship('department', 'name')
-                    ->required()
-                    ->hiddenOn('edit'),
                 Forms\Components\TextInput::make('father_name')
                     ->required()
                     ->hiddenOn('edit'),
@@ -99,6 +95,9 @@ class AcademicRegistrationResource extends Resource
                 Forms\Components\FileUpload::make('un_image')
                     ->required()
                     ->hiddenOn('edit'),
+                Forms\Components\Select::make('department_id')
+                    ->relationship('department', 'name', fn (Builder $query) => $query->whereHas('wishes', fn (Builder $q) => $q->where('academic_registration_id', request()->record)))
+                    ->nullable(),
             ]);
     }
 
@@ -148,7 +147,7 @@ class AcademicRegistrationResource extends Resource
                             'body' => 'تم قبول طلب تسجيلك كطالب.',
                         ]);
                         $record->user->update(['role_id' => 4]);
-                        // $record->department->students()->create([['user_id' => $record->user->id]]);
+                        $record->department->students()->create(['user_id' => $record->user->id]);
                     }),
                 Tables\Actions\Action::make('cancel')
                     ->action(function (AcademicRegistration $record) {
@@ -178,7 +177,7 @@ class AcademicRegistrationResource extends Resource
             'index' => Pages\ListAcademicRegistrations::route('/'),
             // 'create' => Pages\CreateAcademicRegistration::route('/create'),
             'view' => Pages\ViewAcademicRegistration::route('/{record}'),
-            // 'edit' => Pages\EditAcademicRegistration::route('/{record}/edit'),
+            'edit' => Pages\EditAcademicRegistration::route('/{record}/edit'),
         ];
     }
 }

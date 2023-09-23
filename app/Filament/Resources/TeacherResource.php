@@ -18,7 +18,7 @@ class TeacherResource extends Resource
 {
     protected static ?string $model = Teacher::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'fas-chalkboard-teacher';
 
 
     public static function getEloquentQuery(): Builder

@@ -10,6 +10,8 @@ use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Actions\Action;
+use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -24,6 +26,11 @@ class AcademicStudentResource extends Resource
     protected static ?string $pluralModelLabel = 'Students';
 
     protected static ?string $modelLabel = 'Student';
+
+    protected static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
 
     public static function form(Form $form): Form
     {
@@ -49,11 +56,14 @@ class AcademicStudentResource extends Resource
                     ->since(),
             ])
             ->filters([
-                //
+                SelectFilter::make('department')
+                    ->relationship('department', 'name')
+                    ->searchable()
+                    ->multiple(),
             ])
             ->actions([
-                Tables\Actions\ViewAction::make(),
-                // Tables\Actions\EditAction::make(),
+                Action::make('View data')
+                    ->url(fn (AcademicStudent $record): string => route('filament.resources.academic-registrations.view', $record->user->registeration->id)),
             ])
             ->bulkActions([
                 // Tables\Actions\DeleteBulkAction::make(),
@@ -72,7 +82,7 @@ class AcademicStudentResource extends Resource
         return [
             'index' => Pages\ListAcademicStudents::route('/'),
             // 'create' => Pages\CreateAcademicStudent::route('/create'),
-            'view' => Pages\ViewAcademicStudent::route('/{record}'),
+            // 'view' => Pages\ViewAcademicStudent::route('/{record}'),
             // 'edit' => Pages\EditAcademicStudent::route('/{record}/edit'),
         ];
     }

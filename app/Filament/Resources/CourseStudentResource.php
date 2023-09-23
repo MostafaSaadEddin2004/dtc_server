@@ -17,7 +17,7 @@ class CourseStudentResource extends Resource
 {
     protected static ?string $model = CourseStudent::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-s-academic-cap';
 
     protected static ?string $navigationGroup = 'Course';
 
@@ -50,6 +50,7 @@ class CourseStudentResource extends Resource
             ->filters([
                 SelectFilter::make('course')
                     ->relationship('course', 'name')
+                    ->searchable()
                     ->multiple(),
             ])
             ->actions([
