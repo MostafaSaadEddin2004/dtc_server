@@ -34,7 +34,12 @@ class AcademicRegistrationController extends Controller
         $departments = $certificateType->departments()->with('departmentMarks')->get();
         return DepartmentResource::collection($departments);
     }
-
+    /**
+     * Send Token For Reset Password
+     * @response 204 scenario="Success Process"{
+     * }
+     *
+     */
     public function store(StoreAcademicRegisterationRequest $request)
     {
         $data = $request->validated();

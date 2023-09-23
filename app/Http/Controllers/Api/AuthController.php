@@ -149,7 +149,6 @@ class AuthController extends Controller
         auth()->user()->currentAccessToken()->delete();
         return response()->noContent();
     }
-
     public function profile()
     {
         $user = auth()->user();
@@ -186,6 +185,20 @@ class AuthController extends Controller
             'role' => $role->name,
         ]);
     }
+    /**
+     * Send Token For Reset Password
+     * @response 200 scenario="Success Process"{
+    "status": "success",
+    "message": "Verification code has been sent."
+}
+     *
+     *
+     * @response 422 scenario="Validation errors"{
+     *     "status": "error",
+    "message": "The verification code has already been sent. Try again after قبل 29 دقيقة"
+     * }
+     *
+     */
     public function sendTokenForResetPassword(ResetPasswordRequest $request)
     {
         $currentDateTime = Carbon::now();
@@ -209,7 +222,7 @@ class AuthController extends Controller
             return response()->json([
                 'status' => 'error',
                 'message' => 'The verification code has already been sent. Try again after ' . $afterDateTime,
-            ]);
+            ], 422);
         }
 
         if (!$passwordResetToken) {
@@ -228,11 +241,28 @@ class AuthController extends Controller
             'message' => 'Verification code has been sent.',
         ]);
     }
+    /**
+     * Check Complete Forget Password
+     * @response 200 scenario="Success Process"{
+    "token": "2|sGAkjsvLaLA1C3saPmAEVJoU88x9JXW3yXViGaNrd2e177c4"
+}
+     *
+     *
+     * @response 422 scenario="Validation errors"{
+    "message": "token غير موجود.",
+    "errors": {
+        "token": [
+            "token غير موجود."
+        ]
+    }
+}
+     *
+     */
     public function checkCompleteForgetPassword(CheckForgetPasswordRequest $request)
     {
         $userForgetPasswordToken = PasswordResetToken::where('email', $request->email)->first();
         if ($request->token == $userForgetPasswordToken->token) {
-            $user = User::where('email',$request->email)->first();
+            $user = User::where('email', $request->email)->first();
             $token = $user->createToken('authToken')->plainTextToken;
             $user->firebaseTokens()->create(['token' => $request->fcm_token]);
             return response()->json([
