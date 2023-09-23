@@ -3,21 +3,19 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ForgotPasswordMail extends Mailable
+class ResetPasswordEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
     /**
      * Create a new message instance.
      */
-    public function __construct(public $token)
+    public function __construct()
     {
         //
     }
@@ -28,8 +26,7 @@ class ForgotPasswordMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('example@example.com', 'Test Sender'),
-            subject: 'Forgot Password Mail',
+            subject: 'Reset Password Email',
         );
     }
 
@@ -39,8 +36,7 @@ class ForgotPasswordMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'mail.forgot-password',
-            with: ['token' => $this->token]
+            view: 'view.name',
         );
     }
 

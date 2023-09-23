@@ -9,10 +9,11 @@ use App\Http\Resources\DepartmentResource;
 use App\Models\AcademicRegistration;
 use App\Models\CertificateType;
 use App\Models\Department;
+use App\Models\Wish;
 
 /**
  * @group AcademicRegistration
- * 
+ *
  * @unauthenticated
  */
 
@@ -21,7 +22,6 @@ class AcademicRegistrationController extends Controller
     public function certificateType()
     {
         $certificateTypes = CertificateType::all();
-
         return CertificateTypeResource::collection($certificateTypes);
     }
 
@@ -32,7 +32,6 @@ class AcademicRegistrationController extends Controller
     public function departmentsByCertificateType(CertificateType $certificateType)
     {
         $departments = $certificateType->departments()->with('departmentMarks')->get();
-
         return DepartmentResource::collection($departments);
     }
 
@@ -53,21 +52,24 @@ class AcademicRegistrationController extends Controller
 
         $user = auth()->user();
 
+        $academicRegistration = AcademicRegistration::create($data);
+
         foreach ($data['department_ids'] as $departmentId) {
             $department = Department::with('departmentMarks')->find($departmentId);
 
             //TODO:: check if department is already full
             if (now()->diffInYears($data['date_of_birth']) > 22) {
-                $user->wishes()->create(['department_id' => $department->id, 'reserved' => true]);
+                Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id, 'reserved' => true]);
             } else if ($department->mark_of_this_year <= $data['avg_mark']) {
-                $user->wishes()->create(['department_id' => $department->id]);
+                Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id]);
             } else {
-                $user->wishes()->create(['department_id' => $department->id, 'reserved' => true]);
+                Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id, 'reserved' => true]);
             }
         }
 
+
         $user->update(['role_id' => 2]);
 
-        return AcademicRegistration::create($data);
+        return response()->noContent();
     }
 }
