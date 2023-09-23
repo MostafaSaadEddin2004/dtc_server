@@ -26,7 +26,7 @@ class CourseResource extends Resource
 {
     protected static ?string $model = Course::class;
 
-    protected static ?string $navigationIcon = 'fas-id-card';
+    protected static ?string $navigationIcon = 'fas-post';
 
     protected static ?string $navigationGroup = 'Course';
 

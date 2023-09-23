@@ -17,7 +17,7 @@ class MoveResource extends Resource
 {
     protected static ?string $model = Move::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'fas-move';
 
     protected static ?string $navigationGroup = 'Student Requests';
 
