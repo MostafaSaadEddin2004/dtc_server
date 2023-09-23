@@ -62,6 +62,11 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    public function canManageSettings(): bool
+    {
+        return true;
+    }
+
     /**
      * Get all of the noteCategories for the User
      *

@@ -22,7 +22,8 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "loaidev64/laravel-commands": "^1.0"
+        "loaidev64/laravel-commands": "^1.0",
+        "reworck/filament-settings": "^0.4.0"
     },
     "require-dev": {
         "doctrine/dbal": "^3.6",
