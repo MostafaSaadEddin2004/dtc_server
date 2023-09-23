@@ -40,7 +40,7 @@ class Department extends Model
     protected function markOfThisYear(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->departmentMarks()->where('year', now()->year)->first()->mark,
+            get: fn () => $this->departmentMarks()->where('year', now()->year)->first()?->mark,
         );
     }
 

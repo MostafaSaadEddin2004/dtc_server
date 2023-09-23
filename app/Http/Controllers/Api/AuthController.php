@@ -3,15 +3,23 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Api\CheckForgetPasswordRequest;
 use App\Http\Requests\Api\LoginRequest;
 use App\Http\Requests\Api\RegisterRequest;
+use App\Http\Requests\Api\ResetPasswordRequest;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\Api\TeacherRequest;
 use App\Http\Requests\Api\UpdateProfileRequest;
 use App\Http\Resources\UserProfileResource;
+use App\Models\PasswordResetToken;
 use App\Models\Role;
+use Illuminate\Http\Request;
 use App\Models\Teacher;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
+use ResetPasswordEmail;
 
 /**
  * @group Authentication
@@ -174,9 +182,67 @@ class AuthController extends Controller
     public function getRole()
     {
         $role = auth()->user()->role;
-
         return response([
             'role' => $role->name,
+        ]);
+    }
+    public function sendTokenForResetPassword(ResetPasswordRequest $request)
+    {
+        $currentDateTime = Carbon::now();
+        $randomString = Str::random(6);
+        $passwordResetToken = PasswordResetToken::where('email', $request->email)->first();
+        $newDateTime = $passwordResetToken ? Carbon::parse($passwordResetToken->created_at)->addMinutes(30) : null;
+
+        if ($passwordResetToken && $newDateTime <= $currentDateTime) {
+            $passwordResetToken->update([
+                'email' => $request->email,
+                'token' => $randomString,
+                'created_at' => now(),
+            ]);
+        }
+
+        if (!is_null($newDateTime)) {
+            $afterDateTime = $currentDateTime->diffForHumans($newDateTime);
+        }
+
+        if ($passwordResetToken && $newDateTime > $currentDateTime) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'The verification code has already been sent. Try again after ' . $afterDateTime,
+            ]);
+        }
+
+        if (!$passwordResetToken) {
+            PasswordResetToken::create([
+                'email' => $request->email,
+                'token' => $randomString,
+                'created_at' => now(),
+            ]);
+        }
+
+        $user = User::where('email', $request->email)->first();
+        $user->sendResetPasswordEmail($request->email, $randomString);
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Verification code has been sent.',
+        ]);
+    }
+    public function checkCompleteForgetPassword(CheckForgetPasswordRequest $request)
+    {
+        $userForgetPasswordToken = PasswordResetToken::where('email', $request->email)->first();
+        if ($request->token == $userForgetPasswordToken->token) {
+            $user = User::where('email',$request->email)->first();
+            $token = $user->createToken('authToken')->plainTextToken;
+            $user->firebaseTokens()->create(['token' => $request->fcm_token]);
+            return response()->json([
+                'token' => $token,
+            ], 200);
+        }
+
+        return response()->json([
+            'status' => 'error',
+            'message' => 'The verification code not current.',
         ]);
     }
 }

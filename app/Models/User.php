@@ -4,7 +4,10 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 
+use App\Mail\ForgotPasswordMail;
 use App\Traits\HasRole;
+use Illuminate\Auth\MustVerifyEmail as AuthMustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -14,12 +17,22 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasOneThrough;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Mail;
 use Laravel\Sanctum\HasApiTokens;
+use ResetPasswordEmail;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable;
-    use HasRole;
+    use HasRole, AuthMustVerifyEmail;
+
+    public function sendResetPasswordEmail($email, $token)
+    {
+        // Use Laravel's email sending functionality to send the reset password email
+        Mail::to($email)->send(new ForgotPasswordMail($token)); // Assuming you have a Mailable named ResetPasswordEmail
+
+        // You can also add any additional logic here, such as logging or updating the user's reset token timestamp.
+    }
 
     /**
      * The attributes that are mass assignable.

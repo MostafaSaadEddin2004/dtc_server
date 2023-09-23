@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('wishes', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(AcademicRegistration::class)->constrained();
-            $table->foreignIdFor(Department::class)->constrained();
+            $table->foreignIdFor(AcademicRegistration::class)->constrained()->cascadeOnDelete();
+            $table->foreignIdFor(Department::class)->constrained()->cascadeOnDelete();
             $table->boolean('reserved')->default(false);
             $table->timestamps();
         });

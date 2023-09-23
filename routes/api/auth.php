@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::controller(AuthController::class)->group(function () {
     Route::post('auth', 'login');
     Route::post('auth/register', 'register');
+    Route::post('auth/tokenForResetPassword', 'sendTokenForResetPassword');
+    Route::post('auth/checkForgetPassword', 'checkCompleteForgetPassword');
 
     Route::middleware('auth:sanctum')->group(function () {
         Route::post('auth/logout', 'logout');
