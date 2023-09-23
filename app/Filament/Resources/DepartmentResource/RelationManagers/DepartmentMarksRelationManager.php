@@ -29,7 +29,10 @@ class DepartmentMarksRelationManager extends RelationManager
                 TextInput::make('mark')
                     ->required()
                     ->maxLength(255),
-                DatePicker::make('year')
+                TextInput::make('year')
+                    ->integer()
+                    ->maxValue(2050)
+                    ->minValue(2023)
                     ->required(),
             ]);
     }
