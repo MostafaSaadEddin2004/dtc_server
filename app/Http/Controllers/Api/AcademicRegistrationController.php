@@ -66,6 +66,12 @@ class AcademicRegistrationController extends Controller
             if (now()->diffInYears($data['date_of_birth']) > 22) {
                 Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id, 'reserved' => true]);
             } else if ($department->mark_of_this_year <= $data['avg_mark']) {
+                if(!isset($data['department_id']))
+                {
+
+                    $data['department_id']=$department->id;
+                    // dd($data);
+                }
                 Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id]);
             } else {
                 Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id, 'reserved' => true]);
