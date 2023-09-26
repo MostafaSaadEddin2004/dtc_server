@@ -32,7 +32,7 @@ endpoints:
         name: text
         description: ''
         required: true
-        example: similique
+        example: rem
         type: string
         enumValues: []
         custom: []
@@ -40,13 +40,13 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 5857.264708
+        example: 2.6864
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      text: similique
-      department_id: 5857.264708
+      text: rem
+      department_id: 2.6864
     fileParameters: []
     responses:
       -

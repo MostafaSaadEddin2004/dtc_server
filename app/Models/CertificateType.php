@@ -32,4 +32,9 @@ class CertificateType extends Model
     {
         return $this->belongsToMany(Department::class);
     }
+
+    public function departmentMarks()
+    {
+        return $this->hasMany(DepartmentMark::class);
+    }
 }

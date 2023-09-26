@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('attachment')->nullable();
             $table->string('attachment_type')->nullable();
             $table->foreignId('user_id')->constrained();
-            $table->foreignId('department_id')->nullable()->constrained();
+            $table->foreignId('section_id')->nullable()->constrained();
             $table->foreignId('course_id')->nullable()->constrained();
             $table->foreignId('post_type_id')->constrained();
             $table->timestamps();

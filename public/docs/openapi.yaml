@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Laravel
+  title: 'DTC App'
   description: ''
   version: 1.0.0
 servers:
@@ -24,38 +24,68 @@ paths:
                   data:
                     -
                       id: 1
-                      name: 'Prof. Johann Bashirian'
+                      name: 'Evelyn Hansen'
                     -
                       id: 2
-                      name: 'Prof. Aidan King'
+                      name: 'Brent Hermann DVM'
                     -
                       id: 3
-                      name: 'Jalyn Klocko'
+                      name: 'Augustine Cronin PhD'
                     -
                       id: 4
-                      name: 'Antonia Dare'
+                      name: 'Tiana Wilderman'
                     -
                       id: 5
-                      name: 'Helene Mante'
+                      name: 'Santino Kozey'
+                    -
+                      id: 6
+                      name: 'Mylene Hickle'
+                    -
+                      id: 7
+                      name: 'Prof. Alexie Funk I'
+                    -
+                      id: 8
+                      name: 'Tanya Mraz IV'
+                    -
+                      id: 9
+                      name: 'Mireille Maggio'
+                    -
+                      id: 10
+                      name: 'Angela Schaefer III'
                 properties:
                   data:
                     type: array
                     example:
                       -
                         id: 1
-                        name: 'Prof. Johann Bashirian'
+                        name: 'Evelyn Hansen'
                       -
                         id: 2
-                        name: 'Prof. Aidan King'
+                        name: 'Brent Hermann DVM'
                       -
                         id: 3
-                        name: 'Jalyn Klocko'
+                        name: 'Augustine Cronin PhD'
                       -
                         id: 4
-                        name: 'Antonia Dare'
+                        name: 'Tiana Wilderman'
                       -
                         id: 5
-                        name: 'Helene Mante'
+                        name: 'Santino Kozey'
+                      -
+                        id: 6
+                        name: 'Mylene Hickle'
+                      -
+                        id: 7
+                        name: 'Prof. Alexie Funk I'
+                      -
+                        id: 8
+                        name: 'Tanya Mraz IV'
+                      -
+                        id: 9
+                        name: 'Mireille Maggio'
+                      -
+                        id: 10
+                        name: 'Angela Schaefer III'
                     items:
                       type: object
                       properties:
@@ -64,7 +94,31 @@ paths:
                           example: 1
                         name:
                           type: string
-                          example: 'Prof. Johann Bashirian'
+                          example: 'Evelyn Hansen'
+      tags:
+        - AcademicRegistration
+      security: []
+  /api/academic-registration/is-open:
+    get:
+      summary: ''
+      operationId: getApiAcademicRegistrationIsOpen
+      description: ''
+      parameters: []
+      responses:
+        204:
+          description: ''
+        400:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'التسجيل على المفاضلة غير متاح حالياً. يفتح التسجيل على المفاضلة في 2023-09-22'
+                properties:
+                  message:
+                    type: string
+                    example: 'التسجيل على المفاضلة غير متاح حالياً. يفتح التسجيل على المفاضلة في 2023-09-22'
       tags:
         - AcademicRegistration
       security: []
@@ -84,360 +138,360 @@ paths:
                 example:
                   message: 'No query results for model [App\Models\CertificateType] 20'
                   exception: Symfony\Component\HttpKernel\Exception\NotFoundHttpException
-                  file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php'
+                  file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php
                   line: 446
                   trace:
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php
                       line: 422
                       function: prepareException
                       class: Illuminate\Foundation\Exceptions\Handler
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\nunomaduro\collision\src\Adapters\Laravel\ExceptionHandler.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php
                       line: 54
                       function: render
                       class: Illuminate\Foundation\Exceptions\Handler
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php
                       line: 51
                       function: render
                       class: NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 185
                       function: handleException
                       class: Illuminate\Routing\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
                       line: 159
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                      line: 125
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
+                      line: 135
                       function: handleRequest
                       class: Illuminate\Routing\Middleware\ThrottleRequests
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
                       line: 87
                       function: handleRequestUsingNamedLimiter
                       class: Illuminate\Routing\Middleware\ThrottleRequests
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 180
                       function: handle
                       class: Illuminate\Routing\Middleware\ThrottleRequests
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 116
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 798
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                      line: 800
                       function: then
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
                       line: 777
                       function: runRouteWithinStack
                       class: Illuminate\Routing\Router
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
                       line: 741
                       function: runRoute
                       class: Illuminate\Routing\Router
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
                       line: 730
                       function: dispatchToRoute
                       class: Illuminate\Routing\Router
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
                       line: 200
                       function: dispatch
                       class: Illuminate\Routing\Router
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 141
                       function: 'Illuminate\Foundation\Http\{closure}'
                       class: Illuminate\Foundation\Http\Kernel
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\livewire\livewire\src\DisableBrowserCache.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/livewire/livewire/src/DisableBrowserCache.php
                       line: 19
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 180
                       function: handle
                       class: Livewire\DisableBrowserCache
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
                       line: 21
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php
                       line: 31
                       function: handle
                       class: Illuminate\Foundation\Http\Middleware\TransformsRequest
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 180
                       function: handle
                       class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
                       line: 21
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php
                       line: 40
                       function: handle
                       class: Illuminate\Foundation\Http\Middleware\TransformsRequest
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 180
                       function: handle
                       class: Illuminate\Foundation\Http\Middleware\TrimStrings
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php
                       line: 27
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 180
                       function: handle
                       class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php
                       line: 99
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 180
                       function: handle
                       class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php
                       line: 62
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 180
                       function: handle
                       class: Illuminate\Http\Middleware\HandleCors
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php
                       line: 39
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 180
                       function: handle
                       class: Illuminate\Http\Middleware\TrustProxies
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                       line: 116
                       function: 'Illuminate\Pipeline\{closure}'
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
                       line: 175
                       function: then
                       class: Illuminate\Pipeline\Pipeline
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
                       line: 144
                       function: sendRequestThroughRouter
                       class: Illuminate\Foundation\Http\Kernel
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                       line: 299
                       function: handle
                       class: Illuminate\Foundation\Http\Kernel
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                       line: 287
                       function: callLaravelOrLumenRoute
                       class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                       line: 92
                       function: makeApiCall
                       class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                       line: 45
                       function: makeResponseCall
                       class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                       line: 35
                       function: makeResponseCallIfConditionsPass
                       class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
                       line: 209
                       function: __invoke
                       class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                      line: 163
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                      line: 166
                       function: iterateThroughStrategies
                       class: Knuckles\Scribe\Extracting\Extractor
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
                       line: 95
                       function: fetchResponses
                       class: Knuckles\Scribe\Extracting\Extractor
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
                       line: 124
                       function: processRoute
                       class: Knuckles\Scribe\Extracting\Extractor
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
                       line: 71
                       function: extractEndpointsInfoFromLaravelApp
                       class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
                       line: 49
                       function: extractEndpointsInfoAndWriteToDisk
                       class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php
                       line: 51
                       function: get
                       class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                       line: 36
                       function: handle
                       class: Knuckles\Scribe\Commands\GenerateDocumentation
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Util.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Util.php
                       line: 41
                       function: 'Illuminate\Container\{closure}'
                       class: Illuminate\Container\BoundMethod
                       type: '::'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                       line: 93
                       function: unwrapIfClosure
                       class: Illuminate\Container\Util
                       type: '::'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                      line: 35
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                      line: 37
                       function: callBoundMethod
                       class: Illuminate\Container\BoundMethod
                       type: '::'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Container.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Container.php
                       line: 662
                       function: call
                       class: Illuminate\Container\BoundMethod
                       type: '::'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php
                       line: 211
                       function: call
                       class: Illuminate\Container\Container
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Command\Command.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Command/Command.php
                       line: 326
                       function: execute
                       class: Illuminate\Console\Command
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                      line: 180
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                      line: 181
                       function: run
                       class: Symfony\Component\Console\Command\Command
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
                       line: 1081
                       function: run
                       class: Illuminate\Console\Command
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
                       line: 320
                       function: doRunCommand
                       class: Symfony\Component\Console\Application
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
                       line: 174
                       function: doRun
                       class: Symfony\Component\Console\Application
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
+                      file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php
                       line: 201
                       function: run
                       class: Symfony\Component\Console\Application
                       type: '->'
                     -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\artisan'
-                      line: 35
+                      file: /home/loaidev/Projects/Laravel/dtc_server/artisan
+                      line: 37
                       function: handle
                       class: Illuminate\Foundation\Console\Kernel
                       type: '->'
@@ -450,7 +504,7 @@ paths:
                     example: Symfony\Component\HttpKernel\Exception\NotFoundHttpException
                   file:
                     type: string
-                    example: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php'
+                    example: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php
                   line:
                     type: integer
                     example: 446
@@ -458,356 +512,356 @@ paths:
                     type: array
                     example:
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php
                         line: 422
                         function: prepareException
                         class: Illuminate\Foundation\Exceptions\Handler
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\nunomaduro\collision\src\Adapters\Laravel\ExceptionHandler.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php
                         line: 54
                         function: render
                         class: Illuminate\Foundation\Exceptions\Handler
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php
                         line: 51
                         function: render
                         class: NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 185
                         function: handleException
                         class: Illuminate\Routing\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
                         line: 159
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                        line: 125
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
+                        line: 135
                         function: handleRequest
                         class: Illuminate\Routing\Middleware\ThrottleRequests
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php
                         line: 87
                         function: handleRequestUsingNamedLimiter
                         class: Illuminate\Routing\Middleware\ThrottleRequests
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 180
                         function: handle
                         class: Illuminate\Routing\Middleware\ThrottleRequests
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 116
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 798
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                        line: 800
                         function: then
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
                         line: 777
                         function: runRouteWithinStack
                         class: Illuminate\Routing\Router
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
                         line: 741
                         function: runRoute
                         class: Illuminate\Routing\Router
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php
                         line: 730
                         function: dispatchToRoute
                         class: Illuminate\Routing\Router
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
                         line: 200
                         function: dispatch
                         class: Illuminate\Routing\Router
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 141
                         function: 'Illuminate\Foundation\Http\{closure}'
                         class: Illuminate\Foundation\Http\Kernel
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\livewire\livewire\src\DisableBrowserCache.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/livewire/livewire/src/DisableBrowserCache.php
                         line: 19
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 180
                         function: handle
                         class: Livewire\DisableBrowserCache
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
                         line: 21
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php
                         line: 31
                         function: handle
                         class: Illuminate\Foundation\Http\Middleware\TransformsRequest
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 180
                         function: handle
                         class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
                         line: 21
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php
                         line: 40
                         function: handle
                         class: Illuminate\Foundation\Http\Middleware\TransformsRequest
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 180
                         function: handle
                         class: Illuminate\Foundation\Http\Middleware\TrimStrings
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php
                         line: 27
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 180
                         function: handle
                         class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php
                         line: 99
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 180
                         function: handle
                         class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php
                         line: 62
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 180
                         function: handle
                         class: Illuminate\Http\Middleware\HandleCors
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php
                         line: 39
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 180
                         function: handle
                         class: Illuminate\Http\Middleware\TrustProxies
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
                         line: 116
                         function: 'Illuminate\Pipeline\{closure}'
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
                         line: 175
                         function: then
                         class: Illuminate\Pipeline\Pipeline
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
                         line: 144
                         function: sendRequestThroughRouter
                         class: Illuminate\Foundation\Http\Kernel
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                         line: 299
                         function: handle
                         class: Illuminate\Foundation\Http\Kernel
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                         line: 287
                         function: callLaravelOrLumenRoute
                         class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                         line: 92
                         function: makeApiCall
                         class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                         line: 45
                         function: makeResponseCall
                         class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
                         line: 35
                         function: makeResponseCallIfConditionsPass
                         class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
                         line: 209
                         function: __invoke
                         class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                        line: 163
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                        line: 166
                         function: iterateThroughStrategies
                         class: Knuckles\Scribe\Extracting\Extractor
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
                         line: 95
                         function: fetchResponses
                         class: Knuckles\Scribe\Extracting\Extractor
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
                         line: 124
                         function: processRoute
                         class: Knuckles\Scribe\Extracting\Extractor
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
                         line: 71
                         function: extractEndpointsInfoFromLaravelApp
                         class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
                         line: 49
                         function: extractEndpointsInfoAndWriteToDisk
                         class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php
                         line: 51
                         function: get
                         class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                         line: 36
                         function: handle
                         class: Knuckles\Scribe\Commands\GenerateDocumentation
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Util.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Util.php
                         line: 41
                         function: 'Illuminate\Container\{closure}'
                         class: Illuminate\Container\BoundMethod
                         type: '::'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
                         line: 93
                         function: unwrapIfClosure
                         class: Illuminate\Container\Util
                         type: '::'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                        line: 35
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                        line: 37
                         function: callBoundMethod
                         class: Illuminate\Container\BoundMethod
                         type: '::'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Container.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Container.php
                         line: 662
                         function: call
                         class: Illuminate\Container\BoundMethod
                         type: '::'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php
                         line: 211
                         function: call
                         class: Illuminate\Container\Container
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Command\Command.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Command/Command.php
                         line: 326
                         function: execute
                         class: Illuminate\Console\Command
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                        line: 180
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                        line: 181
                         function: run
                         class: Symfony\Component\Console\Command\Command
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
                         line: 1081
                         function: run
                         class: Illuminate\Console\Command
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
                         line: 320
                         function: doRunCommand
                         class: Symfony\Component\Console\Application
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php
                         line: 174
                         function: doRun
                         class: Symfony\Component\Console\Application
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
+                        file: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php
                         line: 201
                         function: run
                         class: Symfony\Component\Console\Application
                         type: '->'
                       -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\artisan'
-                        line: 35
+                        file: /home/loaidev/Projects/Laravel/dtc_server/artisan
+                        line: 37
                         function: handle
                         class: Illuminate\Foundation\Console\Kernel
                         type: '->'
@@ -816,7 +870,7 @@ paths:
                       properties:
                         file:
                           type: string
-                          example: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Exceptions\Handler.php'
+                          example: /home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php
                         line:
                           type: integer
                           example: 422
@@ -868,47 +922,47 @@ paths:
                 father_name:
                   type: string
                   description: ''
-                  example: et
+                  example: quia
                 mother_name:
                   type: string
                   description: ''
-                  example: excepturi
+                  example: ipsa
                 date_of_birth:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-24T00:00:53'
+                  example: '2023-09-26T13:19:34'
                 place_of_birth:
                   type: string
                   description: ''
-                  example: mollitia
+                  example: aut
                 military:
                   type: string
                   description: ''
-                  example: id
+                  example: eum
                 current_address:
                   type: string
                   description: ''
-                  example: sunt
+                  example: culpa
                 address:
                   type: string
                   description: ''
-                  example: quas
+                  example: fugit
                 name_of_parent:
                   type: string
                   description: ''
-                  example: voluptates
+                  example: tempore
                 job_of_parent:
                   type: string
                   description: ''
-                  example: at
+                  example: sint
                 phone_of_parent:
                   type: string
                   description: ''
-                  example: necessitatibus
+                  example: quia
                 phone_of_mother:
                   type: string
                   description: ''
-                  example: molestiae
+                  example: odio
                 avg_mark:
                   type: integer
                   description: ''
@@ -916,7 +970,7 @@ paths:
                 certificate_year:
                   type: string
                   description: ''
-                  example: illum
+                  example: distinctio
                 id_image:
                   type: string
                   format: binary
@@ -972,11 +1026,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 3|fgBj6uN4mAlbPc37WjvFjayIyIaEeqGaKTvd7Sf542c2b7d4
+                  token: 6|3yY1UCe2A6VYHzXbSbKJptGrrrj9aRjqv0jxzLMu744351ed
                 properties:
                   token:
                     type: string
-                    example: 3|fgBj6uN4mAlbPc37WjvFjayIyIaEeqGaKTvd7Sf542c2b7d4
+                    example: 6|3yY1UCe2A6VYHzXbSbKJptGrrrj9aRjqv0jxzLMu744351ed
       tags:
         - Authentication
       requestBody:
@@ -1001,7 +1055,7 @@ paths:
                 fcm_token:
                   type: string
                   description: ''
-                  example: error
+                  example: suscipit
               required:
                 - fcm_token
   /api/auth/register:
@@ -1018,11 +1072,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 3|CrLs5rMOenQS7lJj5p6D10A8rZva0a0zcynTZN4u31101033
+                  token: 7|wbIBaQhlulRiL5NeO72qjZdK5XztNBIbHteGfi3b2670bd9b
                 properties:
                   token:
                     type: string
-                    example: 3|CrLs5rMOenQS7lJj5p6D10A8rZva0a0zcynTZN4u31101033
+                    example: 7|wbIBaQhlulRiL5NeO72qjZdK5XztNBIbHteGfi3b2670bd9b
       tags:
         - Authentication
       requestBody:
@@ -1035,35 +1089,35 @@ paths:
                 first_name_en:
                   type: string
                   description: ''
-                  example: libero
+                  example: totam
                 last_name_en:
                   type: string
                   description: ''
-                  example: est
+                  example: necessitatibus
                 first_name_ar:
                   type: string
                   description: ''
-                  example: fugit
+                  example: molestiae
                 last_name_ar:
                   type: string
                   description: ''
-                  example: ducimus
+                  example: quae
                 phone:
                   type: string
                   description: ''
-                  example: assumenda
+                  example: et
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: robel.bradly@example.org
+                  example: oboyle@example.org
                 password:
                   type: string
                   description: ''
-                  example: "o'HvAl*lyKfvWBA:"
+                  example: 'Pf,?pLS&rY0mH4+J=p'
                 role:
                   type: string
                   description: ''
-                  example: student_browser
+                  example: teacher_browser
                   enum:
                     - student
                     - teacher
@@ -1076,7 +1130,7 @@ paths:
                 fcm_token:
                   type: string
                   description: ''
-                  example: sint
+                  example: in
               required:
                 - first_name_en
                 - last_name_en
@@ -1138,7 +1192,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: eboehm@example.org
+                  example: ngislason@example.com
               required:
                 - email
   /api/auth/checkForgetPassword:
@@ -1196,15 +1250,15 @@ paths:
                 email:
                   type: string
                   description: ''
-                  example: dignissimos
+                  example: inventore
                 token:
                   type: string
                   description: ''
-                  example: sed
+                  example: nesciunt
                 fcm_token:
                   type: string
                   description: ''
-                  example: enim
+                  example: inventore
               required:
                 - email
                 - token
@@ -1239,18 +1293,58 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    email: annabelle.hilpert@example.net
+                    first_name_en: 'Dr. Joel Wuckert Sr.'
+                    first_name_ar: 'Declan Bergnaum'
+                    last_name_en: 'Felicia Cummerata'
+                    last_name_ar: 'Hayden Murray'
+                    phone: 1-443-369-7323
+                    address: null
+                    image: null
+                    department: null
+                    section: null
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: object
+                    properties:
+                      email:
+                        type: string
+                        example: annabelle.hilpert@example.net
+                      first_name_en:
+                        type: string
+                        example: 'Dr. Joel Wuckert Sr.'
+                      first_name_ar:
+                        type: string
+                        example: 'Declan Bergnaum'
+                      last_name_en:
+                        type: string
+                        example: 'Felicia Cummerata'
+                      last_name_ar:
+                        type: string
+                        example: 'Hayden Murray'
+                      phone:
+                        type: string
+                        example: 1-443-369-7323
+                      address:
+                        type: string
+                        example: null
+                      image:
+                        type: string
+                        example: null
+                      department:
+                        type: string
+                        example: null
+                      section:
+                        type: string
+                        example: null
       tags:
         - Authentication
       requestBody:
@@ -1263,7 +1357,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: hessel.casandra@example.com
+                  example: annabelle.hilpert@example.net
                 phone:
                   type: string
                   description: ''
@@ -1286,18 +1380,58 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    email: annabelle.hilpert@example.net
+                    first_name_en: 'Dr. Joel Wuckert Sr.'
+                    first_name_ar: 'Declan Bergnaum'
+                    last_name_en: 'Felicia Cummerata'
+                    last_name_ar: 'Hayden Murray'
+                    phone: 1-443-369-7323
+                    address: null
+                    image: null
+                    department: null
+                    section: null
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: object
+                    properties:
+                      email:
+                        type: string
+                        example: annabelle.hilpert@example.net
+                      first_name_en:
+                        type: string
+                        example: 'Dr. Joel Wuckert Sr.'
+                      first_name_ar:
+                        type: string
+                        example: 'Declan Bergnaum'
+                      last_name_en:
+                        type: string
+                        example: 'Felicia Cummerata'
+                      last_name_ar:
+                        type: string
+                        example: 'Hayden Murray'
+                      phone:
+                        type: string
+                        example: 1-443-369-7323
+                      address:
+                        type: string
+                        example: null
+                      image:
+                        type: string
+                        example: null
+                      department:
+                        type: string
+                        example: null
+                      section:
+                        type: string
+                        example: null
       tags:
         - Authentication
   /api/auth/role:
@@ -1307,18 +1441,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  role: teacher
                 properties:
-                  message:
+                  role:
                     type: string
-                    example: Unauthenticated.
+                    example: teacher
       tags:
         - Authentication
   /api/auth/teacher:
@@ -1366,31 +1500,31 @@ paths:
                 certificate:
                   type: string
                   description: ''
-                  example: quasi
+                  example: cum
                 specialty:
                   type: string
                   description: ''
-                  example: dolorum
+                  example: laboriosam
                 birth_date:
                   type: string
-                  description: 'Must be a valid date. Must be a date before <code>09/24/2023</code>.'
-                  example: '2020-03-04'
+                  description: 'Must be a valid date. Must be a date before <code>09/26/2023</code>.'
+                  example: '2003-10-19'
                 current_location:
                   type: string
                   description: ''
-                  example: exercitationem
+                  example: distinctio
                 permanent_location:
                   type: string
                   description: ''
-                  example: aliquid
+                  example: iste
                 nationality:
                   type: string
                   description: ''
-                  example: ex
+                  example: ab
                 section_id:
                   type: integer
                   description: ''
-                  example: 6
+                  example: 3
               required:
                 - certificate
                 - specialty
@@ -1406,808 +1540,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        500:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: 'Call to a member function courses() on null'
-                  exception: Error
-                  file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\app\Http\Controllers\Api\CourseController.php'
-                  line: 24
-                  trace:
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Controller.php'
-                      line: 54
-                      function: index
-                      class: App\Http\Controllers\Api\CourseController
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php'
-                      line: 43
-                      function: callAction
-                      class: Illuminate\Routing\Controller
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
-                      line: 259
-                      function: dispatch
-                      class: Illuminate\Routing\ControllerDispatcher
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
-                      line: 205
-                      function: runController
-                      class: Illuminate\Routing\Route
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 799
-                      function: run
-                      class: Illuminate\Routing\Route
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 141
-                      function: 'Illuminate\Routing\{closure}'
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php'
-                      line: 50
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 180
-                      function: handle
-                      class: Illuminate\Routing\Middleware\SubstituteBindings
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                      line: 159
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                      line: 125
-                      function: handleRequest
-                      class: Illuminate\Routing\Middleware\ThrottleRequests
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                      line: 87
-                      function: handleRequestUsingNamedLimiter
-                      class: Illuminate\Routing\Middleware\ThrottleRequests
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 180
-                      function: handle
-                      class: Illuminate\Routing\Middleware\ThrottleRequests
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 116
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 798
-                      function: then
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 777
-                      function: runRouteWithinStack
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 741
-                      function: runRoute
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                      line: 730
-                      function: dispatchToRoute
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                      line: 200
-                      function: dispatch
-                      class: Illuminate\Routing\Router
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 141
-                      function: 'Illuminate\Foundation\Http\{closure}'
-                      class: Illuminate\Foundation\Http\Kernel
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\livewire\livewire\src\DisableBrowserCache.php'
-                      line: 19
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 180
-                      function: handle
-                      class: Livewire\DisableBrowserCache
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
-                      line: 21
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
-                      line: 31
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 180
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
-                      line: 21
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
-                      line: 40
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 180
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\TrimStrings
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
-                      line: 27
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 180
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
-                      line: 99
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 180
-                      function: handle
-                      class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php'
-                      line: 62
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 180
-                      function: handle
-                      class: Illuminate\Http\Middleware\HandleCors
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
-                      line: 39
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 180
-                      function: handle
-                      class: Illuminate\Http\Middleware\TrustProxies
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                      line: 116
-                      function: 'Illuminate\Pipeline\{closure}'
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                      line: 175
-                      function: then
-                      class: Illuminate\Pipeline\Pipeline
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                      line: 144
-                      function: sendRequestThroughRouter
-                      class: Illuminate\Foundation\Http\Kernel
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 299
-                      function: handle
-                      class: Illuminate\Foundation\Http\Kernel
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 287
-                      function: callLaravelOrLumenRoute
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 92
-                      function: makeApiCall
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 45
-                      function: makeResponseCall
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                      line: 35
-                      function: makeResponseCallIfConditionsPass
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                      line: 209
-                      function: __invoke
-                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                      line: 163
-                      function: iterateThroughStrategies
-                      class: Knuckles\Scribe\Extracting\Extractor
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                      line: 95
-                      function: fetchResponses
-                      class: Knuckles\Scribe\Extracting\Extractor
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                      line: 124
-                      function: processRoute
-                      class: Knuckles\Scribe\Extracting\Extractor
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                      line: 71
-                      function: extractEndpointsInfoFromLaravelApp
-                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                      line: 49
-                      function: extractEndpointsInfoAndWriteToDisk
-                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
-                      line: 51
-                      function: get
-                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                      line: 36
-                      function: handle
-                      class: Knuckles\Scribe\Commands\GenerateDocumentation
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Util.php'
-                      line: 41
-                      function: 'Illuminate\Container\{closure}'
-                      class: Illuminate\Container\BoundMethod
-                      type: '::'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                      line: 93
-                      function: unwrapIfClosure
-                      class: Illuminate\Container\Util
-                      type: '::'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                      line: 35
-                      function: callBoundMethod
-                      class: Illuminate\Container\BoundMethod
-                      type: '::'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Container.php'
-                      line: 662
-                      function: call
-                      class: Illuminate\Container\BoundMethod
-                      type: '::'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                      line: 211
-                      function: call
-                      class: Illuminate\Container\Container
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Command\Command.php'
-                      line: 326
-                      function: execute
-                      class: Illuminate\Console\Command
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                      line: 180
-                      function: run
-                      class: Symfony\Component\Console\Command\Command
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
-                      line: 1081
-                      function: run
-                      class: Illuminate\Console\Command
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
-                      line: 320
-                      function: doRunCommand
-                      class: Symfony\Component\Console\Application
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
-                      line: 174
-                      function: doRun
-                      class: Symfony\Component\Console\Application
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
-                      line: 201
-                      function: run
-                      class: Symfony\Component\Console\Application
-                      type: '->'
-                    -
-                      file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\artisan'
-                      line: 35
-                      function: handle
-                      class: Illuminate\Foundation\Console\Kernel
-                      type: '->'
+                  data: []
                 properties:
-                  message:
-                    type: string
-                    example: 'Call to a member function courses() on null'
-                  exception:
-                    type: string
-                    example: Error
-                  file:
-                    type: string
-                    example: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\app\Http\Controllers\Api\CourseController.php'
-                  line:
-                    type: integer
-                    example: 24
-                  trace:
+                  data:
                     type: array
-                    example:
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Controller.php'
-                        line: 54
-                        function: index
-                        class: App\Http\Controllers\Api\CourseController
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php'
-                        line: 43
-                        function: callAction
-                        class: Illuminate\Routing\Controller
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
-                        line: 259
-                        function: dispatch
-                        class: Illuminate\Routing\ControllerDispatcher
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
-                        line: 205
-                        function: runController
-                        class: Illuminate\Routing\Route
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 799
-                        function: run
-                        class: Illuminate\Routing\Route
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 141
-                        function: 'Illuminate\Routing\{closure}'
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php'
-                        line: 50
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 180
-                        function: handle
-                        class: Illuminate\Routing\Middleware\SubstituteBindings
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                        line: 159
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                        line: 125
-                        function: handleRequest
-                        class: Illuminate\Routing\Middleware\ThrottleRequests
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
-                        line: 87
-                        function: handleRequestUsingNamedLimiter
-                        class: Illuminate\Routing\Middleware\ThrottleRequests
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 180
-                        function: handle
-                        class: Illuminate\Routing\Middleware\ThrottleRequests
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 116
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 798
-                        function: then
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 777
-                        function: runRouteWithinStack
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 741
-                        function: runRoute
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
-                        line: 730
-                        function: dispatchToRoute
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                        line: 200
-                        function: dispatch
-                        class: Illuminate\Routing\Router
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 141
-                        function: 'Illuminate\Foundation\Http\{closure}'
-                        class: Illuminate\Foundation\Http\Kernel
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\livewire\livewire\src\DisableBrowserCache.php'
-                        line: 19
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 180
-                        function: handle
-                        class: Livewire\DisableBrowserCache
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
-                        line: 21
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
-                        line: 31
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 180
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
-                        line: 21
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
-                        line: 40
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 180
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\TrimStrings
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
-                        line: 27
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 180
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
-                        line: 99
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 180
-                        function: handle
-                        class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php'
-                        line: 62
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 180
-                        function: handle
-                        class: Illuminate\Http\Middleware\HandleCors
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
-                        line: 39
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 180
-                        function: handle
-                        class: Illuminate\Http\Middleware\TrustProxies
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
-                        line: 116
-                        function: 'Illuminate\Pipeline\{closure}'
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                        line: 175
-                        function: then
-                        class: Illuminate\Pipeline\Pipeline
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
-                        line: 144
-                        function: sendRequestThroughRouter
-                        class: Illuminate\Foundation\Http\Kernel
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 299
-                        function: handle
-                        class: Illuminate\Foundation\Http\Kernel
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 287
-                        function: callLaravelOrLumenRoute
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 92
-                        function: makeApiCall
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 45
-                        function: makeResponseCall
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
-                        line: 35
-                        function: makeResponseCallIfConditionsPass
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                        line: 209
-                        function: __invoke
-                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                        line: 163
-                        function: iterateThroughStrategies
-                        class: Knuckles\Scribe\Extracting\Extractor
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
-                        line: 95
-                        function: fetchResponses
-                        class: Knuckles\Scribe\Extracting\Extractor
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                        line: 124
-                        function: processRoute
-                        class: Knuckles\Scribe\Extracting\Extractor
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                        line: 71
-                        function: extractEndpointsInfoFromLaravelApp
-                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
-                        line: 49
-                        function: extractEndpointsInfoAndWriteToDisk
-                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
-                        line: 51
-                        function: get
-                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                        line: 36
-                        function: handle
-                        class: Knuckles\Scribe\Commands\GenerateDocumentation
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Util.php'
-                        line: 41
-                        function: 'Illuminate\Container\{closure}'
-                        class: Illuminate\Container\BoundMethod
-                        type: '::'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                        line: 93
-                        function: unwrapIfClosure
-                        class: Illuminate\Container\Util
-                        type: '::'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
-                        line: 35
-                        function: callBoundMethod
-                        class: Illuminate\Container\BoundMethod
-                        type: '::'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Container\Container.php'
-                        line: 662
-                        function: call
-                        class: Illuminate\Container\BoundMethod
-                        type: '::'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                        line: 211
-                        function: call
-                        class: Illuminate\Container\Container
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Command\Command.php'
-                        line: 326
-                        function: execute
-                        class: Illuminate\Console\Command
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Console\Command.php'
-                        line: 180
-                        function: run
-                        class: Symfony\Component\Console\Command\Command
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
-                        line: 1081
-                        function: run
-                        class: Illuminate\Console\Command
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
-                        line: 320
-                        function: doRunCommand
-                        class: Symfony\Component\Console\Application
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\symfony\console\Application.php'
-                        line: 174
-                        function: doRun
-                        class: Symfony\Component\Console\Application
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
-                        line: 201
-                        function: run
-                        class: Symfony\Component\Console\Application
-                        type: '->'
-                      -
-                        file: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\artisan'
-                        line: 35
-                        function: handle
-                        class: Illuminate\Foundation\Console\Kernel
-                        type: '->'
-                    items:
-                      type: object
-                      properties:
-                        file:
-                          type: string
-                          example: 'C:\EveryThings\jawad\Project\VisualStudioCode\Laravel\Mustafa\V1\dtc_server\vendor\laravel\framework\src\Illuminate\Routing\Controller.php'
-                        line:
-                          type: integer
-                          example: 54
-                        function:
-                          type: string
-                          example: index
-                        class:
-                          type: string
-                          example: App\Http\Controllers\Api\CourseController
-                        type:
-                          type: string
-                          example: '->'
+                    example: []
       tags:
         - Course
     post:
@@ -2287,18 +1631,8 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        204:
           description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
       tags:
         - Course
       requestBody:
@@ -2311,31 +1645,31 @@ paths:
                 is_male:
                   type: boolean
                   description: ''
-                  example: true
+                  example: false
                 social_status:
                   type: string
                   description: ''
-                  example: asperiores
+                  example: odit
                 nationality:
                   type: string
                   description: ''
-                  example: consequuntur
+                  example: debitis
                 address:
                   type: string
                   description: ''
-                  example: eius
+                  example: dolor
                 date_of_birth:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-09-24T00:00:53'
+                  example: '2023-09-26T13:19:34'
                 student_type:
                   type: string
                   description: ''
-                  example: recusandae
+                  example: quod
                 work_type:
                   type: string
                   description: ''
-                  example: voluptatibus
+                  example: commodi
                 is_morning:
                   type: boolean
                   description: ''
@@ -2405,10 +1739,10 @@ paths:
         in: path
         name: sectionId
         description: ''
-        example: commodi
+        example: 1
         required: true
         schema:
-          type: string
+          type: integer
   /api/editMark:
     post:
       summary: 'Create Move'
@@ -2511,19 +1845,19 @@ paths:
                 subject:
                   type: string
                   description: ''
-                  example: ut
+                  example: incidunt
                 mark:
                   type: number
                   description: 'Must be at least 0. Must not be greater than 100.'
-                  example: 8
+                  example: 3
                 reason:
                   type: string
                   description: ''
-                  example: sed
+                  example: est
                 teacher_id:
                   type: string
                   description: ''
-                  example: minima
+                  example: eum
               required:
                 - subject
                 - mark
@@ -2544,11 +1878,11 @@ paths:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  message: unauthorized
                 properties:
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: unauthorized
       tags:
         - 'Edit Mark'
       security: []
@@ -2662,11 +1996,11 @@ paths:
                 text:
                   type: string
                   description: ''
-                  example: similique
+                  example: rem
                 department_id:
                   type: number
                   description: ''
-                  example: 5857.264708
+                  example: 2.6864
               required:
                 - text
                 - department_id
@@ -2678,18 +2012,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data: []
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: array
+                    example: []
       tags:
         - Note
     post:
@@ -2698,18 +2032,34 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        201:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    id: 6
+                    title: commodi
+                    description: 'Harum doloremque aliquam officia maiores et veniam suscipit.'
+                    category: 'Dr. Jessica Franecki III'
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 6
+                      title:
+                        type: string
+                        example: commodi
+                      description:
+                        type: string
+                        example: 'Harum doloremque aliquam officia maiores et veniam suscipit.'
+                      category:
+                        type: string
+                        example: 'Dr. Jessica Franecki III'
       tags:
         - Note
       requestBody:
@@ -2722,11 +2072,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: molestiae
+                  example: commodi
                 description:
                   type: string
                   description: ''
-                  example: 'Nisi soluta ea magnam harum ut sit.'
+                  example: 'Harum doloremque aliquam officia maiores et veniam suscipit.'
                 category_name:
                   type: string
                   description: ''
@@ -2734,7 +2084,7 @@ paths:
                 note_category_id:
                   type: integer
                   description: ''
-                  example: 14
+                  example: 7
               required:
                 - title
                 - description
@@ -2745,18 +2095,34 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    id: 1
+                    title: 'Sit soluta nisi nulla.'
+                    description: 'Libero veritatis in numquam laboriosam. Maiores distinctio illum eveniet dolorum dolorum dolores. Voluptatum excepturi fugiat omnis ut eos minima molestiae.'
+                    category: 'Dr. Nelson Wiza'
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      title:
+                        type: string
+                        example: 'Sit soluta nisi nulla.'
+                      description:
+                        type: string
+                        example: 'Libero veritatis in numquam laboriosam. Maiores distinctio illum eveniet dolorum dolorum dolores. Voluptatum excepturi fugiat omnis ut eos minima molestiae.'
+                      category:
+                        type: string
+                        example: 'Dr. Nelson Wiza'
       tags:
         - Note
     put:
@@ -2765,18 +2131,34 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    id: 1
+                    title: ea
+                    description: 'Eius ipsam illo qui.'
+                    category: 'Dr. Nelson Wiza'
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      title:
+                        type: string
+                        example: ea
+                      description:
+                        type: string
+                        example: 'Eius ipsam illo qui.'
+                      category:
+                        type: string
+                        example: 'Dr. Nelson Wiza'
       tags:
         - Note
       requestBody:
@@ -2789,11 +2171,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: dolores
+                  example: ea
                 description:
                   type: string
                   description: ''
-                  example: 'Tempore placeat quaerat laboriosam ab repudiandae illum.'
+                  example: 'Eius ipsam illo qui.'
                 category_name:
                   type: string
                   description: ''
@@ -2811,18 +2193,8 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        204:
           description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
       tags:
         - Note
     parameters:
@@ -2841,18 +2213,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data: []
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: array
+                    example: []
       tags:
         - Note
   /api/notification:
@@ -2862,18 +2234,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data: []
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: array
+                    example: []
       tags:
         - Notification
       security: []
@@ -2884,18 +2256,62 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        201:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    id: 16
+                    content: sequi
+                    attachment: 'http://localhost:8000/storage/occaecati'
+                    department_name: null
+                    course_name: null
+                    attachment_type: null
+                    likes: 0
+                    liked_by_me: false
+                    saves: 0
+                    saved_by_me: false
+                    created_at: '1 second ago'
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 16
+                      content:
+                        type: string
+                        example: sequi
+                      attachment:
+                        type: string
+                        example: 'http://localhost:8000/storage/occaecati'
+                      department_name:
+                        type: string
+                        example: null
+                      course_name:
+                        type: string
+                        example: null
+                      attachment_type:
+                        type: string
+                        example: null
+                      likes:
+                        type: integer
+                        example: 0
+                      liked_by_me:
+                        type: boolean
+                        example: false
+                      saves:
+                        type: integer
+                        example: 0
+                      saved_by_me:
+                        type: boolean
+                        example: false
+                      created_at:
+                        type: string
+                        example: '1 second ago'
       tags:
         - Post
       requestBody:
@@ -2908,11 +2324,11 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: consectetur
+                  example: sequi
                 attachment:
                   type: string
                   description: ''
-                  example: officiis
+                  example: occaecati
               required:
                 - content
     get:
@@ -2924,25 +2340,133 @@ paths:
           in: query
           name: type
           description: 'the type of the post (public, department ,course).'
-          example: repudiandae
+          example: aut
           required: false
           schema:
             type: string
             description: 'the type of the post (public, department ,course).'
-            example: repudiandae
+            example: aut
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data:
+                    -
+                      id: 2
+                      content: 'Amet consequuntur ducimus ut quod dolore. Et et atque deserunt repellat ipsa impedit voluptatem. Unde in quae eos harum.'
+                      attachment: 'http://localhost:8000/storage/et'
+                      department_name: 'Shane Mraz'
+                      course_name: 'Ms. Flossie Hansen'
+                      attachment_type: file
+                      likes: 0
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '15 minutes ago'
+                    -
+                      id: 5
+                      content: 'Velit ea vero officia laudantium sit deserunt nobis. Aut omnis est sit temporibus doloremque. Et quia qui a nostrum expedita ab molestiae. Veritatis dolores iste perspiciatis facilis consequatur.'
+                      attachment: 'http://localhost:8000/storage/eius'
+                      department_name: 'Ellie Denesik'
+                      course_name: 'Otto Carter V'
+                      attachment_type: file
+                      likes: 0
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '15 minutes ago'
+                    -
+                      id: 14
+                      content: 'Et aut assumenda unde a. Quia nisi accusantium eius ad corporis. Architecto temporibus et esse. Qui explicabo nesciunt magni minima enim accusamus.'
+                      attachment: 'http://localhost:8000/storage/est'
+                      department_name: 'Fannie Rosenbaum DDS'
+                      course_name: 'Erling Blick'
+                      attachment_type: file
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '15 minutes ago'
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 2
+                        content: 'Amet consequuntur ducimus ut quod dolore. Et et atque deserunt repellat ipsa impedit voluptatem. Unde in quae eos harum.'
+                        attachment: 'http://localhost:8000/storage/et'
+                        department_name: 'Shane Mraz'
+                        course_name: 'Ms. Flossie Hansen'
+                        attachment_type: file
+                        likes: 0
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '15 minutes ago'
+                      -
+                        id: 5
+                        content: 'Velit ea vero officia laudantium sit deserunt nobis. Aut omnis est sit temporibus doloremque. Et quia qui a nostrum expedita ab molestiae. Veritatis dolores iste perspiciatis facilis consequatur.'
+                        attachment: 'http://localhost:8000/storage/eius'
+                        department_name: 'Ellie Denesik'
+                        course_name: 'Otto Carter V'
+                        attachment_type: file
+                        likes: 0
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '15 minutes ago'
+                      -
+                        id: 14
+                        content: 'Et aut assumenda unde a. Quia nisi accusantium eius ad corporis. Architecto temporibus et esse. Qui explicabo nesciunt magni minima enim accusamus.'
+                        attachment: 'http://localhost:8000/storage/est'
+                        department_name: 'Fannie Rosenbaum DDS'
+                        course_name: 'Erling Blick'
+                        attachment_type: file
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '15 minutes ago'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 2
+                        content:
+                          type: string
+                          example: 'Amet consequuntur ducimus ut quod dolore. Et et atque deserunt repellat ipsa impedit voluptatem. Unde in quae eos harum.'
+                        attachment:
+                          type: string
+                          example: 'http://localhost:8000/storage/et'
+                        department_name:
+                          type: string
+                          example: 'Shane Mraz'
+                        course_name:
+                          type: string
+                          example: 'Ms. Flossie Hansen'
+                        attachment_type:
+                          type: string
+                          example: file
+                        likes:
+                          type: integer
+                          example: 0
+                        liked_by_me:
+                          type: boolean
+                          example: false
+                        saves:
+                          type: integer
+                          example: 0
+                        saved_by_me:
+                          type: boolean
+                          example: false
+                        created_at:
+                          type: string
+                          example: '15 minutes ago'
       tags:
         - Post
       requestBody:
@@ -2969,18 +2493,54 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        422:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  message: 'The selected user id is invalid. (and 3 more errors)'
+                  errors:
+                    user_id:
+                      - 'The selected user id is invalid.'
+                    department_id:
+                      - 'The selected department id is invalid.'
+                    course_id:
+                      - 'The selected course id is invalid.'
+                    post_type_id:
+                      - 'The selected post type id is invalid.'
                 properties:
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: 'The selected user id is invalid. (and 3 more errors)'
+                  errors:
+                    type: object
+                    properties:
+                      user_id:
+                        type: array
+                        example:
+                          - 'The selected user id is invalid.'
+                        items:
+                          type: string
+                      department_id:
+                        type: array
+                        example:
+                          - 'The selected department id is invalid.'
+                        items:
+                          type: string
+                      course_id:
+                        type: array
+                        example:
+                          - 'The selected course id is invalid.'
+                        items:
+                          type: string
+                      post_type_id:
+                        type: array
+                        example:
+                          - 'The selected post type id is invalid.'
+                        items:
+                          type: string
       tags:
         - Post
       requestBody:
@@ -2993,31 +2553,31 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: assumenda
+                  example: eum
                 attachment:
                   type: string
                   description: ''
-                  example: libero
+                  example: vel
                 attachment_type:
                   type: string
                   description: ''
-                  example: illo
+                  example: et
                 user_id:
                   type: number
                   description: ''
-                  example: 26.824
+                  example: 110982792.05553
                 department_id:
                   type: number
                   description: ''
-                  example: 70.804
+                  example: 66143681.286308
                 course_id:
                   type: number
                   description: ''
-                  example: 2106.406
+                  example: 2.5
                 post_type_id:
                   type: number
                   description: ''
-                  example: 59618.916
+                  example: 21616.54
               required:
                 - content
                 - attachment
@@ -3032,18 +2592,8 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        204:
           description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
       tags:
         - Post
     parameters:
@@ -3062,18 +2612,18 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  data: []
                 properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
+                  data:
+                    type: array
+                    example: []
       tags:
         - Post
   '/api/post/{post_id}/like':
@@ -3083,18 +2633,8 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        204:
           description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
       tags:
         - Post
     parameters:
@@ -3113,18 +2653,8 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        204:
           description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
       tags:
         - Post
     parameters:
@@ -3143,18 +2673,8 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        204:
           description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
       tags:
         - Post
     parameters:
@@ -3173,18 +2693,8 @@ paths:
       description: ''
       parameters: []
       responses:
-        401:
+        204:
           description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
       tags:
         - Post
     parameters:

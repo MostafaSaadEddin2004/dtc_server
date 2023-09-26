@@ -10,6 +10,8 @@ use App\Models\AcademicRegistration;
 use App\Models\CertificateType;
 use App\Models\Department;
 use App\Models\Wish;
+use Carbon\Carbon;
+use Spatie\Valuestore\Valuestore;
 
 /**
  * @group AcademicRegistration
@@ -31,7 +33,7 @@ class AcademicRegistrationController extends Controller
 
     public function departmentsByCertificateType(CertificateType $certificateType)
     {
-        $departments = $certificateType->departments()->with('departmentMarks')->get();
+        $departments = $certificateType->departmentMarks()->with('department')->get();
         return DepartmentResource::collection($departments);
     }
     /**
@@ -66,10 +68,9 @@ class AcademicRegistrationController extends Controller
             if (now()->diffInYears($data['date_of_birth']) > 22) {
                 Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id, 'reserved' => true]);
             } else if ($department->mark_of_this_year <= $data['avg_mark']) {
-                if(!isset($data['department_id']))
-                {
+                if (!isset($data['department_id'])) {
 
-                    $data['department_id']=$department->id;
+                    $data['department_id'] = $department->id;
                     // dd($data);
                 }
                 Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id]);
@@ -80,6 +81,27 @@ class AcademicRegistrationController extends Controller
 
 
         $user->update(['role_id' => 2]);
+
+        return response()->noContent();
+    }
+
+    /**
+     * @response 204
+     * 
+     * @response 400 {
+    "message": "التسجيل على المفاضلة غير متاح حالياً. يفتح التسجيل على المفاضلة في 2023-09-22"
+}
+     */
+
+    public function isOpen()
+    {
+        $valueStore = ValueStore::make(config('filament-settings.path'));
+        if ($valueStore->get('registration_start_at') >= now() || $valueStore->get('registration_end_at') <= now()) {
+            return response(
+                ['message' => 'التسجيل على المفاضلة غير متاح حالياً. يفتح التسجيل على المفاضلة في ' . Carbon::parse($valueStore->get('registration_start_at'))->toDateString()],
+                400
+            );
+        }
 
         return response()->noContent();
     }

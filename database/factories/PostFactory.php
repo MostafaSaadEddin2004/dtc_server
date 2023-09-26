@@ -8,6 +8,7 @@ use App\Models\Course;
 use App\Models\Department;
 use App\Models\Post;
 use App\Models\PostType;
+use App\Models\Section;
 use App\Models\User;
 
 class PostFactory extends Factory
@@ -30,7 +31,7 @@ class PostFactory extends Factory
             'attachment' => $this->faker->word,
             'attachment_type' => $attachment_types[rand(0, 1)],
             'user_id' => User::factory(),
-            'department_id' => Department::factory(),
+            'section_id' => Section::factory(),
             'course_id' => Course::factory(),
             'post_type_id' => rand(1, PostType::count()),
         ];

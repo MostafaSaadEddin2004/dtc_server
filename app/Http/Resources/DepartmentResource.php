@@ -15,9 +15,9 @@ class DepartmentResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'id' => $this->id,
-            'name' => $this->name,
-            'mark' => $this->departmentMarks()->where('year', now()->year)->first()?->mark,
+            'id' => $this->department->id,
+            'name' => $this->department->name,
+            'mark' => $this->where('year', now()->year)->first()?->mark,
         ];
     }
 }

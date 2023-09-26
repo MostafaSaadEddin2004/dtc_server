@@ -30,7 +30,7 @@ endpoints:
         name: subject
         description: ''
         required: true
-        example: ut
+        example: incidunt
         type: string
         enumValues: []
         custom: []
@@ -38,7 +38,7 @@ endpoints:
         name: mark
         description: 'Must be at least 0. Must not be greater than 100.'
         required: true
-        example: 8
+        example: 3
         type: number
         enumValues: []
         custom: []
@@ -46,7 +46,7 @@ endpoints:
         name: reason
         description: ''
         required: true
-        example: sed
+        example: est
         type: string
         enumValues: []
         custom: []
@@ -54,15 +54,15 @@ endpoints:
         name: teacher_id
         description: ''
         required: true
-        example: minima
+        example: eum
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      subject: ut
-      mark: 8
-      reason: sed
-      teacher_id: minima
+      subject: incidunt
+      mark: 3
+      reason: est
+      teacher_id: eum
     fileParameters: []
     responses:
       -
@@ -156,10 +156,12 @@ endpoints:
     responses:
       -
         status: 401
-        content: '{"message":"Unauthenticated."}'
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '33'
           access-control-allow-origin: '*'
         description: null
         custom: []
