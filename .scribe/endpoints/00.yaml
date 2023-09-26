@@ -51,7 +51,7 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: error
+        example: suscipit
         type: string
         enumValues: []
         custom: []
@@ -59,12 +59,12 @@ endpoints:
       email: my@example.com
       password: password
       role: student_browser
-      fcm_token: error
+      fcm_token: suscipit
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"token":"3|fgBj6uN4mAlbPc37WjvFjayIyIaEeqGaKTvd7Sf542c2b7d4"}'
+        content: '{"token":"6|3yY1UCe2A6VYHzXbSbKJptGrrrj9aRjqv0jxzLMu744351ed"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -77,7 +77,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -108,7 +108,7 @@ endpoints:
         name: first_name_en
         description: ''
         required: true
-        example: libero
+        example: totam
         type: string
         enumValues: []
         custom: []
@@ -116,7 +116,7 @@ endpoints:
         name: last_name_en
         description: ''
         required: true
-        example: est
+        example: necessitatibus
         type: string
         enumValues: []
         custom: []
@@ -124,7 +124,7 @@ endpoints:
         name: first_name_ar
         description: ''
         required: true
-        example: fugit
+        example: molestiae
         type: string
         enumValues: []
         custom: []
@@ -132,7 +132,7 @@ endpoints:
         name: last_name_ar
         description: ''
         required: true
-        example: ducimus
+        example: quae
         type: string
         enumValues: []
         custom: []
@@ -140,7 +140,7 @@ endpoints:
         name: phone
         description: ''
         required: true
-        example: assumenda
+        example: et
         type: string
         enumValues: []
         custom: []
@@ -148,7 +148,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: robel.bradly@example.org
+        example: oboyle@example.org
         type: string
         enumValues: []
         custom: []
@@ -156,7 +156,7 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: "o'HvAl*lyKfvWBA:"
+        example: 'Pf,?pLS&rY0mH4+J=p'
         type: string
         enumValues: []
         custom: []
@@ -164,7 +164,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: student_browser
+        example: teacher_browser
         type: string
         enumValues:
           - student
@@ -184,26 +184,26 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: sint
+        example: in
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      first_name_en: libero
-      last_name_en: est
-      first_name_ar: fugit
-      last_name_ar: ducimus
-      phone: assumenda
-      email: robel.bradly@example.org
-      password: "o'HvAl*lyKfvWBA:"
-      role: student_browser
-      fcm_token: sint
+      first_name_en: totam
+      last_name_en: necessitatibus
+      first_name_ar: molestiae
+      last_name_ar: quae
+      phone: et
+      email: oboyle@example.org
+      password: 'Pf,?pLS&rY0mH4+J=p'
+      role: teacher_browser
+      fcm_token: in
     fileParameters:
       image: null
     responses:
       -
         status: 200
-        content: '{"token":"3|CrLs5rMOenQS7lJj5p6D10A8rZva0a0zcynTZN4u31101033"}'
+        content: '{"token":"7|wbIBaQhlulRiL5NeO72qjZdK5XztNBIbHteGfi3b2670bd9b"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -216,7 +216,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -247,12 +247,12 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: eboehm@example.org
+        example: ngislason@example.com
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      email: eboehm@example.org
+      email: ngislason@example.com
     fileParameters: []
     responses:
       -
@@ -279,7 +279,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -310,7 +310,7 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: dignissimos
+        example: inventore
         type: string
         enumValues: []
         custom: []
@@ -318,7 +318,7 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: sed
+        example: nesciunt
         type: string
         enumValues: []
         custom: []
@@ -326,14 +326,14 @@ endpoints:
         name: fcm_token
         description: ''
         required: true
-        example: enim
+        example: inventore
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      email: dignissimos
-      token: sed
-      fcm_token: enim
+      email: inventore
+      token: nesciunt
+      fcm_token: inventore
     fileParameters: []
     responses:
       -
@@ -363,7 +363,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -412,7 +412,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -443,7 +443,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: false
-        example: hessel.casandra@example.com
+        example: annabelle.hilpert@example.net
         type: string
         enumValues: []
         custom: []
@@ -480,15 +480,17 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      email: hessel.casandra@example.com
+      email: annabelle.hilpert@example.net
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":{"email":"annabelle.hilpert@example.net","first_name_en":"Dr. Joel Wuckert Sr.","first_name_ar":"Declan Bergnaum","last_name_en":"Felicia Cummerata","last_name_ar":"Hayden Murray","phone":"1-443-369-7323","address":null,"image":null,"department":null,"section":null}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -496,7 +498,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -527,11 +529,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"data":{"email":"annabelle.hilpert@example.net","first_name_en":"Dr. Joel Wuckert Sr.","first_name_ar":"Declan Bergnaum","last_name_en":"Felicia Cummerata","last_name_ar":"Hayden Murray","phone":"1-443-369-7323","address":null,"image":null,"department":null,"section":null}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -539,7 +543,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -570,11 +574,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"role":"teacher"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -582,7 +588,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -613,7 +619,7 @@ endpoints:
         name: certificate
         description: ''
         required: true
-        example: quasi
+        example: cum
         type: string
         enumValues: []
         custom: []
@@ -621,15 +627,15 @@ endpoints:
         name: specialty
         description: ''
         required: true
-        example: dolorum
+        example: laboriosam
         type: string
         enumValues: []
         custom: []
       birth_date:
         name: birth_date
-        description: 'Must be a valid date. Must be a date before <code>09/24/2023</code>.'
+        description: 'Must be a valid date. Must be a date before <code>09/26/2023</code>.'
         required: true
-        example: '2020-03-04'
+        example: '2003-10-19'
         type: string
         enumValues: []
         custom: []
@@ -637,7 +643,7 @@ endpoints:
         name: current_location
         description: ''
         required: true
-        example: exercitationem
+        example: distinctio
         type: string
         enumValues: []
         custom: []
@@ -645,7 +651,7 @@ endpoints:
         name: permanent_location
         description: ''
         required: true
-        example: aliquid
+        example: iste
         type: string
         enumValues: []
         custom: []
@@ -653,7 +659,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: ex
+        example: ab
         type: string
         enumValues: []
         custom: []
@@ -661,18 +667,18 @@ endpoints:
         name: section_id
         description: ''
         required: true
-        example: 6
+        example: 3
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      certificate: quasi
-      specialty: dolorum
-      birth_date: '2020-03-04'
-      current_location: exercitationem
-      permanent_location: aliquid
-      nationality: ex
-      section_id: 6
+      certificate: cum
+      specialty: laboriosam
+      birth_date: '2003-10-19'
+      current_location: distinctio
+      permanent_location: iste
+      nationality: ab
+      section_id: 3
     fileParameters: []
     responses:
       -
@@ -733,7 +739,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 13|laravel_sanctum_pdmxKxHmBpjc0fWJfTN8lGkO3Dw0VG6bFE1lORv2abe9f7a0'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null

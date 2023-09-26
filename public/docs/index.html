@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Laravel Documentation</title>
+    <title>DTC App Documentation</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -73,6 +73,9 @@
                                     <ul id="tocify-subheader-academicregistration" class="tocify-subheader">
                                                     <li class="tocify-item level-2" data-unique="academicregistration-GETapi-certificate-type">
                                 <a href="#academicregistration-GETapi-certificate-type">GET api/certificate-type</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="academicregistration-GETapi-academic-registration-is-open">
+                                <a href="#academicregistration-GETapi-academic-registration-is-open">GET api/academic-registration/is-open</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="academicregistration-GETapi-certificate-type--certificateType_id--department">
                                 <a href="#academicregistration-GETapi-certificate-type--certificateType_id--department">GET api/certificate-type/{certificateType_id}/department</a>
@@ -262,7 +265,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: September 24, 2023</li>
+        <li>Last updated: September 26, 2023</li>
     </ul>
 </div>
 
@@ -332,7 +335,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 52
+x-ratelimit-remaining: 35
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -340,23 +343,43 @@ access-control-allow-origin: *
     &quot;data&quot;: [
         {
             &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;Prof. Johann Bashirian&quot;
+            &quot;name&quot;: &quot;Evelyn Hansen&quot;
         },
         {
             &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;Prof. Aidan King&quot;
+            &quot;name&quot;: &quot;Brent Hermann DVM&quot;
         },
         {
             &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;Jalyn Klocko&quot;
+            &quot;name&quot;: &quot;Augustine Cronin PhD&quot;
         },
         {
             &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;Antonia Dare&quot;
+            &quot;name&quot;: &quot;Tiana Wilderman&quot;
         },
         {
             &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;Helene Mante&quot;
+            &quot;name&quot;: &quot;Santino Kozey&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;Mylene Hickle&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;Prof. Alexie Funk I&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;name&quot;: &quot;Tanya Mraz IV&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;name&quot;: &quot;Mireille Maggio&quot;
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;name&quot;: &quot;Angela Schaefer III&quot;
         }
     ]
 }</code>
@@ -433,6 +456,129 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
+                    <h2 id="academicregistration-GETapi-academic-registration-is-open">GET api/academic-registration/is-open</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-academic-registration-is-open">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/academic-registration/is-open" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/academic-registration/is-open"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-academic-registration-is-open">
+            <blockquote>
+            <p>Example response (204):</p>
+        </blockquote>
+                <pre>
+<code>Empty response</code>
+ </pre>
+            <blockquote>
+            <p>Example response (400):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;التسجيل على المفاضلة غير متاح حالياً. يفتح التسجيل على المفاضلة في 2023-09-22&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-academic-registration-is-open" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-academic-registration-is-open"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-academic-registration-is-open"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-academic-registration-is-open" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-academic-registration-is-open">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-academic-registration-is-open" data-method="GET"
+      data-path="api/academic-registration/is-open"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-academic-registration-is-open', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-academic-registration-is-open"
+                    onclick="tryItOut('GETapi-academic-registration-is-open');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-academic-registration-is-open"
+                    onclick="cancelTryOut('GETapi-academic-registration-is-open');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-academic-registration-is-open"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/academic-registration/is-open</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-academic-registration-is-open"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-academic-registration-is-open"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
                     <h2 id="academicregistration-GETapi-certificate-type--certificateType_id--department">GET api/certificate-type/{certificateType_id}/department</h2>
 
 <p>
@@ -479,425 +625,425 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 51
+x-ratelimit-remaining: 34
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;message&quot;: &quot;No query results for model [App\\Models\\CertificateType] 20&quot;,
     &quot;exception&quot;: &quot;Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException&quot;,
-    &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php&quot;,
+    &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
     &quot;line&quot;: 446,
     &quot;trace&quot;: [
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
             &quot;line&quot;: 422,
             &quot;function&quot;: &quot;prepareException&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\nunomaduro\\collision\\src\\Adapters\\Laravel\\ExceptionHandler.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php&quot;,
             &quot;line&quot;: 54,
             &quot;function&quot;: &quot;render&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php&quot;,
             &quot;line&quot;: 51,
             &quot;function&quot;: &quot;render&quot;,
             &quot;class&quot;: &quot;NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 185,
             &quot;function&quot;: &quot;handleException&quot;,
             &quot;class&quot;: &quot;Illuminate\\Routing\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
             &quot;line&quot;: 159,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 125,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 135,
             &quot;function&quot;: &quot;handleRequest&quot;,
             &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
             &quot;line&quot;: 87,
             &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
             &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 180,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 116,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 798,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 800,
             &quot;function&quot;: &quot;then&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
             &quot;line&quot;: 777,
             &quot;function&quot;: &quot;runRouteWithinStack&quot;,
             &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
             &quot;line&quot;: 741,
             &quot;function&quot;: &quot;runRoute&quot;,
             &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
             &quot;line&quot;: 730,
             &quot;function&quot;: &quot;dispatchToRoute&quot;,
             &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
             &quot;line&quot;: 200,
             &quot;function&quot;: &quot;dispatch&quot;,
             &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 141,
             &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/livewire/livewire/src/DisableBrowserCache.php&quot;,
             &quot;line&quot;: 19,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 180,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Livewire\\DisableBrowserCache&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
             &quot;line&quot;: 21,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php&quot;,
             &quot;line&quot;: 31,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 180,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
             &quot;line&quot;: 21,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&quot;,
             &quot;line&quot;: 40,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 180,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php&quot;,
             &quot;line&quot;: 27,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 180,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php&quot;,
             &quot;line&quot;: 99,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 180,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php&quot;,
             &quot;line&quot;: 62,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 180,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php&quot;,
             &quot;line&quot;: 39,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 180,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
             &quot;line&quot;: 116,
             &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
             &quot;line&quot;: 175,
             &quot;function&quot;: &quot;then&quot;,
             &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
             &quot;line&quot;: 144,
             &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
             &quot;line&quot;: 299,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
             &quot;line&quot;: 287,
             &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
             &quot;line&quot;: 92,
             &quot;function&quot;: &quot;makeApiCall&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
             &quot;line&quot;: 45,
             &quot;function&quot;: &quot;makeResponseCall&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
             &quot;line&quot;: 35,
             &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
             &quot;line&quot;: 209,
             &quot;function&quot;: &quot;__invoke&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 163,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 166,
             &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
             &quot;line&quot;: 95,
             &quot;function&quot;: &quot;fetchResponses&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
             &quot;line&quot;: 124,
             &quot;function&quot;: &quot;processRoute&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
             &quot;line&quot;: 71,
             &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
             &quot;line&quot;: 49,
             &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php&quot;,
             &quot;line&quot;: 51,
             &quot;function&quot;: &quot;get&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
             &quot;line&quot;: 36,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Util.php&quot;,
             &quot;line&quot;: 41,
             &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
             &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
             &quot;type&quot;: &quot;::&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
             &quot;line&quot;: 93,
             &quot;function&quot;: &quot;unwrapIfClosure&quot;,
             &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
             &quot;type&quot;: &quot;::&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 35,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 37,
             &quot;function&quot;: &quot;callBoundMethod&quot;,
             &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
             &quot;type&quot;: &quot;::&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Container/Container.php&quot;,
             &quot;line&quot;: 662,
             &quot;function&quot;: &quot;call&quot;,
             &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
             &quot;type&quot;: &quot;::&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
             &quot;line&quot;: 211,
             &quot;function&quot;: &quot;call&quot;,
             &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\symfony\\console\\Command\\Command.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Command/Command.php&quot;,
             &quot;line&quot;: 326,
             &quot;function&quot;: &quot;execute&quot;,
             &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
-            &quot;line&quot;: 180,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 181,
             &quot;function&quot;: &quot;run&quot;,
             &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php&quot;,
             &quot;line&quot;: 1081,
             &quot;function&quot;: &quot;run&quot;,
             &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php&quot;,
             &quot;line&quot;: 320,
             &quot;function&quot;: &quot;doRunCommand&quot;,
             &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/symfony/console/Application.php&quot;,
             &quot;line&quot;: 174,
             &quot;function&quot;: &quot;doRun&quot;,
             &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php&quot;,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php&quot;,
             &quot;line&quot;: 201,
             &quot;function&quot;: &quot;run&quot;,
             &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
         },
         {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\artisan&quot;,
-            &quot;line&quot;: 35,
+            &quot;file&quot;: &quot;/home/loaidev/Projects/Laravel/dtc_server/artisan&quot;,
+            &quot;line&quot;: 37,
             &quot;function&quot;: &quot;handle&quot;,
             &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
             &quot;type&quot;: &quot;-&gt;&quot;
@@ -1005,23 +1151,23 @@ You can check the Dev Tools console for debugging information.</code></pre>
     "http://localhost:8000/api/academic-registration" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "father_name=et"\
-    --form "mother_name=excepturi"\
-    --form "date_of_birth=2023-09-24T00:00:53"\
-    --form "place_of_birth=mollitia"\
-    --form "military=id"\
-    --form "current_address=sunt"\
-    --form "address=quas"\
-    --form "name_of_parent=voluptates"\
-    --form "job_of_parent=at"\
-    --form "phone_of_parent=necessitatibus"\
-    --form "phone_of_mother=molestiae"\
+    --form "father_name=quia"\
+    --form "mother_name=ipsa"\
+    --form "date_of_birth=2023-09-26T13:19:34"\
+    --form "place_of_birth=aut"\
+    --form "military=eum"\
+    --form "current_address=culpa"\
+    --form "address=fugit"\
+    --form "name_of_parent=tempore"\
+    --form "job_of_parent=sint"\
+    --form "phone_of_parent=quia"\
+    --form "phone_of_mother=odio"\
     --form "avg_mark=20"\
-    --form "certificate_year=illum"\
-    --form "id_image=@C:\Users\LENOVO\AppData\Local\Temp\php7303.tmp" \
-    --form "certificate_image=@C:\Users\LENOVO\AppData\Local\Temp\php7304.tmp" \
-    --form "personal_image=@C:\Users\LENOVO\AppData\Local\Temp\php7305.tmp" \
-    --form "un_image=@C:\Users\LENOVO\AppData\Local\Temp\php7306.tmp" </code></pre></div>
+    --form "certificate_year=distinctio"\
+    --form "id_image=@/tmp/phpQ4nePt" \
+    --form "certificate_image=@/tmp/phpevIF0o" \
+    --form "personal_image=@/tmp/phppYAxWo" \
+    --form "un_image=@/tmp/php6aMF8n" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -1035,19 +1181,19 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('father_name', 'et');
-body.append('mother_name', 'excepturi');
-body.append('date_of_birth', '2023-09-24T00:00:53');
-body.append('place_of_birth', 'mollitia');
-body.append('military', 'id');
-body.append('current_address', 'sunt');
-body.append('address', 'quas');
-body.append('name_of_parent', 'voluptates');
-body.append('job_of_parent', 'at');
-body.append('phone_of_parent', 'necessitatibus');
-body.append('phone_of_mother', 'molestiae');
+body.append('father_name', 'quia');
+body.append('mother_name', 'ipsa');
+body.append('date_of_birth', '2023-09-26T13:19:34');
+body.append('place_of_birth', 'aut');
+body.append('military', 'eum');
+body.append('current_address', 'culpa');
+body.append('address', 'fugit');
+body.append('name_of_parent', 'tempore');
+body.append('job_of_parent', 'sint');
+body.append('phone_of_parent', 'quia');
+body.append('phone_of_mother', 'odio');
 body.append('avg_mark', '20');
-body.append('certificate_year', 'illum');
+body.append('certificate_year', 'distinctio');
 body.append('id_image', document.querySelector('input[name="id_image"]').files[0]);
 body.append('certificate_image', document.querySelector('input[name="certificate_image"]').files[0]);
 body.append('personal_image', document.querySelector('input[name="personal_image"]').files[0]);
@@ -1145,10 +1291,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="father_name"                data-endpoint="POSTapi-academic-registration"
-               value="et"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>mother_name</code></b>&nbsp;&nbsp;
@@ -1156,10 +1302,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="mother_name"                data-endpoint="POSTapi-academic-registration"
-               value="excepturi"
+               value="ipsa"
                data-component="body">
     <br>
-<p>Example: <code>excepturi</code></p>
+<p>Example: <code>ipsa</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>date_of_birth</code></b>&nbsp;&nbsp;
@@ -1167,10 +1313,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date_of_birth"                data-endpoint="POSTapi-academic-registration"
-               value="2023-09-24T00:00:53"
+               value="2023-09-26T13:19:34"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-24T00:00:53</code></p>
+<p>Must be a valid date. Example: <code>2023-09-26T13:19:34</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>place_of_birth</code></b>&nbsp;&nbsp;
@@ -1178,10 +1324,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="place_of_birth"                data-endpoint="POSTapi-academic-registration"
-               value="mollitia"
+               value="aut"
                data-component="body">
     <br>
-<p>Example: <code>mollitia</code></p>
+<p>Example: <code>aut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>military</code></b>&nbsp;&nbsp;
@@ -1189,10 +1335,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="military"                data-endpoint="POSTapi-academic-registration"
-               value="id"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>id</code></p>
+<p>Example: <code>eum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>current_address</code></b>&nbsp;&nbsp;
@@ -1200,10 +1346,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="current_address"                data-endpoint="POSTapi-academic-registration"
-               value="sunt"
+               value="culpa"
                data-component="body">
     <br>
-<p>Example: <code>sunt</code></p>
+<p>Example: <code>culpa</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -1211,10 +1357,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-academic-registration"
-               value="quas"
+               value="fugit"
                data-component="body">
     <br>
-<p>Example: <code>quas</code></p>
+<p>Example: <code>fugit</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>name_of_parent</code></b>&nbsp;&nbsp;
@@ -1222,10 +1368,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name_of_parent"                data-endpoint="POSTapi-academic-registration"
-               value="voluptates"
+               value="tempore"
                data-component="body">
     <br>
-<p>Example: <code>voluptates</code></p>
+<p>Example: <code>tempore</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>job_of_parent</code></b>&nbsp;&nbsp;
@@ -1233,10 +1379,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="job_of_parent"                data-endpoint="POSTapi-academic-registration"
-               value="at"
+               value="sint"
                data-component="body">
     <br>
-<p>Example: <code>at</code></p>
+<p>Example: <code>sint</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone_of_parent</code></b>&nbsp;&nbsp;
@@ -1244,10 +1390,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone_of_parent"                data-endpoint="POSTapi-academic-registration"
-               value="necessitatibus"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>necessitatibus</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone_of_mother</code></b>&nbsp;&nbsp;
@@ -1255,10 +1401,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone_of_mother"                data-endpoint="POSTapi-academic-registration"
-               value="molestiae"
+               value="odio"
                data-component="body">
     <br>
-<p>Example: <code>molestiae</code></p>
+<p>Example: <code>odio</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>avg_mark</code></b>&nbsp;&nbsp;
@@ -1277,10 +1423,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="certificate_year"                data-endpoint="POSTapi-academic-registration"
-               value="illum"
+               value="distinctio"
                data-component="body">
     <br>
-<p>Example: <code>illum</code></p>
+<p>Example: <code>distinctio</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>id_image</code></b>&nbsp;&nbsp;
@@ -1291,7 +1437,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\LENOVO\AppData\Local\Temp\php7303.tmp</code></p>
+<p>Must be an image. Example: <code>/tmp/phpQ4nePt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>certificate_image</code></b>&nbsp;&nbsp;
@@ -1302,7 +1448,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\LENOVO\AppData\Local\Temp\php7304.tmp</code></p>
+<p>Must be an image. Example: <code>/tmp/phpevIF0o</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>personal_image</code></b>&nbsp;&nbsp;
@@ -1313,7 +1459,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\LENOVO\AppData\Local\Temp\php7305.tmp</code></p>
+<p>Must be an image. Example: <code>/tmp/phppYAxWo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>un_image</code></b>&nbsp;&nbsp;
@@ -1324,7 +1470,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\LENOVO\AppData\Local\Temp\php7306.tmp</code></p>
+<p>Must be an image. Example: <code>/tmp/php6aMF8n</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_ids</code></b>&nbsp;&nbsp;
@@ -1365,7 +1511,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"email\": \"my@example.com\",
     \"password\": \"password\",
     \"role\": \"student_browser\",
-    \"fcm_token\": \"error\"
+    \"fcm_token\": \"suscipit\"
 }"
 </code></pre></div>
 
@@ -1385,7 +1531,7 @@ let body = {
     "email": "my@example.com",
     "password": "password",
     "role": "student_browser",
-    "fcm_token": "error"
+    "fcm_token": "suscipit"
 };
 
 fetch(url, {
@@ -1412,7 +1558,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;3|fgBj6uN4mAlbPc37WjvFjayIyIaEeqGaKTvd7Sf542c2b7d4&quot;
+    &quot;token&quot;: &quot;6|3yY1UCe2A6VYHzXbSbKJptGrrrj9aRjqv0jxzLMu744351ed&quot;
 }</code>
  </pre>
     </span>
@@ -1536,10 +1682,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="fcm_token"                data-endpoint="POSTapi-auth"
-               value="error"
+               value="suscipit"
                data-component="body">
     <br>
-<p>Example: <code>error</code></p>
+<p>Example: <code>suscipit</code></p>
         </div>
         </form>
 
@@ -1561,16 +1707,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "first_name_en=libero"\
-    --form "last_name_en=est"\
-    --form "first_name_ar=fugit"\
-    --form "last_name_ar=ducimus"\
-    --form "phone=assumenda"\
-    --form "email=robel.bradly@example.org"\
-    --form "password=o'HvAl*lyKfvWBA:"\
-    --form "role=student_browser"\
-    --form "fcm_token=sint"\
-    --form "image=@C:\Users\LENOVO\AppData\Local\Temp\php70D0.tmp" </code></pre></div>
+    --form "first_name_en=totam"\
+    --form "last_name_en=necessitatibus"\
+    --form "first_name_ar=molestiae"\
+    --form "last_name_ar=quae"\
+    --form "phone=et"\
+    --form "email=oboyle@example.org"\
+    --form "password=Pf,?pLS&amp;rY0mH4+J=p"\
+    --form "role=teacher_browser"\
+    --form "fcm_token=in"\
+    --form "image=@/tmp/php4rKcTZ" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -1585,15 +1731,15 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('first_name_en', 'libero');
-body.append('last_name_en', 'est');
-body.append('first_name_ar', 'fugit');
-body.append('last_name_ar', 'ducimus');
-body.append('phone', 'assumenda');
-body.append('email', 'robel.bradly@example.org');
-body.append('password', 'o'HvAl*lyKfvWBA:');
-body.append('role', 'student_browser');
-body.append('fcm_token', 'sint');
+body.append('first_name_en', 'totam');
+body.append('last_name_en', 'necessitatibus');
+body.append('first_name_ar', 'molestiae');
+body.append('last_name_ar', 'quae');
+body.append('phone', 'et');
+body.append('email', 'oboyle@example.org');
+body.append('password', 'Pf,?pLS&amp;rY0mH4+J=p');
+body.append('role', 'teacher_browser');
+body.append('fcm_token', 'in');
 body.append('image', document.querySelector('input[name="image"]').files[0]);
 
 fetch(url, {
@@ -1620,7 +1766,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;token&quot;: &quot;3|CrLs5rMOenQS7lJj5p6D10A8rZva0a0zcynTZN4u31101033&quot;
+    &quot;token&quot;: &quot;7|wbIBaQhlulRiL5NeO72qjZdK5XztNBIbHteGfi3b2670bd9b&quot;
 }</code>
  </pre>
     </span>
@@ -1711,10 +1857,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_en"                data-endpoint="POSTapi-auth-register"
-               value="libero"
+               value="totam"
                data-component="body">
     <br>
-<p>Example: <code>libero</code></p>
+<p>Example: <code>totam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_en</code></b>&nbsp;&nbsp;
@@ -1722,10 +1868,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_en"                data-endpoint="POSTapi-auth-register"
-               value="est"
+               value="necessitatibus"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>necessitatibus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>first_name_ar</code></b>&nbsp;&nbsp;
@@ -1733,10 +1879,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="first_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="fugit"
+               value="molestiae"
                data-component="body">
     <br>
-<p>Example: <code>fugit</code></p>
+<p>Example: <code>molestiae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name_ar</code></b>&nbsp;&nbsp;
@@ -1744,10 +1890,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="last_name_ar"                data-endpoint="POSTapi-auth-register"
-               value="ducimus"
+               value="quae"
                data-component="body">
     <br>
-<p>Example: <code>ducimus</code></p>
+<p>Example: <code>quae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1755,10 +1901,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone"                data-endpoint="POSTapi-auth-register"
-               value="assumenda"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>assumenda</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1766,10 +1912,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-register"
-               value="robel.bradly@example.org"
+               value="oboyle@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>robel.bradly@example.org</code></p>
+<p>Must be a valid email address. Example: <code>oboyle@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1777,10 +1923,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-register"
-               value="o'HvAl*lyKfvWBA:"
+               value="Pf,?pLS&rY0mH4+J=p"
                data-component="body">
     <br>
-<p>Example: <code>o'HvAl*lyKfvWBA:</code></p>
+<p>Example: <code>Pf,?pLS&amp;rY0mH4+J=p</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -1788,10 +1934,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-register"
-               value="student_browser"
+               value="teacher_browser"
                data-component="body">
     <br>
-<p>Example: <code>student_browser</code></p>
+<p>Example: <code>teacher_browser</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>student</code></li> <li><code>teacher</code></li> <li><code>student_browser</code></li> <li><code>teacher_browser</code></li></ul>
         </div>
@@ -1804,7 +1950,7 @@ Must be one of:
                value=""
                data-component="body">
     <br>
-<p>Must be an image. Example: <code>C:\Users\LENOVO\AppData\Local\Temp\php70D0.tmp</code></p>
+<p>Must be an image. Example: <code>/tmp/php4rKcTZ</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>fcm_token</code></b>&nbsp;&nbsp;
@@ -1812,10 +1958,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="fcm_token"                data-endpoint="POSTapi-auth-register"
-               value="sint"
+               value="in"
                data-component="body">
     <br>
-<p>Example: <code>sint</code></p>
+<p>Example: <code>in</code></p>
         </div>
         </form>
 
@@ -1838,7 +1984,7 @@ Must be one of:
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"eboehm@example.org\"
+    \"email\": \"ngislason@example.com\"
 }"
 </code></pre></div>
 
@@ -1855,7 +2001,7 @@ const headers = {
 };
 
 let body = {
-    "email": "eboehm@example.org"
+    "email": "ngislason@example.com"
 };
 
 fetch(url, {
@@ -1975,10 +2121,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-tokenForResetPassword"
-               value="eboehm@example.org"
+               value="ngislason@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>eboehm@example.org</code></p>
+<p>Must be a valid email address. Example: <code>ngislason@example.com</code></p>
         </div>
         </form>
 
@@ -2001,9 +2147,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"dignissimos\",
-    \"token\": \"sed\",
-    \"fcm_token\": \"enim\"
+    \"email\": \"inventore\",
+    \"token\": \"nesciunt\",
+    \"fcm_token\": \"inventore\"
 }"
 </code></pre></div>
 
@@ -2020,9 +2166,9 @@ const headers = {
 };
 
 let body = {
-    "email": "dignissimos",
-    "token": "sed",
-    "fcm_token": "enim"
+    "email": "inventore",
+    "token": "nesciunt",
+    "fcm_token": "inventore"
 };
 
 fetch(url, {
@@ -2145,10 +2291,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-checkForgetPassword"
-               value="dignissimos"
+               value="inventore"
                data-component="body">
     <br>
-<p>Example: <code>dignissimos</code></p>
+<p>Example: <code>inventore</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>token</code></b>&nbsp;&nbsp;
@@ -2156,10 +2302,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="token"                data-endpoint="POSTapi-auth-checkForgetPassword"
-               value="sed"
+               value="nesciunt"
                data-component="body">
     <br>
-<p>Example: <code>sed</code></p>
+<p>Example: <code>nesciunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>fcm_token</code></b>&nbsp;&nbsp;
@@ -2167,10 +2313,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="fcm_token"                data-endpoint="POSTapi-auth-checkForgetPassword"
-               value="enim"
+               value="inventore"
                data-component="body">
     <br>
-<p>Example: <code>enim</code></p>
+<p>Example: <code>inventore</code></p>
         </div>
         </form>
 
@@ -2330,7 +2476,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"hessel.casandra@example.com\"
+    \"email\": \"annabelle.hilpert@example.net\"
 }"
 </code></pre></div>
 
@@ -2347,7 +2493,7 @@ const headers = {
 };
 
 let body = {
-    "email": "hessel.casandra@example.com"
+    "email": "annabelle.hilpert@example.net"
 };
 
 fetch(url, {
@@ -2360,7 +2506,7 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-auth-profile">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2368,11 +2514,24 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: {
+        &quot;email&quot;: &quot;annabelle.hilpert@example.net&quot;,
+        &quot;first_name_en&quot;: &quot;Dr. Joel Wuckert Sr.&quot;,
+        &quot;first_name_ar&quot;: &quot;Declan Bergnaum&quot;,
+        &quot;last_name_en&quot;: &quot;Felicia Cummerata&quot;,
+        &quot;last_name_ar&quot;: &quot;Hayden Murray&quot;,
+        &quot;phone&quot;: &quot;1-443-369-7323&quot;,
+        &quot;address&quot;: null,
+        &quot;image&quot;: null,
+        &quot;department&quot;: null,
+        &quot;section&quot;: null
+    }
 }</code>
  </pre>
     </span>
@@ -2463,10 +2622,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-profile"
-               value="hessel.casandra@example.com"
+               value="annabelle.hilpert@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>hessel.casandra@example.com</code></p>
+<p>Must be a valid email address. Example: <code>annabelle.hilpert@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -2554,7 +2713,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-auth-profile">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2562,11 +2721,24 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: {
+        &quot;email&quot;: &quot;annabelle.hilpert@example.net&quot;,
+        &quot;first_name_en&quot;: &quot;Dr. Joel Wuckert Sr.&quot;,
+        &quot;first_name_ar&quot;: &quot;Declan Bergnaum&quot;,
+        &quot;last_name_en&quot;: &quot;Felicia Cummerata&quot;,
+        &quot;last_name_ar&quot;: &quot;Hayden Murray&quot;,
+        &quot;phone&quot;: &quot;1-443-369-7323&quot;,
+        &quot;address&quot;: null,
+        &quot;image&quot;: null,
+        &quot;department&quot;: null,
+        &quot;section&quot;: null
+    }
 }</code>
  </pre>
     </span>
@@ -2692,7 +2864,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-auth-role">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -2700,11 +2872,13 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;role&quot;: &quot;teacher&quot;
 }</code>
  </pre>
     </span>
@@ -2809,13 +2983,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"certificate\": \"quasi\",
-    \"specialty\": \"dolorum\",
-    \"birth_date\": \"2020-03-04\",
-    \"current_location\": \"exercitationem\",
-    \"permanent_location\": \"aliquid\",
-    \"nationality\": \"ex\",
-    \"section_id\": 6
+    \"certificate\": \"cum\",
+    \"specialty\": \"laboriosam\",
+    \"birth_date\": \"2003-10-19\",
+    \"current_location\": \"distinctio\",
+    \"permanent_location\": \"iste\",
+    \"nationality\": \"ab\",
+    \"section_id\": 3
 }"
 </code></pre></div>
 
@@ -2832,13 +3006,13 @@ const headers = {
 };
 
 let body = {
-    "certificate": "quasi",
-    "specialty": "dolorum",
-    "birth_date": "2020-03-04",
-    "current_location": "exercitationem",
-    "permanent_location": "aliquid",
-    "nationality": "ex",
-    "section_id": 6
+    "certificate": "cum",
+    "specialty": "laboriosam",
+    "birth_date": "2003-10-19",
+    "current_location": "distinctio",
+    "permanent_location": "iste",
+    "nationality": "ab",
+    "section_id": 3
 };
 
 fetch(url, {
@@ -2992,10 +3166,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="certificate"                data-endpoint="POSTapi-auth-teacher"
-               value="quasi"
+               value="cum"
                data-component="body">
     <br>
-<p>Example: <code>quasi</code></p>
+<p>Example: <code>cum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>specialty</code></b>&nbsp;&nbsp;
@@ -3003,10 +3177,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="specialty"                data-endpoint="POSTapi-auth-teacher"
-               value="dolorum"
+               value="laboriosam"
                data-component="body">
     <br>
-<p>Example: <code>dolorum</code></p>
+<p>Example: <code>laboriosam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birth_date</code></b>&nbsp;&nbsp;
@@ -3014,10 +3188,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birth_date"                data-endpoint="POSTapi-auth-teacher"
-               value="2020-03-04"
+               value="2003-10-19"
                data-component="body">
     <br>
-<p>Must be a valid date. Must be a date before <code>09/24/2023</code>. Example: <code>2020-03-04</code></p>
+<p>Must be a valid date. Must be a date before <code>09/26/2023</code>. Example: <code>2003-10-19</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>current_location</code></b>&nbsp;&nbsp;
@@ -3025,10 +3199,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="current_location"                data-endpoint="POSTapi-auth-teacher"
-               value="exercitationem"
+               value="distinctio"
                data-component="body">
     <br>
-<p>Example: <code>exercitationem</code></p>
+<p>Example: <code>distinctio</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permanent_location</code></b>&nbsp;&nbsp;
@@ -3036,10 +3210,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="permanent_location"                data-endpoint="POSTapi-auth-teacher"
-               value="aliquid"
+               value="iste"
                data-component="body">
     <br>
-<p>Example: <code>aliquid</code></p>
+<p>Example: <code>iste</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nationality</code></b>&nbsp;&nbsp;
@@ -3047,10 +3221,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-auth-teacher"
-               value="ex"
+               value="ab"
                data-component="body">
     <br>
-<p>Example: <code>ex</code></p>
+<p>Example: <code>ab</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>section_id</code></b>&nbsp;&nbsp;
@@ -3058,10 +3232,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="section_id"                data-endpoint="POSTapi-auth-teacher"
-               value="6"
+               value="3"
                data-component="body">
     <br>
-<p>Example: <code>6</code></p>
+<p>Example: <code>3</code></p>
         </div>
         </form>
 
@@ -3109,7 +3283,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-course">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -3118,458 +3292,12 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
+x-ratelimit-remaining: 41
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Call to a member function courses() on null&quot;,
-    &quot;exception&quot;: &quot;Error&quot;,
-    &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\app\\Http\\Controllers\\Api\\CourseController.php&quot;,
-    &quot;line&quot;: 24,
-    &quot;trace&quot;: [
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php&quot;,
-            &quot;line&quot;: 54,
-            &quot;function&quot;: &quot;index&quot;,
-            &quot;class&quot;: &quot;App\\Http\\Controllers\\Api\\CourseController&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php&quot;,
-            &quot;line&quot;: 43,
-            &quot;function&quot;: &quot;callAction&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Controller&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php&quot;,
-            &quot;line&quot;: 259,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\ControllerDispatcher&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php&quot;,
-            &quot;line&quot;: 205,
-            &quot;function&quot;: &quot;runController&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 799,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Routing\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php&quot;,
-            &quot;line&quot;: 50,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 159,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 125,
-            &quot;function&quot;: &quot;handleRequest&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
-            &quot;line&quot;: 87,
-            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 798,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 777,
-            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 741,
-            &quot;function&quot;: &quot;runRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
-            &quot;line&quot;: 730,
-            &quot;function&quot;: &quot;dispatchToRoute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
-            &quot;line&quot;: 200,
-            &quot;function&quot;: &quot;dispatch&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 141,
-            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\livewire\\livewire\\src\\DisableBrowserCache.php&quot;,
-            &quot;line&quot;: 19,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Livewire\\DisableBrowserCache&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php&quot;,
-            &quot;line&quot;: 31,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
-            &quot;line&quot;: 21,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php&quot;,
-            &quot;line&quot;: 40,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php&quot;,
-            &quot;line&quot;: 27,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php&quot;,
-            &quot;line&quot;: 99,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php&quot;,
-            &quot;line&quot;: 62,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php&quot;,
-            &quot;line&quot;: 39,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
-            &quot;line&quot;: 116,
-            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
-            &quot;line&quot;: 175,
-            &quot;function&quot;: &quot;then&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
-            &quot;line&quot;: 144,
-            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 299,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 287,
-            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 92,
-            &quot;function&quot;: &quot;makeApiCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 45,
-            &quot;function&quot;: &quot;makeResponseCall&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 209,
-            &quot;function&quot;: &quot;__invoke&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 163,
-            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
-            &quot;line&quot;: 95,
-            &quot;function&quot;: &quot;fetchResponses&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 124,
-            &quot;function&quot;: &quot;processRoute&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 71,
-            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
-            &quot;line&quot;: 49,
-            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php&quot;,
-            &quot;line&quot;: 51,
-            &quot;function&quot;: &quot;get&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 36,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php&quot;,
-            &quot;line&quot;: 41,
-            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 93,
-            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;callBoundMethod&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php&quot;,
-            &quot;line&quot;: 662,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
-            &quot;type&quot;: &quot;::&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
-            &quot;line&quot;: 211,
-            &quot;function&quot;: &quot;call&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\symfony\\console\\Command\\Command.php&quot;,
-            &quot;line&quot;: 326,
-            &quot;function&quot;: &quot;execute&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
-            &quot;line&quot;: 180,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
-            &quot;line&quot;: 1081,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
-            &quot;line&quot;: 320,
-            &quot;function&quot;: &quot;doRunCommand&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\symfony\\console\\Application.php&quot;,
-            &quot;line&quot;: 174,
-            &quot;function&quot;: &quot;doRun&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php&quot;,
-            &quot;line&quot;: 201,
-            &quot;function&quot;: &quot;run&quot;,
-            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        },
-        {
-            &quot;file&quot;: &quot;C:\\EveryThings\\jawad\\Project\\VisualStudioCode\\Laravel\\Mustafa\\V1\\dtc_server\\artisan&quot;,
-            &quot;line&quot;: 35,
-            &quot;function&quot;: &quot;handle&quot;,
-            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
-            &quot;type&quot;: &quot;-&gt;&quot;
-        }
-    ]
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -3704,7 +3432,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 40
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3842,7 +3570,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 39
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -3992,7 +3720,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 38
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -4146,7 +3874,7 @@ fetch(url, {
             <pre><code class="language-http">content-type: text/html; charset=UTF-8
 cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 53
+x-ratelimit-remaining: 37
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -4266,13 +3994,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"is_male\": true,
-    \"social_status\": \"asperiores\",
-    \"nationality\": \"consequuntur\",
-    \"address\": \"eius\",
-    \"date_of_birth\": \"2023-09-24T00:00:53\",
-    \"student_type\": \"recusandae\",
-    \"work_type\": \"voluptatibus\",
+    \"is_male\": false,
+    \"social_status\": \"odit\",
+    \"nationality\": \"debitis\",
+    \"address\": \"dolor\",
+    \"date_of_birth\": \"2023-09-26T13:19:34\",
+    \"student_type\": \"quod\",
+    \"work_type\": \"commodi\",
     \"is_morning\": false
 }"
 </code></pre></div>
@@ -4290,13 +4018,13 @@ const headers = {
 };
 
 let body = {
-    "is_male": true,
-    "social_status": "asperiores",
-    "nationality": "consequuntur",
-    "address": "eius",
-    "date_of_birth": "2023-09-24T00:00:53",
-    "student_type": "recusandae",
-    "work_type": "voluptatibus",
+    "is_male": false,
+    "social_status": "odit",
+    "nationality": "debitis",
+    "address": "dolor",
+    "date_of_birth": "2023-09-26T13:19:34",
+    "student_type": "quod",
+    "work_type": "commodi",
     "is_morning": false
 };
 
@@ -4310,20 +4038,18 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-course--course_id--register">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 36
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code>Empty response</code>
  </pre>
     </span>
 <span id="execution-results-POSTapi-course--course_id--register" hidden>
@@ -4438,7 +4164,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>social_status</code></b>&nbsp;&nbsp;
@@ -4446,10 +4172,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="social_status"                data-endpoint="POSTapi-course--course_id--register"
-               value="asperiores"
+               value="odit"
                data-component="body">
     <br>
-<p>Example: <code>asperiores</code></p>
+<p>Example: <code>odit</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>nationality</code></b>&nbsp;&nbsp;
@@ -4457,10 +4183,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="nationality"                data-endpoint="POSTapi-course--course_id--register"
-               value="consequuntur"
+               value="debitis"
                data-component="body">
     <br>
-<p>Example: <code>consequuntur</code></p>
+<p>Example: <code>debitis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -4468,10 +4194,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-course--course_id--register"
-               value="eius"
+               value="dolor"
                data-component="body">
     <br>
-<p>Example: <code>eius</code></p>
+<p>Example: <code>dolor</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>date_of_birth</code></b>&nbsp;&nbsp;
@@ -4479,10 +4205,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date_of_birth"                data-endpoint="POSTapi-course--course_id--register"
-               value="2023-09-24T00:00:53"
+               value="2023-09-26T13:19:34"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2023-09-24T00:00:53</code></p>
+<p>Must be a valid date. Example: <code>2023-09-26T13:19:34</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>student_type</code></b>&nbsp;&nbsp;
@@ -4490,10 +4216,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="student_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="recusandae"
+               value="quod"
                data-component="body">
     <br>
-<p>Example: <code>recusandae</code></p>
+<p>Example: <code>quod</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>work_type</code></b>&nbsp;&nbsp;
@@ -4501,10 +4227,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="work_type"                data-endpoint="POSTapi-course--course_id--register"
-               value="voluptatibus"
+               value="commodi"
                data-component="body">
     <br>
-<p>Example: <code>voluptatibus</code></p>
+<p>Example: <code>commodi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>is_morning</code></b>&nbsp;&nbsp;
@@ -4546,14 +4272,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/section/commodi/departments" \
+    --get "http://localhost:8000/api/section/1/departments" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/section/commodi/departments"
+    "http://localhost:8000/api/section/1/departments"
 );
 
 const headers = {
@@ -4657,14 +4383,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>sectionId</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
-                <input type="text" style="display: none"
-                              name="sectionId"                data-endpoint="GETapi-section--sectionId--departments"
-               value="commodi"
+                <input type="number" style="display: none"
+               step="any"               name="sectionId"                data-endpoint="GETapi-section--sectionId--departments"
+               value="1"
                data-component="url">
     <br>
-<p>Example: <code>commodi</code></p>
+<p>Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -4689,10 +4415,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"subject\": \"ut\",
-    \"mark\": 8,
-    \"reason\": \"sed\",
-    \"teacher_id\": \"minima\"
+    \"subject\": \"incidunt\",
+    \"mark\": 3,
+    \"reason\": \"est\",
+    \"teacher_id\": \"eum\"
 }"
 </code></pre></div>
 
@@ -4708,10 +4434,10 @@ const headers = {
 };
 
 let body = {
-    "subject": "ut",
-    "mark": 8,
-    "reason": "sed",
-    "teacher_id": "minima"
+    "subject": "incidunt",
+    "mark": 3,
+    "reason": "est",
+    "teacher_id": "eum"
 };
 
 fetch(url, {
@@ -4857,10 +4583,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="subject"                data-endpoint="POSTapi-editMark"
-               value="ut"
+               value="incidunt"
                data-component="body">
     <br>
-<p>Example: <code>ut</code></p>
+<p>Example: <code>incidunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>mark</code></b>&nbsp;&nbsp;
@@ -4868,10 +4594,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="mark"                data-endpoint="POSTapi-editMark"
-               value="8"
+               value="3"
                data-component="body">
     <br>
-<p>Must be at least 0. Must not be greater than 100. Example: <code>8</code></p>
+<p>Must be at least 0. Must not be greater than 100. Example: <code>3</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>reason</code></b>&nbsp;&nbsp;
@@ -4879,10 +4605,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="reason"                data-endpoint="POSTapi-editMark"
-               value="sed"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>sed</code></p>
+<p>Example: <code>est</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>teacher_id</code></b>&nbsp;&nbsp;
@@ -4890,10 +4616,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="teacher_id"                data-endpoint="POSTapi-editMark"
-               value="minima"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>minima</code></p>
+<p>Example: <code>eum</code></p>
         </div>
         </form>
 
@@ -4942,11 +4668,13 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 33
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;message&quot;: &quot;unauthorized&quot;
 }</code>
  </pre>
     </span>
@@ -5042,8 +4770,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"text\": \"similique\",
-    \"department_id\": 5857.264708
+    \"text\": \"rem\",
+    \"department_id\": 2.6864
 }"
 </code></pre></div>
 
@@ -5059,8 +4787,8 @@ const headers = {
 };
 
 let body = {
-    "text": "similique",
-    "department_id": 5857.264708
+    "text": "rem",
+    "department_id": 2.6864
 };
 
 fetch(url, {
@@ -5203,10 +4931,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="text"                data-endpoint="POSTapi-move"
-               value="similique"
+               value="rem"
                data-component="body">
     <br>
-<p>Example: <code>similique</code></p>
+<p>Example: <code>rem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -5214,10 +4942,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="POSTapi-move"
-               value="5857.264708"
+               value="2.6864"
                data-component="body">
     <br>
-<p>Example: <code>5857.264708</code></p>
+<p>Example: <code>2.6864</code></p>
         </div>
         </form>
 
@@ -5265,7 +4993,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-note">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -5273,11 +5001,13 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -5382,9 +5112,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"molestiae\",
-    \"description\": \"Nisi soluta ea magnam harum ut sit.\",
-    \"note_category_id\": 14
+    \"title\": \"commodi\",
+    \"description\": \"Harum doloremque aliquam officia maiores et veniam suscipit.\",
+    \"note_category_id\": 7
 }"
 </code></pre></div>
 
@@ -5401,9 +5131,9 @@ const headers = {
 };
 
 let body = {
-    "title": "molestiae",
-    "description": "Nisi soluta ea magnam harum ut sit.",
-    "note_category_id": 14
+    "title": "commodi",
+    "description": "Harum doloremque aliquam officia maiores et veniam suscipit.",
+    "note_category_id": 7
 };
 
 fetch(url, {
@@ -5416,7 +5146,7 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-note">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (201):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -5424,11 +5154,18 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: {
+        &quot;id&quot;: 6,
+        &quot;title&quot;: &quot;commodi&quot;,
+        &quot;description&quot;: &quot;Harum doloremque aliquam officia maiores et veniam suscipit.&quot;,
+        &quot;category&quot;: &quot;Dr. Jessica Franecki III&quot;
+    }
 }</code>
  </pre>
     </span>
@@ -5519,10 +5256,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-note"
-               value="molestiae"
+               value="commodi"
                data-component="body">
     <br>
-<p>Example: <code>molestiae</code></p>
+<p>Example: <code>commodi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -5530,10 +5267,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-note"
-               value="Nisi soluta ea magnam harum ut sit."
+               value="Harum doloremque aliquam officia maiores et veniam suscipit."
                data-component="body">
     <br>
-<p>Example: <code>Nisi soluta ea magnam harum ut sit.</code></p>
+<p>Example: <code>Harum doloremque aliquam officia maiores et veniam suscipit.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -5552,10 +5289,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="note_category_id"                data-endpoint="POSTapi-note"
-               value="14"
+               value="7"
                data-component="body">
     <br>
-<p>Example: <code>14</code></p>
+<p>Example: <code>7</code></p>
         </div>
         </form>
 
@@ -5599,7 +5336,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-note--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -5607,11 +5344,18 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 54
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;title&quot;: &quot;Sit soluta nisi nulla.&quot;,
+        &quot;description&quot;: &quot;Libero veritatis in numquam laboriosam. Maiores distinctio illum eveniet dolorum dolorum dolores. Voluptatum excepturi fugiat omnis ut eos minima molestiae.&quot;,
+        &quot;category&quot;: &quot;Dr. Nelson Wiza&quot;
+    }
 }</code>
  </pre>
     </span>
@@ -5728,8 +5472,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"dolores\",
-    \"description\": \"Tempore placeat quaerat laboriosam ab repudiandae illum.\"
+    \"title\": \"ea\",
+    \"description\": \"Eius ipsam illo qui.\"
 }"
 </code></pre></div>
 
@@ -5746,8 +5490,8 @@ const headers = {
 };
 
 let body = {
-    "title": "dolores",
-    "description": "Tempore placeat quaerat laboriosam ab repudiandae illum."
+    "title": "ea",
+    "description": "Eius ipsam illo qui."
 };
 
 fetch(url, {
@@ -5760,7 +5504,7 @@ fetch(url, {
 
 <span id="example-responses-PUTapi-note--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -5768,11 +5512,18 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 53
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;title&quot;: &quot;ea&quot;,
+        &quot;description&quot;: &quot;Eius ipsam illo qui.&quot;,
+        &quot;category&quot;: &quot;Dr. Nelson Wiza&quot;
+    }
 }</code>
  </pre>
     </span>
@@ -5879,10 +5630,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="PUTapi-note--id-"
-               value="dolores"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>dolores</code></p>
+<p>Example: <code>ea</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -5890,10 +5641,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="PUTapi-note--id-"
-               value="Tempore placeat quaerat laboriosam ab repudiandae illum."
+               value="Eius ipsam illo qui."
                data-component="body">
     <br>
-<p>Example: <code>Tempore placeat quaerat laboriosam ab repudiandae illum.</code></p>
+<p>Example: <code>Eius ipsam illo qui.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>category_name</code></b>&nbsp;&nbsp;
@@ -5959,20 +5710,18 @@ fetch(url, {
 
 <span id="example-responses-DELETEapi-note--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 52
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code>Empty response</code>
  </pre>
     </span>
 <span id="execution-results-DELETEapi-note--id-" hidden>
@@ -6109,7 +5858,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-user-note-categories">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -6117,11 +5866,13 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 51
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -6248,7 +5999,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-notification">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -6256,11 +6007,13 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 32
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -6358,8 +6111,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"consectetur\",
-    \"attachment\": \"officiis\"
+    \"content\": \"sequi\",
+    \"attachment\": \"occaecati\"
 }"
 </code></pre></div>
 
@@ -6376,8 +6129,8 @@ const headers = {
 };
 
 let body = {
-    "content": "consectetur",
-    "attachment": "officiis"
+    "content": "sequi",
+    "attachment": "occaecati"
 };
 
 fetch(url, {
@@ -6390,7 +6143,7 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-post">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (201):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -6398,11 +6151,25 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 50
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: {
+        &quot;id&quot;: 16,
+        &quot;content&quot;: &quot;sequi&quot;,
+        &quot;attachment&quot;: &quot;http://localhost:8000/storage/occaecati&quot;,
+        &quot;department_name&quot;: null,
+        &quot;course_name&quot;: null,
+        &quot;attachment_type&quot;: null,
+        &quot;likes&quot;: 0,
+        &quot;liked_by_me&quot;: false,
+        &quot;saves&quot;: 0,
+        &quot;saved_by_me&quot;: false,
+        &quot;created_at&quot;: &quot;1 second ago&quot;
+    }
 }</code>
  </pre>
     </span>
@@ -6493,10 +6260,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="POSTapi-post"
-               value="consectetur"
+               value="sequi"
                data-component="body">
     <br>
-<p>Example: <code>consectetur</code></p>
+<p>Example: <code>sequi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment</code></b>&nbsp;&nbsp;
@@ -6504,10 +6271,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="POSTapi-post"
-               value="officiis"
+               value="occaecati"
                data-component="body">
     <br>
-<p>Example: <code>officiis</code></p>
+<p>Example: <code>occaecati</code></p>
         </div>
         </form>
 
@@ -6530,13 +6297,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"content\": \"assumenda\",
-    \"attachment\": \"libero\",
-    \"attachment_type\": \"illo\",
-    \"user_id\": 26.824,
-    \"department_id\": 70.804,
-    \"course_id\": 2106.406,
-    \"post_type_id\": 59618.916
+    \"content\": \"eum\",
+    \"attachment\": \"vel\",
+    \"attachment_type\": \"et\",
+    \"user_id\": 110982792.05553137,
+    \"department_id\": 66143681.2863076,
+    \"course_id\": 2.5,
+    \"post_type_id\": 21616.54
 }"
 </code></pre></div>
 
@@ -6553,13 +6320,13 @@ const headers = {
 };
 
 let body = {
-    "content": "assumenda",
-    "attachment": "libero",
-    "attachment_type": "illo",
-    "user_id": 26.824,
-    "department_id": 70.804,
-    "course_id": 2106.406,
-    "post_type_id": 59618.916
+    "content": "eum",
+    "attachment": "vel",
+    "attachment_type": "et",
+    "user_id": 110982792.05553137,
+    "department_id": 66143681.2863076,
+    "course_id": 2.5,
+    "post_type_id": 21616.54
 };
 
 fetch(url, {
@@ -6572,7 +6339,7 @@ fetch(url, {
 
 <span id="example-responses-PUTapi-post--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (422):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -6580,11 +6347,27 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 49
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;message&quot;: &quot;The selected user id is invalid. (and 3 more errors)&quot;,
+    &quot;errors&quot;: {
+        &quot;user_id&quot;: [
+            &quot;The selected user id is invalid.&quot;
+        ],
+        &quot;department_id&quot;: [
+            &quot;The selected department id is invalid.&quot;
+        ],
+        &quot;course_id&quot;: [
+            &quot;The selected course id is invalid.&quot;
+        ],
+        &quot;post_type_id&quot;: [
+            &quot;The selected post type id is invalid.&quot;
+        ]
+    }
 }</code>
  </pre>
     </span>
@@ -6691,10 +6474,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="content"                data-endpoint="PUTapi-post--id-"
-               value="assumenda"
+               value="eum"
                data-component="body">
     <br>
-<p>Example: <code>assumenda</code></p>
+<p>Example: <code>eum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment</code></b>&nbsp;&nbsp;
@@ -6702,10 +6485,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment"                data-endpoint="PUTapi-post--id-"
-               value="libero"
+               value="vel"
                data-component="body">
     <br>
-<p>Example: <code>libero</code></p>
+<p>Example: <code>vel</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>attachment_type</code></b>&nbsp;&nbsp;
@@ -6713,10 +6496,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="attachment_type"                data-endpoint="PUTapi-post--id-"
-               value="illo"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>illo</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>user_id</code></b>&nbsp;&nbsp;
@@ -6724,10 +6507,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="user_id"                data-endpoint="PUTapi-post--id-"
-               value="26.824"
+               value="110982792.05553"
                data-component="body">
     <br>
-<p>Example: <code>26.824</code></p>
+<p>Example: <code>110982792.05553</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>department_id</code></b>&nbsp;&nbsp;
@@ -6735,10 +6518,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="department_id"                data-endpoint="PUTapi-post--id-"
-               value="70.804"
+               value="66143681.286308"
                data-component="body">
     <br>
-<p>Example: <code>70.804</code></p>
+<p>Example: <code>66143681.286308</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
@@ -6746,10 +6529,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="course_id"                data-endpoint="PUTapi-post--id-"
-               value="2106.406"
+               value="2.5"
                data-component="body">
     <br>
-<p>Example: <code>2106.406</code></p>
+<p>Example: <code>2.5</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>post_type_id</code></b>&nbsp;&nbsp;
@@ -6757,10 +6540,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="post_type_id"                data-endpoint="PUTapi-post--id-"
-               value="59618.916"
+               value="21616.54"
                data-component="body">
     <br>
-<p>Example: <code>59618.916</code></p>
+<p>Example: <code>21616.54</code></p>
         </div>
         </form>
 
@@ -6804,20 +6587,18 @@ fetch(url, {
 
 <span id="example-responses-DELETEapi-post--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 48
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code>Empty response</code>
  </pre>
     </span>
 <span id="execution-results-DELETEapi-post--id-" hidden>
@@ -6928,7 +6709,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/post?type=repudiandae" \
+    --get "http://localhost:8000/api/post?type=aut" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -6944,7 +6725,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "type": "repudiandae",
+    "type": "aut",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -6969,7 +6750,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-post">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -6977,11 +6758,53 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 47
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 2,
+            &quot;content&quot;: &quot;Amet consequuntur ducimus ut quod dolore. Et et atque deserunt repellat ipsa impedit voluptatem. Unde in quae eos harum.&quot;,
+            &quot;attachment&quot;: &quot;http://localhost:8000/storage/et&quot;,
+            &quot;department_name&quot;: &quot;Shane Mraz&quot;,
+            &quot;course_name&quot;: &quot;Ms. Flossie Hansen&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;15 minutes ago&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;content&quot;: &quot;Velit ea vero officia laudantium sit deserunt nobis. Aut omnis est sit temporibus doloremque. Et quia qui a nostrum expedita ab molestiae. Veritatis dolores iste perspiciatis facilis consequatur.&quot;,
+            &quot;attachment&quot;: &quot;http://localhost:8000/storage/eius&quot;,
+            &quot;department_name&quot;: &quot;Ellie Denesik&quot;,
+            &quot;course_name&quot;: &quot;Otto Carter V&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 0,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;15 minutes ago&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;content&quot;: &quot;Et aut assumenda unde a. Quia nisi accusantium eius ad corporis. Architecto temporibus et esse. Qui explicabo nesciunt magni minima enim accusamus.&quot;,
+            &quot;attachment&quot;: &quot;http://localhost:8000/storage/est&quot;,
+            &quot;department_name&quot;: &quot;Fannie Rosenbaum DDS&quot;,
+            &quot;course_name&quot;: &quot;Erling Blick&quot;,
+            &quot;attachment_type&quot;: &quot;file&quot;,
+            &quot;likes&quot;: 0,
+            &quot;liked_by_me&quot;: false,
+            &quot;saves&quot;: 1,
+            &quot;saved_by_me&quot;: false,
+            &quot;created_at&quot;: &quot;15 minutes ago&quot;
+        }
+    ]
 }</code>
  </pre>
     </span>
@@ -7072,10 +6895,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="GETapi-post"
-               value="repudiandae"
+               value="aut"
                data-component="query">
     <br>
-<p>the type of the post (public, department ,course). Example: <code>repudiandae</code></p>
+<p>the type of the post (public, department ,course). Example: <code>aut</code></p>
             </div>
                         <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -7133,7 +6956,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-saved-posts">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -7141,11 +6964,13 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 46
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -7271,20 +7096,18 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-post--post_id--like">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 45
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code>Empty response</code>
  </pre>
     </span>
 <span id="execution-results-POSTapi-post--post_id--like" hidden>
@@ -7421,20 +7244,18 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-post--post_id--save">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 44
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code>Empty response</code>
  </pre>
     </span>
 <span id="execution-results-POSTapi-post--post_id--save" hidden>
@@ -7571,20 +7392,18 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-post--post_id--dislike">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 43
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code>Empty response</code>
  </pre>
     </span>
 <span id="execution-results-POSTapi-post--post_id--dislike" hidden>
@@ -7721,20 +7540,18 @@ fetch(url, {
 
 <span id="example-responses-POSTapi-post--post_id--unsave">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 42
 access-control-allow-origin: *
  </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
+<code>Empty response</code>
  </pre>
     </span>
 <span id="execution-results-POSTapi-post--post_id--unsave" hidden>

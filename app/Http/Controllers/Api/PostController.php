@@ -29,7 +29,7 @@ class PostController extends Controller
                 ->whereHas('postType', fn ($query)  => $query->where('name', 'public'))->latest()->get();
         } else if ($request->type == 'department') {
             $posts = Post::with(['likes', 'saves'])
-                ->whereHas('postType', fn ($query)  => $query->where('name', 'department'))->where('department_id',auth()->user()->department->id)->latest()->get();
+                ->whereHas('postType', fn ($query)  => $query->where('name', 'department'))->where('department_id', auth()->user()->department->id)->latest()->get();
         } else {
             $posts = Post::with(['likes', 'saves'])
                 ->whereHas('postType', fn ($query)  => $query->where('name', 'course'))->latest()->get();
@@ -45,7 +45,7 @@ class PostController extends Controller
     {
         $data = $request->validated();
         $data['user_id'] = auth()->id();
-        $data['department_id'] = auth()->user()->teacher->department_id;
+        $data['section_id'] = auth()->user()->teacher->section_id;
         if ($request->hasFile('attachment')) {
             $file_path = $request->file('attachment')->store('public/Attachments'); // Replace with your actual file path
 
@@ -63,6 +63,7 @@ class PostController extends Controller
                 $data['attachment_type'] = 'file';
             }
         }
+        $data['post_type_id'] = 1;
 
         $move = Post::create($data);
 
@@ -140,7 +141,7 @@ class PostController extends Controller
     {
         $post->update($request->validated());
         $post->refresh();
-        return new postResource($post);
+        return new PostResource($post);
     }
 
     /**
