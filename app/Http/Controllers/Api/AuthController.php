@@ -19,6 +19,7 @@ use App\Models\Teacher;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 use ResetPasswordEmail;
 
 /**
@@ -59,7 +60,7 @@ class AuthController extends Controller
         $role_id = Role::where('name', $role)->first()->id;
         $user = User::create(array_merge($request->validated(), compact('role_id')));
         $user->firebaseTokens()->create(['token' => $request->fcm_token]);
-
+Log::debug($request->file('image'));
         if ($request->hasFile('image')) {
             $photoPath = $request->file('image')->store('public/ProfileImage');
             $user->update(['image' => $photoPath]); // Use update to set the image on the existing user
