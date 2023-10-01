@@ -47,7 +47,7 @@ class PostController extends Controller
         $data['user_id'] = auth()->id();
         $data['section_id'] = auth()->user()->teacher->section_id;
         if ($request->hasFile('attachment')) {
-            $file_path = $request->file('attachment')->store('public/Attachments'); // Replace with your actual file path
+            $file_path = storeImage($request, 'attachment', 'Attachments'); // Replace with your actual file path
 
             // Get the file extension
             $file_info = pathinfo($file_path);

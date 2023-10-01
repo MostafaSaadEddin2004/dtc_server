@@ -60,10 +60,9 @@ class AuthController extends Controller
         $role_id = Role::where('name', $role)->first()->id;
         $user = User::create(array_merge($request->validated(), compact('role_id')));
         $user->firebaseTokens()->create(['token' => $request->fcm_token]);
-Log::debug($request->file('image'));
+        Log::debug($request);
         if ($request->hasFile('image')) {
-            $photoPath = $request->file('image')->store('public/ProfileImage');
-            $user->update(['image' => $photoPath]); // Use update to set the image on the existing user
+            $user->update(['image' => storeImage($request, 'image', 'ProfileImage')]); // Use update to set the image on the existing user
         }
 
         $token = $user->createToken('authToken')->plainTextToken;
@@ -181,9 +180,20 @@ Log::debug($request->file('image'));
 
     public function getRole()
     {
-        $role = auth()->user()->role;
+        $user = auth()->user();
+        $role = $user->role;
+        $isRegistrationFinished = true;
+        if($role->name == 'student' && $user->registeration == null){
+            $isRegistrationFinished = false;
+        }else if($role->name == 'teacher' && $user->teacher == null){
+            $isRegistrationFinished = false;
+        }else if($role->name == 'teacher_browser' && $user->teacher == null){
+            $isRegistrationFinished = false;
+        }
+
         return response([
             'role' => $role->name,
+            'is_registration_finished' =>  $isRegistrationFinished,
         ]);
     }
     /**

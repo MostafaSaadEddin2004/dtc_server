@@ -116,7 +116,7 @@ class TeacherResource extends Resource
                                 'body' => 'تم قبول طلب تسجيلك كرئيس قسم.',
                             ]);
                         }
-                        $record->user->update(['role_id' => 5]);
+                        $record->user->update(['role_id' => $record->is_department_head ? 5 : 3]);
                     }),
                 Tables\Actions\Action::make('cancel')
                     ->action(function (Teacher $record) {

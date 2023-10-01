@@ -29,7 +29,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: sequi
+        example: est
         type: string
         enumValues: []
         custom: []
@@ -37,18 +37,18 @@ endpoints:
         name: attachment
         description: ''
         required: false
-        example: occaecati
+        example: qui
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: sequi
-      attachment: occaecati
+      content: est
+      attachment: qui
     fileParameters: []
     responses:
       -
-        status: 201
-        content: '{"data":{"id":16,"content":"sequi","attachment":"http:\/\/localhost:8000\/storage\/occaecati","department_name":null,"course_name":null,"attachment_type":null,"likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 second ago"}}'
+        status: 401
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -61,7 +61,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -102,7 +102,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: eum
+        example: consequatur
         type: string
         enumValues: []
         custom: []
@@ -110,7 +110,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: vel
+        example: dolor
         type: string
         enumValues: []
         custom: []
@@ -118,7 +118,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: et
+        example: sint
         type: string
         enumValues: []
         custom: []
@@ -126,7 +126,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 110982792.05553
+        example: 1.6481909
         type: number
         enumValues: []
         custom: []
@@ -134,7 +134,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 66143681.286308
+        example: 2498270.05291
         type: number
         enumValues: []
         custom: []
@@ -142,7 +142,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 2.5
+        example: 4031.44018
         type: number
         enumValues: []
         custom: []
@@ -150,23 +150,23 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 21616.54
+        example: 415372402.8
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: eum
-      attachment: vel
-      attachment_type: et
-      user_id: 110982792.05553
-      department_id: 66143681.286308
-      course_id: 2.5
-      post_type_id: 21616.54
+      content: consequatur
+      attachment: dolor
+      attachment_type: sint
+      user_id: 1.6481909
+      department_id: 2498270.05291
+      course_id: 4031.44018
+      post_type_id: 415372402.8
     fileParameters: []
     responses:
       -
-        status: 422
-        content: '{"message":"The selected user id is invalid. (and 3 more errors)","errors":{"user_id":["The selected user id is invalid."],"department_id":["The selected department id is invalid."],"course_id":["The selected course id is invalid."],"post_type_id":["The selected post type id is invalid."]}}'
+        status: 401
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -179,7 +179,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -219,10 +219,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 204
-        content: ''
+        status: 401
+        content: '{"message":"unauthorized"}'
         headers:
           cache-control: 'no-cache, private'
+          content-type: application/json
           x-ratelimit-limit: '60'
           x-ratelimit-remaining: '48'
           access-control-allow-origin: '*'
@@ -232,7 +233,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -261,18 +262,18 @@ endpoints:
         name: type
         description: 'the type of the post (public, department ,course).'
         required: false
-        example: aut
+        example: doloribus
         type: string
         enumValues: []
         custom: []
     cleanQueryParameters:
-      type: aut
+      type: doloribus
     bodyParameters:
       type:
         name: type
         description: ''
         required: true
-        example: course
+        example: public
         type: string
         enumValues:
           - public
@@ -280,12 +281,12 @@ endpoints:
           - course
         custom: []
     cleanBodyParameters:
-      type: course
+      type: public
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":[{"id":2,"content":"Amet consequuntur ducimus ut quod dolore. Et et atque deserunt repellat ipsa impedit voluptatem. Unde in quae eos harum.","attachment":"http:\/\/localhost:8000\/storage\/et","department_name":"Shane Mraz","course_name":"Ms. Flossie Hansen","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"15 minutes ago"},{"id":5,"content":"Velit ea vero officia laudantium sit deserunt nobis. Aut omnis est sit temporibus doloremque. Et quia qui a nostrum expedita ab molestiae. Veritatis dolores iste perspiciatis facilis consequatur.","attachment":"http:\/\/localhost:8000\/storage\/eius","department_name":"Ellie Denesik","course_name":"Otto Carter V","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"15 minutes ago"},{"id":14,"content":"Et aut assumenda unde a. Quia nisi accusantium eius ad corporis. Architecto temporibus et esse. Qui explicabo nesciunt magni minima enim accusamus.","attachment":"http:\/\/localhost:8000\/storage\/est","department_name":"Fannie Rosenbaum DDS","course_name":"Erling Blick","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"15 minutes ago"}]}'
+        content: '{"data":[{"id":10,"content":"Temporibus ut nobis repellendus voluptatem velit. Facilis distinctio quia reprehenderit saepe et veritatis consequatur. Quae provident qui quasi quia.","attachment":"http:\/\/localhost:8000\/storage\/at","department_name":"Myrtle Cormier","course_name":"Marilie Sawayn","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 hour ago"},{"id":8,"content":"Recusandae omnis cupiditate aut voluptatum ab. Quia voluptatibus laborum repudiandae quasi ipsum. Aspernatur quae quod omnis omnis iusto sit ea.","attachment":"http:\/\/localhost:8000\/storage\/suscipit","department_name":"Lauriane Dooley","course_name":"Andreanne Bruen PhD","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 hour ago"},{"id":6,"content":"Non vero incidunt doloremque. Animi aut nihil provident eos autem amet sapiente est. At aliquid in rerum possimus assumenda reiciendis expedita adipisci.","attachment":"http:\/\/localhost:8000\/storage\/doloribus","department_name":"Hubert Bergnaum","course_name":"Oswaldo Boehm","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 hour ago"},{"id":4,"content":"Suscipit illum velit omnis quae saepe. Perferendis sed hic rerum molestias.","attachment":"http:\/\/localhost:8000\/storage\/ut","department_name":"Elissa Hyatt","course_name":"Sadye Farrell","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 hour ago"},{"id":5,"content":"Est magni eveniet numquam officiis pariatur consequuntur quod. Ducimus non quidem consequatur fugiat. Autem maxime fugit eaque omnis sapiente aut. Eum voluptas modi voluptas ut mollitia et.","attachment":"http:\/\/localhost:8000\/storage\/consequatur","department_name":"Ms. Anahi Feeney","course_name":"Pierce Hills Jr.","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 hour ago"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -298,7 +299,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -343,7 +344,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -396,7 +397,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -449,7 +450,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -502,7 +503,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -555,7 +556,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null

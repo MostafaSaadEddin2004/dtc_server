@@ -5,6 +5,7 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 
 use App\Mail\ForgotPasswordMail;
+use App\Traits\HasImage;
 use App\Traits\HasRole;
 use Illuminate\Auth\MustVerifyEmail as AuthMustVerifyEmail;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -24,7 +25,7 @@ use ResetPasswordEmail;
 class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable;
-    use HasRole, AuthMustVerifyEmail;
+    use HasRole, AuthMustVerifyEmail, HasImage;
 
     public function sendResetPasswordEmail($email, $token)
     {
@@ -159,7 +160,7 @@ class User extends Authenticatable implements MustVerifyEmail
     protected function section(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->teacher?->department->section ?? $this->registeration?->department->section,
+            get: fn () => $this->role_id == 2 ? null : $this->teacher?->department->section ?? $this->registeration?->department->section,
         );
     }
 

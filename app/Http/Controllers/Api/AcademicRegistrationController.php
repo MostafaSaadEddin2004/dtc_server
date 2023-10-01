@@ -47,10 +47,10 @@ class AcademicRegistrationController extends Controller
         $data = $request->validated();
         $data['user_id'] = auth()->id();
 
-        $idImagePath = $request->file('id_image')->store('public/AcademicRegistrationImages');
-        $certificateImagePath = $request->file('certificate_image')->store('public/AcademicRegistrationImages');
-        $personalImagePath = $request->file('personal_image')->store('public/AcademicRegistrationImages');
-        $unImagePath = $request->file('un_image')->store('public/AcademicRegistrationImages');
+        $idImagePath = storeImage($request, 'id_image', 'AcademicRegistrationImages');
+        $certificateImagePath = storeImage($request, 'certificate_image', 'AcademicRegistrationImages');
+        $personalImagePath = storeImage($request, 'personal_image', 'AcademicRegistrationImages');
+        $unImagePath = storeImage($request, 'un_image', 'AcademicRegistrationImages');
 
         $data['id_image'] = $idImagePath;
         $data['certificate_image'] = $certificateImagePath;
@@ -59,8 +59,8 @@ class AcademicRegistrationController extends Controller
 
         $user = auth()->user();
 
-        $academicRegistration = AcademicRegistration::create($data);
 
+        $academicRegistration = AcademicRegistration::create($data);
         foreach ($data['department_ids'] as $departmentId) {
             $department = Department::with('departmentMarks')->find($departmentId);
 
@@ -69,9 +69,7 @@ class AcademicRegistrationController extends Controller
                 Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id, 'reserved' => true]);
             } else if ($department->mark_of_this_year <= $data['avg_mark']) {
                 if (!isset($data['department_id'])) {
-
                     $data['department_id'] = $department->id;
-                    // dd($data);
                 }
                 Wish::create(['academic_registration_id' => $academicRegistration->id, 'department_id' => $department->id]);
             } else {
@@ -79,6 +77,7 @@ class AcademicRegistrationController extends Controller
             }
         }
 
+        $academicRegistration->update($data);
 
         $user->update(['role_id' => 2]);
 
@@ -87,7 +86,7 @@ class AcademicRegistrationController extends Controller
 
     /**
      * @response 204
-     * 
+     *
      * @response 400 {
     "message": "التسجيل على المفاضلة غير متاح حالياً. يفتح التسجيل على المفاضلة في 2023-09-22"
 }

@@ -41,7 +41,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -72,7 +72,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: commodi
+        example: omnis
         type: string
         enumValues: []
         custom: []
@@ -80,7 +80,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Harum doloremque aliquam officia maiores et veniam suscipit.'
+        example: 'Sit aut rem itaque repellendus provident saepe sunt.'
         type: string
         enumValues: []
         custom: []
@@ -101,14 +101,14 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: commodi
-      description: 'Harum doloremque aliquam officia maiores et veniam suscipit.'
+      title: omnis
+      description: 'Sit aut rem itaque repellendus provident saepe sunt.'
       note_category_id: 7
     fileParameters: []
     responses:
       -
         status: 201
-        content: '{"data":{"id":6,"title":"commodi","description":"Harum doloremque aliquam officia maiores et veniam suscipit.","category":"Dr. Jessica Franecki III"}}'
+        content: '{"data":{"id":6,"title":"omnis","description":"Sit aut rem itaque repellendus provident saepe sunt.","category":"Nayeli McLaughlin"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -121,7 +121,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -162,7 +162,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"Sit soluta nisi nulla.","description":"Libero veritatis in numquam laboriosam. Maiores distinctio illum eveniet dolorum dolorum dolores. Voluptatum excepturi fugiat omnis ut eos minima molestiae.","category":"Dr. Nelson Wiza"}}'
+        content: '{"data":{"id":1,"title":"Quis aliquam repellat.","description":"Omnis aut aut laboriosam optio. Eos repellat aut est iure vitae reprehenderit. Velit fuga natus in ut ut aut soluta. Minus qui cupiditate non neque dolores alias maxime.","category":"Monserrate Price"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -175,7 +175,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -216,7 +216,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: ea
+        example: magnam
         type: string
         enumValues: []
         custom: []
@@ -224,7 +224,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Eius ipsam illo qui.'
+        example: 'Nam et fugit nesciunt debitis voluptatem.'
         type: string
         enumValues: []
         custom: []
@@ -245,13 +245,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: ea
-      description: 'Eius ipsam illo qui.'
+      title: magnam
+      description: 'Nam et fugit nesciunt debitis voluptatem.'
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"ea","description":"Eius ipsam illo qui.","category":"Dr. Nelson Wiza"}}'
+        content: '{"data":{"id":1,"title":"magnam","description":"Nam et fugit nesciunt debitis voluptatem.","category":"Monserrate Price"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -264,7 +264,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -317,7 +317,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null
@@ -362,7 +362,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
     controller: null
     method: null
     route: null

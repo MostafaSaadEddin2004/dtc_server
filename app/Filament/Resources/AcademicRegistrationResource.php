@@ -96,6 +96,7 @@ class AcademicRegistrationResource extends Resource
                     ->required()
                     ->hiddenOn('edit'),
                 Forms\Components\Select::make('department_id')
+                ->label('Class')
                     ->relationship('department', 'name', fn (Builder $query) => request()->routeIs('filament.resources.academic-registrations.view') ? $query : $query->whereHas('wishes', fn (Builder $q) => $q->where('academic_registration_id', request()->record)))
                     ->nullable(),
             ]);
