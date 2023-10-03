@@ -64,6 +64,11 @@ class Department extends Model
         return $this->hasMany(AcademicStudent::class);
     }
 
+    public function subjects(): HasMany
+    {
+        return $this->hasMany(Subject::class);
+    }
+
     public function certificateType()
     {
         return $this->belongsToMany(CertificateType::class);

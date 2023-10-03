@@ -5,12 +5,15 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\AcademicRegistrationResource\Pages;
 use App\Filament\Resources\AcademicRegistrationResource\RelationManagers\WishesRelationManager;
 use App\Models\AcademicRegistration;
+use Carbon\Carbon;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Database\Eloquent\Builder;
+use Spatie\Valuestore\Valuestore;
 
 class AcademicRegistrationResource extends Resource
 {
@@ -125,7 +128,9 @@ class AcademicRegistrationResource extends Resource
                 // Tables\Columns\TextColumn::make('job_of_parent'),
                 // Tables\Columns\TextColumn::make('phone_of_parent'),
                 // Tables\Columns\TextColumn::make('phone_of_mother'),
-                // Tables\Columns\TextColumn::make('avg_mark'),
+                Tables\Columns\TextColumn::make('avg_mark')
+                ->label('Mark')
+                ->sortable(),
                 // Tables\Columns\TextColumn::make('certificate_year'),
                 // Tables\Columns\TextColumn::make('id_image'),
                 // Tables\Columns\TextColumn::make('certificate_image'),
@@ -135,17 +140,22 @@ class AcademicRegistrationResource extends Resource
                     ->since(),
             ])
             ->filters([
-                //
+                SelectFilter::make('department')
+                    ->relationship('department', 'name')
+                    ->label('Class')
+                    ->searchable()
+                    ->multiple(),
             ])
             ->actions([
                 // Tables\Actions\EditAction::make(),
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\Action::make('accept')
                     ->action(function (AcademicRegistration $record) {
+                        $valueStore = ValueStore::make(config('filament-settings.path'));
                         $record->update(['accepted' => true]);
                         $record->user->notifications()->create([
-                            'title' => 'تسجيل الدخول كطالب',
-                            'body' => 'تم قبول طلب تسجيلك كطالب.',
+                            'title' => 'تسجيل الدخول',
+                            'body' => 'تم قبول طلب تسجيلك بدورة ' . $record->department->name .'. يرجى القدوم في تاريخ ' . Carbon::parse($valueStore->get('interview_at'))->toDateString() . ' لعمل مقابلة.',
                         ]);
                         $record->user->update(['role_id' => 4]);
                         $record->department->students()->create(['user_id' => $record->user->id]);

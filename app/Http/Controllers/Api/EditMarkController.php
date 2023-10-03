@@ -80,4 +80,11 @@ class EditMarkController extends Controller
 
         return TeacherResource::collection($teachers);
     }
+
+    public function subjects()
+    {
+        $subjects = auth()->user()->department->subjects()->get();
+
+        return $subjects;
+    }
 }
