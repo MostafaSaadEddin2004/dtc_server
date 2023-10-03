@@ -19,15 +19,11 @@ class SubjectResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
-    protected static ?string $navigationGroup = 'Teacher';
-
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\Select::make('department_id')
-                ->relationship('department', 'name')
-                ->label('Class')
+                Forms\Components\TextInput::make('department_id')
                     ->required(),
                 Forms\Components\TextInput::make('name')
                     ->required(),
@@ -38,35 +34,31 @@ class SubjectResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('department.name')
-                ->label('Class')
-                ->searchable()
-                ->sortable(),
-                Tables\Columns\TextColumn::make('name')
-                ->searchable()
-                ->sortable(),
+                Tables\Columns\TextColumn::make('department_id'),
+                Tables\Columns\TextColumn::make('name'),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->since(),
+                    ->dateTime(),
+                Tables\Columns\TextColumn::make('updated_at')
+                    ->dateTime(),
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
-
+    
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-
+    
     public static function getPages(): array
     {
         return [
@@ -74,5 +66,5 @@ class SubjectResource extends Resource
             'create' => Pages\CreateSubject::route('/create'),
             'edit' => Pages\EditSubject::route('/{record}/edit'),
         ];
-    }
+    }    
 }

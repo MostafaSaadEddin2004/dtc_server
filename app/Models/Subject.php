@@ -15,4 +15,9 @@ class Subject extends Model
     {
         return $this->belongsTo(Department::class);
     }
+
+    public function editMarks()
+    {
+        return $this->hasMany(EditMark::class);
+    }
 }

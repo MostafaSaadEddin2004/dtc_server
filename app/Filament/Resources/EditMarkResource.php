@@ -34,7 +34,8 @@ class EditMarkResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make("subject"),
+                Select::make("subject_id")
+                ->relationship('subject', 'name'),
                 TextInput::make("mark"),
                 Textarea::make("reason"),
                 Select::make("teacher_id")
@@ -56,7 +57,7 @@ class EditMarkResource extends Resource
                 TextColumn::make("user.first_name_en")
                     ->searchable()
                     ->sortable(),
-                TextColumn::make("subject")->searchable()
+                TextColumn::make("subject.name")->searchable()
                     ->sortable(),
                 TextColumn::make("mark"),
                 TextColumn::make("reason")->limit(25),

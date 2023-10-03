@@ -22,7 +22,7 @@ class StoreEditMarkRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'subject' => ['required', 'string'],
+            'subject_id' => ['required', 'integer', 'exists:subjects,id'],
             'mark' => ['required', 'numeric', 'min:0', 'max:100'],
             'reason' => ['required', 'string'],
             'teacher_id' => ['required', 'exists:teachers,id'],

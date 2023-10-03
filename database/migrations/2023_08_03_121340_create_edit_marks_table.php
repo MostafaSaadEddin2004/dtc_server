@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Subject;
 use App\Models\Teacher;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -16,7 +17,7 @@ return new class extends Migration
 
         Schema::create('edit_marks', function (Blueprint $table) {
             $table->id();
-            $table->string('subject');
+            $table->foreignIdFor(Subject::class)->constrained()->cascadeOnDelete();
             $table->integer('mark');
             $table->string('reason');
             $table->foreignIdFor(Teacher::class)->constrained();
