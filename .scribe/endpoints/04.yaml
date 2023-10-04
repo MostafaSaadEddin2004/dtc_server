@@ -583,7 +583,7 @@ endpoints:
         name: father_name
         description: ''
         required: true
-        example: voluptatem
+        example: in
         type: string
         enumValues: []
         custom: []
@@ -591,7 +591,7 @@ endpoints:
         name: mother_name
         description: ''
         required: true
-        example: iste
+        example: laudantium
         type: string
         enumValues: []
         custom: []
@@ -599,7 +599,7 @@ endpoints:
         name: date_of_birth
         description: 'Must be a valid date.'
         required: true
-        example: '2023-10-04T12:10:04'
+        example: '2023-10-04T12:16:15'
         type: string
         enumValues: []
         custom: []
@@ -607,7 +607,7 @@ endpoints:
         name: place_of_birth
         description: ''
         required: true
-        example: itaque
+        example: minima
         type: string
         enumValues: []
         custom: []
@@ -615,7 +615,7 @@ endpoints:
         name: military
         description: ''
         required: true
-        example: est
+        example: qui
         type: string
         enumValues: []
         custom: []
@@ -623,7 +623,7 @@ endpoints:
         name: current_address
         description: ''
         required: true
-        example: repudiandae
+        example: vel
         type: string
         enumValues: []
         custom: []
@@ -631,7 +631,7 @@ endpoints:
         name: address
         description: ''
         required: true
-        example: natus
+        example: minus
         type: string
         enumValues: []
         custom: []
@@ -639,7 +639,7 @@ endpoints:
         name: name_of_parent
         description: ''
         required: true
-        example: veniam
+        example: quisquam
         type: string
         enumValues: []
         custom: []
@@ -647,7 +647,7 @@ endpoints:
         name: job_of_parent
         description: ''
         required: true
-        example: assumenda
+        example: beatae
         type: string
         enumValues: []
         custom: []
@@ -655,7 +655,7 @@ endpoints:
         name: phone_of_parent
         description: ''
         required: true
-        example: temporibus
+        example: aut
         type: string
         enumValues: []
         custom: []
@@ -663,7 +663,7 @@ endpoints:
         name: phone_of_mother
         description: ''
         required: true
-        example: vel
+        example: est
         type: string
         enumValues: []
         custom: []
@@ -671,7 +671,7 @@ endpoints:
         name: avg_mark
         description: ''
         required: true
-        example: 8
+        example: 6
         type: integer
         enumValues: []
         custom: []
@@ -679,7 +679,7 @@ endpoints:
         name: certificate_year
         description: ''
         required: true
-        example: voluptas
+        example: qui
         type: string
         enumValues: []
         custom: []
@@ -724,19 +724,19 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      father_name: voluptatem
-      mother_name: iste
-      date_of_birth: '2023-10-04T12:10:04'
-      place_of_birth: itaque
-      military: est
-      current_address: repudiandae
-      address: natus
-      name_of_parent: veniam
-      job_of_parent: assumenda
-      phone_of_parent: temporibus
-      phone_of_mother: vel
-      avg_mark: 8
-      certificate_year: voluptas
+      father_name: in
+      mother_name: laudantium
+      date_of_birth: '2023-10-04T12:16:15'
+      place_of_birth: minima
+      military: qui
+      current_address: vel
+      address: minus
+      name_of_parent: quisquam
+      job_of_parent: beatae
+      phone_of_parent: aut
+      phone_of_mother: est
+      avg_mark: 6
+      certificate_year: qui
       department_ids: []
     fileParameters:
       id_image: null

@@ -29,7 +29,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: molestiae
+        example: quod
         type: string
         enumValues: []
         custom: []
@@ -37,18 +37,18 @@ endpoints:
         name: attachment
         description: ''
         required: false
-        example: sit
+        example: ut
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: molestiae
-      attachment: sit
+      content: quod
+      attachment: ut
     fileParameters: []
     responses:
       -
         status: 201
-        content: '{"data":{"id":17,"content":"molestiae","attachment":"http:\/\/localhost:8000\/storage\/sit","department_name":null,"course_name":null,"attachment_type":null,"likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 second ago"}}'
+        content: '{"data":{"id":18,"content":"quod","attachment":"http:\/\/localhost:8000\/storage\/ut","department_name":null,"course_name":null,"attachment_type":null,"likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 second ago"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -61,7 +61,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -102,7 +102,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: quibusdam
+        example: vel
         type: string
         enumValues: []
         custom: []
@@ -110,7 +110,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: et
+        example: dolorum
         type: string
         enumValues: []
         custom: []
@@ -118,7 +118,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: sed
+        example: veritatis
         type: string
         enumValues: []
         custom: []
@@ -126,7 +126,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 1252.16
+        example: 36.221885948
         type: number
         enumValues: []
         custom: []
@@ -134,7 +134,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 675888.12
+        example: 125745733.829
         type: number
         enumValues: []
         custom: []
@@ -142,7 +142,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 194.0
+        example: 288.746104
         type: number
         enumValues: []
         custom: []
@@ -150,18 +150,18 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 258339541.01
+        example: 25981.303
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: quibusdam
-      attachment: et
-      attachment_type: sed
-      user_id: 1252.16
-      department_id: 675888.12
-      course_id: 194.0
-      post_type_id: 258339541.01
+      content: vel
+      attachment: dolorum
+      attachment_type: veritatis
+      user_id: 36.221885948
+      department_id: 125745733.829
+      course_id: 288.746104
+      post_type_id: 25981.303
     fileParameters: []
     responses:
       -
@@ -179,7 +179,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -232,7 +232,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -261,12 +261,12 @@ endpoints:
         name: type
         description: 'the type of the post (public, department ,course).'
         required: false
-        example: expedita
+        example: consectetur
         type: string
         enumValues: []
         custom: []
     cleanQueryParameters:
-      type: expedita
+      type: consectetur
     bodyParameters:
       type:
         name: type
@@ -298,7 +298,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -343,7 +343,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -396,7 +396,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -449,7 +449,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -502,7 +502,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -555,7 +555,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null

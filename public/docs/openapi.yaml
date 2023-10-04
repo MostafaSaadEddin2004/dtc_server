@@ -922,55 +922,55 @@ paths:
                 father_name:
                   type: string
                   description: ''
-                  example: voluptatem
+                  example: in
                 mother_name:
                   type: string
                   description: ''
-                  example: iste
+                  example: laudantium
                 date_of_birth:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-10-04T12:10:04'
+                  example: '2023-10-04T12:16:15'
                 place_of_birth:
                   type: string
                   description: ''
-                  example: itaque
+                  example: minima
                 military:
                   type: string
                   description: ''
-                  example: est
+                  example: qui
                 current_address:
                   type: string
                   description: ''
-                  example: repudiandae
+                  example: vel
                 address:
                   type: string
                   description: ''
-                  example: natus
+                  example: minus
                 name_of_parent:
                   type: string
                   description: ''
-                  example: veniam
+                  example: quisquam
                 job_of_parent:
                   type: string
                   description: ''
-                  example: assumenda
+                  example: beatae
                 phone_of_parent:
                   type: string
                   description: ''
-                  example: temporibus
+                  example: aut
                 phone_of_mother:
                   type: string
                   description: ''
-                  example: vel
+                  example: est
                 avg_mark:
                   type: integer
                   description: ''
-                  example: 8
+                  example: 6
                 certificate_year:
                   type: string
                   description: ''
-                  example: voluptas
+                  example: qui
                 id_image:
                   type: string
                   format: binary
@@ -1026,11 +1026,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 8|G6vjK1bhfJC0IOvtFCYV2hWKMfScHpCbpOo63Tgqda98348a
+                  token: 10|5G98rySIS03sEPbafg2vej7Bj5BU4aU5RyrxXTptc9c22b91
                 properties:
                   token:
                     type: string
-                    example: 8|G6vjK1bhfJC0IOvtFCYV2hWKMfScHpCbpOo63Tgqda98348a
+                    example: 10|5G98rySIS03sEPbafg2vej7Bj5BU4aU5RyrxXTptc9c22b91
       tags:
         - Authentication
       requestBody:
@@ -1055,7 +1055,7 @@ paths:
                 fcm_token:
                   type: string
                   description: ''
-                  example: porro
+                  example: neque
               required:
                 - fcm_token
   /api/auth/register:
@@ -1879,35 +1879,35 @@ paths:
                 first_name_en:
                   type: string
                   description: ''
-                  example: consequuntur
+                  example: aliquam
                 last_name_en:
                   type: string
                   description: ''
-                  example: eveniet
+                  example: accusamus
                 first_name_ar:
                   type: string
                   description: ''
-                  example: ipsa
+                  example: natus
                 last_name_ar:
                   type: string
                   description: ''
-                  example: ullam
+                  example: molestiae
                 phone:
                   type: string
                   description: ''
-                  example: delectus
+                  example: ratione
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: hpfeffer@example.com
+                  example: shawn90@example.org
                 password:
                   type: string
                   description: ''
-                  example: 'pB:}BlixhsIb=~'
+                  example: 'cV!B~*%nBenZ>B9${J3'
                 role:
                   type: string
                   description: ''
-                  example: student_browser
+                  example: teacher
                   enum:
                     - student
                     - teacher
@@ -1920,7 +1920,7 @@ paths:
                 fcm_token:
                   type: string
                   description: ''
-                  example: aut
+                  example: et
               required:
                 - first_name_en
                 - last_name_en
@@ -1982,7 +1982,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: robel.jett@example.org
+                  example: velda71@example.net
               required:
                 - email
   /api/auth/checkForgetPassword:
@@ -2040,15 +2040,15 @@ paths:
                 email:
                   type: string
                   description: ''
-                  example: ipsa
+                  example: voluptatem
                 token:
                   type: string
                   description: ''
-                  example: eos
+                  example: asperiores
                 fcm_token:
                   type: string
                   description: ''
-                  example: blanditiis
+                  example: et
               required:
                 - email
                 - token
@@ -2091,7 +2091,7 @@ paths:
                 type: object
                 example:
                   data:
-                    email: katrina.swaniawski@example.org
+                    email: holly53@example.net
                     first_name_en: 'Dr. Joel Wuckert Sr.'
                     first_name_ar: 'Declan Bergnaum'
                     last_name_en: 'Felicia Cummerata'
@@ -2107,7 +2107,7 @@ paths:
                     properties:
                       email:
                         type: string
-                        example: katrina.swaniawski@example.org
+                        example: holly53@example.net
                       first_name_en:
                         type: string
                         example: 'Dr. Joel Wuckert Sr.'
@@ -2147,7 +2147,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: katrina.swaniawski@example.org
+                  example: holly53@example.net
                 phone:
                   type: string
                   description: ''
@@ -2178,7 +2178,7 @@ paths:
                 type: object
                 example:
                   data:
-                    email: katrina.swaniawski@example.org
+                    email: holly53@example.net
                     first_name_en: 'Dr. Joel Wuckert Sr.'
                     first_name_ar: 'Declan Bergnaum'
                     last_name_en: 'Felicia Cummerata'
@@ -2194,7 +2194,7 @@ paths:
                     properties:
                       email:
                         type: string
-                        example: katrina.swaniawski@example.org
+                        example: holly53@example.net
                       first_name_en:
                         type: string
                         example: 'Dr. Joel Wuckert Sr.'
@@ -2294,31 +2294,31 @@ paths:
                 certificate:
                   type: string
                   description: ''
-                  example: eaque
+                  example: quibusdam
                 specialty:
                   type: string
                   description: ''
-                  example: eveniet
+                  example: tenetur
                 birth_date:
                   type: string
                   description: 'Must be a valid date. Must be a date before <code>10/04/2023</code>.'
-                  example: '2023-04-22'
+                  example: '1999-06-07'
                 current_location:
                   type: string
                   description: ''
-                  example: eius
+                  example: nihil
                 permanent_location:
                   type: string
                   description: ''
-                  example: qui
+                  example: inventore
                 nationality:
                   type: string
                   description: ''
-                  example: deleniti
+                  example: velit
                 section_id:
                   type: integer
                   description: ''
-                  example: 10
+                  example: 18
               required:
                 - certificate
                 - specialty
@@ -2439,31 +2439,31 @@ paths:
                 is_male:
                   type: boolean
                   description: ''
-                  example: true
+                  example: false
                 social_status:
                   type: string
                   description: ''
-                  example: sapiente
+                  example: earum
                 nationality:
                   type: string
                   description: ''
-                  example: est
+                  example: ipsum
                 address:
                   type: string
                   description: ''
-                  example: porro
+                  example: vel
                 date_of_birth:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-10-04T12:10:04'
+                  example: '2023-10-04T12:16:15'
                 student_type:
                   type: string
                   description: ''
-                  example: iusto
+                  example: nihil
                 work_type:
                   type: string
                   description: ''
-                  example: possimus
+                  example: ipsum
                 is_morning:
                   type: boolean
                   description: ''
@@ -2639,19 +2639,19 @@ paths:
                 subject_id:
                   type: integer
                   description: ''
-                  example: 14
+                  example: 3
                 mark:
                   type: number
                   description: 'Must be at least 0. Must not be greater than 100.'
-                  example: 7
+                  example: 24
                 reason:
                   type: string
                   description: ''
-                  example: culpa
+                  example: enim
                 teacher_id:
                   type: string
                   description: ''
-                  example: consequatur
+                  example: in
               required:
                 - subject_id
                 - mark
@@ -4464,11 +4464,11 @@ paths:
                 text:
                   type: string
                   description: ''
-                  example: est
+                  example: blanditiis
                 department_id:
                   type: number
                   description: ''
-                  example: 539807833.21255
+                  example: 2805175.6046
               required:
                 - text
                 - department_id
@@ -4508,26 +4508,26 @@ paths:
                 type: object
                 example:
                   data:
-                    id: 7
-                    title: debitis
-                    description: 'Et amet quos omnis quis culpa labore et.'
-                    category: 'Ivory Bosco'
+                    id: 8
+                    title: nisi
+                    description: 'Repellendus iste necessitatibus odio id vitae.'
+                    category: 'Millie Jaskolski I'
                 properties:
                   data:
                     type: object
                     properties:
                       id:
                         type: integer
-                        example: 7
+                        example: 8
                       title:
                         type: string
-                        example: debitis
+                        example: nisi
                       description:
                         type: string
-                        example: 'Et amet quos omnis quis culpa labore et.'
+                        example: 'Repellendus iste necessitatibus odio id vitae.'
                       category:
                         type: string
-                        example: 'Ivory Bosco'
+                        example: 'Millie Jaskolski I'
       tags:
         - Note
       requestBody:
@@ -4540,11 +4540,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: debitis
+                  example: nisi
                 description:
                   type: string
                   description: ''
-                  example: 'Et amet quos omnis quis culpa labore et.'
+                  example: 'Repellendus iste necessitatibus odio id vitae.'
                 category_name:
                   type: string
                   description: ''
@@ -4552,7 +4552,7 @@ paths:
                 note_category_id:
                   type: integer
                   description: ''
-                  example: 10
+                  example: 5
               required:
                 - title
                 - description
@@ -4608,8 +4608,8 @@ paths:
                 example:
                   data:
                     id: 1
-                    title: repudiandae
-                    description: 'Blanditiis dolor rem natus at voluptates.'
+                    title: mollitia
+                    description: 'Voluptas aut qui eaque.'
                     category: 'Dr. Nelson Wiza'
                 properties:
                   data:
@@ -4620,10 +4620,10 @@ paths:
                         example: 1
                       title:
                         type: string
-                        example: repudiandae
+                        example: mollitia
                       description:
                         type: string
-                        example: 'Blanditiis dolor rem natus at voluptates.'
+                        example: 'Voluptas aut qui eaque.'
                       category:
                         type: string
                         example: 'Dr. Nelson Wiza'
@@ -4639,11 +4639,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: repudiandae
+                  example: mollitia
                 description:
                   type: string
                   description: ''
-                  example: 'Blanditiis dolor rem natus at voluptates.'
+                  example: 'Voluptas aut qui eaque.'
                 category_name:
                   type: string
                   description: ''
@@ -4732,9 +4732,9 @@ paths:
                 type: object
                 example:
                   data:
-                    id: 17
-                    content: molestiae
-                    attachment: 'http://localhost:8000/storage/sit'
+                    id: 18
+                    content: quod
+                    attachment: 'http://localhost:8000/storage/ut'
                     department_name: null
                     course_name: null
                     attachment_type: null
@@ -4749,13 +4749,13 @@ paths:
                     properties:
                       id:
                         type: integer
-                        example: 17
+                        example: 18
                       content:
                         type: string
-                        example: molestiae
+                        example: quod
                       attachment:
                         type: string
-                        example: 'http://localhost:8000/storage/sit'
+                        example: 'http://localhost:8000/storage/ut'
                       department_name:
                         type: string
                         example: null
@@ -4792,11 +4792,11 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: molestiae
+                  example: quod
                 attachment:
                   type: string
                   description: ''
-                  example: sit
+                  example: ut
               required:
                 - content
     get:
@@ -4808,12 +4808,12 @@ paths:
           in: query
           name: type
           description: 'the type of the post (public, department ,course).'
-          example: expedita
+          example: consectetur
           required: false
           schema:
             type: string
             description: 'the type of the post (public, department ,course).'
-            example: expedita
+            example: consectetur
       responses:
         200:
           description: ''
@@ -5021,31 +5021,31 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: quibusdam
+                  example: vel
                 attachment:
                   type: string
                   description: ''
-                  example: et
+                  example: dolorum
                 attachment_type:
                   type: string
                   description: ''
-                  example: sed
+                  example: veritatis
                 user_id:
                   type: number
                   description: ''
-                  example: 1252.16
+                  example: 36.221885948
                 department_id:
                   type: number
                   description: ''
-                  example: 675888.12
+                  example: 125745733.829
                 course_id:
                   type: number
                   description: ''
-                  example: 194.0
+                  example: 288.746104
                 post_type_id:
                   type: number
                   description: ''
-                  example: 258339541.01
+                  example: 25981.303
               required:
                 - content
                 - attachment

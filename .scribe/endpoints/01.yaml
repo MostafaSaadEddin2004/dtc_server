@@ -41,7 +41,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -72,7 +72,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: debitis
+        example: nisi
         type: string
         enumValues: []
         custom: []
@@ -80,7 +80,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Et amet quos omnis quis culpa labore et.'
+        example: 'Repellendus iste necessitatibus odio id vitae.'
         type: string
         enumValues: []
         custom: []
@@ -96,19 +96,19 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 10
+        example: 5
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: debitis
-      description: 'Et amet quos omnis quis culpa labore et.'
-      note_category_id: 10
+      title: nisi
+      description: 'Repellendus iste necessitatibus odio id vitae.'
+      note_category_id: 5
     fileParameters: []
     responses:
       -
         status: 201
-        content: '{"data":{"id":7,"title":"debitis","description":"Et amet quos omnis quis culpa labore et.","category":"Ivory Bosco"}}'
+        content: '{"data":{"id":8,"title":"nisi","description":"Repellendus iste necessitatibus odio id vitae.","category":"Millie Jaskolski I"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -121,7 +121,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -175,7 +175,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -216,7 +216,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: repudiandae
+        example: mollitia
         type: string
         enumValues: []
         custom: []
@@ -224,7 +224,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Blanditiis dolor rem natus at voluptates.'
+        example: 'Voluptas aut qui eaque.'
         type: string
         enumValues: []
         custom: []
@@ -245,13 +245,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: repudiandae
-      description: 'Blanditiis dolor rem natus at voluptates.'
+      title: mollitia
+      description: 'Voluptas aut qui eaque.'
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"repudiandae","description":"Blanditiis dolor rem natus at voluptates.","category":"Dr. Nelson Wiza"}}'
+        content: '{"data":{"id":1,"title":"mollitia","description":"Voluptas aut qui eaque.","category":"Dr. Nelson Wiza"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -264,7 +264,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -317,7 +317,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -362,7 +362,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null

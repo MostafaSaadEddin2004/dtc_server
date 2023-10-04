@@ -32,7 +32,7 @@ endpoints:
         name: text
         description: ''
         required: true
-        example: est
+        example: blanditiis
         type: string
         enumValues: []
         custom: []
@@ -40,13 +40,13 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 539807833.21255
+        example: 2805175.6046
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      text: est
-      department_id: 539807833.21255
+      text: blanditiis
+      department_id: 2805175.6046
     fileParameters: []
     responses:
       -

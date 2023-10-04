@@ -43,7 +43,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -88,7 +88,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -142,7 +142,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -197,7 +197,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -251,7 +251,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
@@ -291,7 +291,7 @@ endpoints:
         name: is_male
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         enumValues: []
         custom: []
@@ -299,7 +299,7 @@ endpoints:
         name: social_status
         description: ''
         required: true
-        example: sapiente
+        example: earum
         type: string
         enumValues: []
         custom: []
@@ -307,7 +307,7 @@ endpoints:
         name: nationality
         description: ''
         required: true
-        example: est
+        example: ipsum
         type: string
         enumValues: []
         custom: []
@@ -315,7 +315,7 @@ endpoints:
         name: address
         description: ''
         required: true
-        example: porro
+        example: vel
         type: string
         enumValues: []
         custom: []
@@ -323,7 +323,7 @@ endpoints:
         name: date_of_birth
         description: 'Must be a valid date.'
         required: true
-        example: '2023-10-04T12:10:04'
+        example: '2023-10-04T12:16:15'
         type: string
         enumValues: []
         custom: []
@@ -331,7 +331,7 @@ endpoints:
         name: student_type
         description: ''
         required: true
-        example: iusto
+        example: nihil
         type: string
         enumValues: []
         custom: []
@@ -339,7 +339,7 @@ endpoints:
         name: work_type
         description: ''
         required: true
-        example: possimus
+        example: ipsum
         type: string
         enumValues: []
         custom: []
@@ -352,13 +352,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      is_male: true
-      social_status: sapiente
-      nationality: est
-      address: porro
-      date_of_birth: '2023-10-04T12:10:04'
-      student_type: iusto
-      work_type: possimus
+      is_male: false
+      social_status: earum
+      nationality: ipsum
+      address: vel
+      date_of_birth: '2023-10-04T12:16:15'
+      student_type: nihil
+      work_type: ipsum
       is_morning: true
     fileParameters: []
     responses:
@@ -376,7 +376,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
+      - 'Bearer 9|Gn1yVDsQDknGZV6jI2P6VYVMmTdQSkqdLDCl7f80fe08d3ff'
     controller: null
     method: null
     route: null
