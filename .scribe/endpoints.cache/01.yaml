@@ -43,7 +43,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -74,7 +74,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: omnis
+        example: debitis
         type: string
         enumValues: []
         custom: []
@@ -82,7 +82,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Sit aut rem itaque repellendus provident saepe sunt.'
+        example: 'Et amet quos omnis quis culpa labore et.'
         type: string
         enumValues: []
         custom: []
@@ -98,19 +98,19 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 7
+        example: 10
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: omnis
-      description: 'Sit aut rem itaque repellendus provident saepe sunt.'
-      note_category_id: 7
+      title: debitis
+      description: 'Et amet quos omnis quis culpa labore et.'
+      note_category_id: 10
     fileParameters: []
     responses:
       -
         status: 201
-        content: '{"data":{"id":6,"title":"omnis","description":"Sit aut rem itaque repellendus provident saepe sunt.","category":"Nayeli McLaughlin"}}'
+        content: '{"data":{"id":7,"title":"debitis","description":"Et amet quos omnis quis culpa labore et.","category":"Ivory Bosco"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -123,7 +123,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -164,7 +164,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"Quis aliquam repellat.","description":"Omnis aut aut laboriosam optio. Eos repellat aut est iure vitae reprehenderit. Velit fuga natus in ut ut aut soluta. Minus qui cupiditate non neque dolores alias maxime.","category":"Monserrate Price"}}'
+        content: '{"data":{"id":1,"title":"Sit soluta nisi nulla.","description":"Libero veritatis in numquam laboriosam. Maiores distinctio illum eveniet dolorum dolorum dolores. Voluptatum excepturi fugiat omnis ut eos minima molestiae.","category":"Dr. Nelson Wiza"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -177,7 +177,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -218,7 +218,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: magnam
+        example: repudiandae
         type: string
         enumValues: []
         custom: []
@@ -226,7 +226,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Nam et fugit nesciunt debitis voluptatem.'
+        example: 'Blanditiis dolor rem natus at voluptates.'
         type: string
         enumValues: []
         custom: []
@@ -247,13 +247,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: magnam
-      description: 'Nam et fugit nesciunt debitis voluptatem.'
+      title: repudiandae
+      description: 'Blanditiis dolor rem natus at voluptates.'
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"magnam","description":"Nam et fugit nesciunt debitis voluptatem.","category":"Monserrate Price"}}'
+        content: '{"data":{"id":1,"title":"repudiandae","description":"Blanditiis dolor rem natus at voluptates.","category":"Dr. Nelson Wiza"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -266,7 +266,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -319,7 +319,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
@@ -364,7 +364,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer 8|FSfqQ79VKLYmOosJWxYMIcyrMRC3U5OGmMVZn9DQd2fcd0c7'
+      - 'Bearer 3|QpadKoaFBW2F0mY4KsceJbpdCJR0u8ldRjlmPeHp3bed3a3d'
     controller: null
     method: null
     route: null
