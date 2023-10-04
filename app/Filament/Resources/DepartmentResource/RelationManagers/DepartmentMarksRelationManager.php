@@ -39,7 +39,7 @@ class DepartmentMarksRelationManager extends RelationManager
                     ->minValue(2023)
                     ->required(),
                 Select::make('certificate_type_id')
-                ->relationship('certificateType', 'name')
+                    ->relationship('certificateType', 'name')
                     ->required(),
             ]);
     }
