@@ -72,7 +72,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: nisi
+        example: veniam
         type: string
         enumValues: []
         custom: []
@@ -80,7 +80,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Repellendus iste necessitatibus odio id vitae.'
+        example: 'Magnam hic non asperiores cupiditate vel.'
         type: string
         enumValues: []
         custom: []
@@ -96,19 +96,19 @@ endpoints:
         name: note_category_id
         description: ''
         required: false
-        example: 5
+        example: 4
         type: integer
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: nisi
-      description: 'Repellendus iste necessitatibus odio id vitae.'
-      note_category_id: 5
+      title: veniam
+      description: 'Magnam hic non asperiores cupiditate vel.'
+      note_category_id: 4
     fileParameters: []
     responses:
       -
         status: 201
-        content: '{"data":{"id":8,"title":"nisi","description":"Repellendus iste necessitatibus odio id vitae.","category":"Millie Jaskolski I"}}'
+        content: '{"data":{"id":10,"title":"veniam","description":"Magnam hic non asperiores cupiditate vel.","category":"Jaeden Jacobson"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -216,7 +216,7 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: mollitia
+        example: eius
         type: string
         enumValues: []
         custom: []
@@ -224,7 +224,7 @@ endpoints:
         name: description
         description: ''
         required: true
-        example: 'Voluptas aut qui eaque.'
+        example: 'Voluptatem voluptatibus molestiae similique.'
         type: string
         enumValues: []
         custom: []
@@ -245,13 +245,13 @@ endpoints:
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: mollitia
-      description: 'Voluptas aut qui eaque.'
+      title: eius
+      description: 'Voluptatem voluptatibus molestiae similique.'
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":{"id":1,"title":"mollitia","description":"Voluptas aut qui eaque.","category":"Dr. Nelson Wiza"}}'
+        content: '{"data":{"id":1,"title":"eius","description":"Voluptatem voluptatibus molestiae similique.","category":"Dr. Nelson Wiza"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

@@ -29,7 +29,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: quod
+        example: consequatur
         type: string
         enumValues: []
         custom: []
@@ -37,18 +37,18 @@ endpoints:
         name: attachment
         description: ''
         required: false
-        example: ut
+        example: in
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: quod
-      attachment: ut
+      content: consequatur
+      attachment: in
     fileParameters: []
     responses:
       -
         status: 201
-        content: '{"data":{"id":18,"content":"quod","attachment":"http:\/\/localhost:8000\/storage\/ut","department_name":null,"course_name":null,"attachment_type":null,"likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 second ago"}}'
+        content: '{"data":{"id":21,"content":"consequatur","attachment":"http:\/\/localhost:8000\/storage\/in","department_name":null,"course_name":null,"attachment_type":null,"likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 second ago"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -102,7 +102,7 @@ endpoints:
         name: content
         description: ''
         required: true
-        example: vel
+        example: quaerat
         type: string
         enumValues: []
         custom: []
@@ -110,7 +110,7 @@ endpoints:
         name: attachment
         description: ''
         required: true
-        example: dolorum
+        example: repellendus
         type: string
         enumValues: []
         custom: []
@@ -118,7 +118,7 @@ endpoints:
         name: attachment_type
         description: ''
         required: true
-        example: veritatis
+        example: quo
         type: string
         enumValues: []
         custom: []
@@ -126,7 +126,7 @@ endpoints:
         name: user_id
         description: ''
         required: true
-        example: 36.221885948
+        example: 600439752.11
         type: number
         enumValues: []
         custom: []
@@ -134,7 +134,7 @@ endpoints:
         name: department_id
         description: ''
         required: true
-        example: 125745733.829
+        example: 42897.02795516
         type: number
         enumValues: []
         custom: []
@@ -142,7 +142,7 @@ endpoints:
         name: course_id
         description: ''
         required: true
-        example: 288.746104
+        example: 0.0
         type: number
         enumValues: []
         custom: []
@@ -150,18 +150,18 @@ endpoints:
         name: post_type_id
         description: ''
         required: true
-        example: 25981.303
+        example: 2846047.9211691
         type: number
         enumValues: []
         custom: []
     cleanBodyParameters:
-      content: vel
-      attachment: dolorum
-      attachment_type: veritatis
-      user_id: 36.221885948
-      department_id: 125745733.829
-      course_id: 288.746104
-      post_type_id: 25981.303
+      content: quaerat
+      attachment: repellendus
+      attachment_type: quo
+      user_id: 600439752.11
+      department_id: 42897.02795516
+      course_id: 0.0
+      post_type_id: 2846047.9211691
     fileParameters: []
     responses:
       -
@@ -261,18 +261,18 @@ endpoints:
         name: type
         description: 'the type of the post (public, department ,course).'
         required: false
-        example: consectetur
+        example: quam
         type: string
         enumValues: []
         custom: []
     cleanQueryParameters:
-      type: consectetur
+      type: quam
     bodyParameters:
       type:
         name: type
         description: ''
         required: true
-        example: course
+        example: public
         type: string
         enumValues:
           - public
@@ -280,12 +280,12 @@ endpoints:
           - course
         custom: []
     cleanBodyParameters:
-      type: course
+      type: public
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":[{"id":2,"content":"Amet consequuntur ducimus ut quod dolore. Et et atque deserunt repellat ipsa impedit voluptatem. Unde in quae eos harum.","attachment":"http:\/\/localhost:8000\/storage\/et","department_name":"Shane Mraz","course_name":"Ms. Flossie Hansen","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 week ago"},{"id":5,"content":"Velit ea vero officia laudantium sit deserunt nobis. Aut omnis est sit temporibus doloremque. Et quia qui a nostrum expedita ab molestiae. Veritatis dolores iste perspiciatis facilis consequatur.","attachment":"http:\/\/localhost:8000\/storage\/eius","department_name":"Ellie Denesik","course_name":"Otto Carter V","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 week ago"},{"id":14,"content":"Et aut assumenda unde a. Quia nisi accusantium eius ad corporis. Architecto temporibus et esse. Qui explicabo nesciunt magni minima enim accusamus.","attachment":"http:\/\/localhost:8000\/storage\/est","department_name":"Fannie Rosenbaum DDS","course_name":"Erling Blick","attachment_type":"file","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"1 week ago"}]}'
+        content: '{"data":[{"id":1,"content":"Maiores et a nostrum debitis doloribus. Expedita corporis facere saepe unde reprehenderit sed temporibus fugit. Nesciunt magni ullam quisquam neque et natus. Atque porro sit vitae.","attachment":"http:\/\/localhost:8000\/storage\/reprehenderit","department_name":"Prof. Orlo Schumm","course_name":"Kenyatta Steuber Jr.","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 week ago","is_open":false},{"id":4,"content":"Soluta quasi incidunt qui officia. Ducimus molestias veniam explicabo minima occaecati. Vero necessitatibus ipsa autem labore.","attachment":"http:\/\/localhost:8000\/storage\/natus","department_name":"Jake Ernser","course_name":"Kaley Bartoletti","attachment_type":"file","likes":0,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 week ago","is_open":false},{"id":6,"content":"Qui nam ratione veritatis voluptatibus est sit. Illum eaque explicabo odit facere rerum eum. Assumenda possimus similique officiis officia id. Vitae tenetur eaque labore dolorum et in quasi.","attachment":"http:\/\/localhost:8000\/storage\/qui","department_name":"Ms. Bridie DuBuque","course_name":"Frederique Shields III","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 week ago","is_open":false},{"id":7,"content":"Architecto ut quisquam voluptatem qui. Eligendi corporis dignissimos cumque consectetur. Excepturi tenetur voluptas aut tempora.","attachment":"http:\/\/localhost:8000\/storage\/minima","department_name":"Delmer Baumbach","course_name":"Anastacio Rohan","attachment_type":"file","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 week ago","is_open":false},{"id":8,"content":"Totam eaque non est non perferendis quis quos. Officiis non voluptatum nemo non porro officia. Animi reprehenderit ex aut est nihil.","attachment":"http:\/\/localhost:8000\/storage\/minus","department_name":"Mittie Wunsch","course_name":"Guy Runte PhD","attachment_type":"image","likes":1,"liked_by_me":false,"saves":0,"saved_by_me":false,"created_at":"1 week ago","is_open":false},{"id":11,"content":"Vel mollitia quia quo vero numquam aut. Aspernatur est asperiores nemo dolores. Unde neque illo illo adipisci consequatur.","attachment":"http:\/\/localhost:8000\/storage\/eligendi","department_name":"Amina O''Reilly","course_name":"Prof. Junior Fadel","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"1 week ago","is_open":false},{"id":12,"content":"Nemo harum ullam laudantium ut. Nam ut iure modi inventore fuga quisquam nemo.","attachment":"http:\/\/localhost:8000\/storage\/excepturi","department_name":"Buford Berge","course_name":"Jackie Sporer","attachment_type":"image","likes":0,"liked_by_me":false,"saves":1,"saved_by_me":false,"created_at":"1 week ago","is_open":false}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json

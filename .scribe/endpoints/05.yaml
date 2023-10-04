@@ -30,7 +30,7 @@ endpoints:
         name: subject_id
         description: ''
         required: true
-        example: 3
+        example: 7
         type: integer
         enumValues: []
         custom: []
@@ -38,7 +38,7 @@ endpoints:
         name: mark
         description: 'Must be at least 0. Must not be greater than 100.'
         required: true
-        example: 24
+        example: 23
         type: number
         enumValues: []
         custom: []
@@ -46,7 +46,7 @@ endpoints:
         name: reason
         description: ''
         required: true
-        example: enim
+        example: molestiae
         type: string
         enumValues: []
         custom: []
@@ -54,15 +54,15 @@ endpoints:
         name: teacher_id
         description: ''
         required: true
-        example: in
+        example: commodi
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      subject_id: 3
-      mark: 24
-      reason: enim
-      teacher_id: in
+      subject_id: 7
+      mark: 23
+      reason: molestiae
+      teacher_id: commodi
     fileParameters: []
     responses:
       -

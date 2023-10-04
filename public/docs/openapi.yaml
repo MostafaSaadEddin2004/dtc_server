@@ -922,55 +922,55 @@ paths:
                 father_name:
                   type: string
                   description: ''
-                  example: in
+                  example: placeat
                 mother_name:
                   type: string
                   description: ''
-                  example: laudantium
+                  example: occaecati
                 date_of_birth:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-10-04T12:16:15'
+                  example: '2023-10-04T12:36:57'
                 place_of_birth:
                   type: string
                   description: ''
-                  example: minima
+                  example: veniam
                 military:
                   type: string
                   description: ''
-                  example: qui
+                  example: provident
                 current_address:
                   type: string
                   description: ''
-                  example: vel
+                  example: et
                 address:
                   type: string
                   description: ''
-                  example: minus
+                  example: unde
                 name_of_parent:
                   type: string
                   description: ''
-                  example: quisquam
+                  example: nulla
                 job_of_parent:
                   type: string
                   description: ''
-                  example: beatae
+                  example: aut
                 phone_of_parent:
                   type: string
                   description: ''
-                  example: aut
+                  example: illum
                 phone_of_mother:
                   type: string
                   description: ''
-                  example: est
+                  example: vero
                 avg_mark:
                   type: integer
                   description: ''
-                  example: 6
+                  example: 4
                 certificate_year:
                   type: string
                   description: ''
-                  example: qui
+                  example: dolores
                 id_image:
                   type: string
                   format: binary
@@ -1026,11 +1026,11 @@ paths:
               schema:
                 type: object
                 example:
-                  token: 10|5G98rySIS03sEPbafg2vej7Bj5BU4aU5RyrxXTptc9c22b91
+                  token: 14|MfIDagV6O6cuYcDDNzozTLVWIx2GcDaNEMe4syjb96cb2693
                 properties:
                   token:
                     type: string
-                    example: 10|5G98rySIS03sEPbafg2vej7Bj5BU4aU5RyrxXTptc9c22b91
+                    example: 14|MfIDagV6O6cuYcDDNzozTLVWIx2GcDaNEMe4syjb96cb2693
       tags:
         - Authentication
       requestBody:
@@ -1055,7 +1055,7 @@ paths:
                 fcm_token:
                   type: string
                   description: ''
-                  example: neque
+                  example: voluptas
               required:
                 - fcm_token
   /api/auth/register:
@@ -1879,35 +1879,35 @@ paths:
                 first_name_en:
                   type: string
                   description: ''
-                  example: aliquam
+                  example: sint
                 last_name_en:
                   type: string
                   description: ''
-                  example: accusamus
+                  example: unde
                 first_name_ar:
                   type: string
                   description: ''
-                  example: natus
+                  example: et
                 last_name_ar:
                   type: string
                   description: ''
-                  example: molestiae
+                  example: recusandae
                 phone:
                   type: string
                   description: ''
-                  example: ratione
+                  example: et
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: shawn90@example.org
+                  example: dare.tre@example.org
                 password:
                   type: string
                   description: ''
-                  example: 'cV!B~*%nBenZ>B9${J3'
+                  example: ',_CNv5qj43Q(Dxql#uG'
                 role:
                   type: string
                   description: ''
-                  example: teacher
+                  example: teacher_browser
                   enum:
                     - student
                     - teacher
@@ -1920,7 +1920,7 @@ paths:
                 fcm_token:
                   type: string
                   description: ''
-                  example: et
+                  example: culpa
               required:
                 - first_name_en
                 - last_name_en
@@ -1982,7 +1982,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: velda71@example.net
+                  example: levi07@example.net
               required:
                 - email
   /api/auth/checkForgetPassword:
@@ -2040,15 +2040,15 @@ paths:
                 email:
                   type: string
                   description: ''
-                  example: voluptatem
+                  example: sunt
                 token:
                   type: string
                   description: ''
-                  example: asperiores
+                  example: facilis
                 fcm_token:
                   type: string
                   description: ''
-                  example: et
+                  example: quo
               required:
                 - email
                 - token
@@ -2091,7 +2091,7 @@ paths:
                 type: object
                 example:
                   data:
-                    email: holly53@example.net
+                    email: carrie.mosciski@example.net
                     first_name_en: 'Dr. Joel Wuckert Sr.'
                     first_name_ar: 'Declan Bergnaum'
                     last_name_en: 'Felicia Cummerata'
@@ -2107,7 +2107,7 @@ paths:
                     properties:
                       email:
                         type: string
-                        example: holly53@example.net
+                        example: carrie.mosciski@example.net
                       first_name_en:
                         type: string
                         example: 'Dr. Joel Wuckert Sr.'
@@ -2147,7 +2147,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: holly53@example.net
+                  example: carrie.mosciski@example.net
                 phone:
                   type: string
                   description: ''
@@ -2178,7 +2178,7 @@ paths:
                 type: object
                 example:
                   data:
-                    email: holly53@example.net
+                    email: carrie.mosciski@example.net
                     first_name_en: 'Dr. Joel Wuckert Sr.'
                     first_name_ar: 'Declan Bergnaum'
                     last_name_en: 'Felicia Cummerata'
@@ -2194,7 +2194,7 @@ paths:
                     properties:
                       email:
                         type: string
-                        example: holly53@example.net
+                        example: carrie.mosciski@example.net
                       first_name_en:
                         type: string
                         example: 'Dr. Joel Wuckert Sr.'
@@ -2294,31 +2294,31 @@ paths:
                 certificate:
                   type: string
                   description: ''
-                  example: quibusdam
+                  example: laudantium
                 specialty:
                   type: string
                   description: ''
-                  example: tenetur
+                  example: deserunt
                 birth_date:
                   type: string
                   description: 'Must be a valid date. Must be a date before <code>10/04/2023</code>.'
-                  example: '1999-06-07'
+                  example: '1993-12-27'
                 current_location:
                   type: string
                   description: ''
-                  example: nihil
+                  example: eligendi
                 permanent_location:
                   type: string
                   description: ''
-                  example: inventore
+                  example: corporis
                 nationality:
                   type: string
                   description: ''
-                  example: velit
+                  example: ab
                 section_id:
                   type: integer
                   description: ''
-                  example: 18
+                  example: 20
               required:
                 - certificate
                 - specialty
@@ -2439,35 +2439,35 @@ paths:
                 is_male:
                   type: boolean
                   description: ''
-                  example: false
+                  example: true
                 social_status:
                   type: string
                   description: ''
-                  example: earum
+                  example: sequi
                 nationality:
                   type: string
                   description: ''
-                  example: ipsum
+                  example: in
                 address:
                   type: string
                   description: ''
-                  example: vel
+                  example: autem
                 date_of_birth:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2023-10-04T12:16:15'
+                  example: '2023-10-04T12:36:57'
                 student_type:
                   type: string
                   description: ''
-                  example: nihil
+                  example: saepe
                 work_type:
                   type: string
                   description: ''
-                  example: ipsum
+                  example: nobis
                 is_morning:
                   type: boolean
                   description: ''
-                  example: true
+                  example: false
               required:
                 - is_male
                 - social_status
@@ -2639,19 +2639,19 @@ paths:
                 subject_id:
                   type: integer
                   description: ''
-                  example: 3
+                  example: 7
                 mark:
                   type: number
                   description: 'Must be at least 0. Must not be greater than 100.'
-                  example: 24
+                  example: 23
                 reason:
                   type: string
                   description: ''
-                  example: enim
+                  example: molestiae
                 teacher_id:
                   type: string
                   description: ''
-                  example: in
+                  example: commodi
               required:
                 - subject_id
                 - mark
@@ -4464,11 +4464,11 @@ paths:
                 text:
                   type: string
                   description: ''
-                  example: blanditiis
+                  example: perspiciatis
                 department_id:
                   type: number
                   description: ''
-                  example: 2805175.6046
+                  example: 167221664.12921
               required:
                 - text
                 - department_id
@@ -4508,26 +4508,26 @@ paths:
                 type: object
                 example:
                   data:
-                    id: 8
-                    title: nisi
-                    description: 'Repellendus iste necessitatibus odio id vitae.'
-                    category: 'Millie Jaskolski I'
+                    id: 10
+                    title: veniam
+                    description: 'Magnam hic non asperiores cupiditate vel.'
+                    category: 'Jaeden Jacobson'
                 properties:
                   data:
                     type: object
                     properties:
                       id:
                         type: integer
-                        example: 8
+                        example: 10
                       title:
                         type: string
-                        example: nisi
+                        example: veniam
                       description:
                         type: string
-                        example: 'Repellendus iste necessitatibus odio id vitae.'
+                        example: 'Magnam hic non asperiores cupiditate vel.'
                       category:
                         type: string
-                        example: 'Millie Jaskolski I'
+                        example: 'Jaeden Jacobson'
       tags:
         - Note
       requestBody:
@@ -4540,11 +4540,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: nisi
+                  example: veniam
                 description:
                   type: string
                   description: ''
-                  example: 'Repellendus iste necessitatibus odio id vitae.'
+                  example: 'Magnam hic non asperiores cupiditate vel.'
                 category_name:
                   type: string
                   description: ''
@@ -4552,7 +4552,7 @@ paths:
                 note_category_id:
                   type: integer
                   description: ''
-                  example: 5
+                  example: 4
               required:
                 - title
                 - description
@@ -4608,8 +4608,8 @@ paths:
                 example:
                   data:
                     id: 1
-                    title: mollitia
-                    description: 'Voluptas aut qui eaque.'
+                    title: eius
+                    description: 'Voluptatem voluptatibus molestiae similique.'
                     category: 'Dr. Nelson Wiza'
                 properties:
                   data:
@@ -4620,10 +4620,10 @@ paths:
                         example: 1
                       title:
                         type: string
-                        example: mollitia
+                        example: eius
                       description:
                         type: string
-                        example: 'Voluptas aut qui eaque.'
+                        example: 'Voluptatem voluptatibus molestiae similique.'
                       category:
                         type: string
                         example: 'Dr. Nelson Wiza'
@@ -4639,11 +4639,11 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: mollitia
+                  example: eius
                 description:
                   type: string
                   description: ''
-                  example: 'Voluptas aut qui eaque.'
+                  example: 'Voluptatem voluptatibus molestiae similique.'
                 category_name:
                   type: string
                   description: ''
@@ -4732,9 +4732,9 @@ paths:
                 type: object
                 example:
                   data:
-                    id: 18
-                    content: quod
-                    attachment: 'http://localhost:8000/storage/ut'
+                    id: 21
+                    content: consequatur
+                    attachment: 'http://localhost:8000/storage/in'
                     department_name: null
                     course_name: null
                     attachment_type: null
@@ -4749,13 +4749,13 @@ paths:
                     properties:
                       id:
                         type: integer
-                        example: 18
+                        example: 21
                       content:
                         type: string
-                        example: quod
+                        example: consequatur
                       attachment:
                         type: string
-                        example: 'http://localhost:8000/storage/ut'
+                        example: 'http://localhost:8000/storage/in'
                       department_name:
                         type: string
                         example: null
@@ -4792,11 +4792,11 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: quod
+                  example: consequatur
                 attachment:
                   type: string
                   description: ''
-                  example: ut
+                  example: in
               required:
                 - content
     get:
@@ -4808,12 +4808,12 @@ paths:
           in: query
           name: type
           description: 'the type of the post (public, department ,course).'
-          example: consectetur
+          example: quam
           required: false
           schema:
             type: string
             description: 'the type of the post (public, department ,course).'
-            example: consectetur
+            example: quam
       responses:
         200:
           description: ''
@@ -4824,99 +4824,209 @@ paths:
                 example:
                   data:
                     -
-                      id: 2
-                      content: 'Amet consequuntur ducimus ut quod dolore. Et et atque deserunt repellat ipsa impedit voluptatem. Unde in quae eos harum.'
-                      attachment: 'http://localhost:8000/storage/et'
-                      department_name: 'Shane Mraz'
-                      course_name: 'Ms. Flossie Hansen'
+                      id: 1
+                      content: 'Maiores et a nostrum debitis doloribus. Expedita corporis facere saepe unde reprehenderit sed temporibus fugit. Nesciunt magni ullam quisquam neque et natus. Atque porro sit vitae.'
+                      attachment: 'http://localhost:8000/storage/reprehenderit'
+                      department_name: 'Prof. Orlo Schumm'
+                      course_name: 'Kenyatta Steuber Jr.'
                       attachment_type: file
                       likes: 0
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
                       created_at: '1 week ago'
+                      is_open: false
                     -
-                      id: 5
-                      content: 'Velit ea vero officia laudantium sit deserunt nobis. Aut omnis est sit temporibus doloremque. Et quia qui a nostrum expedita ab molestiae. Veritatis dolores iste perspiciatis facilis consequatur.'
-                      attachment: 'http://localhost:8000/storage/eius'
-                      department_name: 'Ellie Denesik'
-                      course_name: 'Otto Carter V'
+                      id: 4
+                      content: 'Soluta quasi incidunt qui officia. Ducimus molestias veniam explicabo minima occaecati. Vero necessitatibus ipsa autem labore.'
+                      attachment: 'http://localhost:8000/storage/natus'
+                      department_name: 'Jake Ernser'
+                      course_name: 'Kaley Bartoletti'
                       attachment_type: file
                       likes: 0
                       liked_by_me: false
                       saves: 0
                       saved_by_me: false
                       created_at: '1 week ago'
+                      is_open: false
                     -
-                      id: 14
-                      content: 'Et aut assumenda unde a. Quia nisi accusantium eius ad corporis. Architecto temporibus et esse. Qui explicabo nesciunt magni minima enim accusamus.'
-                      attachment: 'http://localhost:8000/storage/est'
-                      department_name: 'Fannie Rosenbaum DDS'
-                      course_name: 'Erling Blick'
+                      id: 6
+                      content: 'Qui nam ratione veritatis voluptatibus est sit. Illum eaque explicabo odit facere rerum eum. Assumenda possimus similique officiis officia id. Vitae tenetur eaque labore dolorum et in quasi.'
+                      attachment: 'http://localhost:8000/storage/qui'
+                      department_name: 'Ms. Bridie DuBuque'
+                      course_name: 'Frederique Shields III'
+                      attachment_type: image
+                      likes: 1
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '1 week ago'
+                      is_open: false
+                    -
+                      id: 7
+                      content: 'Architecto ut quisquam voluptatem qui. Eligendi corporis dignissimos cumque consectetur. Excepturi tenetur voluptas aut tempora.'
+                      attachment: 'http://localhost:8000/storage/minima'
+                      department_name: 'Delmer Baumbach'
+                      course_name: 'Anastacio Rohan'
                       attachment_type: file
+                      likes: 1
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '1 week ago'
+                      is_open: false
+                    -
+                      id: 8
+                      content: 'Totam eaque non est non perferendis quis quos. Officiis non voluptatum nemo non porro officia. Animi reprehenderit ex aut est nihil.'
+                      attachment: 'http://localhost:8000/storage/minus'
+                      department_name: 'Mittie Wunsch'
+                      course_name: 'Guy Runte PhD'
+                      attachment_type: image
+                      likes: 1
+                      liked_by_me: false
+                      saves: 0
+                      saved_by_me: false
+                      created_at: '1 week ago'
+                      is_open: false
+                    -
+                      id: 11
+                      content: 'Vel mollitia quia quo vero numquam aut. Aspernatur est asperiores nemo dolores. Unde neque illo illo adipisci consequatur.'
+                      attachment: 'http://localhost:8000/storage/eligendi'
+                      department_name: "Amina O'Reilly"
+                      course_name: 'Prof. Junior Fadel'
+                      attachment_type: image
                       likes: 0
                       liked_by_me: false
                       saves: 1
                       saved_by_me: false
                       created_at: '1 week ago'
+                      is_open: false
+                    -
+                      id: 12
+                      content: 'Nemo harum ullam laudantium ut. Nam ut iure modi inventore fuga quisquam nemo.'
+                      attachment: 'http://localhost:8000/storage/excepturi'
+                      department_name: 'Buford Berge'
+                      course_name: 'Jackie Sporer'
+                      attachment_type: image
+                      likes: 0
+                      liked_by_me: false
+                      saves: 1
+                      saved_by_me: false
+                      created_at: '1 week ago'
+                      is_open: false
                 properties:
                   data:
                     type: array
                     example:
                       -
-                        id: 2
-                        content: 'Amet consequuntur ducimus ut quod dolore. Et et atque deserunt repellat ipsa impedit voluptatem. Unde in quae eos harum.'
-                        attachment: 'http://localhost:8000/storage/et'
-                        department_name: 'Shane Mraz'
-                        course_name: 'Ms. Flossie Hansen'
+                        id: 1
+                        content: 'Maiores et a nostrum debitis doloribus. Expedita corporis facere saepe unde reprehenderit sed temporibus fugit. Nesciunt magni ullam quisquam neque et natus. Atque porro sit vitae.'
+                        attachment: 'http://localhost:8000/storage/reprehenderit'
+                        department_name: 'Prof. Orlo Schumm'
+                        course_name: 'Kenyatta Steuber Jr.'
                         attachment_type: file
                         likes: 0
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
                         created_at: '1 week ago'
+                        is_open: false
                       -
-                        id: 5
-                        content: 'Velit ea vero officia laudantium sit deserunt nobis. Aut omnis est sit temporibus doloremque. Et quia qui a nostrum expedita ab molestiae. Veritatis dolores iste perspiciatis facilis consequatur.'
-                        attachment: 'http://localhost:8000/storage/eius'
-                        department_name: 'Ellie Denesik'
-                        course_name: 'Otto Carter V'
+                        id: 4
+                        content: 'Soluta quasi incidunt qui officia. Ducimus molestias veniam explicabo minima occaecati. Vero necessitatibus ipsa autem labore.'
+                        attachment: 'http://localhost:8000/storage/natus'
+                        department_name: 'Jake Ernser'
+                        course_name: 'Kaley Bartoletti'
                         attachment_type: file
                         likes: 0
                         liked_by_me: false
                         saves: 0
                         saved_by_me: false
                         created_at: '1 week ago'
+                        is_open: false
                       -
-                        id: 14
-                        content: 'Et aut assumenda unde a. Quia nisi accusantium eius ad corporis. Architecto temporibus et esse. Qui explicabo nesciunt magni minima enim accusamus.'
-                        attachment: 'http://localhost:8000/storage/est'
-                        department_name: 'Fannie Rosenbaum DDS'
-                        course_name: 'Erling Blick'
+                        id: 6
+                        content: 'Qui nam ratione veritatis voluptatibus est sit. Illum eaque explicabo odit facere rerum eum. Assumenda possimus similique officiis officia id. Vitae tenetur eaque labore dolorum et in quasi.'
+                        attachment: 'http://localhost:8000/storage/qui'
+                        department_name: 'Ms. Bridie DuBuque'
+                        course_name: 'Frederique Shields III'
+                        attachment_type: image
+                        likes: 1
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '1 week ago'
+                        is_open: false
+                      -
+                        id: 7
+                        content: 'Architecto ut quisquam voluptatem qui. Eligendi corporis dignissimos cumque consectetur. Excepturi tenetur voluptas aut tempora.'
+                        attachment: 'http://localhost:8000/storage/minima'
+                        department_name: 'Delmer Baumbach'
+                        course_name: 'Anastacio Rohan'
                         attachment_type: file
+                        likes: 1
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '1 week ago'
+                        is_open: false
+                      -
+                        id: 8
+                        content: 'Totam eaque non est non perferendis quis quos. Officiis non voluptatum nemo non porro officia. Animi reprehenderit ex aut est nihil.'
+                        attachment: 'http://localhost:8000/storage/minus'
+                        department_name: 'Mittie Wunsch'
+                        course_name: 'Guy Runte PhD'
+                        attachment_type: image
+                        likes: 1
+                        liked_by_me: false
+                        saves: 0
+                        saved_by_me: false
+                        created_at: '1 week ago'
+                        is_open: false
+                      -
+                        id: 11
+                        content: 'Vel mollitia quia quo vero numquam aut. Aspernatur est asperiores nemo dolores. Unde neque illo illo adipisci consequatur.'
+                        attachment: 'http://localhost:8000/storage/eligendi'
+                        department_name: "Amina O'Reilly"
+                        course_name: 'Prof. Junior Fadel'
+                        attachment_type: image
                         likes: 0
                         liked_by_me: false
                         saves: 1
                         saved_by_me: false
                         created_at: '1 week ago'
+                        is_open: false
+                      -
+                        id: 12
+                        content: 'Nemo harum ullam laudantium ut. Nam ut iure modi inventore fuga quisquam nemo.'
+                        attachment: 'http://localhost:8000/storage/excepturi'
+                        department_name: 'Buford Berge'
+                        course_name: 'Jackie Sporer'
+                        attachment_type: image
+                        likes: 0
+                        liked_by_me: false
+                        saves: 1
+                        saved_by_me: false
+                        created_at: '1 week ago'
+                        is_open: false
                     items:
                       type: object
                       properties:
                         id:
                           type: integer
-                          example: 2
+                          example: 1
                         content:
                           type: string
-                          example: 'Amet consequuntur ducimus ut quod dolore. Et et atque deserunt repellat ipsa impedit voluptatem. Unde in quae eos harum.'
+                          example: 'Maiores et a nostrum debitis doloribus. Expedita corporis facere saepe unde reprehenderit sed temporibus fugit. Nesciunt magni ullam quisquam neque et natus. Atque porro sit vitae.'
                         attachment:
                           type: string
-                          example: 'http://localhost:8000/storage/et'
+                          example: 'http://localhost:8000/storage/reprehenderit'
                         department_name:
                           type: string
-                          example: 'Shane Mraz'
+                          example: 'Prof. Orlo Schumm'
                         course_name:
                           type: string
-                          example: 'Ms. Flossie Hansen'
+                          example: 'Kenyatta Steuber Jr.'
                         attachment_type:
                           type: string
                           example: file
@@ -4935,6 +5045,9 @@ paths:
                         created_at:
                           type: string
                           example: '1 week ago'
+                        is_open:
+                          type: boolean
+                          example: false
       tags:
         - Post
       requestBody:
@@ -4947,7 +5060,7 @@ paths:
                 type:
                   type: string
                   description: ''
-                  example: course
+                  example: public
                   enum:
                     - public
                     - department
@@ -5021,31 +5134,31 @@ paths:
                 content:
                   type: string
                   description: ''
-                  example: vel
+                  example: quaerat
                 attachment:
                   type: string
                   description: ''
-                  example: dolorum
+                  example: repellendus
                 attachment_type:
                   type: string
                   description: ''
-                  example: veritatis
+                  example: quo
                 user_id:
                   type: number
                   description: ''
-                  example: 36.221885948
+                  example: 600439752.11
                 department_id:
                   type: number
                   description: ''
-                  example: 125745733.829
+                  example: 42897.02795516
                 course_id:
                   type: number
                   description: ''
-                  example: 288.746104
+                  example: 0.0
                 post_type_id:
                   type: number
                   description: ''
-                  example: 25981.303
+                  example: 2846047.9211691
               required:
                 - content
                 - attachment
