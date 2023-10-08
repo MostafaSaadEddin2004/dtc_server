@@ -20,7 +20,7 @@ class CertificateTypeResource extends Resource
 {
     protected static ?string $model = CertificateType::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'fas-certificate-type';
 
     protected static ?string $navigationGroup = 'Department';
 
