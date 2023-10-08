@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    Notification::send(User::find(72), new FcmNotification('test', 'test test', []));
     return view('welcome');
+});
+
+Route::get('/admin', function () {
+    return redirect('/admin/posts');
 });
