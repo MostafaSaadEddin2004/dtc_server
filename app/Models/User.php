@@ -153,14 +153,14 @@ class User extends Authenticatable implements MustVerifyEmail
     protected function department(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->teacher?->department ?? $this->registeration?->department,
+            get: fn () => $this->registeration?->department,
         );
     }
 
     protected function section(): Attribute
     {
         return Attribute::make(
-            get: fn () => $this->role_id == 2 ? null : $this->teacher?->department->section ?? $this->registeration?->department->section,
+            get: fn () => $this->role_id == 2 ? null : ($this->teacher?->section ?? $this->registeration?->department->section),
         );
     }
 
