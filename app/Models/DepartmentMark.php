@@ -19,6 +19,7 @@ class DepartmentMark extends Model
         'mark',
         'year',
         'department_id',
+        'certificate_type_id',
     ];
 
     /**
@@ -34,5 +35,10 @@ class DepartmentMark extends Model
     public function department(): BelongsTo
     {
         return $this->belongsTo(Department::class);
+    }
+
+    public function certificateType(): BelongsTo
+    {
+        return $this->belongsTo(CertificateType::class);
     }
 }

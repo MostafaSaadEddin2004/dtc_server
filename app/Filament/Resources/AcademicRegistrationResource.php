@@ -5,12 +5,16 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\AcademicRegistrationResource\Pages;
 use App\Filament\Resources\AcademicRegistrationResource\RelationManagers\WishesRelationManager;
 use App\Models\AcademicRegistration;
+use Carbon\Carbon;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
+use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
+use Spatie\Valuestore\Valuestore;
 
 class AcademicRegistrationResource extends Resource
 {
@@ -26,12 +30,30 @@ class AcademicRegistrationResource extends Resource
         if (request()->routeIs('filament.resources.academic-registrations.view')) {
             return $builder;
         }
-        return $builder->whereNull('accepted');
+
+        $valueStore = ValueStore::make(config('filament-settings.path'));
+        $query = $builder->whereBetween('created_at', [
+            now()->firstOfYear(),
+            now()->lastOfYear(),
+        ]);
+        if ($valueStore->get('registration_start_at') <= now() && $valueStore->get('registration_end_at') >= now()) {
+            $query = $query->whereNull('accepted');
+        } else {
+            $query = $query->whereNull('accepted')->orWhere('accepted', false);
+        }
+
+
+        return $query;
     }
 
     protected static function getNavigationBadge(): ?string
     {
-        return static::getModel()::whereNull('accepted')->count();
+        $query = static::getModel()::whereNull('accepted')->whereBetween('created_at', [
+            now()->firstOfYear(),
+            now()->lastOfYear(),
+        ]);
+
+        return $query->count();
     }
 
     public static function form(Form $form): Form
@@ -96,6 +118,7 @@ class AcademicRegistrationResource extends Resource
                     ->required()
                     ->hiddenOn('edit'),
                 Forms\Components\Select::make('department_id')
+                    ->label('Class')
                     ->relationship('department', 'name', fn (Builder $query) => request()->routeIs('filament.resources.academic-registrations.view') ? $query : $query->whereHas('wishes', fn (Builder $q) => $q->where('academic_registration_id', request()->record)))
                     ->nullable(),
             ]);
@@ -124,7 +147,9 @@ class AcademicRegistrationResource extends Resource
                 // Tables\Columns\TextColumn::make('job_of_parent'),
                 // Tables\Columns\TextColumn::make('phone_of_parent'),
                 // Tables\Columns\TextColumn::make('phone_of_mother'),
-                // Tables\Columns\TextColumn::make('avg_mark'),
+                Tables\Columns\TextColumn::make('avg_mark')
+                    ->label('Mark')
+                    ->sortable(),
                 // Tables\Columns\TextColumn::make('certificate_year'),
                 // Tables\Columns\TextColumn::make('id_image'),
                 // Tables\Columns\TextColumn::make('certificate_image'),
@@ -134,33 +159,83 @@ class AcademicRegistrationResource extends Resource
                     ->since(),
             ])
             ->filters([
-                //
+                SelectFilter::make('department')
+                    ->relationship('department', 'name')
+                    ->label('Class')
+                    ->searchable()
+                    ->multiple(),
             ])
             ->actions([
-                // Tables\Actions\EditAction::make(),
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\Action::make('accept')
-                    ->action(function (AcademicRegistration $record) {
-                        $record->update(['accepted' => true]);
-                        $record->user->notifications()->create([
-                            'title' => 'تسجيل الدخول كطالب',
-                            'body' => 'تم قبول طلب تسجيلك كطالب.',
-                        ]);
-                        $record->user->update(['role_id' => 4]);
-                        $record->department->students()->create(['user_id' => $record->user->id]);
-                    }),
+                ->action(function (AcademicRegistration $record) {
+                    $valueStore = ValueStore::make(config('filament-settings.path'));
+                    $record->update(['accepted' => true]);
+                    $record->user->notifications()->create([
+                        'title' => 'تسجيل الدخول',
+                        'body' => 'تم قبول طلب تسجيلك بدورة ' . $record->department->name . '. يرجى القدوم في تاريخ ' . Carbon::parse($valueStore->get('interview_at'))->toDateString() . ' لعمل مقابلة.',
+                    ]);
+                    $record->user->update(['role_id' => 4]);
+                    $record->department->students()->create(['user_id' => $record->user->id]);
+                })
+                ->requiresConfirmation(),
                 Tables\Actions\Action::make('cancel')
-                    ->action(function (AcademicRegistration $record) {
-                        $record->update(['accepted' => false]);
-                        $record->user->notifications()->create([
-                            'title' => 'تسجيل الدخول كطالب',
-                            'body' => 'تم قبول طلب تسجيلك كطالب.',
-                        ]);
-                    })
-                    ->color('danger'),
-            ])
+                ->action(function (AcademicRegistration $record) {
+                    $record->update(['accepted' => false]);
+                    $record->user->notifications()->create([
+                        'title' => 'تسجيل الدخول',
+                        'body' => 'تم رفض طلب تسجيلك بدورة ' . $record->department->name . '.',
+                    ]);
+                })
+                ->color('danger')
+                ->visible(function () {
+                    $valueStore = ValueStore::make(config('filament-settings.path'));
+                    return ($valueStore->get('registration_start_at') <= now() && $valueStore->get('registration_end_at') >= now());
+                })
+                ->requiresConfirmation(),
+                Tables\Actions\DeleteAction::make()
+                    ->visible(function () {
+                        $valueStore = ValueStore::make(config('filament-settings.path'));
+                        return !($valueStore->get('registration_start_at') <= now() && $valueStore->get('registration_end_at') >= now());
+                    }),
+                ])
             ->bulkActions([
-                // Tables\Actions\DeleteBulkAction::make(),
+                Tables\Actions\BulkAction::make('accept')
+                    ->action(function (Collection $records) {
+                        $valueStore = ValueStore::make(config('filament-settings.path'));
+                        foreach ($records as $record) {
+                            $record->update(['accepted' => true]);
+                            $record->user->notifications()->create([
+                                'title' => 'تسجيل الدخول',
+                                'body' => 'تم قبول طلب تسجيلك بدورة ' . $record->department->name . '. يرجى القدوم في تاريخ ' . Carbon::parse($valueStore->get('interview_at'))->toDateString() . ' لعمل مقابلة.',
+                            ]);
+                            $record->user->update(['role_id' => 4]);
+                            $record->department->students()->create(['user_id' => $record->user->id]);
+                        }
+                    })
+                    ->requiresConfirmation(),
+                Tables\Actions\BulkAction::make('cancel')
+                    ->action(function (Collection $records) {
+                        foreach ($records as $record) {
+                            $record->update(['accepted' => false]);
+                            $record->user->notifications()->create([
+                                'title' => 'تسجيل الدخول',
+                                'body' => 'تم رفض طلب تسجيلك بدورة ' . $record->department->name . '.',
+                            ]);
+                        }
+                    })
+                    ->visible(function () {
+                        $valueStore = ValueStore::make(config('filament-settings.path'));
+                        return ($valueStore->get('registration_start_at') <= now() && $valueStore->get('registration_end_at') >= now());
+                    })
+                    ->color('danger')
+                    ->requiresConfirmation(),
+                    Tables\Actions\DeleteBulkAction::make()
+                    ->visible(function () {
+                        $valueStore = ValueStore::make(config('filament-settings.path'));
+                        return !($valueStore->get('registration_start_at') <= now() && $valueStore->get('registration_end_at') >= now());
+                    }),
+                
             ]);
     }
 

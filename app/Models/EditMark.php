@@ -16,7 +16,7 @@ class EditMark extends Model
      * @var array
      */
     protected $fillable = [
-        'subject',
+        'subject_id',
         'mark',
         'reason',
         'teacher_id',
@@ -36,6 +36,11 @@ class EditMark extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function subject(): BelongsTo
+    {
+        return $this->belongsTo(Subject::class);
     }
 
     public function teacher(): BelongsTo

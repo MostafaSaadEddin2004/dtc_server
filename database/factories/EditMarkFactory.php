@@ -5,6 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use App\Models\EditMark;
+use App\Models\Subject;
 use App\Models\Teacher;
 use App\Models\User;
 
@@ -23,7 +24,7 @@ class EditMarkFactory extends Factory
     public function definition(): array
     {
         return [
-            'subject' => $this->faker->word,
+            'subject_id' => Subject::factory(),
             'mark' => $this->faker->numberBetween(-10000, 10000),
             'reason' => $this->faker->word,
             'teacher_id' => Teacher::factory(),

@@ -20,6 +20,7 @@ class TeacherResource extends Resource
 
     protected static ?string $navigationIcon = 'fas-chalkboard-teacher';
 
+    protected static ?string $navigationGroup = 'Teacher';
 
     public static function getEloquentQuery(): Builder
     {
@@ -107,28 +108,28 @@ class TeacherResource extends Resource
                         $record->update(['accepted' => true]);
                         if (!$record->is_department_head) {
                             $record->user->notifications()->create([
-                                'title' => 'تسجيل الدخول كأستاذ',
+                                'title' => 'تسجيل الدخول',
                                 'body' => 'تم قبول طلب تسجيلك كأستاذ.',
                             ]);
                         } else {
                             $record->user->notifications()->create([
-                                'title' => 'تسجيل الدخول كرئيس قسم',
+                                'title' => 'تسجيل الدخول',
                                 'body' => 'تم قبول طلب تسجيلك كرئيس قسم.',
                             ]);
                         }
-                        $record->user->update(['role_id' => 5]);
+                        $record->user->update(['role_id' => $record->is_department_head ? 5 : 3]);
                     }),
                 Tables\Actions\Action::make('cancel')
                     ->action(function (Teacher $record) {
                         $record->update(['accepted' => false]);
                         if (!$record->is_department_head) {
                             $record->user->notifications()->create([
-                                'title' => 'تسجيل الدخول كأستاذ',
+                                'title' => 'تسجيل الدخول',
                                 'body' => 'نعتذر لقد تم رفض طلب تسجيل دخولك كأستاذ',
                             ]);
                         } else {
                             $record->user->notifications()->create([
-                                'title' => 'تسجيل الدخول كرئيس قسم',
+                                'title' => 'تسجيل الدخول',
                                 'body' => 'نعتذر لقد تم رفض طلب تسجيل دخولك كرئيس قسم',
                             ]);
                         }

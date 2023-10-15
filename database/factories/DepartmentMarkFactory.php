@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\CertificateType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use App\Models\Department;
@@ -25,6 +26,7 @@ class DepartmentMarkFactory extends Factory
             'mark' => $this->faker->numberBetween(-10000, 10000),
             'year' => $this->faker->numberBetween(-10000, 10000),
             'department_id' => Department::factory(),
+            'certificate_type_id' => CertificateType::factory(),
         ];
     }
 }

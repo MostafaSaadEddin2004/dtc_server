@@ -2,8 +2,10 @@
 
 namespace App\Filament\Resources\DepartmentResource\RelationManagers;
 
+use App\Models\Department;
 use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Form;
 use Filament\Resources\RelationManagers\RelationManager;
@@ -28,11 +30,16 @@ class DepartmentMarksRelationManager extends RelationManager
             ->schema([
                 TextInput::make('mark')
                     ->required()
-                    ->maxLength(255),
+                    ->integer()
+                    ->maxValue(100)
+                    ->minValue(0),
                 TextInput::make('year')
                     ->integer()
                     ->maxValue(2050)
                     ->minValue(2023)
+                    ->required(),
+                Select::make('certificate_type_id')
+                    ->relationship('certificateType', 'name')
                     ->required(),
             ]);
     }
@@ -43,6 +50,9 @@ class DepartmentMarksRelationManager extends RelationManager
             ->columns([
                 Tables\Columns\TextColumn::make('mark'),
                 Tables\Columns\TextColumn::make('year'),
+                Tables\Columns\TextColumn::make('certificateType.name')
+                    ->searchable()
+                    ->sortable(),
             ])
             ->filters([
                 //

@@ -30,6 +30,8 @@ class AppServiceProvider extends ServiceProvider
                 ->label('Academic Registration Start At'),
             \Filament\Forms\Components\DatePicker::make('registration_end_at')
                 ->label('Academic Registration End At'),
+            \Filament\Forms\Components\DatePicker::make('interview_at')
+                ->label('Interview At'),
         ]);
         Filament::serving(function () {
             // Using Vite

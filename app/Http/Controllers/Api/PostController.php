@@ -45,10 +45,9 @@ class PostController extends Controller
     {
         $data = $request->validated();
         $data['user_id'] = auth()->id();
-        $data['department_id'] = auth()->user()->teacher->department_id;
-
+        $data['section_id'] = auth()->user()->teacher->section_id;
         if ($request->hasFile('attachment')) {
-            $file_path = $request->file('attachment')->store('public/Attachments'); // Replace with your actual file path
+            $file_path = storeImage($request, 'attachment', 'Attachments'); // Replace with your actual file path
 
             // Get the file extension
             $file_info = pathinfo($file_path);
@@ -64,6 +63,7 @@ class PostController extends Controller
                 $data['attachment_type'] = 'file';
             }
         }
+        $data['post_type_id'] = 1;
 
         $move = Post::create($data);
 
@@ -161,7 +161,7 @@ class PostController extends Controller
         }
         $post->update($data);
         $post->refresh();
-        return new postResource($post);
+        return new PostResource($post);
     }
 
     /**
