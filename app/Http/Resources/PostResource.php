@@ -26,6 +26,7 @@ class PostResource extends JsonResource
             'saves' => $this->saves->count(),
             'saved_by_me' => $this->saves()->where('user_id', auth()->id())->exists(),
             'created_at' => $this->created_at->since(),
+            'is_open' => $this->course?->is_open,
         ];
     }
 }

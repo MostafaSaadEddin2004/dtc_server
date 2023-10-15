@@ -22,13 +22,15 @@ class UpdatePostRequest extends FormRequest
     public function rules(): array
     {
         return [
+            // 'content' => ['required', 'string'],
+            // 'attachment' => ['required', 'string'],
+            // 'attachment_type' => ['required', 'string'],
+            // 'user_id' => ['required', 'numeric', 'exists:users,id'],
+            // 'department_id' => ['required', 'numeric', 'exists:departments,id'],
+            // 'course_id' => ['required', 'numeric', 'exists:courses,id'],
+            // 'post_type_id' => ['required', 'numeric', 'exists:post_types,id'],
             'content' => ['required', 'string'],
-            'attachment' => ['required', 'string'],
-            'attachment_type' => ['required', 'string'],
-            'user_id' => ['required', 'numeric', 'exists:users,id'],
-            'department_id' => ['required', 'numeric', 'exists:departments,id'],
-            'course_id' => ['required', 'numeric', 'exists:courses,id'],
-            'post_type_id' => ['required', 'numeric', 'exists:post_types,id'],
+            'attachment' => ['nullable', 'string'],
         ];
     }
 }

@@ -29,7 +29,7 @@ class PostController extends Controller
                 ->whereHas('postType', fn ($query)  => $query->where('name', 'public'))->latest()->get();
         } else if ($request->type == 'department') {
             $posts = Post::with(['likes', 'saves'])
-                ->whereHas('postType', fn ($query)  => $query->where('name', 'department'))->where('department_id',auth()->user()->department->id)->latest()->get();
+                ->whereHas('postType', fn ($query)  => $query->where('name', 'department'))->where('department_id', auth()->user()->department->id)->latest()->get();
         } else {
             $posts = Post::with(['likes', 'saves'])
                 ->whereHas('postType', fn ($query)  => $query->where('name', 'course'))->latest()->get();
@@ -46,6 +46,7 @@ class PostController extends Controller
         $data = $request->validated();
         $data['user_id'] = auth()->id();
         $data['department_id'] = auth()->user()->teacher->department_id;
+
         if ($request->hasFile('attachment')) {
             $file_path = $request->file('attachment')->store('public/Attachments'); // Replace with your actual file path
 
@@ -138,7 +139,27 @@ class PostController extends Controller
      */
     public function update(UpdatePostRequest $request, Post $post)
     {
-        $post->update($request->validated());
+        $data = $request->validated();
+        $data['user_id'] = auth()->id();
+        $data['department_id'] = auth()->user()->teacher->department_id;
+        if ($request->hasFile('attachment')) {
+            $file_path = $request->file('attachment')->store('public/Attachments'); // Replace with your actual file path
+
+            // Get the file extension
+            $file_info = pathinfo($file_path);
+            $file_extension = strtolower($file_info['extension']);
+
+            // Define an array of image file extensions
+            $image_extensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp'];
+
+            // Check if the file extension is in the list of image extensions
+            if (in_array($file_extension, $image_extensions)) {
+                $data['attachment_type'] = 'image';
+            } else {
+                $data['attachment_type'] = 'file';
+            }
+        }
+        $post->update($data);
         $post->refresh();
         return new postResource($post);
     }
